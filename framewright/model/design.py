@@ -33,7 +33,9 @@ def _default_extras() -> dict[str, Any]:
         "extra_tubes": [],                   # [{name,a,b,od,wall,...}]
         "decals": [],                        # [{tube,pos,text|image,font,size,color,angle,...}]
         "snapshots": [],                     # [{name, time, values}]
-        "fit_formulas": {},                  # overrides for the fit advisor
+        "fit_formulas": {},                  # custom fitting schemes for the fit advisor
+        "fit_inputs": {},                    # extra fit-advisor inputs (flexibility, style ...)
+        "component_masses": {},              # measured component masses (g) overriding estimates
         "meta": {},
     }
 

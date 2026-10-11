@@ -23,6 +23,22 @@ from .theme import Theme
 # Other modules can register functions ``f(scene, geometry, theme)`` that run
 # after the bike is drawn (e.g. the rider).
 EXTRA_BUILDERS: list[Callable[[Scene, Geometry, Theme], None]] = []
+_PLUGINS_LOADED = False
+
+
+def load_plugins() -> None:
+    """Import optional modules that register scene builders (rider, centre of
+    mass), so headless exports draw them too."""
+    global _PLUGINS_LOADED
+    if _PLUGINS_LOADED:
+        return
+    _PLUGINS_LOADED = True
+    import importlib
+    for mod in ("framewright.fit",):
+        try:
+            importlib.import_module(mod)
+        except ImportError:
+            pass
 
 
 # --------------------------------------------------------------------------
@@ -135,6 +151,8 @@ class BikeSceneBuilder:
     # entry point ---------------------------------------------------------------
     def build(self, dimensions: bool | None = None, ghosts: Sequence[tuple[Geometry, str]] = ()) -> Scene:
         d = self.d
+        if d.get("show_rider") or d.get("show_com"):
+            load_plugins()
         on = lambda k: bool(d.get(k, True))
         if on("show_grid"):
             self.grid()
