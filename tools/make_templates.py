@@ -25,6 +25,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from framewright.geometry.solver import solve  # noqa: E402  (registers solver params)
+import framewright.geometry.clearance  # noqa: E402,F401  (registers 3-D clearance params)
 from framewright.model.design import Design  # noqa: E402
 
 OUT_DIR = ROOT / "framewright" / "data" / "templates"
@@ -600,6 +601,26 @@ template(
         bottle_dt=False, bottle_st=True, paint_frame="#3c4a3e", paint_fork="#3c4a3e",
         paint_head_tube="#3c4a3e", decal_text="E-TREK",
     ))
+
+
+# 3-D clearance fixes found with geometry.clearance.problems(): chainstay bends,
+# yokes and seat-stay spreads, as a builder would use for these tire sizes.
+CLEARANCE_TWEAKS = {
+    "road_race": dict(cs_top_bend=-5),
+    "endurance_road": dict(cs_top_bend=-4),
+    "track": dict(cs_top_bend=-5),
+    "gravel": dict(cs_top_bend=-2),
+    "city_step_through": dict(cs_top_bend=-2),
+    "ebike_trekking": dict(cs_top_bend=-1),
+    "time_trial": dict(cs_top_bend=-10, cs_width_bb=14, chainline=45),
+    "kids_24": dict(cs_top_bend=0, ss_spread_top=50),
+    "xc_hardtail_29": dict(cs_yoke=True, cs_yoke_length=110, cs_yoke_spread=96, ss_spread_top=66, cs_width_bb=16,
+                           fork_crown_height=22),
+    "trail_hardtail_275": dict(cs_yoke=True, cs_yoke_length=110, cs_yoke_spread=100, ss_spread_top=66),
+    "fat_bike": dict(cs_yoke=True, cs_yoke_length=150, cs_yoke_spread=150, ss_spread_top=110),
+}
+for _spec in TEMPLATES:
+    _spec["values"].update(CLEARANCE_TWEAKS.get(_spec["slug"], {}))
 
 
 # --------------------------------------------------------------------------

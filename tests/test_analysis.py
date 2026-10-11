@@ -55,7 +55,8 @@ def test_chain_wrap_equal_sprockets_is_exact():
 
 
 def test_chain_formula_vs_geometric(design):
-    g = solve(design)                                 # 420 mm chainstay, 50/34 x 11-32
+    design.set("chainrings", "50, 34")                # 420 mm chainstay, 50/34 x 11-32
+    g = solve(design)
     c = gearing.chain_length(g, "derailleur")
     C_in = 420 / 25.4
     assert c["formula_inches"] == pytest.approx(2 * C_in + 50 / 4 + 32 / 4 + 1, rel=1e-9)

@@ -263,3 +263,10 @@ def test_user_item_overrides_builtin_with_same_id(config_home):
     assert items[0].name == "Override" and items[0].user
     assert len([i for i in items if i.id == builtin.id]) == 1
     assert items[0].values["crank_length"] == 171
+
+
+@pytest.mark.parametrize("info", BUILTINS, ids=lambda t: t.slug)
+def test_template_has_no_3d_clearance_problems(info):
+    from framewright.geometry import clearance as C
+    g = solve(T.load_template(info.slug))
+    assert C.problems(g) == []

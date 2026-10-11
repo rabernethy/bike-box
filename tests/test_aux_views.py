@@ -10,7 +10,7 @@ from framewright.geometry.solver import solve
 from framewright.geometry.vec import V3
 from framewright.model.design import Design
 from framewright.render import aux_views as AV
-from framewright.render.scene import AngleDim, LinearDim, Polyline, Text
+from framewright.render.scene import AngleDim, LinearDim, Text
 
 MTB = dict(rear_bsd=622, front_bsd=622, rear_tire_width=60, rear_tire_height=58, front_tire_width=60,
            front_tire_height=58, rear_hub_spacing=148, front_hub_spacing=110, bb_shell_width=73,
@@ -135,7 +135,9 @@ def test_lean_angle_reduces_to_planar_for_a_thin_tire():
 
 
 def test_stay_fabrication_numbers():
-    g = solve(Design())
+    d = Design()
+    d.set("cs_top_bend_style", "straight")          # closed-form checks below assume straight stays
+    g = solve(d)
     cs = C.stay_fabrication(g, "cs")
     path = C.stay_path(g, "cs")
     a3, b3 = path.point(0.0), path.point(1.0)

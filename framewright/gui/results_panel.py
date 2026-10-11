@@ -100,11 +100,17 @@ class ResultsPanel(QtWidgets.QWidget):
             return
         g = self.doc.geometry
         units = self.doc.design["units"]
-        if g.warnings:
-            self.warn.setText("".join(f"<div style='color:#c62828'>⚠ {w}</div>" for w in g.warnings))
+        issues = list(g.warnings)
+        try:
+            from ..geometry.clearance import problems
+            issues += [f"3-D: {p}" for p in problems(g)]
+        except Exception:
+            pass
+        if issues:
+            self.warn.setText("".join(f"<div style='color:#c62828'>⚠ {w}</div>" for w in issues))
             self.warn.show()
         else:
-            self.warn.setText("<span style='color:#1d8a3a'>✓ No geometry warnings</span>")
+            self.warn.setText("<span style='color:#1d8a3a'>✓ No geometry or clearance warnings</span>")
         for title, rows in SECTIONS:
             top = QtWidgets.QTreeWidgetItem([title, ""])
             f = top.font(0)

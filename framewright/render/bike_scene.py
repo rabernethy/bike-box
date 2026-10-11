@@ -612,7 +612,7 @@ class BikeSceneBuilder:
             sc.poly(rect_along(e - tan * 6, e + tan * 6, 2.5), st, "frame", Z_FRAME + 6, True, "brazeon:cable")
         if d["cs_bridge"] and "cs" in tubes:
             cs = tubes["cs"]
-            p, _ = cs.point_at(cs.length - d.f("cs_bridge_pos"))
+            p, _ = cs.point_at(cs.length - g.v.get("cs_bridge_pos", d.f("cs_bridge_pos")))
             sc.circle(p, cs.od_b * 0.42, t.frame(t.frame_fill), "frame", Z_STAY + 2, "brazeon:cs_bridge")
         if d["ss_bridge"] and "ss" in tubes:
             ss = tubes["ss"]

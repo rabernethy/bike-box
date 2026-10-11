@@ -529,9 +529,12 @@ def solve(d: Design) -> Geometry:
     v["cs_spread_bb"], v["ss_spread_top"] = 2 * cs_z, 2 * ss_z
     if "cs" not in removed:
         cs_dir = (SB - stay_node).norm()
+        cs_w = d.f("cs_width_bb")
+        cs_profile = d["cs_profile"] if not cs_w or d["cs_profile"] != "round" else "oval"
         tubes["cs"] = Tube("cs", "Chainstay", stay_node, SB, d.f("cs_od_drop"), d.f("cs_od_bb"),
+                           d.f("cs_od_drop"), cs_w or d.f("cs_od_bb"),
                            wall_end=d.f("cs_wall"), wall_mid=d.f("cs_wall"), bend=d.f("cs_bend"),
-                           profile=d["cs_profile"], material=_material(d, "cs_material"),
+                           profile=cs_profile, material=_material(d, "cs_material"),
                            za=hub_r, zb=cs_z, mirrored=True, kind="stay",
                            join_a="dropout", join_b="bb2" if tandem else "bb",
                            draw_a=stay_node + cs_dir * d.f("cs_dropout_length"))
@@ -635,6 +638,9 @@ def solve(d: Design) -> Geometry:
     pedal_clear = bb_height - cl - d.f("pedal_thickness") / 2
     lean = math.degrees(math.atan2(max(pedal_clear, 0.0), d.f("q_factor") / 2 + d.f("pedal_width")))
 
+    bridge_w = float(d.get("cs_bridge_width", 16.0) or 16.0)
+    cs_bridge = d.f("cs_bridge_pos") or max(rear_axle.dist(SB) - Rr - bridge_w / 2 - 6.0, 40.0)
+    v["cs_bridge_pos"] = cs_bridge
     v.update({
         "stack": T.y, "reach": T.x, "head_tube_length": HTL, "head_tube_angle": hta,
         "seat_tube_angle": sta, "seat_angle_eff": sa_eff,

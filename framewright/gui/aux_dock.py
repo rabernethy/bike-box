@@ -59,18 +59,27 @@ class AuxViewsPanel(QtWidgets.QWidget):
                 self.viewers[i].setToolTip(str(exc))
         self.values.clear()
         try:
-            from ..geometry.clearance import clearances
-            vals = clearances(g)
+            from ..geometry import clearance as C
+            vals = C.clearances(g)
+            labels = getattr(C, "LABELS", {})
+            bad = {k for k in vals if C.is_problem(g, k)}
         except Exception as exc:
-            vals = {"error": str(exc)}
+            vals, labels, bad = {"error": str(exc)}, {}, set()
         units = self.doc.design["units"]
         from ..model.units import fmt_len
         for k, v in vals.items():
+            label = labels.get(k, k.replace("_", " "))
             if isinstance(v, (int, float)):
-                txt = (f"{v:.1f}°" if ("angle" in k or k.endswith("_deg")) else fmt_len(v, units, suffix=True))
+                if v == float("inf"):
+                    txt = "no contact"
+                elif any(w in k for w in ("angle", "phase", "_deg")):
+                    txt = f"{v:.1f}°"
+                else:
+                    txt = fmt_len(v, units, suffix=True)
             else:
                 txt = "–" if v is None else str(v)
-            it = QtWidgets.QTreeWidgetItem([k.replace("_", " "), txt])
-            if isinstance(v, (int, float)) and ("clearance" in k) and v < 3:
+            it = QtWidgets.QTreeWidgetItem([label, txt])
+            it.setToolTip(0, f"{label} [{k}]")
+            if k in bad:
                 it.setForeground(1, Qt.GlobalColor.red)
             self.values.addTopLevelItem(it)

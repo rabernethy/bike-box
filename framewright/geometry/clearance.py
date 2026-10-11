@@ -81,9 +81,9 @@ P.register([
                choices=(("round", "Round (circle of tire width)"), ("elliptical", "Elliptical (width x height)"),
                         ("square", "Square shoulders (knobby)")),
                help="Shape revolved about the axle for 3-D clearance checks", morph=False),
-    P.ParamDef("cs_top_bend_style", "Chainstay shape (top view)", _G, _S, P.CHOICE, "straight",
+    P.ParamDef("cs_top_bend_style", "Chainstay shape (top view)", _G, _S, P.CHOICE, "bent",
                choices=(("straight", "Straight"), ("bent", "Single bend"), ("s_bend", "S-bend")), morph=False),
-    _mm("cs_top_bend", "Chainstay top-view bend (sagitta)", 0, -40, 40, 0.5,
+    _mm("cs_top_bend", "Chainstay top-view bend (sagitta)", -3, -40, 40, 0.5,
         "Lateral offset of the bend from the straight stay (+ = outward, away from the tire)",
         ("cs_top_bend_style", ("bent", "s_bend"))),
     P.ParamDef("cs_top_bend_pos", "Chainstay bend position from BB", _G, _S, P.FLOAT, 35.0, "%", 5, 95, 1,
@@ -489,8 +489,7 @@ def stay_path(g: Geometry, name: str) -> Path3 | None:
     if tb.draw_a is not None and tb.chord > 1e-9:
         t0 = _clamp(project_on_line(tb.draw_a, tb.a, tb.b - tb.a) / tb.chord, 0.0, 0.9)
     path = Path3(name, pts, z_fn, tb.od_at, tb.w_at, (t0, 1.0), label=tb.label)
-    join_b = tb.join_b if name != "ss_mono" else tb.join_b
-    path.vis = (t0, max(t0, _exit_t(path, receiver_axis(g, join_b), t0)))
+    path.vis = (t0, max(t0, _exit_t(path, receiver_axis(g, tb.join_b), t0)))
     return path
 
 
@@ -1129,7 +1128,7 @@ def clearance_details(g: Geometry, use_cache: bool = True) -> dict[str, Contact]
         out["cs_chainring"] = best
         out["cs_crank"] = crank_contact(g, cs)
         if d.get("cs_bridge"):
-            t = _clamp(1.0 - d.f("cs_bridge_pos") / cs.L, cs.vis[0], cs.vis[1])
+            t = _clamp(1.0 - g.v.get("cs_bridge_pos", d.f("cs_bridge_pos")) / cs.L, cs.vis[0], cs.vis[1])
             out["cs_bridge_tire"] = bridge_contact(g, cs, t, d.f("cs_bridge_width"), rear)
     else:
         for k in ("cs_tire", "cs_chainring", "cs_crank"):

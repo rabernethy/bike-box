@@ -29,7 +29,7 @@ from typing import Callable, Sequence
 
 from ..geometry import clearance as CL
 from ..geometry.solver import Geometry
-from ..geometry.vec import V, V3, bbox, circle_points, offset_polyline
+from ..geometry.vec import V, V3, circle_points, offset_polyline
 from ..model.units import fmt_angle, fmt_len
 from .scene import (Z_BACK, Z_CENTERLINE, Z_COMPONENT, Z_DIM, Z_FRAME, Z_FRONT, Z_GROUND, Z_NOTE, Z_OVER,
                     Z_STAY, Z_WHEEL, AngleDim, Arc, Circle, LinearDim, Polyline, Prim, Scene, Style, Text)
@@ -422,7 +422,7 @@ def top_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
             outer = [V(cs.point(tt).x, -(cs.z(tt) + h)) for tt, h in zip(ts, hw)]
             v.poly(outer + [V(q.x, -q.y) for q in reversed(outer)], fst, "frame", Z_STAY + 1, True, "yoke")
         if d.get("cs_bridge"):
-            tb = max(cs.vis[0], min(cs.vis[1], 1.0 - d.f("cs_bridge_pos") / cs.L))
+            tb = max(cs.vis[0], min(cs.vis[1], 1.0 - g.v.get("cs_bridge_pos", d.f("cs_bridge_pos")) / cs.L))
             P3, _, _, _, _, hw = cs.frame(tb)
             zin = abs(P3.z) - hw
             bw = d.f("cs_bridge_width") / 2
@@ -517,9 +517,10 @@ def top_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
             v.poly(_rect(fax.x - 14, s * fh, fax.x + 14, s * (fh + 5)), v.comp_st("#8a8a8a"), "fork", Z_FRONT + 1,
                    True, "fork:end")
     cb = g.p["crown_bottom"]
-    cwh = d.f("fork_crown_width") / 2 + d.f("fork_blade_od") / 2 + 5
-    v.poly(_rect(cb.x - d.f("fork_blade_od") / 2 - 6, -cwh, cb.x + d.f("fork_blade_od") / 2 + 6, cwh), v.fork_st(),
-           "fork", Z_FRONT + 2, True, "fork:crown")
+    blade = d.f("fork_stanchion_od") if d["fork_type"] == "suspension" else d.f("fork_blade_od")
+    cwh = d.f("fork_crown_width") / 2 + blade / 2 + 5
+    v.poly(_rect(cb.x - blade / 2 - 6, -cwh, cb.x + blade / 2 + 6, cwh), v.fork_st(), "fork", Z_FRONT + 2, True,
+           "fork:crown")
     bar = g.p["bar"]
     bw = d.f("bar_width") / 2
     bod = d.f("bar_od") / 2
@@ -548,7 +549,8 @@ def top_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     v.lin(V(fax.x, -fw.hub_spacing / 2), V(fax.x, fw.hub_spacing / 2), front.outer_r + 30,
           f"hub {fmt_len(fw.hub_spacing, v.units)}", "vertical")
     v.lin(V(bar.x, -bw), V(bar.x, bw), 40, f"bar {fmt_len(2 * bw, v.units)}", "vertical")
-    y_low = _prim_bounds(sc.prims[start:])[1]
+    y_low = -max(abs(p.y) for p in shoe)          # page y of the shoe's outer edge (plan z -> page -z)
+    y_low = min(y_low, -(q2 + d.f("pedal_width")))
     v.callouts_stair([("heel", "heel"), ("cs_tire", "CS-tire"), ("cs_bridge_tire", "bridge-tire"),
                       ("cs_chainring", "CS-ring"), ("cs_crank", "crank-CS"), ("fork_blade_tire", "blade-tire")],
                      TP, y_low - 1.5 * v.size)
@@ -602,7 +604,7 @@ def rear_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     if cs is not None:
         v.tube(cs, RP, vd, fst, "frame", Z_STAY, "tube:cs", caps=True)
         if d.get("cs_bridge"):
-            tb = max(cs.vis[0], min(cs.vis[1], 1.0 - d.f("cs_bridge_pos") / cs.L))
+            tb = max(cs.vis[0], min(cs.vis[1], 1.0 - g.v.get("cs_bridge_pos", d.f("cs_bridge_pos")) / cs.L))
             P3, _, _, _, _, hw = cs.frame(tb)
             zin = abs(P3.z) - hw
             v.poly(_band(V(-zin, P3.y), V(zin, P3.y), d.f("cs_bridge_width") / 2), fst, "frame", Z_BACK + 2, True,
@@ -953,9 +955,9 @@ def toe_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
           contact, "dim:steer")
     plan_prims = sc.prims[pstart:]
     v.set_size(start)
-    sx0, sy0, sx1, sy1 = _prim_bounds(sc.prims[start:side_n])
-    px0, py0, px1, py1 = _prim_bounds(plan_prims)
-    _shift(plan_prims, V(0.0, (sy0 - 60) - py1))
+    side_bottom = _prim_bounds(sc.prims[start:side_n])[1]
+    plan_top = _prim_bounds(plan_prims)[3]
+    _shift(plan_prims, V(0.0, (side_bottom - 60) - plan_top))
 
     lines = []
     if contact:
