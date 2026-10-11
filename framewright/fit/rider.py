@@ -31,7 +31,7 @@ from ..geometry.solver import Geometry
 from ..geometry.vec import V, circle_circle_intersections, cosd, sind
 from ..model import params as P
 from ..model.design import Design
-from ..render.scene import Z_BACK, Z_RIDER, Scene, Style
+from ..render.scene import Z_BACK, Z_OVER, Z_RIDER, Scene, Style
 from ..render.theme import Theme
 
 # --------------------------------------------------------------------------
@@ -517,7 +517,9 @@ def draw_rider(scene: Scene, g: Geometry, theme: Theme) -> None:
     bg = theme.bg or "#ffffff"
     far_col = _mix(base, bg, 0.45)
     layer = "rider"
-    z_far, z_body, z_leg, z_arm, z_helmet = Z_BACK, Z_RIDER, Z_RIDER + 1, Z_RIDER + 2, Z_RIDER + 3
+    # far leg behind the frame; torso/head at Z_RIDER; near limbs also above Z_OVER so bottles and racks
+    # (drawn at Z_OVER by bike_scene) do not cover the outboard leg and arm
+    z_far, z_body, z_leg, z_arm, z_helmet = Z_BACK, Z_RIDER, Z_OVER + 1, Z_OVER + 2, Z_OVER + 3
 
     if style == "skeleton":
         w = max(theme.width * 2.0, 0.5)

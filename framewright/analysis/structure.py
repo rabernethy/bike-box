@@ -11,7 +11,8 @@ and front wheel are rigid links ("dummy" parts as in a test rig).
 
 Boundary conditions (test-rig style): both rear dropouts are pinned
 (translations held, rotations free), the front tyre contact point is held
-vertically and laterally (vertically only for the head-tube torsion case).
+vertically and laterally (vertically only for the head-tube torsion case; in
+all three directions for braking, where the dropouts are then free fore-aft).
 
 Units: N, mm, MPa (N/mm²), N·mm internally; torques are entered in N·m.
 Results are first-order estimates: no lugs, fillets, butting transitions
@@ -55,8 +56,9 @@ P.register([
                help="Pedalling and eccentric (crank horizontal, with chain pull) cases"),
     P.ParamDef("fea_ht_torque", "Head-tube torque", G, S, P.FLOAT, 50.0, "N·m", 0, 1000, 1,
                help="Torque about the frame's long axis applied at the head tube (rear dropouts held)"),
-    P.ParamDef("fea_brake_force", "Front braking force", G, S, P.FLOAT, 800.0, "N", 0, 5000, 10,
-               help="Rearward force at the front tyre contact point"),
+    P.ParamDef("fea_brake_force", "Front braking force", G, S, P.FLOAT, 600.0, "N", 0, 5000, 10,
+               help="Rearward force at the front tyre; applied as forward inertia of the rider "
+                    "(same shares as the rider weight)"),
     P.ParamDef("fea_inplane_force", "In-plane force at front axle", G, S, P.FLOAT, 600.0, "N", 0, 5000, 10,
                help="Horizontal forward force at the front axle"),
     P.ParamDef("fea_transverse_force", "Transverse force at seat cluster", G, S, P.FLOAT, 300.0, "N", 0, 5000, 10),
@@ -627,9 +629,15 @@ def _cases(g: Geometry, info: dict[str, Any]) -> dict[str, dict[str, Any]]:
                         "desc": f"{Fp:.0f} N down at the drive-side pedal spindle (Q/2 from centre)"}
     out["ht_torsion"] = {"loads": [("ht_top", 3, Tm / 2), ("ht_bottom", 3, Tm / 2)], "bc": "torsion",
                          "desc": f"{Tm / 1000:.0f} N·m about the long (X) axis at the head tube, rear held"}
+    # braking: rider weight + forward inertia (same shares), reacted by the front tyre
     Fb = d.f("fea_brake_force")
-    out["braking"] = {"loads": [("contact_front", 0, -Fb)], "bc": "std",
-                      "desc": f"{Fb:.0f} N rearward at the front tyre contact point"}
+    brake = [(nm, dof, val) for nm, dof, val in vert]
+    brake += [(nm, 0, -val * Fb / W if W > 0 else 0.0) for nm, dof, val in vert]
+    if W <= 0:
+        brake = [("contact_front", 0, -Fb)]
+    out["braking"] = {"loads": brake, "bc": "brake",
+                      "desc": f"{Fb:.0f} N front braking: rider weight plus forward inertia, "
+                              "reacted at the front tyre (rear dropouts carry vertical/lateral only)"}
     Fi = d.f("fea_inplane_force")
     out["in_plane"] = {"loads": [("front_axle", 0, Fi)], "bc": "std",
                        "desc": f"{Fi:.0f} N forward at the front axle"}
@@ -688,6 +696,8 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
                + [6 * names["contact_front"] + 1, 6 * names["contact_front"] + 2],
         "torsion": [6 * names["dropout_r"] + k for k in range(3)] + [6 * names["dropout_l"] + k for k in range(3)]
                    + [6 * names["contact_front"] + 1],
+        "brake": [6 * names["dropout_r"] + k for k in (1, 2)] + [6 * names["dropout_l"] + k for k in (1, 2)]
+                 + [6 * names["contact_front"] + k for k in range(3)],
     }
     U_all: dict[str, np.ndarray] = {}
     for bc, fixed in supports.items():

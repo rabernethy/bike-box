@@ -55,6 +55,9 @@ CATEGORY_CHECKS = {
     "tt": lambda d, g: (g.v["seat_tube_angle"] >= 76 and d["dt_profile"] == "aero"
                         and d.f("dt_od2") < d.f("dt_od") and _ratio(g.v) < 1.35),
     "fat": lambda d, g: d.f("rear_bsd") == 559 and d.f("rear_tire_width") >= 90 and d.f("rear_hub_spacing") >= 170,
+    "tandem": lambda d, g: (d["frame_type"] == "tandem" and 650 <= g.v["tandem_bb_distance"] <= 850
+                            and {"st2", "tt2", "boom"} <= set(g.tubes) and g.v["stoker_knee_room"] > 0),
+    "ebike": lambda d, g: d["bb_housing"] == "mid_motor" and d["battery"] != "none" and d["fenders"],
 }
 
 
@@ -70,7 +73,7 @@ def test_template_loads_solves_and_is_plausible(info, qapp):
     assert scene.bounds()[2] > scene.bounds()[0]
     v = g.v
     # generic sanity for any bicycle
-    assert 900 <= v["wheelbase"] <= 1250
+    assert 900 <= v["wheelbase"] <= (1950 if d["frame_type"] == "tandem" else 1250)
     assert 250 <= v["bb_height"] <= 340
     assert 35 <= v["trail"] <= 130
     assert v["head_tube_length"] >= 80
