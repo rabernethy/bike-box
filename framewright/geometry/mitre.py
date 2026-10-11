@@ -93,6 +93,7 @@ class MitreCut:
     receiver_labels: list[str] = field(default_factory=list)
     profile: str = "round"
     mirrored: bool = False      # a mirror-image copy is needed (stay pairs)
+    contact: float = 1.0        # fraction of the outline that actually meets a receiver
     phase_abs: float = 0.0      # rotation of the cut's symmetry plane from its nominal (frame-aligned) plane
     saw_rotation: float = 0.0   # receiver axis direction around the tube, from the reference line (0..180)
     offset_dir: str = ""        # where the receiver axis lies from the cut axis, e.g. "NON-DRIVE SIDE"
@@ -652,6 +653,7 @@ def _make_cut(g: Geometry, tube: Tube, end: str, recs: list[Receiver], samples: 
         holesaw_diameter=hs, holesaw_angle=90.0 - angle, holesaw_offset=offset, phase=phase_abs,
         tube_label=tube.label, end_label=end_description(tube, end), receiver_labels=rlabels,
         profile=tube.profile if abs(od - w) > 1e-9 else "round", mirrored=tube.mirrored,
+        contact=1.0 - float(prof.missed[:-1].mean()),
         phase_abs=phase_abs, saw_rotation=saw, offset_dir=offset_dir, wrap_reversed=wrap_reversed,
         ref_name=ref_name, side_name=side_name, opp_name=opp_name, nside_name=nside_name,
         polar=[float(x) for x in prof.polar], radius=[float(x) for x in prof.radius],

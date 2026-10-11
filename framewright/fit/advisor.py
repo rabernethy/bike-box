@@ -57,9 +57,11 @@ from ..model import params as P
 from ..model.design import Design
 from ..model.units import fmt_angle, fmt_len
 from . import expr as X
-from .rider import GROUP, _arm_span, _position, anatomy, hip_point, leg_pose, leg_sweep, solve_pose
+from .rider import GROUP, anatomy, arm_span, hip_point, leg_pose, leg_sweep, position_params, solve_pose
 
 _ADV = "Fit advisor"
+MODEL_FUNCTIONS = ("kops_setback", "knee_ext", "saddle_for_knee")   # see model_functions()
+_FUNC_NAMES = dict.fromkeys(MODEL_FUNCTIONS)
 STYLE_VALUES = {"recreational": 1.0, "fitness": 2.0, "competitive": 3.0}
 
 P.register([
@@ -361,9 +363,6 @@ def get_scheme(design: Design, name: str | None = None) -> dict:
 # --------------------------------------------------------------------------
 # evaluation
 # --------------------------------------------------------------------------
-_FUNC_NAMES = {"kops_setback": None, "knee_ext": None, "saddle_for_knee": None}
-
-
 def _bisect(f: Callable[[float], float], lo: float, hi: float, iters: int = 40) -> float:
     flo, fhi = f(lo), f(hi)
     if flo == 0:
@@ -385,7 +384,7 @@ def _bisect(f: Callable[[float], float], lo: float, hi: float, iters: int = 40) 
 def model_functions(design: Design) -> dict[str, Callable[..., float]]:
     """Trusted rider-model helpers exposed to formulas."""
     a = anatomy(design)
-    pos = _position(design)
+    pos = position_params(design)
 
     def hip_for(h: float, setback: float) -> V:
         y = math.sqrt(max(h * h - setback * setback, 1.0))
@@ -442,7 +441,7 @@ def scheme_variables(design: Design, g: Geometry | None = None, scheme: dict | N
         v[k] = float(a[k])
     v["forearm_grip"] = a["forearm"] + a["hand"]
     v["elbow_bend"] = design.f("elbow_bend")
-    v["arm_eff"] = _arm_span(a["upper_arm"], v["forearm_grip"], 180.0 - v["elbow_bend"])
+    v["arm_eff"] = arm_span(a["upper_arm"], v["forearm_grip"], 180.0 - v["elbow_bend"])
     v["cleat_offset"] = design.f("cleat_offset")
     tilt = design.f("saddle_tilt")
     off = V(cosd(tilt), sind(tilt)) * design.f("hip_forward") + V(-sind(tilt), cosd(tilt)) * a["hip_above_saddle"]
@@ -487,9 +486,12 @@ def _current(key: str, spec: dict, g: Geometry, pose, variables: dict) -> float 
     return None
 
 
-def evaluate(scheme: dict, design: Design, errors: list[str] | None = None) -> list[Recommendation]:
-    """Evaluate a scheme's formulas for ``design``; failing formulas are skipped
-    (their messages are appended to ``errors`` when given)."""
+def evaluate(scheme: dict | str, design: Design, errors: list[str] | None = None) -> list[Recommendation]:
+    """Evaluate a scheme (dict, or a name looked up with :func:`get_scheme`) for
+    ``design``.  Failing formulas are skipped (their messages are appended to
+    ``errors`` when given)."""
+    if isinstance(scheme, str):
+        scheme = get_scheme(design, scheme)
     g = solve(design)
     pose = solve_pose(g)
     variables = scheme_variables(design, g, scheme, pose)

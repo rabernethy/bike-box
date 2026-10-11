@@ -11,8 +11,9 @@ and front wheel are rigid links ("dummy" parts as in a test rig).
 
 Boundary conditions (test-rig style): both rear dropouts are pinned
 (translations held, rotations free), the front tyre contact point is held
-vertically and laterally (vertically only for the head-tube torsion case; in
-all three directions for braking, where the dropouts are then free fore-aft).
+vertically and laterally (vertically only for the head-tube torsion case).
+Braking applies the tyre friction explicitly so the dropouts carry no
+fore-aft load.
 
 Units: N, mm, MPa (N/mm²), N·mm internally; torques are entered in N·m.
 Results are first-order estimates: no lugs, fillets, butting transitions
@@ -259,7 +260,7 @@ class FrameModel:
         if "K" in self._cache:
             return self._cache["K"]
         k, T, _L, dofs = self._elements()
-        Kg = np.einsum("eji,ejk,ekl->eil", T, k, T)
+        Kg = np.transpose(T, (0, 2, 1)) @ k @ T
         K = np.zeros((self.ndof, self.ndof))
         np.add.at(K, (dofs[:, :, None], dofs[:, None, :]), Kg)
         self._cache["K"] = K
@@ -287,7 +288,7 @@ class FrameModel:
         """Per element and case: axial, bending, shear and von Mises stress (MPa)."""
         k, T, _L, dofs = self._elements()
         ue = U[dofs]                                               # (ne, 12, nc)
-        f = np.einsum("eij,ejk,ekc->eic", k, T, ue)                # local end forces
+        f = k @ (T @ ue)                                           # local end forces
         A = np.array([s.A for s in self.sec])[:, None]
         Iy = np.array([s.Iy for s in self.sec])[:, None]
         Iz = np.array([s.Iz for s in self.sec])[:, None]
@@ -636,12 +637,14 @@ def _cases(g: Geometry, info: dict[str, Any]) -> dict[str, dict[str, Any]]:
     # braking: rider weight + forward inertia (same shares), reacted by the front tyre
     Fb = d.f("fea_brake_force")
     brake = [(nm, dof, val) for nm, dof, val in vert]
-    brake += [(nm, 0, -val * Fb / W if W > 0 else 0.0) for nm, dof, val in vert]
-    if W <= 0:
-        brake = [("contact_front", 0, -Fb)]
-    out["braking"] = {"loads": brake, "bc": "brake",
+    if W > 0:
+        brake += [(nm, 0, -val * Fb / W) for nm, dof, val in vert]
+    else:
+        brake += [("hand", 0, Fb)]
+    brake.append(("contact_front", 0, -Fb))       # tyre friction balances the inertia exactly
+    out["braking"] = {"loads": brake, "bc": "std",
                       "desc": f"{Fb:.0f} N front braking: rider weight plus forward inertia, "
-                              "reacted at the front tyre (rear dropouts carry vertical/lateral only)"}
+                              "reacted by the front tyre"}
     Fi = d.f("fea_inplane_force")
     out["in_plane"] = {"loads": [("front_axle", 0, Fi)], "bc": "std",
                        "desc": f"{Fi:.0f} N forward at the front axle"}
@@ -701,8 +704,6 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
                + [6 * names["contact_front"] + 1, 6 * names["contact_front"] + 2],
         "torsion": [6 * names["dropout_r"] + k for k in range(3)] + [6 * names["dropout_l"] + k for k in range(3)]
                    + [6 * names["contact_front"] + 1],
-        "brake": [6 * names["dropout_r"] + k for k in (1, 2)] + [6 * names["dropout_l"] + k for k in (1, 2)]
-                 + [6 * names["contact_front"] + k for k in range(3)],
     }
     virtual = info["virtual"]
     X = model.xyz
@@ -729,30 +730,36 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
             anchor, pt = virtual[nm]
             ua = u[names[anchor]]
             r = np.asarray(pt, float) - X[names[anchor]]
-            return np.concatenate([ua[:3] + np.cross(ua[3:], r), ua[3:]])
+            w = ua[3:]
+            return np.concatenate([ua[:3] + np.array([w[1] * r[2] - w[2] * r[1], w[2] * r[0] - w[0] * r[2],
+                                                      w[0] * r[1] - w[1] * r[0]]), w])
         if nm in names:
             return u[names[nm]]
         return None
 
+    # One factorisation: solve with the torsion supports (fewest constraints) and add the
+    # front lateral support of the standard cases as a Lagrange constraint.
     U_all: dict[str, np.ndarray] = {}
-    for bc, fixed in supports.items():
-        group = [c for c in want if defs[c]["bc"] == bc]
-        if not group:
-            continue
-        F = np.zeros((model.ndof, len(group)))
-        for ci, c in enumerate(group):
-            for nm, dof, val in defs[c]["loads"]:
-                add_load(F, ci, nm, dof, val)
-        try:
-            U = model.solve(fixed, F, active)
-        except np.linalg.LinAlgError:
-            return {"ok": False, "error": "singular stiffness matrix (mechanism)", "cases": {}, "headline": {},
-                    "summary": "Structure estimate unavailable (unstable model)", "notes": [NOTE]}
-        if not np.all(np.isfinite(U)) or np.abs(U[0::6]).max(initial=0) > 1e4:
-            return {"ok": False, "error": "unstable model", "cases": {}, "headline": {},
-                    "summary": "Structure estimate unavailable (unstable model)", "notes": [NOTE]}
-        for ci, c in enumerate(group):
-            U_all[c] = U[:, ci]
+    cz = 6 * names["contact_front"] + 2
+    F = np.zeros((model.ndof, len(want) + 1))
+    for ci, c in enumerate(want):
+        for nm, dof, val in defs[c]["loads"]:
+            add_load(F, ci, nm, dof, val)
+    F[cz, -1] = 1.0
+    try:
+        U = model.solve(supports["torsion"], F, active)
+    except np.linalg.LinAlgError:
+        return {"ok": False, "error": "singular stiffness matrix (mechanism)", "cases": {}, "headline": {},
+                "summary": "Structure estimate unavailable (unstable model)", "notes": [NOTE]}
+    if not np.all(np.isfinite(U)) or np.abs(U[0::6]).max(initial=0) > 1e4 or U[cz, -1] <= 0:
+        return {"ok": False, "error": "unstable model", "cases": {}, "headline": {},
+                "summary": "Structure estimate unavailable (unstable model)", "notes": [NOTE]}
+    gcol = U[:, -1]
+    for ci, c in enumerate(want):
+        u = U[:, ci]
+        if defs[c]["bc"] == "std":
+            u = u - (u[cz] / gcol[cz]) * gcol
+        U_all[c] = u
     order = [c for c in want if c in U_all]
     Umat = np.column_stack([U_all[c] for c in order]) if order else np.zeros((model.ndof, 0))
     er = model.element_results(Umat)

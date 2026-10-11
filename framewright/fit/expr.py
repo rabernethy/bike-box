@@ -118,7 +118,7 @@ def _check(tree: ast.Expression, functions: Mapping[str, Callable] | None = None
             continue
         if isinstance(node, ast.Constant):
             v = node.value
-            if isinstance(v, bool) or (isinstance(v, (int, float)) and not isinstance(v, complex)):
+            if isinstance(v, (bool, int, float)):
                 continue
             errors.append(f"constant {v!r} is not a number")
         elif isinstance(node, ast.Name):

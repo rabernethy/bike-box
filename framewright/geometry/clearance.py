@@ -791,6 +791,33 @@ def heel_contact(g: Geometry, paths: list[Path3]) -> Contact:
     return Contact(val, P3 + n * h, P3 + n * dist, t, {"crank_deg": th % 360.0, "tube": path.name})
 
 
+def _toe_local(g: Geometry, n: int = 6) -> list[tuple[float, float]]:
+    """Toe box outline in the foot frame: (forward of the spindle, lateral
+    from the shoe centre-line, + = outboard), inner edge first."""
+    d = g.design
+    w = d.f("shoe_width")
+    ri, ro = TOE_TIP_K * w, (1.0 - TOE_TIP_K) * w
+    tip = d.f("toe_overhang")
+    loc = [(tip - 1.6 * ri, 0.0)]                  # inner edge, behind the toe box
+    for i in range(n + 1):                         # inner quarter: inner edge -> tip
+        a = math.pi / 2 * i / n
+        loc.append((tip - ri + ri * math.sin(a), ri - ri * math.cos(a)))
+    for i in range(1, n + 1):                      # outer quarter: tip -> outer edge
+        a = math.pi / 2 * i / n
+        loc.append((tip - 0.8 * ro + 0.8 * ro * math.cos(a), ri + ro * math.sin(a)))
+    return [(fx, lz - w / 2) for fx, lz in loc]
+
+
+def _foot_to_plan(g: Geometry, crank_deg: float, loc: list[tuple[float, float]]) -> list[V]:
+    """Foot frame -> plan (x, z) for the drive-side foot (heel_in_angle applied)."""
+    d = g.design
+    al = math.radians(d.f("heel_in_angle"))
+    px = d.f("crank_length") * math.cos(math.radians(crank_deg))
+    zc = shoe_z(g)
+    ca, sa = math.cos(al), math.sin(al)
+    return [V(px + fx * ca - lz * sa, zc + fx * sa + lz * ca) for fx, lz in loc]
+
+
 def toe_outline(g: Geometry, crank_deg: float = 0.0, n: int = 6) -> list[V]:
     """Plan-view (x, z) outline of the drive-side shoe's toe box, inner edge
     first, crank at ``crank_deg`` (0 = horizontal forward).
@@ -798,28 +825,18 @@ def toe_outline(g: Geometry, crank_deg: float = 0.0, n: int = 6) -> list[V]:
     The longest point (big toe) sits ``TOE_TIP_K`` of the shoe width in from
     the inner edge, ``toe_overhang`` ahead of the spindle; the inner and outer
     sides are quarter ellipses back to the full shoe width."""
+    return _foot_to_plan(g, crank_deg, _toe_local(g, n))
+
+
+def shoe_outline(g: Geometry, crank_deg: float = 0.0) -> list[V]:
+    """Closed plan-view (x, z) outline of the whole drive-side shoe."""
     d = g.design
-    cl = d.f("crank_length")
     w = d.f("shoe_width")
-    al = math.radians(d.f("heel_in_angle"))
-    px = cl * math.cos(math.radians(crank_deg))
-    zin = shoe_z(g) - w / 2
-    ri, ro = TOE_TIP_K * w, (1.0 - TOE_TIP_K) * w
-    tip = d.f("toe_overhang")
-    loc = []                                       # in the foot frame: (forward of spindle, lateral)
-    loc.append((tip - ri - 0.6 * ri, 0.0))         # inner edge, behind the toe box
-    for i in range(n + 1):                         # inner quarter: inner edge -> tip
-        a = math.pi / 2 * i / n
-        loc.append((tip - ri + ri * math.sin(a), ri - ri * math.cos(a)))
-    for i in range(1, n + 1):                      # outer quarter: tip -> outer edge
-        a = math.pi / 2 * i / n
-        loc.append((tip - 0.8 * ro + 0.8 * ro * math.cos(a), ri + ro * math.sin(a)))
-    zc = shoe_z(g)
-    out = []
-    for fx, lz in loc:
-        z = zin + lz - zc                          # lateral relative to the shoe centre-line
-        out.append(V(px + fx * math.cos(al) - z * math.sin(al), zc + fx * math.sin(al) + z * math.cos(al)))
-    return out
+    rh = HEEL_WIDTH_K * w
+    back = max(d.f("heel_behind_pedal") - rh, 0.0)
+    loc = _toe_local(g)
+    heel = [(-back - rh * math.sin(math.pi * i / 12), rh * math.cos(math.pi * i / 12)) for i in range(13)]
+    return _foot_to_plan(g, crank_deg, loc + heel)
 
 
 def toe_points(g: Geometry, crank_deg: float = 0.0) -> list[V3]:

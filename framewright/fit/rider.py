@@ -202,7 +202,8 @@ class _Position:
     crank_length: float
 
 
-def _position(d: Design) -> _Position:
+def position_params(d: Design) -> _Position:
+    """Pedalling/position settings of the design (cleat, foot angles, elbow bend ...)."""
     return _Position(d.f("hip_forward"), d.f("cleat_offset"), d.f("ankle_angle"), d.f("ankling"),
                      d.f("pedal_stack") if d.get("pedal_type", "clipless") != "none" else 0.0,
                      d.f("elbow_bend"), d.f("head_tilt"), d.f("crank_length"))
@@ -294,7 +295,7 @@ def leg_sweep(hip: V, a: dict[str, float], pos: _Position, shoulder: V | None = 
     return out
 
 
-def _arm_span(ua: float, fa: float, elbow: float) -> float:
+def arm_span(ua: float, fa: float, elbow: float) -> float:
     """Shoulder to grip distance for an interior elbow angle (degrees)."""
     return math.sqrt(max(ua * ua + fa * fa - 2 * ua * fa * cosd(elbow), 0.0))
 
@@ -305,13 +306,18 @@ def solve_pose(g: Geometry, crank_angle: float | None = None) -> Pose:
     ``crank_angle`` (drive-side crank, degrees CCW from forward) defaults to the
     design's display crank angle.  Joints: hip knee ankle heel ball toe pedal
     (near/drive side), the same with ``_far`` for the other leg, shoulder elbow
-    wrist hand neck head head_top.  Angles (degrees unless noted): knee_angle,
-    knee_extension_bdc, knee_flexion_bdc, knee_flexion_tdc, hip_angle,
-    hip_angle_min, ankle_angle, torso_angle, shoulder_angle, elbow_angle,
-    neck_angle, kops (mm), saddle_to_hand_reach (mm), crank_angle."""
+    wrist hand neck head head_top.  Angles (degrees unless noted; interior
+    joint angles, 180 = straight): knee_angle (shown crank position),
+    knee_extension_bdc (largest over a revolution), knee_flexion_bdc
+    (180 - extension), knee_flexion_tdc (smallest knee angle), hip_angle,
+    hip_angle_min (shoulder-hip-knee), ankle_angle (knee-ankle-ball),
+    torso_angle (hip to shoulder above horizontal), shoulder_angle
+    (hip-shoulder-elbow), elbow_angle, neck_angle, kops (knee joint centre
+    ahead of the pedal spindle at 3 o'clock, mm), saddle_to_hand_reach (mm),
+    crank_angle."""
     d = g.design
     a = anatomy(d)
-    pos = _position(d)
+    pos = position_params(d)
     pose = Pose()
     J, ang = pose.joints, pose.angles
     crank = d.f("crank_angle") if crank_angle is None else float(crank_angle)
@@ -322,9 +328,9 @@ def solve_pose(g: Geometry, crank_angle: float | None = None) -> Pose:
     W = g.p["hand"]
     t = a["torso_seg"]
     ua, fa = a["upper_arm"], a["forearm"] + a["hand"]
-    span_pref = _arm_span(ua, fa, 180.0 - pos.elbow_bend)
+    span_pref = arm_span(ua, fa, 180.0 - pos.elbow_bend)
     span_max = ua + fa
-    span_min = _arm_span(ua, fa, 30.0)
+    span_min = arm_span(ua, fa, 30.0)
     dHW = hip.dist(W)
     u_hw = (W - hip).norm()
     if abs(t - span_pref) <= dHW <= t + span_pref:

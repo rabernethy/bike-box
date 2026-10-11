@@ -103,10 +103,21 @@ class FitAdvisorDialog(QtWidgets.QDialog):
             self.recs = []
             self.desc.setText(f"Formula error: {exc}")
         units = self.doc.design["units"]
+        g = self.doc.geometry
+        try:
+            from ..fit.rider import solve_pose
+            angles = solve_pose(g).angles
+        except Exception:
+            angles = {}
+        current = dict(g.v)
+        current.update(angles)
+        current.setdefault("knee_extension", angles.get("knee_extension_bdc", float("nan")))
+        current.setdefault("max_standover", g.v.get("standover", float("nan")))
+        current.setdefault("bar_width", self.doc.design.f("bar_width"))
         self.table.setRowCount(len(self.recs))
         for r, rec in enumerate(self.recs):
             chk = QtWidgets.QTableWidgetItem()
-            if rec.param and P.has(rec.param):
+            if rec.param:
                 chk.setFlags(Qt.ItemFlag.ItemIsUserCheckable | Qt.ItemFlag.ItemIsEnabled)
                 chk.setCheckState(Qt.CheckState.Unchecked)
             else:
@@ -117,13 +128,15 @@ class FitAdvisorDialog(QtWidgets.QDialog):
             rng = ("" if rec.low is None or rec.high is None else
                    f"{fmt_value(rec.low, rec.unit, units)} – {fmt_value(rec.high, rec.unit, units)}")
             self.table.setItem(r, 3, QtWidgets.QTableWidgetItem(rng))
-            cur = ""
-            if rec.param and P.has(rec.param):
-                cur = fmt_value(float(self.doc.design[rec.param]), P.get(rec.param).unit, units) \
-                    if P.get(rec.param).kind == P.FLOAT else str(self.doc.design[rec.param])
-            elif rec.key in self.doc.geometry.v:
-                cur = fmt_value(self.doc.geometry.v[rec.key], rec.unit, units)
-            self.table.setItem(r, 4, QtWidgets.QTableWidgetItem(cur))
+            val = current.get(rec.key)
+            if val is None and rec.param and P.has(rec.param) and P.get(rec.param).kind == P.FLOAT:
+                val = self.doc.design.f(rec.param)
+            cur = fmt_value(float(val), rec.unit, units) if isinstance(val, (int, float)) else ""
+            item = QtWidgets.QTableWidgetItem(cur)
+            if isinstance(val, (int, float)) and rec.low is not None and rec.high is not None and val == val:
+                ok = rec.low - 1e-6 <= val <= rec.high + 1e-6
+                item.setForeground(QtGui.QBrush(QtGui.QColor("#1d8a3a" if ok else "#c77700")))
+            self.table.setItem(r, 4, item)
         try:
             rows = self.A.fit_report(self.doc.geometry)
         except Exception as exc:
