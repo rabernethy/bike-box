@@ -467,15 +467,23 @@ def render_sheet(painter, sheet: Sheet, dpi: float) -> None:
     QtSceneRenderer(painter, model_xf, sheet.scale * ppm, ppm).draw(sheet.bike)
 
 
-def _pdf_writer(path, sheet: Sheet):
+def page_layout(sheet: Sheet):
+    """QPageLayout for a sheet.  QPageSize must be given in portrait form; the
+    orientation then turns it (passing landscape dimensions *and* Landscape
+    would rotate the page twice)."""
     from ..qt import QtCore, QtGui
+    orient = (QtGui.QPageLayout.Orientation.Landscape if sheet.page_w > sheet.page_h
+              else QtGui.QPageLayout.Orientation.Portrait)
+    size = QtGui.QPageSize(QtCore.QSizeF(min(sheet.page_w, sheet.page_h), max(sheet.page_w, sheet.page_h)),
+                           QtGui.QPageSize.Unit.Millimeter)
+    return QtGui.QPageLayout(size, orient, QtCore.QMarginsF(0, 0, 0, 0))
+
+
+def _pdf_writer(path, sheet: Sheet):
+    from ..qt import QtGui
     w = QtGui.QPdfWriter(str(path))
     w.setResolution(sheet.opts.dpi)
-    orient = (QtGui.QPageLayout.Orientation.Landscape if sheet.page_w >= sheet.page_h
-              else QtGui.QPageLayout.Orientation.Portrait)
-    size = QtGui.QPageSize(QtCore.QSizeF(sheet.page_w, sheet.page_h), QtGui.QPageSize.Unit.Millimeter)
-    layout = QtGui.QPageLayout(size, orient, QtCore.QMarginsF(0, 0, 0, 0))
-    w.setPageLayout(layout)
+    w.setPageLayout(page_layout(sheet))
     return w
 
 
@@ -498,11 +506,7 @@ def save_sheets_pdf(sheets: Sequence[Sheet], path) -> Path:
     try:
         for i, sheet in enumerate(sheets):
             if i:
-                orient = (QtGui.QPageLayout.Orientation.Landscape if sheet.page_w >= sheet.page_h
-                          else QtGui.QPageLayout.Orientation.Portrait)
-                size = QtGui.QPageSize(QtCore.QSizeF(sheet.page_w, sheet.page_h),
-                                       QtGui.QPageSize.Unit.Millimeter)
-                writer.setPageLayout(QtGui.QPageLayout(size, orient, QtCore.QMarginsF(0, 0, 0, 0)))
+                writer.setPageLayout(page_layout(sheet))
                 writer.newPage()
             render_sheet(painter, sheet, writer.resolution())
     finally:
@@ -551,10 +555,7 @@ def print_sheet(design: Design, printer, opts: SheetOptions | None = None) -> No
     opts = opts or SheetOptions()
     sheet = build_sheet(design, opts=opts)
     try:
-        orient = (QtGui.QPageLayout.Orientation.Landscape if sheet.page_w >= sheet.page_h
-                  else QtGui.QPageLayout.Orientation.Portrait)
-        size = QtGui.QPageSize(QtCore.QSizeF(sheet.page_w, sheet.page_h), QtGui.QPageSize.Unit.Millimeter)
-        printer.setPageLayout(QtGui.QPageLayout(size, orient, QtCore.QMarginsF(0, 0, 0, 0)))
+        printer.setPageLayout(page_layout(sheet))
     except Exception:
         pass
     painter = QtGui.QPainter(printer)

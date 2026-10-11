@@ -436,11 +436,17 @@ def _line_dist(p: V3, a: V3, d: V3) -> float:
     return (w - d * w.dot(d)).length()
 
 
+def drive_bb(g: Geometry) -> V:
+    """Centre of the BB the chainstays and chainrings belong to (the stoker BB of a tandem)."""
+    return g.p.get("stoker_bb", V(0.0, 0.0))
+
+
 def receiver_axis(g: Geometry, join: str | None) -> tuple[V3, V3, float] | None:
     """(point, unit axis, radius) of the tube a stay end meets."""
     d = g.design
-    if join == "bb":
-        return V3(0, 0, 0), V3(0, 0, 1), d.f("bb_shell_od") / 2
+    if join in ("bb", "bb2"):
+        c = drive_bb(g) if join == "bb2" else V(0.0, 0.0)
+        return V3(c.x, c.y, 0), V3(0, 0, 1), d.f("bb_shell_od") / 2
     tb = g.tubes.get(join or "")
     if tb is None:
         return None
@@ -496,13 +502,14 @@ def tube_path(g: Geometry, name: str) -> Path3 | None:
     pts = _side_pts(tb)
     path = Path3(name, pts, lambda t: 0.0, tb.od_at, tb.w_at, label=tb.label)
     t0 = 0.0
-    if tb.join_a == "bb":
+    if tb.join_a in ("bb", "bb2"):
         R = g.design.f("bb_shell_od") / 2
+        c = drive_bb(g) if tb.join_a == "bb2" else V(0.0, 0.0)
         lo, hi = 0.0, 0.5
         for _ in range(40):
             mid = (lo + hi) / 2
             p = path.point(mid)
-            if math.hypot(p.x, p.y) < R:
+            if math.hypot(p.x - c.x, p.y - c.y) < R:
                 lo = mid
             else:
                 hi = mid
@@ -592,10 +599,11 @@ def tube_contact(path: Path3, sdf: SdfFn, t0: float | None = None, t1: float | N
     return Contact(val, P3 - gr * h, P3 - gr * dist, best[1])
 
 
-def _disc_sdf(p: V3, z0: float, R: float, ht: float) -> tuple[float, V3]:
-    """Signed distance to a disc (radius R, half-thickness ht) in the plane z = z0, centred on the BB axis."""
-    rho = math.hypot(p.x, p.y)
-    ex, ey = (p.x / rho, p.y / rho) if rho > 1e-9 else (1.0, 0.0)
+def _disc_sdf(p: V3, z0: float, R: float, ht: float, c: V = V(0.0, 0.0)) -> tuple[float, V3]:
+    """Signed distance to a disc (radius R, half-thickness ht) in the plane z = z0, centred on the BB axis at ``c``."""
+    px, py = p.x - c.x, p.y - c.y
+    rho = math.hypot(px, py)
+    ex, ey = (px / rho, py / rho) if rho > 1e-9 else (1.0, 0.0)
     dzs = p.z - z0
     sz = 1.0 if dzs >= 0 else -1.0
     dr, dz = rho - R, abs(dzs) - ht
@@ -651,11 +659,12 @@ def crank_contact(g: Geometry, cs: Path3) -> Contact:
     """Crank arm inner face (swept through a full turn) to the drive-side chainstay."""
     cl = g.design.f("crank_length")
     z0, z1 = crank_faces(g)
+    bb = drive_bb(g)
     best = Contact(INF)
     ez = V3(0, 0, 1)
     for t in cs.ts(120):
         P3, T, e1, e2, hd, hw = cs.frame(t)
-        rho = math.hypot(P3.x, P3.y)
+        rho = math.hypot(P3.x - bb.x, P3.y - bb.y)
         if rho > cl + 12.0:
             continue
         zc = z0 + (z1 - z0) * min(rho, cl) / max(cl, 1e-9)
@@ -743,13 +752,15 @@ def heel_contact(g: Geometry, paths: list[Path3]) -> Contact:
     al = math.radians(d.f("heel_in_angle"))
     hdx = -back * math.cos(al)
     hz = shoe_z(g) - back * math.sin(al)
+    bb = drive_bb(g)
     samples = []
     for path in paths:
         for t in path.ts(36):
             samples.append((path, t) + path.frame(t))
 
     def at(theta: float, keep: bool = False):
-        px, py = cl * math.cos(math.radians(theta)), cl * math.sin(math.radians(theta))
+        px = bb.x + cl * math.cos(math.radians(theta))
+        py = bb.y + cl * math.sin(math.radians(theta))
         cx, y0 = px + hdx, py + stack
         y1 = y0 + HEEL_COUNTER_H
         best = (INF, None)
@@ -808,11 +819,11 @@ def _toe_local(g: Geometry, n: int = 6) -> list[tuple[float, float]]:
     return [(fx, lz - w / 2) for fx, lz in loc]
 
 
-def _foot_to_plan(g: Geometry, crank_deg: float, loc: list[tuple[float, float]]) -> list[V]:
+def _foot_to_plan(g: Geometry, crank_deg: float, loc: list[tuple[float, float]], bb_x: float = 0.0) -> list[V]:
     """Foot frame -> plan (x, z) for the drive-side foot (heel_in_angle applied)."""
     d = g.design
     al = math.radians(d.f("heel_in_angle"))
-    px = d.f("crank_length") * math.cos(math.radians(crank_deg))
+    px = bb_x + d.f("crank_length") * math.cos(math.radians(crank_deg))
     zc = shoe_z(g)
     ca, sa = math.cos(al), math.sin(al)
     return [V(px + fx * ca - lz * sa, zc + fx * sa + lz * ca) for fx, lz in loc]
@@ -828,15 +839,15 @@ def toe_outline(g: Geometry, crank_deg: float = 0.0, n: int = 6) -> list[V]:
     return _foot_to_plan(g, crank_deg, _toe_local(g, n))
 
 
-def shoe_outline(g: Geometry, crank_deg: float = 0.0) -> list[V]:
-    """Closed plan-view (x, z) outline of the whole drive-side shoe."""
+def shoe_outline(g: Geometry, crank_deg: float = 0.0, bb_x: float = 0.0) -> list[V]:
+    """Closed plan-view (x, z) outline of the whole drive-side shoe (crank centre at x = ``bb_x``)."""
     d = g.design
     w = d.f("shoe_width")
     rh = HEEL_WIDTH_K * w
     back = max(d.f("heel_behind_pedal") - rh, 0.0)
     loc = _toe_local(g)
     heel = [(-back - rh * math.sin(math.pi * i / 12), rh * math.cos(math.pi * i / 12)) for i in range(13)]
-    return _foot_to_plan(g, crank_deg, loc + heel)
+    return _foot_to_plan(g, crank_deg, loc + heel, bb_x)
 
 
 def toe_points(g: Geometry, crank_deg: float = 0.0) -> list[V3]:
@@ -943,18 +954,26 @@ class LeanResult:
     tire_pts: list[tuple[float, float]]     # rear tire bottom section (zeta, eta) in the BB plane
     pedal_pts: list[tuple[float, float]]    # pedal corners (zeta, eta)
     wf: float                       # front-wheel weight of the roll-line interpolation
+    bb: V = field(default_factory=V)  # BB the result refers to (eta is relative to it)
 
 
-def lean_solution(g: Geometry) -> LeanResult:
+def lean_solution(g: Geometry, bb: V | None = None) -> LeanResult:
     """Pedal-strike lean angle with the tires rolling on their sections.
-    Rear-view coordinates (zeta lateral, eta up) at the BB; leaning to +Z."""
+    Rear-view coordinates (zeta lateral, eta up) at the BB ``bb`` (default:
+    the lowest-angle BB, i.e. the stoker BB of a tandem if that is worse);
+    leaning to +Z."""
+    if bb is None:
+        cands = [lean_solution(g, V(0.0, 0.0))]
+        if "stoker_bb" in g.p:
+            cands.append(lean_solution(g, g.p["stoker_bb"]))
+        return min(cands, key=lambda r: r.angle)
     d = g.design
     rear, front = tire_model(g, "rear"), tire_model(g, "front")
     xr, xf = rear.cx, front.cx
-    wf = _clamp((0.0 - xr) / (xf - xr), 0.0, 1.0) if abs(xf - xr) > 1e-9 else 0.5
+    wf = _clamp((bb.x - xr) / (xf - xr), 0.0, 1.0) if abs(xf - xr) > 1e-9 else 0.5
 
     def bottom(tm: TireModel):
-        return [(u, tm.cy - (tm.rc + v)) for u, v in tm.outer_half(96)]
+        return [(u, tm.cy - bb.y - (tm.rc + v)) for u, v in tm.outer_half(96)]
 
     rp, fp = bottom(rear), bottom(front)
     cl = d.f("crank_length")
@@ -970,6 +989,7 @@ def lean_solution(g: Geometry) -> LeanResult:
         return low(pedal, phi) - ((1 - wf) * low(rp, phi) + wf * low(fp, phi))
 
     pivot = (1 - wf) * min(e for _, e in rp) + wf * min(e for _, e in fp)
+    result_bb = bb
     if h(0.0) <= 0:
         ang = 0.0
     elif h(math.radians(89.9)) > 0:
@@ -983,7 +1003,7 @@ def lean_solution(g: Geometry) -> LeanResult:
             else:
                 hi = mid
         ang = math.degrees((lo + hi) / 2)
-    return LeanResult(ang, pivot, rp, pedal, wf)
+    return LeanResult(ang, pivot, rp, pedal, wf, result_bb)
 
 
 # --------------------------------------------------------------------------
@@ -1074,7 +1094,8 @@ LABELS: dict[str, tuple[str, str]] = {
     "cs_bridge_length": ("Chainstay bridge length (inside)", "mm"),
 }
 for _n, _lab in (("cs", "Chainstay"), ("ss", "Seat stay")):
-    for _k, _l, _u in (("true_length", "true length", "mm"), ("visible_length", "cut length (centre-line)", "mm"),
+    for _k, _l, _u in (("true_length", "true length", "mm"), ("chord", "chord (c-c)", "mm"),
+                       ("visible_length", "cut length (centre-line)", "mm"),
                        ("side_angle", "side-view angle", "deg"), ("top_angle", "top-view angle", "deg"),
                        ("rear_angle", "rear-view angle", "deg"), ("plane_angle", "out-of-plane angle", "deg"),
                        ("mitre_angle", "mitre angle", "deg"), ("phase", "end phase", "deg"),
@@ -1099,8 +1120,9 @@ def clearance_details(g: Geometry, use_cache: bool = True) -> dict[str, Contact]
         out["cs_tire"] = tube_contact(cs, rear_sdf)
         rings = chainrings(g)
         best = Contact(INF)
+        bbc = drive_bb(g)
         for ring in rings:
-            c = tube_contact(cs, lambda p, r=ring: _disc_sdf(p, r.z, r.r_out, r.half_t))
+            c = tube_contact(cs, lambda p, r=ring: _disc_sdf(p, r.z, r.r_out, r.half_t, bbc))
             c.extra["teeth"] = ring.teeth
             if c.value < best.value:
                 best = c
@@ -1126,7 +1148,7 @@ def clearance_details(g: Geometry, use_cache: bool = True) -> dict[str, Contact]
     else:
         out["ss_tire"] = Contact.none()
 
-    st = tube_path(g, "st")
+    st = tube_path(g, "st2" if "st2" in g.tubes else "st")
     out["st_tire"] = tube_contact(st, rear_sdf) if st is not None else Contact.none()
 
     out["fork_crown_tire"] = crown_contact(g, front)

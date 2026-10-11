@@ -297,3 +297,23 @@ def test_bulk_export(qapp, tmp_path):
     assert sum(1 for w in written if Path(w).suffix == ".csv") == 1
     assert sum(1 for w in written if Path(w).suffix == ".pdf") == 2
     assert all(Path(w).exists() for w in written)
+
+
+def _mediaboxes(path):
+    import re
+    data = open(path, "rb").read().decode("latin-1")
+    return [tuple(float(x) for x in m.groups()) for m in
+            re.finditer(r"/MediaBox \[\s*0 0 ([0-9.]+) ([0-9.]+)\s*\]", data)]
+
+
+@pytest.mark.parametrize("page,landscape", [("A3", True), ("A4", False), ("Letter", True)])
+def test_pdf_page_orientation(qapp, tmp_path, page, landscape):
+    """Regression: landscape sheets must not be rotated twice onto a portrait page."""
+    from framewright.export.drawing import PAGE_SIZES, SheetOptions, save_pdf
+    from framewright.model.design import Design
+    p = tmp_path / "o.pdf"
+    save_pdf(Design(), p, SheetOptions(page=page, landscape=landscape))
+    (w, h), = _mediaboxes(p)
+    assert (w > h) == landscape
+    long_mm = max(PAGE_SIZES[page]) / 25.4 * 72
+    assert abs(max(w, h) - long_mm) < 2

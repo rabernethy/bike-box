@@ -460,13 +460,15 @@ def top_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
            "frame", Z_FRAME + 2, True, "tube:ht")
     W = d.f("bb_shell_width")
     R = d.f("bb_shell_od") / 2
-    v.poly(_rect(-R, -W / 2, R, W / 2), fst, "frame", Z_FRAME + 2, True, "tube:bb")
+    bbx = CL.drive_bb(g).x
+    for x_ in sorted({0.0, bbx}):
+        v.poly(_rect(x_ - R, -W / 2, x_ + R, W / 2), fst, "frame", Z_FRAME + 2, True, "tube:bb")
 
     # drivetrain: chainrings, cassette, cranks, pedals
     rings = CL.chainrings(g)
     rst = v.comp_st("#9c9c9c")
     for ring in rings:
-        v.poly(_rect(-ring.r_out, -(ring.z + ring.half_t), ring.r_out, -(ring.z - ring.half_t)), rst,
+        v.poly(_rect(bbx - ring.r_out, -(ring.z + ring.half_t), bbx + ring.r_out, -(ring.z - ring.half_t)), rst,
                "drivetrain", Z_COMPONENT, True, "chainring")
     cogs = sorted(d.lst("cogs") or [16])
     pitch = d.f("belt_pitch") if d["drive_type"] == "belt" else d.f("chain_pitch")
@@ -483,8 +485,8 @@ def top_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     hc = v.det.get("heel")
     heel_deg = hc.extra.get("crank_deg", 180.0) if hc is not None and hc.extra else 180.0
     xd = cl * math.cos(math.radians(heel_deg))
-    for s, xp in ((1, xd), (-1, -xd)):
-        arm = [V(0, -s * z0), V(xp, -s * z1), V(xp, -s * q2), V(0, -s * (z0 + th))]
+    for s, xp in ((1, bbx + xd), (-1, bbx - xd)):
+        arm = [V(bbx, -s * z0), V(xp, -s * z1), V(xp, -s * q2), V(bbx, -s * (z0 + th))]
         v.poly(arm, crank_st, "drivetrain", Z_COMPONENT + 2, True, "crank")
         if d["pedal_type"] != "none":
             v.poly(_rect(xp - 35, -s * q2, xp + 35, -s * (q2 + d.f("pedal_width"))), v.comp_st("#3a3a3a"),
@@ -492,14 +494,14 @@ def top_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
 
     # shoe at the heel-critical crank angle, heel path
     bad_heel = v.problem("heel")
-    shoe = CL.shoe_outline(g, heel_deg)
+    shoe = CL.shoe_outline(g, heel_deg, bbx)
     v.poly([TP(V3(p.x, 0, p.y)) for p in shoe], Style(PROBLEM if bad_heel else v.t.outline, 0.3, None,
                                                        dash=(2.5, 1.5)), "analysis", Z_OVER, True, "shoe")
     rh = CL.HEEL_WIDTH_K * d.f("shoe_width")
     back = d.f("heel_behind_pedal") - rh
     al = math.radians(d.f("heel_in_angle"))
     zh = CL.shoe_z(g) - back * math.sin(al) - rh * math.cos(al)
-    hx = -back * math.cos(al)
+    hx = bbx - back * math.cos(al)
     v.poly([V(-cl + hx - rh, -zh), V(cl + hx + rh, -zh)], Style(PROBLEM if bad_heel else GOOD, 0.3, None,
                                                                 dash=(4.0, 1.5)), "analysis", Z_OVER, False,
            "heel_path")
@@ -534,12 +536,12 @@ def top_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
         pb = cs.point(cs.vis[1])
         v.lin(V(pb.x, -abs(pb.z)), V(pb.x, abs(pb.z)), -45, f"CS c-c {fmt_len(2 * abs(pb.z), v.units)}",
               "vertical")
-    v.lin(V(R, -W / 2), V(R, W / 2), 12, f"shell {fmt_len(W, v.units)}", "vertical")
+    v.lin(V(bbx + R, -W / 2), V(bbx + R, W / 2), 12, f"shell {fmt_len(W, v.units)}", "vertical")
     big = rings[0] if rings else None
     if big is not None:
         mid = sum(r.z for r in rings) / len(rings)
-        v.lin(V(0, 0), V(0, -mid), big.r_out + 18, f"chainline {fmt_len(mid, v.units)}", "vertical")
-    xp = abs(xd)
+        v.lin(V(bbx, 0), V(bbx, -mid), big.r_out + 18, f"chainline {fmt_len(mid, v.units)}", "vertical")
+    xp = bbx + abs(xd)
     v.lin(V(xp, -q2), V(xp, q2), 70, f"Q {fmt_len(2 * q2, v.units)}", "vertical")
     fax = g.p["front_axle"]
     fw = g.wheels["front"]
@@ -577,12 +579,14 @@ def rear_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     # far parts: BB shell, seat tube, chainrings
     fst = v.frame_st()
     W, R = d.f("bb_shell_width"), d.f("bb_shell_od") / 2
-    v.poly(_rect(-W / 2, -R, W / 2, R), fst, "frame", Z_BACK, True, "tube:bb")
-    st = g.tubes.get("st")
+    by = CL.drive_bb(g).y
+    v.poly(_rect(-W / 2, by - R, W / 2, by + R), fst, "frame", Z_BACK, True, "tube:bb")
+    st = g.tubes.get("st2") or g.tubes.get("st")
     if st is not None:
-        v.poly(_rect(-st.w_b / 2, R, st.w_b / 2, g.p["st_top"].y), fst, "frame", Z_BACK, True, "tube:st")
+        v.poly(_rect(-st.w_b / 2, by + R, st.w_b / 2, st.b.y), fst, "frame", Z_BACK, True, "tube:st")
     for ring in CL.chainrings(g):
-        v.poly(_rect(ring.z - ring.half_t, -ring.r_out, ring.z + ring.half_t, ring.r_out), v.comp_st("#9c9c9c"),
+        v.poly(_rect(ring.z - ring.half_t, by - ring.r_out, ring.z + ring.half_t, by + ring.r_out),
+               v.comp_st("#9c9c9c"),
                "drivetrain", Z_BACK + 1, True, "chainring")
     _hub(v, "rear", lambda lat, rad: V(lat, cy + rad))
 
@@ -619,7 +623,7 @@ def rear_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     for s in (1, -1):
         v.poly(_rect(s * half, cy - 22, s * (half + 6), cy + 26), v.comp_st("#8a8a8a"), "frame", Z_FRAME + 1, True,
                "dropout")
-    v.centre([V(0, g.ground_y - 10), V(0, g.p["st_top"].y + 20)])
+    v.centre([V(0, g.ground_y - 10), V(0, (st.b.y if st is not None else cy + tm.outer_r) + 20)])
     v.mark(V(0, cy))
 
     # dimensions
@@ -638,7 +642,7 @@ def rear_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     rings = CL.chainrings(g)
     if rings:
         mid = sum(r.z for r in rings) / len(rings)
-        v.lin(V(0, -rings[0].r_out), V(mid, -rings[0].r_out), -16, f"chainline {fmt_len(mid, v.units)}",
+        v.lin(V(0, by - rings[0].r_out), V(mid, by - rings[0].r_out), -16, f"chainline {fmt_len(mid, v.units)}",
               "horizontal")
     x_right = _prim_bounds(sc.prims[start:])[2] + 2.0 * v.size
     v.callouts_column([("ss_tire", "SS-tire"), ("ss_bridge_tire", "bridge-tire"), ("cs_tire", "CS-tire"),
@@ -745,22 +749,25 @@ def lean_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     L = CL.lean_solution(g)
     phi = math.radians(L.angle)
     tm = CL.tire_model(g, "rear")
-    cy = tm.cy
+    bb = L.bb                              # coordinates below are relative to this BB
+    cy = tm.cy - bb.y
+    gy = g.ground_y - bb.y
     cl = d.f("crank_length")
     q2 = d.f("q_factor") / 2
     pw, pt = d.f("pedal_width"), d.f("pedal_thickness")
     z0, z1 = CL.crank_faces(g)
     th = d.f("crank_arm_thickness")
     W, R = d.f("bb_shell_width"), d.f("bb_shell_od") / 2
-    top_y = min(g.p["st_top"].y, cy + tm.outer_r + 40)
+    st_name = "st2" if "st2" in g.tubes else "st"
+    st_tb = g.tubes.get(st_name)
+    top_y = min((st_tb.b.y - bb.y) if st_tb is not None else 400.0, cy + tm.outer_r + 40)
 
     def parts() -> list[tuple[list[V], str, str]]:
         """(polygon in upright rear-view coords, kind, tag)."""
         out = [(_tire_sil(tm, lambda q: V(q.y, cy + q.x)), "tire", "tire:rear"),
                (_rect(-W / 2, -R, W / 2, R), "frame", "tube:bb")]
-        st = g.tubes.get("st")
-        if st is not None:
-            out.append((_rect(-st.w_b / 2, R, st.w_b / 2, top_y), "frame", "tube:st"))
+        if st_tb is not None:
+            out.append((_rect(-st_tb.w_b / 2, R, st_tb.w_b / 2, top_y), "frame", "tube:st"))
         for ring in CL.chainrings(g):
             out.append((_rect(ring.z - ring.half_t, -ring.r_out, ring.z + ring.half_t, ring.r_out), "comp",
                         "chainring"))
@@ -776,15 +783,15 @@ def lean_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     # translation: the roll line (interpolated contact height) lands on the ground, rear contact at zeta 0
     rlow = min((rot(V(z, e)) for z, e in L.tire_pts), key=lambda p: p.y)
     ft = CL.tire_model(g, "front")
-    flow = min(rot(V(u, ft.cy - (ft.rc + vv))).y for u, vv in ft.outer_half(96))
+    flow = min(rot(V(u, ft.cy - bb.y - (ft.rc + vv))).y for u, vv in ft.outer_half(96))
     roll = (1 - L.wf) * rlow.y + L.wf * flow
-    shift = V(-rlow.x, g.ground_y - roll)
+    shift = V(-rlow.x, gy - roll)
     lean = lambda p: rot(p) + shift
     gx = max(cl + 120, tm.outer_r * 0.6)
-    sc.line(V(-gx, g.ground_y), V(gx + q2, g.ground_y), Style(t.outline, t.width * 0.8), "ground", Z_GROUND)
+    sc.line(V(-gx, gy), V(gx + q2, gy), Style(t.outline, t.width * 0.8), "ground", Z_GROUND)
     x = -gx
     while x < gx + q2:
-        sc.line(V(x, g.ground_y), V(x - 10, g.ground_y - 10), Style(t.outline, t.width * 0.4), "ground", Z_GROUND)
+        sc.line(V(x, gy), V(x - 10, gy - 10), Style(t.outline, t.width * 0.4), "ground", Z_GROUND)
         x += 20
     styles = {"tire": v.tire_st(), "frame": v.frame_st(), "comp": v.comp_st("#9c9c9c"),
               "crank": v.comp_st("#2b2b2b"), "pedal": v.comp_st("#3a3a3a")}
@@ -794,13 +801,13 @@ def lean_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
         v.poly([lean(p) for p in pts], styles[kind], "frame" if kind in ("frame", "tire") else "drivetrain",
                zs[kind], True, tag)
     # centre planes
-    v.centre([V(0, g.ground_y), V(0, top_y)])
-    contact = V(0.0, g.ground_y)          # rear tire contact after the lean
+    v.centre([V(0, gy), V(0, top_y)])
+    contact = V(0.0, gy)          # rear tire contact after the lean
     plane_top = lean(V(0, top_y))
     plane_bot = lean(V(0, cy - tm.outer_r))
     v.centre([plane_bot, plane_top])
     bad = v.problem("lean_angle_3d")
-    rad = 0.55 * (top_y - g.ground_y)
+    rad = 0.55 * (top_y - gy)
     v.ang(contact, 90.0 - L.angle, L.angle, rad, f"lean {fmt_angle(L.angle)}", bad, "dim:lean")
     # pedal strike point and upright pedal clearance
     strike = lean(V(q2 + pw, -cl - pt / 2))
