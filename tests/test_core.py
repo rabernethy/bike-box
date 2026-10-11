@@ -197,3 +197,31 @@ def test_svg_uses_generic_font_fallback(qapp, design):
     from framewright.render.bike_scene import build_scene
     s = scene_to_svg(build_scene(solve(design)))
     assert 'font-family="sans-serif"' in s
+
+
+def test_head_tube_stickout_mode(design):
+    from framewright.geometry.modes import mode_switch_values
+    g0 = solve(design)
+    design.update(mode_switch_values(design, "ht_junction_mode", "stickout"))
+    g1 = solve(design)
+    assert g1.p["tt_ht"].dist(g0.p["tt_ht"]) < 1e-6 and g1.p["dt_ht"].dist(g0.p["dt_ht"]) < 1e-6
+    design.set("ht_top_stickout", 10.0)
+    design.set("ht_bottom_stickout", 12.0)
+    g2 = solve(design)
+    assert close(g2.v["ht_top_stickout"], 10.0, 1e-6) and close(g2.v["ht_bottom_stickout"], 12.0, 1e-6)
+    assert g2.v["tt_ht_offset"] > 10.0 + design.f("tt_od") / 2      # centre-line sits below the edge
+
+
+def test_extra_tube_surface_attachment(design):
+    from framewright.geometry.vec import point_line_distance
+    design.extras["extra_tubes"] = [
+        {"name": "lat", "a": {"tube": "ht", "s": 40, "surface": "above"}, "b": "stay_node", "od": 19},
+        {"name": "top", "a": {"tube": "tt", "pos": 0.2, "surface": "above"},
+         "b": {"tube": "tt", "s": 50, "from": "b", "surface": "above", "side": 5}, "od": 25.4}]
+    g = solve(design)
+    ht, tt = g.tubes["ht"], g.tubes["tt"]
+    lat, top = g.tubes["x0_lat"], g.tubes["x1_top"]
+    assert close(abs(point_line_distance(lat.a, ht.a, ht.b - ht.a)), ht.od_at(40 / ht.length) / 2 + 9.5, 1e-6)
+    assert close(abs(point_line_distance(top.a, tt.a, tt.b - tt.a)), tt.od_b / 2 + 12.7, 1e-6)
+    assert close(abs(point_line_distance(top.b, tt.a, tt.b - tt.a)), tt.od_b / 2 + 12.7 + 5, 1e-6)
+    assert lat.join_a == "ht" and top.join_a == "tt"

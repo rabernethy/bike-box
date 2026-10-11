@@ -144,6 +144,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.tool_group = QtGui.QActionGroup(self)
         self.tool_actions = {}
         for key, text, sc in (("select", "Select / drag", "Esc"), ("measure", "Measure", "M"),
+                              ("add_tube", "Add tube", "T"),
                               ("user_dim", "Add user dimension", "D"), ("user_angle", "Add angle dimension", "Shift+D"),
                               ("note", "Add note", "N"), ("calibrate", "Calibrate photo", None)):
             a = A(text, lambda _c=False, k=key: self.set_tool(k), sc, checkable=True)
@@ -189,7 +190,16 @@ class MainWindow(QtWidgets.QMainWindow):
         m.addSeparator()
         m.addAction("Snapshots…", "Ctrl+Shift+S", self.snapshots)
         m.addAction("Title block…", self.title_block)
-        m.addAction("Extra tubes…", self.extra_tubes)
+        xt = m.addMenu("Extra tubes")
+        xt.addAction(self.tool_actions["add_tube"])
+        presets = xt.addMenu("Add preset")
+        from .extra_tubes import PRESETS
+        for title, tip, tubes in PRESETS:
+            a_ = presets.addAction(title, lambda t=tubes, n=title: self.doc() and self._add_preset(t, n))
+            a_.setStatusTip(tip)
+            a_.setToolTip(tip)
+        presets.setToolTipsVisible(True)
+        xt.addAction("Edit all extra tubes…", self.extra_tubes)
         m.addAction("Decals & logos…", self.decals)
         m.addAction("Parts libraries…", "Ctrl+L", self.library_dialog)
         m.addSeparator()
@@ -231,7 +241,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.view_menu = m
 
         m = mb.addMenu("&Tools")
-        for k in ("select", "measure", "user_dim", "user_angle", "note", "calibrate"):
+        for k in ("select", "measure", "add_tube", "user_dim", "user_angle", "note", "calibrate"):
             m.addAction(self.tool_actions[k])
         m.addSeparator()
         m.addAction("Fit advisor…", "Ctrl+Shift+F", self.fit_advisor)
@@ -262,7 +272,7 @@ class MainWindow(QtWidgets.QMainWindow):
         tb2 = self.addToolBar("Tools")
         tb2.setObjectName("tools_toolbar")
         tb2.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextOnly)
-        for k in ("select", "measure", "user_dim", "user_angle", "note"):
+        for k in ("select", "measure", "add_tube", "user_dim", "user_angle", "note"):
             tb2.addAction(self.tool_actions[k])
         tb2.addSeparator()
         for text, slot in (("Dimensions", self.dimensions_dialog), ("Compare", self.compare),
@@ -583,6 +593,11 @@ class MainWindow(QtWidgets.QMainWindow):
     def extra_tubes(self):
         if self.doc():
             D.ExtraTubesDialog(self.doc(), self).exec()
+
+    def _add_preset(self, tubes, name):
+        from .extra_tubes import add_tubes
+        add_tubes(self.doc(), tubes, f"Add {name.lower()}")
+        self.status.showMessage(f"Added {name.lower()} — right-click or double-click it to edit", 6000)
 
     def decals(self):
         if self.doc():

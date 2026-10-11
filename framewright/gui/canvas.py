@@ -26,6 +26,10 @@ HANDLES = [
     ("st_top", "Seat tube top (drag: seat tube length)"),
     ("front_axle", "Front axle (drag: front centre)"),
     ("pedal", "Pedal (drag: crank angle)"),
+    ("tt_ht", "Top tube / head tube junction (drag along the head tube)"),
+    ("dt_ht", "Down tube / head tube junction (drag along the head tube)"),
+    ("tt_st", "Top tube / seat tube junction (drag along the seat tube)"),
+    ("ss_top", "Seat stay junction (drag along the tube it attaches to)"),
 ]
 _drag_ids = itertools.count(1000)
 
@@ -153,6 +157,14 @@ class BikeCanvas(QtWidgets.QWidget):
     def _paint_overlay(self, p: QtGui.QPainter) -> None:
         g = self._geom or self.doc.geometry
         if self.show_handles and self.tool == "select":
+            for name, q in self._extra_ends():
+                c = self.to_device(q)
+                hot = name == self._hover or (self._drag and self._drag.get("point") == name)
+                p.setPen(QtGui.QPen(QtGui.QColor("#ff8c00" if hot else "#00a060"), 1.6))
+                p.setBrush(QtGui.QBrush(QtGui.QColor(0, 160, 96, 60)))
+                r = 7 if hot else 5
+                p.drawPolygon(QtGui.QPolygonF([c + QPointF(0, -r), c + QPointF(r, 0), c + QPointF(0, r),
+                                               c + QPointF(-r, 0)]))
             for name, _ in HANDLES:
                 if name not in g.p:
                     continue
@@ -162,6 +174,19 @@ class BikeCanvas(QtWidgets.QWidget):
                 p.setBrush(QtGui.QBrush(QtGui.QColor(255, 140, 0, 110) if hot else QtGui.QColor(30, 120, 255, 45)))
                 r = 7 if hot else 5
                 p.drawEllipse(c, r, r)
+        if self.tool == "add_tube":
+            q, _spec, label = self._snap_spec(self._mouse_model)
+            p.setPen(QtGui.QPen(QtGui.QColor("#00a060"), 1.5))
+            p.setBrush(Qt.BrushStyle.NoBrush)
+            c = self.to_device(q)
+            p.drawEllipse(c, 5, 5)
+            p.drawText(c + QPointF(8, 14), label)
+            if self._tool_pts:
+                pen = QtGui.QPen(QtGui.QColor(0, 160, 96, 140), max(25.4 * self.zoom, 2))
+                pen.setCapStyle(Qt.PenCapStyle.RoundCap)
+                p.setPen(pen)
+                p.drawLine(self.to_device(self._tool_pts[0]), c)
+            return
         if self.tool in ("measure", "user_dim", "user_angle", "calibrate") and self._tool_pts:
             pen = QtGui.QPen(QtGui.QColor("#e0006e"), 1.4, Qt.PenStyle.DashLine)
             p.setPen(pen)
@@ -187,14 +212,30 @@ class BikeCanvas(QtWidgets.QWidget):
                 p.drawText(c + QPointF(8, 14), name)
 
     # -- hit testing -------------------------------------------------------------------
+    def _extra_ends(self):
+        """(handle name, point) for both ends of every extra tube."""
+        g = self.doc.geometry
+        out = []
+        for name, tb in g.tubes.items():
+            if tb.kind == "extra" and name.startswith("x"):
+                from .extra_tubes import tube_index
+                i = tube_index(name)
+                if i is not None:
+                    out += [(f"xt:{i}:a", tb.a), (f"xt:{i}:b", tb.b)]
+        return out
+
     def _hit_handle(self, pos: QPointF) -> str | None:
-        g = self._geom or self.doc.geometry
+        g = self.doc.geometry
         best, bd = None, 9.0
         for name, _ in HANDLES:
             if name in g.p:
                 d = _dist(self.to_device(g.p[name]), pos)
                 if d < bd:
                     best, bd = name, d
+        for name, q in self._extra_ends():
+            d = _dist(self.to_device(q), pos)
+            if d < bd:
+                best, bd = name, d
         return best
 
     def _hit_dimension(self, pos: QPointF):
@@ -236,6 +277,56 @@ class BikeCanvas(QtWidgets.QWidget):
             w = max(len(str(note.get("text", ""))), 2) * size * 0.6
             if q.x - 4 / self.zoom <= m.x <= q.x + w and q.y - 4 / self.zoom <= m.y <= q.y + size * 1.3:
                 return note
+        return None
+
+    SNAP_TUBES = ("tt", "dt", "st", "ht", "ss", "cs", "fork", "st2", "tt2", "boom", "mid", "ss_mono")
+
+    def _snap_spec(self, m: V):
+        """(point, end-point spec, label) for tube drawing: a named frame point,
+        a position along a tube (so the new tube follows the geometry), or
+        free X/Y from the BB."""
+        p, name = self._snap(m)
+        if name:
+            return p, name, name
+        g = self._geom or self.doc.geometry
+        tol = 10 / self.zoom
+        best = None
+        for tname in self.SNAP_TUBES:
+            tb = g.tubes.get(tname)
+            if tb is None:
+                continue
+            pts = tb.points()
+            acc = 0.0
+            L = tb.length or 1.0
+            for i in range(len(pts) - 1):
+                a_, b_ = pts[i], pts[i + 1]
+                ab = b_ - a_
+                seg = ab.length()
+                if seg < 1e-9:
+                    continue
+                t = max(0.0, min(1.0, (m - a_).dot(ab) / (seg * seg)))
+                q = a_ + ab * t
+                dist = q.dist(m)
+                if dist < tol and (best is None or dist < best[0]):
+                    best = (dist, q, tname, (acc + seg * t) / L)
+                acc += seg
+        if best is not None:
+            _, q, tname, pos = best
+            pos = round(pos, 3)
+            return q, {"tube": tname, "pos": pos}, f"{tname} @ {pos:.2f}"
+        return m, {"x": round(m.x, 1), "y": round(m.y, 1)}, f"{m.x:.0f}, {m.y:.0f}"
+
+    def _hit_extra_tube(self, pos: QPointF) -> str | None:
+        g = self._geom or self.doc.geometry
+        m = self.to_model(pos)
+        from ..geometry.vec import point_segment_distance
+        for name, tb in g.tubes.items():
+            if tb.kind != "extra" or not name.startswith("x"):
+                continue
+            pts = tb.points()
+            d = min(point_segment_distance(m, pts[i], pts[i + 1]) for i in range(len(pts) - 1))
+            if d < max(tb.od_b / 2, 4 / self.zoom) + 3 / self.zoom:
+                return name
         return None
 
     def _snap(self, m: V) -> tuple[V, str | None]:
@@ -326,6 +417,13 @@ class BikeCanvas(QtWidgets.QWidget):
         self.update()
 
     def mouseDoubleClickEvent(self, e) -> None:
+        xt = self._hit_extra_tube(e.position())
+        if xt is not None and self._hit_dimension(e.position()) is None:
+            from . import extra_tubes as XT
+            idx = XT.tube_index(xt)
+            if idx is not None:
+                XT.edit_tube(self.doc, idx, self)
+                return
         dim = self._hit_dimension(e.position())
         if dim is not None and dim.tag.startswith("dim:"):
             self.edit_dimension.emit(dim.tag[4:])
@@ -403,12 +501,40 @@ class BikeCanvas(QtWidgets.QWidget):
                     n["x"], n["y"] = round(dr["orig"][0] + dx, 1), round(dr["orig"][1] + dy, 1)
             doc.set_extra("notes", notes, "Move note", dr["id"])
             return
+        if dr["point"].startswith("xt:"):
+            self._drag_extra_end(dr, m)
+            return
         changes, msg = drag_point_changes(dr["point"], m, dr["design"], dr["geom"],
                                           bool(mods & Qt.KeyboardModifier.ShiftModifier))
         if changes:
             doc.set_params(changes, f"Drag {dr['point']}", dr["id"])
             self.status.emit(msg.format(**{k: (fmt_len(v, units) if isinstance(v, float) else v)
                                            for k, v in changes.items()}))
+
+    def _drag_extra_end(self, dr, m: V) -> None:
+        """Slide an extra tube end: along its host tube (keeping surface/side
+        settings), onto another tube, onto a frame point, or free."""
+        _, idx, end = dr["point"].split(":")
+        idx = int(idx)
+        tubes = [dict(t) for t in self.doc.design.extras.get("extra_tubes") or []]
+        if not 0 <= idx < len(tubes):
+            return
+        old = tubes[idx].get(end)
+        q, spec, label = self._snap_spec(m)
+        if isinstance(spec, dict) and "tube" in spec and isinstance(old, dict) and "tube" in old:
+            for k in ("surface", "side"):
+                if k in old:
+                    spec[k] = old[k]
+            if old.get("tube") == spec["tube"] and "s" in old:
+                L = self.doc.geometry.tubes[spec["tube"]].length
+                s_mm = spec["pos"] * L
+                spec = {k: v for k, v in spec.items() if k != "pos"}
+                spec["s"] = round(L - s_mm if old.get("from") == "b" else s_mm, 1)
+                if old.get("from") == "b":
+                    spec["from"] = "b"
+        tubes[idx][end] = spec
+        self.doc.set_extra("extra_tubes", tubes, "Move extra tube end", dr["id"])
+        self.status.emit(f"{tubes[idx].get('name', 'tube')} {'start' if end == 'a' else 'end'}: {label}")
 
     # -- tools ------------------------------------------------------------------------
     def set_tool(self, tool: str) -> None:
@@ -420,7 +546,8 @@ class BikeCanvas(QtWidgets.QWidget):
                  "user_dim": "User dimension: click two points.",
                  "user_angle": "Angle dimension: click three points (vertex second).",
                  "calibrate": "Photo scale: click two points a known distance apart on the photo.",
-                 "move_photo": "Photo: drag to move the photo underlay."}
+                 "move_photo": "Photo: drag to move the photo underlay.",
+                 "add_tube": "Add tube: click the start, then the end (snaps to frame points and along tubes)."}
         self.status.emit(hints.get(tool, "Ready"))
         self.update()
 
@@ -439,6 +566,21 @@ class BikeCanvas(QtWidgets.QWidget):
             self.tool_finished.emit()
             return
         if self.tool == "move_photo":
+            return
+        if self.tool == "add_tube":
+            q, spec, _label = self._snap_spec(m)
+            self._tool_pts.append(q)
+            self._tube_specs = (getattr(self, "_tube_specs", []) if len(self._tool_pts) > 1 else []) + [spec]
+            if len(self._tool_pts) < 2:
+                self.update()
+                return
+            a_spec, b_spec = self._tube_specs[0], self._tube_specs[-1]
+            self._tool_pts = []
+            self._tube_specs = []
+            self.set_tool("select")
+            from .extra_tubes import new_tube_dialog
+            new_tube_dialog(doc, a_spec, b_spec, self)
+            self.tool_finished.emit()
             return
         self._tool_pts.append(snap)
         self._tool_specs = getattr(self, "_tool_specs", [])
@@ -510,6 +652,16 @@ class BikeCanvas(QtWidgets.QWidget):
         if note is not None:
             menu.addSeparator()
             menu.addAction("Delete note", lambda: self._delete_note(note.get("id")))
+        xt = self._hit_extra_tube(pos)
+        if xt is not None:
+            from . import extra_tubes as XT
+            idx = XT.tube_index(xt)
+            if idx is not None:
+                menu.addSeparator()
+                menu.addAction(f"Edit extra tube '{xt.split('_', 1)[1]}'…", lambda: XT.edit_tube(self.doc, idx, self))
+                menu.addAction("Delete extra tube", lambda: XT.delete_tube(self.doc, idx))
+        menu.addSeparator()
+        menu.addAction("Add tube here (click start and end)", lambda: self.set_tool("add_tube"))
         menu.exec(self.mapToGlobal(pos.toPoint()))
 
     def _hide_dim(self, did: str) -> None:
@@ -595,4 +747,38 @@ def drag_point_changes(name: str, m: V, d0, g0: Geometry, shift: bool) -> tuple[
         return {key: d0.f(key) + dx}, f"{key} {{{key}}}"
     if name == "pedal":
         return {"crank_angle": round(m.angle(), 1)}, "Crank angle {crank_angle}"
+    if name in ("tt_ht", "dt_ht"):
+        T, B = g0.p["ht_top"], g0.p["ht_bottom"]
+        if name == "tt_ht":
+            off = (T - m).dot(g0.u)
+            key, stick = "tt_ht_offset", "ht_top_stickout"
+        else:
+            off = (m - B).dot(g0.u)
+            key, stick = "dt_ht_offset", "ht_bottom_stickout"
+        if d0["ht_junction_mode"] == "stickout":
+            # exact: solve with that centre-line offset and read back the stick-out it implies
+            probe = d0.copy()
+            probe.update({"ht_junction_mode": "centerline", "tt_ht_offset": g0.v["tt_ht_offset"],
+                          "dt_ht_offset": g0.v["dt_ht_offset"], key: off})
+            return {stick: solve(probe).v[stick]}, f"Head tube stick-out {{{stick}}}"
+        return {key: off}, f"Junction offset {{{key}}}"
+    if name == "tt_st":
+        P0, s = g0.p["st_bottom"], g0.s
+        t = project_on_line(m, P0, s)
+        t_top = project_on_line(g0.p["st_top"], P0, s)
+        if d0["st_length_mode"] == "cc":
+            return ({"seat_tube_length": t, "st_extension": t_top - t},
+                    "Seat tube (c-c) {seat_tube_length}, extension {st_extension}")
+        if d0["tt_mode"] == "st_extension":
+            return {"st_extension": t_top - t}, "Seat tube extension {st_extension}"
+        q = P0 + s * t
+        J = g0.p["tt_ht"]
+        return {"top_tube_angle": round(math.degrees(math.atan2(J.y - q.y, J.x - q.x)), 2)}, "Top tube angle {top_tube_angle}"
+    if name == "ss_top":
+        J = g0.p["stoker_tt_st"] if "stoker_tt_st" in g0.p else g0.p["tt_st"]
+        if d0["ss_attach"] == "top_tube" and "tt" in g0.tubes:
+            tt_dir = (g0.p["tt_ht"] - g0.p["tt_st"]).norm()
+            return {"ss_offset": max((m - J).dot(tt_dir), -150.0)}, "Seat stay offset {ss_offset}"
+        s_axis = (g0.p["stoker_st_top"] - g0.p["stoker_bb"]).norm() if "stoker_bb" in g0.p else g0.s
+        return {"ss_offset": (J - m).dot(s_axis)}, "Seat stay offset {ss_offset}"
     return {}, ""

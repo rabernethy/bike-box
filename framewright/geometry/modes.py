@@ -78,6 +78,11 @@ RULES: dict[str, dict[str, _Rule]] = {
         "seat_tube": lambda d, g: {"saddle_height": g.p["saddle"].y / max(math.sin(math.radians(
             d.f("seat_tube_angle"))), 1e-6)},
     },
+    "ht_junction_mode": {
+        "stickout": lambda d, g: {"ht_top_stickout": g.v["ht_top_stickout"],
+                                  "ht_bottom_stickout": g.v["ht_bottom_stickout"]},
+        "centerline": lambda d, g: {"tt_ht_offset": g.v["tt_ht_offset"], "dt_ht_offset": g.v["dt_ht_offset"]},
+    },
     "stem_type": {
         "quill": lambda d, g: {"quill_height": d.f("spacers") + d.f("stem_clamp_height") / 2},
         "threadless": lambda d, g: {"spacers": max(d.f("quill_height") - d.f("stem_clamp_height") / 2, 0.0)},

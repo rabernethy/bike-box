@@ -82,9 +82,12 @@ class Document(QtCore.QObject):
         self.design = design or Design()
         self.path: Path | None = Path(path) if path else None
         self.undo = QUndoStack(self)
-        self.undo.cleanChanged.connect(lambda _c: self.path_changed.emit())
+        self.undo.cleanChanged.connect(self._clean_changed)
         self._geometry: Geometry | None = None
         self.ghosts: list[dict] = []        # [{"label", "design", "color"}]
+
+    def _clean_changed(self, _clean: bool) -> None:
+        self.path_changed.emit()
 
     # -- state ----------------------------------------------------------------
     @property

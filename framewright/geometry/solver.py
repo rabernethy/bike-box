@@ -395,32 +395,63 @@ def solve(d: Design) -> Geometry:
         g.warn(f"Head tube length is {HTL:.0f} mm; check the front end inputs")
 
     # -- main triangle --------------------------------------------------------------
-    J_ht = T - u * d.f("tt_ht_offset")
-    J_dt = ht_bottom + u * d.f("dt_ht_offset")
-    # down tube: line through J_dt passing at distance dt_bb_offset from BB
-    D = J_dt
-    Ld = D.length()
-    phi = math.atan2(D.y, D.x)
-    alpha = math.asin(max(-0.99, min(0.99, d.f("dt_bb_offset") / Ld)))
-    psi = phi - alpha
-    w_dt = V(math.cos(psi), math.sin(psi))
-    dt_a = w_dt.perp() * d.f("dt_bb_offset")
-
     st_len = d.f("seat_tube_length")
     ext = d.f("st_extension")
-    if d["st_length_mode"] == "cc":
-        J_st = P0 + s * st_len
-        st_top = J_st + s * ext
-    else:
-        st_top = P0 + s * st_len
-        if d["tt_mode"] == "st_extension":
-            J_st = st_top - s * ext
+
+    def junctions(tt_off: float, dt_off: float):
+        J_ht = T - u * tt_off
+        J_dt = ht_bottom + u * dt_off
+        # down tube: line through J_dt passing at distance dt_bb_offset from BB
+        Ld = max(J_dt.length(), 1e-6)
+        phi = math.atan2(J_dt.y, J_dt.x)
+        alpha = math.asin(max(-0.99, min(0.99, d.f("dt_bb_offset") / Ld)))
+        psi = phi - alpha
+        w_dt = V(math.cos(psi), math.sin(psi))
+        dt_a = w_dt.perp() * d.f("dt_bb_offset")
+        if d["st_length_mode"] == "cc":
+            J_st = P0 + s * st_len
+            st_top = J_st + s * ext
         else:
-            ta = d.f("top_tube_angle")
-            J = line_intersect(J_ht, V(cosd(ta), sind(ta)), P0, s)
-            J_st = J if J is not None else st_top - s * ext
+            st_top = P0 + s * st_len
+            if d["tt_mode"] == "st_extension":
+                J_st = st_top - s * ext
+            else:
+                ta = d.f("top_tube_angle")
+                J = line_intersect(J_ht, V(cosd(ta), sind(ta)), P0, s)
+                J_st = J if J is not None else st_top - s * ext
+        return J_ht, J_dt, w_dt, dt_a, J_st, st_top
+
+    def ht_r(from_bottom: float) -> float:
+        """Head tube outer radius at a distance from its bottom face (tapered HTs)."""
+        f = max(0.0, min(1.0, from_bottom / max(HTL, 1e-6)))
+        return (d.f("ht_od_bottom") + (d.f("ht_od_top") - d.f("ht_od_bottom")) * f) / 2
+
+    def edge_k(tube_r: float, host_r: float, axis: V, tube_dir: V) -> float:
+        """Distance along the head tube from a tube's centre-line junction to the
+        point where the tube's outer edge meets the head tube's rear surface."""
+        c = max(-0.999, min(0.999, axis.norm().dot(tube_dir.norm())))
+        sn = math.sqrt(1 - c * c)
+        return (tube_r + host_r * c) / max(sn, 0.05)
+
+    tt_off, dt_off = d.f("tt_ht_offset"), d.f("dt_ht_offset")
+    r_tt, r_dt = d.f("tt_od") / 2, d.f("dt_od") / 2
+    if d["ht_junction_mode"] == "stickout":
+        # head tube stick-out above the top tube edge / below the down tube edge;
+        # the centre-line offsets depend on the joint angles, so iterate
+        for _ in range(8):
+            J_ht, J_dt, w_dt, dt_a, J_st, st_top = junctions(tt_off, dt_off)
+            n_tt = d.f("ht_top_stickout") + edge_k(r_tt, ht_r(HTL - tt_off), u, (J_st - J_ht))
+            n_dt = d.f("ht_bottom_stickout") + edge_k(r_dt, ht_r(dt_off), u * -1, w_dt * -1)
+            done = abs(n_tt - tt_off) < 1e-9 and abs(n_dt - dt_off) < 1e-9
+            tt_off, dt_off = n_tt, n_dt
+            if done:
+                break
+    J_ht, J_dt, w_dt, dt_a, J_st, st_top = junctions(tt_off, dt_off)
     tt_vec = J_ht - J_st
     tt_dir = tt_vec.norm()
+    v["tt_ht_offset"], v["dt_ht_offset"] = tt_off, dt_off
+    v["ht_top_stickout"] = tt_off - edge_k(r_tt, ht_r(HTL - tt_off), u, tt_dir * -1)
+    v["ht_bottom_stickout"] = dt_off - edge_k(r_dt, ht_r(dt_off), u * -1, w_dt * -1)
 
     # seat stay junction
     ss_attach = d["ss_attach"]
@@ -579,16 +610,23 @@ def solve(d: Design) -> Geometry:
     # extra user tubes
     for i, et in enumerate(d.extras.get("extra_tubes") or []):
         try:
-            a = _resolve_point(g, et.get("a"))
-            b = _resolve_point(g, et.get("b"))
+            od_b_ = float(et.get("od", 25.4))
+            a = _resolve_point(g, et.get("a"), float(et.get("od_end", 0.0) or od_b_) / 2)
+            b = _resolve_point(g, et.get("b"), od_b_ / 2)
         except (KeyError, TypeError, ValueError):
             g.warn(f"Extra tube {et.get('name', i)}: unresolved end point")
             continue
         name = f"x{i}_" + str(et.get("name", f"tube{i}"))
         od = float(et.get("od", 25.4))
-        tubes[name] = Tube(name, str(et.get("label", et.get("name", "Extra tube"))), a, b, od, od,
-                           wall_end=float(et.get("wall", 0.9)), wall_mid=float(et.get("wall", 0.9)),
-                           bend=float(et.get("bend", 0.0)), material=d["frame_material"],
+        od_end = float(et.get("od_end", 0.0) or od)              # optional taper toward the start
+        prof = str(et.get("profile", "round"))
+        w = float(et.get("od2", 0.0) or od) if prof != "round" else od
+        mat = str(et.get("material", "frame"))
+        tubes[name] = Tube(name, str(et.get("label", et.get("name", "Extra tube"))), a, b, od_end, od,
+                           w * od_end / od, w,
+                           wall_end=float(et.get("wall", 0.9)), wall_mid=float(et.get("wall_mid", et.get("wall", 0.9))),
+                           butt_length=float(et.get("butt_length", 0.0)), profile=prof,
+                           bend=float(et.get("bend", 0.0)), material=d["frame_material"] if mat == "frame" else mat,
                            za=float(et.get("za", 0.0)), zb=float(et.get("zb", 0.0)),
                            mirrored=bool(et.get("mirrored", False)), kind="extra",
                            join_a=et.get("join_a") or _spec_join(et.get("a")),
@@ -837,8 +875,17 @@ def _interior(a: V, b: V) -> float:
     return math.degrees(math.acos(c))
 
 
-def _resolve_point(g: Geometry, spec: Any) -> V:
-    """Point spec: "bb" | {"point": name} | {"tube": name, "pos": fraction or "s": mm} | {"x":..,"y":..}."""
+def _resolve_point(g: Geometry, spec: Any, own_r: float = 0.0) -> V:
+    """Resolve an extra-tube end point spec.
+
+    * ``"name"`` or ``{"point": name, "dx", "dy"}`` - a named point (+ offset)
+    * ``{"tube": name, "pos": fraction | "s": mm, "from": "a"|"b", "side": mm,
+      "surface": "above"|"below"}`` - on another tube: at a fraction of its length
+      or a distance from its start (``from: "b"`` measures from its end), moved
+      ``side`` mm perpendicular to it; ``surface`` sits the new tube on the host
+      tube's outer surface (host radius + ``own_r``).  "above" is the left of the
+      host's direction: above top/down tubes and stays, behind seat/head tubes.
+    * ``{"x", "y"}`` - coordinates from the BB."""
     if isinstance(spec, str):
         return g.p[spec]
     if "point" in spec:
@@ -846,7 +893,16 @@ def _resolve_point(g: Geometry, spec: Any) -> V:
         return base + V(float(spec.get("dx", 0)), float(spec.get("dy", 0)))
     if "tube" in spec:
         t = g.tubes[spec["tube"]]
-        if "s" in spec:
-            return t.point_at(float(spec["s"]))[0]
-        return t.point_at(float(spec.get("pos", 0.5)) * t.length)[0]
+        L = t.length
+        dist = float(spec["s"]) if "s" in spec else float(spec.get("pos", 0.5)) * L
+        if spec.get("from") == "b":
+            dist = L - dist
+        dist = max(0.0, min(L, dist))
+        p, tan = t.point_at(dist)
+        side = float(spec.get("side", 0.0) or 0.0)
+        surf = spec.get("surface")
+        if surf in ("above", "below"):
+            off = t.od_at(dist / max(L, 1e-9)) / 2 + own_r
+            side += off if surf == "above" else -off
+        return p + tan.perp() * side if side else p
     return V(float(spec["x"]), float(spec["y"]))

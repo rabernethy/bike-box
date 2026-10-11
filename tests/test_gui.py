@@ -142,3 +142,45 @@ def test_feature_dialogs_construct(window, qapp):
     assert doc.undo.canUndo()
     for dlg in dlgs:
         dlg.reject()
+
+
+def test_extra_tube_tool_and_presets(window, qapp):
+    from framewright.gui import extra_tubes as XT
+    doc = window.doc()
+    c = window.view().canvas
+    g = doc.geometry
+    q, spec, _ = c._snap_spec(g.tubes["dt"].point_at(g.tubes["dt"].length * 0.4)[0])
+    assert spec == {"tube": "dt", "pos": 0.4}
+    assert c._snap_spec(g.p["ht_bottom"])[1] == "ht_bottom"
+    for _title, _tip, tubes in XT.PRESETS:
+        XT.add_tubes(doc, tubes)
+    g = doc.geometry
+    extra = [n for n, t in g.tubes.items() if t.kind == "extra"]
+    assert len(extra) == len(XT.PRESETS) and not g.warnings
+    # extra tubes follow the frame: lengthen the head tube and the step tube end moves with it
+    step = next(n for n in extra if n.endswith("_step"))
+    a0 = g.tubes[step].a
+    doc.set_param("head_tube_length", 170)
+    assert doc.geometry.tubes[step].a.dist(a0) > 1
+    dlg = XT.ExtraTubeEditor(doc, doc.design.extras["extra_tubes"][0], window)
+    dlg.od.setValue(22.2)
+    dlg.profile.setCurrentIndex(dlg.profile.findData("oval"))
+    dlg.accept()
+    assert dlg.tube["od"] == 22.2 and dlg.tube["profile"] == "oval"
+    XT.delete_tube(doc, 0)
+    assert len([t for t in doc.geometry.tubes.values() if t.kind == "extra"]) == len(XT.PRESETS) - 1
+
+
+def test_junction_handles_are_exact(window):
+    from framewright.gui.canvas import drag_point_changes
+    doc = window.doc()
+    for mode in ("centerline", "stickout"):
+        doc.set_param("ht_junction_mode", mode)
+        d0, g0 = doc.design.copy(), doc.geometry
+        for name, axis, delta in (("tt_ht", g0.u, -12), ("dt_ht", g0.u, 9), ("tt_st", g0.s, -20),
+                                  ("ss_top", g0.s, -15)):
+            target = g0.p[name] + axis * delta
+            ch, _ = drag_point_changes(name, target, d0, g0, False)
+            d1 = d0.copy()
+            d1.update(ch)
+            assert solve(d1).p[name].dist(target) < 1e-6, (mode, name)
