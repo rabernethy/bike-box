@@ -326,6 +326,19 @@ _frame += [
          vis=("battery", ("downtube", "integrated", "rack"))),
 ]
 
+_frame += [
+    _bool("couplers", "Frame couplers (travel)", G, "Couplers & travel case", False),
+    _mm("coupler_tt_pos", "Top tube coupler from seat tube", G, "Couplers & travel case", 120, 30, 600,
+        vis=("couplers", (True,))),
+    _mm("coupler_dt_pos", "Down tube coupler from BB", G, "Couplers & travel case", 160, 30, 700,
+        vis=("couplers", (True,))),
+    _mm("coupler_length", "Coupler length", G, "Couplers & travel case", 70, 30, 150, vis=("couplers", (True,))),
+    _mm("case_length", "Travel case inside length", G, "Couplers & travel case", 660, 300, 1500,
+        vis=("couplers", (True,))),
+    _mm("case_width", "Travel case inside width", G, "Couplers & travel case", 660, 300, 1500,
+        vis=("couplers", (True,))),
+]
+
 G = "Tubes"
 _tubes = [
     _choice("frame_material", "Frame material", G, "Material", "steel", MATERIALS),

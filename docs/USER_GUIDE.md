@@ -1,0 +1,96 @@
+# FrameWright user guide
+
+## The window
+
+* **Canvas** (centre): the live side-view drawing. Each open design is a tab.
+* **Parameters** (left): every input, grouped (Frame, Tubes, Fork & headset, Cockpit, Saddle & seatpost,
+  Drivetrain, Wheels & brakes, Accessories, Joints, Paint, Rider & fit, Analysis, Manufacturing, Drawing,
+  Display, Project). Type in the search box (Ctrl+F) to find any parameter. Hover a label for help and
+  its key. Inputs that don't apply to the current mode are hidden.
+* **Results** (right): stack, reach, trail, wheelbase, fit numbers, clearances, joint angles, warnings and
+  (optionally) the full analysis report.
+
+## Navigating
+
+| Action | How |
+|---|---|
+| Zoom | mouse wheel (at the cursor), `+` / `-`, View ▸ Zoom |
+| Pan | drag on empty space, middle-drag, right-drag, or Space + drag |
+| Fit | `F` or View ▸ Fit to window; View ▸ Lock zoom keeps the scale |
+| Undo / redo | Ctrl+Z / Ctrl+Shift+Z (every edit, including drags) |
+
+## Designing
+
+1. **Start**: File ▸ New (defaults) or **New from template** (road, endurance, gravel, cyclocross, touring,
+   randonneur, track, hardtails, city step-through, mixte, kids, time trial, fat bike, tandem, e-trekking).
+2. **Wheels & BB**: rim BSD + tire width/height set the wheel size; BB by drop or height.
+3. **Rear end**: chainstay length, or the gap between rear tire and seat tube.
+4. **Seat tube**: angle, length (centre-to-top or centre-to-centre), extension, BB offset.
+5. **Front end**: choose what drives it — *height* by head tube length, stack or handlebar height;
+   *length* by reach, front centre, effective top tube, wheelbase or handlebar reach. The other values
+   are computed and shown in Results.
+6. **Fork & headset**: axle-to-crown, offset, lower/upper stack, spacers; suspension forks with travel/sag.
+7. **Top & down tubes**: junction offsets on the head tube, top tube by angle or seat tube extension.
+8. **Seat stays**: on the seat or top tube, conventional/wishbone/mono, dropout type and offsets.
+9. **Tubes**: OD, oval/aero profile (side depth + top width), taper, butted walls, bends (curved tubes),
+   materials. Edit ▸ Parts libraries applies a tube set (e.g. from your parts database) in one click.
+10. **Cockpit & saddle**: stem, bars, levers, hand position; saddle by height + seat angle or X/Y.
+
+### Direct manipulation
+Drag the blue handles: **saddle** (height; Shift = free move/custom seat angle), **handlebar** (stem length and
+spacers), **head tube top** (stack & reach), **rear axle** (chainstay & BB drop; Shift = length only),
+**seat tube top**, **front axle**, **pedal** (crank angle).
+Double-click a dimension to type a value; FrameWright switches the front-end mode as needed (e.g. editing
+*Stack* makes stack a driving dimension). Drag dimensions to move them; right-click to hide/reset them.
+
+### Special frames
+* **Step-through, mixte, cargo, braces**: Frame ▸ Advanced ▸ *Remove tubes*, and Edit ▸ *Extra tubes* with end
+  points such as `ht_bottom`, `st@0.25`, `rear_axle`, `ht_bottom+0,-40` or `-200,150`.
+* **Tandem**: Frame ▸ Tandem ▸ *Frame type = Tandem*. The captain's front triangle uses the normal inputs;
+  set the BB-to-BB distance, stoker seat tube, stoker top tube, mid/lateral tubes, stoker saddle and bars.
+* **E-bikes / gearboxes**: Frame ▸ Drive unit: housing size/position, battery on or in the down tube or on a rack.
+
+## Dimensions, notes, comparison
+
+* View ▸ **Dimensions** (Ctrl+D): pick from the catalogue, save/restore **dimension states**, manage user dimensions.
+* Toolbar: **Measure** (M), **user dimension** (D), **angle dimension**, **note** (N). Points snap to frame points.
+* View ▸ **Compare designs** (Ctrl+K) overlays other open designs, files or snapshots as coloured ghosts.
+* Edit ▸ **Snapshots** saves the current state, shows differences, overlays or restores it.
+* View ▸ **Photo underlay**: import a photo (or drop it on the window), then Tools ▸ *Calibrate photo* and
+  click two points a known distance apart.
+
+## Fit
+
+Tools ▸ **Fit advisor**: enter body measurements (missing values are estimated from height and inseam), pick a
+fitting scheme, review recommendations with ranges, tick and **apply** them. *Edit formulas* lets you write your
+own scheme (safe expressions, saved in the design). Turn on the **Rider** checkbox to draw the rider and see joint
+angles; Display ▸ *Centre of mass* shows the combined COM and weight distribution.
+
+## Manufacturing
+
+* Tools ▸ **Miter templates** (Ctrl+M): preview every cope, export a full-scale PDF (print at 100% and check the
+  50 mm square), SVG or DXF; hole-saw angle/offset; cut list; rotary-axis **G-code** (verify in a simulator first).
+* Tools ▸ **Frame fixture numbers**: coordinates and lengths to set a frame up in a jig.
+* File ▸ Export ▸ **FreeCAD macro** or **STL** for 3-D work.
+
+## Analysis
+
+Tools ▸ **Analysis report** (Ctrl+R): gearing table, chain/belt length, UCI checks, weight estimate, beam-model
+stiffness and stress estimate, clearances. Tools ▸ **Auxiliary views**: top, rear and front views for stay,
+tire, chainring, heel and crown clearances; lean angle; steered toe overlap; stay true lengths.
+
+## Output
+
+* File ▸ Export ▸ **Drawing (PDF/SVG/PNG)** or File ▸ **Print**: paper size, scale (auto or standard), border,
+  title block (Edit ▸ Title block, logo image), geometry/tube tables, tables from CSV, monochrome.
+* **DXF** (full size, mm, layers), **SVG** of the bike, **spec CSV** (one design or a whole folder),
+  **multi-model PDF** of all open designs, **bulk export** of a folder, **animated GIF** morph from another
+  design or snapshot.
+* Headless: `framewright export design.fwd out.pdf` (also .svg .png .dxf .csv).
+
+## Customising
+
+Edit ▸ **Preferences**: drawing line/text scale, interface font size, icon size, light/dark theme, default units,
+mouse-wheel direction, drag handles, recent-files length, autosave backups. Display parameters (per design)
+control drawing mode, wheel detail, line weights, colours, dimension text size/orientation and layers.
+Save any design as a **template** (File ▸ Save as template); add your own library items from the libraries dialog.

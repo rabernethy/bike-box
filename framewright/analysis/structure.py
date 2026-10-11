@@ -28,6 +28,11 @@ from typing import Any, Callable, Iterable
 import numpy as np
 
 from ..geometry.solver import MATERIAL_YOUNG, Geometry, Tube
+
+try:                                    # optional: faster symmetric solve when SciPy is installed
+    from scipy.linalg import cho_factor as _cho_factor, cho_solve as _cho_solve
+except ImportError:                     # pragma: no cover - numpy fallback
+    _cho_factor = _cho_solve = None
 from ..geometry.vec import arc_through
 from ..model import params as P
 from . import weight as _weight          # noqa: F401  (registers bb_shell_wall)
@@ -271,7 +276,11 @@ class FrameModel:
         F = np.atleast_2d(F.T).T if F.ndim == 1 else F
         U = np.zeros((self.ndof, F.shape[1]))
         idx = np.flatnonzero(free)
-        U[idx] = np.linalg.solve(K[np.ix_(idx, idx)], F[idx])
+        Kff = K[np.ix_(idx, idx)]
+        if _cho_factor is not None:
+            U[idx] = _cho_solve(_cho_factor(Kff, check_finite=False), F[idx], check_finite=False)
+        else:
+            U[idx] = np.linalg.solve(Kff, F[idx])
         return U
 
     def element_results(self, U: np.ndarray) -> dict[str, np.ndarray]:
@@ -367,7 +376,7 @@ def _yield(d, material: str) -> float:
 
 
 def _tube_members(t: Tube, d) -> list[_Mem]:
-    pts2 = arc_through(t.a, t.b, t.bend, 8) if abs(t.bend) > 1e-6 else [t.a, t.b]
+    pts2 = arc_through(t.a, t.b, t.bend, 6) if abs(t.bend) > 1e-6 else [t.a, t.b]
     xy = np.array([[p.x, p.y] for p in pts2])
     seg = np.linalg.norm(np.diff(xy, axis=0), axis=1)
     cum = np.concatenate([[0.0], np.cumsum(seg)])
@@ -464,7 +473,7 @@ def build_model(g: Geometry, include_fork: bool | None = None) -> tuple[FrameMod
         mems.append(_line("dummy_fork", (hb.x, hb.y, 0), (fa.x, fa.y, 0), rig))
     mems.append(_line("front_wheel", (fa.x, fa.y, 0), contact, rig))
 
-    # -- load links -------------------------------------------------------------------------
+    # -- load points (rigid levers to an anchor node; applied as force + moment) ------------------
     q = d.f("q_factor") / 2
     cl = d.f("crank_length")
     named: dict[str, tuple[float, float, float]] = {
@@ -475,28 +484,20 @@ def build_model(g: Geometry, include_fork: bool | None = None) -> tuple[FrameMod
         "tt_ht": (p["tt_ht"].x, p["tt_ht"].y, 0), "dt_ht": (p["dt_ht"].x, p["dt_ht"].y, 0),
         "seat_cluster": (p["tt_st"].x, p["tt_st"].y, 0), "st_top": (p["st_top"].x, p["st_top"].y, 0),
     }
-    st_anchor = None
-    if "st" in g.tubes:
-        st_anchor = named["st_top"]
-    elif "tt" in g.tubes:
-        st_anchor = named["seat_cluster"]
+    virtual: dict[str, tuple[str, tuple[float, float, float]]] = {}     # name -> (anchor, point)
+    st_anchor = "st_top" if "st" in g.tubes else ("seat_cluster" if "tt" in g.tubes else None)
     if st_anchor is not None:
         sad = p["saddle"]
-        named["saddle"] = (sad.x, sad.y, 0)
-        mems.append(_line("seatpost", st_anchor, named["saddle"], rig))
+        virtual["saddle"] = (st_anchor, (sad.x, sad.y, 0.0))            # seatpost
     hand = p.get("hand", p["bar"])
-    named["hand"] = (hand.x, hand.y, 0)
-    mems.append(_line("stem", named["ht_top"], named["hand"], rig))
-    named["pedal_r"], named["pedal_l"] = (0, 0, q), (0, 0, -q)
-    mems.append(_line("spindle_r", named["bb_r"], named["pedal_r"], rig))
-    mems.append(_line("spindle_l", named["bb_l"], named["pedal_l"], rig))
-    named["crank_pedal"] = (cl, 0, q)
-    mems.append(_line("crank", named["bb_r"], named["crank_pedal"], rig))
+    virtual["hand"] = ("ht_top", (hand.x, hand.y, 0.0))                 # stem + steerer
+    virtual["pedal_r"] = ("bb_r", (0.0, 0.0, q))                        # spindle ends
+    virtual["pedal_l"] = ("bb_l", (0.0, 0.0, -q))
+    virtual["crank_pedal"] = ("bb_r", (cl, 0.0, q))                     # crank horizontal forward
     rings = [r for r in d.lst("chainrings") if r >= 3] or [40.0]
     pitch = d.f("chain_pitch")
     r_ring = pitch / (2 * math.sin(math.pi / min(rings)))
-    named["ring_top"] = (0, r_ring, max(d.f("chainline"), w / 2 + 1))
-    mems.append(_line("chainring", named["bb_r"], named["ring_top"], rig))
+    virtual["ring_top"] = ("bb_r", (0.0, r_ring, max(d.f("chainline"), w / 2 + 1)))
 
     # -- attach member ends --------------------------------------------------------------------
     seg_a, seg_b, seg_m, seg_c0 = [], [], [], []
@@ -582,8 +583,11 @@ def build_model(g: Geometry, include_fork: bool | None = None) -> tuple[FrameMod
         k = int(np.argmin(dd))
         if dd[k] <= 0.75:
             model.names[nm] = k
-    info = {"named": named, "members": mems, "include_fork": include_fork, "r_ring": r_ring,
-            "contact": contact}
+    for nm, (anchor, pt) in list(virtual.items()):
+        if anchor not in model.names:
+            del virtual[nm]
+    info = {"named": named, "virtual": virtual, "members": mems, "include_fork": include_fork,
+            "r_ring": r_ring, "contact": contact}
     return model, info
 
 
@@ -618,7 +622,7 @@ def _cases(g: Geometry, info: dict[str, Any]) -> dict[str, dict[str, Any]]:
     Tm = d.f("fea_ht_torque") * 1000.0
     out: dict[str, dict[str, Any]] = {}
     vert = [("hand", 1, -W * sh_b), ("pedal_r", 1, -W * sh_p / 2), ("pedal_l", 1, -W * sh_p / 2)]
-    if "saddle" in named:
+    if "saddle" in info["virtual"]:
         vert.append(("saddle", 1, -W * sh_s))
     else:
         vert.append(("bb", 1, -W * sh_s))
@@ -642,7 +646,8 @@ def _cases(g: Geometry, info: dict[str, Any]) -> dict[str, dict[str, Any]]:
     out["in_plane"] = {"loads": [("front_axle", 0, Fi)], "bc": "std",
                        "desc": f"{Fi:.0f} N forward at the front axle"}
     Ft = d.f("fea_transverse_force")
-    out["transverse"] = {"loads": [("seat_cluster", 2, Ft)], "bc": "std",
+    tn = "seat_cluster" if "tt" in g.tubes else "st_top"
+    out["transverse"] = {"loads": [(tn, 2, Ft)], "bc": "std",
                          "desc": f"{Ft:.0f} N lateral at the seat cluster"}
     # eccentric: crank forward-horizontal; chain pull balances the crank torque exactly
     ra = g.p["rear_axle"]
@@ -699,6 +704,36 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
         "brake": [6 * names["dropout_r"] + k for k in (1, 2)] + [6 * names["dropout_l"] + k for k in (1, 2)]
                  + [6 * names["contact_front"] + k for k in range(3)],
     }
+    virtual = info["virtual"]
+    X = model.xyz
+
+    def add_load(F: np.ndarray, ci: int, nm: str, dof: int, val: float) -> None:
+        if nm in virtual:                          # rigid lever: force + moment at the anchor node
+            anchor, pt = virtual[nm]
+            a = names[anchor]
+            if not active[a]:
+                return
+            f, m = np.zeros(3), np.zeros(3)
+            if dof < 3:
+                f[dof] = val
+                m = np.cross(np.asarray(pt, float) - X[a], f)
+            else:
+                m[dof - 3] = val
+            F[6 * a:6 * a + 3, ci] += f
+            F[6 * a + 3:6 * a + 6, ci] += m
+        elif nm in names and active[names[nm]]:
+            F[6 * names[nm] + dof, ci] += val
+
+    def disp_of(u: np.ndarray, nm: str) -> np.ndarray | None:
+        if nm in virtual:
+            anchor, pt = virtual[nm]
+            ua = u[names[anchor]]
+            r = np.asarray(pt, float) - X[names[anchor]]
+            return np.concatenate([ua[:3] + np.cross(ua[3:], r), ua[3:]])
+        if nm in names:
+            return u[names[nm]]
+        return None
+
     U_all: dict[str, np.ndarray] = {}
     for bc, fixed in supports.items():
         group = [c for c in want if defs[c]["bc"] == bc]
@@ -707,8 +742,7 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
         F = np.zeros((model.ndof, len(group)))
         for ci, c in enumerate(group):
             for nm, dof, val in defs[c]["loads"]:
-                if nm in names and active[names[nm]]:
-                    F[6 * names[nm] + dof, ci] += val
+                add_load(F, ci, nm, dof, val)
         try:
             U = model.solve(fixed, F, active)
         except np.linalg.LinAlgError:
@@ -728,7 +762,7 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
     results: dict[str, dict[str, Any]] = {}
     for ci, c in enumerate(order):
         u = U_all[c].reshape(-1, 6)
-        disp = {nm: tuple(float(x) for x in u[i]) for nm, i in names.items()}
+        disp = {nm: tuple(float(x) for x in disp_of(u, nm)) for nm in list(names) + list(virtual)}
         mem: dict[str, dict[str, float]] = {}
         for e in range(len(member_names)):
             if kinds[e] == "link" or secs[e].rigid:
@@ -759,12 +793,15 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
     head: dict[str, float] = {}
 
     def U(case, nm, k):
-        return float(U_all[case][6 * names[nm] + k]) if (case in U_all and nm in names) else float("nan")
+        if case not in U_all:
+            return float("nan")
+        v = disp_of(U_all[case].reshape(-1, 6), nm)
+        return float("nan") if v is None else float(v[k])
 
     def stiff(force, disp):
         return abs(force) / abs(disp) if disp == disp and abs(disp) > 1e-12 else float("nan")
 
-    if "vertical" in U_all and "saddle" in names:
+    if "vertical" in U_all and "saddle" in virtual:
         Fs = d.f("fea_rider_weight") * d.f("fea_saddle_share") / 100.0
         v = stiff(Fs, U("vertical", "saddle", 1))
         head["saddle_vertical_stiffness"] = v
@@ -794,10 +831,10 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
         results["in_plane"]["metric"] = {"Front axle fore-aft deflection (mm)": abs(U("in_plane", "front_axle", 0)),
                                          "In-plane stiffness (N/mm)": v}
     if "transverse" in U_all:
-        v = stiff(d.f("fea_transverse_force"), U("transverse", "seat_cluster", 2))
+        tn = "seat_cluster" if "tt" in g.tubes else "st_top"
+        v = stiff(d.f("fea_transverse_force"), U("transverse", tn, 2))
         head["transverse_stiffness"] = v
-        results["transverse"]["metric"] = {"Seat cluster lateral deflection (mm)":
-                                           abs(U("transverse", "seat_cluster", 2)),
+        results["transverse"]["metric"] = {"Seat cluster lateral deflection (mm)": abs(U("transverse", tn, 2)),
                                            "Lateral stiffness (N/mm)": v}
     if "eccentric" in U_all:
         results["eccentric"]["metric"] = {"BB lateral deflection (mm)": abs(U("eccentric", "bb", 2))}

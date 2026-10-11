@@ -670,6 +670,38 @@ def solve(d: Design) -> Geometry:
     if abs(rail_adjust) > d.f("rail_range"):
         g.warn(f"Saddle needs {rail_adjust:+.0f} mm of rail adjustment with a {d.f('seatpost_offset'):.0f} mm "
                f"setback post (range ±{d.f('rail_range'):.0f} mm)")
+    # problem curves: bends larger than a semicircle or tighter than the tubing tolerates
+    for name, tb in tubes.items():
+        if abs(tb.bend) < 1e-6:
+            continue
+        L = tb.chord
+        if abs(tb.bend) >= L / 2:
+            g.warn(f"{tb.label}: bend of {tb.bend:.0f} mm exceeds a semicircle; reduce the sagitta")
+            continue
+        R = (L * L / 4 + tb.bend * tb.bend) / (2 * abs(tb.bend))
+        od = max(tb.od_a, tb.od_b)
+        v[f"bend_radius_{name}"] = R
+        if R < 3 * od:
+            g.warn(f"{tb.label}: bend radius {R:.0f} mm is under 3×OD ({3 * od:.0f} mm); likely to kink")
+    # minimum tube lengths: top and down tube must not overlap on the head tube
+    if "tt" in tubes and "dt" in tubes:
+        def foot(tube_od, ang):
+            return tube_od / 2 / max(sind(ang), 0.2)
+        gap = (HTL - d.f("tt_ht_offset") - d.f("dt_ht_offset")
+               - foot(tubes["tt"].od_b, v.get("angle_ht_tt", _interior(u, tt_dir * -1)))
+               - foot(tubes["dt"].od_b, _interior(u * -1, w_dt * -1)))
+        v["ht_exposed"] = gap
+        if gap < 0:
+            g.warn(f"Top tube and down tube overlap by {-gap:.0f} mm on the head tube; lengthen the head tube "
+                   "or reduce the junction offsets")
+    for name in ("tt", "dt", "st"):
+        tb = tubes.get(name)
+        if tb is not None and tb.length < 2 * tb.od_b:
+            g.warn(f"{tb.label} is only {tb.length:.0f} mm long")
+
+    if d["couplers"] and "tt" in tubes and "dt" in tubes:
+        _couplers(g, d)
+
     # joint ("lug") angles, quoted the way lugsets are: HT/TT ≈ HTA, ST/TT ≈ STA
     v["angle_ht_tt"] = _interior(u, tt_dir * -1)
     v["angle_ht_dt"] = _interior(u * -1, w_dt * -1)
@@ -726,6 +758,26 @@ def _tandem_tubes(g: Geometry, d: Design, SB: V, s2: V, P2: V, stay_node: V, hub
     g.v["stoker_saddle_height"] = d.f("stoker_saddle_height")
     g.v["stoker_saddle_to_bar"] = S2.dist(p["stoker_bar"])
     g.v["stoker_knee_room"] = p["stoker_bar"].x - p["stoker_saddle_nose"].x
+
+
+def _couplers(g: Geometry, d: Design) -> None:
+    """Coupler positions and a travel-case check: the frame splits into a front
+    half (head tube, fork stub) and a rear half; each must fit the case
+    diagonal in side view (wheels and fork removed)."""
+    tt, dt = g.tubes["tt"], g.tubes["dt"]
+    ptt, _ = tt.point_at(min(d.f("coupler_tt_pos"), tt.length - 20))
+    pdt, _ = dt.point_at(min(d.f("coupler_dt_pos"), dt.length - 20))
+    g.p["coupler_tt"], g.p["coupler_dt"] = ptt, pdt
+    front = [ptt, pdt, g.p["ht_top"], g.p["ht_bottom"], g.p["tt_ht"], g.p["dt_ht"]]
+    rear = [ptt, pdt, g.p["bb"], g.p["st_top"], g.p["tt_st"], g.p["stay_node"], g.p["drive_bb"]]
+    case_diag = math.hypot(d.f("case_length"), d.f("case_width"))
+
+    def span(pts):
+        return max(a.dist(b) for a in pts for b in pts)
+    fs, rs = span(front) + 40, span(rear) + 40          # allowance for tube ODs / dropouts
+    g.v["coupler_front_span"], g.v["coupler_rear_span"] = fs, rs
+    if rs > case_diag or fs > case_diag:
+        g.warn(f"Frame halves ({rs:.0f} / {fs:.0f} mm) don't fit the travel case diagonal ({case_diag:.0f} mm)")
 
 
 def _tube_top_at(tb: Tube, xs: float) -> float | None:

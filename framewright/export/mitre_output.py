@@ -269,9 +269,7 @@ def mitre_template_scene(cut: MitreCut, title: str = "", units: str = "mm", *, b
     y_text_bottom = y
 
     # calibration square
-    xc = min(max(text_w, 60.0) + 6.0, max(Pm + tab - 50.0, 0.0)) if text_w + 6.0 > Pm + tab - 50.0 \
-        else max(text_w + 6.0, Pm + tab - 50.0)
-    xc = max(xc, text_w + 6.0)
+    xc = text_w + 6.0
     yc = y_text_top
     cal = Style(INK, 0.3)
     sc.poly([V(xc, yc - 50), V(xc + 50, yc - 50), V(xc + 50, yc), V(xc, yc)], cal, "mitre_calibration",

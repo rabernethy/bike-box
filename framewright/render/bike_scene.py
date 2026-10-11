@@ -313,6 +313,18 @@ class BikeSceneBuilder:
             self.fillets()
         self.decals()
         self.braze_ons()
+        if d["couplers"]:
+            for name in ("tt", "dt"):
+                q = g.p.get(f"coupler_{name}")
+                tb = tubes.get(name)
+                if q is None or tb is None:
+                    continue
+                tan = tb.dir_a()
+                L = d.f("coupler_length") / 2
+                sc.poly(rect_along(q - tan * L, q + tan * L, tb.od_b / 2 + 2.2), t.comp("#c9c9c9"), "frame",
+                        Z_FRAME + 6, True, f"coupler:{name}")
+                sc.line(q - tan.perp() * (tb.od_b / 2 + 2.2), q + tan.perp() * (tb.od_b / 2 + 2.2),
+                        t.thin(t.outline, 0.8), "frame", Z_FRAME + 6)
 
     def drive_unit(self):
         """Gearbox or mid-drive motor housing around the BB (+ battery)."""
