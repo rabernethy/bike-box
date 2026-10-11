@@ -154,7 +154,7 @@ def test_categories_non_empty():
 def test_every_library_value_maps_to_schema():
     for it in L.all_items():
         expanded = L.expand_values(it.values)
-        assert expanded, it.id
+        assert expanded or it.meta.get("catalog"), it.id      # catalog reference parts may set nothing
         for k, v in expanded.items():
             assert P.has(k), (it.id, k)
             pd = P.get(k)

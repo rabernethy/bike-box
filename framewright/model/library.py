@@ -129,6 +129,8 @@ def _items_from_doc(doc: Any, user: bool, source: str) -> list[LibraryItem]:
             continue
         meta = dict(raw.get("meta") or {})
         meta["user"] = user
+        if doc.get("catalog"):
+            meta["catalog"] = True                 # sourced catalog item (values may be empty: reference part)
         meta.setdefault("source_file", source)
         out.append(LibraryItem(str(raw.get("id") or slugify(name)), name, cat, dict(values), meta))
     return out
