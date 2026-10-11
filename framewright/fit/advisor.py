@@ -178,26 +178,26 @@ BUILTIN_SCHEMES: list[dict] = [
             "Classic road (LeMond saddle height = 0.883 × inseam, knee over pedal spindle, "
             "seat tube 0.65 × inseam)",
             _saddle_block("0.883 * inseam", ("0.875 * inseam", "0.893 * inseam"), "kops_setback(saddle_height)"),
-            _upper_block("clamp(45 - 4 * (flexibility - 3) - 3 * (style - 2), 28, 62)", "80"),
+            _upper_block("clamp(47 - 4 * (flexibility - 3) - 3 * (style - 2), 28, 62)", "75"),
             _frame_block(_ROAD_CRANK, 0.65, 25, "clamp(round(shoulder / 20) * 20, 360, 480)")),
     _scheme("Endurance / comfort",
             "Endurance and comfort: slightly lower saddle (0.875 × inseam), more upright torso, "
             "shorter cranks, taller front end",
             _saddle_block("0.875 * inseam", ("0.865 * inseam", "0.885 * inseam"), "kops_setback(saddle_height) + 5"),
-            _upper_block("clamp(53 - 3 * (flexibility - 3) - 2 * (style - 2), 38, 70)", "78"),
+            _upper_block("clamp(52 - 3 * (flexibility - 3) - 2 * (style - 2), 38, 70)", "74"),
             _frame_block("clamp(round(0.200 * inseam / 2.5) * 2.5, 150, 177.5)", 0.66, 30,
                          "clamp(round((shoulder + 20) / 20) * 20, 380, 500)")),
     _scheme("Gravel & touring",
             "Gravel and touring: stable, upright position, wider (flared) bars, more standover clearance",
             _saddle_block("0.877 * inseam", ("0.865 * inseam", "0.887 * inseam"), "kops_setback(saddle_height) + 5"),
-            _upper_block("clamp(50 - 3 * (flexibility - 3) - 2 * (style - 2), 35, 68)", "78"),
+            _upper_block("clamp(51 - 3 * (flexibility - 3) - 2 * (style - 2), 35, 68)", "74"),
             _frame_block("clamp(round(0.200 * inseam / 2.5) * 2.5, 150, 177.5)", 0.63, 50,
                          "clamp(round((shoulder + 40) / 20) * 20, 400, 540)")),
     _scheme("Mountain",
             "Mountain bike: pedalling saddle height 0.877 × inseam, steeper effective seat angle, "
             "wide riser bar, short seat tube for a dropper post",
             _saddle_block("0.877 * inseam", ("0.865 * inseam", "0.887 * inseam"), "kops_setback(saddle_height) - 10"),
-            _upper_block("clamp(50 - 2 * (flexibility - 3) - 2 * (style - 2), 38, 65)", "72"),
+            _upper_block("clamp(50 - 2 * (flexibility - 3) - 2 * (style - 2), 38, 65)", "68"),
             _frame_block("clamp(round(0.200 * inseam / 2.5) * 2.5, 150, 175)", 0.55, 80,
                          "clamp(round(shoulder * 1.85 / 10) * 10, 680, 800)")),
     _scheme("Time trial",
@@ -220,7 +220,7 @@ BUILTIN_SCHEMES: list[dict] = [
                                                ("saddle_for_knee(145, saddle_setback)",
                                                 "saddle_for_knee(155, saddle_setback)"),
                                                "saddle_setback").items() if k != "saddle_setback"}},
-            _upper_block("clamp(45 - 4 * (flexibility - 3) - 3 * (style - 2), 28, 62)", "80"),
+            _upper_block("clamp(47 - 4 * (flexibility - 3) - 3 * (style - 2), 28, 62)", "75"),
             _frame_block(_ROAD_CRANK, 0.65, 25, "clamp(round(shoulder / 20) * 20, 360, 480)")),
 ]
 SCHEMES: dict[str, dict] = {s["name"]: s for s in BUILTIN_SCHEMES}
@@ -689,6 +689,6 @@ def fit_report(g: Geometry) -> list[tuple[str, str]]:
     return rows
 
 
-def recommendations_table(recs: Iterable[Recommendation], units: str = "mm") -> list[dict[str, Any]]:
+def recommendations_table(recs: Iterable[Recommendation]) -> list[dict[str, Any]]:
     """Plain dicts (for JSON / CSV / GUI tables)."""
     return [asdict(r) for r in recs]

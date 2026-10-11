@@ -347,7 +347,8 @@ for key, name, od, wall_e, wall_m, butt in (
         _mm(f"{key}_wall_mid", f"{name} wall (centre)", G, name, wall_m, 0.2, 10, 0.05),
         _mm(f"{key}_butt_length", f"{name} butt length", G, name, butt, 0, 400),
         _mm(f"{key}_bend", f"{name} bend (sagitta)", G, name, 0, -200, 200, 0.5,
-            help="Curved tubes: offset of the arc midpoint from the straight chord (+ = up / forward)"),
+            help="Curved tubes: offset of the arc midpoint from the chord, + = to the left of the tube "
+                 "direction (top & down tube: upward; seat tube: rearward)"),
         _choice(f"{key}_material", f"{name} material", G, name, "frame", (("frame", "Same as frame"),) + MATERIALS),
     ]
 _tubes += [
@@ -384,7 +385,7 @@ _fork = [
     _num("fork_sag", "Sag", G, "Fork", 0, "%", 0, 50, 1, help="Geometry is solved with the fork compressed by this fraction of travel",
          vis=("fork_type", ("suspension",))),
     _mm("fork_stanchion_od", "Stanchion diameter", G, "Fork", 34, 20, 45, vis=("fork_type", ("suspension",))),
-    _mm("fork_crown_height", "Crown height", G, "Fork", 35, 5, 80),
+    _mm("fork_crown_height", "Crown height", G, "Fork", 25, 5, 80),
     _mm("fork_crown_width", "Crown width (blade c-c)", G, "Fork", 110, 50, 200),
     _mm("fork_blade_od", "Blade OD", G, "Fork", 28, 10, 60, 0.1),
     _mm("fork_blade_od_tip", "Blade OD at dropout", G, "Fork", 14, 5, 60, 0.1),
@@ -444,6 +445,9 @@ _saddle = [
     _mm("saddle_stack", "Saddle stack (rails to top)", G, "Saddle", 45, 10, 120),
     _deg("saddle_tilt", "Saddle tilt", G, "Saddle", 0, -20, 20, 0.5, help="+ = nose up"),
     _mm("seatpost_od", "Seatpost diameter", G, "Seatpost", 27.2, 20, 40, 0.1),
+    _mm("seatpost_offset", "Seatpost setback (head offset)", G, "Seatpost", 0, -30, 50, 0.5,
+        help="Offset of the post's clamp behind its axis; the remainder is taken up by sliding the saddle rails"),
+    _mm("rail_range", "Saddle rail adjustment range (±)", G, "Seatpost", 20, 0, 60),
     _mm("seatpost_length", "Seatpost length", G, "Seatpost", 350, 100, 600),
     _mm("seatpost_min_insertion", "Minimum insertion", G, "Seatpost", 65, 0, 300),
     _choice("seatpost_type", "Seatpost type", G, "Seatpost", "standard",
@@ -506,7 +510,7 @@ _acc = [
     _mm("fender_clearance", "Fender clearance", G, "Fenders & racks", 12, 0, 60),
     _mm("fender_width", "Fender width", G, "Fenders & racks", 45, 20, 100),
     _bool("rack_rear", "Rear rack", G, "Fenders & racks", False),
-    _mm("rack_height", "Rear rack height above axle", G, "Fenders & racks", 330, 150, 500),
+    _mm("rack_height", "Rear rack height above axle", G, "Fenders & racks", 380, 150, 550),
     _bool("rack_front", "Front rack", G, "Fenders & racks", False),
     _bool("cs_bridge", "Chainstay bridge", G, "Braze-ons", True),
     _mm("cs_bridge_pos", "Chainstay bridge from BB", G, "Braze-ons", 110, 30, 300),

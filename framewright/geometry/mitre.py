@@ -89,6 +89,7 @@ class MitreCut:
     phase: float                # rotation of this cut relative to the other end of the tube (deg)
     # -- extra detail --------------------------------------------------------------
     tube_label: str = ""
+    end_label: str = ""         # e.g. "head-tube end"
     receiver_labels: list[str] = field(default_factory=list)
     profile: str = "round"
     mirrored: bool = False      # a mirror-image copy is needed (stay pairs)
@@ -368,7 +369,7 @@ def _line_intervals(rec: Receiver, Q: np.ndarray, D: np.ndarray, vlo: float, vhi
     c = b - _GOLD * (b - a)
     d = a + _GOLD * (b - a)
     gc, gd = g_at(c), g_at(d)
-    for _ in range(80):
+    for _ in range(64):
         left = gc < gd
         b = np.where(left, d, b)
         a = np.where(left, a, c)
@@ -385,7 +386,7 @@ def _line_intervals(rec: Receiver, Q: np.ndarray, D: np.ndarray, vlo: float, vhi
 
     def bisect(inside_end, outside_end):
         lo_, hi_ = inside_end.copy(), outside_end.copy()
-        for _ in range(64):
+        for _ in range(56):
             mid = (lo_ + hi_) * 0.5
             ins = g_at(mid) < 0.0
             lo_ = np.where(ins, mid, lo_)
@@ -649,7 +650,7 @@ def _make_cut(g: Geometry, tube: Tube, end: str, recs: list[Receiver], samples: 
         perimeter=prof.perimeter, points=[(float(x), float(y)) for x, y in zip(prof.u, v)],
         angle=angle, offset=offset, long_point=float(v.min()), short_point=float(v.max()),
         holesaw_diameter=hs, holesaw_angle=90.0 - angle, holesaw_offset=offset, phase=phase_abs,
-        tube_label=tube.label, receiver_labels=rlabels,
+        tube_label=tube.label, end_label=end_description(tube, end), receiver_labels=rlabels,
         profile=tube.profile if abs(od - w) > 1e-9 else "round", mirrored=tube.mirrored,
         phase_abs=phase_abs, saw_rotation=saw, offset_dir=offset_dir, wrap_reversed=wrap_reversed,
         ref_name=ref_name, side_name=side_name, opp_name=opp_name, nside_name=nside_name,

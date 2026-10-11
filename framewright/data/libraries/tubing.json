@@ -1,0 +1,2347 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "category": "tubing",
+ "label": "Tubing",
+ "source": "framebuilder-parts-db 1.0.0",
+ "items": [
+  {
+   "id": "columbus-aelle",
+   "name": "Columbus Aelle",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": 0.9
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": 1.0
+     },
+     "st": {
+      "od": 28.6,
+      "wall": 1.0
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Aelle",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "1978-2005",
+    "availability": "discontinued",
+    "tags": [
+     "entry",
+     "durable",
+     "plain-gauge"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "plain",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 2200
+   }
+  },
+  {
+   "id": "columbus-cromor",
+   "name": "Columbus Cromor",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 34.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Cromor",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "2000-",
+    "availability": "current",
+    "tags": [
+     "mid-range",
+     "versatile",
+     "current",
+     "oversized-option"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 1900
+   }
+  },
+  {
+   "id": "columbus-el",
+   "name": "Columbus EL",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 0.9
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "EL",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "1988-1997",
+    "availability": "discontinued",
+    "tags": [
+     "ultralight",
+     "competition",
+     "expert"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1420
+   }
+  },
+  {
+   "id": "columbus-foco",
+   "name": "Columbus Foco",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.9
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Foco",
+    "alloy": "Nivacrom",
+    "material": "steel",
+    "years": "2000-2008",
+    "availability": "discontinued",
+    "tags": [
+     "heat-treated",
+     "competition"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "heat_treated",
+    "tensile_mpa": 1000,
+    "set_weight_g": 1500
+   }
+  },
+  {
+   "id": "columbus-genius",
+   "name": "Columbus Genius",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 34.0,
+      "wall": 0.9
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Genius",
+    "alloy": "Dedal",
+    "material": "steel",
+    "years": "1995-2004",
+    "availability": "discontinued",
+    "tags": [
+     "heat-treated",
+     "oversized"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "heat_treated",
+    "tensile_mpa": 1000,
+    "set_weight_g": 1500
+   }
+  },
+  {
+   "id": "columbus-gilco",
+   "name": "Columbus Gilco Design",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 34.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Gilco Design",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "1986-1995",
+    "availability": "discontinued",
+    "tags": [
+     "oversized",
+     "TIG",
+     "fillet"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1700
+   }
+  },
+  {
+   "id": "columbus-hyperion",
+   "name": "Columbus Hyperion",
+   "values": {
+    "material": "titanium",
+    "tubes": {
+     "tt": {
+      "od": 31.7,
+      "wall": "0.7/0.5"
+     },
+     "dt": {
+      "od": 35.0,
+      "wall": "0.9/0.6"
+     },
+     "st": {
+      "od": 31.7,
+      "wall": "0.9/0.6"
+     },
+     "ht": {
+      "od": 39.0,
+      "wall": 1.2
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Hyperion",
+    "alloy": "Ti-3Al-2.5V (Grade 9)",
+    "material": "titanium",
+    "years": "2001-",
+    "availability": "limited",
+    "tags": [
+     "titanium",
+     "premium",
+     "lightweight"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 620,
+    "set_weight_g": 1100
+   }
+  },
+  {
+   "id": "columbus-life",
+   "name": "Columbus Life",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 31.7,
+      "wall": "0.6/0.35/0.6"
+     },
+     "dt": {
+      "od": 35.0,
+      "wall": "0.7/0.4/0.7"
+     },
+     "st": {
+      "od": 31.7,
+      "wall": "0.7/0.4/0.7"
+     },
+     "ht": {
+      "od": 44.0,
+      "wall": 0.8
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Life",
+    "alloy": "Nivacrom",
+    "material": "steel",
+    "years": "2010-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "shaped",
+     "oversized",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "heat_treated",
+    "tensile_mpa": 1200,
+    "set_weight_g": 1300
+   }
+  },
+  {
+   "id": "columbus-max",
+   "name": "Columbus MAX",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 32.0,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 35.0,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 36.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "MAX",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "1988-2001",
+    "availability": "discontinued",
+    "tags": [
+     "oversized",
+     "shaped",
+     "competition"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1650
+   }
+  },
+  {
+   "id": "columbus-nemo",
+   "name": "Columbus Nemo",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 31.7,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 35.0,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 31.7,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 36.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Nemo",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "2003-2012",
+    "availability": "discontinued",
+    "tags": [
+     "oversized",
+     "TIG"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1700
+   }
+  },
+  {
+   "id": "columbus-sl",
+   "name": "Columbus SL",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     },
+     "cs": {
+      "od": 22.2,
+      "wall": 0.9
+     },
+     "ss": {
+      "od": 15.0,
+      "wall": 0.7
+     },
+     "fork_blade": {
+      "od": 22.2,
+      "wall": "1/0.8"
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "SL",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "1975-2000",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "competition",
+     "lightweight",
+     "lugged"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1580
+   }
+  },
+  {
+   "id": "columbus-slx",
+   "name": "Columbus SLX",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "1/0.7/1"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "1/0.7/1"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "SLX",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "1983-2002",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "competition",
+     "stiff"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1720
+   }
+  },
+  {
+   "id": "columbus-sp",
+   "name": "Columbus SP",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.9/0.7/0.9"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "1/0.8/1"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "1/0.8/1"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "SP",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "1977-1998",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "touring",
+     "training"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1900
+   }
+  },
+  {
+   "id": "columbus-spirit",
+   "name": "Columbus Spirit",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.6/0.4/0.6"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.7/0.4/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.8
+     },
+     "cs": {
+      "od": 22.2,
+      "wall": 0.7
+     },
+     "ss": {
+      "od": 16.0,
+      "wall": 0.6
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Spirit",
+    "alloy": "Nivacrom",
+    "material": "steel",
+    "years": "2005-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "competition",
+     "triple-butted",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "heat_treated",
+    "tensile_mpa": 1200,
+    "set_weight_g": 1350
+   }
+  },
+  {
+   "id": "columbus-thron",
+   "name": "Columbus Thron",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 31.7,
+      "wall": "0.7/0.5/0.7"
+     },
+     "dt": {
+      "od": 35.0,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 31.7,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 44.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Thron",
+    "alloy": "25CrMo4 heat-treated",
+    "material": "steel",
+    "years": "2008-",
+    "availability": "current",
+    "tags": [
+     "heat-treated",
+     "oversized",
+     "modern",
+     "tapered"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "heat_treated",
+    "tensile_mpa": 850,
+    "set_weight_g": 1750
+   }
+  },
+  {
+   "id": "columbus-tsx",
+   "name": "Columbus TSX",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.6"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.5/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.5/0.7"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "TSX",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "1987-1998",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "competition",
+     "triple-butted"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1550
+   }
+  },
+  {
+   "id": "columbus-xcr",
+   "name": "Columbus XCr",
+   "values": {
+    "material": "stainless",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.6/0.4/0.6"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.7/0.4/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.9
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "XCr",
+    "alloy": "Stainless steel",
+    "material": "stainless",
+    "years": "2008-",
+    "availability": "current",
+    "tags": [
+     "stainless",
+     "premium",
+     "corrosion-resistant",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "cold_worked",
+    "tensile_mpa": 1100,
+    "set_weight_g": 1500
+   }
+  },
+  {
+   "id": "columbus-zona",
+   "name": "Columbus Zona",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.8/0.6/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.7/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.7/0.9"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Columbus",
+    "series": "Zona",
+    "alloy": "25CrMo4",
+    "material": "steel",
+    "years": "2002-",
+    "availability": "current",
+    "tags": [
+     "entry",
+     "touring",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 2000
+   }
+  },
+  {
+   "id": "dedacciai-sat145",
+   "name": "Dedacciai SAT 14.5",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.6/0.4/0.6"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.7/0.4/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.8
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Dedacciai",
+    "series": "SAT 14.5",
+    "alloy": "Air-hardening CrMo",
+    "material": "steel",
+    "years": "2005-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "air-hardening",
+     "competition",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "air_hardening",
+    "tensile_mpa": 1100,
+    "set_weight_g": 1400
+   }
+  },
+  {
+   "id": "dedacciai-ti",
+   "name": "Dedacciai Ti",
+   "values": {
+    "material": "titanium",
+    "tubes": {
+     "tt": {
+      "od": 31.7,
+      "wall": "0.7/0.5"
+     },
+     "dt": {
+      "od": 35.0,
+      "wall": "0.9/0.6"
+     },
+     "st": {
+      "od": 31.7,
+      "wall": "0.9/0.6"
+     },
+     "ht": {
+      "od": 39.0,
+      "wall": 1.2
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Dedacciai",
+    "series": "Ti",
+    "alloy": "Ti-3Al-2.5V (Grade 9)",
+    "material": "titanium",
+    "years": "2005-",
+    "availability": "limited",
+    "tags": [
+     "titanium",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 620,
+    "set_weight_g": 1100
+   }
+  },
+  {
+   "id": "dedacciai-zero-tre",
+   "name": "Dedacciai Zero Tre",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.6"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.8/0.5/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.7"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.9
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Dedacciai",
+    "series": "Zero Tre",
+    "alloy": "CrMo microalloyed",
+    "material": "steel",
+    "years": "2010-",
+    "availability": "current",
+    "tags": [
+     "mid-range",
+     "triple-butted",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "heat_treated",
+    "tensile_mpa": 900,
+    "set_weight_g": 1650
+   }
+  },
+  {
+   "id": "dedacciai-zero-uno",
+   "name": "Dedacciai Zero Uno",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Dedacciai",
+    "series": "Zero Uno",
+    "alloy": "CrMo microalloyed",
+    "material": "steel",
+    "years": "2010-",
+    "availability": "current",
+    "tags": [
+     "entry",
+     "heat-treated",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "heat_treated",
+    "tensile_mpa": 800,
+    "set_weight_g": 1900
+   }
+  },
+  {
+   "id": "kaisei-019",
+   "name": "Kaisei 019",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     },
+     "steerer": {
+      "od": 25.4,
+      "wall": "2.2/1.6"
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Kaisei",
+    "series": "019",
+    "alloy": "AISI 4130 CrMo",
+    "material": "steel",
+    "years": "1993-",
+    "availability": "current",
+    "tags": [
+     "lightweight",
+     "road",
+     "randonneur",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 560,
+    "set_weight_g": 1700
+   }
+  },
+  {
+   "id": "kaisei-022",
+   "name": "Kaisei 022",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.9/0.6/0.9"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     },
+     "steerer": {
+      "od": 25.4,
+      "wall": "2.2/1.6"
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Kaisei",
+    "series": "022",
+    "alloy": "AISI 4130 CrMo",
+    "material": "steel",
+    "years": "1993-",
+    "availability": "current",
+    "tags": [
+     "workhorse",
+     "touring",
+     "randonneur",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 560,
+    "set_weight_g": 2000
+   }
+  },
+  {
+   "id": "kaisei-4130r",
+   "name": "Kaisei 4130R",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.7/0.5/0.7"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Kaisei",
+    "series": "4130R",
+    "alloy": "AISI 4130 CrMo",
+    "material": "steel",
+    "years": "2000-",
+    "availability": "current",
+    "tags": [
+     "lightweight",
+     "thin-wall",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 560,
+    "set_weight_g": 1550
+   }
+  },
+  {
+   "id": "kaisei-8630",
+   "name": "Kaisei 8630",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.4/0.7"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.4/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.4/0.7"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Kaisei",
+    "series": "8630",
+    "alloy": "AISI 8630 NiCrMo",
+    "material": "steel",
+    "years": "1995-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "quad-butted",
+     "NiCrMo",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "quad",
+    "treatment": "none",
+    "tensile_mpa": 620,
+    "set_weight_g": 1600
+   }
+  },
+  {
+   "id": "kaisei-8630r",
+   "name": "Kaisei 8630R",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.7/0.5/0.7"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Kaisei",
+    "series": "8630R",
+    "alloy": "AISI 8630 NiCrMo",
+    "material": "steel",
+    "years": "2000-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "NiCrMo",
+     "track",
+     "NJS",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 620,
+    "set_weight_g": 1450
+   }
+  },
+  {
+   "id": "kaisei-ultima-019",
+   "name": "Kaisei Ultima 019",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.65"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Kaisei",
+    "series": "Ultima 019",
+    "alloy": "AISI 4130 CrMo (heat-treated)",
+    "material": "steel",
+    "years": "2005-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "heat-treated",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "heat_treated",
+    "tensile_mpa": 700,
+    "set_weight_g": 1550
+   }
+  },
+  {
+   "id": "kva-custom455",
+   "name": "KVA Stainless Custom 455",
+   "values": {
+    "material": "stainless",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.6/0.4"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.7/0.4"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.4"
+     }
+    }
+   },
+   "meta": {
+    "vendor": "KVA Stainless",
+    "series": "Custom 455",
+    "alloy": "Custom 455 PH Stainless",
+    "material": "stainless",
+    "years": "2000-",
+    "availability": "current",
+    "tags": [
+     "stainless",
+     "premium",
+     "precipitation",
+     "american",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "precipitation",
+    "tensile_mpa": 1600
+   }
+  },
+  {
+   "id": "reynolds-ti-325",
+   "name": "Reynolds 3/2.5 Titanium",
+   "values": {
+    "material": "titanium",
+    "tubes": {
+     "tt": {
+      "od": 31.7,
+      "wall": "0.7/0.5"
+     },
+     "dt": {
+      "od": 35.0,
+      "wall": "0.9/0.5"
+     },
+     "st": {
+      "od": 31.7,
+      "wall": "0.9/0.5"
+     },
+     "ht": {
+      "od": 39.0,
+      "wall": 1.2
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "3/2.5 Titanium",
+    "alloy": "Ti-3Al-2.5V (Grade 9)",
+    "material": "titanium",
+    "years": "1995-",
+    "availability": "current",
+    "tags": [
+     "titanium",
+     "premium",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 620,
+    "set_weight_g": 1050
+   }
+  },
+  {
+   "id": "reynolds-501",
+   "name": "Reynolds 501",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": 0.9
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": 1.0
+     },
+     "st": {
+      "od": 28.6,
+      "wall": 1.0
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.2
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "501",
+    "alloy": "Manganese-Molybdenum",
+    "material": "steel",
+    "years": "1983-2005",
+    "availability": "discontinued",
+    "tags": [
+     "budget",
+     "plain-gauge"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "plain",
+    "treatment": "none",
+    "tensile_mpa": 620,
+    "set_weight_g": 2300
+   }
+  },
+  {
+   "id": "reynolds-520",
+   "name": "Reynolds 520",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": 0.9
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": 1.0
+     },
+     "st": {
+      "od": 28.6,
+      "wall": 1.0
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "520",
+    "alloy": "Chrome-Molybdenum",
+    "material": "steel",
+    "years": "1990-",
+    "availability": "current",
+    "tags": [
+     "entry",
+     "plain-gauge",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "plain",
+    "treatment": "none",
+    "tensile_mpa": 650,
+    "set_weight_g": 2200
+   }
+  },
+  {
+   "id": "reynolds-525",
+   "name": "Reynolds 525",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "525",
+    "alloy": "Chrome-Molybdenum",
+    "material": "steel",
+    "years": "1995-",
+    "availability": "current",
+    "tags": [
+     "entry",
+     "double-butted",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 1950
+   }
+  },
+  {
+   "id": "reynolds-531",
+   "name": "Reynolds 531",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     },
+     "fork_blade": {
+      "od": 22.2,
+      "wall": "1.2/0.8"
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "531",
+    "alloy": "Manganese-Molybdenum",
+    "material": "steel",
+    "years": "1935-2000",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "iconic",
+     "manganese-moly",
+     "lugged"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 1800
+   }
+  },
+  {
+   "id": "reynolds-531c",
+   "name": "Reynolds 531 Competition",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.7/0.4/0.7"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 0.9
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "531 Competition",
+    "alloy": "Manganese-Molybdenum",
+    "material": "steel",
+    "years": "1965-2000",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "competition",
+     "lightweight"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 1600
+   }
+  },
+  {
+   "id": "reynolds-531-professional",
+   "name": "Reynolds 531 Professional",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "531 Professional",
+    "alloy": "Manganese-Molybdenum",
+    "material": "steel",
+    "years": "1980-2000",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "professional"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 1700
+   }
+  },
+  {
+   "id": "reynolds-531st",
+   "name": "Reynolds 531 Super Tourist",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.9/0.6/0.9"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "1/0.7/1"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "1/0.7/1"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 1.2
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "531 Super Tourist",
+    "alloy": "Manganese-Molybdenum",
+    "material": "steel",
+    "years": "1975-1998",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "touring",
+     "load-carrying"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 2000
+   }
+  },
+  {
+   "id": "reynolds-631",
+   "name": "Reynolds 631",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "631",
+    "alloy": "Air-hardening CrMo",
+    "material": "steel",
+    "years": "2008-",
+    "availability": "current",
+    "tags": [
+     "air-hardening",
+     "mid-range",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "air_hardening",
+    "tensile_mpa": 800,
+    "set_weight_g": 1850
+   }
+  },
+  {
+   "id": "reynolds-725",
+   "name": "Reynolds 725",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "725",
+    "alloy": "Chrome-Molybdenum (heat-treated)",
+    "material": "steel",
+    "years": "2005-",
+    "availability": "current",
+    "tags": [
+     "heat-treated",
+     "touring",
+     "adventure",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "heat_treated",
+    "tensile_mpa": 900,
+    "set_weight_g": 1750
+   }
+  },
+  {
+   "id": "reynolds-753",
+   "name": "Reynolds 753",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.6/0.35/0.6"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "ht": {
+      "od": 32.4,
+      "wall": 0.8
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "753",
+    "alloy": "Manganese-Molybdenum (heat-treated)",
+    "material": "steel",
+    "years": "1975-2000",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "premium",
+     "heat-treated",
+     "certified-builders"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "heat_treated",
+    "tensile_mpa": 1100,
+    "set_weight_g": 1350
+   }
+  },
+  {
+   "id": "reynolds-853",
+   "name": "Reynolds 853",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.9
+     },
+     "cs": {
+      "od": 22.2,
+      "wall": 0.8
+     },
+     "ss": {
+      "od": 14.0,
+      "wall": 0.7
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "853",
+    "alloy": "Air-hardening CrMo",
+    "material": "steel",
+    "years": "1995-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "air-hardening",
+     "competition",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "air_hardening",
+    "tensile_mpa": 1100,
+    "set_weight_g": 1500
+   }
+  },
+  {
+   "id": "reynolds-921",
+   "name": "Reynolds 921",
+   "values": {
+    "material": "stainless",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.7/0.5/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.9
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "921",
+    "alloy": "Stainless steel",
+    "material": "stainless",
+    "years": "2012-",
+    "availability": "current",
+    "tags": [
+     "stainless",
+     "mid-premium",
+     "corrosion-resistant",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 900,
+    "set_weight_g": 1500
+   }
+  },
+  {
+   "id": "reynolds-953",
+   "name": "Reynolds 953",
+   "values": {
+    "material": "stainless",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.5/0.3/0.5"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.6/0.3/0.6"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.6/0.3/0.6"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.7
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Reynolds",
+    "series": "953",
+    "alloy": "Maraging stainless steel",
+    "material": "stainless",
+    "years": "2007-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "stainless",
+     "maraging",
+     "ultralight",
+     "current"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "precipitation",
+    "tensile_mpa": 2000,
+    "set_weight_g": 1250
+   }
+  },
+  {
+   "id": "tange-champion-2",
+   "name": "Tange Champion #2",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Tange",
+    "series": "Champion #2",
+    "alloy": "CrMo",
+    "material": "steel",
+    "years": "1980-",
+    "availability": "current",
+    "tags": [
+     "mid-range",
+     "touring",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 1900
+   }
+  },
+  {
+   "id": "tange-crmo-special",
+   "name": "Tange Cro-Mo Special",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": 0.9
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": 1.0
+     },
+     "st": {
+      "od": 28.6,
+      "wall": 1.0
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.2
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Tange",
+    "series": "Cro-Mo Special",
+    "alloy": "CrMo",
+    "material": "steel",
+    "years": "1975-",
+    "availability": "current",
+    "tags": [
+     "budget",
+     "plain-gauge",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "plain",
+    "treatment": "none",
+    "tensile_mpa": 620,
+    "set_weight_g": 2300
+   }
+  },
+  {
+   "id": "tange-infinity",
+   "name": "Tange Infinity",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Tange",
+    "series": "Infinity",
+    "alloy": "CrMo (air-hardening)",
+    "material": "steel",
+    "years": "1995-",
+    "availability": "current",
+    "tags": [
+     "air-hardening",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "air_hardening",
+    "tensile_mpa": 950,
+    "set_weight_g": 1600
+   }
+  },
+  {
+   "id": "tange-mangaloy",
+   "name": "Tange Mangaloy",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Tange",
+    "series": "Mangaloy",
+    "alloy": "Manganese-Molybdenum",
+    "material": "steel",
+    "years": "1975-1995",
+    "availability": "discontinued",
+    "tags": [
+     "classic",
+     "manganese-moly",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 650,
+    "set_weight_g": 1950
+   }
+  },
+  {
+   "id": "tange-no2",
+   "name": "Tange No.2",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.8/0.6/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.7/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.7/0.9"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Tange",
+    "series": "No.2",
+    "alloy": "CrMo",
+    "material": "steel",
+    "years": "1978-",
+    "availability": "current",
+    "tags": [
+     "entry",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 650,
+    "set_weight_g": 2000
+   }
+  },
+  {
+   "id": "tange-prestige",
+   "name": "Tange Prestige",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 25.4,
+      "wall": "0.7/0.4/0.6"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.7"
+     },
+     "ht": {
+      "od": 31.8,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "Tange",
+    "series": "Prestige",
+    "alloy": "CrMo (heat-treated)",
+    "material": "steel",
+    "years": "1985-",
+    "availability": "current",
+    "tags": [
+     "premium",
+     "heat-treated",
+     "triple-butted",
+     "current",
+     "japanese"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "heat_treated",
+    "tensile_mpa": 1100,
+    "set_weight_g": 1450
+   }
+  },
+  {
+   "id": "true-temper-ox-gold",
+   "name": "True Temper OX Gold",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.7/0.5/0.7"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.8/0.5/0.8"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "True Temper",
+    "series": "OX Gold",
+    "alloy": "CrMo (heat-treated)",
+    "material": "steel",
+    "years": "1993-2010",
+    "availability": "discontinued",
+    "tags": [
+     "heat-treated",
+     "american"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "heat_treated",
+    "tensile_mpa": 900,
+    "set_weight_g": 1600
+   }
+  },
+  {
+   "id": "true-temper-ox-platinum",
+   "name": "True Temper OX Platinum",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.6/0.4/0.6"
+     },
+     "dt": {
+      "od": 31.7,
+      "wall": "0.7/0.4/0.7"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.7/0.4/0.7"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 0.9
+     }
+    }
+   },
+   "meta": {
+    "vendor": "True Temper",
+    "series": "OX Platinum",
+    "alloy": "Air-hardening CrMo",
+    "material": "steel",
+    "years": "1995-2010",
+    "availability": "discontinued",
+    "tags": [
+     "premium",
+     "air-hardening",
+     "american",
+     "triple-butted"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "triple",
+    "treatment": "air_hardening",
+    "tensile_mpa": 1100,
+    "set_weight_g": 1400
+   }
+  },
+  {
+   "id": "true-temper-s3",
+   "name": "True Temper S3",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.8/0.5/0.8"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "True Temper",
+    "series": "S3",
+    "alloy": "CrMo",
+    "material": "steel",
+    "years": "1990-2010",
+    "availability": "discontinued",
+    "tags": [
+     "competition",
+     "american"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 750,
+    "set_weight_g": 1700
+   }
+  },
+  {
+   "id": "true-temper-verus",
+   "name": "True Temper Verus",
+   "values": {
+    "material": "steel",
+    "tubes": {
+     "tt": {
+      "od": 28.6,
+      "wall": "0.9/0.6/0.9"
+     },
+     "dt": {
+      "od": 28.6,
+      "wall": "1/0.7/1"
+     },
+     "st": {
+      "od": 28.6,
+      "wall": "1/0.7/1"
+     },
+     "ht": {
+      "od": 33.0,
+      "wall": 1.0
+     }
+    }
+   },
+   "meta": {
+    "vendor": "True Temper",
+    "series": "Verus",
+    "alloy": "CrMo",
+    "material": "steel",
+    "years": "1988-2010",
+    "availability": "discontinued",
+    "tags": [
+     "entry",
+     "touring",
+     "american"
+    ],
+    "source": "framebuilder-parts-db",
+    "butting": "double",
+    "treatment": "none",
+    "tensile_mpa": 700,
+    "set_weight_g": 1950
+   }
+  }
+ ]
+}

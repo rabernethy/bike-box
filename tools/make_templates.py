@@ -538,6 +538,70 @@ template(
     ))
 
 
+template(
+    "road_tandem", "Road tandem L/M", "tandem",
+    "Steel road tandem, large captain / medium stoker: 740 mm BB-to-BB, marathon tube, oversize boom, "
+    "145 mm rear hub, 700x32 tires, disc brakes and an eccentric-free timing drive.",
+    merge(
+        wheels(622, 32, 31),
+        tubes("tt", 35.0, "0.9/0.7/0.9", 80), tubes("dt", 38.1, "0.9/0.7/0.9", 90),
+        tubes("st", 31.8, "0.9/0.7/0.9", 120),
+        ROAD_COCKPIT,
+        frame_type="tandem", tandem_bb_distance=740, tandem_bb_dy=0, stoker_st_angle=73.0, stoker_st_length=500,
+        stoker_tt_drop=0, stoker_tt_angle=0, tandem_mid_tube="marathon", tandem_tube_od=38.1,
+        stoker_saddle_height=700, stoker_bar_drop=110, stoker_stem_length=110, timing_ring=32,
+        frame_size_label="L/M", frame_material="steel", joint_style="tig",
+        head_tube_angle=72.0, seat_tube_angle=73.0, stack=600, reach=390,
+        seat_tube_length=560, st_extension=25, tt_ht_offset=18, dt_ht_offset=30,
+        bb_drop=72, chainstay_length=440, rear_hub_spacing=145, front_hub_spacing=100,
+        bb_shell_od=41, bb_shell_width=68,
+        ht_od_top=44, ht_od_bottom=44, ht_wall=1.4, cs_od_bb=22.2, cs_od_drop=16, cs_wall=0.9,
+        ss_od_top=19, ss_od_drop=16, ss_wall=0.9,
+        fork_type="rigid", fork_length=395, fork_offset=50, fork_crown_height=25, fork_crown_width=110,
+        fork_blade_od=31.8, fork_blade_od_tip=18, fork_blade_shape="straight",
+        lower_stack=12, upper_stack=8, spacers=30, steerer_od=28.6,
+        stem_length=100, saddle_height=750,
+        drive_type="derailleur", crank_length=172.5, chainrings="48, 34", cogs="11, 12, 13, 15, 17, 19, 22, 25, 28, 32, 36",
+        brake_front="disc", brake_rear="disc", rotor_front=203, rotor_rear=180,
+        spokes_front=36, spokes_rear=40, cross_front=3, cross_rear=3,
+        bottle_dt=True, bottle_st=False, paint_frame="#1b6f8a", paint_fork="#1b6f8a",
+        paint_head_tube="#f2f2f2", decal_text="FRAMEWRIGHT TANDEM",
+    ))
+
+template(
+    "ebike_trekking", "E-trekking (mid-drive) M", "ebike",
+    "Aluminium trekking e-bike, size M: mid-drive motor housing at the BB, down-tube battery, 700x47 tires, "
+    "fenders and rear rack, 1x10 and a swept city bar.",
+    merge(
+        wheels(622, 47, 44),
+        tubes("tt", 38.1, "1.4/1.1/1.4", 80), tubes("dt", 50.8, "1.6/1.2/1.6", 90),
+        tubes("st", 34.9, "1.6/1.2/1.6", 120),
+        FLAT_COCKPIT,
+        frame_size_label="M", frame_material="aluminium", joint_style="tig",
+        bb_housing="mid_motor", housing_length=180, housing_height=150, housing_dx=15, housing_dy=30,
+        housing_mass=2900, battery="downtube", battery_length=400, battery_thickness=75, battery_pos=110,
+        battery_mass=2600,
+        head_tube_angle=70.5, seat_tube_angle=73.5, stack=640, reach=400,
+        seat_tube_length=500, st_extension=40, tt_ht_offset=18, dt_ht_offset=35,
+        bb_drop=60, chainstay_length=470, rear_hub_spacing=135, front_hub_spacing=100,
+        bb_shell_od=44, bb_shell_width=73,
+        ht_od_top=44, ht_od_bottom=56, ht_wall=1.8, cs_od_bb=25, cs_od_drop=18, cs_wall=1.2,
+        ss_od_top=19, ss_od_drop=16, ss_wall=1.2,
+        fork_type="rigid", fork_length=410, fork_offset=50, fork_crown_height=25, fork_crown_width=115,
+        fork_blade_od=32, fork_blade_od_tip=18, fork_blade_shape="straight",
+        lower_stack=12, upper_stack=8, spacers=30, steerer_od=28.6,
+        stem_length=80, stem_angle=15, bar_type="swept", bar_rise=30, bar_backsweep=30, bar_width=620,
+        saddle_height=720, saddle_length=260,
+        drive_type="derailleur", crank_length=170, chainrings="38", cogs="11, 13, 15, 18, 21, 24, 28, 32, 37, 42",
+        front_derailleur=False, pedal_type="flat",
+        brake_front="disc", brake_rear="disc", rotor_front=180, rotor_rear=180,
+        spokes_front=36, spokes_rear=36, cross_front=3, cross_rear=3,
+        fenders=True, fender_clearance=12, rack_rear=True, rack_height=390,
+        bottle_dt=False, bottle_st=True, paint_frame="#3c4a3e", paint_fork="#3c4a3e",
+        paint_head_tube="#3c4a3e", decal_text="E-TREK",
+    ))
+
+
 # --------------------------------------------------------------------------
 # build / check / write
 # --------------------------------------------------------------------------

@@ -576,7 +576,9 @@ def solve(d: Design) -> Geometry:
                            wall_end=float(et.get("wall", 0.9)), wall_mid=float(et.get("wall", 0.9)),
                            bend=float(et.get("bend", 0.0)), material=d["frame_material"],
                            za=float(et.get("za", 0.0)), zb=float(et.get("zb", 0.0)),
-                           mirrored=bool(et.get("mirrored", False)), kind="extra")
+                           mirrored=bool(et.get("mirrored", False)), kind="extra",
+                           join_a=et.get("join_a") or _spec_join(et.get("a")),
+                           join_b=et.get("join_b") or _spec_join(et.get("b")))
 
     # -- derived values -----------------------------------------------------------
     sa_eff = math.degrees(math.atan2(S.y, -S.x)) if S.length() > 1 else sta
@@ -585,29 +587,24 @@ def solve(d: Design) -> Geometry:
     axis_ground = T + u * t_g
     trail = axis_ground.x - Ax
     p["axis_ground"] = axis_ground
-    tt = tubes.get("tt")
-    # standover
+    # standover: top surface of the highest straddled tube at xs
     so_mode = d["standover_at"]
-    if tt is not None:
-        if so_mode == "custom":
-            xs = d.f("standover_x")
-        elif so_mode == "bb":
-            xs = 0.0
-        else:
-            xs = (J_st.x + J_ht.x) / 2
-        # y of top tube centre-line at xs (follow bend polyline)
-        pts = tt.points()
-        ys = None
-        for i in range(len(pts) - 1):
-            a_, b_ = pts[i], pts[i + 1]
-            if min(a_.x, b_.x) - 1e-9 <= xs <= max(a_.x, b_.x) + 1e-9 and abs(b_.x - a_.x) > 1e-9:
-                t = (xs - a_.x) / (b_.x - a_.x)
-                slope = math.atan2(b_.y - a_.y, b_.x - a_.x)
-                frac = project_on_line(a_.lerp(b_, t), tt.a, tt.b - tt.a) / max(tt.chord, 1e-9)
-                ys = a_.y + (b_.y - a_.y) * t + tt.od_at(frac) / 2 / max(math.cos(slope), 0.2)
-                break
-        if ys is None:          # outside the top tube: use the tube end nearest
-            ys = max(J_st.y, J_ht.y) + tt.od_b / 2
+    if so_mode == "custom":
+        xs = d.f("standover_x")
+    elif so_mode == "bb":
+        xs = 0.0
+    else:
+        xs = (J_st.x + J_ht.x) / 2
+    ys = None
+    for name, tb in tubes.items():
+        if name in ("ht", "st", "st2", "cs", "ss", "ss_mono", "fork") or tb.kind == "stay":
+            continue
+        top = _tube_top_at(tb, xs)
+        if top is not None and (ys is None or top > ys):
+            ys = top
+    if ys is None and "tt" in tubes:          # outside the top tube: use its higher end
+        ys = max(J_st.y, J_ht.y) + tubes["tt"].od_b / 2
+    if ys is not None:
         standover = ys - g.ground_y
         p["standover"] = V(xs, ys)
     else:
@@ -668,8 +665,11 @@ def solve(d: Design) -> Geometry:
         g.warn(f"Toe overlap: clearance {toe_clear:.0f} mm")
     if rear_tire_clear < 3:
         g.warn(f"Rear tire to seat tube clearance only {rear_tire_clear:.1f} mm")
-    if abs(setback) > 45:
-        g.warn(f"Saddle position needs {setback:.0f} mm of seatpost setback")
+    rail_adjust = setback - d.f("seatpost_offset")
+    v["saddle_rail_adjust"] = rail_adjust
+    if abs(rail_adjust) > d.f("rail_range"):
+        g.warn(f"Saddle needs {rail_adjust:+.0f} mm of rail adjustment with a {d.f('seatpost_offset'):.0f} mm "
+               f"setback post (range ±{d.f('rail_range'):.0f} mm)")
     # joint ("lug") angles, quoted the way lugsets are: HT/TT ≈ HTA, ST/TT ≈ STA
     v["angle_ht_tt"] = _interior(u, tt_dir * -1)
     v["angle_ht_dt"] = _interior(u * -1, w_dt * -1)
@@ -726,6 +726,38 @@ def _tandem_tubes(g: Geometry, d: Design, SB: V, s2: V, P2: V, stay_node: V, hub
     g.v["stoker_saddle_height"] = d.f("stoker_saddle_height")
     g.v["stoker_saddle_to_bar"] = S2.dist(p["stoker_bar"])
     g.v["stoker_knee_room"] = p["stoker_bar"].x - p["stoker_saddle_nose"].x
+
+
+def _tube_top_at(tb: Tube, xs: float) -> float | None:
+    """Height of a tube's top surface at x = xs (None if the tube doesn't span xs)."""
+    pts = tb.points()
+    for i in range(len(pts) - 1):
+        a_, b_ = pts[i], pts[i + 1]
+        if min(a_.x, b_.x) - 1e-9 <= xs <= max(a_.x, b_.x) + 1e-9 and abs(b_.x - a_.x) > 1e-9:
+            t = (xs - a_.x) / (b_.x - a_.x)
+            slope = math.atan2(b_.y - a_.y, b_.x - a_.x)
+            if abs(math.cos(slope)) < 0.35:          # near-vertical tubes aren't straddled
+                return None
+            frac = project_on_line(a_.lerp(b_, t), tb.a, tb.b - tb.a) / max(tb.chord, 1e-9)
+            return a_.y + (b_.y - a_.y) * t + tb.od_at(max(0.0, min(1.0, frac))) / 2 / abs(math.cos(slope))
+    return None
+
+
+_POINT_JOINS = {"bb": "bb", "dt_bb": "bb", "st_bottom": "bb", "rear_axle": "dropout", "stay_node": "dropout",
+                "ht_top": "ht", "ht_bottom": "ht", "tt_ht": "ht", "dt_ht": "ht", "tt_st": "st", "st_top": "st",
+                "ss_top": "st", "crown": "crown", "front_axle": "fork_end"}
+
+
+def _spec_join(spec: Any) -> str | None:
+    """What an extra tube end attaches to, inferred from its point spec."""
+    if isinstance(spec, str):
+        return _POINT_JOINS.get(spec)
+    if isinstance(spec, dict):
+        if "tube" in spec:
+            return str(spec["tube"])
+        if "point" in spec:
+            return _POINT_JOINS.get(str(spec["point"]))
+    return None
 
 
 def _interior(a: V, b: V) -> float:

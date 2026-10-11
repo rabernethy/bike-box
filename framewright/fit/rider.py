@@ -72,9 +72,10 @@ P.register([
     _mm("head_neck_length", "Head & neck (shoulder to head centre)", _SEG, 0, 0, 400,
         help="0 = estimate (0.115 × height)"),
     _mm("hip_above_saddle", "Hip joint above saddle top", _POS, 0, 0, 250,
-        help="Height of the hip joint centre above the saddle reference point. 0 = estimate (0.09 × inseam)"),
-    _mm("hip_forward", "Hip joint forward of saddle reference", _POS, 0, -150, 150,
-        help="Along the saddle; negative = hip behind the saddle reference point"),
+        help="Height of the hip joint centre above the saddle reference point. 0 = estimate (0.095 × inseam)"),
+    _mm("hip_forward", "Hip joint forward of saddle reference", _POS, 20, -150, 150,
+        help="Along the saddle; negative = hip behind the saddle reference point.  With the pelvis tilted "
+             "forward the hip joint sits ahead of the sit bones (default 20 mm)"),
     _mm("cleat_offset", "Ball of foot ahead of pedal spindle", _POS, 0, -60, 80,
         help="Cleat position: + = ball of the foot in front of the spindle (mid-foot cleats are +20 to +40)"),
     _deg("ankle_angle", "Foot angle at bottom of stroke", _POS, 15, -20, 60,
@@ -110,7 +111,7 @@ R_HEAD_NECK = 0.115       # shoulder joint to head centre (ear canal)
 R_HEAD_RX = 0.055         # half head length (front-back)
 R_HEAD_RY = 0.065         # half head height
 BMI_DEFAULT = 22.5
-HIP_ABOVE_SADDLE_K = 0.090   # × inseam; calibrated so LeMond height gives ~147° knee extension
+HIP_ABOVE_SADDLE_K = 0.095   # × inseam; calibrated so LeMond height gives ~148° knee extension
 FOOT_HEEL_TO_BALL = 0.73     # × foot length, heel to 1st metatarsal head
 FOOT_ANKLE_TO_BALL = 0.53    # × foot length, ankle joint to 1st metatarsal head (along the sole)
 SHOE_SOLE = 8.0              # outer sole to the plantar skin (mm)
