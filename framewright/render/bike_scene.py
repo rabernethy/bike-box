@@ -255,6 +255,8 @@ class BikeSceneBuilder:
     def _paint(self, t: Tube, base: str | None) -> str | Gradient | None:
         if base is None or self.t.mode != "filled":
             return base
+        if self.d["paint_per_tube"] and t.name in ("tt", "dt", "st", "cs", "ss", "ss_mono"):
+            base = self.d["paint_ss" if t.name == "ss_mono" else f"paint_{t.name}"]
         fade = self.d["fade_style"]
         to = self.d["paint_fade_to"]
         pos = self.d.f("fade_position") / 100.0
@@ -319,10 +321,24 @@ class BikeSceneBuilder:
             dirn = tb.dir_a()
             e = tb.draw_a + dirn * 8
             pts += [e + dirn.perp() * (tb.od_a / 2), e - dirn.perp() * (tb.od_a / 2)]
+        slot = (g.p.get("slot_closed"), g.p.get("slot_open"))
+        if slot[0] is not None:
+            pts += [slot[0] + V.polar(13, a) for a in range(0, 360, 30)]
+            pts += [slot[1] + V.polar(13, a) for a in range(0, 360, 30)]
         hull = convex_hull(pts)
         fill = t.frame_fill if t.mode == "filled" else t.component_fill
         self.sc.poly(hull, t.frame("#9a9a9a" if t.mode == "filled" else fill), "frame", Z_STAY + 1, True, "dropout")
-        self.sc.circle(ax, 5, t.comp("#555555"), "frame", Z_STAY + 2, "dropout")
+        if slot[0] is not None:
+            # the slot itself, open at one end
+            sdir = (slot[1] - slot[0]).norm()
+            open_end = slot[1] + sdir * 14
+            self.sc.poly(rounded_rect_along(slot[0], open_end, 5.2), Style(t.outline, t.width * 0.6, t.bg),
+                         "frame", Z_STAY + 2, True, "dropout")
+        elif self.d["dropout_type"] == "vertical":
+            open_end = ax + V(6, -26)
+            self.sc.poly(rounded_rect_along(ax, open_end, 5.2), Style(t.outline, t.width * 0.6, t.bg),
+                         "frame", Z_STAY + 2, True, "dropout")
+        self.sc.circle(ax, 5, t.comp("#555555"), "frame", Z_STAY + 3, "dropout")
         # derailleur hanger
         if self.d["drive_type"] == "derailleur":
             h = ax + V(4, -22)
@@ -920,6 +936,8 @@ class BikeSceneBuilder:
         units = self.d["units"]
         offsets = self.d.extras.get("dimension_offsets") or {}
         st = t.dimension()
+        tsize = self.d.f("dimension_text_size")
+        thoriz = bool(self.d["dimension_text_horizontal"])
         for dim_id in DIM.visible_ids(g):
             dd = DIM.BY_ID.get(dim_id)
             if dd is None:
@@ -933,11 +951,13 @@ class BikeSceneBuilder:
             if dd.kind == "linear":
                 if dim_id in offsets:
                     kw["offset"] = float(offsets[dim_id])
-                sc.add(LinearDim("dimensions", Z_DIM, st, f"dim:{dim_id}", text=txt, dim_id=dim_id, **kw))
+                sc.add(LinearDim("dimensions", Z_DIM, st, f"dim:{dim_id}", text=txt, dim_id=dim_id,
+                                 text_size=tsize, text_horizontal=thoriz, **kw))
             else:
                 if dim_id in offsets:
                     kw["radius"] = abs(float(offsets[dim_id]))
-                sc.add(AngleDim("dimensions", Z_DIM, st, f"dim:{dim_id}", text=txt, dim_id=dim_id, **kw))
+                sc.add(AngleDim("dimensions", Z_DIM, st, f"dim:{dim_id}", text=txt, dim_id=dim_id,
+                                text_size=tsize, **kw))
         for ud in self.d.extras.get("user_dimensions") or []:
             res = DIM.build_user(g, ud)
             if res is None:
@@ -949,9 +969,11 @@ class BikeSceneBuilder:
             uid = str(ud.get("id", "u"))
             st_u = st.with_(stroke="#8a2be2")
             if kind == "linear":
-                sc.add(LinearDim("dimensions", Z_DIM, st_u, f"udim:{uid}", text=txt, dim_id=uid, **kw))
+                sc.add(LinearDim("dimensions", Z_DIM, st_u, f"udim:{uid}", text=txt, dim_id=uid,
+                                 text_size=tsize, text_horizontal=thoriz, **kw))
             else:
-                sc.add(AngleDim("dimensions", Z_DIM, st_u, f"udim:{uid}", text=txt, dim_id=uid, **kw))
+                sc.add(AngleDim("dimensions", Z_DIM, st_u, f"udim:{uid}", text=txt, dim_id=uid,
+                                text_size=tsize, **kw))
 
     def notes(self):
         sc = self.sc

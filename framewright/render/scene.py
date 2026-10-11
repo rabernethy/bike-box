@@ -112,6 +112,8 @@ class LinearDim(Prim):
     mode: str = "aligned"
     text: str = ""
     dim_id: str = ""
+    text_size: float = 2.6
+    text_horizontal: bool = False
 
 
 @dataclass
@@ -123,6 +125,8 @@ class AngleDim(Prim):
     radius: float = 60.0
     text: str = ""
     dim_id: str = ""
+    text_size: float = 2.6
+    text_horizontal: bool = True
 
 
 class Scene:
@@ -212,8 +216,9 @@ def explode_dimension(dim: Prim, annot: float, font: str = "Sans Serif") -> list
     printed size)."""
     st = dim.style
     out: list[Prim] = []
-    arrow_len, arrow_w = 2.8 * annot, 0.9 * annot
-    text_size = 2.6
+    text_size = getattr(dim, "text_size", 2.6)
+    arrow_len, arrow_w = 2.8 * annot * text_size / 2.6, 0.9 * annot * text_size / 2.6
+    horizontal = getattr(dim, "text_horizontal", False)
     gap, over = 1.0 * annot, 1.5 * annot
     fill = st.with_(fill=st.stroke, width=0.0)
 
@@ -251,9 +256,14 @@ def explode_dimension(dim: Prim, annot: float, font: str = "Sans Serif") -> list
         if ang > 180:
             ang -= 360
         tdir = V.dir(ang)
-        tpos = mid + tdir.perp() * (text_size * 0.5 + 0.8) * annot * (1 if side >= 0 else 1)
-        out.append(Text(dim.layer, dim.z + 1, st, dim.tag, tpos, dim.text, text_size, ang, "cb", True,
-                        font, box=False))
+        if horizontal:
+            tpos = mid
+            out.append(Text(dim.layer, dim.z + 1, st, dim.tag, tpos, dim.text, text_size, 0.0, "cm", True,
+                            font, box=True))
+        else:
+            tpos = mid + tdir.perp() * (text_size * 0.5 + 0.8) * annot
+            out.append(Text(dim.layer, dim.z + 1, st, dim.tag, tpos, dim.text, text_size, ang, "cb", True,
+                            font, box=False))
     elif isinstance(dim, AngleDim):
         c, r = dim.vertex, dim.radius
         out.append(Arc(dim.layer, dim.z, st, dim.tag, c, r, dim.start, dim.span))

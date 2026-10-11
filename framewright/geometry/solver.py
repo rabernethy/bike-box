@@ -315,6 +315,19 @@ def solve(d: Design) -> Geometry:
         rx = -math.sqrt(cs * cs - ry * ry)
     rear_axle = V(rx, ry)
     stay_node = rear_axle - V(d.f("dropout_offset_x"), d.f("dropout_offset_y"))
+    dtype = d["dropout_type"]
+    if dtype in ("horizontal", "track", "sliding"):
+        # slot direction (pointing forward along the chainstay, rotated by the slot angle)
+        f = (V(0, 0) - rear_axle).norm().rot(-d.f("dropout_slot_angle"))
+        L, pos = d.f("dropout_slot_length"), min(d.f("axle_in_slot"), d.f("dropout_slot_length"))
+        if dtype == "horizontal":            # opening faces forward, closed end at the rear
+            closed = rear_axle - f * pos
+            slot = (closed, closed + f * L)
+        else:                                # track ends / sliding: opening faces rearward
+            closed = rear_axle + f * pos
+            slot = (closed, closed - f * L)
+        g.p["slot_closed"], g.p["slot_open"] = slot
+        stay_node = slot[0].lerp(slot[1], 0.5) - V(d.f("dropout_offset_x"), d.f("dropout_offset_y"))
 
     # -- front end ----------------------------------------------------------------
     AC = d.f("fork_length")

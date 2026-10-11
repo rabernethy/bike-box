@@ -15,6 +15,8 @@ def from_display(value: float, units: str) -> float:
 def fmt_len(mm: float, units: str = "mm", decimals: int | None = None, suffix: bool = False) -> str:
     if mm != mm:            # NaN
         return "–"
+    if abs(mm) < 0.04:
+        mm = 0.0
     if units == "in":
         d = 2 if decimals is None else decimals
         s = f"{mm / MM_PER_IN:.{d}f}"

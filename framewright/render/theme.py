@@ -26,9 +26,16 @@ class Theme:
     lug_fill: str | None
     decal: str
     ghost_width: float = 0.5
+    dim_width: float = 0.25
 
     @classmethod
     def from_design(cls, d: Design) -> "Theme":
+        t = cls._base(d)
+        t.dim_width = d.f("dimension_line_weight")
+        return t
+
+    @classmethod
+    def _base(cls, d: Design) -> "Theme":
         mode = d["display_mode"]
         w = d.f("outline_width")
         if mode == "blueprint":
@@ -60,7 +67,7 @@ class Theme:
         return Style(self.centerline, 0.25, None, dash=(6.0, 1.5, 1.0, 1.5))
 
     def dimension(self) -> Style:
-        return Style(self.dim, 0.25, None)
+        return Style(self.dim, self.dim_width, None)
 
     def fill_only(self, color: str) -> Style:
         return Style(None, 0.0, color)
