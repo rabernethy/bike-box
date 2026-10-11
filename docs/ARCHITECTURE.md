@@ -1,0 +1,103 @@
+# FrameWright architecture
+
+FrameWright is a parametric bicycle design tool: parameters → solved geometry →
+scene graph → renderers (screen, PDF, SVG, DXF, PNG, printer) plus analysis,
+fit and manufacturing outputs.
+
+```
+framewright/
+  qt.py                 Qt shim (PyQt6 preferred, PySide6 fallback): from framewright.qt import QtCore, QtGui, QtWidgets, Signal
+  model/
+    params.py           ParamDef schema + registry. register([...]) adds parameters from any module.
+    design.py           Design: values (by param key) + extras (structured data). JSON .fwd files.
+    units.py            mm/inch conversion & formatting
+  geometry/
+    vec.py              V (2-D), V3, planar helpers (line_intersect, arc_through, offset_polyline, ...)
+    solver.py           solve(design) -> Geometry  (points, tubes, wheels, values, warnings)
+    dimensions.py       dimension catalogue + user dimensions
+  render/
+    scene.py            Scene + primitives (Polyline, Circle, Arc, Text, Image, LinearDim, AngleDim) + Style
+    theme.py            Theme (colours/line weights from display params)
+    bike_scene.py       build_scene(geometry) -> Scene ; EXTRA_BUILDERS hook list
+    qt_render.py        QtSceneRenderer (QPainter), render_image(), fit_transform()
+  export/               svg.py, dxf.py (+ drawing sheets, CSV, mitres, G-code, FreeCAD, STL, GIF ...)
+  analysis/             gearing, UCI, weight, structure (FEA), jig/fixture numbers
+  fit/                  rider anatomy + pose, fit advisor, centre of mass
+  gui/                  PyQt6 application
+  data/                 templates/*.fwd, libraries/*.json
+tests/
+```
+
+## Conventions
+
+* Units: millimetres, degrees, grams. Origin = BB centre. **+X forward** (towards the
+  front wheel, the bike faces right), **+Y up**, **+Z to the drive (right) side**.
+* `Design` is a mapping: `d["seat_tube_angle"]`, `d.f(key)` → float, `d.lst(key)` → list of numbers,
+  `d.set(key, value)` (coerces through the schema), `d.extras` (dict of structured data:
+  notes, user_dimensions, photo, snapshots, extra_tubes, title_block, tables, fit_formulas ...).
+* New parameters: create `ParamDef`s in *your own module* and call `framewright.model.params.register([...])`
+  at import time. `ParamDef(key, label, group, section, kind, default, unit, min, max, step, choices, help, visible_if, morph)`;
+  kinds: `float int bool choice str color list`. The GUI builds editors automatically, grouped by `group`/`section`.
+* Pure computation (model/geometry/analysis/fit) must not import Qt. Rendering/export may.
+
+## Geometry (`geometry/solver.py`)
+
+`g = solve(design)` returns `Geometry` with:
+
+* `g.p[name] -> V` named points: `bb, rear_axle, front_axle, stay_node, ht_top, ht_bottom, crown,
+  crown_bottom, headset_top, st_bottom, st_top, tt_st, tt_ht, dt_ht, dt_bb, ss_top, (wishbone),
+  saddle, saddle_nose, saddle_tail, saddle_rails, seatpost_top, seatpost_bottom, stem_clamp, bar,
+  steerer_top, hand, hoods, drops, tops, (lever), pedal, pedal_l, pedal_fwd, ground_rear,
+  ground_front, ground_bb, axis_ground, standover`.
+* `g.tubes[name] -> Tube` for `ht, st, tt, dt, cs, ss, (ss_mono), fork, x<i>_<name>` (extra tubes).
+  `Tube` fields: `a, b` (side-view centre-line ends, centre-to-centre at joints), `od_a, od_b`
+  (side-view depth at each end), `w_a, w_b` (top-view width; equal to od for round), `wall_end,
+  wall_mid, butt_length, bend` (sagitta, + = left of a→b), `profile` (round|oval|aero), `material`,
+  `za, zb` (lateral Z of the centre-line at each end), `mirrored` (a copy exists at -Z: stays/fork
+  blades), `join_a, join_b` (name of what each end meets: 'bb', 'ht', 'st', 'tt', 'dropout', 'crown', 'ss_mono'),
+  `kind` (main|stay|fork|extra). Methods: `points()`, `length`, `chord`, `od_at(t)`, `w_at(t)`,
+  `dir_a()`, `dir_b()`, `point_at(s)`, `a3()`, `b3()` (V3 with z), `mass()`.
+  Directions: `tt`: a = seat-tube end → b = head-tube end. `dt`: a = BB end → b = HT end.
+  `st`: a = BB → b = top. `ht`: a = bottom → b = top. `cs`, `ss`: a = dropout node → b = BB / top junction.
+  `fork`: a = front axle → b = crown bottom.
+* BB shell is not a Tube: cylinder along Z at the origin, OD `design["bb_shell_od"]`, length `design["bb_shell_width"]`.
+* `g.wheels['front'|'rear'] -> Wheel(center, bsd, tire_w, tire_h, rim_depth, hub_spacing)` with
+  `outer_r, rim_r, rim_inner_r, diameter`.
+* `g.v[name] -> float` derived values: `stack reach head_tube_length head_tube_angle seat_tube_angle
+  seat_angle_eff seat_tube_ct seat_tube_cc st_extension top_tube_cc top_tube_angle top_tube_effective
+  top_tube_virtual down_tube_cc chainstay_length rear_center_h front_center front_center_h wheelbase
+  bb_drop bb_height fork_length fork_offset trail mech_trail wheel_flop standover saddle_height
+  saddle_setback saddle_nose_setback bar_x bar_y hand_x hand_y saddle_bar_drop saddle_to_bar
+  nose_to_bar seatpost_setback seatpost_exposed seatpost_insertion toe_clearance toe_radius
+  rear_tire_clearance front_tire_clearance pedal_clearance lean_angle angle_ht_tt angle_ht_dt
+  angle_st_tt angle_st_dt angle_st_ss ...`
+* `g.u` steering-axis unit vector (pointing up), `g.n` its forward normal, `g.s` seat-tube axis (up),
+  `g.n_st` its forward normal, `g.ground_y`, `g.bar_path`, `g.warnings` (list of str, `g.warn(msg)`).
+
+`solve` takes ~0.1 ms, so call it freely.
+
+## Scene (`render/scene.py`)
+
+Builders append primitives in model mm (+Y up): `Polyline(pts, closed, holes)`, `Circle(c, r)`,
+`Arc(c, r, start, span)` (degrees CCW), `Text(pos, text, size, angle, anchor, annotative, font, bold,
+italic, box)`, `Image`, `LinearDim(p1, p2, offset, mode, text)`, `AngleDim(vertex, start, span, radius, text)`.
+Each primitive has `layer` (str, used for visibility and DXF layers), `z` (draw order, constants
+`Z_*`), `style: Style(stroke, width, fill, dash, opacity, cap, join)`, `tag`.
+Line widths, dash lengths and *annotative* text sizes are **paper mm**; non-annotative text is model mm.
+`Scene.bounds()`, `Scene.visible()` (sorted by z), helpers `scene.line/poly/circle/arc/text`.
+
+## Renderers
+
+* Qt: `QtSceneRenderer(painter, model_to_device: QTransform, px_per_mm, paper_px_per_mm).draw(scene)`.
+  `fit_transform(bounds, w_px, h_px, margin)` → (QTransform, px_per_mm).  For a PDF at true scale:
+  `writer = QtGui.QPdfWriter(path); writer.setResolution(1200); px_per_mm = 1200/25.4`, build a
+  `QTransform` that translates/scales (x*k, -y*k) and pass `paper_px_per_mm = px_per_mm` (at 1:1).
+  For drawing at scale s (paper mm per model mm): `px_per_mm = s*dpi/25.4`, `paper_px_per_mm = dpi/25.4`.
+* SVG: `export.svg.SvgWriter(scale, ox, oy).add_scene(scene)`, `.document(w_mm, h_mm)`; `scene_to_svg`.
+* DXF: `export.dxf.DxfWriter(scale, ox, oy, annot).add_scene(scene)`, `.document()`; R12 ASCII.
+
+## Tests & running
+
+* System Python has PyQt6, numpy, pytest, Pillow, defusedxml: run with `/usr/bin/python3`.
+  (A shell hook blocks bare `python3`.) Qt tests: `QT_QPA_PLATFORM=offscreen /usr/bin/python3 -m pytest -q`.
+* `tests/conftest.py` provides a session-wide `qapp` fixture (offscreen QApplication).
