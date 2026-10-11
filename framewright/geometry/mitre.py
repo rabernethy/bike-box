@@ -124,21 +124,22 @@ class MitreCut:
         return self.short_point - self.long_point
 
     def mirror(self) -> "MitreCut":
-        """The mirror-image cut (non-drive-side stay): u -> perimeter - u."""
+        """The same cut for the mirror-image tube at -Z (non-drive-side stay), in
+        that tube's own frame: u -> perimeter - u, so its template is the mirror
+        image of this one.  Quadrant names and wrap direction are unchanged."""
         import copy
         m = copy.copy(self)
         Pm = self.perimeter
         m.points = [(Pm - u, v) for u, v in reversed(self.points)]
         m.polar = [360.0 - a for a in reversed(self.polar)]
         m.radius = list(reversed(self.radius))
-        m.side_name, m.nside_name = self.nside_name, self.side_name
-        m.wrap_reversed = not self.wrap_reversed
         m.phase, m.phase_abs = -self.phase, -self.phase_abs
         m.saw_rotation = (180.0 - self.saw_rotation) % 180.0
-        m.side_dir = tuple(-c for c in self.side_dir)
         m.end_point = (self.end_point[0], self.end_point[1], -self.end_point[2])
         m.axis = (self.axis[0], self.axis[1], -self.axis[2])
-        m.notes = list(self.notes)
+        m.ref_dir = (self.ref_dir[0], self.ref_dir[1], -self.ref_dir[2])
+        m.side_dir = (-self.side_dir[0], -self.side_dir[1], self.side_dir[2])
+        m.receivers, m.receiver_labels, m.notes = list(self.receivers), list(self.receiver_labels), list(self.notes)
         return m
 
 
@@ -153,6 +154,8 @@ class Receiver:
     has semi-axis ``A(s) = a0 + (a1 - a0) s / length`` along ``e1`` and
     ``B(s)`` along ``e2``.  The section is extrapolated beyond ``[0, length]``
     unless the end is capped (``cap_lo`` at ``s = 0``, ``cap_hi`` at ``s = length``).
+    ``face=True`` (main receiver only) makes a butt joint against the capped end
+    face: the cut is the plane of that face.
     """
     name: str
     label: str
@@ -167,6 +170,7 @@ class Receiver:
     b1: float
     cap_lo: bool = False
     cap_hi: bool = False
+    face: bool = False
 
     @classmethod
     def cylinder(cls, point: Sequence[float], axis: Sequence[float], radius: float, *, length: float = 100.0,
@@ -463,7 +467,11 @@ def cope_profile(end: Sequence[float], axis: Sequence[float], e1: Sequence[float
         hit, lo, hi, vstar, slo, shi = _line_intervals(rec, Q, D, vlo, vhi)
         top = np.minimum(hi, shi)
         valid = hit & (np.maximum(lo, slo) <= top)
-        if i == 0:
+        if i == 0 and rec.face and np.isfinite(shi).all():
+            v = np.clip(shi, vlo, vhi)                    # butt joint: flush with the end face
+            winner[:] = 0
+            missed = ~valid
+        elif i == 0:
             capped = rec.cap_lo or rec.cap_hi
             fallback = np.where(np.isfinite(shi), shi, vstar) if capped else vstar
             fallback = np.clip(fallback, vlo, vhi)
@@ -495,6 +503,7 @@ class _Job:
     primary: str
     secondary: tuple[str, ...] = ()
     caps: tuple[bool, bool] = (False, False)
+    face: bool = False
 
 
 _END_WORDS = {"bb": "BB", "ht": "head-tube", "st": "seat-tube", "tt": "top-tube", "dt": "down-tube",
@@ -508,7 +517,7 @@ def _jobs(g: Geometry) -> list[_Job]:
     ss = T.get("ss")
     if ss is not None:
         if ss.join_b == "ss_mono":
-            jobs.append(_Job("ss", "b", "ss_mono", (), (True, False)))
+            jobs.append(_Job("ss", "b", "ss_mono", (), (True, False), face=True))
         elif ss.join_b in ("st", "tt"):
             jobs.append(_Job("ss", "b", ss.join_b, ("tt",) if ss.join_b == "st" else ("st",)))
     mono = T.get("ss_mono")
@@ -620,7 +629,9 @@ def _make_cut(g: Geometry, tube: Tube, end: str, recs: list[Receiver], samples: 
     label = f"{tube.label} → {' + '.join(rlabels)}"
     v = prof.v
     notes: list[str] = []
-    if prof.missed.any():
+    if main.face:
+        notes.append(f"Butt joint: cut flush with the end face of the {main.label}")
+    elif prof.missed.any():
         frac = 100.0 * float(prof.missed[:-1].mean())
         how = "trimmed flush with its end face" if (main.cap_lo or main.cap_hi) else "cut at closest approach"
         notes.append(f"{frac:.0f}% of the outline does not meet the {main.label}; those parts are {how}")
@@ -637,6 +648,8 @@ def _make_cut(g: Geometry, tube: Tube, end: str, recs: list[Receiver], samples: 
             notes.append(f"Cope runs {over_hi:.1f} mm past the upper end of the {main.label}: trim flush")
     if tube.mirrored:
         notes.append("Make 2: flip the template (print side in) for the non-drive-side tube")
+        if abs(E[2]) < max(a, b) - 1e-6:
+            notes.append("The pair overlaps at this end: also mitre the two tubes to each other")
     if tube.profile == "aero":
         notes.append("Aero section approximated by an ellipse")
     if abs(tube.bend) > 1e-6:
@@ -676,6 +689,7 @@ def compute_mitres(g: Geometry, samples: int = 360) -> list[MitreCut]:
         E = _end_point(tube, job.end)
         if job.primary == "bb" or job.primary in g.tubes:
             recs = [_receiver(g, job.primary, E, job.caps)]
+            recs[0].face = job.face
             recs += [_receiver(g, s, E, (True, True)) for s in job.secondary if s in g.tubes and s != job.tube]
         else:
             found = _detect(g, tube, job.end)

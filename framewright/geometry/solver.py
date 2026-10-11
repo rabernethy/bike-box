@@ -171,13 +171,18 @@ class Tube:
         """Approximate mass in grams for a double-butted tube."""
         L = self.length if length is None else length
         rho = MATERIAL_DENSITY.get(self.material, MATERIAL_DENSITY["steel"])
-        od = (self.od_a + self.od_b + self.w_a + self.w_b) / 4.0
+        depth = (self.od_a + self.od_b) / 2.0
+        width = (self.w_a + self.w_b) / 2.0
         butt = min(self.butt_length, L / 2)
         mid = max(L - 2 * butt, 0.0)
 
         def area(wall):
-            wall = min(wall, od / 2)
-            return math.pi * (od * wall - wall * wall)
+            # wall cross-section = mid-wall perimeter of the (elliptical) section x wall
+            wall = min(wall, min(depth, width) / 2)
+            a, b = (depth - wall) / 2, (width - wall) / 2
+            h = ((a - b) / (a + b)) ** 2 if a + b > 0 else 0.0
+            perim = math.pi * (a + b) * (1 + 3 * h / (10 + math.sqrt(4 - 3 * h)))     # Ramanujan
+            return perim * wall
 
         vol = area(self.wall_end) * 2 * butt + area(self.wall_mid) * mid
         n = 2 if self.mirrored else 1
@@ -517,12 +522,17 @@ def solve(d: Design) -> Geometry:
         tubes["dt"] = tube("dt", "Down tube", dt_a, J_dt, "dt_od", "dt", join_a="bb", join_b="ht")
 
     hub_r = rear.hub_spacing / 2 + 3.0
+    # stay spreads (0 = automatic)
+    cs_z = d.f("cs_spread_bb") / 2 or max(d.f("bb_shell_width") / 2 - d.f("cs_od_bb") / 2, 5.0)
+    rear_st = d.f("st_od")
+    ss_z = d.f("ss_spread_top") / 2 or (rear_st / 2 + d.f("ss_od_top") * 0.25)
+    v["cs_spread_bb"], v["ss_spread_top"] = 2 * cs_z, 2 * ss_z
     if "cs" not in removed:
         cs_dir = (SB - stay_node).norm()
         tubes["cs"] = Tube("cs", "Chainstay", stay_node, SB, d.f("cs_od_drop"), d.f("cs_od_bb"),
                            wall_end=d.f("cs_wall"), wall_mid=d.f("cs_wall"), bend=d.f("cs_bend"),
                            profile=d["cs_profile"], material=_material(d, "cs_material"),
-                           za=hub_r, zb=d.f("cs_spread_bb") / 2, mirrored=True, kind="stay",
+                           za=hub_r, zb=cs_z, mirrored=True, kind="stay",
                            join_a="dropout", join_b="bb2" if tandem else "bb",
                            draw_a=stay_node + cs_dir * d.f("cs_dropout_length"))
     if ss_attach != "none" and "ss" not in removed:
@@ -538,7 +548,7 @@ def solve(d: Design) -> Geometry:
                                     join_b=("tt" if ss_attach == "top_tube" else "st") + ("2" if tandem else ""))
             ss_target = W
         ss_dir = (ss_target - stay_node).norm()
-        ztop = d.f("ss_spread_top") / 2 if style == "conventional" else max(d.f("ss_od_top"), 8)
+        ztop = ss_z if style == "conventional" else max(d.f("ss_od_top"), 8)
         if style == "mono":
             ztop = 0.0
         tubes["ss"] = Tube("ss", "Seat stay", stay_node, ss_target, d.f("ss_od_drop"), d.f("ss_od_top"),
@@ -557,9 +567,10 @@ def solve(d: Design) -> Geometry:
     p["crown_bottom"] = crown_bottom
     fr = front.hub_spacing / 2 + 3.0
     tubes["fork"] = Tube("fork", "Fork blade", front_axle, crown_bottom, d.f("fork_blade_od_tip"),
-                         d.f("fork_blade_od"), wall_end=1.0, wall_mid=0.8,
+                         d.f("fork_blade_od"), wall_end=d.f("fork_wall_end"), wall_mid=d.f("fork_wall_mid"),
+                         butt_length=d.f("fork_butt_length"),
                          bend=(off * 0.45 if d["fork_blade_shape"] == "curved" and d["fork_type"] == "rigid" else 0.0),
-                         material=d["frame_material"], za=fr, zb=d.f("fork_crown_width") / 2,
+                         material=_material(d, "fork_material"), za=fr, zb=d.f("fork_crown_width") / 2,
                          mirrored=True, kind="fork", join_b="crown")
 
     # extra user tubes

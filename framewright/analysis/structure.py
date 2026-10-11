@@ -49,7 +49,6 @@ MATERIAL_YIELD = {            # MPa, typical tubing values (carbon / bamboo / wo
     "steel": 460.0, "stainless": 700.0, "titanium": 725.0, "aluminium": 276.0, "aluminium7005": 290.0,
     "carbon": 600.0, "scandium": 400.0, "bamboo": 60.0, "wood": 40.0,
 }
-_MAT_LABEL = dict(P.MATERIALS)
 
 G = "Analysis"
 S = "Structure"
@@ -614,7 +613,6 @@ def _connected(model: FrameModel, start: int) -> np.ndarray:
 # --------------------------------------------------------------------------
 def _cases(g: Geometry, info: dict[str, Any]) -> dict[str, dict[str, Any]]:
     d = g.design
-    named = info["named"]
     W = d.f("fea_rider_weight")
     sh_s = min(max(d.f("fea_saddle_share"), 0.0), 100.0) / 100.0
     sh_b = min(max(d.f("fea_bar_share"), 0.0), 100.0 - sh_s * 100.0) / 100.0
@@ -699,12 +697,10 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
         return {"ok": False, "error": "frame not connected to its supports", "cases": {}, "headline": {},
                 "summary": "Structure estimate unavailable (frame not connected to its supports)", "notes": [NOTE]}
     defs = _cases(g, info)
-    supports = {
-        "std": [6 * names["dropout_r"] + k for k in range(3)] + [6 * names["dropout_l"] + k for k in range(3)]
-               + [6 * names["contact_front"] + 1, 6 * names["contact_front"] + 2],
-        "torsion": [6 * names["dropout_r"] + k for k in range(3)] + [6 * names["dropout_l"] + k for k in range(3)]
-                   + [6 * names["contact_front"] + 1],
-    }
+    # supports: both dropouts pinned, front contact held vertically ("torsion" set); the
+    # standard cases also hold the contact laterally (added below as a constraint)
+    held = ([6 * names["dropout_r"] + k for k in range(3)] + [6 * names["dropout_l"] + k for k in range(3)]
+            + [6 * names["contact_front"] + 1])
     virtual = info["virtual"]
     X = model.xyz
 
@@ -747,7 +743,7 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
             add_load(F, ci, nm, dof, val)
     F[cz, -1] = 1.0
     try:
-        U = model.solve(supports["torsion"], F, active)
+        U = model.solve(held, F, active)
     except np.linalg.LinAlgError:
         return {"ok": False, "error": "singular stiffness matrix (mechanism)", "cases": {}, "headline": {},
                 "summary": "Structure estimate unavailable (unstable model)", "notes": [NOTE]}

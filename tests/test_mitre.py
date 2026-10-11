@@ -178,11 +178,29 @@ def test_stays_meeting_the_seat_tube_and_wishbone():
     ss = _cut(M.compute_mitres(solve(d)), "ss", "b")
     assert 0.2 < ss.contact < 1.0                  # inner half wraps the seat tube, outer half trimmed
     assert ss.depth > 1.0
-    assert _cut(M.compute_mitres(solve(Design())), "ss", "b").contact == 0.0   # 46 mm spread: clear of it
+    wide = Design()
+    wide.set("ss_spread_top", 46.0)
+    assert _cut(M.compute_mitres(solve(wide)), "ss", "b").contact == 0.0       # 46 mm spread: clear of it
+    assert _cut(M.compute_mitres(solve(Design())), "ss", "b").contact > 0.2    # automatic spread: wraps the ST
     d.set("ss_style", "wishbone")
     cuts = M.compute_mitres(solve(d))
     assert _cut(cuts, "ss", "b").receivers[0] == "ss_mono"
     assert _cut(cuts, "ss_mono", "b").receivers[0] == "st"
+
+
+def test_down_tube_coped_to_head_tube_and_top_tube():
+    d = Design()
+    d.set("head_tube_length", 90.0)
+    d.set("tt_ht_offset", 20.0)
+    d.set("dt_ht_offset", 65.0)                 # junctions 5 mm apart: the tubes overlap at the head tube
+    g = solve(d)
+    dt = _cut(M.compute_mitres(g), "dt", "b")
+    assert dt.receivers == ["ht", "tt"] and "top tube" in dt.label
+    only_ht = M.cope_profile(dt.end_point, dt.axis, dt.ref_dir, dt.side_dir, dt.od / 2, dt.width / 2,
+                             [M.receiver_from_tube(g.tubes["ht"], np.array(dt.end_point))], 360)
+    v = np.array(dt.v)
+    assert np.all(v >= only_ht.v - 1e-6) and np.max(v - only_ht.v) > 0.5
+    assert v[0] - only_ht.v[0] > 0.5             # the top-tube side (reference line) is cut deeper
 
 
 def test_cut_lengths(geometry):

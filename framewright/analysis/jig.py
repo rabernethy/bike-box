@@ -36,7 +36,8 @@ def _sub(a, b):
 def stay_angles(t: Tube, axis: tuple[float, float, float]) -> tuple[float, float]:
     """(splay, phase) in degrees for the drive-side copy of a stay.
 
-    *splay*: angle between the stay axis and the frame plane.
+    *splay*: angle between the stay axis and the frame plane (magnitude; stays
+    converge from the dropouts).
     *phase*: angle about the stay axis from the dropout-slot plane (the plane
     through the stay axis closest to parallel with the frame plane) to the
     axis of the tube the far end is mitred to; 0° = that tube's axis lies in
@@ -45,7 +46,7 @@ def stay_angles(t: Tube, axis: tuple[float, float, float]) -> tuple[float, float
     a3 = (t.a.x, t.a.y, abs(t.za))
     b3 = (t.b.x, t.b.y, abs(t.zb))
     d = _unit(_sub(b3, a3))
-    splay = math.degrees(math.asin(max(-1.0, min(1.0, d[2]))))
+    splay = abs(math.degrees(math.asin(max(-1.0, min(1.0, d[2])))))
     Z = (0.0, 0.0, 1.0)
     e = _unit(_cross(Z, d))                     # in the slot plane, square to the stay
     n = _unit(_sub(Z, tuple(d[i] * d[2] for i in range(3))))   # slot-plane normal
@@ -131,10 +132,10 @@ def fixture_numbers(g: Geometry) -> list[tuple[str, str, str]]:
     rows += [
         ("Rear dropout spacing (OLD)", L(d.f("rear_hub_spacing")), "Inside faces"),
         ("Front dropout spacing", L(d.f("front_hub_spacing")), "Inside faces"),
-        ("Chainstay spread at BB (c-c)", L(d.f("cs_spread_bb")), ""),
+        ("Chainstay spread at BB (c-c)", L(v.get("cs_spread_bb", d.f("cs_spread_bb"))), ""),
     ]
     if "ss" in g.tubes and d["ss_style"] == "conventional":
-        rows.append(("Seat-stay spread at top (c-c)", L(d.f("ss_spread_top")), ""))
+        rows.append(("Seat-stay spread at top (c-c)", L(v.get("ss_spread_top", d.f("ss_spread_top"))), ""))
     # stay splay / phase
     if "cs" in g.tubes:
         splay, phase = stay_angles(g.tubes["cs"], (0.0, 0.0, 1.0))
@@ -144,18 +145,19 @@ def fixture_numbers(g: Geometry) -> list[tuple[str, str, str]]:
     if "ss" in g.tubes:
         t = g.tubes["ss"]
         join = t.join_b
-        if join == "ss_mono" and "ss_mono" in g.tubes:
-            m = g.tubes["ss_mono"]
-            ax = (m.b.x - m.a.x, m.b.y - m.a.y, 0.0)
-        elif join == "tt" and "tt" in g.tubes:
+        if join == "tt" and "tt" in g.tubes:
             tt = g.tubes["tt"]
             ax = (tt.b.x - tt.a.x, tt.b.y - tt.a.y, 0.0)
         else:
             ax = (s.x, s.y, 0.0)
         splay, phase = stay_angles(t, ax)
         rows.append(("Seat-stay splay", fmt_angle(splay, 2), "Angle of the stay to the frame plane (top view)"))
-        rows.append(("Seat-stay phase (top mitre to dropout slot)", fmt_angle(phase, 1),
-                     "Rotation about the stay axis; 0° = mitre aligned with the slot"))
+        if join == "ss_mono":
+            rows.append(("Seat-stay phase (top mitre to dropout slot)", "n/a",
+                         "Stays meet a wishbone / mono yoke: set the phase from the yoke drawing"))
+        else:
+            rows.append(("Seat-stay phase (top mitre to dropout slot)", fmt_angle(phase, 1),
+                         "Rotation about the stay axis; 0° = mitre aligned with the slot"))
     rows += [
         ("Fork axle-to-crown", L(v["fork_length"]), "Along the steering axis"),
         ("Fork offset", L(v["fork_offset"]), ""),

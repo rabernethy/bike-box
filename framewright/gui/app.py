@@ -60,6 +60,15 @@ def run(argv: list[str]) -> int:
     app.setApplicationDisplayName(APP_NAME)
     app.setWindowIcon(app_icon())
     app.setDesktopFileName("framewright")
+    splash = None
+    path = str(QtCore.QSettings("FrameWright", "FrameWright").value("ui/splash", "") or "")
+    if path:
+        pm = QtGui.QPixmap(path)
+        if not pm.isNull():
+            splash = QtWidgets.QSplashScreen(pm.scaled(640, 400, QtCore.Qt.AspectRatioMode.KeepAspectRatio,
+                                                       QtCore.Qt.TransformationMode.SmoothTransformation))
+            splash.show()
+            app.processEvents()
     _load_plugins()
     from .main_window import MainWindow
     win = MainWindow()
@@ -69,4 +78,6 @@ def run(argv: list[str]) -> int:
     if not files:
         win.new_doc()
     win.show()
+    if splash is not None:
+        QtCore.QTimer.singleShot(900, lambda: splash.finish(win))
     return app.exec()

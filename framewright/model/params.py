@@ -267,8 +267,10 @@ _frame = [
     _choice("ss_style", "Seat stay style", G, "Seat stays", "conventional",
             (("conventional", "Conventional"), ("wishbone", "Wishbone"), ("mono", "Mono stay"))),
     _mm("wishbone_length", "Wishbone stem length", G, "Seat stays", 80, 10, 300, vis=("ss_style", ("wishbone", "mono"))),
-    _mm("ss_spread_top", "Seat stay spread at top (c-c)", G, "Seat stays", 46, 0, 200),
-    _mm("cs_spread_bb", "Chainstay spread at BB (c-c)", G, "Seat stays", 80, 0, 200),
+    _mm("ss_spread_top", "Seat stay spread at top (c-c)", G, "Seat stays", 0, 0, 200,
+        help="0 = automatic: stays wrap the sides of the seat tube"),
+    _mm("cs_spread_bb", "Chainstay spread at BB (c-c)", G, "Seat stays", 0, 0, 200,
+        help="0 = automatic: stay outer faces flush with the BB shell faces"),
 ]
 
 _frame += [
@@ -402,6 +404,10 @@ _fork = [
     _mm("fork_crown_width", "Crown width (blade c-c)", G, "Fork", 110, 50, 200),
     _mm("fork_blade_od", "Blade OD", G, "Fork", 28, 10, 60, 0.1),
     _mm("fork_blade_od_tip", "Blade OD at dropout", G, "Fork", 14, 5, 60, 0.1),
+    _mm("fork_wall_end", "Blade wall (crown end)", G, "Fork", 1.2, 0.3, 5, 0.05),
+    _mm("fork_wall_mid", "Blade wall (tip / thin section)", G, "Fork", 0.9, 0.3, 5, 0.05),
+    _mm("fork_butt_length", "Blade butt length", G, "Fork", 120, 0, 400),
+    _choice("fork_material", "Fork material", G, "Fork", "frame", (("frame", "Same as frame"),) + MATERIALS),
     _choice("fork_blade_shape", "Blade shape", G, "Fork", "straight",
             (("straight", "Straight (offset at crown)"), ("curved", "Curved (traditional)"))),
     _mm("front_hub_spacing", "Front hub spacing", G, "Fork", 100, 70, 160),

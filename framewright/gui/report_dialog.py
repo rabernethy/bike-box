@@ -74,7 +74,7 @@ class ReportDialog(QtWidgets.QDialog):
                 b.setToolTip(str(value))
                 table.setItem(r, 0, a)
                 table.setItem(r, 1, b)
-            self.tabs.addTab(table, sec.title)
+            self.tabs.addTab(table, sec.title.replace("&", "&&"))
 
     def _rows(self):
         for sec in self.sections:

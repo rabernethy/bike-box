@@ -649,6 +649,15 @@ class PreferencesDialog(QtWidgets.QDialog):
         self.recent.setRange(0, 40)
         self.recent.setValue(int(settings.value("ui/recent_count", 12)))
         form.addRow("Recent files list length", self.recent)
+        row = QtWidgets.QHBoxLayout()
+        self.splash = QtWidgets.QLineEdit(str(settings.value("ui/splash", "") or ""))
+        self.splash.setPlaceholderText("none")
+        sb = QtWidgets.QPushButton("Browse…")
+        sb.clicked.connect(lambda: self.splash.setText(QtWidgets.QFileDialog.getOpenFileName(
+            self, "Splash image", str(Path.home()), "Images (*.png *.jpg *.jpeg)")[0] or self.splash.text()))
+        row.addWidget(self.splash, 1)
+        row.addWidget(sb)
+        form.addRow("Splash screen image", row)
         self.autosave = QtWidgets.QSpinBox()
         self.autosave.setRange(0, 60)
         self.autosave.setSuffix(" min (0 = off)")
@@ -667,6 +676,7 @@ class PreferencesDialog(QtWidgets.QDialog):
         s.setValue("ui/handles", self.handles.isChecked())
         s.setValue("ui/recent_count", self.recent.value())
         s.setValue("files/autosave_min", self.autosave.value())
+        s.setValue("ui/splash", self.splash.text().strip())
         super().accept()
 
 
