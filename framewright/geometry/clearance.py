@@ -27,9 +27,10 @@ Models
 * **Crank arm** sweeps a shallow cone: its inner face runs from
   ``shell/2 + crank_arm_offset`` at the spindle to ``Q/2 - thickness`` at the
   pedal eye.
-* **Feet** stay horizontal: the toe box is a vertical cylinder of radius
-  ``shoe_width/2`` (height ``TOE_BOX_H``) whose front reaches
-  ``toe_overhang`` ahead of the spindle; the heel is a vertical cylinder of
+* **Feet** stay horizontal: the toe box is a vertical prism (height
+  ``TOE_BOX_H``) whose longest point (the big toe, ``TOE_TIP_K`` of the shoe
+  width in from the inner edge) reaches ``toe_overhang`` ahead of the
+  spindle, rounded back to the full ``shoe_width``; the heel is a vertical cylinder of
   radius ``0.36 * shoe_width`` (height ``HEEL_COUNTER_H``) whose back is
   ``heel_behind_pedal`` behind it.  The shoe centre-line sits
   ``pedal_axle_length`` outboard of the crank face (``q_factor/2``);
@@ -63,6 +64,7 @@ NAN = math.nan
 TOE_BOX_H = 35.0          # toe box height above the sole
 HEEL_COUNTER_H = 60.0     # heel counter height above the sole
 HEEL_WIDTH_K = 0.36       # heel radius as a fraction of shoe width
+TOE_TIP_K = 0.30          # longest point of the toe (big toe), fraction of shoe width from the inner edge
 
 # --------------------------------------------------------------------------
 # parameters
@@ -789,63 +791,112 @@ def heel_contact(g: Geometry, paths: list[Path3]) -> Contact:
     return Contact(val, P3 + n * h, P3 + n * dist, t, {"crank_deg": th % 360.0, "tube": path.name})
 
 
+def toe_outline(g: Geometry, crank_deg: float = 0.0, n: int = 6) -> list[V]:
+    """Plan-view (x, z) outline of the drive-side shoe's toe box, inner edge
+    first, crank at ``crank_deg`` (0 = horizontal forward).
+
+    The longest point (big toe) sits ``TOE_TIP_K`` of the shoe width in from
+    the inner edge, ``toe_overhang`` ahead of the spindle; the inner and outer
+    sides are quarter ellipses back to the full shoe width."""
+    d = g.design
+    cl = d.f("crank_length")
+    w = d.f("shoe_width")
+    al = math.radians(d.f("heel_in_angle"))
+    px = cl * math.cos(math.radians(crank_deg))
+    zin = shoe_z(g) - w / 2
+    ri, ro = TOE_TIP_K * w, (1.0 - TOE_TIP_K) * w
+    tip = d.f("toe_overhang")
+    loc = []                                       # in the foot frame: (forward of spindle, lateral)
+    loc.append((tip - ri - 0.6 * ri, 0.0))         # inner edge, behind the toe box
+    for i in range(n + 1):                         # inner quarter: inner edge -> tip
+        a = math.pi / 2 * i / n
+        loc.append((tip - ri + ri * math.sin(a), ri - ri * math.cos(a)))
+    for i in range(1, n + 1):                      # outer quarter: tip -> outer edge
+        a = math.pi / 2 * i / n
+        loc.append((tip - 0.8 * ro + 0.8 * ro * math.cos(a), ri + ro * math.sin(a)))
+    zc = shoe_z(g)
+    out = []
+    for fx, lz in loc:
+        z = zin + lz - zc                          # lateral relative to the shoe centre-line
+        out.append(V(px + fx * math.cos(al) - z * math.sin(al), zc + fx * math.sin(al) + z * math.cos(al)))
+    return out
+
+
 def toe_points(g: Geometry, crank_deg: float = 0.0) -> list[V3]:
     """Surface samples of the drive-side toe box (crank at ``crank_deg``, 0 = horizontal forward)."""
     d = g.design
-    cl = d.f("crank_length")
-    rt = d.f("shoe_width") / 2
-    al = math.radians(d.f("heel_in_angle"))
-    px, py = cl * math.cos(math.radians(crank_deg)), cl * math.sin(math.radians(crank_deg))
-    fwd = d.f("toe_overhang") - rt
-    cx = px + fwd * math.cos(al)
-    cz = shoe_z(g) + fwd * math.sin(al)
+    py = d.f("crank_length") * math.sin(math.radians(crank_deg))
     y0 = py + d.f("pedal_stack")
-    plan = [(cx + rt * math.cos(al + math.radians(a)), cz + rt * math.sin(al + math.radians(a)))
-            for a in range(-90, 91, 15)]
-    # inner edge running back from the toe box
-    ix, iz = math.sin(al) * rt, -math.cos(al) * rt
-    for k in (0.4, 0.9):
-        plan.append((cx + ix - math.cos(al) * rt * k, cz + iz - math.sin(al) * rt * k))
-    return [V3(x, y0 + h, z) for h in (0.0, TOE_BOX_H / 2, TOE_BOX_H) for x, z in plan]
+    plan = toe_outline(g, crank_deg)
+    return [V3(p.x, y0 + h, p.y) for h in (0.0, TOE_BOX_H / 2, TOE_BOX_H) for p in plan]
+
+
+def _steer_matrix(g: Geometry, deg: float):
+    k = V3(g.u.x, g.u.y, 0.0).norm()
+    c, s = math.cos(math.radians(deg)), math.sin(math.radians(deg))
+    C = 1 - c
+    kx, ky, kz = k.x, k.y, k.z
+    return ((c + kx * kx * C, kx * ky * C - kz * s, kx * kz * C + ky * s),
+            (ky * kx * C + kz * s, c + ky * ky * C, ky * kz * C - kx * s),
+            (kz * kx * C - ky * s, kz * ky * C + kx * s, c + kz * kz * C))
 
 
 def steer_point(g: Geometry, p: V3, deg: float) -> V3:
-    """Rotate ``p`` by ``deg`` about the steering axis (+ = steer left)."""
+    """Rotate ``p`` by ``deg`` about the steering axis (+ = steer left: the
+    front of the wheel goes to -Z, its back toward the drive-side toe)."""
     H = g.p["ht_top"]
-    k = V3(g.u.x, g.u.y, 0.0).norm()
-    v = p - V3(H.x, H.y, 0.0)
-    c, s = math.cos(math.radians(deg)), math.sin(math.radians(deg))
-    r = v * c + k.cross(v) * s + k * (k.dot(v) * (1 - c))
-    return V3(H.x, H.y, 0.0) + r
+    R = _steer_matrix(g, deg)
+    vx, vy, vz = p.x - H.x, p.y - H.y, p.z
+    return V3(H.x + R[0][0] * vx + R[0][1] * vy + R[0][2] * vz,
+              H.y + R[1][0] * vx + R[1][1] * vy + R[1][2] * vz,
+              R[2][0] * vx + R[2][1] * vy + R[2][2] * vz)
+
+
+def _toe_min(g: Geometry, deg: float, tire: TireModel, fender: FenderModel | None,
+             pts: list[V3]) -> tuple[float, int]:
+    """Fast scan: (smallest gap, index of the toe sample) with the wheel steered ``deg``."""
+    H = g.p["ht_top"]
+    R = _steer_matrix(g, -deg)
+    (a, b, c), (d_, e, f), (gg, h, i) = R
+    best, bi = INF, -1
+    cx, cy, rc = tire.cx, tire.cy, tire.rc
+    for idx, p in enumerate(pts):
+        vx, vy, vz = p.x - H.x, p.y - H.y, p.z
+        x = H.x + a * vx + b * vy + c * vz
+        y = H.y + d_ * vx + e * vy + f * vz
+        z = gg * vx + h * vy + i * vz
+        dist = tire.section_sdf(z, math.hypot(x - cx, y - cy) - rc)[0]
+        if fender is not None:
+            dist = min(dist, fender.sdf(V3(x, y, z)))
+        if dist < best:
+            best, bi = dist, idx
+    return best, bi
 
 
 def toe_gap(g: Geometry, deg: float, tire: TireModel | None = None, fender: FenderModel | None = None,
             pts: list[V3] | None = None) -> Contact:
-    """Gap between the toe and the front tire (+ fender) with the wheel steered ``deg``."""
+    """Gap between the toe and the front tire (+ fender) with the wheel steered
+    ``deg``; ``p`` = toe point, ``q`` = closest tire point (both in the world frame)."""
     tire = tire or tire_model(g, "front")
     pts = pts if pts is not None else toe_points(g)
-    best = Contact(INF)
-    for p in pts:
-        w = steer_point(g, p, -deg)            # toe point in the un-steered wheel frame
-        dist, gr = tire.sdf(w)
-        q = w - gr * dist
-        if fender is not None:
-            fd = fender.sdf(w)
-            if fd < dist:
-                dist, q = fd, None
-        if dist < best.value:
-            best = Contact(dist, p, steer_point(g, q, deg) if q is not None else None, deg)
-    return best
+    val, idx = _toe_min(g, deg, tire, fender, pts)
+    if idx < 0:
+        return Contact(INF)
+    p = pts[idx]
+    w = steer_point(g, p, -deg)
+    dist, gr = tire.sdf(w)
+    q = steer_point(g, w - gr * dist, deg)
+    return Contact(val, p, q, deg)
 
 
-def toe_steer_angle(g: Geometry, max_deg: float = 90.0, step: float = 1.0) -> float | None:
+def toe_steer_angle(g: Geometry, max_deg: float = 90.0, step: float = 1.5) -> float | None:
     """Smallest steer angle (degrees, either direction) at which the toe
     (crank horizontal forward) touches the front tire or fender; None if
     it never does up to ``max_deg``."""
     tire = tire_model(g, "front")
     fender = fender_model(g, "front")
     pts = toe_points(g)
-    gap = lambda a: toe_gap(g, a, tire, fender, pts).value
+    gap = lambda a: _toe_min(g, a, tire, fender, pts)[0]
     if gap(0.0) <= 0:
         return 0.0
     a_prev = 0.0
@@ -853,7 +904,7 @@ def toe_steer_angle(g: Geometry, max_deg: float = 90.0, step: float = 1.0) -> fl
     while a <= max_deg + 1e-9:
         if gap(a) <= 0:
             lo, hi = a_prev, a
-            for _ in range(24):
+            for _ in range(22):
                 mid = (lo + hi) / 2
                 if gap(mid) <= 0:
                     hi = mid

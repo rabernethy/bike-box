@@ -190,6 +190,7 @@ class MainWindow(QtWidgets.QMainWindow):
         m.addAction("Snapshots…", "Ctrl+Shift+S", self.snapshots)
         m.addAction("Title block…", self.title_block)
         m.addAction("Extra tubes…", self.extra_tubes)
+        m.addAction("Decals & logos…", self.decals)
         m.addAction("Parts libraries…", "Ctrl+L", self.library_dialog)
         m.addSeparator()
         m.addAction("Preferences…", self.preferences)
@@ -581,6 +582,10 @@ class MainWindow(QtWidgets.QMainWindow):
     def extra_tubes(self):
         if self.doc():
             D.ExtraTubesDialog(self.doc(), self).exec()
+
+    def decals(self):
+        if self.doc():
+            D.DecalsDialog(self.doc(), self).exec()
 
     def preferences(self):
         if D.PreferencesDialog(self.settings, self).exec():

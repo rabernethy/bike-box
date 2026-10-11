@@ -513,6 +513,8 @@ class BikeSceneBuilder:
             sc.text(mid, text, Style(d["paint_decal"], 0, None), size, ang, "cm", "frame", Z_FRAME + 5,
                     annotative=False, font=str(d["decal_font"]), bold=bool(d["decal_bold"]),
                     italic=bool(d["decal_italic"]), tag="decal:dt")
+        for i, dc in enumerate(d.extras.get("decals") or []):
+            self._custom_decal(i, dc)
         badge = str(d["ht_badge_text"]).strip()
         if badge:
             ht = g.tubes["ht"]
@@ -520,6 +522,45 @@ class BikeSceneBuilder:
             sc.text(mid, badge, Style(d["paint_frame"] if t.ht_fill != t.frame_fill else d["paint_decal"], 0, None),
                     min(ht.od_b * 0.55, 22), (ht.b - ht.a).angle(), "cm", "frame", Z_FRAME + 5,
                     annotative=False, font=str(d["decal_font"]), bold=True, tag="decal:ht")
+
+    def _custom_decal(self, i: int, dc: dict) -> None:
+        """A user decal: text or image placed along a tube (extras['decals'])."""
+        g, sc = self.g, self.sc
+        tb = g.tubes.get(str(dc.get("tube", "dt")))
+        if tb is None:
+            return
+        try:
+            pos = float(dc.get("pos", 0.5))
+            p, tan = tb.point_at(max(0.0, min(1.0, pos)) * tb.length)
+            frac = max(0.0, min(1.0, pos))
+            size = float(dc.get("size", 0) or 0) or tb.od_at(frac) * 0.6
+            ang = tan.angle() + float(dc.get("angle", 0.0))
+            p = p + tan.perp() * float(dc.get("offset", 0.0))
+        except (TypeError, ValueError):
+            return
+        if bool(dc.get("flip")):
+            ang += 180
+        img = str(dc.get("image", "") or "")
+        if img:
+            from pathlib import Path as _P
+            if _P(img).exists():
+                try:
+                    from ..qt import QtGui
+                    q = QtGui.QImage(img)
+                    w, h = q.width(), q.height()
+                except Exception:
+                    return
+                if w and h:
+                    k = size / h                               # image height = decal size (mm)
+                    origin = p - V.dir(ang) * (w * k / 2) + V.dir(ang + 90) * (h * k / 2)
+                    sc.add(Image("frame", Z_FRAME + 5, Style(None, 0, None, opacity=float(dc.get("opacity", 1.0))),
+                                 f"decal:{i}", img, origin, k, ang))
+            return
+        text = str(dc.get("text", "")).strip()
+        if text:
+            sc.text(p, text, Style(str(dc.get("color", self.d["paint_decal"])), 0, None), size, ang, "cm", "frame",
+                    Z_FRAME + 5, annotative=False, font=str(dc.get("font", self.d["decal_font"])),
+                    bold=bool(dc.get("bold", True)), italic=bool(dc.get("italic", False)), tag=f"decal:{i}")
 
     def braze_ons(self):
         g, sc, t, d = self.g, self.sc, self.t, self.d

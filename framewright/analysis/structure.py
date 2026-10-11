@@ -759,7 +759,7 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
     head: dict[str, float] = {}
 
     def U(case, nm, k):
-        return U_all[case][6 * names[nm] + k] if (case in U_all and nm in names) else float("nan")
+        return float(U_all[case][6 * names[nm] + k]) if (case in U_all and nm in names) else float("nan")
 
     def stiff(force, disp):
         return abs(force) / abs(disp) if disp == disp and abs(disp) > 1e-12 else float("nan")
@@ -784,11 +784,10 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
         results["ht_torsion"]["metric"] = {"Head-tube rotation (deg)": abs(deg),
                                            "Torsional stiffness (N·m/deg)": v}
     if "braking" in U_all:
-        v = stiff(d.f("fea_brake_force"), U("braking", "contact_front", 0))
-        head["braking_stiffness"] = v
-        results["braking"]["metric"] = {"Contact point fore-aft deflection (mm)":
-                                        abs(U("braking", "contact_front", 0)),
-                                        "Fore-aft stiffness at tyre (N/mm)": v}
+        shorten = U("braking", "front_axle", 0) - 0.5 * (U("braking", "dropout_r", 0) + U("braking", "dropout_l", 0))
+        rot = 0.5 * (U("braking", "ht_top", 5) + U("braking", "ht_bottom", 5))
+        results["braking"]["metric"] = {"Wheelbase change (mm)": shorten,
+                                        "Head-tube rotation in side view (deg)": math.degrees(rot)}
     if "in_plane" in U_all:
         v = stiff(d.f("fea_inplane_force"), U("in_plane", "front_axle", 0))
         head["inplane_stiffness"] = v

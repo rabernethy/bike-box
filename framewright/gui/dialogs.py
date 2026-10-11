@@ -668,3 +668,82 @@ class PreferencesDialog(QtWidgets.QDialog):
         s.setValue("ui/recent_count", self.recent.value())
         s.setValue("files/autosave_min", self.autosave.value())
         super().accept()
+
+
+# --------------------------------------------------------------------------
+class DecalsDialog(QtWidgets.QDialog):
+    """Logos and lettering placed along tubes."""
+    COLS = ["Tube", "Position (0-1)", "Text", "Image", "Font", "Size (mm)", "Colour", "Angle", "Bold", "Italic",
+            "Flip"]
+    TUBES = ["dt", "tt", "st", "ht", "ss", "cs", "fork"]
+
+    def __init__(self, doc: Document, parent=None):
+        super().__init__(parent)
+        self.doc = doc
+        self.setWindowTitle("Decals & logos")
+        self.resize(1050, 380)
+        lay = QtWidgets.QVBoxLayout(self)
+        lay.addWidget(QtWidgets.QLabel("Size 0 = automatic (60% of the tube). Images are scaled to the decal "
+                                       "height; leave Text empty for an image decal."))
+        self.table = QtWidgets.QTableWidget(0, len(self.COLS))
+        self.table.setHorizontalHeaderLabels(self.COLS)
+        self.table.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.ResizeToContents)
+        self.table.horizontalHeader().setSectionResizeMode(2, QtWidgets.QHeaderView.ResizeMode.Stretch)
+        lay.addWidget(self.table, 1)
+        row = QtWidgets.QHBoxLayout()
+        for text, fn in (("Add text", self._add), ("Add image…", self._add_image), ("Delete", self._delete)):
+            b = QtWidgets.QPushButton(text)
+            b.clicked.connect(fn)
+            row.addWidget(b)
+        row.addStretch(1)
+        lay.addLayout(row)
+        lay.addWidget(_buttons(self))
+        for dc in doc.design.extras.get("decals") or []:
+            self._add(dc)
+
+    def _add(self, dc=None):
+        dc = dc if isinstance(dc, dict) else {"tube": "dt", "pos": 0.5, "text": "LOGO", "font": "Sans Serif",
+                                              "size": 0, "color": "#ffffff", "angle": 0, "bold": True}
+        r = self.table.rowCount()
+        self.table.insertRow(r)
+        combo = QtWidgets.QComboBox()
+        combo.addItems(self.TUBES)
+        combo.setCurrentText(str(dc.get("tube", "dt")))
+        self.table.setCellWidget(r, 0, combo)
+        font = QtWidgets.QFontComboBox()
+        font.setCurrentFont(QtGui.QFont(str(dc.get("font", "Sans Serif"))))
+        self.table.setCellWidget(r, 4, font)
+        for c, key, default in ((1, "pos", 0.5), (2, "text", ""), (3, "image", ""), (5, "size", 0),
+                                (6, "color", "#ffffff"), (7, "angle", 0)):
+            self.table.setItem(r, c, QtWidgets.QTableWidgetItem(str(dc.get(key, default))))
+        for c, key, default in ((8, "bold", True), (9, "italic", False), (10, "flip", False)):
+            it = QtWidgets.QTableWidgetItem()
+            it.setFlags(Qt.ItemFlag.ItemIsUserCheckable | Qt.ItemFlag.ItemIsEnabled)
+            it.setCheckState(Qt.CheckState.Checked if dc.get(key, default) else Qt.CheckState.Unchecked)
+            self.table.setItem(r, c, it)
+
+    def _add_image(self):
+        fn, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Logo image", str(Path.home()),
+                                                      "Images (*.png *.jpg *.jpeg *.bmp *.webp)")
+        if fn:
+            self._add({"tube": "dt", "pos": 0.5, "text": "", "image": fn, "size": 0, "angle": 0})
+
+    def _delete(self):
+        for r in sorted({i.row() for i in self.table.selectedIndexes()}, reverse=True):
+            self.table.removeRow(r)
+
+    def accept(self):
+        out = []
+        try:
+            for r in range(self.table.rowCount()):
+                cell = lambda c: self.table.item(r, c).text() if self.table.item(r, c) else ""
+                chk = lambda c: self.table.item(r, c).checkState() == Qt.CheckState.Checked
+                out.append({"tube": self.table.cellWidget(r, 0).currentText(), "pos": float(cell(1) or 0.5),
+                            "text": cell(2), "image": cell(3), "font": self.table.cellWidget(r, 4).currentFont().family(),
+                            "size": float(cell(5) or 0), "color": cell(6) or "#ffffff", "angle": float(cell(7) or 0),
+                            "bold": chk(8), "italic": chk(9), "flip": chk(10)})
+        except ValueError as exc:
+            QtWidgets.QMessageBox.warning(self, "Decals", f"Invalid value: {exc}")
+            return
+        self.doc.set_extra("decals", out, "Edit decals")
+        super().accept()

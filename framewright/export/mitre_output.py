@@ -22,6 +22,7 @@ printable area across pages with overlap and registration marks;
 from __future__ import annotations
 
 import math
+import textwrap
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Sequence
@@ -82,7 +83,7 @@ def _text(sc: Scene, x: float, y: float, s: str, size: float = 3.0, anchor: str 
 
 
 def _text_width(s: str, size: float) -> float:
-    return max((len(line) for line in s.split("\n")), default=0) * size * 0.72
+    return max((len(line) for line in s.split("\n")), default=0) * size * 0.64
 
 
 def _hatch(xs: np.ndarray, ys: np.ndarray, y_top: float, x0: float, x1: float,
@@ -189,20 +190,21 @@ def mitre_template_scene(cut: MitreCut, title: str = "", units: str = "mm", *, b
         h = 3.0 if i % 2 == 0 else 1.5
         sc.line(V(X(u), y_bot), V(X(u), y_bot + h), tick, "mitre_ticks", Z_FRAME)
 
-    # reference (quadrant) lines
+    # reference (quadrant) lines, labelled along the line inside the body region
     names = [cut.ref_name, cut.side_name, cut.opp_name, cut.nside_name, cut.ref_name]
     dash = Style(REF, 0.2, dash=(2.5, 1.5))
     for q in range(5):
         x = X(q * Pm / 4)
         sc.line(V(x, y_bot), V(x, y_top), dash, "mitre_ref", Z_CENTERLINE)
-        anchor = "lt" if x < 1e-6 else ("rt" if x > Pm - 1e-6 and tab <= 0 else "ct")
-        label = names[q] + (" (u=0)" if q == 0 else "")
-        _text(sc, x, y_bot - 1.5, label, 2.4, anchor, bold=True, color=REF)
+        label = names[q] + (" (u = 0)" if q % 4 == 0 else "")
+        right_edge = x > Pm - 1e-6
+        _text(sc, x - 0.6 if right_edge else x + 0.6, y_bot + 4.0, label, 2.2, "lb" if right_edge else "lt",
+              bold=True, color=REF, angle=90.0, layer="mitre_ref")
 
     # centre-to-centre end point line (v = 0)
     if y_bot < 0.0 < y_top:
         sc.line(V(0, 0), V(Pm, 0), Style("#7a7a7a", 0.15, dash=(4.0, 1.0, 1.0, 1.0)), "mitre_ref", Z_CENTERLINE)
-        _text(sc, 1.0, 0.6, "c-c end point", 1.8, "lb", color="#7a7a7a")
+        _text(sc, Pm - 1.0, 0.5, "c-c end point", 1.8, "rb", color="#7a7a7a", layer="mitre_ref")
 
     # the cut line
     sc.poly(curve, Style(INK, 0.5), "mitre_cut", Z_OVER)
@@ -221,46 +223,55 @@ def mitre_template_scene(cut: MitreCut, title: str = "", units: str = "mm", *, b
             _text(sc, p.x, p.y - 2.8, "SHORT", 2.0, "ct", layer="mitre_marks")
 
     # region labels
-    _text(sc, 0.0, y_top + 1.5, "▲ TUBE END — waste side shaded", 2.6, "lb", bold=True)
+    _text(sc, 0.0, y_top + 1.5, "▲ TUBE END: waste side shaded", 2.6, "lb", bold=True)
     i_short = max(range(len(vals)), key=lambda i: vals[i])
-    if curve[i_short].y < y_top - 7:
-        _text(sc, curve[i_short].x, (curve[i_short].y + y_top) / 2 + 2.5, "WASTE", 2.4, "cm", color="#555555")
-    _text(sc, Pm / 8, y_bot + min(body * 0.5, 12.0), "KEEP (tube body)", 2.4, "lm", color="#555555")
+    if curve[i_short].y < y_top - 7 and Pm > 24:
+        xw = min(max(curve[i_short].x, 10.0), Pm - 10.0)
+        _text(sc, xw, (float(np.interp(xw, xs, ys)) + y_top) / 2, "WASTE", 2.4, "cm", color="#555555")
+    _text(sc, X(Pm / 8), y_bot + min(body * 0.6, 16.0), "KEEP", 2.4, "cm", color="#555555")
 
-    # data block
+    # data block (left column) and calibration square (right of it)
+    def fl(mm: float) -> str:
+        return _f(mm, units)
+
     lines: list[tuple[str, float, bool]] = []
     if title:
-        lines.append((title, 4.0, True))
-    lines.append((cut.label, 3.4, True))
-    end_txt = cut.end_label or f"end {cut.end}"
-    lines.append((f"Tube: {cut.tube_label or cut.tube} ({cut.tube}), {end_txt}     Receivers: "
-                  + ", ".join(cut.receiver_labels or cut.receivers), 2.8, False))
-    sec = (f"OD {_f(cut.od, units)}" if abs(cut.od - cut.width) < 1e-6 else
-           f"{_f(cut.od, units)} deep × {_f(cut.width, units)} wide ({cut.profile})")
-    lines.append((f"Section: {sec}, wall {_f(cut.wall, units)}     Perimeter: {_f(Pm, units)}", 2.8, False))
-    off = _f(cut.offset, units) + (f" toward {cut.offset_dir.lower()}" if cut.offset_dir else "")
-    lines.append((f"Joint angle: {_deg(cut.angle)}     Axis offset: {off}", 2.8, False))
-    lines.append((f"Hole saw: Ø{_f(cut.holesaw_diameter, units)}, notcher {_deg(cut.holesaw_angle)} from square, "
-                  f"offset {_f(cut.holesaw_offset, units)}", 2.8, False))
-    lines.append((f"Phase: {_deg(cut.phase)} relative to the other end     Saw axis: {_deg(cut.saw_rotation)} "
-                  f"from the {cut.ref_name} line", 2.8, False))
-    lines.append((f"Long point {_f(cut.long_point, units)}, short point {_f(cut.short_point, units)} "
-                  f"from the c-c end point (+ = toward the tube body)", 2.8, False))
-    lines.append((f"Wrap printed side out, top edge toward the tube end; align the {cut.ref_name} line with "
-                  f"the tube's {cut.ref_name.lower()} face.", 2.8, False))
+        lines.append((title, 3.6, True))
+    lines.append((cut.label, 3.0, True))
+    lines.append((f"Tube: {cut.tube_label or cut.tube} ({cut.tube}), {cut.end_label or 'end ' + cut.end}", 2.4, False))
+    lines.append(("Receivers: " + ", ".join(cut.receiver_labels or cut.receivers), 2.4, False))
+    if abs(cut.od - cut.width) < 1e-6:
+        lines.append((f"Section: OD {fl(cut.od)}, wall {fl(cut.wall)}", 2.4, False))
+    else:
+        lines.append((f"Section: {fl(cut.od)} deep × {fl(cut.width)} wide", 2.4, False))
+        lines.append((f"   {cut.profile}, wall {fl(cut.wall)}", 2.4, False))
+    lines.append((f"Perimeter: {fl(Pm)}", 2.4, False))
+    lines.append((f"Joint angle: {_deg(cut.angle)}   Offset: {fl(cut.offset)}", 2.4, False))
+    if cut.offset_dir:
+        lines.append((f"   (receiver axis toward {cut.offset_dir.lower()})", 2.4, False))
+    lines.append((f"Hole saw: Ø{fl(cut.holesaw_diameter)}, {_deg(cut.holesaw_angle)} from square", 2.4, False))
+    lines.append((f"Hole-saw offset: {fl(cut.holesaw_offset)}", 2.4, False))
+    lines.append((f"Phase: {_deg(cut.phase)}   Saw axis: {_deg(cut.saw_rotation)} from {cut.ref_name}", 2.4, False))
+    lines.append((f"Long point {fl(cut.long_point)}, short point {fl(cut.short_point)}", 2.4, False))
+    lines.append(("   from the c-c end point (+ toward the body)", 2.4, False))
+    lines.append(("Wrap print side out, top edge to the tube end;", 2.4, False))
+    lines.append((f"align {cut.ref_name} with the tube's {cut.ref_name.lower()} face.", 2.4, False))
     for note in cut.notes:
-        lines.append(("• " + note, 2.6, False))
-    y = y_bot - 8.0
+        for k, part in enumerate(textwrap.wrap(note, 44)):
+            lines.append((("• " if k == 0 else "  ") + part, 2.2, False))
+    y = y_bot - 5.0
     y_text_top = y
     text_w = 0.0
-    for s, size, bold in lines:
-        _text(sc, 0.0, y, s, size, "lt", bold)
-        text_w = max(text_w, _text_width(s, size))
-        y -= size * 1.55
+    for s_, size, bold in lines:
+        _text(sc, 0.0, y, s_, size, "lt", bold)
+        text_w = max(text_w, _text_width(s_, size))
+        y -= size * 1.6
     y_text_bottom = y
 
     # calibration square
-    xc = max(Pm + tab - 50.0, text_w + 8.0)
+    xc = min(max(text_w, 60.0) + 6.0, max(Pm + tab - 50.0, 0.0)) if text_w + 6.0 > Pm + tab - 50.0 \
+        else max(text_w + 6.0, Pm + tab - 50.0)
+    xc = max(xc, text_w + 6.0)
     yc = y_text_top
     cal = Style(INK, 0.3)
     sc.poly([V(xc, yc - 50), V(xc + 50, yc - 50), V(xc + 50, yc), V(xc, yc)], cal, "mitre_calibration",
@@ -269,11 +280,11 @@ def mitre_template_scene(cut: MitreCut, title: str = "", units: str = "mm", *, b
         sc.line(V(xc + 10 * i, yc - 50), V(xc + 10 * i, yc - 47), Style(INK, 0.15), "mitre_calibration", Z_FRAME)
         sc.line(V(xc, yc - 10 * i), V(xc + 3, yc - 10 * i), Style(INK, 0.15), "mitre_calibration", Z_FRAME)
     _text(sc, xc + 25, yc - 25, "50 mm", 3.0, "cm", bold=True, layer="mitre_calibration")
-    _text(sc, xc + 25, yc - 51.5, "print at 100% — verify 50 mm", 2.4, "ct", layer="mitre_calibration")
+    _text(sc, xc + 25, yc - 51.5, "print at 100% — verify 50 mm", 2.2, "ct", layer="mitre_calibration")
 
     # invisible extent rectangle so Scene.bounds() covers text and margins
-    x_max = max(Pm + tab, text_w, xc + 50 + _text_width("print at 100% — verify 50 mm", 2.4) / 2 - 25) + 3
-    y_min = min(y_text_bottom, yc - 56) - 3
+    x_max = max(Pm + tab, text_w, xc + 50) + 3
+    y_min = min(y_text_bottom, yc - 55) - 3
     y_max = y_top + 6
     sc.poly([V(-3, y_min), V(x_max, y_min), V(x_max, y_max), V(-3, y_max)], Style(None, 0.0), _LAYER_EXTENT,
             Z_GRID, closed=True)

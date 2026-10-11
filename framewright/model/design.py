@@ -31,6 +31,7 @@ def _default_extras() -> dict[str, Any]:
         "title_block": {},                   # free-form fields for the drawing sheet
         "tables": [],                        # [{title, rows:[[...]], x, y}]
         "extra_tubes": [],                   # [{name,a,b,od,wall,...}]
+        "decals": [],                        # [{tube,pos,text|image,font,size,color,angle,...}]
         "snapshots": [],                     # [{name, time, values}]
         "fit_formulas": {},                  # overrides for the fit advisor
         "meta": {},
