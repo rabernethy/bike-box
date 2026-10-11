@@ -156,3 +156,44 @@ def test_tandem_geometry(design):
         assert t in g.tubes
     assert g.tubes["cs"].join_b == "bb2" and g.tubes["ss"].join_b == "st2"
     assert "stoker_saddle" in g.p and "stoker_bar" in g.p
+
+
+def _dxf_pairs(text):
+    lines = text.splitlines()
+    assert len(lines) % 2 == 0
+    return [(int(lines[i].strip()), lines[i + 1]) for i in range(0, len(lines), 2)]
+
+
+def test_dxf_structure(qapp, design):
+    """Group-code pairs, balanced sections and POLYLINE/VERTEX/SEQEND nesting."""
+    from framewright.export.dxf import scene_to_dxf
+    from framewright.render.bike_scene import build_scene
+    pairs = _dxf_pairs(scene_to_dxf(build_scene(solve(design))))
+    depth, in_poly, layers, ents = 0, False, set(), 0
+    for code, val in pairs:
+        if code == 0 and val == "SECTION":
+            depth += 1
+        elif code == 0 and val == "ENDSEC":
+            depth -= 1
+        elif code == 0 and val == "POLYLINE":
+            assert not in_poly
+            in_poly = True
+        elif code == 0 and val == "SEQEND":
+            assert in_poly
+            in_poly = False
+        elif code == 0 and val == "VERTEX":
+            assert in_poly
+        elif code == 0 and val in ("LINE", "CIRCLE", "ARC", "TEXT"):
+            assert not in_poly
+            ents += 1
+        elif code == 8:
+            layers.add(val)
+    assert depth == 0 and not in_poly and pairs[-1] == (0, "EOF")
+    assert {"FRAME", "WHEELS", "DIMENSIONS"} <= layers and ents > 20
+
+
+def test_svg_uses_generic_font_fallback(qapp, design):
+    from framewright.export.svg import scene_to_svg
+    from framewright.render.bike_scene import build_scene
+    s = scene_to_svg(build_scene(solve(design)))
+    assert 'font-family="sans-serif"' in s

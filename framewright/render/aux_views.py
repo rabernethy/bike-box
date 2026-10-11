@@ -237,7 +237,7 @@ class _View:
         size = self.size * k
         self.sc.text(pos, s, Style(color or self.t.outline, 0.25), size, 0.0, anchor, layer, Z_NOTE,
                      annotative=False, bold=bold)
-        w, h = len(s) * 0.62 * size, 1.5 * size
+        w, h = len(s) * 0.76 * size, 1.5 * size
         x0 = {"l": pos.x, "c": pos.x - w / 2, "r": pos.x - w}[anchor[0]]
         y0 = {"b": pos.y, "m": pos.y - h / 2, "t": pos.y - h}[anchor[1] if len(anchor) > 1 else "m"]
         self.extents.append((x0, y0, x0 + w, y0 + h))
@@ -314,7 +314,7 @@ class _View:
         lines = list(lines)
         tsz = size * 0.72
         line_h = 1.7 * tsz
-        tw = max((len(s) for s, _ in lines), default=0) * 0.66 * tsz
+        tw = max((len(s) for s, _ in lines), default=0) * 0.76 * tsz
         th = len(lines) * line_h
         if place == "auto":
             place = "below" if w > 1.3 * h else "right"
@@ -793,9 +793,11 @@ def lean_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     while x < gx + q2:
         sc.line(V(x, gy), V(x - 10, gy - 10), Style(t.outline, t.width * 0.4), "ground", Z_GROUND)
         x += 20
-    styles = {"tire": v.tire_st(), "frame": v.frame_st(), "comp": v.comp_st("#9c9c9c"),
+    # the rear of the tire is nearest the viewer: draw it over the seat tube, semi-transparent
+    styles = {"tire": v.tire_st(0.82), "frame": v.frame_st(), "comp": v.comp_st("#9c9c9c"),
               "crank": v.comp_st("#2b2b2b"), "pedal": v.comp_st("#3a3a3a")}
-    zs = {"tire": Z_WHEEL, "frame": Z_FRAME, "comp": Z_COMPONENT, "crank": Z_COMPONENT + 2, "pedal": Z_COMPONENT + 3}
+    zs = {"tire": Z_STAY - 5, "frame": Z_BACK, "comp": Z_COMPONENT, "crank": Z_COMPONENT + 2,
+          "pedal": Z_COMPONENT + 3}
     for pts, kind, tag in parts():
         v.poly(pts, v.ghost_st(), "ghost", Z_GROUND + 2, True, tag)
         v.poly([lean(p) for p in pts], styles[kind], "frame" if kind in ("frame", "tire") else "drivetrain",

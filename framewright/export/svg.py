@@ -10,6 +10,18 @@ from ..render.scene import (Arc, AngleDim, Circle, Gradient, Image, LinearDim, P
                             explode_dimension)
 
 
+_GENERIC_FONTS = {"sans serif": "sans-serif", "sans": "sans-serif", "sansserif": "sans-serif", "serif": "serif",
+                  "monospace": "monospace", "mono": "monospace"}
+
+
+def css_font_family(font: str) -> str:
+    """Qt-style family name -> CSS font-family list with a generic fallback."""
+    generic = _GENERIC_FONTS.get(font.strip().lower())
+    if generic:
+        return generic
+    return f"'{font}', sans-serif"
+
+
 class SvgWriter:
     """Accumulates SVG elements.  Model points map to paper mm as
     ``(x * scale + ox, -y * scale + oy)``."""
@@ -117,7 +129,7 @@ class SvgWriter:
                 box = (f'<rect x="{bx - 1:.3f}" y="{first - fs:.3f}" width="{w + 2:.3f}" height="{total + 1:.3f}" '
                        f'fill="white" fill-opacity="0.85" stroke="{st.stroke or "#000"}" stroke-width="0.2"/>')
             self.parts.append(f'<g transform="translate({x:.3f},{y:.3f}) rotate({-prim.angle:.3f})">{box}'
-                              f'<text font-family={quoteattr(prim.font)} font-size="{fs:.3f}" text-anchor="{anchor}" '
+                              f'<text font-family={quoteattr(css_font_family(prim.font))} font-size="{fs:.3f}" text-anchor="{anchor}" '
                               f'fill="{st.stroke or "#000"}"{weight}{italic}>{tsp}</text></g>')
         elif isinstance(prim, Image):
             p = Path(prim.path)
