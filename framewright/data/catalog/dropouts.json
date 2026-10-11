@@ -1,0 +1,1894 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "category": "dropouts",
+ "label": "Dropouts (sourced)",
+ "catalog": true,
+ "compiled": "2026-10-11",
+ "items": [
+  {
+   "id": "paragon-machine-works-conventional-slider-flanged-titanium-ds0001",
+   "name": "Paragon Machine Works Conventional Slider, Flanged, titanium (DS0001)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Conventional Slider, Flanged",
+    "variant": "titanium (DS0001)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DS0001",
+     "material": "titanium",
+     "construction": "flanged conventional slider"
+    },
+    "derived": {
+     "dropout_type": "product title: conventional slider"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-conventional-slider-flanged",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-conventional-slider-plate-6-4-titanium-ds0004",
+   "name": "Paragon Machine Works Conventional Slider, Plate, 6/4 titanium (DS0004)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Conventional Slider, Plate",
+    "variant": "6/4 titanium (DS0004)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DS0004 (no belt hole), DS0004BD (belt-drive hole, discontinued)",
+     "material": "6/4 titanium",
+     "tab_thickness_mm": 5,
+     "sliding_adjustment_in": 0.8,
+     "hardware": "4x M8x1.25x18 button head, 2x M5x0.8x35 SHCS, M5 thumb nuts and locknuts"
+    },
+    "derived": {
+     "dropout_type": "product title: conventional slider"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-conventional-slider-plate-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-conventional-slider-flanged-17-4-stainless-ds1007-ds1001",
+   "name": "Paragon Machine Works Conventional Slider, Flanged, 17/4 stainless (DS1007 / DS1001)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Conventional Slider, Flanged",
+    "variant": "17/4 stainless (DS1007 / DS1001)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DS1007 (.990 in flange), DS1001 (.740 in flange)",
+     "material": "17/4 stainless steel",
+     "chainstay_flange": ".990 in or .740 in wide by 1.750 in diameter",
+     "seatstay_flange": ".990 in or .740 in wide by 1.375 in diameter",
+     "sliding_adjustment_in": 0.8
+    },
+    "derived": {
+     "dropout_type": "product title: conventional slider"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-conventional-slider-flanged-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-conventional-slider-plate-17-4-stainless-ds1004",
+   "name": "Paragon Machine Works Conventional Slider, Plate, 17/4 stainless (DS1004)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Conventional Slider, Plate",
+    "variant": "17/4 stainless (DS1004)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DS1004, DS1004BD (belt-drive hole)",
+     "material": "17/4 stainless steel",
+     "tab_thickness_mm": 5,
+     "sliding_adjustment_in": 0.8
+    },
+    "derived": {
+     "dropout_type": "product title: conventional slider"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-conventional-slider-plate-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-dedicated-12-mm-slider-17-4-stainless-ds1005-ds1006",
+   "name": "Paragon Machine Works Dedicated 12 mm Slider, 17/4 stainless (DS1005 / DS1006)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Dedicated 12 mm Slider",
+    "variant": "17/4 stainless (DS1005 / DS1006)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DS1005 (no belt hole, no eyelets), DS1006BD (belt hole, eyelets)",
+     "material": "17/4 stainless steel",
+     "axle": "12 mm thru",
+     "tab_thickness_mm": 5,
+     "sliding_adjustment_in": 0.63,
+     "eyelets": "2x M5x0.8 each side"
+    },
+    "derived": {
+     "dropout_type": "product title: dedicated 12 mm flat sliding dropout"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-dedicated-slider-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-rocker-6-4-titanium-ds0030-ds0035",
+   "name": "Paragon Machine Works Rocker, 6/4 titanium (DS0030 / DS0035)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Rocker",
+    "variant": "6/4 titanium (DS0030 / DS0035)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DS0030 / DS0030BD (no eyelets), DS0035 / DS0035BD (eyelets); BD = belt-drive hole",
+     "material": "6/4 titanium",
+     "thickness_at_bolt_mm": 6,
+     "tab_thickness_mm": 4,
+     "sliding_adjustment_in": 0.68,
+     "vertical_adjustment_in": 0.03,
+     "hardware": "4x M8x1.25x16 button head, 4x 2 mm washers"
+    },
+    "derived": {
+     "dropout_type": "rocker (pivoting) adjustable dropout; mapped to FrameWright's sliding type"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-rocker-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-rocker-17-4-stainless-ds1030-ds1035",
+   "name": "Paragon Machine Works Rocker, 17/4 stainless (DS1030 / DS1035)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Rocker",
+    "variant": "17/4 stainless (DS1030 / DS1035)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DS1030 / DS1030BD (no eyelets), DS1035 / DS1035BD (eyelets), DS1090 full thickness",
+     "material": "stainless steel"
+    },
+    "derived": {
+     "dropout_type": "rocker (pivoting) adjustable dropout; mapped to FrameWright's sliding type"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-rocker-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-polydrop-frame-components-17-4-stainless-pd100",
+   "name": "Paragon Machine Works PolyDrop frame components, 17/4 stainless (PD100)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "PolyDrop frame components",
+    "variant": "17/4 stainless (PD100)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "PD100",
+     "material": "17/4 stainless steel",
+     "pieces": "right and left chainstay and seatstay components",
+     "stay_tab_angle_deg": 44,
+     "belt_drive": "right side pieces separate for belt fitting",
+     "inserts": "ordered separately"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/polydrop-frame-components-stainless",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-polydrop-frame-components-titanium-pd000",
+   "name": "Paragon Machine Works PolyDrop frame components, titanium (PD000)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "PolyDrop frame components",
+    "variant": "titanium (PD000)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "PD000",
+     "material": "titanium",
+     "inserts": "ordered separately"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/polydrop-frame-components-titanium",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bobi-bolt-on-brake-insert-dropout-17-4-stainless-dr1101-dr1102",
+   "name": "Paragon Machine Works BoBI (bolt-on brake insert) dropout, 17/4 stainless (DR1101 / DR1102)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BoBI (bolt-on brake insert) dropout",
+    "variant": "17/4 stainless (DR1101 / DR1102)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1101 (no eyelets), DR1102 (4x M5x0.8 eyelets)",
+     "material": "17/4 stainless steel",
+     "seatstay_tabs": "swept back",
+     "brake_insert": "6061 aluminium bolt-on, 140 mm rotor, caliper mounts 15 mm thick (sold separately)",
+     "hanger": "separate, 12 mm axle hole"
+    },
+    "derived": {
+     "brake_rear": "bolt-on disc caliper insert"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-bobi-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-round-rear-eccentric-titanium-1-3-4-in-od-x-1.180-in-flange-dr0073",
+   "name": "Paragon Machine Works SRAM UDH Round Rear, Eccentric, titanium, 1-3/4 in OD x 1.180 in flange (DR0073)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH Round Rear, Eccentric",
+    "variant": "titanium, 1-3/4 in OD x 1.180 in flange (DR0073)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0073",
+     "material": "6/4 titanium",
+     "od_in": "1-3/4",
+     "flange_width_in": 1.18,
+     "hanger": "SRAM UDH (M12x1 axle hole), sold separately",
+     "bushing": "0, 0.5 or 1.0 mm offset, welded in",
+     "disc_mount": "caliper mount sold separately"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-sram-udh-round-rear-eccentric-1-3-4-od-x-1-180-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-round-rear-eccentric-1018-steel-1-3-4-in-od-x-.985-in-flange-dr2073",
+   "name": "Paragon Machine Works SRAM UDH Round Rear, Eccentric, 1018 steel, 1-3/4 in OD x .985 in flange (DR2073)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH Round Rear, Eccentric",
+    "variant": "1018 steel, 1-3/4 in OD x .985 in flange (DR2073)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2073",
+     "material": "1018 steel",
+     "od_in": "1-3/4",
+     "flange_width_in": 0.985,
+     "hanger": "SRAM UDH",
+     "bushing": "0, 0.5 or 1.0 mm offset, silver brazed in",
+     "disc_mount": "flat mount via BK2030 5/8 in bosses (or BK2030 + BK2035)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-sram-udh-round-rear-eccentric-1-3-4-od-x-985-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-plate-flat-mount-titanium-dr0104-dr0105",
+   "name": "Paragon Machine Works SRAM UDH Plate, Flat Mount, titanium (DR0104 / DR0105)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH Plate, Flat Mount",
+    "variant": "titanium (DR0104 / DR0105)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0104 (eyelets), DR0105 (no eyelets)",
+     "material": "6/4 titanium",
+     "eyelets": "4x M5x0.8",
+     "hanger": "SRAM UDH (M12x1)",
+     "disc_mount": "flat mount",
+     "rotor_direct_mm": 140,
+     "rotor_with_adapter_mm": 160,
+     "mount_thickness_at_bolt_mm": 10
+    },
+    "derived": {
+     "brake_rear": "integrated flat-mount caliper mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-plate-sram-udh-flat-mount-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-plate-flat-mount-1018-steel-dr2102-dr2104",
+   "name": "Paragon Machine Works SRAM UDH Plate, Flat Mount, 1018 steel (DR2102 / DR2104)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH Plate, Flat Mount",
+    "variant": "1018 steel (DR2102 / DR2104)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2102 (no eyelets), DR2104 (eyelets)",
+     "material": "1018 steel",
+     "hanger": "SRAM UDH",
+     "disc_mount": "front-style flat mount, two bosses included",
+     "rotor_mm": "160 or 180 (adapter dependent)",
+     "bushing": "0, 0.5 or 1.0 mm"
+    },
+    "derived": {
+     "brake_rear": "flat-mount bosses included"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-plate-sram-udh-flat-mount-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-flat-mount-140-160-integrated-eccentric-1018-steel-dr2078",
+   "name": "Paragon Machine Works SRAM UDH Flat Mount 140/160 Integrated, Eccentric, 1018 steel (DR2078)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH Flat Mount 140/160 Integrated, Eccentric",
+    "variant": "1018 steel (DR2078)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2078",
+     "material": "1018 steel",
+     "od_in": "1-3/4",
+     "flange_width_in": 0.985,
+     "stay_fit": "about 2 mm/side weld clearance with 3/4 in chainstays and 5/8 in seatstays",
+     "disc_mount": "integrated flat mount",
+     "rotor_direct_mm": 140,
+     "rotor_with_adapter_mm": 160,
+     "mount_thickness_mm": 10,
+     "hanger": "SRAM UDH (M12x1)"
+    },
+    "derived": {
+     "brake_rear": "integrated flat mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-sram-udh-flat-mount-140-160-integrated-eccentric",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-flat-mount-160-180-integrated-eccentric-1018-steel-dr2075",
+   "name": "Paragon Machine Works SRAM UDH Flat Mount 160/180 Integrated, Eccentric, 1018 steel (DR2075)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH Flat Mount 160/180 Integrated, Eccentric",
+    "variant": "1018 steel (DR2075)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2075",
+     "material": "1018 steel",
+     "od_in": "1-3/4",
+     "flange_width_in": 1.18,
+     "stay_fit": "about 3 mm/side for 7/8 in chainstays, 5.5 mm/side for 3/4 in seatstays",
+     "disc_mount": "integrated flat mount",
+     "rotor_direct_mm": 160,
+     "rotor_with_adapter_mm": 180,
+     "chainstay_centre_above_axle_mm": 3.5,
+     "hanger": "SRAM UDH"
+    },
+    "derived": {
+     "brake_rear": "integrated flat mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-sram-udh-flat-mount-160-180-integrated-eccentric",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-flat-mount-160-180-integrated-eccentric-titanium-dr0075",
+   "name": "Paragon Machine Works SRAM UDH Flat Mount 160/180 Integrated, Eccentric, titanium (DR0075)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH Flat Mount 160/180 Integrated, Eccentric",
+    "variant": "titanium (DR0075)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0075",
+     "material": "6/4 titanium",
+     "od_in": "1-3/4",
+     "flange_width_in": 1.18,
+     "disc_mount": "integrated flat mount",
+     "rotor_direct_mm": 160,
+     "rotor_with_adapter_mm": 180,
+     "chainstay_centre_above_axle_mm": 3.5,
+     "hanger": "SRAM UDH"
+    },
+    "derived": {
+     "brake_rear": "integrated flat mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-sram-udh-flat-mount-160-180-integrated-eccentric",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-flat-mount-140-160-integrated-eccentric-titanium-dr0079",
+   "name": "Paragon Machine Works SRAM UDH Flat Mount 140/160 Integrated, Eccentric, titanium (DR0079)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH Flat Mount 140/160 Integrated, Eccentric",
+    "variant": "titanium (DR0079)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0079",
+     "material": "6/4 titanium",
+     "od_in": "1-3/4",
+     "flange_width_in": 1.18,
+     "disc_mount": "integrated flat mount",
+     "rotor_direct_mm": 140,
+     "rotor_with_adapter_mm": 160,
+     "mount_thickness_mm": 10,
+     "hanger": "SRAM UDH"
+    },
+    "derived": {
+     "brake_rear": "integrated flat mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-sram-udh-flat-mount-140-160-integrated-eccentric",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-snap-ring-titanium-1-1-4-in-od-dr0097",
+   "name": "Paragon Machine Works Snap Ring, titanium, 1-1/4 in OD (DR0097)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Snap Ring",
+    "variant": "titanium, 1-1/4 in OD (DR0097)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0097 (1-1/4 in OD x 1 in flange); DR0096 1-1/8 in OD variant (last call)",
+     "material": "6/4 titanium",
+     "axle": "12 mm",
+     "flange_width_in": "1 (title) / 1.040 (description)",
+     "inside_relief_mm": "20 wide x 3.5 deep",
+     "hanger": "retained by snap ring"
+    },
+    "derived": {
+     "dropout_type": "12 mm thru-axle hub per product description"
+    },
+    "notes": "Product title gives a 1 in flange; the description text says 1.040 in. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-snap-ring-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-snap-ring-17-4-stainless-1-in-od-x-.866-in-flange-dr1095",
+   "name": "Paragon Machine Works Snap Ring, 17/4 stainless, 1 in OD x .866 in flange (DR1095)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Snap Ring",
+    "variant": "17/4 stainless, 1 in OD x .866 in flange (DR1095)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1095",
+     "material": "17/4 stainless steel",
+     "axle": "12 mm",
+     "od_in": 1.0,
+     "flange_width_in": 0.866,
+     "inside_relief_mm": "20 wide x 3.5 deep",
+     "hanger": "separate, retained by snap ring"
+    },
+    "derived": {
+     "dropout_type": "12 mm thru-axle hub per product description"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-snap-ring-1-od-x-866-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-thru-snap-ring-1018-steel-1-in-od-x-.866-in-flange-dr2095",
+   "name": "Paragon Machine Works Thru Snap Ring, 1018 steel, 1 in OD x .866 in flange (DR2095)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Thru Snap Ring",
+    "variant": "1018 steel, 1 in OD x .866 in flange (DR2095)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2095",
+     "material": "1018 steel",
+     "axle": "12 mm thru",
+     "od_in": 1.0,
+     "flange_width_in": 0.866,
+     "inside_relief_mm": "20 wide x 10.2 deep",
+     "hanger": "separate, retained by snap ring"
+    },
+    "derived": {
+     "dropout_type": "12 mm thru-axle hub per product title"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-12mm-thru-snap-ring-1-od-x-866-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-round-rear-1018-steel-1-1-2-in-od-x-1.040-in-flange-dr2001",
+   "name": "Paragon Machine Works 10 mm QR Round Rear, 1018 steel, 1-1/2 in OD x 1.040 in flange (DR2001)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR Round Rear",
+    "variant": "1018 steel, 1-1/2 in OD x 1.040 in flange (DR2001)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2001",
+     "material": "1018 steel",
+     "axle": "10 mm QR",
+     "od_in": 1.5,
+     "flange_width_in": 1.04,
+     "face_thickness_in": 0.276,
+     "hanger": "separate"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-10mm-qr-round-rear-1-1-2-od-x-1-040-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-round-rear-6-4-titanium-1-1-2-in-od-x-1.040-in-flange-dr0004",
+   "name": "Paragon Machine Works 10 mm QR Round Rear, 6/4 titanium, 1-1/2 in OD x 1.040 in flange (DR0004)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR Round Rear",
+    "variant": "6/4 titanium, 1-1/2 in OD x 1.040 in flange (DR0004)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0004",
+     "material": "6/4 titanium",
+     "axle": "10 mm QR",
+     "od_in": 1.5,
+     "flange_width_in": 1.04,
+     "face_thickness_in": 0.276
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-10mm-qr-1-1-2-od-x-1-040-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-6-4-titanium-1-1-8-in-od-x-1-in-flange-dr0022",
+   "name": "Paragon Machine Works 10 mm QR, 6/4 titanium, 1-1/8 in OD x 1 in flange (DR0022)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR",
+    "variant": "6/4 titanium, 1-1/8 in OD x 1 in flange (DR0022)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0022",
+     "material": "6/4 titanium",
+     "axle": "10 mm QR",
+     "od_in": "1-1/8 (title) / 1-1/2 (description)",
+     "flange_width_in": 1.0,
+     "thickness_mm": "left 6, right 8 with hanger"
+    },
+    "notes": "OD conflict: title says 1-1/8 in, description says 1-1/2 in. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-10mm-qr-1-1-8-od-x-1-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-round-rear-1018-steel-1-1-8-in-od-x-22-mm-flange-dr2022",
+   "name": "Paragon Machine Works 10 mm QR Round Rear, 1018 steel, 1-1/8 in OD x 22 mm flange (DR2022)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR Round Rear",
+    "variant": "1018 steel, 1-1/8 in OD x 22 mm flange (DR2022)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2022",
+     "material": "1018 steel",
+     "axle": "10 mm QR",
+     "od_in": "1-1/8",
+     "flange_width_mm": 22,
+     "thickness_mm": "left 6, right 8 with hanger",
+     "hanger": "separate"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-10mm-qr-round-rear-1-1-8-od-x-22mm-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-round-rear-17-4-stainless-1-1-8-in-od-x-22-mm-flange-dr1022",
+   "name": "Paragon Machine Works 10 mm QR Round Rear, 17/4 stainless, 1-1/8 in OD x 22 mm flange (DR1022)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR Round Rear",
+    "variant": "17/4 stainless, 1-1/8 in OD x 22 mm flange (DR1022)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1022",
+     "material": "17/4 stainless steel",
+     "axle": "10 mm QR",
+     "od_in": "1-1/8 (title) / 1-1/2 (description)",
+     "flange_width_mm": 22
+    },
+    "notes": "OD conflict: title says 1-1/8 in, description says 1-1/2 in. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-10mm-qr-round-rear-1-1-8-od-x-22mm-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-thru-round-rear-1018-steel-1-1-2-in-od-x-1.040-in-flange-dr2065",
+   "name": "Paragon Machine Works 12 mm Thru Round Rear, 1018 steel, 1-1/2 in OD x 1.040 in flange (DR2065)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Thru Round Rear",
+    "variant": "1018 steel, 1-1/2 in OD x 1.040 in flange (DR2065)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2065",
+     "material": "1018 steel",
+     "axle": "12 mm thru",
+     "od_in": 1.5,
+     "flange_width_in": 1.04,
+     "inside_relief_mm": "20 wide x 3.5 deep",
+     "hanger": "insert, sold separately"
+    },
+    "derived": {
+     "dropout_type": "12 mm thru-axle per title"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-12mm-thru-round-rear-1-1-2-od-x-1-040-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-thru-round-rear-17-4-stainless-1-1-2-in-od-x-1.040-in-flange-dr1065",
+   "name": "Paragon Machine Works 12 mm Thru Round Rear, 17/4 stainless, 1-1/2 in OD x 1.040 in flange (DR1065)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Thru Round Rear",
+    "variant": "17/4 stainless, 1-1/2 in OD x 1.040 in flange (DR1065)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1065",
+     "material": "17/4 stainless steel",
+     "axle": "12 mm thru",
+     "od_in": 1.5,
+     "flange_width_in": 1.04,
+     "inside_relief_mm": "20 wide x 3.5 deep",
+     "hanger": "insert, sold separately"
+    },
+    "derived": {
+     "dropout_type": "12 mm thru-axle per title"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-12mm-thru-round-rear-1-1-2-od-x-1-040-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-thru-round-rear-6-4-titanium-1-1-2-in-od-x-1.100-in-flange-dr0065",
+   "name": "Paragon Machine Works 12 mm Thru Round Rear, 6/4 titanium, 1-1/2 in OD x 1.100 in flange (DR0065)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Thru Round Rear",
+    "variant": "6/4 titanium, 1-1/2 in OD x 1.100 in flange (DR0065)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0065",
+     "material": "6/4 titanium",
+     "axle": "12 mm",
+     "od_in": 1.5,
+     "flange_width_in": 1.1,
+     "inside_relief_mm": "20 wide x 3.5 deep"
+    },
+    "derived": {
+     "dropout_type": "12 mm hub per description"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-1-1-2-od-x-1-100-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-thru-round-rear-integral-hanger-1018-steel-1-1-8-in-od-dr2025",
+   "name": "Paragon Machine Works 12 mm Thru Round Rear, Integral Hanger, 1018 steel, 1-1/8 in OD (DR2025)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Thru Round Rear, Integral Hanger",
+    "variant": "1018 steel, 1-1/8 in OD (DR2025)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2025",
+     "material": "1018 steel",
+     "axle": "12 mm thru, right side threaded M12x1.5",
+     "od_in": "1-1/8",
+     "flange_width_mm": 22,
+     "hanger": "integral",
+     "axle_to_derailleur_bolt_in": 1.153
+    },
+    "derived": {
+     "dropout_type": "12 mm thru-axle per title"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-12mm-thru-round-rear-1-1-8-od-w-integral-hanger",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-syntace-x-12-6-4-titanium-1-1-4-in-od-x-1-in-flange-dr0092",
+   "name": "Paragon Machine Works Syntace X-12, 6/4 titanium, 1-1/4 in OD x 1 in flange (DR0092)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Syntace X-12",
+    "variant": "6/4 titanium, 1-1/4 in OD x 1 in flange (DR0092)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0092",
+     "material": "6/4 titanium",
+     "axle": "Syntace X-12",
+     "od_in": "1-1/4",
+     "flange_height_mm": 25.4
+    },
+    "derived": {
+     "dropout_type": "Syntace X-12 is a 12 mm thru-axle system"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-syntace-1-1-4-od-x-1-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-syntace-x-12-17-4-stainless-1-in-od-x-25-mm-flange-dr1091",
+   "name": "Paragon Machine Works Syntace X-12, 17/4 stainless, 1 in OD x 25 mm flange (DR1091)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Syntace X-12",
+    "variant": "17/4 stainless, 1 in OD x 25 mm flange (DR1091)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1091",
+     "material": "17/4 stainless steel",
+     "axle": "12 mm thru, Syntace X-12",
+     "od_in": 1.0,
+     "flange_height_mm": 25
+    },
+    "derived": {
+     "dropout_type": "12 mm thru per title"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-12mm-thru-syntace-1-od-x-25mm-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-syntace-x-12-1018-steel-1-in-od-x-25-mm-flange-dr2091",
+   "name": "Paragon Machine Works Syntace X-12, 1018 steel, 1 in OD x 25 mm flange (DR2091)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Syntace X-12",
+    "variant": "1018 steel, 1 in OD x 25 mm flange (DR2091)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2091",
+     "material": "1018 steel",
+     "axle": "12 mm thru, Syntace X-12",
+     "od_in": 1.0,
+     "flange_height_mm": 25
+    },
+    "derived": {
+     "dropout_type": "12 mm thru per title"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-12mm-thru-syntace-1-od-x-25mm-flange-1",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-hooded-horizontal-10-mm-1018-steel-1.040-in-flange-dr2020",
+   "name": "Paragon Machine Works Hooded Horizontal 10 mm, 1018 steel, 1.040 in flange (DR2020)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Hooded Horizontal 10 mm",
+    "variant": "1018 steel, 1.040 in flange (DR2020)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2020",
+     "material": "1018 steel",
+     "axle": "10 mm",
+     "application": "track, single speed",
+     "flange_width_in": 1.04,
+     "od_in": 1.312,
+     "face_thickness_in": 0.276,
+     "slot_length_in": 1.08
+    },
+    "derived": {
+     "dropout_type": "product title: hooded horizontal"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-hooded-horizontal-10mm-1-040-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-plate-integral-hanger-17-4-stainless-70-deg-dr1008",
+   "name": "Paragon Machine Works 10 mm QR plate, integral hanger, 17/4 stainless, 70 deg (DR1008)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR plate, integral hanger",
+    "variant": "17/4 stainless, 70 deg (DR1008)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1008",
+     "material": "17/4 stainless steel",
+     "axle": "10 mm QR",
+     "stay_angle_deg": 70,
+     "hanger": "integral to right side",
+     "axle_to_derailleur_bolt_in": 1.18,
+     "tab_thickness_mm": 5,
+     "face_thickness_mm": 6.5
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-10mm-qr-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-plate-integral-hanger-17-4-stainless-58-deg-dr1009",
+   "name": "Paragon Machine Works 10 mm QR plate, integral hanger, 17/4 stainless, 58 deg (DR1009)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR plate, integral hanger",
+    "variant": "17/4 stainless, 58 deg (DR1009)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1009 (listed as #DR1007 in the variant name)",
+     "material": "17/4 stainless steel",
+     "axle": "10 mm QR",
+     "stay_angle_deg": 58,
+     "hanger": "integral to right side",
+     "axle_to_derailleur_bolt_in": 1.18,
+     "tab_thickness_mm": 5,
+     "face_thickness_mm": 6.5
+    },
+    "notes": "Variant label says #DR1007 but its SKU is DR1009. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-10mm-qr-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-plate-integral-hanger-4130-steel-45-deg-dr2005",
+   "name": "Paragon Machine Works 10 mm QR plate, integral hanger, 4130 steel, 45 deg (DR2005)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR plate, integral hanger",
+    "variant": "4130 steel, 45 deg (DR2005)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2005",
+     "material": "4130 steel",
+     "axle": "10 mm QR",
+     "stay_angle_deg": 45,
+     "hanger": "integral to right side",
+     "axle_to_derailleur_bolt_in": 1.18,
+     "tab_thickness_mm": 5,
+     "face_thickness_mm": 6.5
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-10mm-qr-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-10-mm-qr-plate-integral-hanger-4130-steel-70-deg-dr2007",
+   "name": "Paragon Machine Works 10 mm QR plate, integral hanger, 4130 steel, 70 deg (DR2007)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "10 mm QR plate, integral hanger",
+    "variant": "4130 steel, 70 deg (DR2007)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2007",
+     "material": "4130 steel",
+     "axle": "10 mm QR",
+     "stay_angle_deg": 70,
+     "hanger": "integral to right side",
+     "axle_to_derailleur_bolt_in": 1.18,
+     "tab_thickness_mm": 5,
+     "face_thickness_mm": 6.5
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-10mm-qr-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-track-1018-steel-70-deg-dr2013",
+   "name": "Paragon Machine Works Track, 1018 steel, 70 deg (DR2013)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "track"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Track",
+    "variant": "1018 steel, 70 deg (DR2013)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2013",
+     "material": "1018 steel",
+     "application": "track, single speed",
+     "stay_angle_deg": 70,
+     "tab_thickness_mm": 5,
+     "face_thickness_mm": 6.5
+    },
+    "derived": {
+     "dropout_type": "product title: track"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-track",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-plate-flat-mount-6-4-titanium-70-deg-dr0086-dr0088",
+   "name": "Paragon Machine Works 12 mm Plate, Flat Mount, 6/4 titanium, 70 deg (DR0086 / DR0088)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Plate, Flat Mount",
+    "variant": "6/4 titanium, 70 deg (DR0086 / DR0088)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0086 (no eyelets), DR0088 (eyelets)",
+     "material": "6/4 titanium",
+     "axle": "12 mm skewer hole",
+     "stay_angle_deg": 70,
+     "disc_mount": "flat mount, welded caliper mount",
+     "mount_thickness_mm": 10
+    },
+    "derived": {
+     "brake_rear": "integrated flat-mount caliper mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-plate-flat-mount-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-plate-flat-mount-316-stainless-70-deg-dr1086",
+   "name": "Paragon Machine Works 12 mm Plate, Flat Mount, 316 stainless, 70 deg (DR1086)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Plate, Flat Mount",
+    "variant": "316 stainless, 70 deg (DR1086)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1086",
+     "material": "316 stainless steel",
+     "axle": "12 mm skewer hole",
+     "stay_angle_deg": 70,
+     "disc_mount": "flat mount, 2x 5/8 in OD x 20.5 mm bosses, 10 mm at bolt"
+    },
+    "derived": {
+     "brake_rear": "flat-mount bosses included"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-plate-flat-mount-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-plate-flat-mount-316-stainless-58-deg-dr1085",
+   "name": "Paragon Machine Works 12 mm Plate, Flat Mount, 316 stainless, 58 deg (DR1085)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Plate, Flat Mount",
+    "variant": "316 stainless, 58 deg (DR1085)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1085",
+     "material": "316 stainless steel",
+     "axle": "12 mm skewer hole",
+     "stay_angle_deg": 58,
+     "disc_mount": "flat mount, 2x 5/8 in OD x 20.5 mm bosses, 10 mm at bolt"
+    },
+    "derived": {
+     "brake_rear": "flat-mount bosses included"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-plate-flat-mount-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-plate-flat-mount-1018-steel-70-deg-dr2088",
+   "name": "Paragon Machine Works 12 mm Plate, Flat Mount, 1018 steel, 70 deg (DR2088)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Plate, Flat Mount",
+    "variant": "1018 steel, 70 deg (DR2088)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2088",
+     "material": "1018 steel",
+     "axle": "12 mm skewer hole",
+     "stay_angle_deg": 70,
+     "eyelets": "4x M5x0.8",
+     "disc_mount": "flat mount, 2x 5/8 in OD x 20.5 mm bosses, 10 mm at bolt"
+    },
+    "derived": {
+     "brake_rear": "flat-mount bosses included"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-plate-flat-mount-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-12-mm-plate-flat-mount-1018-steel-58-deg-dr2085",
+   "name": "Paragon Machine Works 12 mm Plate, Flat Mount, 1018 steel, 58 deg (DR2085)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "12 mm Plate, Flat Mount",
+    "variant": "1018 steel, 58 deg (DR2085)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2085",
+     "material": "1018 steel",
+     "axle": "12 mm skewer hole",
+     "stay_angle_deg": 58,
+     "disc_mount": "flat mount, 2x 5/8 in OD x 20.5 mm bosses, 10 mm at bolt"
+    },
+    "derived": {
+     "brake_rear": "flat-mount bosses included"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-plate-flat-mount-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-low-mount-12-mm-thru-4130-steel-48-deg-dr2036-dr2032",
+   "name": "Paragon Machine Works Low Mount 12 mm Thru, 4130 steel, 48 deg (DR2036 / DR2032)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Low Mount 12 mm Thru",
+    "variant": "4130 steel, 48 deg (DR2036 / DR2032)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2036 (no eyelets), DR2032 (eyelets)",
+     "material": "4130 steel",
+     "axle": "12 mm thru",
+     "stay_angle_deg": 48,
+     "disc_mount": "ISO (IS) integrated on left side",
+     "tab_thickness_mm": 5,
+     "right_thickness_mm": "9 max (8 with hanger)",
+     "left_thickness_mm": "12 max",
+     "hanger": "separate"
+    },
+    "derived": {
+     "dropout_type": "12 mm thru per title",
+     "brake_rear": "integrated ISO disc mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-low-mount-12mm-thru-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-low-mount-12-mm-thru-4130-steel-58-deg-dr2037-dr2033",
+   "name": "Paragon Machine Works Low Mount 12 mm Thru, 4130 steel, 58 deg (DR2037 / DR2033)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Low Mount 12 mm Thru",
+    "variant": "4130 steel, 58 deg (DR2037 / DR2033)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2037 (no eyelets), DR2033 (eyelets)",
+     "material": "4130 steel",
+     "axle": "12 mm thru",
+     "stay_angle_deg": 58,
+     "disc_mount": "ISO (IS) integrated on left side",
+     "tab_thickness_mm": 5,
+     "right_thickness_mm": "9 max (8 with hanger)",
+     "left_thickness_mm": "12 max",
+     "hanger": "separate"
+    },
+    "derived": {
+     "dropout_type": "12 mm thru per title",
+     "brake_rear": "integrated ISO disc mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-low-mount-12mm-thru-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-low-mount-10-mm-qr-1018-steel-48-deg-dr2030-dr2034-dr2026",
+   "name": "Paragon Machine Works Low Mount 10 mm QR, 1018 steel, 48 deg (DR2030 / DR2034 / DR2026)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Low Mount 10 mm QR",
+    "variant": "1018 steel, 48 deg (DR2030 / DR2034 / DR2026)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2030 (eyelets), DR2034 (no eyelets), DR2026 (eyelets, thick)",
+     "material": "1018 steel",
+     "axle": "10 mm QR",
+     "stay_angle_deg": 48,
+     "disc_mount": "ISO (IS)",
+     "tab_thickness_mm": 5,
+     "right_thickness_mm": "8 with hanger",
+     "left_caliper_hole_thickness_in": 0.25,
+     "eyelets": "4x M5x0.8 (eyelet versions)"
+    },
+    "derived": {
+     "brake_rear": "integrated ISO disc mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-low-mount-10mm-qr-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-low-mount-10-mm-qr-1018-steel-58-deg-dr2031-dr2035-dr2027",
+   "name": "Paragon Machine Works Low Mount 10 mm QR, 1018 steel, 58 deg (DR2031 / DR2035 / DR2027)",
+   "category": "dropouts",
+   "values": {
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Low Mount 10 mm QR",
+    "variant": "1018 steel, 58 deg (DR2031 / DR2035 / DR2027)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2031 (eyelets), DR2035 (no eyelets), DR2027 (eyelets, thick)",
+     "material": "1018 steel",
+     "axle": "10 mm QR",
+     "stay_angle_deg": 58,
+     "disc_mount": "ISO (IS)",
+     "tab_thickness_mm": 5,
+     "right_thickness_mm": "8 with hanger",
+     "left_caliper_hole_thickness_in": 0.25,
+     "eyelets": "4x M5x0.8 (eyelet versions)"
+    },
+    "derived": {
+     "brake_rear": "integrated ISO disc mount"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-low-mount-10mm-qr-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-front-12-mm-thru-18-mm-wide-eyelets-1018-steel-dr2060",
+   "name": "Paragon Machine Works Front 12 mm Thru, 18 mm wide, eyelets, 1018 steel (DR2060)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Front 12 mm Thru, 18 mm wide, eyelets",
+    "variant": "1018 steel (DR2060)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2060",
+     "position": "front",
+     "material": "1018 steel",
+     "axle": "12 mm thru, one side M12x1.5",
+     "tab_width_mm": 18,
+     "eyelets": "2x M5x0.8 each side"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-front-12mm-thru-18mm-wide-w-eyelets",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-front-12-mm-thru-13-mm-wide-1018-steel-dr2052",
+   "name": "Paragon Machine Works Front 12 mm Thru, 13 mm wide, 1018 steel (DR2052)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Front 12 mm Thru, 13 mm wide",
+    "variant": "1018 steel (DR2052)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2052",
+     "position": "front",
+     "material": "1018 steel",
+     "axle": "12 mm thru, one side M12x1.5",
+     "flange_width_mm": 13
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-front-12mm-thru-13mm-wide",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-front-9-mm-qr-17-4-stainless-dr1018",
+   "name": "Paragon Machine Works Front 9 mm QR, 17/4 stainless (DR1018)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Front 9 mm QR",
+    "variant": "17/4 stainless (DR1018)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR1018",
+     "position": "front",
+     "material": "17/4 stainless steel",
+     "axle": "9 mm QR",
+     "face_thickness_mm": "6, relieved to 5",
+     "blade_insert_width_in": 0.5
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-stainless-9mm-qr-front",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-front-9-mm-qr-1018-steel-1-1-4-in-od-x-1-1-4-in-flange-dr2047",
+   "name": "Paragon Machine Works Front 9 mm QR, 1018 steel, 1-1/4 in OD x 1-1/4 in flange (DR2047)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Front 9 mm QR",
+    "variant": "1018 steel, 1-1/4 in OD x 1-1/4 in flange (DR2047)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2047",
+     "position": "front",
+     "material": "1018 steel",
+     "axle": "9 mm",
+     "od_in": "1-1/4",
+     "flange_width_in": "1-1/4"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-front-9mm-qr-1-1-4-od-x-1-1-4-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-front-12-mm-thru-1018-steel-1-in-od-x-24-mm-flange-dr2055",
+   "name": "Paragon Machine Works Front 12 mm Thru, 1018 steel, 1 in OD x 24 mm flange (DR2055)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Front 12 mm Thru",
+    "variant": "1018 steel, 1 in OD x 24 mm flange (DR2055)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2055",
+     "position": "front",
+     "material": "1018 steel",
+     "axle": "12 mm thru, one side M12x1.5",
+     "od_in": 1.0,
+     "tab_width_mm": 24
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-front-12mm-thru-1-od-x-24mm-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-front-15-mm-thru-1018-steel-1-1-4-in-od-x-1-1-4-in-flange-dr2056",
+   "name": "Paragon Machine Works Front 15 mm Thru, 1018 steel, 1-1/4 in OD x 1-1/4 in flange (DR2056)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Front 15 mm Thru",
+    "variant": "1018 steel, 1-1/4 in OD x 1-1/4 in flange (DR2056)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR2056",
+     "position": "front",
+     "material": "1018 steel",
+     "axle": "15 mm thru, one side M15x1.5",
+     "od_in": "1-1/4",
+     "tab_width_in": "1-1/4"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-steel-front-15mm-thru-1-1-4-od-x-1-1-4-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-front-12-mm-thru-6-4-titanium-1-3-8-in-od-x-1-3-8-in-flange-dr0050",
+   "name": "Paragon Machine Works Front 12 mm Thru, 6/4 titanium, 1-3/8 in OD x 1-3/8 in flange (DR0050)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Front 12 mm Thru",
+    "variant": "6/4 titanium, 1-3/8 in OD x 1-3/8 in flange (DR0050)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0050",
+     "position": "front",
+     "material": "6/4 titanium",
+     "axle": "12 mm, integral M12x1.5",
+     "od_in": "1-3/8",
+     "flange_width_in": "1-3/8"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-front-12mm-thru-1-3-8-od-x-1-3-8-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-front-15-mm-thru-6-4-titanium-1-3-8-in-od-x-1-3-8-in-flange-dr0048",
+   "name": "Paragon Machine Works Front 15 mm Thru, 6/4 titanium, 1-3/8 in OD x 1-3/8 in flange (DR0048)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Front 15 mm Thru",
+    "variant": "6/4 titanium, 1-3/8 in OD x 1-3/8 in flange (DR0048)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "DR0048",
+     "position": "front",
+     "material": "6/4 titanium",
+     "axle": "15 mm, integral M15x1.5",
+     "od_in": "1-3/8",
+     "flange_width_in": "1-3/8"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-titanium-front-15mm-thru-1-3-8-od-x-1-3-8-flange",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  }
+ ]
+}

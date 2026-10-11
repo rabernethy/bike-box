@@ -116,6 +116,13 @@ class Document(QtCore.QObject):
         new = P.get(key).coerce(value) if P.has(key) else value
         if old == new:
             return
+        from ..geometry.modes import MODE_KEYS, mode_switch_values
+        if key in MODE_KEYS:
+            # switching how a dimension is specified: carry the current value
+            # over so the geometry doesn't move (one undo step)
+            label = P.get(key).label if P.has(key) else key
+            self.set_params(mode_switch_values(self.design, key, new, self.geometry), text or f"Set {label}")
+            return
         self.undo.push(SetParams(self, {key: (old, new)}, text or f"Set {key}"))
 
     def set_params(self, values: dict[str, Any], text: str = "Edit", merge_id: int = -1) -> None:

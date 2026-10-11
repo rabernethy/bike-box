@@ -1,0 +1,4375 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "category": "frame_hardware",
+ "label": "Frame hardware",
+ "catalog": true,
+ "compiled": "2026-10-11",
+ "items": [
+  {
+   "id": "ceeway-lt102r-1-top-head-lug-31.7x25.4-mm-71-deg",
+   "name": "Ceeway LT102R-1 top head lug, 31.7x25.4 mm, 71 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 71
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT102R-1 top head lug",
+    "variant": "31.7x25.4 mm, 71 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT102R-1",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x25.4",
+     "angle_deg_as_listed": "71",
+     "construction": "cast",
+     "series_notes": "102 series, long point"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt102r-2-top-head-lug-31.7x25.4-mm-72-deg",
+   "name": "Ceeway LT102R-2 top head lug, 31.7x25.4 mm, 72 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 72
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT102R-2 top head lug",
+    "variant": "31.7x25.4 mm, 72 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT102R-2",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x25.4",
+     "angle_deg_as_listed": "72",
+     "construction": "cast",
+     "series_notes": "102 series, long point"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt102r-3-top-head-lug-31.7x25.4-mm-73-deg",
+   "name": "Ceeway LT102R-3 top head lug, 31.7x25.4 mm, 73 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 73
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT102R-3 top head lug",
+    "variant": "31.7x25.4 mm, 73 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT102R-3",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x25.4",
+     "angle_deg_as_listed": "73",
+     "construction": "cast",
+     "series_notes": "102 series, long point"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld102r-0-bottom-head-lug-31.7x28.6-mm-60-deg",
+   "name": "Ceeway LD102R-0 bottom head lug, 31.7x28.6 mm, 60 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD102R-0 bottom head lug",
+    "variant": "31.7x28.6 mm, 60 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD102R-0",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "60",
+     "construction": "cast",
+     "series_notes": "102 series, long point"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld102r-1-bottom-head-lug-31.7x28.6-mm-61-deg",
+   "name": "Ceeway LD102R-1 bottom head lug, 31.7x28.6 mm, 61 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD102R-1 bottom head lug",
+    "variant": "31.7x28.6 mm, 61 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD102R-1",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "61",
+     "construction": "cast",
+     "series_notes": "102 series, long point"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld102r-2-bottom-head-lug-31.7x28.6-mm-62-deg",
+   "name": "Ceeway LD102R-2 bottom head lug, 31.7x28.6 mm, 62 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD102R-2 bottom head lug",
+    "variant": "31.7x28.6 mm, 62 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD102R-2",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "62",
+     "construction": "cast",
+     "series_notes": "102 series, long point"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls102r-seat-lug-28.6x25.4-mm-74-deg",
+   "name": "Ceeway LS102R seat lug, 28.6x25.4 mm, 74 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_st_angle": 74
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS102R seat lug",
+    "variant": "28.6x25.4 mm, 74 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS102R",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x25.4",
+     "angle_deg_as_listed": "74",
+     "construction": "cast",
+     "series_notes": "102 series, long point"
+    },
+    "derived": {
+     "lug_st_angle": "angle printed for the seat lug (seat tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt300r-top-head-lug-31.7x25.4-mm-73-deg",
+   "name": "Ceeway LT300R top head lug, 31.7x25.4 mm, 73 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 73
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT300R top head lug",
+    "variant": "31.7x25.4 mm, 73 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT300R",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x25.4",
+     "angle_deg_as_listed": "73",
+     "construction": "cast",
+     "series_notes": "300 series 'Arrowhead'"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld300r-bottom-head-lug-31.7x28.6-mm-60-deg",
+   "name": "Ceeway LD300R bottom head lug, 31.7x28.6 mm, 60 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD300R bottom head lug",
+    "variant": "31.7x28.6 mm, 60 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD300R",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "60",
+     "construction": "cast",
+     "series_notes": "300 series 'Arrowhead'"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls300r-seat-lug-28.6x25.4-mm-73.30-deg",
+   "name": "Ceeway LS300R seat lug, 28.6x25.4 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS300R seat lug",
+    "variant": "28.6x25.4 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS300R",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x25.4",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "300 series; 10.5 mm double-taper seat stays"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-487t-top-head-lug-31.8x25.4-mm-73.30-deg",
+   "name": "Ceeway 487T top head lug, 31.8x25.4 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "487T top head lug",
+    "variant": "31.8x25.4 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "487T",
+     "lug": "top head",
+     "socket_sizes_mm": "31.8x25.4",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "486/487 series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-487b-bottom-head-lug-31.8x28.6-mm-59.30-deg",
+   "name": "Ceeway 487B bottom head lug, 31.8x28.6 mm, 59.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "487B bottom head lug",
+    "variant": "31.8x28.6 mm, 59.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "487B",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.8x28.6",
+     "angle_deg_as_listed": "59.30",
+     "construction": "cast",
+     "series_notes": "486/487 series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-487b-62-bottom-head-lug-31.8x28.6-mm-62-deg",
+   "name": "Ceeway 487B-62 bottom head lug, 31.8x28.6 mm, 62 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "487B-62 bottom head lug",
+    "variant": "31.8x28.6 mm, 62 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "487B-62",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.8x28.6",
+     "angle_deg_as_listed": "62",
+     "construction": "cast",
+     "series_notes": "486/487 series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-csc-top-top-head-lug-31.8x25.4-mm-73.30-deg",
+   "name": "Ceeway CSC Top top head lug, 31.8x25.4 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "CSC Top top head lug",
+    "variant": "31.8x25.4 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "CSC Top",
+     "lug": "top head",
+     "socket_sizes_mm": "31.8x25.4",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "CSC series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-csc-bottom-bottom-head-lug-31.8x28.6-mm-60-deg",
+   "name": "Ceeway CSC Bottom bottom head lug, 31.8x28.6 mm, 60 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "CSC Bottom bottom head lug",
+    "variant": "31.8x28.6 mm, 60 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "CSC Bottom",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.8x28.6",
+     "angle_deg_as_listed": "60",
+     "construction": "cast",
+     "series_notes": "CSC series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls106rs-seat-lug-28.6x25.4x10.5-mm-73.30-deg",
+   "name": "Ceeway LS106RS seat lug, 28.6x25.4x10.5 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS106RS seat lug",
+    "variant": "28.6x25.4x10.5 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS106RS",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x25.4x10.5",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "any-angle seat stay insertion, double-taper stays"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-tl02-top-head-lug-31.8x28.6-mm-73.30-deg",
+   "name": "Ceeway TL02 top head lug, 31.8x28.6 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "TL02 top head lug",
+    "variant": "31.8x28.6 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "TL02",
+     "lug": "top head",
+     "socket_sizes_mm": "31.8x28.6",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "oversize, raised; stainless TL02S"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt204c-2-top-head-lug-31.7x28.6-mm-72-deg",
+   "name": "Ceeway LT204C-2 top head lug, 31.7x28.6 mm, 72 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 72
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT204C-2 top head lug",
+    "variant": "31.7x28.6 mm, 72 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT204C-2",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "72",
+     "construction": "cast",
+     "series_notes": "oversize 204 series"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt204c-3-top-head-lug-31.7x28.6-mm-73-deg",
+   "name": "Ceeway LT204C-3 top head lug, 31.7x28.6 mm, 73 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 73
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT204C-3 top head lug",
+    "variant": "31.7x28.6 mm, 73 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT204C-3",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "73",
+     "construction": "cast",
+     "series_notes": "oversize 204 series"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt204c-4-top-head-lug-31.7x28.6-mm-74-deg",
+   "name": "Ceeway LT204C-4 top head lug, 31.7x28.6 mm, 74 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 74
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT204C-4 top head lug",
+    "variant": "31.7x28.6 mm, 74 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT204C-4",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "74",
+     "construction": "cast",
+     "series_notes": "oversize 204 series; stainless set S-LT/LD/LS204C"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld204c-0-bottom-head-lug-31.7x31.7-mm-60-deg",
+   "name": "Ceeway LD204C-0 bottom head lug, 31.7x31.7 mm, 60 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD204C-0 bottom head lug",
+    "variant": "31.7x31.7 mm, 60 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD204C-0",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x31.7",
+     "angle_deg_as_listed": "60",
+     "construction": "cast",
+     "series_notes": "oversize 204 series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld204c-2-bottom-head-lug-31.7x31.7-mm-62-deg",
+   "name": "Ceeway LD204C-2 bottom head lug, 31.7x31.7 mm, 62 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD204C-2 bottom head lug",
+    "variant": "31.7x31.7 mm, 62 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD204C-2",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x31.7",
+     "angle_deg_as_listed": "62",
+     "construction": "cast",
+     "series_notes": "oversize 204 series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls204c-seat-lug-28.6x28.6-mm-74-deg",
+   "name": "Ceeway LS204C seat lug, 28.6x28.6 mm, 74 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_st_angle": 74
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS204C seat lug",
+    "variant": "28.6x28.6 mm, 74 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS204C",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x28.6",
+     "angle_deg_as_listed": "74",
+     "construction": "cast",
+     "series_notes": "oversize 204 series; stainless S-LS204C in 74 or 78"
+    },
+    "derived": {
+     "lug_st_angle": "angle printed for the seat lug (seat tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-518-1-top-head-lug-31.7x28.6-mm-71-deg",
+   "name": "Ceeway 518-1 top head lug, 31.7x28.6 mm, 71 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 71
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "518-1 top head lug",
+    "variant": "31.7x28.6 mm, 71 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "518-1",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "71",
+     "construction": "cast",
+     "series_notes": "oversize 518 series"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-518-2-top-head-lug-31.7x28.6-mm-72-deg",
+   "name": "Ceeway 518-2 top head lug, 31.7x28.6 mm, 72 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 72
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "518-2 top head lug",
+    "variant": "31.7x28.6 mm, 72 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "518-2",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "72",
+     "construction": "cast",
+     "series_notes": "oversize 518 series"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-518-bottom-bottom-head-lug-31.7x31.7-mm-60-deg",
+   "name": "Ceeway 518 Bottom bottom head lug, 31.7x31.7 mm, 60 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "518 Bottom bottom head lug",
+    "variant": "31.7x31.7 mm, 60 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "518 Bottom",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x31.7",
+     "angle_deg_as_listed": "60",
+     "construction": "cast",
+     "series_notes": "oversize 518 series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-t516-bottom-bottom-head-lug-31.8x31.8-mm-60-deg",
+   "name": "Ceeway T516 Bottom bottom head lug, 31.8x31.8 mm, 60 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "T516 Bottom bottom head lug",
+    "variant": "31.8x31.8 mm, 60 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "T516 Bottom",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.8x31.8",
+     "angle_deg_as_listed": "60",
+     "construction": "cast",
+     "series_notes": "M5 threaded Ergo adjuster bosses"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls200c-2-seat-lug-28.6x28.6-mm-72-deg",
+   "name": "Ceeway LS200C-2 seat lug, 28.6x28.6 mm, 72 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_st_angle": 72
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS200C-2 seat lug",
+    "variant": "28.6x28.6 mm, 72 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS200C-2",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x28.6",
+     "angle_deg_as_listed": "72",
+     "construction": "cast",
+     "series_notes": "oversize"
+    },
+    "derived": {
+     "lug_st_angle": "angle printed for the seat lug (seat tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls200c-3-seat-lug-28.6x28.6-mm-73.30-deg",
+   "name": "Ceeway LS200C-3 seat lug, 28.6x28.6 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS200C-3 seat lug",
+    "variant": "28.6x28.6 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS200C-3",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x28.6",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "oversize; stainless S-LS200C-3"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-514-seat-lug-28.6x28.6-mm-72.30-deg",
+   "name": "Ceeway 514 seat lug, 28.6x28.6 mm, 72.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "514 seat lug",
+    "variant": "28.6x28.6 mm, 72.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "514",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x28.6",
+     "angle_deg_as_listed": "72.30",
+     "construction": "cast",
+     "series_notes": "oversize"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-d60-top-head-lug-31.7x28.6-mm-73-deg",
+   "name": "Ceeway D60 top head lug, 31.7x28.6 mm, 73 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 73
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "D60 top head lug",
+    "variant": "31.7x28.6 mm, 73 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "D60",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "73",
+     "construction": "cast",
+     "series_notes": "Fleur de Lys; stainless S-D60"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-d70-bottom-head-lug-31.7x31.7-mm-60-deg",
+   "name": "Ceeway D70 bottom head lug, 31.7x31.7 mm, 60 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "D70 bottom head lug",
+    "variant": "31.7x31.7 mm, 60 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "D70",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x31.7",
+     "angle_deg_as_listed": "60",
+     "construction": "cast",
+     "series_notes": "Fleur de Lys; stainless S-D70"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls106ro-seat-lug-28.6x28.6-mm-73.30-deg",
+   "name": "Ceeway LS106RO seat lug, 28.6x28.6 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS106RO seat lug",
+    "variant": "28.6x28.6 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS106RO",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x28.6",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "10.5 mm double-taper seat stay ports, any-angle insertion"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-p23-seat-lug-28.6x28.6-mm-73.30-deg",
+   "name": "Ceeway P23 seat lug, 28.6x28.6 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "P23 seat lug",
+    "variant": "28.6x28.6 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "P23",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x28.6",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "14 mm seat stay ports"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls02f-6-seat-lug-28.6x28.6-mm-74-deg",
+   "name": "Ceeway LS02F-6 seat lug, 28.6x28.6 mm, 74 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_st_angle": 74
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS02F-6 seat lug",
+    "variant": "28.6x28.6 mm, 74 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS02F-6",
+     "lug": "seat",
+     "socket_sizes_mm": "28.6x28.6",
+     "angle_deg_as_listed": "74",
+     "construction": "cast",
+     "series_notes": "14 mm seat stay ports"
+    },
+    "derived": {
+     "lug_st_angle": "angle printed for the seat lug (seat tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-tl01-top-head-lug-36x28.6-mm-73.30-deg",
+   "name": "Ceeway TL01 top head lug, 36x28.6 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "TL01 top head lug",
+    "variant": "36x28.6 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "TL01",
+     "lug": "top head",
+     "socket_sizes_mm": "36x28.6",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "for 28.6 steerer / 36 mm head tube; stainless TL01S"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt07-2-top-head-lug-36x28.6-mm-72-deg",
+   "name": "Ceeway LT07-2 top head lug, 36x28.6 mm, 72 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 72
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT07-2 top head lug",
+    "variant": "36x28.6 mm, 72 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT07-2",
+     "lug": "top head",
+     "socket_sizes_mm": "36x28.6",
+     "angle_deg_as_listed": "72",
+     "construction": "cast",
+     "series_notes": "for 28.6 steerer / 36 mm head tube"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt07-4-top-head-lug-36x28.6-mm-74-deg",
+   "name": "Ceeway LT07-4 top head lug, 36x28.6 mm, 74 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 74
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT07-4 top head lug",
+    "variant": "36x28.6 mm, 74 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT07-4",
+     "lug": "top head",
+     "socket_sizes_mm": "36x28.6",
+     "angle_deg_as_listed": "74",
+     "construction": "cast",
+     "series_notes": "for 28.6 steerer; stainless S-LT07-4"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt07-8-top-head-lug-36x28.6-mm-78-deg",
+   "name": "Ceeway LT07-8 top head lug, 36x28.6 mm, 78 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 78
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT07-8 top head lug",
+    "variant": "36x28.6 mm, 78 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT07-8",
+     "lug": "top head",
+     "socket_sizes_mm": "36x28.6",
+     "angle_deg_as_listed": "78",
+     "construction": "cast",
+     "series_notes": "for 28.6 steerer; stainless S-LT07-8"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld07-bottom-head-lug-36x31.7-mm-60-deg",
+   "name": "Ceeway LD07 bottom head lug, 36x31.7 mm, 60 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD07 bottom head lug",
+    "variant": "36x31.7 mm, 60 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD07",
+     "lug": "bottom head",
+     "socket_sizes_mm": "36x31.7",
+     "angle_deg_as_listed": "60",
+     "construction": "cast",
+     "series_notes": "for 28.6 steerer; stainless S-LD07"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld07-8-bottom-head-lug-36x31.8-mm-58-deg",
+   "name": "Ceeway LD07-8 bottom head lug, 36x31.8 mm, 58 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD07-8 bottom head lug",
+    "variant": "36x31.8 mm, 58 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD07-8",
+     "lug": "bottom head",
+     "socket_sizes_mm": "36x31.8",
+     "angle_deg_as_listed": "58",
+     "construction": "cast",
+     "series_notes": "for 28.6 steerer"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt04-8-top-head-lug-36x31.7-mm-74-deg",
+   "name": "Ceeway LT04-8 top head lug, 36x31.7 mm, 74 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 74
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT04-8 top head lug",
+    "variant": "36x31.7 mm, 74 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT04-8",
+     "lug": "top head",
+     "socket_sizes_mm": "36x31.7",
+     "angle_deg_as_listed": "74",
+     "construction": "cast",
+     "series_notes": "for 28.6 steerer; stainless S-LT04-8"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld04-bottom-head-lug-36x34.9-mm-61-deg",
+   "name": "Ceeway LD04 bottom head lug, 36x34.9 mm, 61 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD04 bottom head lug",
+    "variant": "36x34.9 mm, 61 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD04",
+     "lug": "bottom head",
+     "socket_sizes_mm": "36x34.9",
+     "angle_deg_as_listed": "61",
+     "construction": "cast",
+     "series_notes": "for 28.6 steerer; stainless S-LD04"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-c801-seat-lug-31.7x31.7-mm-73.30-deg",
+   "name": "Ceeway C801 seat lug, 31.7x31.7 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "C801 seat lug",
+    "variant": "31.7x31.7 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "C801",
+     "lug": "seat",
+     "socket_sizes_mm": "31.7x31.7",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "oversize seat lug"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-f40-seat-lug-31.8x31.8x16-mm-73.30-deg",
+   "name": "Ceeway F40 seat lug, 31.8x31.8x16 mm, 73.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "F40 seat lug",
+    "variant": "31.8x31.8x16 mm, 73.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "F40",
+     "lug": "seat",
+     "socket_sizes_mm": "31.8x31.8x16",
+     "angle_deg_as_listed": "73.30",
+     "construction": "cast",
+     "series_notes": "16 mm stay ports; stainless F40S"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lt108m-top-head-lug-37x31.7-mm-77.30-deg",
+   "name": "Ceeway LT108M top head lug, 37x31.7 mm, 77.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LT108M top head lug",
+    "variant": "37x31.7 mm, 77.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LT108M",
+     "lug": "top head",
+     "socket_sizes_mm": "37x31.7",
+     "angle_deg_as_listed": "77.30",
+     "construction": "cast",
+     "series_notes": "ATB 108 series, long point"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ld108m-bottom-head-lug-37x34.9-mm-66.10-deg",
+   "name": "Ceeway LD108M bottom head lug, 37x34.9 mm, 66.10 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LD108M bottom head lug",
+    "variant": "37x34.9 mm, 66.10 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LD108M",
+     "lug": "bottom head",
+     "socket_sizes_mm": "37x34.9",
+     "angle_deg_as_listed": "66.10",
+     "construction": "cast",
+     "series_notes": "ATB 108 series, long point"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ls108m-seat-lug-31.7x31.7-mm-79.30-deg",
+   "name": "Ceeway LS108M seat lug, 31.7x31.7 mm, 79.30 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LS108M seat lug",
+    "variant": "31.7x31.7 mm, 79.30 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "LS108M",
+     "lug": "seat",
+     "socket_sizes_mm": "31.7x31.7",
+     "angle_deg_as_listed": "79.30",
+     "construction": "cast",
+     "series_notes": "ATB 108 series; 16 mm round seat stay port"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-c71-mtb-top-head-lug-31.7x28.6-mm-70-deg",
+   "name": "Ceeway C71-MTB top head lug, 31.7x28.6 mm, 70 deg",
+   "category": "frame_hardware",
+   "values": {
+    "lug_ht_angle": 70
+   },
+   "meta": {
+    "brand": "Ceeway",
+    "model": "C71-MTB top head lug",
+    "variant": "31.7x28.6 mm, 70 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "C71-MTB",
+     "lug": "top head",
+     "socket_sizes_mm": "31.7x28.6",
+     "angle_deg_as_listed": "70",
+     "construction": "cast",
+     "series_notes": "ATB C70 series"
+    },
+    "derived": {
+     "lug_ht_angle": "angle printed for the top head lug (head tube / top tube)"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-c72mtb-bottom-head-lug-31.7x31.7-mm-66-deg",
+   "name": "Ceeway C72MTB bottom head lug, 31.7x31.7 mm, 66 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "C72MTB bottom head lug",
+    "variant": "31.7x31.7 mm, 66 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "C72MTB",
+     "lug": "bottom head",
+     "socket_sizes_mm": "31.7x31.7",
+     "angle_deg_as_listed": "66",
+     "construction": "cast",
+     "series_notes": "ATB C70 series"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-fb286-bottom-head-ladies-lug-31.8x28.6-mm-59.5-deg",
+   "name": "Ceeway FB286 bottom head (ladies) lug, 31.8x28.6 mm, 59.5 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "FB286 bottom head (ladies) lug",
+    "variant": "31.8x28.6 mm, 59.5 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "FB286",
+     "lug": "bottom head (ladies)",
+     "socket_sizes_mm": "31.8x28.6",
+     "angle_deg_as_listed": "59.5",
+     "construction": "cast",
+     "series_notes": "ladies' frame"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-ft318-top-head-ladies-lug-31.8x28.6-mm-108-deg",
+   "name": "Ceeway FT318 top head (ladies) lug, 31.8x28.6 mm, 108 deg",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "FT318 top head (ladies) lug",
+    "variant": "31.8x28.6 mm, 108 deg",
+    "status": "current",
+    "specs": {
+     "part_number": "FT318",
+     "lug": "top head (ladies)",
+     "socket_sizes_mm": "31.8x28.6",
+     "angle_deg_as_listed": "108",
+     "construction": "cast",
+     "series_notes": "ladies' frame"
+    },
+    "notes": "Ceeway lists two diameters per lug (e.g. 31.7x25.4) without labelling which socket is which; angles are as printed. '73.30'-style angles may mean 73 deg 30 min, so they are not used as values.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/lugs.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc04-fork-crown-25.4-mm-steerer-narrow-shouldered-aero",
+   "name": "Ceeway LC04 fork crown, 25.4 mm steerer, narrow-shouldered aero",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC04 fork crown",
+    "variant": "25.4 mm steerer, narrow-shouldered aero",
+    "status": "current",
+    "specs": {
+     "part_number": "LC04",
+     "steerer_mm": 25.4,
+     "type": "narrow-shouldered aero",
+     "construction": "cast",
+     "weight_g": 160,
+     "blades": "28x19 oval",
+     "c_c_mm": 61.5,
+     "clearance_mm": 40,
+     "variants": "28.6 steerer version J04"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc14-fork-crown-25.4-mm-steerer-hollow-lightweight",
+   "name": "Ceeway LC14 fork crown, 25.4 mm steerer, hollow lightweight",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC14 fork crown",
+    "variant": "25.4 mm steerer, hollow lightweight",
+    "status": "current",
+    "specs": {
+     "part_number": "LC14",
+     "steerer_mm": 25.4,
+     "type": "hollow lightweight",
+     "construction": "cast",
+     "weight_g": 140,
+     "blades": "28x19 oval",
+     "c_c_mm": 51.5,
+     "clearance_mm": 30,
+     "variants": "28.6 steerer version B14-286 (32.5 mm clearance)"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc15-fork-crown-25.4-mm-steerer-semi-sloping",
+   "name": "Ceeway LC15 fork crown, 25.4 mm steerer, semi-sloping",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC15 fork crown",
+    "variant": "25.4 mm steerer, semi-sloping",
+    "status": "current",
+    "specs": {
+     "part_number": "LC15",
+     "steerer_mm": 25.4,
+     "type": "semi-sloping",
+     "construction": "cast",
+     "weight_g": 92,
+     "blades": "28x19 oval",
+     "c_c_mm": 60,
+     "clearance_mm": 36
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc16-fork-crown-25.4-mm-steerer-fully-sloping",
+   "name": "Ceeway LC16 fork crown, 25.4 mm steerer, fully sloping",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC16 fork crown",
+    "variant": "25.4 mm steerer, fully sloping",
+    "status": "current",
+    "specs": {
+     "part_number": "LC16",
+     "steerer_mm": 25.4,
+     "type": "fully sloping",
+     "construction": "cast",
+     "weight_g": 126,
+     "blades": "28x19 oval",
+     "c_c_mm": 59,
+     "clearance_mm": 39,
+     "variants": "28.6 version C58B, stainless S-C58B"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc17-fork-crown-25.4-mm-steerer-hollow-touring",
+   "name": "Ceeway LC17 fork crown, 25.4 mm steerer, hollow, touring",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC17 fork crown",
+    "variant": "25.4 mm steerer, hollow, touring",
+    "status": "current",
+    "specs": {
+     "part_number": "LC17",
+     "steerer_mm": 25.4,
+     "type": "hollow, touring",
+     "construction": "cast",
+     "weight_g": 124,
+     "blades": "28x19 oval",
+     "c_c_mm": 62,
+     "clearance_mm": 42
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc31-fork-crown-25.4-mm-steerer-narrow",
+   "name": "Ceeway LC31 fork crown, 25.4 mm steerer, narrow",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC31 fork crown",
+    "variant": "25.4 mm steerer, narrow",
+    "status": "current",
+    "specs": {
+     "part_number": "LC31",
+     "steerer_mm": 25.4,
+     "type": "narrow",
+     "construction": "cast",
+     "weight_g": 118,
+     "blades": "straight blades, 7 deg rake built in",
+     "c_c_mm": 50,
+     "clearance_mm": 30
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc22c-fork-crown-25.4-mm-steerer-wide-touring-cx-mtb",
+   "name": "Ceeway LC22C fork crown, 25.4 mm steerer, wide (touring/CX/MTB)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC22C fork crown",
+    "variant": "25.4 mm steerer, wide (touring/CX/MTB)",
+    "status": "current",
+    "specs": {
+     "part_number": "LC22C",
+     "steerer_mm": 25.4,
+     "type": "wide (touring/CX/MTB)",
+     "construction": "cast",
+     "weight_g": 155,
+     "blades": "curved",
+     "c_c_mm": 81,
+     "clearance_mm": 58,
+     "variants": "28.6 version LC33, stainless S-LC33"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc27-fork-crown-25.4-mm-steerer-wide",
+   "name": "Ceeway LC27 fork crown, 25.4 mm steerer, wide",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC27 fork crown",
+    "variant": "25.4 mm steerer, wide",
+    "status": "current",
+    "specs": {
+     "part_number": "LC27",
+     "steerer_mm": 25.4,
+     "type": "wide",
+     "construction": "cast",
+     "weight_g": 185,
+     "blades": "28x19 oval",
+     "c_c_mm": 72,
+     "clearance_mm": 47,
+     "variants": "28.6 version LC41; stainless S-LC27 / S-LC41"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-s-lc302r-fork-crown-25.4-mm-steerer-fleur-de-lys-stainless",
+   "name": "Ceeway S-LC302R fork crown, 25.4 mm steerer, Fleur de Lys, stainless",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "S-LC302R fork crown",
+    "variant": "25.4 mm steerer, Fleur de Lys, stainless",
+    "status": "current",
+    "specs": {
+     "part_number": "S-LC302R",
+     "steerer_mm": 25.4,
+     "type": "Fleur de Lys, stainless",
+     "construction": "cast",
+     "weight_g": 110,
+     "blades": "straight, 7 deg built-in rake",
+     "c_c_mm": 60,
+     "clearance_mm": 39
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc19-fork-crown-25.4-mm-steerer-traditional-track",
+   "name": "Ceeway LC19 fork crown, 25.4 mm steerer, traditional track",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC19 fork crown",
+    "variant": "25.4 mm steerer, traditional track",
+    "status": "current",
+    "specs": {
+     "part_number": "LC19",
+     "steerer_mm": 25.4,
+     "type": "traditional track",
+     "construction": "cast",
+     "weight_g": 118,
+     "blades": "24 mm round",
+     "c_c_mm": 64,
+     "clearance_mm": 40,
+     "variants": "28.6 version B35"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc12-fork-crown-28.6-mm-steerer-custom",
+   "name": "Ceeway LC12 fork crown, 28.6 mm steerer, custom",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC12 fork crown",
+    "variant": "28.6 mm steerer, custom",
+    "status": "current",
+    "specs": {
+     "part_number": "LC12",
+     "steerer_mm": 28.6,
+     "type": "custom",
+     "construction": "cast",
+     "weight_g": 280,
+     "blades": "built-in rake; can take Columbus 28.6 disc blades",
+     "c_c_mm": 91.7,
+     "clearance_mm": 63
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-lc36-4-fork-crown-25.4-mm-steerer-max",
+   "name": "Ceeway LC36-4 fork crown, 25.4 mm steerer, MAX",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "LC36-4 fork crown",
+    "variant": "25.4 mm steerer, MAX",
+    "status": "current",
+    "specs": {
+     "part_number": "LC36-4",
+     "steerer_mm": 25.4,
+     "type": "MAX",
+     "construction": "cast",
+     "weight_g": 160,
+     "blades": "Columbus MAX (MAXL16V2), 7 deg built-in rake",
+     "clearance_mm": 37.5,
+     "variants": "28.6 version LC36-6"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-b67-fork-crown-28.6-mm-steerer-max",
+   "name": "Ceeway B67 fork crown, 28.6 mm steerer, MAX",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "B67 fork crown",
+    "variant": "28.6 mm steerer, MAX",
+    "status": "current",
+    "specs": {
+     "part_number": "B67",
+     "steerer_mm": 28.6,
+     "type": "MAX",
+     "construction": "cast",
+     "weight_g": 165,
+     "blades": "Columbus MAX, raked",
+     "clearance_mm": 52,
+     "variants": "B66 is the same with 42 mm clearance"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ceeway-b90-286-fork-crown-28.6-mm-steerer-extra-wide-brake-hole-undrilled",
+   "name": "Ceeway B90-286 fork crown, 28.6 mm steerer, extra wide, brake hole undrilled",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Ceeway",
+    "model": "B90-286 fork crown",
+    "variant": "28.6 mm steerer, extra wide, brake hole undrilled",
+    "status": "current",
+    "specs": {
+     "part_number": "B90-286",
+     "steerer_mm": 28.6,
+     "type": "extra wide, brake hole undrilled",
+     "construction": "cast",
+     "weight_g": 190,
+     "clearance_mm": 68.7,
+     "variants": "25.4 version B90-25.4"
+    },
+    "notes": "Crowns are for 28x19 mm continental oval blades unless stated; the c_c / clearance figures are as printed by Ceeway.",
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/NEWPARTSPAGES/Cast%20Fork%20Crowns.htm",
+      "publisher": "Ceeway (framebuilding.com, supplier)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1.5-in-od-4130-steel-68-mm-bb2007",
+   "name": "Paragon Machine Works BB shell, BSA, 1.5 in OD, 4130 steel, 68 mm (BB2007)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1.5 in OD",
+    "variant": "4130 steel, 68 mm (BB2007)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2007",
+     "standard": "BSA (English) threaded",
+     "material": "1-1/2 in x .083 in wall 4130 steel tube",
+     "od_in": 1.5,
+     "supplied_width_mm": 68.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340",
+     "vented_version": "BB2007H with pre-drilled 1/2 in DT/ST vent holes (last call)"
+    },
+    "derived": {
+     "bb_shell_od": "1.5 in OD converted to mm",
+     "bb_shell_width": "supplied 68.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-bsa-1-5-od-83-5mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1.5-in-od-4130-steel-73-mm-bb2008",
+   "name": "Paragon Machine Works BB shell, BSA, 1.5 in OD, 4130 steel, 73 mm (BB2008)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1.5 in OD",
+    "variant": "4130 steel, 73 mm (BB2008)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2008",
+     "standard": "BSA (English) threaded",
+     "material": "1-1/2 in x .083 in wall 4130 steel tube",
+     "od_in": 1.5,
+     "supplied_width_mm": 73.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340"
+    },
+    "derived": {
+     "bb_shell_od": "1.5 in OD converted to mm",
+     "bb_shell_width": "supplied 73.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-bsa-1-5-od-83-5mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1.5-in-od-4130-steel-83-mm-bb2009",
+   "name": "Paragon Machine Works BB shell, BSA, 1.5 in OD, 4130 steel, 83 mm (BB2009)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1.5 in OD",
+    "variant": "4130 steel, 83 mm (BB2009)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2009",
+     "standard": "BSA (English) threaded",
+     "material": "1-1/2 in x .083 in wall 4130 steel tube",
+     "od_in": 1.5,
+     "supplied_width_mm": 83.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340"
+    },
+    "derived": {
+     "bb_shell_od": "1.5 in OD converted to mm",
+     "bb_shell_width": "supplied 83.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Variant label reads 'BB2017: 83.5mm' but the SKU is BB2009. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-bsa-1-5-od-83-5mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1.5-in-od-4130-steel-100-mm-bb2010",
+   "name": "Paragon Machine Works BB shell, BSA, 1.5 in OD, 4130 steel, 100 mm (BB2010)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1.5 in OD",
+    "variant": "4130 steel, 100 mm (BB2010)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2010",
+     "standard": "BSA (English) threaded",
+     "material": "1-1/2 in x .083 in wall 4130 steel tube",
+     "od_in": 1.5,
+     "supplied_width_mm": 100.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340"
+    },
+    "derived": {
+     "bb_shell_od": "1.5 in OD converted to mm",
+     "bb_shell_width": "supplied 100.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-bsa-1-5-od-83-5mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1-9-16-in-39.7-mm-od-3-2.5-titanium-68-mm-bb0021",
+   "name": "Paragon Machine Works BB shell, BSA, 1-9/16 in (39.7 mm) OD, 3/2.5 titanium, 68 mm (BB0021)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 39.7,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1-9/16 in (39.7 mm) OD",
+    "variant": "3/2.5 titanium, 68 mm (BB0021)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0021",
+     "standard": "BSA (English) threaded",
+     "material": "1-5/8 in x .151 in wall 3/2.5 titanium tube",
+     "od_in": 1.562,
+     "supplied_width_mm": 68.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340"
+    },
+    "derived": {
+     "bb_shell_od": "1.562 in OD converted to mm",
+     "bb_shell_width": "supplied 68.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1-9-16-in-39.7-mm-od-3-2.5-titanium-73-mm-bb0022",
+   "name": "Paragon Machine Works BB shell, BSA, 1-9/16 in (39.7 mm) OD, 3/2.5 titanium, 73 mm (BB0022)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 39.7,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1-9/16 in (39.7 mm) OD",
+    "variant": "3/2.5 titanium, 73 mm (BB0022)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0022",
+     "standard": "BSA (English) threaded",
+     "material": "1-5/8 in x .151 in wall 3/2.5 titanium tube",
+     "od_in": 1.562,
+     "supplied_width_mm": 73.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340"
+    },
+    "derived": {
+     "bb_shell_od": "1.562 in OD converted to mm",
+     "bb_shell_width": "supplied 73.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1-9-16-in-39.7-mm-od-3-2.5-titanium-83-mm-bb0017",
+   "name": "Paragon Machine Works BB shell, BSA, 1-9/16 in (39.7 mm) OD, 3/2.5 titanium, 83 mm (BB0017)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 39.7,
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1-9/16 in (39.7 mm) OD",
+    "variant": "3/2.5 titanium, 83 mm (BB0017)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0017",
+     "standard": "BSA (English) threaded",
+     "material": "1-5/8 in x .151 in wall 3/2.5 titanium tube",
+     "od_in": 1.562,
+     "supplied_width_mm": 83.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340"
+    },
+    "derived": {
+     "bb_shell_od": "1.562 in OD converted to mm",
+     "bb_shell_width": "supplied 83.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1-9-16-in-39.7-mm-od-3-2.5-titanium-100-mm-bb0018",
+   "name": "Paragon Machine Works BB shell, BSA, 1-9/16 in (39.7 mm) OD, 3/2.5 titanium, 100 mm (BB0018)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 39.7,
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1-9/16 in (39.7 mm) OD",
+    "variant": "3/2.5 titanium, 100 mm (BB0018)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0018",
+     "standard": "BSA (English) threaded",
+     "material": "1-5/8 in x .151 in wall 3/2.5 titanium tube",
+     "od_in": 1.562,
+     "supplied_width_mm": 100.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340"
+    },
+    "derived": {
+     "bb_shell_od": "1.562 in OD converted to mm",
+     "bb_shell_width": "supplied 100.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1-1-2-in-38.1-mm-od-3-2.5-titanium-68-mm-bb0001",
+   "name": "Paragon Machine Works BB shell, BSA, 1-1/2 in (38.1 mm) OD, 3/2.5 titanium, 68 mm (BB0001)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1-1/2 in (38.1 mm) OD",
+    "variant": "3/2.5 titanium, 68 mm (BB0001)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0001",
+     "standard": "BSA (English) threaded",
+     "material": "3/2.5 titanium tube",
+     "od_in": 1.5,
+     "supplied_width_mm": 68.5,
+     "width_oversize_mm": 0.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395",
+     "thread_minor_dia_in": "1.330/1.340"
+    },
+    "derived": {
+     "bb_shell_od": "1.5 in OD converted to mm",
+     "bb_shell_width": "supplied 68.5 mm, stated 0.5 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width-copy",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1-5-8-in-41.3-mm-od-titanium-thick-wall-bb0023-bb0024",
+   "name": "Paragon Machine Works BB shell, BSA, 1-5/8 in (41.3 mm) OD, titanium, thick wall (BB0023 / BB0024)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 41.3
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1-5/8 in (41.3 mm) OD",
+    "variant": "titanium, thick wall (BB0023 / BB0024)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0023 (68.5 mm), BB0024 (73.5 mm)",
+     "standard": "BSA threaded",
+     "material": "titanium",
+     "od_mm": 41.3,
+     "supplied_widths_mm": "68.5, 73.5"
+    },
+    "derived": {
+     "bb_shell_od": "41.3 mm from product title"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-bsa-bb-shell-select-width",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-bsa-1.5-in-38-mm-od-17-4-stainless-bb1001-bb1002-bb1018",
+   "name": "Paragon Machine Works BB shell, BSA, 1.5 in (38 mm) OD, 17/4 stainless (BB1001 / BB1002 / BB1018)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 38.1
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, BSA, 1.5 in (38 mm) OD",
+    "variant": "17/4 stainless (BB1001 / BB1002 / BB1018)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB1001 (68.5 mm), BB1002 (73.5 mm), BB1018 (100.5 mm)",
+     "standard": "BSA threaded",
+     "material": "17/4 stainless solid bar",
+     "od_in": 1.5,
+     "thread": "1.370 in x 24 TPI, right and left hand (BSA)",
+     "thread_length_in": 0.5,
+     "id_relief_in": "1.385/1.395"
+    },
+    "derived": {
+     "bb_shell_od": "1.500 in OD converted to mm"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-stainless-bsa-1-5-38mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-in-51-mm-od-4130-steel-68-mm-bb2040",
+   "name": "Paragon Machine Works BB shell, T47, 2 in (51 mm) OD, 4130 steel, 68 mm (BB2040)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2 in (51 mm) OD",
+    "variant": "4130 steel, 68 mm (BB2040)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2040",
+     "standard": "T47 threaded",
+     "material": "2 in OD x .156 in wall 4130 steel tube",
+     "od_in": 2.0,
+     "supplied_width_mm": 69,
+     "width_oversize_mm": 1.0,
+     "thread": "M47 x 1, right and left hand",
+     "thread_length_in": 0.5,
+     "id_relief_mm": "47.75 +/-0.1",
+     "thread_minor_dia_mm": "46 +0.1/-0"
+    },
+    "derived": {
+     "bb_shell_od": "2.000 in OD converted to mm",
+     "bb_shell_width": "supplied 69 mm, stated 1.0 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-in-51-mm-od-4130-steel-73-mm-bb2042",
+   "name": "Paragon Machine Works BB shell, T47, 2 in (51 mm) OD, 4130 steel, 73 mm (BB2042)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2 in (51 mm) OD",
+    "variant": "4130 steel, 73 mm (BB2042)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2042",
+     "standard": "T47 threaded",
+     "material": "2 in OD x .156 in wall 4130 steel tube",
+     "od_in": 2.0,
+     "supplied_width_mm": 74,
+     "width_oversize_mm": 1.0,
+     "thread": "M47 x 1, right and left hand",
+     "thread_length_in": 0.5,
+     "id_relief_mm": "47.75 +/-0.1",
+     "thread_minor_dia_mm": "46 +0.1/-0"
+    },
+    "derived": {
+     "bb_shell_od": "2.000 in OD converted to mm",
+     "bb_shell_width": "supplied 74 mm, stated 1.0 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-in-51-mm-od-4130-steel-87.5-mm-bb2045",
+   "name": "Paragon Machine Works BB shell, T47, 2 in (51 mm) OD, 4130 steel, 87.5 mm (BB2045)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2 in (51 mm) OD",
+    "variant": "4130 steel, 87.5 mm (BB2045)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2045",
+     "standard": "T47 threaded",
+     "material": "2 in OD x .156 in wall 4130 steel tube",
+     "od_in": 2.0,
+     "supplied_width_mm": 87.5,
+     "width_oversize_mm": 1.0,
+     "thread": "M47 x 1, right and left hand",
+     "thread_length_in": 0.5,
+     "id_relief_mm": "47.75 +/-0.1",
+     "thread_minor_dia_mm": "46 +0.1/-0"
+    },
+    "derived": {
+     "bb_shell_od": "2.000 in OD converted to mm"
+    },
+    "notes": "Finished width not derived: the page states 1.0 mm oversize but its stock note names 87/92 mm shells, which conflicts. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-in-51-mm-od-4130-steel-92.5-mm-bb2049",
+   "name": "Paragon Machine Works BB shell, T47, 2 in (51 mm) OD, 4130 steel, 92.5 mm (BB2049)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2 in (51 mm) OD",
+    "variant": "4130 steel, 92.5 mm (BB2049)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2049",
+     "standard": "T47 threaded",
+     "material": "2 in OD x .156 in wall 4130 steel tube",
+     "od_in": 2.0,
+     "supplied_width_mm": 92.5,
+     "width_oversize_mm": 1.0,
+     "thread": "M47 x 1, right and left hand",
+     "thread_length_in": 0.5,
+     "id_relief_mm": "47.75 +/-0.1",
+     "thread_minor_dia_mm": "46 +0.1/-0"
+    },
+    "derived": {
+     "bb_shell_od": "2.000 in OD converted to mm"
+    },
+    "notes": "Finished width not derived: the page states 1.0 mm oversize but its stock note names 87/92 mm shells, which conflicts. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-in-51-mm-od-4130-steel-108-mm-bb2048",
+   "name": "Paragon Machine Works BB shell, T47, 2 in (51 mm) OD, 4130 steel, 108 mm (BB2048)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2 in (51 mm) OD",
+    "variant": "4130 steel, 108 mm (BB2048)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2048",
+     "standard": "T47 threaded",
+     "material": "2 in OD x .156 in wall 4130 steel tube",
+     "od_in": 2.0,
+     "supplied_width_mm": 108,
+     "width_oversize_mm": 1.0,
+     "thread": "M47 x 1, right and left hand",
+     "thread_length_in": 0.5,
+     "id_relief_mm": "47.75 +/-0.1",
+     "thread_minor_dia_mm": "46 +0.1/-0"
+    },
+    "derived": {
+     "bb_shell_od": "2.000 in OD converted to mm"
+    },
+    "notes": "Finished width not derived: the page states 1.0 mm oversize but its stock note names 87/92 mm shells, which conflicts. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-in-51-mm-od-4130-steel-120-mm-bb2047",
+   "name": "Paragon Machine Works BB shell, T47, 2 in (51 mm) OD, 4130 steel, 120 mm (BB2047)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 120
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2 in (51 mm) OD",
+    "variant": "4130 steel, 120 mm (BB2047)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB2047",
+     "standard": "T47 threaded",
+     "material": "2 in OD x .156 in wall 4130 steel tube",
+     "od_in": 2.0,
+     "supplied_width_mm": 121,
+     "width_oversize_mm": 1.0,
+     "thread": "M47 x 1, right and left hand",
+     "thread_length_in": 0.5,
+     "id_relief_mm": "47.75 +/-0.1",
+     "thread_minor_dia_mm": "46 +0.1/-0"
+    },
+    "derived": {
+     "bb_shell_od": "2.000 in OD converted to mm",
+     "bb_shell_width": "supplied 121 mm, stated 1.0 mm oversize for post-weld facing"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-in-od-17-4-stainless-bb1040-bb1042-bb1045",
+   "name": "Paragon Machine Works BB shell, T47, 2 in OD, 17/4 stainless (BB1040 / BB1042 / BB1045)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2 in OD",
+    "variant": "17/4 stainless (BB1040 / BB1042 / BB1045)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB1040 (69 mm), BB1042 (74 mm), BB1045 (87.5 mm)",
+     "standard": "T47 threaded",
+     "material": "17/4 stainless solid bar",
+     "od_in": 2.0,
+     "thread": "M47 x 1, right and left hand",
+     "thread_length_in": 0.5,
+     "id_relief_mm": "47.75 +/-0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000 in OD converted to mm"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-stainless-t47-2-od-select-width",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-in-51-mm-od-titanium-bb0040-bb0048",
+   "name": "Paragon Machine Works BB shell, T47, 2 in (51 mm) OD, titanium (BB0040-BB0048)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2 in (51 mm) OD",
+    "variant": "titanium (BB0040-BB0048)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0040 (69), BB0042 (74), BB0044 (84), BB0046 (101), BB0048 (108), BB0047 (121)",
+     "standard": "T47 threaded",
+     "material": "titanium",
+     "od_in": 2.0,
+     "supplied_widths_mm": "69, 74, 84, 101, 108, 121"
+    },
+    "derived": {
+     "bb_shell_od": "2 in OD from product title converted to mm"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-t47-bb-shell-2-51mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-t47-2-1-16-in-52-mm-od-titanium-bb0050-bb0059",
+   "name": "Paragon Machine Works BB shell, T47, 2-1/16 in (52 mm) OD, titanium (BB0050-BB0059)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 52.4
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, T47, 2-1/16 in (52 mm) OD",
+    "variant": "titanium (BB0050-BB0059)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0050 (69), BB0052 (74), BB0055 (87), BB0059 (92), BB0057 (100)",
+     "standard": "T47 threaded",
+     "material": "titanium",
+     "od_in": "2-1/16",
+     "od_mm_title": 52,
+     "supplied_widths_mm": "69, 74, 87, 92, 100"
+    },
+    "derived": {
+     "bb_shell_od": "2-1/16 in from product title converted to mm (title rounds to 52)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-t47-2-1-16-52mm-od-100mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-pf30-2-in-od-3-2.5-titanium-68-mm-bb0028",
+   "name": "Paragon Machine Works BB shell, PF30, 2 in OD, 3/2.5 titanium, 68 mm (BB0028)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, PF30, 2 in OD",
+    "variant": "3/2.5 titanium, 68 mm (BB0028)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0028",
+     "standard": "PF30 (press fit), also PF30 eccentrics",
+     "material": "2 in x .189 in wall 3/2.5 titanium tube",
+     "od_in": 2.0,
+     "supplied_width_mm": 69,
+     "width_oversize_mm": 1.0,
+     "id_mm": 45.5,
+     "id_note": "supplied 0.5 mm undersize"
+    },
+    "derived": {
+     "bb_shell_od": "2 in OD converted to mm",
+     "bb_shell_width": "supplied 69 mm, stated 1.0 mm oversize"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-pf30-2-od-69mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-bb-shell-pf30-2-in-od-3-2.5-titanium-73-mm-bb0029",
+   "name": "Paragon Machine Works BB shell, PF30, 2 in OD, 3/2.5 titanium, 73 mm (BB0029)",
+   "category": "frame_hardware",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "BB shell, PF30, 2 in OD",
+    "variant": "3/2.5 titanium, 73 mm (BB0029)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BB0029",
+     "standard": "PF30 (press fit), also PF30 eccentrics",
+     "material": "2 in x .189 in wall 3/2.5 titanium tube",
+     "od_in": 2.0,
+     "supplied_width_mm": 74,
+     "width_oversize_mm": 1.0,
+     "id_mm": 45.5,
+     "id_note": "supplied 0.5 mm undersize"
+    },
+    "derived": {
+     "bb_shell_od": "2 in OD converted to mm",
+     "bb_shell_width": "supplied 74 mm, stated 1.0 mm oversize"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-pf30-2-od-69mm",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-ec44-ec44-3-2.5-titanium",
+   "name": "Paragon Machine Works Head tube, EC44/EC44, 3/2.5 titanium",
+   "category": "frame_hardware",
+   "values": {
+    "ht_od_top": 50,
+    "ht_od_bottom": 50
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, EC44/EC44",
+    "variant": "3/2.5 titanium",
+    "status": "current",
+    "specs": {
+     "headset": "EC44/EC44 (44 mm cups, external)",
+     "material": "2.000 in x .150 in wall 3/2.5 titanium tube",
+     "id_mm": 45,
+     "od_ends_mm": 50,
+     "od_centre_relief_in": "1-7/8",
+     "bearing_bores": "0.5 mm undersize",
+     "lengths_mm": "90-280 (19 lengths, HT0001-HT0039)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/headtube-titanium-ec44-ec44-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-ec44-ec44-4130-steel",
+   "name": "Paragon Machine Works Head tube, EC44/EC44, 4130 steel",
+   "category": "frame_hardware",
+   "values": {
+    "ht_od_top": 50,
+    "ht_od_bottom": 50
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, EC44/EC44",
+    "variant": "4130 steel",
+    "status": "current",
+    "specs": {
+     "headset": "EC44/EC44 (44 mm cups)",
+     "material": "2.000 in x .156 in wall 4130 steel tube",
+     "id_mm": 45,
+     "od_ends_mm": 50,
+     "od_centre_relief_in": "1-7/8",
+     "bearing_bores": "0.5 mm (.020 in) undersize",
+     "lengths_mm": "90-280 (HT2001-HT2035)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/headtube-steel-ec44-ec44-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-ec37-ec37-4130-steel",
+   "name": "Paragon Machine Works Head tube, EC37/EC37, 4130 steel",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, EC37/EC37",
+    "variant": "4130 steel",
+    "status": "current",
+    "specs": {
+     "headset": "EC37/EC37",
+     "material": "steel",
+     "lengths_mm": "100, 120, 140, 160, 170, 190, 210, 220 (HT2104-HT2128)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/headtube-steel-ec37-ec37-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-ec34-ec34-4130-steel",
+   "name": "Paragon Machine Works Head tube, EC34/EC34, 4130 steel",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, EC34/EC34",
+    "variant": "4130 steel",
+    "status": "current",
+    "specs": {
+     "headset": "EC34/EC34 per title; description says EC37",
+     "material": "4130 steel tube",
+     "lengths_mm": "110, 130 (HT2106, HT2110; last call)"
+    },
+    "notes": "Title says EC34/EC34, description says EC37. Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/headtube-steel-ec34-ec34-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-ec34-ec44-tapered-6-4-titanium",
+   "name": "Paragon Machine Works Head tube, EC34/EC44 tapered, 6/4 titanium",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, EC34/EC44 tapered",
+    "variant": "6/4 titanium",
+    "status": "current",
+    "specs": {
+     "headset": "EC34 top / EC44 bottom, integrated taper",
+     "material": "6/4 titanium solid bar",
+     "bearing_bores": "0.5 mm undersize",
+     "length_tolerance": "+0.25 to +1 mm",
+     "lengths_mm": "100-180 (HT0502-HT0534)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/head-tube-titanium-ec34-ec44-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-ec34-ec44-tapered-4130-steel",
+   "name": "Paragon Machine Works Head tube, EC34/EC44 tapered, 4130 steel",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, EC34/EC44 tapered",
+    "variant": "4130 steel",
+    "status": "current",
+    "specs": {
+     "headset": "EC34 top / EC44 bottom, integrated taper",
+     "material": "4130 steel solid bar",
+     "bearing_bores": "0.5 mm (.020 in) undersize",
+     "length_tolerance": "+0.25 to +1 mm",
+     "lengths_mm": "100, 150, 170 (HT2502-HT2530)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/head-tube-steel-ec34-ec44-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-is41-is52-tapered-6-4-titanium",
+   "name": "Paragon Machine Works Head tube, IS41/IS52 tapered, 6/4 titanium",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, IS41/IS52 tapered",
+    "variant": "6/4 titanium",
+    "status": "current",
+    "specs": {
+     "headset": "IS41 top / IS52 bottom, integrated taper",
+     "material": "6/4 titanium solid bar",
+     "bearing_bores": "0.5 mm undersize",
+     "lengths_mm": "100-230 (HT0402-HT0454)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/head-tube-titanium-is41-is52-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-is41-is52-tapered-4130-steel",
+   "name": "Paragon Machine Works Head tube, IS41/IS52 tapered, 4130 steel",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, IS41/IS52 tapered",
+    "variant": "4130 steel",
+    "status": "current",
+    "specs": {
+     "headset": "IS41 top / IS52 bottom, integrated taper",
+     "material": "4130 steel solid bar",
+     "bearing_bores": "0.5 mm (.020 in) undersize",
+     "length_tolerance": "+0.25 to +0.5 mm",
+     "lengths_mm": "95-190 (HT2401-HT2438)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/headtube-steel-is41-is52-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-is52-is52-3-2.5-titanium",
+   "name": "Paragon Machine Works Head tube, IS52/IS52, 3/2.5 titanium",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, IS52/IS52",
+    "variant": "3/2.5 titanium",
+    "status": "current",
+    "specs": {
+     "headset": "IS52/IS52",
+     "material": "3/2.5 titanium tube",
+     "od_text": "2 in x 56 mm (as written)",
+     "bearing_bores": "+.000/-.004 in (+0/-0.1 mm)",
+     "lengths_mm": "90-180 (HT0701-HT0719)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/head-tube-titanium-is52-is52-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-head-tube-is52-is52-steel",
+   "name": "Paragon Machine Works Head tube, IS52/IS52, steel",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Head tube, IS52/IS52",
+    "variant": "steel",
+    "status": "current",
+    "specs": {
+     "headset": "IS52/IS52",
+     "material": "steel",
+     "lengths_mm": "90-180 (HT2701-HT2719)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/headtube-steel-is52-is52-select-length",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-weld-in-seat-collar-4130-steel-ms2065-ms2067-ms2068",
+   "name": "Paragon Machine Works Weld-in seat collar, 4130 steel (MS2065 / MS2067 / MS2068)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Weld-in seat collar",
+    "variant": "4130 steel (MS2065 / MS2067 / MS2068)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS2068 (27.2 post, 1-1/4 in OD), MS2067 (30.9 post, 1-3/8 in OD), MS2065 (31.6 post, 1-3/8 in OD)",
+     "material": "4130 steel",
+     "seatpost_mm": "27.2, 30.9, 31.6",
+     "length_in": "3 (variants); description says 3-1/2",
+     "step_length_in": "1/2"
+    },
+    "notes": "Description gives 3-1/2 in overall length; variant names give 3 in (and 2-3/8 in). Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/seat-collar-steel-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-weld-in-seat-collar-cp-titanium",
+   "name": "Paragon Machine Works Weld-in seat collar, CP titanium",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Weld-in seat collar",
+    "variant": "CP titanium",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS0041/MS0008 (27.2), MS0009 (30.9), MS0010/MS0091/MS0002/MS0034 (31.6)",
+     "material": "CP titanium",
+     "seat_tube_wall_in": 0.035,
+     "press_fit_mm": 0.05,
+     "od_in": "1-1/4 (27.2 post), 1-3/8 (30.9 / 31.6 post)",
+     "lengths_in": "2 to 4 by variant",
+     "step_length_in": "1/2"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/seat-collar-titanium-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-flat-mount-brake-boss-individual-5-8-in-od-x-1-1-4-in-1018-steel-bk2030",
+   "name": "Paragon Machine Works Flat mount brake boss, individual, 5/8 in OD x 1-1/4 in, 1018 steel (BK2030)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Flat mount brake boss, individual, 5/8 in OD x 1-1/4 in",
+    "variant": "1018 steel (BK2030)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2030",
+     "type": "flat mount disc boss",
+     "material": "1018 steel",
+     "od_in": "5/8",
+     "length_in": "1-1/4"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-steel-flat-mount-individual-5-8-x-1-1-4",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-flat-mount-brake-boss-individual-5-8-in-od-x-1-1-4-in-stainless-bk1030",
+   "name": "Paragon Machine Works Flat mount brake boss, individual, 5/8 in OD x 1-1/4 in, stainless (BK1030)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Flat mount brake boss, individual, 5/8 in OD x 1-1/4 in",
+    "variant": "stainless (BK1030)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK1030",
+     "type": "flat mount disc boss",
+     "material": "stainless",
+     "od_in": "5/8",
+     "length_in": "1-1/4"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-stainless-steel-flat-mount-individual-5-8-x-1-1-4",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-flat-mount-brake-boss-individual-5-8-in-od-x-1-1-4-in-titanium-bk0030",
+   "name": "Paragon Machine Works Flat mount brake boss, individual, 5/8 in OD x 1-1/4 in, titanium (BK0030)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Flat mount brake boss, individual, 5/8 in OD x 1-1/4 in",
+    "variant": "titanium (BK0030)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0030",
+     "type": "flat mount disc boss",
+     "material": "titanium",
+     "od_in": "5/8",
+     "length_in": "1-1/4"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-flat-mount-individual-5-8-x-1-1-4",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-flat-mount-brake-boss-individual-5-8-in-od-x-1-in-304-stainless-bk1036",
+   "name": "Paragon Machine Works Flat mount brake boss, individual, 5/8 in OD x 1 in, 304 stainless (BK1036)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Flat mount brake boss, individual, 5/8 in OD x 1 in",
+    "variant": "304 stainless (BK1036)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK1036",
+     "type": "flat mount disc boss (not integrated with dropout)",
+     "material": "304 stainless steel",
+     "od_in": "5/8",
+     "length_in": 1,
+     "mount_thickness_at_bolt_mm": 15
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-boss-stainless-flat-mount-individual-5-8-od-x-1-l",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-flat-mount-brake-boss-20-mm-long-with-step-1018-steel-bk2037",
+   "name": "Paragon Machine Works Flat mount brake boss, 20 mm long with step, 1018 steel (BK2037)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Flat mount brake boss, 20 mm long with step",
+    "variant": "1018 steel (BK2037)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2037",
+     "type": "flat mount disc boss for Paragon 12 mm flat-mount dropouts",
+     "material": "1018 steel",
+     "od_in": "5/8",
+     "length_mm": 20.5,
+     "mount_thickness_at_bolt_mm": 10
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/flat-mount-steel-individual-20mm-long-w-step",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-flat-mount-brake-boss-160-180-front-style-6-4-titanium-bk0102",
+   "name": "Paragon Machine Works Flat mount brake boss 160/180, front-style, 6/4 titanium (BK0102)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Flat mount brake boss 160/180, front-style",
+    "variant": "6/4 titanium (BK0102)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0102",
+     "type": "front-style flat mount boss",
+     "material": "6/4 titanium",
+     "rotor_mm": "160, 180",
+     "od_in": "5/16 x 1/2",
+     "length_in": "1-1/4",
+     "thread": "M5x0.8"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-boss-titanium-flat-mount-160-180-front-style",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-flat-post-mount-brake-boss-160-for-sram-udh-dropout-1018-steel-bk2102",
+   "name": "Paragon Machine Works Flat/post mount brake boss 160 for SRAM UDH dropout, 1018 steel (BK2102)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Flat/post mount brake boss 160 for SRAM UDH dropout",
+    "variant": "1018 steel (BK2102)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2102",
+     "type": "front-style flat mount boss",
+     "material": "1018 steel",
+     "rotor_mm": "160, 180",
+     "od_in": "5/16 x 1/2",
+     "length_in": "1-1/4",
+     "thread": "M5x0.8"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-boss-steel-flat-post-mount-160-for-sram-udh-dropout",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-flat-mount-brake-boss-double-for-flat-mount-plate-dropout-6-4-titanium-bk0070",
+   "name": "Paragon Machine Works Flat mount brake boss, double, for flat-mount plate dropout, 6/4 titanium (BK0070)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Flat mount brake boss, double, for flat-mount plate dropout",
+    "variant": "6/4 titanium (BK0070)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0070",
+     "type": "flat mount",
+     "material": "6/4 titanium",
+     "mount_thickness_mm": 10
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-boss-titanium-flat-mount-double-for-flat-mount-plate-dropout",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-disc-mount-willits-style-steel-bk2009",
+   "name": "Paragon Machine Works ISO disc mount, Willits style, steel (BK2009)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO disc mount, Willits style",
+    "variant": "steel (BK2009)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2009",
+     "type": "ISO (IS) disc mount",
+     "material": "steel"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-steel-iso-mount-willits-style",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-disc-mount-universal-steel-bk2005",
+   "name": "Paragon Machine Works ISO disc mount, universal, steel (BK2005)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO disc mount, universal",
+    "variant": "steel (BK2005)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2005",
+     "type": "ISO (IS) disc mount",
+     "material": "steel"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-steel-iso-mount-universal",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-disc-mount-universal-titanium-bk0004",
+   "name": "Paragon Machine Works ISO disc mount, universal, titanium (BK0004)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO disc mount, universal",
+    "variant": "titanium (BK0004)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0004",
+     "type": "ISO (IS) disc mount",
+     "material": "titanium"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-iso-mount-universal",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-post-mount-brake-tab-1018-steel-bk2017-family",
+   "name": "Paragon Machine Works Post mount brake tab, 1018 steel (BK2017 family)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Post mount brake tab",
+    "variant": "1018 steel (BK2017 family)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2017 (no miter), BK2016/BK2018 (mitered for 1.5 in round 12 mm / QR dropouts), BK2073/BK2075 (SRAM UDH)",
+     "type": "post mount disc tab",
+     "material": "1018 steel",
+     "rotor": "universal",
+     "thickness_at_caliper_mm": 15.7,
+     "thickness_at_dropout_mm": 4.5,
+     "hole_spacing_mm": 74.2,
+     "barrel_nuts": "M6x1, sold separately"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-steel-post-mount-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-post-mount-brake-tab-160-6-4-titanium-bk0017-family",
+   "name": "Paragon Machine Works Post mount brake tab 160, 6/4 titanium (BK0017 family)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Post mount brake tab 160",
+    "variant": "6/4 titanium (BK0017 family)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0017 (no miter), BK0016/BK0018 (mitered), BK0073/BK0075 (SRAM UDH)",
+     "type": "post mount disc tab",
+     "material": "6/4 titanium",
+     "rotor_mm": 160,
+     "thickness_at_caliper_mm": 15.7,
+     "thickness_at_dropout_mm": 4.5,
+     "hole_spacing_mm": 74.2
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-titanium-post-mount-160-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-steel-1018-steel-3-16-in-bk2039-family",
+   "name": "Paragon Machine Works ISO brake tab, steel, 1018 steel, 3/16 in (BK2039 family)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, steel",
+    "variant": "1018 steel, 3/16 in (BK2039 family)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2039 (no miter), BK2040/BK2041 (Syntace 1 in / 1.25 in), BK2043 (1.5 in round)",
+     "type": "ISO (IS) disc tab",
+     "material": "1018 steel",
+     "thickness_in": "3/16",
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-steel-iso-select-version",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-universal-1-4-in-thick-1018-steel-bk2006",
+   "name": "Paragon Machine Works ISO brake tab, universal, 1/4 in thick, 1018 steel (BK2006)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, universal, 1/4 in thick",
+    "variant": "1018 steel (BK2006)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2006",
+     "type": "ISO (IS) disc tab, unmitered",
+     "material": "1018 steel",
+     "thickness_in": "1/4",
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-steel-iso-universal-1-4-thick",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-universal-with-relief-1018-steel-bk2007",
+   "name": "Paragon Machine Works ISO brake tab, universal with relief, 1018 steel (BK2007)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, universal with relief",
+    "variant": "1018 steel (BK2007)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2007",
+     "type": "ISO (IS) disc tab, unmitered, relieved",
+     "material": "1018 steel",
+     "thickness_in": "3/16",
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-steel-iso-universal-w-relief",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-universal-5-mm-with-relief-17-4-stainless-bk1017",
+   "name": "Paragon Machine Works ISO brake tab, universal, 5 mm with relief, 17/4 stainless (BK1017)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, universal, 5 mm with relief",
+    "variant": "17/4 stainless (BK1017)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK1017",
+     "type": "ISO (IS) disc tab, asymmetric, unmitered",
+     "material": "17/4 stainless steel",
+     "thickness_mm": 5,
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-stainless-universal-iso-5mm-thick-w-relief",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-long-tab-5-mm-6-4-titanium-bk0039",
+   "name": "Paragon Machine Works ISO brake tab, long tab, 5 mm, 6/4 titanium (BK0039)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, long tab, 5 mm",
+    "variant": "6/4 titanium (BK0039)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0039",
+     "type": "ISO (IS) disc tab, unmitered",
+     "material": "6/4 titanium",
+     "thickness_mm": 5,
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-titanium-5mm-thick-long-tab",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-mitered-6-4-titanium-for-1-1-4-in-syntace-x-12-snap-ring-dropouts-bk0041",
+   "name": "Paragon Machine Works ISO brake tab, mitered, 6/4 titanium for 1-1/4 in Syntace X-12 / snap ring dropouts (BK0041)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, mitered",
+    "variant": "6/4 titanium for 1-1/4 in Syntace X-12 / snap ring dropouts (BK0041)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0041",
+     "type": "ISO (IS) disc tab, mitered",
+     "material": "6/4 titanium",
+     "fits": "1-1/4 in Syntace X-12 / snap ring dropouts",
+     "thickness_mm": 5,
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-titanium-iso-mitered-for-1-1-4-syntace-x-12-snap-ring-dropout",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-mitered-6-4-titanium-for-1-1-2-in-syntace-dropouts-bk0042",
+   "name": "Paragon Machine Works ISO brake tab, mitered, 6/4 titanium for 1-1/2 in Syntace dropouts (BK0042)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, mitered",
+    "variant": "6/4 titanium for 1-1/2 in Syntace dropouts (BK0042)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0042",
+     "type": "ISO (IS) disc tab, mitered",
+     "material": "6/4 titanium",
+     "fits": "1-1/2 in Syntace dropouts",
+     "thickness_mm": 5,
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-titanium-iso-mitered-for-1-1-2-syntace-x-12-snap-ring-dropout",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-mitered-6-4-titanium-for-1-1-2-in-x-12-mm-round-rear-dropouts-bk0043",
+   "name": "Paragon Machine Works ISO brake tab, mitered, 6/4 titanium for 1-1/2 in x 12 mm round rear dropouts (BK0043)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, mitered",
+    "variant": "6/4 titanium for 1-1/2 in x 12 mm round rear dropouts (BK0043)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0043",
+     "type": "ISO (IS) disc tab, mitered",
+     "material": "6/4 titanium",
+     "fits": "1-1/2 in x 12 mm round rear dropouts",
+     "thickness_mm": 5,
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-titanium-iso-mitered-for-1-1-2-round-rear-dropout",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-mitered-6-4-titanium-for-1-1-8-in-snap-ring-dropouts-bk0044",
+   "name": "Paragon Machine Works ISO brake tab, mitered, 6/4 titanium for 1-1/8 in snap ring dropouts (BK0044)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab, mitered",
+    "variant": "6/4 titanium for 1-1/8 in snap ring dropouts (BK0044)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0044",
+     "type": "ISO (IS) disc tab, mitered",
+     "material": "6/4 titanium",
+     "fits": "1-1/8 in snap ring dropouts",
+     "thickness_mm": 5,
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-titanium-iso-mitered-for-1-1-8-snap-ring-dropout",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-for-sram-udh-dropout-1018-steel-non-mitered-bk2074",
+   "name": "Paragon Machine Works ISO brake tab for SRAM UDH dropout, 1018 steel, non-mitered (BK2074)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab for SRAM UDH dropout",
+    "variant": "1018 steel, non-mitered (BK2074)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2074",
+     "type": "ISO (IS) disc tab",
+     "material": "1018 steel",
+     "thickness_in": "0.177 +/-0.005",
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-steel-iso-for-sram-udh-dropout-non-mitered",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-brake-tab-for-sram-udh-dropout-6-4-titanium-mitered-bk0072",
+   "name": "Paragon Machine Works ISO brake tab for SRAM UDH dropout, 6/4 titanium, mitered (BK0072)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO brake tab for SRAM UDH dropout",
+    "variant": "6/4 titanium, mitered (BK0072)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0072",
+     "type": "ISO (IS) disc tab, mitered for 45 deg seatstay",
+     "material": "6/4 titanium",
+     "thickness_in": "0.177 +/-0.005",
+     "hole_spacing_mm": 51
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-tab-titanium-iso-mitered-for-sram-udh-dropout",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-brake-bridge-64-mm-wide-steel-bk2002",
+   "name": "Paragon Machine Works Brake bridge, 64 mm wide, steel (BK2002)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Brake bridge, 64 mm wide",
+    "variant": "steel (BK2002)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK2002",
+     "type": "seatstay brake bridge",
+     "material": "steel",
+     "width_mm": 64
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-brake-bridge-steel-64mm-wide",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-brake-bridge-64-mm-wide-stainless-bk1003",
+   "name": "Paragon Machine Works Brake bridge, 64 mm wide, stainless (BK1003)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Brake bridge, 64 mm wide",
+    "variant": "stainless (BK1003)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK1003",
+     "type": "seatstay brake bridge",
+     "material": "stainless",
+     "width_mm": 64
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-brake-bridge-stainless-64mm-wide",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-brake-bridge-64-mm-wide-titanium-bk0003",
+   "name": "Paragon Machine Works Brake bridge, 64 mm wide, titanium (BK0003)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Brake bridge, 64 mm wide",
+    "variant": "titanium (BK0003)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK0003",
+     "type": "seatstay brake bridge",
+     "material": "titanium",
+     "width_mm": 64
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-brake-bridge-titanium-64mm-wide",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-iso-to-post-mount-160-adapter-for-low-mount-dropouts-6061-aluminium-bk4003-bk4003b",
+   "name": "Paragon Machine Works ISO to post mount 160 adapter for low-mount dropouts, 6061 aluminium (BK4003 / BK4003B)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "ISO to post mount 160 adapter for low-mount dropouts",
+    "variant": "6061 aluminium (BK4003 / BK4003B)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "BK4003 (bare), BK4003B (black)",
+     "type": "ISO to post-mount adapter",
+     "material": "6061 aluminium",
+     "rotor_mm": 160,
+     "bolts": "M6x16 (10 mm dropouts), M6x20 (12 mm dropouts)"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/brake-mount-adapter-low-mount-dropout-iso-to-post-mount-160-bare",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-dropout-plug-5-8-in-16-mm-od-seatstay-tab-1018-steel-ms2035",
+   "name": "Paragon Machine Works Dropout plug, 5/8 in (16 mm) OD, seatstay tab, 1018 steel (MS2035)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Dropout plug, 5/8 in (16 mm) OD, seatstay tab",
+    "variant": "1018 steel (MS2035)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS2035",
+     "material": "1018 steel",
+     "od_in": "5/8",
+     "end": "cone, 3/8 in radius step for seatstay tab"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-plug-steel-5-8-16mm-od-for-seatstay-tab",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-dropout-plug-5-8-in-16-mm-od-flanged-seatstay-1018-steel-ms2036",
+   "name": "Paragon Machine Works Dropout plug, 5/8 in (16 mm) OD, flanged seatstay, 1018 steel (MS2036)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Dropout plug, 5/8 in (16 mm) OD, flanged seatstay",
+    "variant": "1018 steel (MS2036)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS2036",
+     "material": "1018 steel",
+     "od_in": "5/8",
+     "end": "flanged, 3/8 in radius step"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-plug-steel-5-8-16mm-od-for-flanged-seatstay",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-dropout-plug-3-4-in-19-mm-od-chainstay-tab-1018-steel-ms2041",
+   "name": "Paragon Machine Works Dropout plug, 3/4 in (19 mm) OD, chainstay tab, 1018 steel (MS2041)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Dropout plug, 3/4 in (19 mm) OD, chainstay tab",
+    "variant": "1018 steel (MS2041)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS2041",
+     "material": "1018 steel",
+     "od_in": "3/4",
+     "end": "cone, stepped for chainstay tab"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-plug-steel-3-4-19mm-od-for-chainstay-tab",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-dropout-plug-5-8-in-16-mm-od-flanged-chainstay-1018-steel-ms2042",
+   "name": "Paragon Machine Works Dropout plug, 5/8 in (16 mm) OD, flanged chainstay, 1018 steel (MS2042)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Dropout plug, 5/8 in (16 mm) OD, flanged chainstay",
+    "variant": "1018 steel (MS2042)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS2042",
+     "material": "1018 steel",
+     "od_in": "5/8",
+     "end": "flanged, stepped for chainstay tab"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-plug-steel-5-8-16mm-od-for-flanged-chainstay",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-dropout-plug-3-4-in-19-mm-od-seatstay-tab-6-4-titanium-ms0059",
+   "name": "Paragon Machine Works Dropout plug, 3/4 in (19 mm) OD, seatstay tab, 6/4 titanium (MS0059)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Dropout plug, 3/4 in (19 mm) OD, seatstay tab",
+    "variant": "6/4 titanium (MS0059)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS0059",
+     "material": "6/4 titanium",
+     "od_mm": 19,
+     "end": "cone, 3/8 in radius step"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-plug-titanium-3-4-19mm-od-for-seatstay-tab",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-dropout-plug-3-4-in-19-mm-od-chainstay-tab-6-4-titanium-ms0046",
+   "name": "Paragon Machine Works Dropout plug, 3/4 in (19 mm) OD, chainstay tab, 6/4 titanium (MS0046)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Dropout plug, 3/4 in (19 mm) OD, chainstay tab",
+    "variant": "6/4 titanium (MS0046)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS0046",
+     "material": "6/4 titanium",
+     "od_mm": 19,
+     "end": "cone for chainstays 19 mm OD or less"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/dropout-plug-titanium-3-4-19mm-od-for-chainstay-tab",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-dropout-bushing-6-4-titanium-0-0.5-1.0-mm-ms0081-ms0083",
+   "name": "Paragon Machine Works SRAM UDH dropout bushing, 6/4 titanium, 0 / 0.5 / 1.0 mm (MS0081-MS0083)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH dropout bushing",
+    "variant": "6/4 titanium, 0 / 0.5 / 1.0 mm (MS0081-MS0083)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS0081 (0 mm concentric), MS0082 (0.5 mm eccentric), MS0083 (1.0 mm eccentric)",
+     "material": "6/4 titanium",
+     "fits": "Paragon titanium SRAM UDH dropouts",
+     "install": "welded in"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/sram-udh-dropout-bushing-titanium-0-5mm-eccentric",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-sram-udh-dropout-bushing-303-stainless-0-0.5-1.0-mm-ms1081-ms1083",
+   "name": "Paragon Machine Works SRAM UDH dropout bushing, 303 stainless, 0 / 0.5 / 1.0 mm (MS1081-MS1083)",
+   "category": "frame_hardware",
+   "values": {},
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "SRAM UDH dropout bushing",
+    "variant": "303 stainless, 0 / 0.5 / 1.0 mm (MS1081-MS1083)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "MS1081 (0 mm), MS1082 (0.5 mm), MS1083 (1.0 mm)",
+     "material": "303 stainless steel",
+     "collar_od_mm": 24,
+     "install": "silver brazed in"
+    },
+    "notes": "Paragon Machine Works closed in March 2026; Firsthand Framebuilding bought the brand, designs and tooling in May 2026 and sells the remaining range.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/sram-udh-dropout-bushing-stainless-0-5mm-eccentric",
+      "publisher": "Firsthand Framebuilding (owner of the Paragon Machine Works brand)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  }
+ ]
+}

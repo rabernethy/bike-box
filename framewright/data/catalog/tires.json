@@ -1,0 +1,5691 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "category": "tires",
+ "label": "Tires",
+ "catalog": true,
+ "compiled": "2026-10-11",
+ "items": [
+  {
+   "id": "maxxis-minion-dhf-27.5x2.30in",
+   "name": "Maxxis Minion DHF 27.5x2.30\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 58,
+    "rear_bsd": 584,
+    "rear_tire_width": 58
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHF",
+    "variant": "27.5x2.30\"",
+    "status": "current",
+    "specs": {
+     "etrto": "58-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.30\"",
+     "nominal_width_in": 2.3,
+     "weight_g_min": 929,
+     "weight_g_max": 959,
+     "versions": [
+      {
+       "spec": "3C MaxxTerra, 3T, EXO, TR",
+       "tpi": "60",
+       "weight_g": 929,
+       "max_psi": 60,
+       "part_number": "TB00333300"
+      },
+      {
+       "spec": "3C MaxxTerra, 3T, EXO, TR",
+       "tpi": "60",
+       "weight_g": 945,
+       "max_psi": 60,
+       "part_number": "TB85925100"
+      },
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 959,
+       "max_psi": 60,
+       "part_number": "TB85925400"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhf/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhf-27.5x2.50in",
+   "name": "Maxxis Minion DHF 27.5x2.50\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 63,
+    "rear_bsd": 584,
+    "rear_tire_width": 63
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHF",
+    "variant": "27.5x2.50\"",
+    "status": "current",
+    "specs": {
+     "etrto": "63-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.50\"",
+     "nominal_width_in": 2.5,
+     "weight_g_min": 984,
+     "weight_g_max": 1335,
+     "versions": [
+      {
+       "spec": "MaxxTerra, MT, EXO+, TR",
+       "tpi": "60",
+       "weight_g": 1096,
+       "max_psi": 50,
+       "part_number": "TB00681500"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, DD, TR",
+       "tpi": "120",
+       "weight_g": 1232,
+       "max_psi": 50,
+       "part_number": "TB85975300"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, DH, TR, E50",
+       "tpi": "60X2",
+       "weight_g": 1335,
+       "part_number": "TB00472900"
+      },
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1004,
+       "max_psi": 50,
+       "part_number": "TB85975000"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1015,
+       "max_psi": 50,
+       "part_number": "TB85975200"
+      },
+      {
+       "spec": "MaxxTerra, MT, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1032,
+       "max_psi": 50,
+       "part_number": "TB00681400"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, DH, TR",
+       "tpi": "60X2",
+       "weight_g": 1243,
+       "max_psi": 50,
+       "part_number": "TB85975700"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, EXO+, TR",
+       "tpi": "60",
+       "weight_g": 1085,
+       "max_psi": 50,
+       "part_number": "TB00447200"
+      },
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 984,
+       "max_psi": 50,
+       "part_number": "TB00219900"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhf/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Maxxis lists TB00219900 as 64-584; other 27.5x2.50 versions 63-584."
+   }
+  },
+  {
+   "id": "maxxis-minion-dhf-27.5x2.60in",
+   "name": "Maxxis Minion DHF 27.5x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 66,
+    "rear_bsd": 584,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHF",
+    "variant": "27.5x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 1025,
+     "weight_g_max": 1137,
+     "versions": [
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1051,
+       "max_psi": 40,
+       "part_number": "TB91146200"
+      },
+      {
+       "spec": "3C MaxxTerra, 3T, EXO, TR",
+       "tpi": "120",
+       "weight_g": 1025,
+       "max_psi": 40,
+       "part_number": "TB91146300"
+      },
+      {
+       "spec": "3C MaxxTerra, 3T, EXO+, TR",
+       "tpi": "60",
+       "weight_g": 1137,
+       "max_psi": 40,
+       "part_number": "TB00093700"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhf/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhf-27.5x2.80in",
+   "name": "Maxxis Minion DHF 27.5x2.80\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 71,
+    "rear_bsd": 584,
+    "rear_tire_width": 71
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHF",
+    "variant": "27.5x2.80\"",
+    "status": "current",
+    "specs": {
+     "etrto": "71-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.80\"",
+     "nominal_width_in": 2.8,
+     "weight_g_min": 1081,
+     "weight_g_max": 1196,
+     "versions": [
+      {
+       "spec": "3C MaxxTerra, 3T, EXO, TR",
+       "tpi": "120",
+       "weight_g": 1081,
+       "max_psi": 35,
+       "part_number": "TB96908000"
+      },
+      {
+       "spec": "3C MaxxTerra, 3T, EXO+, TR",
+       "tpi": "60",
+       "weight_g": 1196,
+       "max_psi": 35,
+       "part_number": "TB00093800"
+      },
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1110,
+       "max_psi": 35,
+       "part_number": "TB96908100"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhf/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhf-29x2.30in",
+   "name": "Maxxis Minion DHF 29x2.30\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 58,
+    "rear_bsd": 622,
+    "rear_tire_width": 58
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHF",
+    "variant": "29x2.30\"",
+    "status": "current",
+    "specs": {
+     "etrto": "58-622",
+     "bsd_mm": 622,
+     "size": "29x2.30\"",
+     "nominal_width_in": 2.3,
+     "weight_g_min": 1015,
+     "weight_g_max": 1231,
+     "versions": [
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1031,
+       "max_psi": 60,
+       "part_number": "TB96785000"
+      },
+      {
+       "spec": "3C MaxxTerra, 3T, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1015,
+       "max_psi": 60,
+       "part_number": "TB96785100"
+      },
+      {
+       "spec": "3C MaxxTerra, 3T, DD, TR",
+       "tpi": "120X2",
+       "weight_g": 1231,
+       "max_psi": 60,
+       "part_number": "TB96785400"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhf/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhf-29x2.50in",
+   "name": "Maxxis Minion DHF 29x2.50\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 63,
+    "rear_bsd": 622,
+    "rear_tire_width": 63
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHF",
+    "variant": "29x2.50\"",
+    "status": "current",
+    "specs": {
+     "etrto": "63-622",
+     "bsd_mm": 622,
+     "size": "29x2.50\"",
+     "nominal_width_in": 2.5,
+     "weight_g_min": 1060,
+     "weight_g_max": 1521,
+     "versions": [
+      {
+       "spec": "3C MaxxTerra, 3T, DD, TR",
+       "tpi": "120",
+       "weight_g": 1314,
+       "max_psi": 50,
+       "part_number": "TB96800600"
+      },
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1099,
+       "max_psi": 50,
+       "part_number": "TB96800000"
+      },
+      {
+       "spec": "3C MaxxTerra, 3T, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1099,
+       "max_psi": 50,
+       "part_number": "TB96800300"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, DH, TR",
+       "tpi": "60X2",
+       "weight_g": 1423,
+       "max_psi": 50,
+       "part_number": "TB96800700"
+      },
+      {
+       "spec": "MaxxTerra, MT, EXO+, TR",
+       "tpi": "60",
+       "weight_g": 1163,
+       "max_psi": 50,
+       "part_number": "TB00676400"
+      },
+      {
+       "spec": "MaxxTerra, MT, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1105,
+       "max_psi": 50,
+       "part_number": "TB00676300"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, DH, TR, E50",
+       "tpi": "60X2",
+       "weight_g": 1423,
+       "part_number": "TB00472800"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, EXO+, TR",
+       "tpi": "60",
+       "weight_g": 1162,
+       "max_psi": 50,
+       "part_number": "TB00447300"
+      },
+      {
+       "spec": "Dual, BikePark, DH, TR",
+       "tpi": "60X2",
+       "weight_g": 1521,
+       "max_psi": 50,
+       "part_number": "TB00435600"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1092,
+       "max_psi": 50,
+       "part_number": "TB00144000"
+      },
+      {
+       "spec": "3C MaxxGrip, 3G, DD, TR",
+       "tpi": "120X2",
+       "weight_g": 1313,
+       "max_psi": 50,
+       "part_number": "TB00132600"
+      },
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1060,
+       "max_psi": 50,
+       "part_number": "TB00220100"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhf/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Maxxis lists TB00220100 as 64-622 and TB96800000 as '63-662' (apparent typo for 63-622); other versions 63-622."
+   }
+  },
+  {
+   "id": "maxxis-minion-dhf-29x2.60in",
+   "name": "Maxxis Minion DHF 29x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 66,
+    "rear_bsd": 622,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHF",
+    "variant": "29x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-622",
+     "bsd_mm": 622,
+     "size": "29x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 1107,
+     "weight_g_max": 1231,
+     "versions": [
+      {
+       "spec": "MaxxTerra, MT, EXO, TR",
+       "tpi": "120",
+       "weight_g": 1116,
+       "max_psi": 40,
+       "part_number": "TB00699500"
+      },
+      {
+       "spec": "MaxxTerra, MT, EXO+, TR",
+       "tpi": "60",
+       "weight_g": 1231,
+       "max_psi": 40,
+       "part_number": "TB00686800"
+      },
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1107,
+       "max_psi": 40,
+       "part_number": "TB00220000"
+      },
+      {
+       "spec": "Dual, EXO, TR",
+       "tpi": "60",
+       "weight_g": 1125,
+       "max_psi": 40,
+       "part_number": "TB00032800"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhf/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhf-29x3.00in",
+   "name": "Maxxis Minion DHF 29x3.00\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 76,
+    "rear_bsd": 622,
+    "rear_tire_width": 76
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHF",
+    "variant": "29x3.00\"",
+    "status": "current",
+    "specs": {
+     "etrto": "76-622",
+     "bsd_mm": 622,
+     "size": "29x3.00\"",
+     "nominal_width_in": 3.0,
+     "weight_g_min": 1305,
+     "weight_g_max": 1305,
+     "versions": [
+      {
+       "spec": "3C MaxxTerra, 3T, EXO, TR",
+       "tpi": "120",
+       "weight_g": 1305,
+       "max_psi": 30,
+       "part_number": "TB96834000"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhf/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-26x2.30in",
+   "name": "Maxxis Minion DHR II 26x2.30\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 559,
+    "front_tire_width": 58,
+    "rear_bsd": 559,
+    "rear_tire_width": 58
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "26x2.30\"",
+    "status": "current",
+    "specs": {
+     "etrto": "58-559",
+     "bsd_mm": 559,
+     "size": "26x2.30\"",
+     "nominal_width_in": 2.3,
+     "weight_g_min": 852,
+     "weight_g_max": 854,
+     "versions": [
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 852,
+       "max_psi": 60,
+       "part_number": "TB73303100"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 854,
+       "max_psi": 60,
+       "part_number": "TB73303000"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-26x2.40in",
+   "name": "Maxxis Minion DHR II 26x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 559,
+    "front_tire_width": 61,
+    "rear_bsd": 559,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "26x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-559",
+     "bsd_mm": 559,
+     "size": "26x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 930,
+     "weight_g_max": 1231,
+     "versions": [
+      {
+       "spec": "DH",
+       "tpi": "60X2",
+       "weight_g": 1231,
+       "max_psi": 65,
+       "part_number": "TB72907000"
+      },
+      {
+       "spec": "ST/DH",
+       "tpi": "60X2",
+       "weight_g": 1228,
+       "max_psi": 65,
+       "part_number": "TB72907200"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 930,
+       "max_psi": 50,
+       "part_number": "TB72910000"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 953,
+       "max_psi": 50,
+       "part_number": "TB00680300"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-27.5x2.30in",
+   "name": "Maxxis Minion DHR II 27.5x2.30\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 58,
+    "rear_bsd": 584,
+    "rear_tire_width": 58
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "27.5x2.30\"",
+    "status": "current",
+    "specs": {
+     "etrto": "58-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.30\"",
+     "nominal_width_in": 2.3,
+     "weight_g_min": 886,
+     "weight_g_max": 1089,
+     "versions": [
+      {
+       "spec": "3T/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1089,
+       "max_psi": 60,
+       "part_number": "TB85927400"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 886,
+       "max_psi": 60,
+       "part_number": "TB85927000"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 888,
+       "max_psi": 60,
+       "part_number": "TB85927200"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-27.5x2.40in",
+   "name": "Maxxis Minion DHR II 27.5x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 61,
+    "rear_bsd": 584,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "27.5x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 949,
+     "weight_g_max": 1350,
+     "versions": [
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1194,
+       "max_psi": 50,
+       "part_number": "TB00132400"
+      },
+      {
+       "spec": "3G/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1045,
+       "max_psi": 50,
+       "part_number": "TB00447400"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1055,
+       "max_psi": 50,
+       "part_number": "TB00680100"
+      },
+      {
+       "spec": "3T/DH/TR/E50",
+       "tpi": "60X2",
+       "weight_g": 1261,
+       "part_number": "TB00472700"
+      },
+      {
+       "spec": "3CG/New DH/TR",
+       "tpi": "120X2",
+       "weight_g": 1350,
+       "max_psi": 50,
+       "part_number": "TB00777400"
+      },
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1223,
+       "max_psi": 50,
+       "part_number": "TB85962700"
+      },
+      {
+       "spec": "MT/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1209,
+       "max_psi": 50,
+       "part_number": "TB00697800"
+      },
+      {
+       "spec": "EXO/TR (Tan Wall)",
+       "tpi": "60",
+       "weight_g": 949,
+       "max_psi": 50,
+       "part_number": "TB00220200"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 965,
+       "max_psi": 50,
+       "part_number": "TB85962000"
+      },
+      {
+       "spec": "3G/EXO/TR",
+       "tpi": "60",
+       "weight_g": 980,
+       "max_psi": 50,
+       "part_number": "TB00354300"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 991,
+       "max_psi": 50,
+       "part_number": "TB00680200"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-27.5x2.50in",
+   "name": "Maxxis Minion DHR II 27.5x2.50\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 63,
+    "rear_bsd": 584,
+    "rear_tire_width": 63
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "27.5x2.50\"",
+    "status": "current",
+    "specs": {
+     "etrto": "63-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.50\"",
+     "nominal_width_in": 2.5,
+     "weight_g_min": 1068,
+     "weight_g_max": 1380,
+     "versions": [
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1068,
+       "max_psi": 50,
+       "part_number": "TB00698500"
+      },
+      {
+       "spec": "MT/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1217,
+       "max_psi": 50,
+       "part_number": "TB00698600"
+      },
+      {
+       "spec": "MT/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1316,
+       "max_psi": 50,
+       "part_number": "TB00698800"
+      },
+      {
+       "spec": "3CG/New DH/TR",
+       "tpi": "120X2",
+       "weight_g": 1350,
+       "max_psi": 50,
+       "part_number": "TB00777800"
+      },
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1325,
+       "max_psi": 50,
+       "part_number": "TB00551200"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1224,
+       "max_psi": 50,
+       "part_number": "TB00551400"
+      },
+      {
+       "spec": "BIKEPARK/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1380,
+       "max_psi": 50,
+       "part_number": "TB00537000"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Maxxis spec table lists part TB00698600 (27.5x2.50 MT/DD/TR) with ETRTO 63-622, apparently an error."
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-27.5x2.60in",
+   "name": "Maxxis Minion DHR II 27.5x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 66,
+    "rear_bsd": 584,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "27.5x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 996,
+     "weight_g_max": 1265,
+     "versions": [
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1108,
+       "max_psi": 40,
+       "part_number": "TB00686900"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1043,
+       "max_psi": 40,
+       "part_number": "TB91149100"
+      },
+      {
+       "spec": "MT/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1265,
+       "max_psi": 40,
+       "part_number": "TB00698900"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "120",
+       "weight_g": 996,
+       "max_psi": 40,
+       "part_number": "TB00699700"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-27.5x2.80in",
+   "name": "Maxxis Minion DHR II 27.5x2.80\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 71,
+    "rear_bsd": 584,
+    "rear_tire_width": 71
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "27.5x2.80\"",
+    "status": "current",
+    "specs": {
+     "etrto": "71-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.80\"",
+     "nominal_width_in": 2.8,
+     "weight_g_min": 1081,
+     "weight_g_max": 1196,
+     "versions": [
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1195,
+       "max_psi": 35,
+       "part_number": "TB00699100"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "120",
+       "weight_g": 1081,
+       "max_psi": 35,
+       "part_number": "TB96909000"
+      },
+      {
+       "spec": "3T/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1196,
+       "max_psi": 35,
+       "part_number": "TB00113800"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1110,
+       "max_psi": 35,
+       "part_number": "TB96909100"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-29x2.30in",
+   "name": "Maxxis Minion DHR II 29x2.30\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 58,
+    "rear_bsd": 622,
+    "rear_tire_width": 58
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "29x2.30\"",
+    "status": "current",
+    "specs": {
+     "etrto": "58-622",
+     "bsd_mm": 622,
+     "size": "29x2.30\"",
+     "nominal_width_in": 2.3,
+     "weight_g_min": 951,
+     "weight_g_max": 1161,
+     "versions": [
+      {
+       "spec": "3T/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1161,
+       "max_psi": 60,
+       "part_number": "TB96776400"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 951,
+       "max_psi": 60,
+       "part_number": "TB96776100"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 953,
+       "max_psi": 60,
+       "part_number": "TB96776000"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-29x2.40in",
+   "name": "Maxxis Minion DHR II 29x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "rear_bsd": 622,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "29x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-622",
+     "bsd_mm": 622,
+     "size": "29x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 1022,
+     "weight_g_max": 1462,
+     "versions": [
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1260,
+       "max_psi": 50,
+       "part_number": "TB00087500"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1040,
+       "max_psi": 50,
+       "part_number": "TB96797000"
+      },
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1379,
+       "max_psi": 50,
+       "part_number": "TB96797500"
+      },
+      {
+       "spec": "3CG/New DH/TR",
+       "tpi": "120X2",
+       "weight_g": 1440,
+       "max_psi": 50,
+       "part_number": "TB00777100"
+      },
+      {
+       "spec": "3G/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1056,
+       "max_psi": 50,
+       "part_number": "TB00143900"
+      },
+      {
+       "spec": "EXO/TR (Tan Wall)",
+       "tpi": "60",
+       "weight_g": 1022,
+       "max_psi": 50,
+       "part_number": "TB00220400"
+      },
+      {
+       "spec": "3T/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1222,
+       "max_psi": 50,
+       "part_number": "TB00307900"
+      },
+      {
+       "spec": "BIKEPARK/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1462,
+       "max_psi": 50,
+       "part_number": "TB00368500"
+      },
+      {
+       "spec": "3G/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1122,
+       "max_psi": 50,
+       "part_number": "TB00447500"
+      },
+      {
+       "spec": "3T/DH/TR/E50",
+       "tpi": "60X2",
+       "weight_g": 1344,
+       "part_number": "TB00472600"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1067,
+       "max_psi": 50,
+       "part_number": "TB00680000"
+      },
+      {
+       "spec": "MT/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1287,
+       "max_psi": 50,
+       "part_number": "TB00679900"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1125,
+       "max_psi": 50,
+       "part_number": "TB00677200"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-29x2.50in",
+   "name": "Maxxis Minion DHR II 29x2.50\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 63,
+    "rear_bsd": 622,
+    "rear_tire_width": 63
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "29x2.50\"",
+    "status": "current",
+    "specs": {
+     "etrto": "63-622",
+     "bsd_mm": 622,
+     "size": "29x2.50\"",
+     "nominal_width_in": 2.5,
+     "weight_g_min": 1134,
+     "weight_g_max": 1440,
+     "versions": [
+      {
+       "spec": "3CG/New DH/TR",
+       "tpi": "120X2",
+       "weight_g": 1440,
+       "max_psi": 50,
+       "part_number": "TB00777600"
+      },
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1415,
+       "max_psi": 50,
+       "part_number": "TB00550800"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1300,
+       "max_psi": 50,
+       "part_number": "TB00551000"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1134,
+       "max_psi": 50,
+       "part_number": "TB00698400"
+      },
+      {
+       "spec": "MT/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1403,
+       "max_psi": 50,
+       "part_number": "TB00699300"
+      },
+      {
+       "spec": "MT/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1297,
+       "max_psi": 50,
+       "part_number": "TB00700100"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-29x2.60in",
+   "name": "Maxxis Minion DHR II 29x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 66,
+    "rear_bsd": 622,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "29x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-622",
+     "bsd_mm": 622,
+     "size": "29x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 1076,
+     "weight_g_max": 1352,
+     "versions": [
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1177,
+       "max_psi": 40,
+       "part_number": "TB00697900"
+      },
+      {
+       "spec": "MT/DD/TR",
+       "tpi": "60X2",
+       "weight_g": 1352,
+       "max_psi": 40,
+       "part_number": "TB00699600"
+      },
+      {
+       "spec": "EXO/TR (Tan Wall)",
+       "tpi": "60",
+       "weight_g": 1099,
+       "max_psi": 40,
+       "part_number": "TB00220300"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1076,
+       "max_psi": 40,
+       "part_number": "TB00703500"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1117,
+       "max_psi": 40,
+       "part_number": "TB00073200"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-minion-dhr-ii-29x3.00in",
+   "name": "Maxxis Minion DHR II 29x3.00\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 76,
+    "rear_bsd": 622,
+    "rear_tire_width": 76
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Minion DHR II",
+    "variant": "29x3.00\"",
+    "status": "current",
+    "specs": {
+     "etrto": "76-622",
+     "bsd_mm": 622,
+     "size": "29x3.00\"",
+     "nominal_width_in": 3.0,
+     "weight_g_min": 1305,
+     "weight_g_max": 1305,
+     "versions": [
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "120",
+       "weight_g": 1305,
+       "max_psi": 30,
+       "part_number": "TB96835200"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/minion-dhr-ii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-assegai-27.5x2.50in",
+   "name": "Maxxis Assegai 27.5x2.50\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 63,
+    "rear_bsd": 584,
+    "rear_tire_width": 63
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Assegai",
+    "variant": "27.5x2.50\"",
+    "status": "current",
+    "specs": {
+     "etrto": "63-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.50\"",
+     "nominal_width_in": 2.5,
+     "weight_g_min": 1021,
+     "weight_g_max": 1389,
+     "versions": [
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1389,
+       "max_psi": 50,
+       "part_number": "TB00017200"
+      },
+      {
+       "spec": "EXO/TR/TANWALL",
+       "tpi": "60",
+       "weight_g": 1021,
+       "max_psi": 50,
+       "part_number": "TB00502800"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1286,
+       "max_psi": 50,
+       "part_number": "TB00097500"
+      },
+      {
+       "spec": "3G/DH/TR/E50",
+       "tpi": "60X2",
+       "weight_g": 1389,
+       "part_number": "TB00473100"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1041,
+       "max_psi": 50,
+       "part_number": "TB00163300"
+      },
+      {
+       "spec": "3G/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1139,
+       "max_psi": 50,
+       "part_number": "TB00308200"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1086,
+       "max_psi": 50,
+       "part_number": "TB00698100"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1150,
+       "max_psi": 50,
+       "part_number": "TB00699200"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/assegai/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-assegai-27.5x2.60in",
+   "name": "Maxxis Assegai 27.5x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 66,
+    "rear_bsd": 584,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Assegai",
+    "variant": "27.5x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 1076,
+     "weight_g_max": 1335,
+     "versions": [
+      {
+       "spec": "EXO/TR/TW",
+       "tpi": "60",
+       "weight_g": 1076,
+       "max_psi": 40,
+       "part_number": "TB00503000"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1335,
+       "max_psi": 40,
+       "part_number": "TB00235600"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1197,
+       "max_psi": 40,
+       "part_number": "TB00699800"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1087,
+       "max_psi": 40,
+       "part_number": "TB00195500"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1127,
+       "max_psi": 40,
+       "part_number": "TB00701200"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/assegai/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-assegai-29x2.50in",
+   "name": "Maxxis Assegai 29x2.50\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 63,
+    "rear_bsd": 622,
+    "rear_tire_width": 63
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Assegai",
+    "variant": "29x2.50\"",
+    "status": "current",
+    "specs": {
+     "etrto": "63-622",
+     "bsd_mm": 622,
+     "size": "29x2.50\"",
+     "nominal_width_in": 2.5,
+     "weight_g_min": 1082,
+     "weight_g_max": 1567,
+     "versions": [
+      {
+       "spec": "3CG/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1391,
+       "max_psi": 50,
+       "part_number": "TB00581800"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1162,
+       "max_psi": 50,
+       "part_number": "TB00698000"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1220,
+       "max_psi": 50,
+       "part_number": "TB00684700"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1082,
+       "max_psi": 50,
+       "part_number": "TB00702100"
+      },
+      {
+       "spec": "3CG/New DH/TR",
+       "tpi": "120X2",
+       "weight_g": 1525,
+       "max_psi": 50,
+       "part_number": "TB00778800"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1097,
+       "max_psi": 50,
+       "part_number": "TB00502900"
+      },
+      {
+       "spec": "3G/DH/TR/E50",
+       "tpi": "60X2",
+       "weight_g": 1480,
+       "part_number": "TB00473000"
+      },
+      {
+       "spec": "BIKEPARK/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1567,
+       "max_psi": 50,
+       "part_number": "TB00435500"
+      },
+      {
+       "spec": "3G/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1219,
+       "max_psi": 50,
+       "part_number": "TB00308100"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1117,
+       "max_psi": 50,
+       "part_number": "TB00163100"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1370,
+       "max_psi": 50,
+       "part_number": "TB00097400"
+      },
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1480,
+       "max_psi": 50,
+       "part_number": "TB00064500"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/assegai/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Maxxis lists part TB00581800 (29x2.50 3CG/DD/TR) as ETRTO 62-622; other versions 63-622."
+   }
+  },
+  {
+   "id": "maxxis-assegai-29x2.60in",
+   "name": "Maxxis Assegai 29x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 66,
+    "rear_bsd": 622,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Assegai",
+    "variant": "29x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-622",
+     "bsd_mm": 622,
+     "size": "29x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 1140,
+     "weight_g_max": 1419,
+     "versions": [
+      {
+       "spec": "EXO/TR/TANWALL",
+       "tpi": "60",
+       "weight_g": 1140,
+       "max_psi": 40,
+       "part_number": "TB00503100"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1271,
+       "max_psi": 40,
+       "part_number": "TB00698200"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1419,
+       "max_psi": 40,
+       "part_number": "TB00235200"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1163,
+       "max_psi": 40,
+       "part_number": "TB00195600"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1201,
+       "max_psi": 40,
+       "part_number": "TB00701300"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/assegai/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-dissector-27.5x2.40in",
+   "name": "Maxxis Dissector 27.5x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 61,
+    "rear_bsd": 584,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Dissector",
+    "variant": "27.5x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 878,
+     "weight_g_max": 1100,
+     "versions": [
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 889,
+       "max_psi": 50,
+       "part_number": "TB00231000"
+      },
+      {
+       "spec": "3T/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 951,
+       "max_psi": 50,
+       "part_number": "TB00259900"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1094,
+       "max_psi": 50,
+       "part_number": "TB00240700"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 878,
+       "max_psi": 50,
+       "part_number": "TB00240600"
+      },
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1100,
+       "max_psi": 50,
+       "part_number": "TB00230900"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/dissector/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-dissector-27.5x2.60in",
+   "name": "Maxxis Dissector 27.5x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 66,
+    "rear_bsd": 584,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Dissector",
+    "variant": "27.5x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 984,
+     "weight_g_max": 1115,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 984,
+       "max_psi": 40,
+       "part_number": "TB00240900"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1047,
+       "max_psi": 40,
+       "part_number": "TB00237200"
+      },
+      {
+       "spec": "3T/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1115,
+       "max_psi": 40,
+       "part_number": "TB00237100"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/dissector/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-dissector-29x2.40in",
+   "name": "Maxxis Dissector 29x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "rear_bsd": 622,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Dissector",
+    "variant": "29x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-622",
+     "bsd_mm": 622,
+     "size": "29x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 949,
+     "weight_g_max": 1172,
+     "versions": [
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1172,
+       "max_psi": 50,
+       "part_number": "TB00241100"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 956,
+       "max_psi": 50,
+       "part_number": "TB00241200"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 949,
+       "max_psi": 50,
+       "part_number": "TB00241300"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1167,
+       "max_psi": 50,
+       "part_number": "TB00241400"
+      },
+      {
+       "spec": "3T/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1022,
+       "max_psi": 50,
+       "part_number": "TB00259800"
+      },
+      {
+       "spec": "3T/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1172,
+       "max_psi": 50,
+       "part_number": "TB00350300"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/dissector/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-dissector-29x2.60in",
+   "name": "Maxxis Dissector 29x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 66,
+    "rear_bsd": 622,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Dissector",
+    "variant": "29x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-622",
+     "bsd_mm": 622,
+     "size": "29x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 1036,
+     "weight_g_max": 1195,
+     "versions": [
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1121,
+       "max_psi": 40,
+       "part_number": "TB00237000"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1054,
+       "max_psi": 40,
+       "part_number": "TB00240800"
+      },
+      {
+       "spec": "3T/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1195,
+       "max_psi": 40,
+       "part_number": "TB00236900"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1036,
+       "max_psi": 40,
+       "part_number": "TB00417400"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/dissector/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-24x2.20in",
+   "name": "Maxxis Rekon 24x2.20\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 507,
+    "front_tire_width": 56,
+    "rear_bsd": 507,
+    "rear_tire_width": 56
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon",
+    "variant": "24x2.20\"",
+    "status": "current",
+    "specs": {
+     "etrto": "56-507",
+     "bsd_mm": 507,
+     "size": "24x2.20\"",
+     "nominal_width_in": 2.2,
+     "weight_g_min": 603,
+     "weight_g_max": 603,
+     "versions": [
+      {
+       "spec": "(none listed)",
+       "tpi": "60",
+       "weight_g": 603,
+       "max_psi": 65,
+       "part_number": "TB00153500"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-27.5x2.40in",
+   "name": "Maxxis Rekon 27.5x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 61,
+    "rear_bsd": 584,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon",
+    "variant": "27.5x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 782,
+     "weight_g_max": 834,
+     "versions": [
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 782,
+       "part_number": "TB00703400"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 827,
+       "max_psi": 50,
+       "part_number": "TB00018000"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 834,
+       "max_psi": 50,
+       "part_number": "TB00017400"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-27.5x2.60in",
+   "name": "Maxxis Rekon 27.5x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 66,
+    "rear_bsd": 584,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon",
+    "variant": "27.5x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 844,
+     "weight_g_max": 956,
+     "versions": [
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "120",
+       "weight_g": 844,
+       "max_psi": 40,
+       "part_number": "TB00702600"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 880,
+       "max_psi": 40,
+       "part_number": "TB91145300"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 956,
+       "max_psi": 40,
+       "part_number": "TB00702700"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-27.5x2.80in",
+   "name": "Maxxis Rekon 27.5x2.80\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 71,
+    "rear_bsd": 584,
+    "rear_tire_width": 71
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon",
+    "variant": "27.5x2.80\"",
+    "status": "current",
+    "specs": {
+     "etrto": "71-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.80\"",
+     "nominal_width_in": 2.8,
+     "weight_g_min": 957,
+     "weight_g_max": 1072,
+     "versions": [
+      {
+       "spec": "3T/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1072,
+       "max_psi": 35,
+       "part_number": "TB00161200"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1014,
+       "max_psi": 35,
+       "part_number": "TB96906000"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "120",
+       "weight_g": 957,
+       "max_psi": 35,
+       "part_number": "TB96906100"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 984,
+       "max_psi": 35,
+       "part_number": "TB00260100"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-29x2.25in",
+   "name": "Maxxis Rekon 29x2.25\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 57,
+    "rear_bsd": 622,
+    "rear_tire_width": 57
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon",
+    "variant": "29x2.25\"",
+    "status": "current",
+    "specs": {
+     "etrto": "57-622",
+     "bsd_mm": 622,
+     "size": "29x2.25\"",
+     "nominal_width_in": 2.25,
+     "weight_g_min": 719,
+     "weight_g_max": 719,
+     "versions": [
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "120",
+       "weight_g": 719,
+       "max_psi": 60,
+       "part_number": "TB96899100"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-29x2.40in",
+   "name": "Maxxis Rekon 29x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "rear_bsd": 622,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon",
+    "variant": "29x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-622",
+     "bsd_mm": 622,
+     "size": "29x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 842,
+     "weight_g_max": 932,
+     "versions": [
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 842,
+       "part_number": "TB00699000"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 865,
+       "part_number": "TB00701400"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 875,
+       "max_psi": 50,
+       "part_number": "TB00219600"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 891,
+       "max_psi": 50,
+       "part_number": "TB00017700"
+      },
+      {
+       "spec": "3T/EXO/TR",
+       "tpi": "60",
+       "weight_g": 901,
+       "max_psi": 50,
+       "part_number": "TB00017500"
+      },
+      {
+       "spec": "3T/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 932,
+       "max_psi": 50,
+       "part_number": "TB00301000"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-29x2.60in",
+   "name": "Maxxis Rekon 29x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 66,
+    "rear_bsd": 622,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon",
+    "variant": "29x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-622",
+     "bsd_mm": 622,
+     "size": "29x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 902,
+     "weight_g_max": 1017,
+     "versions": [
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1017,
+       "max_psi": 40,
+       "part_number": "TB00686600"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "120",
+       "weight_g": 902,
+       "max_psi": 40,
+       "part_number": "TB00702800"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 927,
+       "max_psi": 40,
+       "part_number": "TB00219700"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 941,
+       "max_psi": 40,
+       "part_number": "TB96962100"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-29x2.80in",
+   "name": "Maxxis Rekon 29x2.80\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 71,
+    "rear_bsd": 622,
+    "rear_tire_width": 71
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon",
+    "variant": "29x2.80\"",
+    "status": "current",
+    "specs": {
+     "etrto": "71-622",
+     "bsd_mm": 622,
+     "size": "29x2.80\"",
+     "nominal_width_in": 2.8,
+     "weight_g_min": 1089,
+     "weight_g_max": 1089,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1089,
+       "max_psi": 35,
+       "part_number": "TB00038600"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-ikon-26x2.20in",
+   "name": "Maxxis Ikon 26x2.20\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 559,
+    "front_tire_width": 57,
+    "rear_bsd": 559,
+    "rear_tire_width": 57
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "26x2.20\"",
+    "status": "current",
+    "specs": {
+     "etrto": "57-559",
+     "bsd_mm": 559,
+     "size": "26x2.20\"",
+     "nominal_width_in": 2.2,
+     "weight_g_min": 625,
+     "weight_g_max": 676,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 676,
+       "max_psi": 60,
+       "part_number": "TB00220500"
+      },
+      {
+       "spec": "(none listed)",
+       "tpi": "60",
+       "weight_g": 625,
+       "max_psi": 65,
+       "part_number": "TB72385300"
+      },
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "120",
+       "weight_g": 657,
+       "max_psi": 60,
+       "part_number": "TB72390100"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Maxxis lists TB00220500 as 56-559; other 26x2.20 versions 57-559."
+   }
+  },
+  {
+   "id": "maxxis-ikon-26x2.35in",
+   "name": "Maxxis Ikon 26x2.35\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 559,
+    "front_tire_width": 60,
+    "rear_bsd": 559,
+    "rear_tire_width": 60
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "26x2.35\"",
+    "status": "current",
+    "specs": {
+     "etrto": "60-559",
+     "bsd_mm": 559,
+     "size": "26x2.35\"",
+     "nominal_width_in": 2.35,
+     "weight_g_min": 742,
+     "weight_g_max": 742,
+     "versions": [
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "120",
+       "weight_g": 742,
+       "max_psi": 60,
+       "part_number": "TB73499100"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-ikon-27.5x2.20in",
+   "name": "Maxxis Ikon 27.5x2.20\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 56,
+    "rear_bsd": 584,
+    "rear_tire_width": 56
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "27.5x2.20\"",
+    "status": "current",
+    "specs": {
+     "etrto": "56-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.20\"",
+     "nominal_width_in": 2.2,
+     "weight_g_min": 680,
+     "weight_g_max": 701,
+     "versions": [
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "120",
+       "weight_g": 680,
+       "max_psi": 60,
+       "part_number": "TB00465600"
+      },
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "120",
+       "weight_g": 683,
+       "max_psi": 60,
+       "part_number": "TB85919000"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 701,
+       "max_psi": 60,
+       "part_number": "TB00332800"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-ikon-27.5x2.35in",
+   "name": "Maxxis Ikon 27.5x2.35\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 60,
+    "rear_bsd": 584,
+    "rear_tire_width": 60
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "27.5x2.35\"",
+    "status": "current",
+    "specs": {
+     "etrto": "60-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.35\"",
+     "nominal_width_in": 2.35,
+     "weight_g_min": 703,
+     "weight_g_max": 780,
+     "versions": [
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "120",
+       "weight_g": 703,
+       "max_psi": 60,
+       "part_number": "TB85956000"
+      },
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "120",
+       "weight_g": 780,
+       "max_psi": 60,
+       "part_number": "TB00465400"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-ikon-29x2.00in",
+   "name": "Maxxis Ikon 29x2.00\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 50,
+    "rear_bsd": 622,
+    "rear_tire_width": 50
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "29x2.00\"",
+    "status": "current",
+    "specs": {
+     "etrto": "50-622",
+     "bsd_mm": 622,
+     "size": "29x2.00\"",
+     "nominal_width_in": 2.0,
+     "weight_g_min": 677,
+     "weight_g_max": 677,
+     "versions": [
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "120",
+       "weight_g": 677,
+       "max_psi": 60,
+       "part_number": "TB96646100"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-ikon-29x2.20in",
+   "name": "Maxxis Ikon 29x2.20\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 57,
+    "rear_bsd": 622,
+    "rear_tire_width": 57
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "29x2.20\"",
+    "status": "current",
+    "specs": {
+     "etrto": "57-622",
+     "bsd_mm": 622,
+     "size": "29x2.20\"",
+     "nominal_width_in": 2.2,
+     "weight_g_min": 735,
+     "weight_g_max": 761,
+     "versions": [
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "120",
+       "weight_g": 735,
+       "max_psi": 60,
+       "part_number": "TB96740100"
+      },
+      {
+       "spec": "EXO",
+       "tpi": "60",
+       "weight_g": 756,
+       "max_psi": 65,
+       "part_number": "TB00334200"
+      },
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "60",
+       "weight_g": 759,
+       "max_psi": 60,
+       "part_number": "TB00333000"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 761,
+       "max_psi": 60,
+       "part_number": "TB00332900"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-ikon-29x2.35in",
+   "name": "Maxxis Ikon 29x2.35\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 60,
+    "rear_bsd": 622,
+    "rear_tire_width": 60
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "29x2.35\"",
+    "status": "current",
+    "specs": {
+     "etrto": "60-622",
+     "bsd_mm": 622,
+     "size": "29x2.35\"",
+     "nominal_width_in": 2.35,
+     "weight_g_min": 839,
+     "weight_g_max": 839,
+     "versions": [
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "120",
+       "weight_g": 839,
+       "max_psi": 40,
+       "part_number": "TB00465300"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-ikon-29x2.40in",
+   "name": "Maxxis Ikon 29x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "rear_bsd": 622,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "29x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-622",
+     "bsd_mm": 622,
+     "size": "29x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 835,
+     "weight_g_max": 835,
+     "versions": [
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "120",
+       "weight_g": 835,
+       "max_psi": 25,
+       "part_number": "TB00502700"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-ikon-29x2.60in",
+   "name": "Maxxis Ikon 29x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 66,
+    "rear_bsd": 622,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Ikon",
+    "variant": "29x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-622",
+     "bsd_mm": 622,
+     "size": "29x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 833,
+     "weight_g_max": 833,
+     "versions": [
+      {
+       "spec": "3S/EXO/TR",
+       "tpi": "120",
+       "weight_g": 833,
+       "max_psi": 40,
+       "part_number": "TB00038300"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/ikon/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-aspen-29x2.25in",
+   "name": "Maxxis Aspen 29x2.25\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 57,
+    "rear_bsd": 622,
+    "rear_tire_width": 57
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Aspen",
+    "variant": "29x2.25\"",
+    "status": "current",
+    "specs": {
+     "etrto": "57-622",
+     "bsd_mm": 622,
+     "size": "29x2.25\"",
+     "nominal_width_in": 2.25,
+     "weight_g_min": 650,
+     "weight_g_max": 695,
+     "versions": [
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "170",
+       "weight_g": 650,
+       "max_psi": 50,
+       "part_number": "TB00523800"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 695,
+       "max_psi": 60,
+       "part_number": "TB96895500"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/aspen/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-aspen-29x2.40in",
+   "name": "Maxxis Aspen 29x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "rear_bsd": 622,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Aspen",
+    "variant": "29x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-622",
+     "bsd_mm": 622,
+     "size": "29x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 710,
+     "weight_g_max": 768,
+     "versions": [
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "170",
+       "weight_g": 710,
+       "max_psi": 50,
+       "part_number": "TB00523900"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 756,
+       "max_psi": 50,
+       "part_number": "TB00211500"
+      },
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "120",
+       "weight_g": 768,
+       "max_psi": 40,
+       "part_number": "TB00464700"
+      }
+     ],
+     "recommended_rim_internal_mm": "30 recommended (25 min, do not exceed 30)",
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/aspen/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-aspen-32x2.40in",
+   "name": "Maxxis Aspen 32x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 686,
+    "front_tire_width": 61,
+    "rear_bsd": 686,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Aspen",
+    "variant": "32x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-686",
+     "bsd_mm": 686,
+     "size": "32x2.40\"",
+     "nominal_width_in": 2.4,
+     "versions": [
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "120",
+       "part_number": "TB00562400"
+      }
+     ],
+     "recommended_rim_internal_mm": "30 recommended (25 min, do not exceed 30)",
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/aspen/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rambler-700x38c",
+   "name": "Maxxis Rambler 700x38C",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 38,
+    "rear_bsd": 622,
+    "rear_tire_width": 38
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rambler",
+    "variant": "700x38C",
+    "status": "current",
+    "specs": {
+     "etrto": "38-622",
+     "bsd_mm": 622,
+     "size": "700x38C",
+     "weight_g_min": 421,
+     "weight_g_max": 473,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 439,
+       "max_psi": 60,
+       "part_number": "TB00333800"
+      },
+      {
+       "spec": "SilkShield/TR",
+       "tpi": "60",
+       "weight_g": 473,
+       "max_psi": 60,
+       "part_number": "TB00200800"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 421,
+       "max_psi": 60,
+       "part_number": "TB00200700"
+      }
+     ],
+     "use": "gravel"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rambler/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rambler-700x40c",
+   "name": "Maxxis Rambler 700x40C",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 40,
+    "rear_bsd": 622,
+    "rear_tire_width": 40
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rambler",
+    "variant": "700x40C",
+    "status": "current",
+    "specs": {
+     "etrto": "40-622",
+     "bsd_mm": 622,
+     "size": "700x40C",
+     "weight_g_min": 480,
+     "weight_g_max": 525,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 497,
+       "max_psi": 60,
+       "part_number": "TB00329600"
+      },
+      {
+       "spec": "SilkShield/TR",
+       "tpi": "60",
+       "weight_g": 525,
+       "max_psi": 60,
+       "part_number": "TB00200500"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 480,
+       "max_psi": 60,
+       "part_number": "TB00195800"
+      },
+      {
+       "spec": "HYPR-X/EXO/TR",
+       "tpi": "120",
+       "weight_g": 500,
+       "max_psi": 60,
+       "part_number": "TB00540600"
+      }
+     ],
+     "use": "gravel"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rambler/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rambler-700x45c",
+   "name": "Maxxis Rambler 700x45C",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 45,
+    "rear_bsd": 622,
+    "rear_tire_width": 45
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rambler",
+    "variant": "700x45C",
+    "status": "current",
+    "specs": {
+     "etrto": "45-622",
+     "bsd_mm": 622,
+     "size": "700x45C",
+     "weight_g_min": 540,
+     "weight_g_max": 606,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 569,
+       "max_psi": 60,
+       "part_number": "TB00417500"
+      },
+      {
+       "spec": "SilkShield/TR",
+       "tpi": "60",
+       "weight_g": 606,
+       "max_psi": 60,
+       "part_number": "TB00143100"
+      },
+      {
+       "spec": "HYPR-X/EXO/TR/TW",
+       "tpi": "120",
+       "weight_g": 540,
+       "max_psi": 60,
+       "part_number": "TB00577300"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 550,
+       "max_psi": 60,
+       "part_number": "TB00143200"
+      },
+      {
+       "spec": "HYPR-X/EXO/TR",
+       "tpi": "120",
+       "weight_g": 554,
+       "max_psi": 60,
+       "part_number": "TB00577200"
+      }
+     ],
+     "use": "gravel"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rambler/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rambler-700x50c",
+   "name": "Maxxis Rambler 700x50C",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 50,
+    "rear_bsd": 622,
+    "rear_tire_width": 50
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rambler",
+    "variant": "700x50C",
+    "status": "current",
+    "specs": {
+     "etrto": "50-622",
+     "bsd_mm": 622,
+     "size": "700x50C",
+     "weight_g_min": 640,
+     "weight_g_max": 724,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 679,
+       "max_psi": 60,
+       "part_number": "TB00417600"
+      },
+      {
+       "spec": "SilkShield/TR",
+       "tpi": "60",
+       "weight_g": 724,
+       "max_psi": 60,
+       "part_number": "TB00172700"
+      },
+      {
+       "spec": "HYPR-X/EXO/TR",
+       "tpi": "120",
+       "weight_g": 640,
+       "max_psi": 60,
+       "part_number": "TB00662100"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 654,
+       "max_psi": 60,
+       "part_number": "TB00172600"
+      }
+     ],
+     "use": "gravel"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rambler/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rambler-650x47b",
+   "name": "Maxxis Rambler 650x47B",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 47,
+    "rear_bsd": 584,
+    "rear_tire_width": 47
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rambler",
+    "variant": "650x47B",
+    "status": "current",
+    "specs": {
+     "etrto": "47-584",
+     "bsd_mm": 584,
+     "size": "650x47B",
+     "weight_g_min": 554,
+     "weight_g_max": 614,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 570,
+       "max_psi": 60,
+       "part_number": "TB00386100"
+      },
+      {
+       "spec": "SilkShield/TR",
+       "tpi": "60",
+       "weight_g": 614,
+       "max_psi": 60,
+       "part_number": "TB00172100"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 554,
+       "max_psi": 60,
+       "part_number": "TB00172000"
+      }
+     ],
+     "use": "gravel"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rambler/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-receptor-700x40c",
+   "name": "Maxxis Receptor 700x40C",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 40,
+    "rear_bsd": 622,
+    "rear_tire_width": 40
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Receptor",
+    "variant": "700x40C",
+    "status": "current",
+    "specs": {
+     "etrto": "40-622",
+     "bsd_mm": 622,
+     "size": "700x40C",
+     "weight_g_min": 429,
+     "weight_g_max": 441,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 429,
+       "max_psi": 60,
+       "part_number": "TB00352300"
+      },
+      {
+       "spec": "HYPR-X/EXO/TR",
+       "tpi": "120",
+       "weight_g": 440,
+       "max_psi": 60,
+       "part_number": "TB00573800"
+      },
+      {
+       "spec": "HYPR-X/EXO/TR/TW",
+       "tpi": "120",
+       "weight_g": 440,
+       "part_number": "TB00649700"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 441,
+       "max_psi": 60,
+       "part_number": "TB00325300"
+      }
+     ],
+     "use": "gravel"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/receptor/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-receptor-650x47b",
+   "name": "Maxxis Receptor 650x47B",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 47,
+    "rear_bsd": 584,
+    "rear_tire_width": 47
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Receptor",
+    "variant": "650x47B",
+    "status": "current",
+    "specs": {
+     "etrto": "47-584",
+     "bsd_mm": 584,
+     "size": "650x47B",
+     "weight_g_min": 490,
+     "weight_g_max": 506,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 490,
+       "max_psi": 60,
+       "part_number": "TB00352400"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 506,
+       "max_psi": 60,
+       "part_number": "TB00300400"
+      }
+     ],
+     "use": "gravel"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/receptor/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-high-roller-iii-27.5x2.40in",
+   "name": "Maxxis High Roller III 27.5x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 61,
+    "rear_bsd": 584,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "High Roller III",
+    "variant": "27.5x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 1110,
+     "weight_g_max": 1340,
+     "versions": [
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1335,
+       "max_psi": 50,
+       "part_number": "TB00533400"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "60X2",
+       "weight_g": 1225,
+       "max_psi": 50,
+       "part_number": "TB00555000"
+      },
+      {
+       "spec": "3G/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1110,
+       "max_psi": 50,
+       "part_number": "TB00555100"
+      },
+      {
+       "spec": "3CG/New DH/TR",
+       "tpi": "120X2",
+       "weight_g": 1340,
+       "max_psi": 50,
+       "part_number": "TB00779500"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/high-roller-iii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-high-roller-iii-29x2.40in",
+   "name": "Maxxis High Roller III 29x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "rear_bsd": 622,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "High Roller III",
+    "variant": "29x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-622",
+     "bsd_mm": 622,
+     "size": "29x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 1145,
+     "weight_g_max": 1430,
+     "versions": [
+      {
+       "spec": "3G/DH/TR",
+       "tpi": "60X2",
+       "weight_g": 1400,
+       "max_psi": 50,
+       "part_number": "TB00513200"
+      },
+      {
+       "spec": "3G/DD/TR",
+       "tpi": "120X2",
+       "weight_g": 1299,
+       "max_psi": 50,
+       "part_number": "TB00517200"
+      },
+      {
+       "spec": "3G/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1145,
+       "max_psi": 50,
+       "part_number": "TB00555200"
+      },
+      {
+       "spec": "3CG/New DH/TR",
+       "tpi": "120X2",
+       "weight_g": 1430,
+       "max_psi": 50,
+       "part_number": "TB00776900"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/high-roller-iii/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-forekaster-27.5x2.40in",
+   "name": "Maxxis Forekaster 27.5x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 61,
+    "rear_bsd": 584,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Forekaster",
+    "variant": "27.5x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 840,
+     "weight_g_max": 936,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 840,
+       "max_psi": 50,
+       "part_number": "TB00477000"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 872,
+       "max_psi": 50,
+       "part_number": "TB00699900"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 936,
+       "max_psi": 50,
+       "part_number": "TB00700000"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/forekaster/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-forekaster-29x2.40in",
+   "name": "Maxxis Forekaster 29x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "rear_bsd": 622,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Forekaster",
+    "variant": "29x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-622",
+     "bsd_mm": 622,
+     "size": "29x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 939,
+     "weight_g_max": 997,
+     "versions": [
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 939,
+       "max_psi": 50,
+       "part_number": "TB00677100"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 947,
+       "max_psi": 50,
+       "part_number": "TB00460500"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 997,
+       "max_psi": 50,
+       "part_number": "TB00698700"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/forekaster/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-forekaster-29x2.60in",
+   "name": "Maxxis Forekaster 29x2.60\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 66,
+    "rear_bsd": 622,
+    "rear_tire_width": 66
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Forekaster",
+    "variant": "29x2.60\"",
+    "status": "current",
+    "specs": {
+     "etrto": "66-622",
+     "bsd_mm": 622,
+     "size": "29x2.60\"",
+     "nominal_width_in": 2.6,
+     "weight_g_min": 1010,
+     "weight_g_max": 1080,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 1039,
+       "max_psi": 40,
+       "part_number": "TB00460600"
+      },
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1010,
+       "max_psi": 40,
+       "part_number": "TB00676700"
+      },
+      {
+       "spec": "MT/EXO+/TR",
+       "tpi": "60",
+       "weight_g": 1080,
+       "max_psi": 40,
+       "part_number": "TB00696700"
+      }
+     ],
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/forekaster/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-forekaster-32x2.40in",
+   "name": "Maxxis Forekaster 32x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 686,
+    "front_tire_width": 61,
+    "rear_bsd": 686,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Forekaster",
+    "variant": "32x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-686",
+     "bsd_mm": 686,
+     "size": "32x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 1060,
+     "weight_g_max": 1060,
+     "versions": [
+      {
+       "spec": "MT/EXO/TR",
+       "tpi": "60",
+       "weight_g": 1060,
+       "part_number": "TB00724900"
+      }
+     ],
+     "recommended_rim_internal_mm": "30-35",
+     "use": "MTB"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/forekaster/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-race-27.5x2.25in",
+   "name": "Maxxis Rekon Race 27.5x2.25\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 57,
+    "rear_bsd": 584,
+    "rear_tire_width": 57
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon Race",
+    "variant": "27.5x2.25\"",
+    "status": "current",
+    "specs": {
+     "etrto": "57-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.25\"",
+     "nominal_width_in": 2.25,
+     "weight_g_min": 687,
+     "weight_g_max": 687,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 687,
+       "max_psi": 60,
+       "part_number": "TB00244600"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon-race/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-race-27.5x2.35in",
+   "name": "Maxxis Rekon Race 27.5x2.35\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 60,
+    "rear_bsd": 584,
+    "rear_tire_width": 60
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon Race",
+    "variant": "27.5x2.35\"",
+    "status": "current",
+    "specs": {
+     "etrto": "60-584",
+     "bsd_mm": 584,
+     "size": "27.5x2.35\"",
+     "nominal_width_in": 2.35,
+     "weight_g_min": 744,
+     "weight_g_max": 744,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 744,
+       "max_psi": 60,
+       "part_number": "TB00230500"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon-race/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-race-29x2.25in",
+   "name": "Maxxis Rekon Race 29x2.25\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 57,
+    "rear_bsd": 622,
+    "rear_tire_width": 57
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon Race",
+    "variant": "29x2.25\"",
+    "status": "current",
+    "specs": {
+     "etrto": "57-622",
+     "bsd_mm": 622,
+     "size": "29x2.25\"",
+     "nominal_width_in": 2.25,
+     "weight_g_min": 737,
+     "weight_g_max": 759,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 737,
+       "max_psi": 60,
+       "part_number": "TB00046300"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 759,
+       "max_psi": 60,
+       "part_number": "TB00229000"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon-race/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-race-29x2.35in",
+   "name": "Maxxis Rekon Race 29x2.35\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 60,
+    "rear_bsd": 622,
+    "rear_tire_width": 60
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon Race",
+    "variant": "29x2.35\"",
+    "status": "current",
+    "specs": {
+     "etrto": "60-622",
+     "bsd_mm": 622,
+     "size": "29x2.35\"",
+     "nominal_width_in": 2.35,
+     "weight_g_min": 801,
+     "weight_g_max": 847,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 801,
+       "max_psi": 60,
+       "part_number": "TB00139800"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 837,
+       "max_psi": 60,
+       "part_number": "TB00219800"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 847,
+       "max_psi": 60,
+       "part_number": "TB00139700"
+      }
+     ],
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon-race/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "maxxis-rekon-race-29x2.40in",
+   "name": "Maxxis Rekon Race 29x2.40\"",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "rear_bsd": 622,
+    "rear_tire_width": 61
+   },
+   "meta": {
+    "brand": "Maxxis",
+    "model": "Rekon Race",
+    "variant": "29x2.40\"",
+    "status": "current",
+    "specs": {
+     "etrto": "61-622",
+     "bsd_mm": 622,
+     "size": "29x2.40\"",
+     "nominal_width_in": 2.4,
+     "weight_g_min": 814,
+     "weight_g_max": 836,
+     "versions": [
+      {
+       "spec": "EXO/TR",
+       "tpi": "120",
+       "weight_g": 814,
+       "max_psi": 50,
+       "part_number": "TB00211100"
+      },
+      {
+       "spec": "MaxxSpeed/EXO/TR",
+       "tpi": "120",
+       "weight_g": 825,
+       "max_psi": 40,
+       "part_number": "TB00465000"
+      },
+      {
+       "spec": "EXO/TR",
+       "tpi": "60",
+       "weight_g": 836,
+       "max_psi": 50,
+       "part_number": "TB00417300"
+      }
+     ],
+     "recommended_rim_internal_mm": "30",
+     "use": "MTB XC"
+    },
+    "sources": [
+     {
+      "url": "https://www.maxxis.com/us/tire/rekon-race/",
+      "publisher": "Maxxis (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-cayuse-pass-700c-x-26",
+   "name": "Rene Herse Cayuse Pass 700C x 26",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 26,
+    "rear_bsd": 622,
+    "rear_tire_width": 26
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Cayuse Pass",
+    "variant": "700C x 26",
+    "status": "current",
+    "specs": {
+     "etrto": "26-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 235,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 210,
+       "sidewall": "black or tan"
+      }
+     ],
+     "weight_g_min": 210,
+     "weight_g_max": 235,
+     "tubeless": false,
+     "recommended_rim_internal_mm": "15-23 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "105 psi (7.4 bar)",
+     "manufacturer_stated_width": "approx. 25.5 mm on 20 mm internal rim; Extralight +0.5 mm",
+     "tread": "road (semi-slick)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700cx26-cayuse-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-chinook-pass-700c-x-28",
+   "name": "Rene Herse Chinook Pass 700C x 28",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 28,
+    "rear_bsd": 622,
+    "rear_tire_width": 28
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Chinook Pass",
+    "variant": "700C x 28",
+    "status": "current",
+    "specs": {
+     "etrto": "28-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 255,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 230,
+       "sidewall": "black or tan"
+      }
+     ],
+     "weight_g_min": 230,
+     "weight_g_max": 255,
+     "tubeless": false,
+     "recommended_rim_internal_mm": "15-23 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "105 psi (7.4 bar)",
+     "manufacturer_stated_width": "approx. 28 mm on 20 mm internal rim; Extralight +0.5 mm"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700cx28-chinook-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-orondo-grade-tc-700c-x-31",
+   "name": "Rene Herse Orondo Grade TC 700C x 31",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 31,
+    "rear_bsd": 622,
+    "rear_tire_width": 31
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Orondo Grade TC",
+    "variant": "700C x 31",
+    "status": "current",
+    "specs": {
+     "etrto": "31-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 350,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 325,
+       "sidewall": "black or tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 330,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 325,
+     "weight_g_max": 350,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "15-25 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "90 psi (6.2 bar)",
+     "max_pressure_tubeless": "90 psi (6.2 bar)",
+     "manufacturer_stated_width": "approx. 31 mm on 20 mm rim, 32 mm on 23 mm rim (internal); Extralight +0.5 mm"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/700c/700c-x-31-orondo-grade-tc-tire/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-stampede-pass-700c-x-32",
+   "name": "Rene Herse Stampede Pass 700C x 32",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 32,
+    "rear_bsd": 622,
+    "rear_tire_width": 32
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Stampede Pass",
+    "variant": "700C x 32",
+    "status": "current",
+    "specs": {
+     "etrto": "32-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 310,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 270,
+       "sidewall": "black or tan"
+      }
+     ],
+     "weight_g_min": 270,
+     "weight_g_max": 310,
+     "tubeless": false,
+     "recommended_rim_internal_mm": "15-25 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "90 psi (6.3 bar)",
+     "manufacturer_stated_width": "approx. 31 mm on 20 mm rim, 32 mm on 23 mm rim (internal); Extralight +0.5 mm"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/700c/700cx32-stampede-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-bon-jon-pass-tc-700c-x-35",
+   "name": "Rene Herse Bon Jon Pass TC 700C x 35",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 35,
+    "rear_bsd": 622,
+    "rear_tire_width": 35
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Bon Jon Pass TC",
+    "variant": "700C x 35",
+    "status": "current",
+    "specs": {
+     "etrto": "35-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 355,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 310,
+       "sidewall": "black or tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 365,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 310,
+     "weight_g_max": 365,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-27 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "90 psi (6.2 bar)",
+     "max_pressure_tubeless": "60 psi (4 bar)",
+     "manufacturer_stated_width": "approx. 35 mm on 20 mm rim, 36 mm on 23 mm rim (internal); Extralight and tubeless each +0.5 mm"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700cx35-bon-jon-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-barlow-pass-tc-700c-x-38",
+   "name": "Rene Herse Barlow Pass TC 700C x 38",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 38,
+    "rear_bsd": 622,
+    "rear_tire_width": 38
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Barlow Pass TC",
+    "variant": "700C x 38",
+    "status": "current",
+    "specs": {
+     "etrto": "38-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 385
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 350,
+       "sidewall": "tan or black"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 400,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 350,
+     "weight_g_max": 400,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-27 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "75 psi (5.2 bar)",
+     "max_pressure_tubeless": "60 psi (4 bar)",
+     "manufacturer_stated_width": "approx. 38 mm on 20 mm rim, 39 mm on 23 mm rim (internal); Extralight +0.5 mm, tubeless +0.5 mm"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700cx38-barlow-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-steilacoom-tc-700c-x-38",
+   "name": "Rene Herse Steilacoom TC 700C x 38",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 38,
+    "rear_bsd": 622,
+    "rear_tire_width": 38
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Steilacoom TC",
+    "variant": "700C x 38",
+    "status": "current",
+    "specs": {
+     "etrto": "38-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 435,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 395,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 450,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 395,
+     "weight_g_max": 450,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-27 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "75 psi (5.2 bar)",
+     "max_pressure_tubeless": "60 psi (4 bar)",
+     "manufacturer_stated_width": "approx. 36 mm on 20 mm rim, 38 mm on 23 mm rim (internal); Extralight +0.5 mm, tubeless +0.5 mm",
+     "tread": "dual-purpose knobby"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700cx38-steilacoom/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-hurricane-ridge-tc-700c-x-42",
+   "name": "Rene Herse Hurricane Ridge TC 700C x 42",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 42,
+    "rear_bsd": 622,
+    "rear_tire_width": 42
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Hurricane Ridge TC",
+    "variant": "700C x 42",
+    "status": "current",
+    "specs": {
+     "etrto": "42-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 515,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 470,
+       "sidewall": "tan or black"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 530,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 550,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 470,
+     "weight_g_max": 550,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-28 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES 4.5 (30-32)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "75 psi (5.2 bar)",
+     "max_pressure_tubeless": "60 psi (4 bar)",
+     "manufacturer_stated_width": "approx. 42 mm on 20 mm rim, 43 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "dual-purpose knobby"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700cx42-hurricane-ridge-tc/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-snoqualmie-pass-tc-700c-x-44",
+   "name": "Rene Herse Snoqualmie Pass TC 700C x 44",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 44,
+    "rear_bsd": 622,
+    "rear_tire_width": 44
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Snoqualmie Pass TC",
+    "variant": "700C x 44",
+    "status": "current",
+    "specs": {
+     "etrto": "44-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 380,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 335,
+       "sidewall": "black or tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 420,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 430,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 335,
+     "weight_g_max": 430,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-28 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES 4.5 (30-32)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "75 psi (5.2 bar)",
+     "max_pressure_tubeless": "60 psi (4 bar)",
+     "manufacturer_stated_width": "approx. 42 mm on 20 mm rim, 43 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700cx44-snoqualmie-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-manastash-ridge-tc-700c-x-44",
+   "name": "Rene Herse Manastash Ridge TC 700C x 44",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 44,
+    "rear_bsd": 622,
+    "rear_tire_width": 44
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Manastash Ridge TC",
+    "variant": "700C x 44",
+    "status": "current",
+    "specs": {
+     "etrto": "44-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 510,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 475,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 520,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 555,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 475,
+     "weight_g_max": 555,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-28 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES 4.5 (30-32)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "75 psi (5.2 bar)",
+     "max_pressure_tubeless": "60 psi (4 bar)",
+     "manufacturer_stated_width": "approx. 43 mm on 20 mm rim, 44 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "dual-purpose knobby"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700c-x-44-manastash-ridge-tc-tire/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-corkscrew-climb-tc-semi-slick-700c-x-44",
+   "name": "Rene Herse Corkscrew Climb TC Semi-Slick 700C x 44",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 44,
+    "rear_bsd": 622,
+    "rear_tire_width": 44
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Corkscrew Climb TC Semi-Slick",
+    "variant": "700C x 44",
+    "status": "current",
+    "specs": {
+     "etrto": "44-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 510,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 480,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 530,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 560,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 480,
+     "weight_g_max": 560,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-28 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES 4.5 (30-32)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "60 psi (4 bar) (page states single max pressure)",
+     "manufacturer_stated_width": "approx. 43 mm on 20 mm rim, 44 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "semi-slick (slick centre, side knobs)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/700c-x-44-corkscrew-climb-tc-semi-slick/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-hatcher-pass-tc-700c-x-48",
+   "name": "Rene Herse Hatcher Pass TC 700C x 48",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 48,
+    "rear_bsd": 622,
+    "rear_tire_width": 48
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Hatcher Pass TC",
+    "variant": "700C x 48",
+    "status": "current",
+    "specs": {
+     "etrto": "48-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 475,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 440,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 495,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 510,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 440,
+     "weight_g_max": 510,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-30 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES (30-35)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "55 psi (3.5 bar)",
+     "max_pressure_tubeless": "55 psi (3.5 bar)",
+     "manufacturer_stated_width": "approx. 47 mm on 21 mm, 48 mm on 23 mm, 49 mm on 25 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/700c-x-48-hatcher-pass-tc-tire/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-oracle-ridge-tc-700c-x-48",
+   "name": "Rene Herse Oracle Ridge TC 700C x 48",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 48,
+    "rear_bsd": 622,
+    "rear_tire_width": 48
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Oracle Ridge TC",
+    "variant": "700C x 48",
+    "status": "current",
+    "specs": {
+     "etrto": "48-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 545,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 490,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 575,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 590,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 490,
+     "weight_g_max": 590,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-30 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES (30-35)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 47 mm on 21 mm, 48 mm on 23 mm, 49 mm on 25 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "knobby (staggered)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/700c-x-48-mm-oracle-ridge-tc/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-poteau-mountain-tc-semi-slick-700c-x-48",
+   "name": "Rene Herse Poteau Mountain TC Semi-Slick 700C x 48",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 48,
+    "rear_bsd": 622,
+    "rear_tire_width": 48
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Poteau Mountain TC Semi-Slick",
+    "variant": "700C x 48",
+    "status": "current",
+    "specs": {
+     "etrto": "48-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 520,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 490,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 540,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 570,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 490,
+     "weight_g_max": 570,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-30 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES (30-35)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 47 mm on 21 mm, 48 mm on 23 mm, 49 mm on 25 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "semi-slick"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/700c-x-48-poteau-mountain-tc-semi-slick/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-antelope-hill-tc-29-x-2.2-700c-x-55",
+   "name": "Rene Herse Antelope Hill TC 29 x 2.2 (700C x 55)",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 55,
+    "rear_bsd": 622,
+    "rear_tire_width": 55
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Antelope Hill TC",
+    "variant": "29 x 2.2 (700C x 55)",
+    "status": "current",
+    "specs": {
+     "etrto": "55-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 530,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 485,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 550,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 600,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 485,
+     "weight_g_max": 600,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "19-30 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES (30-35)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "nominal_width_in": 2.2,
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 54 mm on 20 mm, 55 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/700cx55-antelope-hill-tc/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-fleecer-ridge-tc-29-x-2.2-700c-x-55",
+   "name": "Rene Herse Fleecer Ridge TC 29 x 2.2 (700C x 55)",
+   "category": "tires",
+   "values": {
+    "front_bsd": 622,
+    "front_tire_width": 55,
+    "rear_bsd": 622,
+    "rear_tire_width": 55
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Fleecer Ridge TC",
+    "variant": "29 x 2.2 (700C x 55)",
+    "status": "current",
+    "specs": {
+     "etrto": "55-622",
+     "bsd_mm": 622,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 595,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 545,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 645,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 665,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 545,
+     "weight_g_max": 665,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "19-30 (hooked or hookless); also approved ZIPP 303 XPLR / Enve G SES (30-35)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "nominal_width_in": 2.2,
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 56 mm on 21 mm, 57 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "knobby (staggered)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/700c-x-55-fleecer-ridge/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-umtanum-ridge-tc-27.5-x-2.2-650b-x-55",
+   "name": "Rene Herse Umtanum Ridge TC 27.5 x 2.2 (650B x 55)",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 55,
+    "rear_bsd": 584,
+    "rear_tire_width": 55
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Umtanum Ridge TC",
+    "variant": "27.5 x 2.2 (650B x 55)",
+    "status": "current",
+    "specs": {
+     "etrto": "55-584",
+     "bsd_mm": 584,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 570,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 520,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 615,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 625,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 520,
+     "weight_g_max": 625,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "19-30 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "nominal_width_in": 2.2,
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 53 mm on 21 mm, 54 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "knobby (staggered)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/650b-x-55-umtanum-ridge-tc-tire/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-juniper-ridge-tc-650b-x-48",
+   "name": "Rene Herse Juniper Ridge TC 650B x 48",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 48,
+    "rear_bsd": 584,
+    "rear_tire_width": 48
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Juniper Ridge TC",
+    "variant": "650B x 48",
+    "status": "current",
+    "specs": {
+     "etrto": "48-584",
+     "bsd_mm": 584,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 510,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 470,
+       "sidewall": "black or tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 530,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 555,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 470,
+     "weight_g_max": 555,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-30 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 49 mm on 20 mm, 50 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "knobby"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/650bx48-juniper-ridge-tc/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-pumpkin-ridge-tc-650b-x-42",
+   "name": "Rene Herse Pumpkin Ridge TC 650B x 42",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 42,
+    "rear_bsd": 584,
+    "rear_tire_width": 42
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Pumpkin Ridge TC",
+    "variant": "650B x 42",
+    "status": "current",
+    "specs": {
+     "etrto": "42-584",
+     "bsd_mm": 584,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 485,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 460,
+       "sidewall": "black or tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 495,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 460,
+     "weight_g_max": 495,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-28 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "60 psi (4.1 bar)",
+     "max_pressure_tubeless": "60 psi (4.1 bar)",
+     "manufacturer_stated_width": "approx. 40 mm on 20 mm, 41 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "dual-purpose knobby"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/650bx42-pumpkin-ridge/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-switchback-hill-tc-650b-x-48",
+   "name": "Rene Herse Switchback Hill TC 650B x 48",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 48,
+    "rear_bsd": 584,
+    "rear_tire_width": 48
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Switchback Hill TC",
+    "variant": "650B x 48",
+    "status": "current",
+    "specs": {
+     "etrto": "48-584",
+     "bsd_mm": 584,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 460,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 420,
+       "sidewall": "tan or black"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 520,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 420,
+     "weight_g_max": 520,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-30 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 50 mm on 20 mm, 51 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/650bx48-switchback-hill/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-babyshoe-pass-tc-650b-x-42",
+   "name": "Rene Herse Babyshoe Pass TC 650B x 42",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 42,
+    "rear_bsd": 584,
+    "rear_tire_width": 42
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Babyshoe Pass TC",
+    "variant": "650B x 42",
+    "status": "current",
+    "specs": {
+     "etrto": "42-584",
+     "bsd_mm": 584,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 415,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 380,
+       "sidewall": "tan or black"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 445,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 380,
+     "weight_g_max": 445,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-28 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "60 psi (4.1 bar)",
+     "max_pressure_tubeless": "60 psi (4.1 bar)",
+     "manufacturer_stated_width": "approx. 40 mm on 20 mm, 41 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/650bx42-babyshoe-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-loup-loup-pass-650b-x-38",
+   "name": "Rene Herse Loup Loup Pass 650B x 38",
+   "category": "tires",
+   "values": {
+    "front_bsd": 584,
+    "front_tire_width": 38,
+    "rear_bsd": 584,
+    "rear_tire_width": 38
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Loup Loup Pass",
+    "variant": "650B x 38",
+    "status": "current",
+    "specs": {
+     "etrto": "38-584",
+     "bsd_mm": 584,
+     "casings": [
+      {
+       "casing": "Extralight",
+       "weight_g": 340,
+       "sidewall": "tan"
+      }
+     ],
+     "weight_g_min": 340,
+     "weight_g_max": 340,
+     "tubeless": false,
+     "recommended_rim_internal_mm": "17-27 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "max_pressure_tube": "75 psi (5.2 bar)",
+     "manufacturer_stated_width": "approx. 37 mm on 20 mm, 37.5 mm on 23 mm rim (internal); Extralight +0.5 mm",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/650bx38-loup-loup-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-humptulips-ridge-tc-26-x-2.3",
+   "name": "Rene Herse Humptulips Ridge TC 26 x 2.3",
+   "category": "tires",
+   "values": {
+    "front_bsd": 559,
+    "front_tire_width": 54,
+    "rear_bsd": 559,
+    "rear_tire_width": 54
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Humptulips Ridge TC",
+    "variant": "26 x 2.3",
+    "status": "current",
+    "specs": {
+     "etrto": "54-559",
+     "bsd_mm": 559,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 540,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 495,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 590,
+       "sidewall": "dark tan"
+      },
+      {
+       "casing": "Endurance Plus",
+       "weight_g": 620,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 495,
+     "weight_g_max": 620,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "19-30 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "nominal_width_in": 2.3,
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 52 mm on 20 mm, 53 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "dual-purpose knobby (staggered)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/26-x-2-3-humptulips-ridge-tc-tire/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-rat-trap-pass-tc-26-x-2.3",
+   "name": "Rene Herse Rat Trap Pass TC 26 x 2.3",
+   "category": "tires",
+   "values": {
+    "front_bsd": 559,
+    "front_tire_width": 54,
+    "rear_bsd": 559,
+    "rear_tire_width": 54
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Rat Trap Pass TC",
+    "variant": "26 x 2.3",
+    "status": "current",
+    "specs": {
+     "etrto": "54-559",
+     "bsd_mm": 559,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 490,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 410,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 540,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 410,
+     "weight_g_max": 540,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-30 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "nominal_width_in": 2.3,
+     "max_pressure_tube": "55 psi (3.8 bar)",
+     "max_pressure_tubeless": "55 psi (3.8 bar)",
+     "manufacturer_stated_width": "approx. 52 mm on 20 mm, 53 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/wider-45mm-tires/26x23-rat-trap-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-naches-pass-tc-26-x-1.8",
+   "name": "Rene Herse Naches Pass TC 26 x 1.8",
+   "category": "tires",
+   "values": {
+    "front_bsd": 559,
+    "front_tire_width": 43,
+    "rear_bsd": 559,
+    "rear_tire_width": 43
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Naches Pass TC",
+    "variant": "26 x 1.8",
+    "status": "current",
+    "specs": {
+     "etrto": "43-559",
+     "bsd_mm": 559,
+     "casings": [
+      {
+       "casing": "Standard",
+       "weight_g": 330,
+       "sidewall": "tan"
+      },
+      {
+       "casing": "Extralight",
+       "weight_g": 295,
+       "sidewall": "black or tan"
+      },
+      {
+       "casing": "Endurance",
+       "weight_g": 370,
+       "sidewall": "dark tan"
+      }
+     ],
+     "weight_g_min": 295,
+     "weight_g_max": 370,
+     "tubeless": true,
+     "recommended_rim_internal_mm": "17-28 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "nominal_width_in": 1.8,
+     "max_pressure_tube": "75 psi (5.2 bar)",
+     "max_pressure_tubeless": "60 psi (4 bar)",
+     "manufacturer_stated_width": "approx. 41 mm on 20 mm, 42 mm on 23 mm rim (internal); Extralight +1 mm, tubeless +0.5 mm",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/26x18-naches-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rene-herse-elk-pass-26-x-1.25",
+   "name": "Rene Herse Elk Pass 26 x 1.25",
+   "category": "tires",
+   "values": {
+    "front_bsd": 559,
+    "front_tire_width": 30,
+    "rear_bsd": 559,
+    "rear_tire_width": 30
+   },
+   "meta": {
+    "brand": "Rene Herse",
+    "model": "Elk Pass",
+    "variant": "26 x 1.25",
+    "status": "current",
+    "specs": {
+     "etrto": "30-559",
+     "bsd_mm": 559,
+     "casings": [
+      {
+       "casing": "Extralight",
+       "weight_g": 185,
+       "sidewall": "tan"
+      }
+     ],
+     "weight_g_min": 185,
+     "weight_g_max": 185,
+     "tubeless": false,
+     "recommended_rim_internal_mm": "15-25 (hooked or hookless)",
+     "bead": "folding",
+     "made_in": "Japan",
+     "nominal_width_in": 1.25,
+     "max_pressure_tube": "100 psi (7 bar)",
+     "manufacturer_stated_width": "approx. 29 mm on 20 mm, 30 mm on 23 mm rim (internal)",
+     "tread": "road (smooth)"
+    },
+    "sources": [
+     {
+      "url": "https://www.renehersecycles.com/shop/components/tires/narrower-45mm-tires/26x125-elk-pass/",
+      "publisher": "Rene Herse Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  }
+ ]
+}

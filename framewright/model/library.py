@@ -54,7 +54,12 @@ CATEGORY_LABELS: dict[str, str] = {
     "chainrings": "Chainrings",
     "cassettes": "Cassettes & cogs",
     "wheels": "Wheels & tires",
-    "hubs": "Hub spacing",
+    "hubs": "Hubs",
+    "rims": "Rims",
+    "tires": "Tires",
+    "frame_hardware": "Frame hardware",
+    "brakes": "Brakes",
+    "drivetrain": "Derailleurs & groupsets",
 }
 
 
@@ -142,9 +147,13 @@ def _load_dir(directory: Path, user: bool) -> list[LibraryItem]:
     return out
 
 
+CATALOG_DIR = Path(__file__).resolve().parents[1] / "data" / "catalog"
+
+
 @functools.lru_cache(maxsize=1)
 def _builtin_items() -> tuple[LibraryItem, ...]:
-    return tuple(_load_dir(builtin_dir(), user=False))
+    """Generic libraries followed by the sourced parts catalog."""
+    return tuple(_load_dir(builtin_dir(), user=False) + _load_dir(CATALOG_DIR, user=False))
 
 
 def reload() -> None:

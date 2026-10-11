@@ -1,0 +1,6031 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "category": "rims",
+ "label": "Rims",
+ "catalog": true,
+ "compiled": "2026-10-11",
+ "items": [
+  {
+   "id": "dt-swiss-rr-411-700c-rim-brake",
+   "name": "DT Swiss RR 411 700c rim brake",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "RR 411",
+    "variant": "700c rim brake",
+    "status": "current",
+    "specs": {
+     "erd_mm": 601,
+     "inner_width_mm": 18,
+     "outer_width_mm": 21.5,
+     "depth_mm": 21,
+     "weight_g": 435,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "rim",
+     "max_system_weight_kg": 120,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "spoke_bore": "non-eyelet, PHR washer",
+     "valve": "Presta",
+     "astm_class": 1,
+     "profiles": "symmetric (20/24/28 h) and asymmetric (24/28/32 h)",
+     "use": "road",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "notes": "A 32 h disc-drilled SKU (RDRR41CDPW32SA5252) is also listed on the same page.",
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/performance/rr-411",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-rr-421-700c-disc",
+   "name": "DT Swiss RR 421 700c disc",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "RR 421",
+    "variant": "700c disc",
+    "status": "current",
+    "specs": {
+     "erd_mm": 601,
+     "inner_width_mm": 20,
+     "outer_width_mm": 24,
+     "depth_mm": 21,
+     "weight_g": 430,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 2,
+     "ebike_approved": true,
+     "use": "road endurance / disc",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/endurance/rr-421",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-rr-511-700c-rim-brake",
+   "name": "DT Swiss RR 511 700c rim brake",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 32,
+    "rim_depth_rear": 32
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "RR 511",
+    "variant": "700c rim brake",
+    "status": "current",
+    "specs": {
+     "erd_mm": 581,
+     "inner_width_mm": 18,
+     "outer_width_mm": 21.5,
+     "depth_mm": 32,
+     "weight_g": 530,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "rim",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 1,
+     "use": "road",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/performance/rr-511",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-rr-521-700c-disc",
+   "name": "DT Swiss RR 521 700c disc",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 32,
+    "rim_depth_rear": 32
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "RR 521",
+    "variant": "700c disc",
+    "status": "current",
+    "specs": {
+     "erd_mm": 581,
+     "inner_width_mm": 20,
+     "outer_width_mm": 24,
+     "depth_mm": 32,
+     "weight_g": 520,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 2,
+     "use": "road endurance / disc",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/endurance/rr-521",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-r-460-700c-rim-brake",
+   "name": "DT Swiss R 460 700c rim brake",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 23,
+    "rim_depth_rear": 23
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "R 460",
+    "variant": "700c rim brake",
+    "status": "current",
+    "specs": {
+     "erd_mm": 596,
+     "inner_width_mm": 18,
+     "outer_width_mm": 23,
+     "depth_mm": 23,
+     "weight_g": 460,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "rim",
+     "max_system_weight_kg": 110,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 1,
+     "use": "road",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/performance/r-460",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-r-460-700c-disc",
+   "name": "DT Swiss R 460 700c disc",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 23,
+    "rim_depth_rear": 23
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "R 460",
+    "variant": "700c disc",
+    "status": "current",
+    "specs": {
+     "erd_mm": 596,
+     "inner_width_mm": 18,
+     "outer_width_mm": 22,
+     "depth_mm": 23,
+     "weight_g": 450,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 110,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 1,
+     "use": "road / disc",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/performance/r-460",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xr-391-29",
+   "name": "DT Swiss XR 391 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 18,
+    "rim_depth_rear": 18
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XR 391",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 607,
+     "inner_width_mm": 25,
+     "outer_width_mm": 29,
+     "depth_mm": 18,
+     "weight_g": 440,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 110,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 3,
+     "use": "cross-country",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/cross-country/xr-391",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xr-421-29",
+   "name": "DT Swiss XR 421 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20,
+    "spokes_front": 28,
+    "spokes_rear": 28
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XR 421",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 604,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 20,
+     "weight_g": 548,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "astm_class": 3,
+     "use": "cross-country",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/cross-country/xr-421",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xm-421-650b",
+   "name": "DT Swiss XM 421 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XM 421",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 564,
+     "inner_width_mm": 25,
+     "outer_width_mm": 30,
+     "depth_mm": 20,
+     "weight_g": 440,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "all-mountain / trail",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/all-mountain/xm-421",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xm-421-700c",
+   "name": "DT Swiss XM 421 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XM 421",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 602,
+     "inner_width_mm": 25,
+     "outer_width_mm": 30,
+     "depth_mm": 20,
+     "weight_g": 465,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "all-mountain / trail",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/all-mountain/xm-421",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xm-431-650b",
+   "name": "DT Swiss XM 431 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21,
+    "spokes_front": 28,
+    "spokes_rear": 28
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XM 431",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 564,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 544,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "all-mountain / trail",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/all-mountain/xm-431",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xm-431-700c",
+   "name": "DT Swiss XM 431 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21,
+    "spokes_front": 28,
+    "spokes_rear": 28
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XM 431",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 602,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 580,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "all-mountain / trail",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/all-mountain/xm-431",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-x-432-29",
+   "name": "DT Swiss X 432 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "X 432",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 603,
+     "inner_width_mm": 25,
+     "outer_width_mm": 29,
+     "depth_mm": 19.5,
+     "weight_g": 490,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 110,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "astm_class": 3,
+     "use": "cross-country",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/cross-country/x-432",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xrc-310-29",
+   "name": "DT Swiss XRC 310 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20,
+    "spokes_front": 28,
+    "spokes_rear": 28
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XRC 310",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 602,
+     "inner_width_mm": 30,
+     "outer_width_mm": 36,
+     "depth_mm": 20,
+     "weight_g": 373,
+     "tubeless": "hookless tubeless (TSS)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "material": "carbon",
+     "shape": "asymmetric",
+     "valve": "Presta",
+     "astm_class": 3,
+     "ebike_approved": true,
+     "use": "cross-country",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/cross-country/xrc-310",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-ex-471-26",
+   "name": "DT Swiss EX 471 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EX 471",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 537,
+     "inner_width_mm": 25,
+     "outer_width_mm": 30,
+     "depth_mm": 21,
+     "weight_g": 475,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "26\"",
+     "spoke_holes": [
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 559 mm for the 26\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 559 mm for the 26\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/ex-471",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-ex-471-650b",
+   "name": "DT Swiss EX 471 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EX 471",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 562,
+     "inner_width_mm": 25,
+     "outer_width_mm": 30,
+     "depth_mm": 21,
+     "weight_g": 500,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/ex-471",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-ex-471-700c",
+   "name": "DT Swiss EX 471 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EX 471",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 600,
+     "inner_width_mm": 25,
+     "outer_width_mm": 30,
+     "depth_mm": 21,
+     "weight_g": 530,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/ex-471",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-ex-511-650b",
+   "name": "DT Swiss EX 511 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EX 511",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 563,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 550,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/ex-511",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-ex-511-700c",
+   "name": "DT Swiss EX 511 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EX 511",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 601,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 590,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/ex-511",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-ex-441-650b",
+   "name": "DT Swiss EX 441 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EX 441",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 563,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 596,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 5,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/ex-441",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-ex-441-700c",
+   "name": "DT Swiss EX 441 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EX 441",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 601,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 634,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 5,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/ex-441",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-e-532-650b",
+   "name": "DT Swiss E 532 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "E 532",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 564,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 20,
+     "weight_g": 580,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "spoke_bore": "eyelet",
+     "valve": "Presta",
+     "astm_class": 4,
+     "use": "enduro / trail",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/e-532",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-e-532-700c",
+   "name": "DT Swiss E 532 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "E 532",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 602,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 20,
+     "weight_g": 615,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "spoke_bore": "eyelet",
+     "valve": "Presta",
+     "astm_class": 4,
+     "use": "enduro / trail",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/e-532",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-fr-541-650b",
+   "name": "DT Swiss FR 541 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "FR 541",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 565,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 570,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 140,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "astm_class": 5,
+     "use": "freeride / downhill",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/free-ride/fr-541",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-fr-541-700c",
+   "name": "DT Swiss FR 541 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "FR 541",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 603,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 605,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 140,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "astm_class": 5,
+     "use": "freeride / downhill",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/free-ride/fr-541",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-fr-560-26",
+   "name": "DT Swiss FR 560 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "FR 560",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 538,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 570,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 140,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "spoke_bore": "eyelet",
+     "valve": "Presta",
+     "astm_class": 5,
+     "use": "freeride / downhill",
+     "wheel_size": "26\"",
+     "spoke_holes": [
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 559 mm for the 26\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 559 mm for the 26\" wheel size named by the source (BSD not printed)"
+    },
+    "notes": "Manufacturer page states 27.5\" and 29\" versions exist but lists specifications only for the 26\" / 32 h model.",
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/free-ride/fr-560",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-gr-531-650b",
+   "name": "DT Swiss GR 531 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 25,
+    "rim_depth_rear": 25
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "GR 531",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 556,
+     "inner_width_mm": 24,
+     "outer_width_mm": 28,
+     "depth_mm": 25,
+     "weight_g": 500,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 2,
+     "use": "gravel",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/gravel/gr-531",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-gr-531-700c",
+   "name": "DT Swiss GR 531 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 25,
+    "rim_depth_rear": 25
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "GR 531",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 594,
+     "inner_width_mm": 24,
+     "outer_width_mm": 28,
+     "depth_mm": 25,
+     "weight_g": 535,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 2,
+     "use": "gravel",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/gravel/gr-531",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-g-540-650b",
+   "name": "DT Swiss G 540 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 25,
+    "rim_depth_rear": 25
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "G 540",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 554,
+     "inner_width_mm": 24,
+     "outer_width_mm": 28,
+     "depth_mm": 25,
+     "weight_g": 530,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "astm_class": 2,
+     "use": "gravel",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/gravel/g-540",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-g-540-700c",
+   "name": "DT Swiss G 540 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 25,
+    "rim_depth_rear": 25
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "G 540",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 592,
+     "inner_width_mm": 24,
+     "outer_width_mm": 28,
+     "depth_mm": 25,
+     "weight_g": 565,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "astm_class": 2,
+     "use": "gravel",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/gravel/g-540",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-hx-531-650b",
+   "name": "DT Swiss HX 531 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "HX 531",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 563,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g_28h": 570,
+     "weight_g_32h": 555,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 150,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "astm_class": 4,
+     "use": "e-MTB",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/hybrid-mtb/hx-531",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-hx-531-700c",
+   "name": "DT Swiss HX 531 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21,
+    "rim_depth_rear": 21
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "HX 531",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 601,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 21,
+     "weight_g": 610,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 150,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "astm_class": 4,
+     "use": "e-MTB",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/hybrid-mtb/hx-531",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-h-552-650b",
+   "name": "DT Swiss H 552 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "H 552",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 564,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 20,
+     "weight_g": 580,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 150,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "spoke_bore": "eyelet",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "e-MTB",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/hybrid-mtb/h-552",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-h-552-700c",
+   "name": "DT Swiss H 552 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "H 552",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 602,
+     "inner_width_mm": 30,
+     "outer_width_mm": 35,
+     "depth_mm": 20,
+     "weight_g": 615,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 150,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "spoke_bore": "eyelet",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "e-MTB",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/hybrid-mtb/h-552",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-535-26",
+   "name": "DT Swiss 535 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "535",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 540,
+     "inner_width_mm": 19,
+     "outer_width_mm": 24,
+     "depth_mm": 20,
+     "weight_g": 540,
+     "tubeless": "no (tube type, hooked)",
+     "brake": "rim",
+     "max_system_weight_kg": 140,
+     "rim_joint": "pinned",
+     "material": "aluminium",
+     "spoke_bore": "eyelet",
+     "valve": "Schrader (Presta adapter included)",
+     "astm_class": 2,
+     "ebike_approved": true,
+     "use": "trekking / touring",
+     "wheel_size": "26\"",
+     "spoke_holes": [
+      32,
+      36
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 559 mm for the 26\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 559 mm for the 26\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/trekking/535",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-535-700c",
+   "name": "DT Swiss 535 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "535",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 603,
+     "inner_width_mm": 19,
+     "outer_width_mm": 24,
+     "depth_mm": 20,
+     "weight_g": 600,
+     "tubeless": "no (tube type, hooked)",
+     "brake": "rim",
+     "max_system_weight_kg": 140,
+     "rim_joint": "pinned",
+     "material": "aluminium",
+     "spoke_bore": "eyelet",
+     "valve": "Schrader (Presta adapter included)",
+     "astm_class": 2,
+     "ebike_approved": true,
+     "use": "trekking / touring",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      32,
+      36
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/trekking/535",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-rr-481-700c-disc",
+   "name": "DT Swiss RR 481 700c disc",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 25,
+    "rim_depth_rear": 25
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "RR 481",
+    "variant": "700c disc",
+    "status": "current",
+    "specs": {
+     "erd_mm": 594,
+     "inner_width_mm": 22,
+     "outer_width_mm": 26,
+     "depth_mm": 25,
+     "weight_g": 485,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 2,
+     "ebike_approved": true,
+     "use": "all-road / gravel",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/cross-road/rr-481",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-r-500-700c-disc",
+   "name": "DT Swiss R 500 700c disc",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 23,
+    "rim_depth_rear": 23
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "R 500",
+    "variant": "700c disc",
+    "status": "current",
+    "specs": {
+     "erd_mm": 596,
+     "inner_width_mm": 22,
+     "outer_width_mm": 26,
+     "depth_mm": 23,
+     "weight_g": 495,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 2,
+     "ebike_approved": true,
+     "use": "all-road / gravel",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/cross-road/r-500",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-g-500-700c-disc",
+   "name": "DT Swiss G 500 700c disc",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 20,
+    "rim_depth_rear": 20
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "G 500",
+    "variant": "700c disc",
+    "status": "current",
+    "specs": {
+     "erd_mm": 602,
+     "inner_width_mm": 26,
+     "outer_width_mm": 30,
+     "depth_mm": 20,
+     "weight_g": 496,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 2,
+     "ebike_approved": true,
+     "use": "gravel",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/gravel/g-500",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-br-710-26",
+   "name": "DT Swiss BR 710 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 16,
+    "rim_depth_rear": 16,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "BR 710",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 549,
+     "inner_width_mm": 76,
+     "outer_width_mm": 81,
+     "depth_mm": 16,
+     "weight_g": 675,
+     "tubeless": "hooked, tube type in spec table (support FAQ describes DT fat wheels as tubeless-ready)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 3,
+     "ebike_approved": true,
+     "use": "fat bike",
+     "wheel_size": "26\"",
+     "spoke_holes": [
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 559 mm for the 26\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 559 mm for the 26\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/big-ride/br-710",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-a-510-700c-disc",
+   "name": "DT Swiss A 510 700c disc",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 30,
+    "rim_depth_rear": 30
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "A 510",
+    "variant": "700c disc",
+    "status": "current",
+    "specs": {
+     "erd_mm": 581,
+     "inner_width_mm": 20,
+     "outer_width_mm": 24,
+     "depth_mm": 30,
+     "weight_g": 540,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 110,
+     "rim_joint": "sleeve",
+     "material": "aluminium",
+     "valve": "Presta",
+     "astm_class": 1,
+     "use": "road aero / disc",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      24,
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-road/aero/a-510",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xmc-320-650b",
+   "name": "DT Swiss XMC 320 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 22,
+    "rim_depth_rear": 22,
+    "spokes_front": 28,
+    "spokes_rear": 28
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XMC 320",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 561,
+     "inner_width_mm": 30,
+     "outer_width_mm": 36.8,
+     "depth_mm": 22,
+     "weight_g": 434,
+     "tubeless": "hookless tubeless (TSS)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "material": "carbon",
+     "shape": "asymmetric",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "all-mountain / trail",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/all-mountain/xmc-320",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-xmc-320-700c",
+   "name": "DT Swiss XMC 320 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 22,
+    "rim_depth_rear": 22,
+    "spokes_front": 28,
+    "spokes_rear": 28
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "XMC 320",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 600,
+     "inner_width_mm": 30,
+     "outer_width_mm": 36.8,
+     "depth_mm": 22,
+     "weight_g": 470,
+     "tubeless": "hookless tubeless (TSS)",
+     "brake": "disc",
+     "max_system_weight_kg": 120,
+     "material": "carbon",
+     "shape": "asymmetric",
+     "valve": "Presta",
+     "astm_class": 4,
+     "ebike_approved": true,
+     "use": "all-mountain / trail",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/all-mountain/xmc-320",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-exc-330-650b",
+   "name": "DT Swiss EXC 330 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 22,
+    "rim_depth_rear": 22
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EXC 330",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 561,
+     "inner_width_mm": 30,
+     "outer_width_mm": 37.2,
+     "depth_mm": 22,
+     "weight_g_28h": 491,
+     "weight_g_32h": 493,
+     "tubeless": "hookless tubeless (TSS)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "material": "carbon",
+     "shape": "asymmetric",
+     "valve": "Presta",
+     "astm_class": 5,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/exc-330",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-exc-330-700c",
+   "name": "DT Swiss EXC 330 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 22,
+    "rim_depth_rear": 22
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "EXC 330",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 601,
+     "inner_width_mm": 30,
+     "outer_width_mm": 37.2,
+     "depth_mm": 22,
+     "weight_g_28h": 533,
+     "weight_g_32h": 534,
+     "tubeless": "hookless tubeless (TSS)",
+     "brake": "disc",
+     "max_system_weight_kg": 130,
+     "material": "carbon",
+     "shape": "asymmetric",
+     "valve": "Presta",
+     "astm_class": 5,
+     "ebike_approved": true,
+     "use": "enduro",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/enduro/exc-330",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-fr-571-650b",
+   "name": "DT Swiss FR 571 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 23,
+    "rim_depth_rear": 23,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "FR 571",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 561,
+     "inner_width_mm": 30,
+     "outer_width_mm": 36,
+     "depth_mm": 23,
+     "weight_g": 650,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 140,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "astm_class": 5,
+     "ebike_approved": true,
+     "use": "freeride / downhill",
+     "finishes": "black, silver",
+     "wheel_size": "650b / 27.5\"",
+     "spoke_holes": [
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 584 mm for the 650b / 27.5\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/free-ride/fr-571",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "dt-swiss-fr-571-700c",
+   "name": "DT Swiss FR 571 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 23,
+    "rim_depth_rear": 23,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "DT Swiss",
+    "model": "FR 571",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 599,
+     "inner_width_mm": 30,
+     "outer_width_mm": 36,
+     "depth_mm": 23,
+     "weight_g": 695,
+     "tubeless": "hooked tubeless-compatible (TC)",
+     "brake": "disc",
+     "max_system_weight_kg": 140,
+     "rim_joint": "welded",
+     "material": "aluminium",
+     "astm_class": 5,
+     "ebike_approved": true,
+     "use": "freeride / downhill",
+     "finishes": "black, silver",
+     "wheel_size": "700c / 29\"",
+     "spoke_holes": [
+      32
+     ]
+    },
+    "derived": {
+     "front_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)",
+     "rear_bsd": "ISO bead seat diameter 622 mm for the 700c / 29\" wheel size named by the source (BSD not printed)"
+    },
+    "sources": [
+     {
+      "url": "https://www.dtswiss.com/en/components/rims-mtb/free-ride/fr-571",
+      "publisher": "DT Swiss (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "h-plus-son-archetype-700c",
+   "name": "H Plus Son Archetype 700c",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 25,
+    "rim_depth_rear": 25
+   },
+   "meta": {
+    "brand": "H Plus Son",
+    "model": "Archetype",
+    "variant": "700c",
+    "status": "current",
+    "specs": {
+     "erd_mm": 595,
+     "inner_width_mm": 17.5,
+     "outer_width_mm": 23,
+     "depth_mm": 25,
+     "weight_g": 470,
+     "material": "G609 aluminium",
+     "rim_joint": "welded",
+     "brake": "rim (machined braking surface)",
+     "max_spoke_tension_kgf": 125,
+     "tire_type": "clincher",
+     "use": "road / fixed / touring",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      20,
+      28,
+      32,
+      36
+     ]
+    },
+    "notes": "BSD (700c) and hole counts from the retailer listing; manufacturer product page gives dimensions but no wheel size.",
+    "sources": [
+     {
+      "url": "https://www.hplusson.com/products",
+      "publisher": "H Plus Son (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://www.condorcycles.com/en-us/products/h-plus-son-archetype-rim",
+      "publisher": "Condor Cycles",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "h-plus-son-tb14-700c",
+   "name": "H Plus Son TB14 700c",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 14.1,
+    "rim_depth_rear": 14.1
+   },
+   "meta": {
+    "brand": "H Plus Son",
+    "model": "TB14",
+    "variant": "700c",
+    "status": "current",
+    "specs": {
+     "erd_mm": 610,
+     "inner_width_mm": 17.5,
+     "outer_width_mm": 23,
+     "depth_mm": 14.1,
+     "weight_g": 490,
+     "material": "G609 aluminium",
+     "rim_joint": "welded",
+     "brake": "rim (machined braking surface)",
+     "max_spoke_tension_kgf": 110,
+     "tire_type": "clincher (tube only per retailer)",
+     "valve": "Presta",
+     "use": "road / touring (box section)",
+     "bsd_mm": 622
+    },
+    "notes": "Manufacturer gives 17.5 mm internal width; Velomine lists 18 mm. ISO 622 from Velomine.",
+    "sources": [
+     {
+      "url": "https://www.hplusson.com/products",
+      "publisher": "H Plus Son (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://velomine.com/products/rim-h-son-700c-622x17-7-tb14-32-black-msw",
+      "publisher": "Velomine",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "h-plus-son-sl42-700c",
+   "name": "H Plus Son SL42 700c",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 42,
+    "rim_depth_rear": 42
+   },
+   "meta": {
+    "brand": "H Plus Son",
+    "model": "SL42",
+    "variant": "700c",
+    "status": "current",
+    "specs": {
+     "erd_mm": 557,
+     "inner_width_mm": 13.5,
+     "outer_width_mm": 19.5,
+     "depth_mm": 42,
+     "weight_g": 615,
+     "material": "G609 aluminium",
+     "rim_joint": "welded",
+     "brake": "rim (machined braking surface)",
+     "max_spoke_tension_kgf": 130,
+     "tire_type": "clincher (tube only per retailer)",
+     "valve": "Presta",
+     "use": "track / fixed / road (deep section)",
+     "bsd_mm": 622
+    },
+    "notes": "Manufacturer: 13.5 mm internal / 19.5 mm external; Velomine lists 14 / 20 mm. ISO 622 from Velomine.",
+    "sources": [
+     {
+      "url": "https://www.hplusson.com/products",
+      "publisher": "H Plus Son (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://velomine.com/products/rim-h-son-700c-622x13-6-sl42-32-black-msw",
+      "publisher": "Velomine",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "h-plus-son-formation-face-700c",
+   "name": "H Plus Son Formation Face 700c",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 42,
+    "rim_depth_rear": 42
+   },
+   "meta": {
+    "brand": "H Plus Son",
+    "model": "Formation Face",
+    "variant": "700c",
+    "status": "current",
+    "specs": {
+     "erd_mm": 557,
+     "inner_width_mm": 13.5,
+     "outer_width_mm": 20,
+     "depth_mm": 42,
+     "weight_g": 615,
+     "material": "G609 aluminium",
+     "rim_joint": "welded",
+     "brake": "none (no braking surface; not designed for brakes)",
+     "max_spoke_tension_kgf": 130,
+     "tire_type": "clincher (tube only per retailer)",
+     "use": "track / fixed",
+     "bsd_mm": 622
+    },
+    "notes": "Velomine lists 13 mm internal width and titles the product 'Disc Brake'; manufacturer says no braking surface. ISO 622 from Velomine.",
+    "sources": [
+     {
+      "url": "https://www.hplusson.com/products",
+      "publisher": "H Plus Son (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://velomine.com/products/rim-h-son-700c-622x13-formation-face-32-black-nmsw",
+      "publisher": "Velomine",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "h-plus-son-hydra-700c",
+   "name": "H Plus Son Hydra 700c",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 23,
+    "rim_depth_rear": 23
+   },
+   "meta": {
+    "brand": "H Plus Son",
+    "model": "Hydra",
+    "variant": "700c",
+    "status": "current",
+    "specs": {
+     "erd_mm": 591,
+     "inner_width_mm": 20.2,
+     "outer_width_mm": 25,
+     "depth_mm": 23,
+     "weight_g": 455,
+     "material": "G609 aluminium",
+     "rim_joint": "welded",
+     "brake": "disc",
+     "tubeless": "tubeless compatible",
+     "max_spoke_tension_kgf": 125,
+     "use": "road / gravel disc",
+     "bsd_mm": 622
+    },
+    "notes": "Manufacturer: 455 g, ERD 591 mm. Condor lists 440 g, ERD 589 mm (32 h). 700c size from Condor.",
+    "sources": [
+     {
+      "url": "https://www.hplusson.com/products",
+      "publisher": "H Plus Son (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://condorcycles.com/products/h-plus-son-hydra-disc-rim",
+      "publisher": "Condor Cycles",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-crest-mk4-24",
+   "name": "Stan's NoTubes Crest MK4 24\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 507,
+    "rear_bsd": 507,
+    "rim_depth_front": 18.0,
+    "rim_depth_rear": 18.0
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Crest MK4",
+    "variant": "24\"",
+    "status": "current",
+    "specs": {
+     "etrto": "507x25.0",
+     "erd_mm": 486,
+     "inner_width_mm": 25.0,
+     "outer_width_mm": 28.4,
+     "depth_mm": 18.0,
+     "weight_g": 323,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 115,
+     "max_pressure": "55 psi (40c), 46 psi (2.00\"), 39 psi (2.30\")",
+     "use": "cross-country / gravel",
+     "shape": "BST asymmetric, ERD quoted with 1.5 mm spoke offset",
+     "spoke_offset_mm": 1.5,
+     "valve": "Presta",
+     "bsd_mm": 507,
+     "spoke_holes": [
+      24,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/crest-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-crest-mk4-26",
+   "name": "Stan's NoTubes Crest MK4 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 18.0,
+    "rim_depth_rear": 18.0
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Crest MK4",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "etrto": "559x25.0",
+     "erd_mm": 538,
+     "inner_width_mm": 25.0,
+     "outer_width_mm": 28.4,
+     "depth_mm": 18.0,
+     "weight_g": 357,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 115,
+     "max_pressure": "55 psi (40c), 46 psi (2.00\"), 39 psi (2.30\")",
+     "use": "cross-country / gravel",
+     "shape": "BST asymmetric, ERD quoted with 1.5 mm spoke offset",
+     "spoke_offset_mm": 1.5,
+     "valve": "Presta",
+     "bsd_mm": 559,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/crest-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-crest-mk4-650b",
+   "name": "Stan's NoTubes Crest MK4 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 18.0,
+    "rim_depth_rear": 18.0
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Crest MK4",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "584x25.0",
+     "erd_mm": 563,
+     "inner_width_mm": 25.0,
+     "outer_width_mm": 28.4,
+     "depth_mm": 18.0,
+     "weight_g": 374,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 115,
+     "max_pressure": "55 psi (40c), 46 psi (2.00\"), 39 psi (2.30\")",
+     "use": "cross-country / gravel",
+     "shape": "BST asymmetric, ERD quoted with 1.5 mm spoke offset",
+     "spoke_offset_mm": 1.5,
+     "valve": "Presta",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/crest-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-crest-mk4-700c",
+   "name": "Stan's NoTubes Crest MK4 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 18.0,
+    "rim_depth_rear": 18.0
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Crest MK4",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x25.0",
+     "erd_mm": 601,
+     "inner_width_mm": 25.0,
+     "outer_width_mm": 28.4,
+     "depth_mm": 18.0,
+     "weight_g": 399,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 115,
+     "max_pressure": "55 psi (40c), 46 psi (2.00\"), 39 psi (2.30\")",
+     "use": "cross-country / gravel",
+     "shape": "BST asymmetric, ERD quoted with 1.5 mm spoke offset",
+     "spoke_offset_mm": 1.5,
+     "valve": "Presta",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/crest-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-arch-mk4-26",
+   "name": "Stan's NoTubes Arch MK4 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 18.9,
+    "rim_depth_rear": 18.9
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Arch MK4",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "etrto": "559x28.0",
+     "erd_mm": 536,
+     "inner_width_mm": 28.0,
+     "outer_width_mm": 31.4,
+     "depth_mm": 18.9,
+     "weight_g": 431,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "41 psi (2.20\"), 35 psi (2.50\")",
+     "use": "trail",
+     "shape": "BST asymmetric, ERD quoted with 2.5 mm spoke offset",
+     "spoke_offset_mm": 2.5,
+     "bsd_mm": 559,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/arch-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-arch-mk4-650b",
+   "name": "Stan's NoTubes Arch MK4 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 18.9,
+    "rim_depth_rear": 18.9
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Arch MK4",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "584x28.0",
+     "erd_mm": 561,
+     "inner_width_mm": 28.0,
+     "outer_width_mm": 31.4,
+     "depth_mm": 18.9,
+     "weight_g": 451,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "41 psi (2.20\"), 35 psi (2.50\")",
+     "use": "trail",
+     "shape": "BST asymmetric, ERD quoted with 2.5 mm spoke offset",
+     "spoke_offset_mm": 2.5,
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/arch-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-arch-mk4-700c",
+   "name": "Stan's NoTubes Arch MK4 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 18.9,
+    "rim_depth_rear": 18.9
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Arch MK4",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x28.0",
+     "erd_mm": 600,
+     "inner_width_mm": 28.0,
+     "outer_width_mm": 31.4,
+     "depth_mm": 18.9,
+     "weight_g": 481,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "41 psi (2.20\"), 35 psi (2.50\")",
+     "use": "trail",
+     "shape": "BST asymmetric, ERD quoted with 2.5 mm spoke offset",
+     "spoke_offset_mm": 2.5,
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/arch-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-flow-mk4-26",
+   "name": "Stan's NoTubes Flow MK4 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 18.9,
+    "rim_depth_rear": 18.9,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Flow MK4",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "etrto": "559x30.0",
+     "erd_mm": 536,
+     "inner_width_mm": 30.0,
+     "outer_width_mm": 33.6,
+     "depth_mm": 18.9,
+     "weight_g": 466,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "39 psi (2.30\"), 34 psi (2.60\")",
+     "use": "enduro / trail",
+     "shape": "BST asymmetric, ERD quoted with 3.0 mm spoke offset",
+     "spoke_offset_mm": 3.0,
+     "bsd_mm": 559,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/flow-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-flow-mk4-650b",
+   "name": "Stan's NoTubes Flow MK4 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 18.9,
+    "rim_depth_rear": 18.9
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Flow MK4",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "584x30.0",
+     "erd_mm": 561,
+     "inner_width_mm": 30.0,
+     "outer_width_mm": 33.6,
+     "depth_mm": 18.9,
+     "weight_g": 487,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "39 psi (2.30\"), 34 psi (2.60\")",
+     "use": "enduro / trail",
+     "shape": "BST asymmetric, ERD quoted with 3.0 mm spoke offset",
+     "spoke_offset_mm": 3.0,
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/flow-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-flow-mk4-700c",
+   "name": "Stan's NoTubes Flow MK4 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 18.9,
+    "rim_depth_rear": 18.9
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Flow MK4",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x30.0",
+     "erd_mm": 600,
+     "inner_width_mm": 30.0,
+     "outer_width_mm": 33.6,
+     "depth_mm": 18.9,
+     "weight_g": 521,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "39 psi (2.30\"), 34 psi (2.60\")",
+     "use": "enduro / trail",
+     "shape": "BST asymmetric, ERD quoted with 3.0 mm spoke offset",
+     "spoke_offset_mm": 3.0,
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/flow-mk4-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-crest-s2-700c",
+   "name": "Stan's NoTubes Crest S2 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 18.0,
+    "rim_depth_rear": 18.0,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Crest S2",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x25.0",
+     "erd_mm": 603,
+     "inner_width_mm": 25.0,
+     "outer_width_mm": 28.4,
+     "depth_mm": 18.0,
+     "weight_g": 475,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "62 psi (40c), 46 psi (2.00\"), 39 psi (2.30\")",
+     "use": "cross-country / gravel",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "notes": "Manufacturer page also lists a 27.5\" Crest S2 at 445 g but gives no ERD for it.",
+    "sources": [
+     {
+      "url": "https://stans.com/products/crest-s2-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-arch-s2-700c",
+   "name": "Stan's NoTubes Arch S2 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 18.1,
+    "rim_depth_rear": 18.1
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Arch S2",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x28.0",
+     "erd_mm": 603,
+     "inner_width_mm": 28.0,
+     "outer_width_mm": 31.7,
+     "depth_mm": 18.1,
+     "weight_g": 520,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "35 psi (2.20\"), 39 psi (2.50\") as printed",
+     "use": "trail",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "notes": "Max-pressure figures are reproduced as printed on the manufacturer page (higher value listed for the wider tire).",
+    "sources": [
+     {
+      "url": "https://stans.com/products/arch-s2-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-flow-s2-700c",
+   "name": "Stan's NoTubes Flow S2 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 18.2,
+    "rim_depth_rear": 18.2,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Flow S2",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x30.0",
+     "erd_mm": 603,
+     "inner_width_mm": 30.0,
+     "outer_width_mm": 34.0,
+     "depth_mm": 18.2,
+     "weight_g": 583,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 130,
+     "max_pressure": "39 psi (2.30\"), 34 psi (2.60\")",
+     "use": "enduro / trail",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "notes": "Manufacturer page lists a 27.5\" Flow S2 (ERD 564 mm) as coming soon, without a weight.",
+    "sources": [
+     {
+      "url": "https://stans.com/products/flow-s2-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-crest-d-650b",
+   "name": "Stan's NoTubes Crest D 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 17.5,
+    "rim_depth_rear": 17.5
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Crest D",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "584x23.0",
+     "erd_mm": 565,
+     "inner_width_mm": 23.0,
+     "outer_width_mm": 26.6,
+     "depth_mm": 17.5,
+     "weight_g": 458,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 125,
+     "max_pressure": "40 psi (2.0\"), 38 psi (2.3\")",
+     "use": "cross-country",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/crest-d-rims",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-crest-d-700c",
+   "name": "Stan's NoTubes Crest D 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 17.5,
+    "rim_depth_rear": 17.5
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Crest D",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x23.0",
+     "erd_mm": 604,
+     "inner_width_mm": 23.0,
+     "outer_width_mm": 26.6,
+     "depth_mm": 17.5,
+     "weight_g": 488,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 125,
+     "max_pressure": "40 psi (2.0\"), 38 psi (2.3\")",
+     "use": "cross-country",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/crest-d-rims",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-arch-d-650b",
+   "name": "Stan's NoTubes Arch D 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 17.5,
+    "rim_depth_rear": 17.5
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Arch D",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "584x26.0",
+     "erd_mm": 565,
+     "inner_width_mm": 26.0,
+     "outer_width_mm": 29.3,
+     "depth_mm": 17.5,
+     "weight_g": 524,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 125,
+     "max_pressure": "39 psi (2.2\"), 36 psi (2.5\")",
+     "use": "trail",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/arch-d-rims",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-arch-d-700c",
+   "name": "Stan's NoTubes Arch D 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 17.5,
+    "rim_depth_rear": 17.5
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Arch D",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x26.0",
+     "erd_mm": 604,
+     "inner_width_mm": 26.0,
+     "outer_width_mm": 29.3,
+     "depth_mm": 17.5,
+     "weight_g": 559,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 125,
+     "max_pressure": "39 psi (2.2\"), 36 psi (2.5\")",
+     "use": "trail",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/arch-d-rims",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-flow-d-650b",
+   "name": "Stan's NoTubes Flow D 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 17.5,
+    "rim_depth_rear": 17.5,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Flow D",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "584x29.0",
+     "erd_mm": 566,
+     "inner_width_mm": 29.0,
+     "outer_width_mm": 32.7,
+     "depth_mm": 17.5,
+     "weight_g": 594,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 125,
+     "max_pressure": "37 psi (2.4\"), 26 psi (2.8\")",
+     "use": "trail / enduro",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/flow-d-rims",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-flow-d-700c",
+   "name": "Stan's NoTubes Flow D 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 17.5,
+    "rim_depth_rear": 17.5,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Flow D",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x29.0",
+     "erd_mm": 604,
+     "inner_width_mm": 29.0,
+     "outer_width_mm": 32.7,
+     "depth_mm": 17.5,
+     "weight_g": 634,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6061 aluminium",
+     "max_spoke_tension_kgf": 125,
+     "max_pressure": "37 psi (2.4\"), 26 psi (2.8\")",
+     "use": "trail / enduro",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://stans.com/products/flow-d-rims",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-flow-ex3-650b",
+   "name": "Stan's NoTubes Flow EX3 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 17.9,
+    "rim_depth_rear": 17.9,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Flow EX3",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "584x29.0",
+     "erd_mm": 564,
+     "inner_width_mm": 29.0,
+     "outer_width_mm": 32.6,
+     "depth_mm": 17.9,
+     "weight_g": 580,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 125,
+     "max_pressure": "39 psi (2.3\"), 34 psi (2.6\")",
+     "use": "enduro / downhill",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "notes": "Listed as coming soon on the manufacturer page.",
+    "sources": [
+     {
+      "url": "https://stans.com/products/flow-ex3-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "stan-s-notubes-flow-ex3-700c",
+   "name": "Stan's NoTubes Flow EX3 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 17.9,
+    "rim_depth_rear": 17.9,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "Stan's NoTubes",
+    "model": "Flow EX3",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "622x29.0",
+     "erd_mm": 602,
+     "inner_width_mm": 29.0,
+     "outer_width_mm": 32.6,
+     "depth_mm": 17.9,
+     "weight_g": 618,
+     "tubeless": "tubeless (Bead Socket Technology)",
+     "brake": "disc only",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": 125,
+     "max_pressure": "39 psi (2.3\"), 34 psi (2.6\")",
+     "use": "enduro / downhill",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "notes": "Listed as coming soon on the manufacturer page.",
+    "sources": [
+     {
+      "url": "https://stans.com/products/flow-ex3-rim",
+      "publisher": "Stan's NoTubes (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-26",
+   "name": "Velocity A23 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 537,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 415,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "bsd_mm": 559,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-rim-26",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-650b",
+   "name": "Velocity A23 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 562,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 425,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "notes": "Velocity lists ERD 562 mm for the A23 650b but 560 mm for the A23 OC 650b.",
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-rim-650b",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-700c",
+   "name": "Velocity A23 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 601,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 450,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      18,
+      20,
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-rim-700c",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-406",
+   "name": "Velocity A23 20\" (406)",
+   "category": "rims",
+   "values": {
+    "front_bsd": 406,
+    "rear_bsd": 406,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23",
+    "variant": "20\" (406)",
+    "status": "current",
+    "specs": {
+     "erd_mm": 383,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 290,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "bsd_mm": 406,
+     "spoke_holes": [
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-rim-20-x-1-5",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-451",
+   "name": "Velocity A23 20\" (451)",
+   "category": "rims",
+   "values": {
+    "front_bsd": 451,
+    "rear_bsd": 451,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23",
+    "variant": "20\" (451)",
+    "status": "current",
+    "specs": {
+     "erd_mm": 428,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 325,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "bsd_mm": 451,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-rim-20-x-1-1-8",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-349",
+   "name": "Velocity A23 16\" (349)",
+   "category": "rims",
+   "values": {
+    "front_bsd": 349,
+    "rear_bsd": 349,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23",
+    "variant": "16\" (349)",
+    "status": "current",
+    "specs": {
+     "erd_mm": 329,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 250,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "bsd_mm": 349,
+     "spoke_holes": [
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-rim-16",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-oc-700c",
+   "name": "Velocity A23 OC 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23 OC",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 601,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 460,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "offset_spoke_bed": "off-centre (asymmetric) design; offset not stated",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-oc-rim-700c",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-oc-650b",
+   "name": "Velocity A23 OC 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23 OC",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 560,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 435,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "offset_spoke_bed": "off-centre (asymmetric) design; offset not stated",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-oc-rim-650b",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-quill-700c",
+   "name": "Velocity Quill 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 25.5,
+    "rim_depth_rear": 25.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Quill",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 589,
+     "inner_width_mm": 21.0,
+     "outer_width_mm": 24.5,
+     "depth_mm": 25.5,
+     "weight_g": 465,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "25–47",
+     "material": "6061-T6 aluminium",
+     "use": "road / gravel / touring (rim brake)",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      16,
+      18,
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "notes": "Spec list gives 21.0 mm internal width; the product description says 21.1 mm.",
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/quill-rim-700c",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-atlas-700c",
+   "name": "Velocity Atlas 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 18.0,
+    "rim_depth_rear": 18.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Atlas",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 605,
+     "inner_width_mm": 19.8,
+     "outer_width_mm": 25.4,
+     "depth_mm": 18.0,
+     "weight_g": 620,
+     "tire_type": "clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "28–45",
+     "material": "6063-T6 aluminium",
+     "use": "touring / tandem",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/atlas-rim-700c",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-a23-650c",
+   "name": "Velocity A23 650c",
+   "category": "rims",
+   "values": {
+    "front_bsd": 571,
+    "rear_bsd": 571,
+    "rim_depth_front": 19.5,
+    "rim_depth_rear": 19.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "A23",
+    "variant": "650c",
+    "status": "current",
+    "specs": {
+     "erd_mm": 550,
+     "inner_width_mm": 18.0,
+     "outer_width_mm": 23.0,
+     "depth_mm": 19.5,
+     "weight_g": 420,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "23–35",
+     "material": "6061-T6 aluminium",
+     "use": "road / randonneur",
+     "bsd_mm": 571,
+     "spoke_holes": [
+      16,
+      20,
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/a23-rim-650c",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-aileron-700c",
+   "name": "Velocity Aileron 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 28.0,
+    "rim_depth_rear": 28.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Aileron",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 584,
+     "inner_width_mm": 20.0,
+     "outer_width_mm": 25.0,
+     "depth_mm": 28.0,
+     "weight_g": 465,
+     "tire_type": "tubeless / clincher",
+     "brake": "disc",
+     "tire_width_range_mm": "25–47",
+     "material": "6061-T6 aluminium",
+     "use": "road / gravel / touring (disc)",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36,
+      40
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/aileron-rim-700c",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-aileron-650b",
+   "name": "Velocity Aileron 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 28.0,
+    "rim_depth_rear": 28.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Aileron",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 546,
+     "inner_width_mm": 20.0,
+     "outer_width_mm": 25.0,
+     "depth_mm": 28.0,
+     "weight_g": 450,
+     "tire_type": "tubeless / clincher",
+     "brake": "disc",
+     "tire_width_range_mm": "25–47",
+     "material": "6061-T6 aluminium",
+     "use": "road / gravel / touring (disc)",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/aileron-rim-650b",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-aileron-26",
+   "name": "Velocity Aileron 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 28.0,
+    "rim_depth_rear": 28.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Aileron",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 521,
+     "inner_width_mm": 20.0,
+     "outer_width_mm": 25.0,
+     "depth_mm": 28.0,
+     "weight_g": 405,
+     "tire_type": "tubeless / clincher",
+     "brake": "disc",
+     "tire_width_range_mm": "25–47",
+     "material": "6061-T6 aluminium",
+     "use": "road / gravel / touring (disc)",
+     "bsd_mm": 559,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/aileron-rim-26",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-quill-650b",
+   "name": "Velocity Quill 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 25.5,
+    "rim_depth_rear": 25.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Quill",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 551,
+     "inner_width_mm": 21.0,
+     "outer_width_mm": 24.5,
+     "depth_mm": 25.5,
+     "weight_g": 440,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "25–47",
+     "material": "6061-T6 aluminium",
+     "use": "road / gravel / touring (rim brake)",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36,
+      40
+     ]
+    },
+    "notes": "Spec list gives 21.0 mm internal width; the product description says 21.1 mm.",
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/quill-rim-650b",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-quill-26",
+   "name": "Velocity Quill 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 25.5,
+    "rim_depth_rear": 25.5
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Quill",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 527,
+     "inner_width_mm": 21.0,
+     "outer_width_mm": 24.5,
+     "depth_mm": 25.5,
+     "weight_g": 415,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "25–47",
+     "material": "6061-T6 aluminium",
+     "use": "road / gravel / touring (rim brake)",
+     "bsd_mm": 559,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32
+     ]
+    },
+    "notes": "Spec list gives 21.0 mm internal width; the product description says 21.1 mm.",
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/quill-rim-26",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-atlas-650b",
+   "name": "Velocity Atlas 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 18.0,
+    "rim_depth_rear": 18.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Atlas",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 569,
+     "inner_width_mm": 19.8,
+     "outer_width_mm": 25.4,
+     "depth_mm": 18.0,
+     "weight_g": 590,
+     "tire_type": "clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "28–45",
+     "material": "6063-T6 aluminium",
+     "use": "touring / tandem",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/atlas-rim-650b",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-atlas-26",
+   "name": "Velocity Atlas 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 18.0,
+    "rim_depth_rear": 18.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Atlas",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 543,
+     "inner_width_mm": 19.8,
+     "outer_width_mm": 25.4,
+     "depth_mm": 18.0,
+     "weight_g": 560,
+     "tire_type": "clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "28–45",
+     "material": "6063-T6 aluminium",
+     "use": "touring / tandem",
+     "bsd_mm": 559,
+     "spoke_holes": [
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/atlas-rim-26",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-blunt-ss-700c",
+   "name": "Velocity Blunt SS 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 20.0,
+    "rim_depth_rear": 20.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Blunt SS",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 597,
+     "inner_width_mm": 26.6,
+     "outer_width_mm": 30.0,
+     "depth_mm": 20.0,
+     "weight_g": 425,
+     "tire_type": "tubeless / clincher",
+     "brake": "disc",
+     "tire_width_range_mm": "45–65",
+     "material": "6061-T6 aluminium",
+     "use": "cross-country / gravel",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/blunt-ss-rim-29",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-blunt-ss-650b",
+   "name": "Velocity Blunt SS 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 20.0,
+    "rim_depth_rear": 20.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Blunt SS",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 559,
+     "inner_width_mm": 26.6,
+     "outer_width_mm": 30.0,
+     "depth_mm": 20.0,
+     "weight_g": 395,
+     "tire_type": "tubeless / clincher",
+     "brake": "disc",
+     "tire_width_range_mm": "45–65",
+     "material": "6061-T6 aluminium",
+     "use": "cross-country / gravel",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      24,
+      28,
+      32,
+      36
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/blunt-ss-rim-27-5",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-blunt-35-700c",
+   "name": "Velocity Blunt 35 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 22.0,
+    "rim_depth_rear": 22.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Blunt 35",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 597,
+     "inner_width_mm": 30.2,
+     "outer_width_mm": 35.0,
+     "depth_mm": 22.0,
+     "weight_g": 590,
+     "tire_type": "tubeless / clincher",
+     "brake": "disc",
+     "tire_width_range_mm": "50–70",
+     "material": "6061-T6 aluminium",
+     "use": "trail / bikepacking",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      24,
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/blunt-35-rim-29",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-blunt-35-650b",
+   "name": "Velocity Blunt 35 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 22.0,
+    "rim_depth_rear": 22.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Blunt 35",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 560,
+     "inner_width_mm": 30.2,
+     "outer_width_mm": 35.0,
+     "depth_mm": 22.0,
+     "weight_g": 555,
+     "tire_type": "tubeless / clincher",
+     "brake": "disc",
+     "tire_width_range_mm": "50–70",
+     "material": "6061-T6 aluminium",
+     "use": "trail / bikepacking",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/blunt-35-rim-27-5",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-blunt-35-26",
+   "name": "Velocity Blunt 35 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 22.0,
+    "rim_depth_rear": 22.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Blunt 35",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 535,
+     "inner_width_mm": 30.2,
+     "outer_width_mm": 35.0,
+     "depth_mm": 22.0,
+     "weight_g": 530,
+     "tire_type": "tubeless / clincher",
+     "brake": "disc",
+     "tire_width_range_mm": "50–70",
+     "material": "6061-T6 aluminium",
+     "use": "trail / bikepacking",
+     "bsd_mm": 559,
+     "spoke_holes": [
+      24,
+      28,
+      32,
+      36,
+      40
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/blunt-35-rim-26",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-cliffhanger-700c",
+   "name": "Velocity Cliffhanger 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 21.6,
+    "rim_depth_rear": 21.6
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Cliffhanger",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 598,
+     "inner_width_mm": 25.0,
+     "outer_width_mm": 30.0,
+     "depth_mm": 21.6,
+     "weight_g": 675,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "45–65",
+     "material": "6063-T6 aluminium",
+     "use": "touring / mountain (rim brake)",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/cliffhanger-rim-700c",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-cliffhanger-650b",
+   "name": "Velocity Cliffhanger 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 21.6,
+    "rim_depth_rear": 21.6
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Cliffhanger",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 560,
+     "inner_width_mm": 25.0,
+     "outer_width_mm": 30.0,
+     "depth_mm": 21.6,
+     "weight_g": 625,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "45–65",
+     "material": "6063-T6 aluminium",
+     "use": "touring / mountain (rim brake)",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/cliffhanger-rim-650b",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-cliffhanger-26",
+   "name": "Velocity Cliffhanger 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 21.6,
+    "rim_depth_rear": 21.6
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Cliffhanger",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 535,
+     "inner_width_mm": 25.0,
+     "outer_width_mm": 30.0,
+     "depth_mm": 21.6,
+     "weight_g": 600,
+     "tire_type": "tubeless / clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "45–65",
+     "material": "6063-T6 aluminium",
+     "use": "touring / mountain (rim brake)",
+     "bsd_mm": 559,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/cliffhanger-rim-26",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-dyad-700c",
+   "name": "Velocity Dyad 700c / 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "rim_depth_front": 22.0,
+    "rim_depth_rear": 22.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Dyad",
+    "variant": "700c / 29\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 597,
+     "inner_width_mm": 18.6,
+     "outer_width_mm": 24.0,
+     "depth_mm": 22.0,
+     "weight_g": 535,
+     "tire_type": "clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "25–38",
+     "material": "6063-T6 aluminium",
+     "use": "touring / tandem",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/dyad-rim-700c",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-dyad-650b",
+   "name": "Velocity Dyad 650b / 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "rim_depth_front": 22.0,
+    "rim_depth_rear": 22.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Dyad",
+    "variant": "650b / 27.5\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 559,
+     "inner_width_mm": 18.6,
+     "outer_width_mm": 24.0,
+     "depth_mm": 22.0,
+     "weight_g": 495,
+     "tire_type": "clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "25–38",
+     "material": "6063-T6 aluminium",
+     "use": "touring / tandem",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/dyad-rim-650b",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velocity-dyad-26",
+   "name": "Velocity Dyad 26\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 559,
+    "rear_bsd": 559,
+    "rim_depth_front": 22.0,
+    "rim_depth_rear": 22.0
+   },
+   "meta": {
+    "brand": "Velocity",
+    "model": "Dyad",
+    "variant": "26\"",
+    "status": "current",
+    "specs": {
+     "erd_mm": 535,
+     "inner_width_mm": 18.6,
+     "outer_width_mm": 24.0,
+     "depth_mm": 22.0,
+     "weight_g": 465,
+     "tire_type": "clincher",
+     "brake": "rim",
+     "tire_width_range_mm": "25–38",
+     "material": "6063-T6 aluminium",
+     "use": "touring / tandem",
+     "bsd_mm": 559,
+     "spoke_holes": [
+      20,
+      24,
+      28,
+      32,
+      36,
+      40,
+      48
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://velocityusa.com/products/dyad-rim-26",
+      "publisher": "Velocity USA (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-light-i25-27.5",
+   "name": "WTB KOM Light i25 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Light i25",
+    "variant": "27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "25-584",
+     "erd_mm": 566,
+     "inner_width_mm": 25,
+     "weight_g": 430,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "cross-country / gravel",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i25",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-light-i25-29",
+   "name": "WTB KOM Light i25 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Light i25",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "25-622",
+     "erd_mm": 606,
+     "inner_width_mm": 25,
+     "weight_g": 459,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "cross-country / gravel",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i25",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-light-i25-29-cvx",
+   "name": "WTB KOM Light i25 29\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Light i25",
+    "variant": "29\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "25-622",
+     "erd_mm": 603,
+     "inner_width_mm": 25,
+     "weight_g": 453,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "cross-country / gravel",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i25",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-light-i23-29",
+   "name": "WTB KOM Light i23 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Light i23",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "23-622",
+     "erd_mm": 606,
+     "inner_width_mm": 23,
+     "weight_g": 446,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "gravel / cross-country",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "notes": "A 32 h CVX version is listed with ERD and weight 'TBC'.",
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i23",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-light-i21-29",
+   "name": "WTB KOM Light i21 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Light i21",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "21-622",
+     "erd_mm": 605,
+     "inner_width_mm": 21,
+     "weight_g": 431,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "gravel / road",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i21",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-light-i30-27.5",
+   "name": "WTB KOM Light i30 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Light i30",
+    "variant": "27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "30-584",
+     "erd_mm": 568,
+     "inner_width_mm": 30,
+     "weight_g": 457,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "trail",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-light-i30-29",
+   "name": "WTB KOM Light i30 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Light i30",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "30-622",
+     "erd_mm": 606,
+     "inner_width_mm": 30,
+     "weight_g": 482,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "trail",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-light-i30-29-cvx",
+   "name": "WTB KOM Light i30 29\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Light i30",
+    "variant": "29\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "30-622",
+     "erd_mm": 603,
+     "inner_width_mm": 30,
+     "weight_g": 498,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "trail",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      28,
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-team-i30-32-cvx",
+   "name": "WTB KOM Team i30 32\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 686,
+    "rear_bsd": 686,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Team i30",
+    "variant": "32\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "30-686",
+     "erd_mm": 667,
+     "inner_width_mm": 30,
+     "weight_g": 519,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "trail (32-inch wheel)",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 686,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "notes": "Listed on the KOM Light i30 product page as a separate KOM Team model (part W120-7575).",
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-light-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i25-27.5",
+   "name": "WTB KOM Tough i25 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i25",
+    "variant": "27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "25-584",
+     "erd_mm": 567,
+     "inner_width_mm": 25,
+     "weight_g": 476,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "trail / enduro",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i25",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i25-29",
+   "name": "WTB KOM Tough i25 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i25",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "25-622",
+     "erd_mm": 605,
+     "inner_width_mm": 25,
+     "weight_g": 508,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "trail / enduro",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i25",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i25-29-cvx",
+   "name": "WTB KOM Tough i25 29\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i25",
+    "variant": "29\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "25-622",
+     "erd_mm": 603,
+     "inner_width_mm": 25,
+     "weight_g": 485,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "trail / enduro",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i25",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i30-27.5",
+   "name": "WTB KOM Tough i30 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i30",
+    "variant": "27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "30-584",
+     "erd_mm": 570,
+     "inner_width_mm": 30,
+     "weight_g": 531,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "enduro",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i30-29",
+   "name": "WTB KOM Tough i30 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i30",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "30-622",
+     "erd_mm": 605,
+     "inner_width_mm": 30,
+     "weight_g": 550,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "enduro",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i30-27.5-cvx",
+   "name": "WTB KOM Tough i30 27.5\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i30",
+    "variant": "27.5\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "30-584",
+     "erd_mm": 566,
+     "inner_width_mm": 30,
+     "weight_g": 490,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "enduro",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i35-27.5",
+   "name": "WTB KOM Tough i35 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i35",
+    "variant": "27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "35-584",
+     "erd_mm": 568,
+     "inner_width_mm": 35,
+     "weight_g": 594,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "enduro / plus",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i35",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i35-29",
+   "name": "WTB KOM Tough i35 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i35",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "35-622",
+     "erd_mm": 604,
+     "inner_width_mm": 35,
+     "weight_g": 610,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "enduro / plus",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i35",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i35-27.5-cvx",
+   "name": "WTB KOM Tough i35 27.5\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i35",
+    "variant": "27.5\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "35-584",
+     "erd_mm": 565,
+     "inner_width_mm": 35,
+     "weight_g": 542,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "enduro / plus",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i35",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i35-29-cvx",
+   "name": "WTB KOM Tough i35 29\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i35",
+    "variant": "29\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "35-622",
+     "erd_mm": 603,
+     "inner_width_mm": 35,
+     "weight_g": 577,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "enduro / plus",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i35",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i40-27.5",
+   "name": "WTB KOM Tough i40 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i40",
+    "variant": "27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "40-584",
+     "erd_mm": 568,
+     "inner_width_mm": 40,
+     "weight_g": 590,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "plus",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i40",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i40-29",
+   "name": "WTB KOM Tough i40 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i40",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "40-622",
+     "erd_mm": 606,
+     "inner_width_mm": 40,
+     "weight_g": 627,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "plus",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i40",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i40-27.5-cvx",
+   "name": "WTB KOM Tough i40 27.5\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i40",
+    "variant": "27.5\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "40-584",
+     "erd_mm": 565,
+     "inner_width_mm": 40,
+     "weight_g": 590,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "plus",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i40",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-kom-tough-i40-29-cvx",
+   "name": "WTB KOM Tough i40 29\" CVX",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "KOM Tough i40",
+    "variant": "29\" CVX",
+    "status": "current",
+    "specs": {
+     "etrto": "40-622",
+     "erd_mm": 603,
+     "inner_width_mm": 40,
+     "weight_g": 627,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "plus",
+     "spoke_bed": "CVX reinforcement",
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/kom-tough-i40",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-htz-i30-27.5",
+   "name": "WTB HTZ i30 27.5\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 584,
+    "rear_bsd": 584,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "HTZ i30",
+    "variant": "27.5\"",
+    "status": "current",
+    "specs": {
+     "etrto": "30-584",
+     "erd_mm": 569,
+     "inner_width_mm": 30,
+     "weight_g": 678,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "e-MTB / enduro / downhill",
+     "spoke_offset_mm": 6,
+     "bsd_mm": 584,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/htz-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wtb-htz-i30-29",
+   "name": "WTB HTZ i30 29\"",
+   "category": "rims",
+   "values": {
+    "front_bsd": 622,
+    "rear_bsd": 622,
+    "spokes_front": 32,
+    "spokes_rear": 32
+   },
+   "meta": {
+    "brand": "WTB",
+    "model": "HTZ i30",
+    "variant": "29\"",
+    "status": "current",
+    "specs": {
+     "etrto": "30-622",
+     "erd_mm": 605,
+     "inner_width_mm": 30,
+     "weight_g": 718,
+     "weight_note": "weighed with TCS Solid Strip installed",
+     "tubeless": "TCS 2.0 (tubeless)",
+     "material": "6069 aluminium",
+     "max_spoke_tension_kgf": "110–120",
+     "use": "e-MTB / enduro / downhill",
+     "spoke_offset_mm": 6,
+     "bsd_mm": 622,
+     "spoke_holes": [
+      32
+     ]
+    },
+    "sources": [
+     {
+      "url": "https://www.wtb.com/products/htz-i30",
+      "publisher": "WTB (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  }
+ ]
+}

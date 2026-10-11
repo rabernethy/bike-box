@@ -667,6 +667,8 @@ def solve(d: Design) -> Geometry:
         "seatpost_setback": setback, "seatpost_exposed": exposed, "seatpost_insertion": insertion,
         "toe_clearance": toe_clear, "toe_radius": cl_toe,
         "rear_tire_clearance": rear_tire_clear, "front_tire_clearance": front_tire_clear,
+        # exactly the quantity the "tire gap" rear-end mode drives (nominal seat tube OD)
+        "rear_tire_gap": abs(point_line_distance(rear_axle, P2, s2)) - Rr - st_od / 2,
         "pedal_clearance": pedal_clear, "lean_angle": lean,
         "crank_length": cl, "rear_wheel_dia": rear.diameter, "front_wheel_dia": front.diameter,
         "ss_length": tubes["ss"].chord if "ss" in tubes else 0.0,

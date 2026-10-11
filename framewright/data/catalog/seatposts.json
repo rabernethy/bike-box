@@ -1,0 +1,1731 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "category": "seatposts",
+ "label": "Seatposts & droppers",
+ "catalog": true,
+ "compiled": "2026-10-10",
+ "items": [
+  {
+   "id": "oneup-dropper-post-v2-30.9-x-90-mm",
+   "name": "OneUp Dropper Post V2 30.9 x 90 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 90
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "30.9 x 90 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "travel_mm": 90,
+     "weight_g": 334,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-30.9-x-120-mm",
+   "name": "OneUp Dropper Post V2 30.9 x 120 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 120
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "30.9 x 120 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "travel_mm": 120,
+     "weight_g": 379,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-30.9-x-150-mm",
+   "name": "OneUp Dropper Post V2 30.9 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "30.9 x 150 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "travel_mm": 150,
+     "weight_g": 430,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-30.9-x-180-mm",
+   "name": "OneUp Dropper Post V2 30.9 x 180 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 180
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "30.9 x 180 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "travel_mm": 180,
+     "weight_g": 475,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-30.9-x-210-mm",
+   "name": "OneUp Dropper Post V2 30.9 x 210 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 210
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "30.9 x 210 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "travel_mm": 210,
+     "weight_g": 544,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-30.9-x-240-mm",
+   "name": "OneUp Dropper Post V2 30.9 x 240 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 240
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "30.9 x 240 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "travel_mm": 240,
+     "weight_g": 595,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-31.6-x-90-mm",
+   "name": "OneUp Dropper Post V2 31.6 x 90 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_type": "dropper",
+    "dropper_travel": 90
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "31.6 x 90 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "travel_mm": 90,
+     "weight_g": 346,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-31.6-x-120-mm",
+   "name": "OneUp Dropper Post V2 31.6 x 120 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_type": "dropper",
+    "dropper_travel": 120
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "31.6 x 120 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "travel_mm": 120,
+     "weight_g": 395,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-31.6-x-150-mm",
+   "name": "OneUp Dropper Post V2 31.6 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "31.6 x 150 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "travel_mm": 150,
+     "weight_g": 446,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-31.6-x-180-mm",
+   "name": "OneUp Dropper Post V2 31.6 x 180 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_type": "dropper",
+    "dropper_travel": 180
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "31.6 x 180 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "travel_mm": 180,
+     "weight_g": 498,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-31.6-x-210-mm",
+   "name": "OneUp Dropper Post V2 31.6 x 210 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_type": "dropper",
+    "dropper_travel": 210
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "31.6 x 210 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "travel_mm": 210,
+     "weight_g": 572,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-31.6-x-240-mm",
+   "name": "OneUp Dropper Post V2 31.6 x 240 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_type": "dropper",
+    "dropper_travel": 240
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "31.6 x 240 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "travel_mm": 240,
+     "weight_g": 620,
+     "stack_height_mm": 30,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-34.9-x-90-mm",
+   "name": "OneUp Dropper Post V2 34.9 x 90 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 90
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "34.9 x 90 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "travel_mm": 90,
+     "weight_g": 406,
+     "stack_height_mm": 25,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-34.9-x-120-mm",
+   "name": "OneUp Dropper Post V2 34.9 x 120 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 120
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "34.9 x 120 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "travel_mm": 120,
+     "weight_g": 475,
+     "stack_height_mm": 25,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-34.9-x-150-mm",
+   "name": "OneUp Dropper Post V2 34.9 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "34.9 x 150 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "travel_mm": 150,
+     "weight_g": 543,
+     "stack_height_mm": 25,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-34.9-x-180-mm",
+   "name": "OneUp Dropper Post V2 34.9 x 180 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 180
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "34.9 x 180 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "travel_mm": 180,
+     "weight_g": 606,
+     "stack_height_mm": 25,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-34.9-x-210-mm",
+   "name": "OneUp Dropper Post V2 34.9 x 210 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 210
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "34.9 x 210 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "travel_mm": 210,
+     "weight_g": 694,
+     "stack_height_mm": 25,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-34.9-x-240-mm",
+   "name": "OneUp Dropper Post V2 34.9 x 240 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_type": "dropper",
+    "dropper_travel": 240
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "34.9 x 240 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "travel_mm": 240,
+     "weight_g": 762,
+     "stack_height_mm": 25,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-27.2-x-90-mm",
+   "name": "OneUp Dropper Post V2 27.2 x 90 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 27.2,
+    "seatpost_type": "dropper",
+    "dropper_travel": 90
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "27.2 x 90 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 27.2,
+     "travel_mm": 90,
+     "weight_g": 315,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "oneup-dropper-post-v2-27.2-x-120-mm",
+   "name": "OneUp Dropper Post V2 27.2 x 120 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 27.2,
+    "seatpost_type": "dropper",
+    "dropper_travel": 120
+   },
+   "meta": {
+    "brand": "OneUp",
+    "model": "Dropper Post V2",
+    "variant": "27.2 x 120 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 27.2,
+     "travel_mm": 120,
+     "weight_g": 354,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v2",
+      "publisher": "OneUp Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-30.9-x-125-mm",
+   "name": "PNW Components Loam Dropper Gen 2 30.9 x 125 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 382,
+    "seatpost_min_insertion": 90,
+    "seatpost_type": "dropper",
+    "dropper_travel": 125
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 30.9 x 125 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 382,
+     "min_insertion_mm": 90,
+     "travel_mm": 125,
+     "weight_g": 452,
+     "stack_height_mm": 156,
+     "full_insertion_mm": 226,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-30.9-x-150-mm",
+   "name": "PNW Components Loam Dropper Gen 2 30.9 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 435,
+    "seatpost_min_insertion": 120,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 30.9 x 150 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 435,
+     "min_insertion_mm": 120,
+     "travel_mm": 150,
+     "weight_g": 490,
+     "stack_height_mm": 181,
+     "full_insertion_mm": 254,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-30.9-x-175-mm",
+   "name": "PNW Components Loam Dropper Gen 2 30.9 x 175 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 485,
+    "seatpost_min_insertion": 120,
+    "seatpost_type": "dropper",
+    "dropper_travel": 175
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 30.9 x 175 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 485,
+     "min_insertion_mm": 120,
+     "travel_mm": 175,
+     "weight_g": 524,
+     "stack_height_mm": 206,
+     "full_insertion_mm": 279,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-30.9-x-200-mm",
+   "name": "PNW Components Loam Dropper Gen 2 30.9 x 200 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 537,
+    "seatpost_min_insertion": 150,
+    "seatpost_type": "dropper",
+    "dropper_travel": 200
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 30.9 x 200 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 537,
+     "min_insertion_mm": 150,
+     "travel_mm": 200,
+     "weight_g": 560,
+     "stack_height_mm": 231,
+     "full_insertion_mm": 306,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-30.9-x-225-mm",
+   "name": "PNW Components Loam Dropper Gen 2 30.9 x 225 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 600,
+    "seatpost_min_insertion": 190,
+    "seatpost_type": "dropper",
+    "dropper_travel": 225
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 30.9 x 225 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 600,
+     "min_insertion_mm": 190,
+     "travel_mm": 225,
+     "weight_g": 614,
+     "stack_height_mm": 256,
+     "full_insertion_mm": 344,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-31.6-x-125-mm",
+   "name": "PNW Components Loam Dropper Gen 2 31.6 x 125 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 382,
+    "seatpost_min_insertion": 90,
+    "seatpost_type": "dropper",
+    "dropper_travel": 125
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 31.6 x 125 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 382,
+     "min_insertion_mm": 90,
+     "travel_mm": 125,
+     "weight_g": 470,
+     "stack_height_mm": 156,
+     "full_insertion_mm": 226,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-31.6-x-150-mm",
+   "name": "PNW Components Loam Dropper Gen 2 31.6 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 435,
+    "seatpost_min_insertion": 120,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 31.6 x 150 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 435,
+     "min_insertion_mm": 120,
+     "travel_mm": 150,
+     "weight_g": 510,
+     "stack_height_mm": 181,
+     "full_insertion_mm": 254,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-31.6-x-175-mm",
+   "name": "PNW Components Loam Dropper Gen 2 31.6 x 175 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 485,
+    "seatpost_min_insertion": 120,
+    "seatpost_type": "dropper",
+    "dropper_travel": 175
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 31.6 x 175 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 485,
+     "min_insertion_mm": 120,
+     "travel_mm": 175,
+     "weight_g": 544,
+     "stack_height_mm": 206,
+     "full_insertion_mm": 279,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-31.6-x-200-mm",
+   "name": "PNW Components Loam Dropper Gen 2 31.6 x 200 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 537,
+    "seatpost_min_insertion": 150,
+    "seatpost_type": "dropper",
+    "dropper_travel": 200
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 31.6 x 200 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 537,
+     "min_insertion_mm": 150,
+     "travel_mm": 200,
+     "weight_g": 580,
+     "stack_height_mm": 231,
+     "full_insertion_mm": 306,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-31.6-x-225-mm",
+   "name": "PNW Components Loam Dropper Gen 2 31.6 x 225 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 600,
+    "seatpost_min_insertion": 190,
+    "seatpost_type": "dropper",
+    "dropper_travel": 225
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 31.6 x 225 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 600,
+     "min_insertion_mm": 190,
+     "travel_mm": 225,
+     "weight_g": 636,
+     "stack_height_mm": 256,
+     "full_insertion_mm": 344,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-34.9-x-125-mm",
+   "name": "PNW Components Loam Dropper Gen 2 34.9 x 125 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 382,
+    "seatpost_min_insertion": 90,
+    "seatpost_type": "dropper",
+    "dropper_travel": 125
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 34.9 x 125 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 382,
+     "min_insertion_mm": 90,
+     "travel_mm": 125,
+     "weight_g": 516,
+     "stack_height_mm": 156,
+     "full_insertion_mm": 226,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-34.9-x-150-mm",
+   "name": "PNW Components Loam Dropper Gen 2 34.9 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 435,
+    "seatpost_min_insertion": 120,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 34.9 x 150 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 435,
+     "min_insertion_mm": 120,
+     "travel_mm": 150,
+     "weight_g": 556,
+     "stack_height_mm": 181,
+     "full_insertion_mm": 254,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-34.9-x-175-mm",
+   "name": "PNW Components Loam Dropper Gen 2 34.9 x 175 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 485,
+    "seatpost_min_insertion": 120,
+    "seatpost_type": "dropper",
+    "dropper_travel": 175
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 34.9 x 175 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 485,
+     "min_insertion_mm": 120,
+     "travel_mm": 175,
+     "weight_g": 596,
+     "stack_height_mm": 206,
+     "full_insertion_mm": 279,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-34.9-x-200-mm",
+   "name": "PNW Components Loam Dropper Gen 2 34.9 x 200 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 537,
+    "seatpost_min_insertion": 150,
+    "seatpost_type": "dropper",
+    "dropper_travel": 200
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 34.9 x 200 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 537,
+     "min_insertion_mm": 150,
+     "travel_mm": 200,
+     "weight_g": 636,
+     "stack_height_mm": 231,
+     "full_insertion_mm": 306,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "pnw-components-loam-dropper-gen-2-34.9-x-225-mm",
+   "name": "PNW Components Loam Dropper Gen 2 34.9 x 225 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 600,
+    "seatpost_min_insertion": 190,
+    "seatpost_type": "dropper",
+    "dropper_travel": 225
+   },
+   "meta": {
+    "brand": "PNW Components",
+    "model": "Loam Dropper",
+    "variant": "Gen 2 34.9 x 225 mm",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 600,
+     "min_insertion_mm": 190,
+     "travel_mm": 225,
+     "weight_g": 700,
+     "stack_height_mm": 256,
+     "full_insertion_mm": 344,
+     "actuation": "cable"
+    },
+    "sources": [
+     {
+      "url": "https://www.pnwcomponents.com/products/loam-dropper-post",
+      "publisher": "PNW Components (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-30.9-x-100-mm",
+   "name": "RockShox Reverb AXS 30.9 x 100 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 340,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 100
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "30.9 x 100 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 340,
+     "min_insertion_mm": 80,
+     "travel_mm": 100,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 340,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-30.9-x-125-mm",
+   "name": "RockShox Reverb AXS 30.9 x 125 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 390,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 125
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "30.9 x 125 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 390,
+     "min_insertion_mm": 80,
+     "travel_mm": 125,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 390,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-30.9-x-150-mm",
+   "name": "RockShox Reverb AXS 30.9 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 440,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "30.9 x 150 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 440,
+     "min_insertion_mm": 80,
+     "travel_mm": 150,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 440,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-30.9-x-170-mm",
+   "name": "RockShox Reverb AXS 30.9 x 170 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 480,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 170
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "30.9 x 170 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 30.9,
+     "length_mm": 480,
+     "min_insertion_mm": 80,
+     "travel_mm": 170,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 480,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-31.6-x-100-mm",
+   "name": "RockShox Reverb AXS 31.6 x 100 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 340,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 100
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "31.6 x 100 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 340,
+     "min_insertion_mm": 80,
+     "travel_mm": 100,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 340,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-31.6-x-125-mm",
+   "name": "RockShox Reverb AXS 31.6 x 125 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 390,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 125
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "31.6 x 125 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 390,
+     "min_insertion_mm": 80,
+     "travel_mm": 125,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 390,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-31.6-x-150-mm",
+   "name": "RockShox Reverb AXS 31.6 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 440,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "31.6 x 150 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 440,
+     "min_insertion_mm": 80,
+     "travel_mm": 150,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 440,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-31.6-x-170-mm",
+   "name": "RockShox Reverb AXS 31.6 x 170 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 480,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 170
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "31.6 x 170 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 31.6,
+     "length_mm": 480,
+     "min_insertion_mm": 80,
+     "travel_mm": 170,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 480,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-34.9-x-100-mm",
+   "name": "RockShox Reverb AXS 34.9 x 100 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 340,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 100
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "34.9 x 100 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 340,
+     "min_insertion_mm": 80,
+     "travel_mm": 100,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 340,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-34.9-x-125-mm",
+   "name": "RockShox Reverb AXS 34.9 x 125 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 390,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 125
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "34.9 x 125 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 390,
+     "min_insertion_mm": 80,
+     "travel_mm": 125,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 390,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-34.9-x-150-mm",
+   "name": "RockShox Reverb AXS 34.9 x 150 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 440,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 150
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "34.9 x 150 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 440,
+     "min_insertion_mm": 80,
+     "travel_mm": 150,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 440,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  },
+  {
+   "id": "rockshox-reverb-axs-34.9-x-170-mm",
+   "name": "RockShox Reverb AXS 34.9 x 170 mm",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 480,
+    "seatpost_min_insertion": 80,
+    "seatpost_type": "dropper",
+    "dropper_travel": 170
+   },
+   "meta": {
+    "brand": "RockShox",
+    "model": "Reverb AXS",
+    "variant": "34.9 x 170 mm",
+    "years": "2019-",
+    "status": "current",
+    "specs": {
+     "diameter_mm": 34.9,
+     "length_mm": 480,
+     "min_insertion_mm": 80,
+     "travel_mm": 170,
+     "actuation": "wireless electronic (AXS)",
+     "total_length_mm": 480,
+     "diameters": "30.9 / 31.6 / 34.9"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/globalassets/document-hierarchy/frame-fit-specifications/rockshox/gen0000000006252-rev-a-reverb-axs-seatpost-specifications_french.pdf",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     },
+     {
+      "url": "https://www.sram.com/en/rockshox/models/sp-rvb-axs-b1",
+      "publisher": "SRAM/RockShox (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source",
+    "notes": "Total length and 80 mm minimum insertion from the 2020 RockShox Reverb AXS fitment sheet (Rev A); current B-series lengths may differ."
+   }
+  }
+ ]
+}

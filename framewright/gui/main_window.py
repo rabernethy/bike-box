@@ -237,6 +237,7 @@ class MainWindow(QtWidgets.QMainWindow):
         m.addAction("Fit advisor…", "Ctrl+Shift+F", self.fit_advisor)
         m.addAction("Miter templates…", "Ctrl+M", self.mitre_dialog)
         m.addAction("Auxiliary views (stays, crown, toe, lean)", self.show_aux)
+        m.addAction("Fix tire clearance…", self.fix_clearance)
         m.addAction("Analysis report…", "Ctrl+R", self.report_dialog)
         m.addAction("Gearing & chain/belt…", lambda: self.report_dialog("Gearing"))
         m.addAction("UCI check…", lambda: self.report_dialog("UCI"))
@@ -617,6 +618,11 @@ class MainWindow(QtWidgets.QMainWindow):
         if mod is None or self.doc() is None:
             return self._missing("Parts libraries")
         mod.LibraryDialog(self.doc(), self).exec()
+
+    def fix_clearance(self):
+        if self.doc():
+            from .clearance_dialog import FixClearanceDialog
+            FixClearanceDialog(self.doc(), self).exec()
 
     def show_aux(self):
         mod = _optional(".aux_dock")

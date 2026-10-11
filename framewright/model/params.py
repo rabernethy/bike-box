@@ -245,7 +245,7 @@ _frame = [
     _mm("reach", "Reach", G, "Front end", 390, 200, 700, vis=("front_h_mode", ("reach",))),
     _mm("front_center", "Front centre", G, "Front end", 600, 400, 1000, vis=("front_h_mode", ("front_center",))),
     _mm("top_tube_effective", "Effective top tube", G, "Front end", 560, 300, 900, vis=("front_h_mode", ("ett",))),
-    _mm("wheelbase", "Wheelbase", G, "Front end", 1010, 700, 1600, vis=("front_h_mode", ("wheelbase",))),
+    _mm("wheelbase", "Wheelbase", G, "Front end", 1010, 600, 3000, vis=("front_h_mode", ("wheelbase",))),
     _mm("bar_x", "Handlebar X (from BB)", G, "Front end", 480, 200, 900, vis=("front_h_mode", ("bar_x",)),
         help="Horizontal distance from the BB to the handlebar clamp centre"),
     # -- top & down tube ---------------------------------------------------------

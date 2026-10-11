@@ -1,0 +1,546 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "category": "saddles",
+ "label": "Saddles",
+ "catalog": true,
+ "compiled": "2026-10-10",
+ "items": [
+  {
+   "id": "brooks-b17-standard",
+   "name": "Brooks B17 Standard",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "B17",
+    "variant": "Standard",
+    "status": "current",
+    "specs": {
+     "length_mm": 275,
+     "width_mm": 175,
+     "weight_g": 520,
+     "rail_material": "black powder-coated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-b17-black-b211000a07202",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-b17-carved-short",
+   "name": "Brooks B17 Carved Short",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 242
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "B17 Carved Short",
+    "status": "current",
+    "specs": {
+     "length_mm": 242,
+     "width_mm": 176,
+     "weight_g": 460,
+     "rail_material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-b17-carved-short-black-b211dila07202",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-b17-special-titanium",
+   "name": "Brooks B17 Special Titanium",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "B17 Special Titanium",
+    "status": "current",
+    "specs": {
+     "length_mm": 275,
+     "width_mm": 175,
+     "weight_g": 410,
+     "rail_material": "titanium"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-b17-special-titanium-black-b211000a27202",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-b17-narrow-carved",
+   "name": "Brooks B17 Narrow Carved",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 279
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "B17 Narrow Carved",
+    "status": "current",
+    "specs": {
+     "length_mm": 279,
+     "width_mm": 151,
+     "weight_g": 510,
+     "rail_material": "copper-plated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-b17-narrow-carved-black-b214il0a07202",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-swift",
+   "name": "Brooks Swift",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 272
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Swift",
+    "status": "current",
+    "specs": {
+     "length_mm": 272,
+     "width_mm": 150,
+     "weight_g": 510,
+     "rail_material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-swift-honey-b360h00a17203",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-swallow",
+   "name": "Brooks Swallow",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 272
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Swallow",
+    "status": "current",
+    "specs": {
+     "length_mm": 272,
+     "width_mm": 150,
+     "weight_g": 510,
+     "rail_material": "copper-plated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-swallow-honey-b354000a17203",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-team-pro-special",
+   "name": "Brooks Team Pro Special",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Team Pro Special",
+    "status": "current",
+    "specs": {
+     "length_mm": 275,
+     "width_mm": 160,
+     "weight_g": 535,
+     "rail_material": "copper-plated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-team-pro-special-black-b232h00a07202",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-standard-professional",
+   "name": "Brooks Standard Professional",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Standard Professional",
+    "status": "current",
+    "specs": {
+     "length_mm": 275,
+     "width_mm": 160,
+     "weight_g": 510,
+     "rail_material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-standard-professional-black-b232h00b87202",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-flyer",
+   "name": "Brooks Flyer",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Flyer",
+    "status": "current",
+    "specs": {
+     "length_mm": 275,
+     "width_mm": 175,
+     "weight_g": 860,
+     "rail_material": "black powder-coated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-flyer-black-b396h00a07202",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-b66",
+   "name": "Brooks B66",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 260
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "B66",
+    "status": "current",
+    "specs": {
+     "length_mm": 260,
+     "width_mm": 205,
+     "weight_g": 1050,
+     "rail_material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-b66-brown-b281hs0a07205",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-b67-softened",
+   "name": "Brooks B67 Softened",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 260
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "B67",
+    "variant": "Softened",
+    "status": "current",
+    "specs": {
+     "length_mm": 260,
+     "width_mm": 205,
+     "weight_g": 850,
+     "rail_material": "black powder-coated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-b67-softened-dark-tan-b427hpla07210",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-b135",
+   "name": "Brooks B135",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 260
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "B135",
+    "status": "current",
+    "specs": {
+     "length_mm": 260,
+     "width_mm": 205,
+     "weight_g": 1050,
+     "rail_material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-leather-b135-black-b348s00a07202",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-cambium-c15",
+   "name": "Brooks Cambium C15",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 283
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Cambium C15",
+    "status": "current",
+    "specs": {
+     "length_mm": 283,
+     "width_mm": 140,
+     "weight_g": 450,
+     "rail_material": "black powder-coated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-cambium-c15-black-c150000056300",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-cambium-c17",
+   "name": "Brooks Cambium C17",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 283
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Cambium C17",
+    "status": "current",
+    "specs": {
+     "length_mm": 283,
+     "width_mm": 164,
+     "weight_g": 464,
+     "rail_material": "black powder-coated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-cambium-c17-mud-green-c170000060401",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-cambium-c17-carved",
+   "name": "Brooks Cambium C17 Carved",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 283
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Cambium C17 Carved",
+    "status": "current",
+    "specs": {
+     "length_mm": 283,
+     "width_mm": 164,
+     "weight_g": 446,
+     "rail_material": "black powder-coated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-cambium-c17-carved-black-c17c000036300",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-cambium-c19",
+   "name": "Brooks Cambium C19",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Cambium C19",
+    "status": "current",
+    "specs": {
+     "length_mm": 275,
+     "width_mm": 184,
+     "weight_g": 490,
+     "rail_material": "black powder-coated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-cambium-c19-black-c190000056300",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-cambium-c67",
+   "name": "Brooks Cambium C67",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 268
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Cambium C67",
+    "status": "current",
+    "specs": {
+     "length_mm": 268,
+     "width_mm": 200,
+     "weight_g": 485,
+     "rail_material": "black powder-coated steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-cambium-c67-black-c670000020010",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-cambium-c13-145",
+   "name": "Brooks Cambium C13 145",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Cambium C13",
+    "variant": "145",
+    "status": "current",
+    "specs": {
+     "length_mm": 275,
+     "width_mm": 145,
+     "weight_g": 295,
+     "rail_material": "carbon"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-cambium-c13-black-c130000026300",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "brooks-cambium-c13-carved-145",
+   "name": "Brooks Cambium C13 Carved 145",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275
+   },
+   "meta": {
+    "brand": "Brooks",
+    "model": "Cambium C13 Carved",
+    "variant": "145",
+    "status": "current",
+    "specs": {
+     "length_mm": 275,
+     "width_mm": 145,
+     "weight_g": 280,
+     "rail_material": "carbon"
+    },
+    "sources": [
+     {
+      "url": "https://www.brooksengland.com/en-us/products/saddles-cambium-c13-carved-black-c13c000026300",
+      "publisher": "Brooks England (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-10"
+     }
+    ],
+    "verified": "source"
+   }
+  }
+ ]
+}

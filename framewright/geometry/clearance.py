@@ -1192,6 +1192,21 @@ def clearance_details(g: Geometry, use_cache: bool = True) -> dict[str, Contact]
     return out
 
 
+def rear_clearances(g: Geometry) -> dict[str, float]:
+    """Just the chainstay-to-tire / chainring / crank gaps (fast path used by
+    the clearance fixer's search)."""
+    cs = stay_path(g, "cs")
+    if cs is None:
+        return {"cs_tire": NAN, "cs_chainring": NAN, "cs_crank": NAN}
+    rear = tire_model(g, "rear")
+    best = INF
+    bbc = drive_bb(g)
+    for ring in chainrings(g):
+        best = min(best, tube_contact(cs, lambda p, r=ring: _disc_sdf(p, r.z, r.r_out, r.half_t, bbc)).value)
+    return {"cs_tire": tube_contact(cs, rear.sdf).value, "cs_chainring": best,
+            "cs_crank": crank_contact(g, cs).value}
+
+
 def clearances(g: Geometry) -> dict[str, float]:
     """3-D clearances (mm), angles (deg) and stay fabrication numbers.
 

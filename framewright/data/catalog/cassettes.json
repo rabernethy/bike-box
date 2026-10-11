@@ -1,0 +1,3749 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "category": "cassettes",
+ "label": "Cassettes & cogs",
+ "catalog": true,
+ "compiled": "2026-10-11",
+ "items": [
+  {
+   "id": "shimano-dura-ace-cs-r9200-11-30",
+   "name": "Shimano Dura-Ace CS-R9200 11-30T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "12-speed 11-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R9200",
+     "speeds": 12,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 27, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG spline L2 (road 12-speed dedicated)",
+     "weight_g": 223,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+",
+     "titanium_cogs": "19-30T (11-30T), 19-34T (11-34T)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-dura-ace-cs-r9200-11-34",
+   "name": "Shimano Dura-Ace CS-R9200 11-34T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "12-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R9200",
+     "speeds": 12,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline L2 (road 12-speed dedicated)",
+     "weight_g": 253,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+",
+     "titanium_cogs": "19-30T (11-30T), 19-34T (11-34T)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-r8101-11-30",
+   "name": "Shimano Ultegra CS-R8101 11-30T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "12-speed 11-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R8101",
+     "speeds": 12,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 27, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG spline L2 (road 12-speed dedicated)",
+     "weight_g": 291,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-r8101-11-34",
+   "name": "Shimano Ultegra CS-R8101 11-34T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "12-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R8101",
+     "speeds": 12,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline L2 (road 12-speed dedicated)",
+     "weight_g": 345,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-105-cs-r7101-11-34",
+   "name": "Shimano 105 CS-R7101 11-34T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "12-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R7101",
+     "speeds": 12,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline L2 (road 12-speed dedicated)",
+     "weight_g": 361,
+     "compatible_chain": "HG 12-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg710-12-11-36",
+   "name": "Shimano CS-HG710-12 11-36T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG710-12",
+    "variant": "12-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG710-12",
+     "speeds": 12,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 28, 32, 36",
+     "range_t": "11-36",
+     "freehub": "Shimano HG spline L2 (road 12-speed dedicated)",
+     "weight_g": 391,
+     "compatible_chain": "HG 12-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-r8000-11-25",
+   "name": "Shimano Ultegra CS-R8000 11-25T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "11-speed 11-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R8000",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 17, 19, 21, 23, 25",
+     "range_t": "11-25",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 232,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-r8000-11-28",
+   "name": "Shimano Ultegra CS-R8000 11-28T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "11-speed 11-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R8000",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 251,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-r8000-11-30",
+   "name": "Shimano Ultegra CS-R8000 11-30T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "11-speed 11-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R8000",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 269,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-r8000-12-25",
+   "name": "Shimano Ultegra CS-R8000 12-25T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "11-speed 12-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R8000",
+     "speeds": 11,
+     "cogs_t": "12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25",
+     "range_t": "12-25",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 243,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-r8000-14-28",
+   "name": "Shimano Ultegra CS-R8000 14-28T",
+   "values": {
+    "cogs": "14, 15, 16, 17, 18, 19, 20, 21, 23, 25, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "11-speed 14-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R8000",
+     "speeds": 11,
+     "cogs_t": "14, 15, 16, 17, 18, 19, 20, 21, 23, 25, 28",
+     "range_t": "14-28",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 300,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-r8000-11-32",
+   "name": "Shimano Ultegra CS-R8000 11-32T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 16, 18, 20, 22, 25, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "11-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R8000",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 16, 18, 20, 22, 25, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 292,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg800-11-11-34",
+   "name": "Shimano CS-HG800-11 11-34T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 23, 25, 27, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG800-11",
+    "variant": "11-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG800-11",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 23, 25, 27, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 335,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-105-cs-r7000-11-28",
+   "name": "Shimano 105 CS-R7000 11-28T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "11-speed 11-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R7000",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 284,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-105-cs-r7000-11-30",
+   "name": "Shimano 105 CS-R7000 11-30T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "11-speed 11-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R7000",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 304,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-105-cs-r7000-11-32",
+   "name": "Shimano 105 CS-R7000 11-32T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 16, 18, 20, 22, 25, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "11-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R7000",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 16, 18, 20, 22, 25, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 320,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-105-cs-r7000-12-25",
+   "name": "Shimano 105 CS-R7000 12-25T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "11-speed 12-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-R7000",
+     "speeds": 11,
+     "cogs_t": "12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25",
+     "range_t": "12-25",
+     "freehub": "Shimano HG spline L (road 12/11-speed)",
+     "weight_g": 269,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg700-11-11-34",
+   "name": "Shimano CS-HG700-11 11-34T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 23, 25, 27, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG700-11",
+    "variant": "11-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG700-11",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 23, 25, 27, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 379,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG-EV"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-6700-11-25",
+   "name": "Shimano Ultegra CS-6700 11-25T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "10-speed 11-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-6700",
+     "speeds": 10,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25",
+     "range_t": "11-25",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 230,
+     "compatible_chain": "HG 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-6700-11-28",
+   "name": "Shimano Ultegra CS-6700 11-28T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "10-speed 11-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-6700",
+     "speeds": 10,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 242,
+     "compatible_chain": "HG 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-6700-12-25",
+   "name": "Shimano Ultegra CS-6700 12-25T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 16, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "10-speed 12-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-6700",
+     "speeds": 10,
+     "cogs_t": "12, 13, 14, 15, 16, 17, 19, 21, 23, 25",
+     "range_t": "12-25",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 238,
+     "compatible_chain": "HG 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-ultegra-cs-6700-12-30",
+   "name": "Shimano Ultegra CS-6700 12-30T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "10-speed 12-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-6700",
+     "speeds": 10,
+     "cogs_t": "12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+     "range_t": "12-30",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 275,
+     "compatible_chain": "HG 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg500-10-11-25",
+   "name": "Shimano CS-HG500-10 11-25T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG500-10",
+    "variant": "10-speed 11-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG500-10",
+     "speeds": 10,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25",
+     "range_t": "11-25",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG-X 10-speed, HG 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg500-10-12-28",
+   "name": "Shimano CS-HG500-10 12-28T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 17, 19, 21, 23, 25, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG500-10",
+    "variant": "10-speed 12-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG500-10",
+     "speeds": 10,
+     "cogs_t": "12, 13, 14, 15, 17, 19, 21, 23, 25, 28",
+     "range_t": "12-28",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG-X 10-speed, HG 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg500-10-11-32",
+   "name": "Shimano CS-HG500-10 11-32T",
+   "values": {
+    "cogs": "11, 12, 14, 16, 18, 20, 22, 25, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG500-10",
+    "variant": "10-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG500-10",
+     "speeds": 10,
+     "cogs_t": "11, 12, 14, 16, 18, 20, 22, 25, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG-X 10-speed, HG 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg500-10-11-34",
+   "name": "Shimano CS-HG500-10 11-34T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 23, 26, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG500-10",
+    "variant": "10-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG500-10",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 23, 26, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG-X 10-speed, HG 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-9-11-30",
+   "name": "Shimano CS-HG50-9 11-30T",
+   "values": {
+    "cogs": "11, 12, 14, 16, 18, 20, 23, 26, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-9",
+    "variant": "9-speed 11-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-9",
+     "speeds": 9,
+     "cogs_t": "11, 12, 14, 16, 18, 20, 23, 26, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-9-12-25",
+   "name": "Shimano CS-HG50-9 12-25T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-9",
+    "variant": "9-speed 12-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-9",
+     "speeds": 9,
+     "cogs_t": "12, 13, 14, 15, 17, 19, 21, 23, 25",
+     "range_t": "12-25",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-9-13-25",
+   "name": "Shimano CS-HG50-9 13-25T",
+   "values": {
+    "cogs": "13, 14, 15, 16, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-9",
+    "variant": "9-speed 13-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-9",
+     "speeds": 9,
+     "cogs_t": "13, 14, 15, 16, 17, 19, 21, 23, 25",
+     "range_t": "13-25",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-9-14-25",
+   "name": "Shimano CS-HG50-9 14-25T",
+   "values": {
+    "cogs": "14, 15, 16, 17, 18, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-9",
+    "variant": "9-speed 14-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-9",
+     "speeds": 9,
+     "cogs_t": "14, 15, 16, 17, 18, 19, 21, 23, 25",
+     "range_t": "14-25",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-xtr-cs-m9200-9-45",
+   "name": "Shimano XTR CS-M9200 9-45T",
+   "values": {
+    "cogs": "9, 11, 13, 15, 17, 19, 21, 24, 28, 33, 39, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "12-speed 9-45T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M9200",
+     "speeds": 12,
+     "cogs_t": "9, 11, 13, 15, 17, 19, 21, 24, 28, 33, 39, 45",
+     "range_t": "9-45",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 327,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+",
+     "titanium_cogs": "19-33T (9-45T), 21-33T (10-51T)"
+    },
+    "notes": "TL-LR021 lock-ring tool for 9-45T fits 12 mm E-THRU. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-xtr-cs-m9200-10-51",
+   "name": "Shimano XTR CS-M9200 10-51T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "12-speed 10-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M9200",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "10-51",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 369,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+",
+     "titanium_cogs": "19-33T (9-45T), 21-33T (10-51T)"
+    },
+    "notes": "TL-LR021 lock-ring tool for 9-45T fits 12 mm E-THRU. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-xtr-cs-m9101-10-45",
+   "name": "Shimano XTR CS-M9101 10-45T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 40, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "12-speed 10-45T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M9101",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 40, 45",
+     "range_t": "10-45",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 357,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-xtr-cs-m9101-10-51",
+   "name": "Shimano XTR CS-M9101 10-51T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "12-speed 10-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M9101",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "10-51",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 367,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m8200-9-45",
+   "name": "Shimano Deore XT CS-M8200 9-45T",
+   "values": {
+    "cogs": "9, 11, 13, 15, 17, 19, 21, 24, 28, 33, 39, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "12-speed 9-45T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M8200",
+     "speeds": 12,
+     "cogs_t": "9, 11, 13, 15, 17, 19, 21, 24, 28, 33, 39, 45",
+     "range_t": "9-45",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 426,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m8200-10-51",
+   "name": "Shimano Deore XT CS-M8200 10-51T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "12-speed 10-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M8200",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "10-51",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 463,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m8100-10-45",
+   "name": "Shimano Deore XT CS-M8100 10-45T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 40, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "12-speed 10-45T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M8100",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 40, 45",
+     "range_t": "10-45",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 461,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m8100-10-51",
+   "name": "Shimano Deore XT CS-M8100 10-51T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "12-speed 10-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M8100",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "10-51",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 470,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-cs-m7200-10-51",
+   "name": "Shimano Deore CS-M7200 10-51T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore",
+    "variant": "12-speed 10-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M7200",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "10-51",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 509,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-slx-cs-m7100-10-45",
+   "name": "Shimano SLX CS-M7100 10-45T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 40, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SLX",
+    "variant": "12-speed 10-45T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M7100",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 40, 45",
+     "range_t": "10-45",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 513,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-slx-cs-m7100-10-51",
+   "name": "Shimano SLX CS-M7100 10-51T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SLX",
+    "variant": "12-speed 10-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M7100",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "10-51",
+     "freehub": "Shimano MICRO SPLINE",
+     "weight_g": 534,
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-cs-m6200-10-51",
+   "name": "Shimano Deore CS-M6200 10-51T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore",
+    "variant": "12-speed 10-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M6200",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "10-51",
+     "freehub": "Shimano MICRO SPLINE",
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-cs-m6100-10-51",
+   "name": "Shimano Deore CS-M6100 10-51T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore",
+    "variant": "12-speed 10-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M6100",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "10-51",
+     "freehub": "Shimano MICRO SPLINE",
+     "compatible_chain": "HG 12-speed",
+     "type": "HYPERGLIDE+"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m8000-11-40",
+   "name": "Shimano Deore XT CS-M8000 11-40T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 27, 31, 35, 40",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "11-speed 11-40T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M8000",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 27, 31, 35, 40",
+     "range_t": "11-40",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 411,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG",
+     "aluminum_cogs": "largest cog(s) aluminium (40T/42T; 37T and 46T on 11-46T)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m8000-11-42",
+   "name": "Shimano Deore XT CS-M8000 11-42T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 42",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "11-speed 11-42T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M8000",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 42",
+     "range_t": "11-42",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 434,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG",
+     "aluminum_cogs": "largest cog(s) aluminium (40T/42T; 37T and 46T on 11-46T)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m8000-11-46",
+   "name": "Shimano Deore XT CS-M8000 11-46T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "11-speed 11-46T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M8000",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 46",
+     "range_t": "11-46",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 437,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG",
+     "aluminum_cogs": "largest cog(s) aluminium (40T/42T; 37T and 46T on 11-46T)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-cs-m5100-11-42",
+   "name": "Shimano Deore CS-M5100 11-42T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 42",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore",
+    "variant": "11-speed 11-42T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M5100",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 42",
+     "range_t": "11-42",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-cs-m5100-11-51",
+   "name": "Shimano Deore CS-M5100 11-51T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 33, 39, 45, 51",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore",
+    "variant": "11-speed 11-51T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M5100",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 33, 39, 45, 51",
+     "range_t": "11-51",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m771-10-11-32",
+   "name": "Shimano Deore XT CS-M771-10 11-32T",
+   "values": {
+    "cogs": "11, 12, 14, 16, 18, 20, 22, 25, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "10-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M771-10",
+     "speeds": 10,
+     "cogs_t": "11, 12, 14, 16, 18, 20, 22, 25, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 294,
+     "compatible_chain": "HG-X 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m771-10-11-34",
+   "name": "Shimano Deore XT CS-M771-10 11-34T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 23, 26, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "10-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M771-10",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 23, 26, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 323,
+     "compatible_chain": "HG-X 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-xt-cs-m771-10-11-36",
+   "name": "Shimano Deore XT CS-M771-10 11-36T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "10-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M771-10",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+     "range_t": "11-36",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 343,
+     "compatible_chain": "HG-X 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-cs-m4100-11-42",
+   "name": "Shimano Deore CS-M4100 11-42T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 32, 37, 42",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore",
+    "variant": "10-speed 11-42T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M4100",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 32, 37, 42",
+     "range_t": "11-42",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG-X 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-deore-cs-m4100-11-46",
+   "name": "Shimano Deore CS-M4100 11-46T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 32, 37, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore",
+    "variant": "10-speed 11-46T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-M4100",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 32, 37, 46",
+     "range_t": "11-46",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG-X 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-10-11-36",
+   "name": "Shimano CS-HG50-10 11-36T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-10",
+    "variant": "10-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-10",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+     "range_t": "11-36",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG-X 10-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg201-9-11-32",
+   "name": "Shimano CS-HG201-9 11-32T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG201-9",
+    "variant": "9-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG201-9",
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg201-9-11-34",
+   "name": "Shimano CS-HG201-9 11-34T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG201-9",
+    "variant": "9-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG201-9",
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg201-9-11-36",
+   "name": "Shimano CS-HG201-9 11-36T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG201-9",
+    "variant": "9-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG201-9",
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 36",
+     "range_t": "11-36",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg700-11-11-45",
+   "name": "Shimano CS-LG700-11 11-45T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 34, 39, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG700-11",
+    "variant": "11-speed 11-45T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG700-11",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 34, 39, 45",
+     "range_t": "11-45",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg700-11-11-50",
+   "name": "Shimano CS-LG700-11 11-50T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 36, 43, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG700-11",
+    "variant": "11-speed 11-50T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG700-11",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 36, 43, 50",
+     "range_t": "11-50",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "weight_g": 609,
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg400-11-11-45",
+   "name": "Shimano CS-LG400-11 11-45T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 34, 39, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG400-11",
+    "variant": "11-speed 11-45T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG400-11",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 34, 39, 45",
+     "range_t": "11-45",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg400-11-11-50",
+   "name": "Shimano CS-LG400-11 11-50T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 36, 43, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG400-11",
+    "variant": "11-speed 11-50T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG400-11",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 36, 43, 50",
+     "range_t": "11-50",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg400-10-11-39",
+   "name": "Shimano CS-LG400-10 11-39T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 34, 39",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG400-10",
+    "variant": "10-speed 11-39T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG400-10",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 34, 39",
+     "range_t": "11-39",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg400-10-11-43",
+   "name": "Shimano CS-LG400-10 11-43T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 36, 43",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG400-10",
+    "variant": "10-speed 11-43T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG400-10",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 36, 43",
+     "range_t": "11-43",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg400-10-11-48",
+   "name": "Shimano CS-LG400-10 11-48T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 28, 34, 41, 48",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG400-10",
+    "variant": "10-speed 11-48T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG400-10",
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 28, 34, 41, 48",
+     "range_t": "11-48",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg400-9-11-36",
+   "name": "Shimano CS-LG400-9 11-36T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG400-9",
+    "variant": "9-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG400-9",
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 36",
+     "range_t": "11-36",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg400-9-11-41",
+   "name": "Shimano CS-LG400-9 11-41T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 28, 34, 41",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG400-9",
+    "variant": "9-speed 11-41T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG400-9",
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 28, 34, 41",
+     "range_t": "11-41",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-lg400-9-11-46",
+   "name": "Shimano CS-LG400-9 11-46T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 28, 36, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-LG400-9",
+    "variant": "9-speed 11-46T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-LG400-9",
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 28, 36, 46",
+     "range_t": "11-46",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "LINKGLIDE"
+    },
+    "notes": "Follow Shimano compatibility chart. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-rs400-11-11-36",
+   "name": "Shimano CS-RS400-11 11-36T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 23, 25, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-RS400-11",
+    "variant": "11-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-RS400-11",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 23, 25, 28, 32, 36",
+     "range_t": "11-36",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "LINKGLIDE, HG 11-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-25",
+   "name": "Shimano CS-HG400-9 11-25T",
+   "values": {
+    "cogs": "11, 12, 13, 15, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-9",
+    "variant": "9-speed 11-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-9",
+     "speeds": 9,
+     "cogs_t": "11, 12, 13, 15, 17, 19, 21, 23, 25",
+     "range_t": "11-25",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-28",
+   "name": "Shimano CS-HG400-9 11-28T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 16, 18, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-9",
+    "variant": "9-speed 11-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-9",
+     "speeds": 9,
+     "cogs_t": "11, 12, 13, 14, 16, 18, 21, 24, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-32",
+   "name": "Shimano CS-HG400-9 11-32T",
+   "values": {
+    "cogs": "11, 12, 14, 16, 18, 21, 24, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-9",
+    "variant": "9-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-9",
+     "speeds": 9,
+     "cogs_t": "11, 12, 14, 16, 18, 21, 24, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-34",
+   "name": "Shimano CS-HG400-9 11-34T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-9",
+    "variant": "9-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-9",
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-9-11-36",
+   "name": "Shimano CS-HG400-9 11-36T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-9",
+    "variant": "9-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-9",
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30, 36",
+     "range_t": "11-36",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-9-12-36",
+   "name": "Shimano CS-HG400-9 12-36T",
+   "values": {
+    "cogs": "12, 14, 16, 18, 21, 24, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-9",
+    "variant": "9-speed 12-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-9",
+     "speeds": 9,
+     "cogs_t": "12, 14, 16, 18, 21, 24, 28, 32, 36",
+     "range_t": "12-36",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 9-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg51-8-11-28",
+   "name": "Shimano CS-HG51-8 11-28T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG51-8",
+    "variant": "8-speed 11-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG51-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg51-8-11-30",
+   "name": "Shimano CS-HG51-8 11-30T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG51-8",
+    "variant": "8-speed 11-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG51-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg51-8-11-32",
+   "name": "Shimano CS-HG51-8 11-32T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG51-8",
+    "variant": "8-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG51-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-8-11-28",
+   "name": "Shimano CS-HG50-8 11-28T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-8",
+    "variant": "8-speed 11-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-8-11-30",
+   "name": "Shimano CS-HG50-8 11-30T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-8",
+    "variant": "8-speed 11-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-8-11-32",
+   "name": "Shimano CS-HG50-8 11-32T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-8",
+    "variant": "8-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-8-11-34",
+   "name": "Shimano CS-HG50-8 11-34T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-8",
+    "variant": "8-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-8-12-23",
+   "name": "Shimano CS-HG50-8 12-23T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 17, 19, 21, 23",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-8",
+    "variant": "8-speed 12-23T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-8",
+     "speeds": 8,
+     "cogs_t": "12, 13, 14, 15, 17, 19, 21, 23",
+     "range_t": "12-23",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-8-12-25",
+   "name": "Shimano CS-HG50-8 12-25T",
+   "values": {
+    "cogs": "12, 13, 15, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-8",
+    "variant": "8-speed 12-25T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-8",
+     "speeds": 8,
+     "cogs_t": "12, 13, 15, 17, 19, 21, 23, 25",
+     "range_t": "12-25",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg50-8-13-26",
+   "name": "Shimano CS-HG50-8 13-26T",
+   "values": {
+    "cogs": "13, 14, 15, 17, 19, 21, 23, 26",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG50-8",
+    "variant": "8-speed 13-26T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG50-8",
+     "speeds": 8,
+     "cogs_t": "13, 14, 15, 17, 19, 21, 23, 26",
+     "range_t": "13-26",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-8-11-40",
+   "name": "Shimano CS-HG400-8 11-40T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 22, 27, 33, 40",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-8",
+    "variant": "8-speed 11-40T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 18, 22, 27, 33, 40",
+     "range_t": "11-40",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-8-11-45",
+   "name": "Shimano CS-HG400-8 11-45T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 22, 27, 35, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-8",
+    "variant": "8-speed 11-45T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 18, 22, 27, 35, 45",
+     "range_t": "11-45",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg41-8-11-30",
+   "name": "Shimano CS-HG41-8 11-30T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG41-8",
+    "variant": "8-speed 11-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG41-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg41-8-11-32",
+   "name": "Shimano CS-HG41-8 11-32T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG41-8",
+    "variant": "8-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG41-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 32",
+     "range_t": "11-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg41-8-11-34",
+   "name": "Shimano CS-HG41-8 11-34T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG41-8",
+    "variant": "8-speed 11-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG41-8",
+     "speeds": 8,
+     "cogs_t": "11, 13, 15, 17, 20, 23, 26, 34",
+     "range_t": "11-34",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg200-8-12-32",
+   "name": "Shimano CS-HG200-8 12-32T",
+   "values": {
+    "cogs": "12, 14, 16, 18, 21, 24, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG200-8",
+    "variant": "8-speed 12-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG200-8",
+     "speeds": 8,
+     "cogs_t": "12, 14, 16, 18, 21, 24, 28, 32",
+     "range_t": "12-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg400-7-11-28",
+   "name": "Shimano CS-HG400-7 11-28T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG400-7",
+    "variant": "7-speed 11-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG400-7",
+     "speeds": 7,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg20-7-12-28",
+   "name": "Shimano CS-HG20-7 12-28T",
+   "values": {
+    "cogs": "12, 14, 16, 18, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG20-7",
+    "variant": "7-speed 12-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG20-7",
+     "speeds": 7,
+     "cogs_t": "12, 14, 16, 18, 21, 24, 28",
+     "range_t": "12-28",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-cs-hg210-7-12-32",
+   "name": "Shimano CS-HG210-7 12-32T",
+   "values": {
+    "cogs": "12, 14, 16, 18, 21, 26, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "CS-HG210-7",
+    "variant": "7-speed 12-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-HG210-7",
+     "speeds": 7,
+     "cogs_t": "12, 14, 16, 18, 21, 26, 32",
+     "range_t": "12-32",
+     "freehub": "Shimano HG spline M (10/9/8-speed, MTB 11-speed, 7-speed)",
+     "compatible_chain": "IG, HG 8/7/6-speed",
+     "type": "HG"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-mf-tz500-7-14-28",
+   "name": "Shimano MF-TZ500-7 14-28T",
+   "values": {
+    "cogs": "14, 16, 18, 20, 22, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "MF-TZ500-7",
+    "variant": "7-speed 14-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "MF-TZ500-7",
+     "speeds": 7,
+     "cogs_t": "14, 16, 18, 20, 22, 24, 28",
+     "range_t": "14-28",
+     "freehub": "multiple freewheel (thread-on)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG/UG"
+    },
+    "notes": "Available with or without spoke protector. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-mf-tz500-7-14-34",
+   "name": "Shimano MF-TZ500-7 14-34T",
+   "values": {
+    "cogs": "14, 16, 18, 20, 22, 24, 34",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "MF-TZ500-7",
+    "variant": "7-speed 14-34T",
+    "status": "current",
+    "specs": {
+     "model_code": "MF-TZ500-7",
+     "speeds": 7,
+     "cogs_t": "14, 16, 18, 20, 22, 24, 34",
+     "range_t": "14-34",
+     "freehub": "multiple freewheel (thread-on)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG/UG"
+    },
+    "notes": "Available with or without spoke protector. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-mf-tz500-6-14-28",
+   "name": "Shimano MF-TZ500-6 14-28T",
+   "values": {
+    "cogs": "14, 16, 18, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "MF-TZ500-6",
+    "variant": "6-speed 14-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "MF-TZ500-6",
+     "speeds": 6,
+     "cogs_t": "14, 16, 18, 21, 24, 28",
+     "range_t": "14-28",
+     "freehub": "multiple freewheel (thread-on)",
+     "compatible_chain": "HG 8/7/6-speed",
+     "type": "HG/UG"
+    },
+    "notes": "Available with or without spoke protector. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-alfine-cs-s500-18",
+   "name": "Shimano Alfine CS-S500 18T sprocket",
+   "values": {
+    "cogs": "18",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Alfine",
+    "variant": "18T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-S500",
+     "speeds": 1,
+     "cogs_t": "18",
+     "range_t": "18-18",
+     "thickness_mm": 2.0,
+     "compatible_chain": "Super Narrow HG 9-speed"
+    },
+    "notes": "Available with or without chain guard. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-alfine-cs-s500-20",
+   "name": "Shimano Alfine CS-S500 20T sprocket",
+   "values": {
+    "cogs": "20",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Alfine",
+    "variant": "20T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-S500",
+     "speeds": 1,
+     "cogs_t": "20",
+     "range_t": "20-20",
+     "thickness_mm": 2.0,
+     "compatible_chain": "Super Narrow HG 9-speed"
+    },
+    "notes": "Available with or without chain guard. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-cs-c7000-24",
+   "name": "Shimano Nexus CS-C7000 24T sprocket",
+   "values": {
+    "cogs": "24",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "24T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-C7000",
+     "speeds": 1,
+     "cogs_t": "24",
+     "range_t": "24-24",
+     "thickness_mm": 2.3,
+     "compatible_chain": "HG 8-speed (1/2 x 3/32 in)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-cs-c7000-27",
+   "name": "Shimano Nexus CS-C7000 27T sprocket",
+   "values": {
+    "cogs": "27",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "27T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-C7000",
+     "speeds": 1,
+     "cogs_t": "27",
+     "range_t": "27-27",
+     "thickness_mm": 2.3,
+     "compatible_chain": "HG 8-speed (1/2 x 3/32 in)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-cs-c7000-30",
+   "name": "Shimano Nexus CS-C7000 30T sprocket",
+   "values": {
+    "cogs": "30",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-C7000",
+     "speeds": 1,
+     "cogs_t": "30",
+     "range_t": "30-30",
+     "thickness_mm": 2.3,
+     "compatible_chain": "HG 8-speed (1/2 x 3/32 in)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-sm-gear-16",
+   "name": "Shimano Nexus SM-GEAR 16T sprocket",
+   "values": {
+    "cogs": "16",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "16T",
+    "status": "current",
+    "specs": {
+     "model_code": "SM-GEAR",
+     "speeds": 1,
+     "cogs_t": "16",
+     "range_t": "16-16",
+     "thickness_mm": "2.3 or 3.0",
+     "compatible_chain": "HG 8-speed (2.3 mm) or 1/2 x 1/8 in (3.0 mm)"
+    },
+    "notes": "14T only in 3.0 mm; 19T and 23T only in 2.3 mm. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-sm-gear-18",
+   "name": "Shimano Nexus SM-GEAR 18T sprocket",
+   "values": {
+    "cogs": "18",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "18T",
+    "status": "current",
+    "specs": {
+     "model_code": "SM-GEAR",
+     "speeds": 1,
+     "cogs_t": "18",
+     "range_t": "18-18",
+     "thickness_mm": "2.3 or 3.0",
+     "compatible_chain": "HG 8-speed (2.3 mm) or 1/2 x 1/8 in (3.0 mm)"
+    },
+    "notes": "14T only in 3.0 mm; 19T and 23T only in 2.3 mm. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-sm-gear-20",
+   "name": "Shimano Nexus SM-GEAR 20T sprocket",
+   "values": {
+    "cogs": "20",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "20T",
+    "status": "current",
+    "specs": {
+     "model_code": "SM-GEAR",
+     "speeds": 1,
+     "cogs_t": "20",
+     "range_t": "20-20",
+     "thickness_mm": "2.3 or 3.0",
+     "compatible_chain": "HG 8-speed (2.3 mm) or 1/2 x 1/8 in (3.0 mm)"
+    },
+    "notes": "14T only in 3.0 mm; 19T and 23T only in 2.3 mm. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-sm-gear-21",
+   "name": "Shimano Nexus SM-GEAR 21T sprocket",
+   "values": {
+    "cogs": "21",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "21T",
+    "status": "current",
+    "specs": {
+     "model_code": "SM-GEAR",
+     "speeds": 1,
+     "cogs_t": "21",
+     "range_t": "21-21",
+     "thickness_mm": "2.3 or 3.0",
+     "compatible_chain": "HG 8-speed (2.3 mm) or 1/2 x 1/8 in (3.0 mm)"
+    },
+    "notes": "14T only in 3.0 mm; 19T and 23T only in 2.3 mm. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-sm-gear-22",
+   "name": "Shimano Nexus SM-GEAR 22T sprocket",
+   "values": {
+    "cogs": "22",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "22T",
+    "status": "current",
+    "specs": {
+     "model_code": "SM-GEAR",
+     "speeds": 1,
+     "cogs_t": "22",
+     "range_t": "22-22",
+     "thickness_mm": "2.3 or 3.0",
+     "compatible_chain": "HG 8-speed (2.3 mm) or 1/2 x 1/8 in (3.0 mm)"
+    },
+    "notes": "14T only in 3.0 mm; 19T and 23T only in 2.3 mm. Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-sm-gear-19",
+   "name": "Shimano Nexus SM-GEAR 19T sprocket",
+   "values": {
+    "cogs": "19",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "19T",
+    "status": "current",
+    "specs": {
+     "model_code": "SM-GEAR",
+     "speeds": 1,
+     "cogs_t": "19",
+     "range_t": "19-19",
+     "thickness_mm": 2.3,
+     "compatible_chain": "HG 8-speed (1/2 x 3/32 in)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-sm-gear-23",
+   "name": "Shimano Nexus SM-GEAR 23T sprocket",
+   "values": {
+    "cogs": "23",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "23T",
+    "status": "current",
+    "specs": {
+     "model_code": "SM-GEAR",
+     "speeds": 1,
+     "cogs_t": "23",
+     "range_t": "23-23",
+     "thickness_mm": 2.3,
+     "compatible_chain": "HG 8-speed (1/2 x 3/32 in)"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-nexus-sm-gear-14",
+   "name": "Shimano Nexus SM-GEAR 14T sprocket",
+   "values": {
+    "cogs": "14",
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Nexus",
+    "variant": "14T",
+    "status": "current",
+    "specs": {
+     "model_code": "SM-GEAR",
+     "speeds": 1,
+     "cogs_t": "14",
+     "range_t": "14-14",
+     "thickness_mm": 3.0,
+     "compatible_chain": "1/2 x 1/8 in"
+    },
+    "notes": "Listed in Shimano's current specifications document (Ver. 2.8, Oct 2026).",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
+      "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  }
+ ]
+}
