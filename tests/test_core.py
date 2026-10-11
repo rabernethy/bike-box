@@ -257,3 +257,23 @@ def test_tall_bike_rider_pedals_at_upper_bb(design):
     pose = solve_pose(g)
     assert pose.joints["pedal"].dist(g.p["pedal"]) < 1e-6
     assert 130 < pose.angles["knee_extension_bdc"] < 160
+
+
+def test_bcad_import_synthetic(tmp_path):
+    from framewright.export.bcad_import import load_bcad
+    entries = {"Head angle": 73.0, "Seat angle": 73.5, "Head tube length textfield": 145.0, "FORK0L": 375.0,
+               "FORK0R": 45.0, "Fork type": 0, "Lower stack height": 12.0, "BSD rear": 622.0, "BSD front": 622.0,
+               "Wheel diameter rear": 674.0, "Wheel diameter front": 674.0, "Wheel width rear": 23.0,
+               "Wheel width front": 23.0, "BB measure style": 0, "BB textfield": 70.0, "CS measure style": 0,
+               "CS textfield": 405.0, "Top tube front center measure style": 1, "FCD textfield": 595.0,
+               "ST measure style": 0, "Seat tube length": 466.0, "Seat tube extension2": 49.2,
+               "Head tube upper extension2": 28.9, "Head tube lower extension2": 49.2, "Saddle height": 718.0}
+    entries.update({f"pad{i}": 0 for i in range(20)})
+    xml = ('<?xml version="1.0" encoding="UTF-8"?><properties>'
+           + "".join(f'<entry key="{k}">{v}</entry>' for k, v in entries.items()) + "</properties>")
+    p = tmp_path / "x.bcad"
+    p.write_text(xml)
+    g = solve(load_bcad(p))
+    assert close(g.v["stack"], 565.6, 0.05)            # BikeCAD stored 565.6 for this geometry
+    assert close(g.v["reach"], 392.3, 0.05)            # same design saved in stack/reach mode stores 392.3
+    assert close(g.v["seat_tube_cc"], 466.0) and close(g.v["st_extension"], 49.2)

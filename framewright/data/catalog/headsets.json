@@ -7,6 +7,439 @@
  "compiled": "2026-10-11",
  "items": [
   {
+   "id": "acros-headset-top-zs44-28.6",
+   "name": "Acros Headset ZS44/28.6 top assembly",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 8,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Acros",
+    "model": "Headset",
+    "variant": "top assembly ZS44/28.6",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS44/28.6",
+     "position": "top",
+     "upper_stack_mm": 8,
+     "weight_g": 43,
+     "bearings": "stainless steel angular contact, double sealed",
+     "upper_insert_depth_mm": 7.7
+    },
+    "notes": "Sold as a separate top or bottom assembly; combine with the matching other half.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/ZS44-28-6-Headset-Top-Assembly-p80891/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "acros-headset-top-ec34-28.6",
+   "name": "Acros Headset EC34/28.6 top assembly",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 16.3,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Acros",
+    "model": "Headset",
+    "variant": "top assembly EC34/28.6",
+    "status": "unknown",
+    "specs": {
+     "shis": "EC34/28.6",
+     "position": "top",
+     "upper_stack_mm": 16.3,
+     "weight_g": 48,
+     "bearings": "stainless steel angular contact, double sealed"
+    },
+    "notes": "Sold as a separate top or bottom assembly; combine with the matching other half.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/EC34-28-6-Headset-Top-Assembly-p80889/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "acros-headset-top-zs49-28.6",
+   "name": "Acros Headset ZS49/28.6 top assembly",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 8.5,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Acros",
+    "model": "Headset",
+    "variant": "top assembly ZS49/28.6",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS49/28.6",
+     "position": "top",
+     "upper_stack_mm": 8.5,
+     "bearings": "stainless steel angular contact, double sealed"
+    },
+    "notes": "Sold as a separate top or bottom assembly; combine with the matching other half.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/ZS49-28-6-Headset-Top-Assembly-p82119/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "acros-headset-top-is42-28.6",
+   "name": "Acros Headset IS42/28.6 top assembly",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 13,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Acros",
+    "model": "Headset",
+    "variant": "top assembly IS42/28.6",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS42/28.6",
+     "position": "top",
+     "upper_stack_mm": 13,
+     "weight_g": 50,
+     "bearings": "stainless steel angular contact, double sealed"
+    },
+    "notes": "Sold as a separate top or bottom assembly; combine with the matching other half.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/IS42-28-6-Headset-Top-Assembly-p80642/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "acros-headset-bottom-ec44-40",
+   "name": "Acros Headset EC44/40 bottom assembly",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12.8
+   },
+   "meta": {
+    "brand": "Acros",
+    "model": "Headset",
+    "variant": "bottom assembly EC44/40",
+    "status": "unknown",
+    "specs": {
+     "shis": "EC44/40",
+     "position": "bottom",
+     "lower_stack_mm": 12.8,
+     "weight_g": 62,
+     "bearings": "stainless steel angular contact, double sealed",
+     "crown_race_mm": 40
+    },
+    "notes": "Sold as a separate top or bottom assembly; combine with the matching other half.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/EC44-40-Headset-Bottom-Assembly-p82111/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "acros-headset-bottom-zs44-30",
+   "name": "Acros Headset ZS44/30 bottom assembly",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 5.4
+   },
+   "meta": {
+    "brand": "Acros",
+    "model": "Headset",
+    "variant": "bottom assembly ZS44/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS44/30",
+     "position": "bottom",
+     "lower_stack_mm": 5.4,
+     "weight_g": 39,
+     "bearings": "stainless steel angular contact, double sealed",
+     "crown_race_mm": 30
+    },
+    "notes": "Sold as a separate top or bottom assembly; combine with the matching other half.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/ZS44-30-Headset-Bottom-Assembly-p80646/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "acros-ai-42-bottom-is42-30",
+   "name": "Acros Ai-42 IS42/30 bottom assembly",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 1.1
+   },
+   "meta": {
+    "brand": "Acros",
+    "model": "Ai-42",
+    "variant": "bottom assembly IS42/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS42/30",
+     "position": "bottom",
+     "lower_stack_mm": 1.1,
+     "weight_g": 22,
+     "bearings": "stainless steel angular contact cartridge",
+     "crown_race": "flat and high races included"
+    },
+    "notes": "Sold as a separate top or bottom assembly; combine with the matching other half.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/Ai-42-IS42-30-Headset-Bottom-Assembly-p34880/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "acros-ai-41-bottom-is41-30",
+   "name": "Acros Ai-41 IS41/30 bottom assembly",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 1.1
+   },
+   "meta": {
+    "brand": "Acros",
+    "model": "Ai-41",
+    "variant": "bottom assembly IS41/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS41/30",
+     "position": "bottom",
+     "lower_stack_mm": 1.1,
+     "weight_g": 22,
+     "bearings": "stainless steel angular contact cartridge"
+    },
+    "notes": "Sold as a separate top or bottom assembly; combine with the matching other half.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/Ai-41-IS41-30-Headset-Bottom-Assembly-p34878/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "acros-headset-bottom-is47-33",
+   "name": "Acros Headset IS47/33 bottom assembly",
+   "category": "headsets",
+   "values": {},
+   "meta": {
+    "brand": "Acros",
+    "model": "Headset",
+    "variant": "bottom assembly IS47/33",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS47/33",
+     "position": "bottom",
+     "weight_g": 35,
+     "bearings": "stainless steel angular contact, double sealed",
+     "lower_stack_range_mm": "0-3.25",
+     "bearing_depth_mm": 6.95
+    },
+    "notes": "Lower stack published as a 0-3.25 mm range, so lower_stack is not set.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Acros/IS47-33-Headset-Bottom-Assembly-p92250/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ritchey-comp-logic-ec34-28.6-ec34-30",
+   "name": "Ritchey Comp Logic (EC34/28.6|EC34/30)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Ritchey",
+    "model": "Comp Logic",
+    "variant": "EC34/28.6|EC34/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "EC34/28.6|EC34/30",
+     "weight_g": 160,
+     "total_stack_mm": 30.2,
+     "bearings": "semi-cartridge"
+    },
+    "notes": "Upper/lower stack heights not published in the fetched source, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Ritchey/Comp-Logic-EC34-28-6-EC34-30-Headset-p28868/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ritchey-comp-press-fit-zs44-28.6-zs44-30",
+   "name": "Ritchey Comp Press-Fit (ZS44/28.6|ZS44/30)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Ritchey",
+    "model": "Comp Press-Fit",
+    "variant": "ZS44/28.6|ZS44/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS44/28.6|ZS44/30",
+     "weight_g": 135,
+     "top_cap_mm": 4.2,
+     "bearings": "semi-cartridge (loose balls), 45°"
+    },
+    "notes": "Upper/lower stack heights not published in the fetched source, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Ritchey/Comp-Press-Fit-ZS44-28-6-ZS44-30-headset-p28887/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ritchey-comp-taper-press-fit-zs44-28.6-zs55-40",
+   "name": "Ritchey Comp Taper Press-Fit (ZS44/28.6|ZS55/40)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Ritchey",
+    "model": "Comp Taper Press-Fit",
+    "variant": "ZS44/28.6|ZS55/40",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS44/28.6|ZS55/40",
+     "weight_g": 155,
+     "top_cap_mm": 4.2,
+     "bearings": "semi-cartridge (loose balls), 45°"
+    },
+    "notes": "Upper/lower stack heights not published in the fetched source, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Ritchey/Comp-Taper-ZS44-28-6-ZS55-40-Press-Fit-Headset-p38913/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ritchey-comp-taper-drop-in-is42-28.6-is52-40",
+   "name": "Ritchey Comp Taper Drop-in (IS42/28.6|IS52/40)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Ritchey",
+    "model": "Comp Taper Drop-in",
+    "variant": "IS42/28.6|IS52/40",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS42/28.6|IS52/40",
+     "weight_g": 150,
+     "bearings": "semi-cartridge (loose balls)"
+    },
+    "notes": "Upper/lower stack heights not published in the fetched source, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Ritchey/Comp-Taper-IS42-28-6-IS52-40-Drop-in-Headset-p38916/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ritchey-comp-drop-in-is42-28.6-is42-30",
+   "name": "Ritchey Comp Drop-in (IS42/28.6|IS42/30)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Ritchey",
+    "model": "Comp Drop-in",
+    "variant": "IS42/28.6|IS42/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS42/28.6|IS42/30",
+     "weight_g": 130,
+     "bearings": "semi-cartridge (loose balls)"
+    },
+    "notes": "Upper/lower stack heights not published in the fetched source, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Ritchey/Comp-IS42-28-6-IS42-30-Drop-in-Headset-p38915/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
    "id": "cane-creek-fifty-ec34-28.6-ec34-30",
    "name": "Cane Creek Fifty (EC34/28.6|EC34/30)",
    "category": "headsets",
@@ -2352,6 +2785,648 @@
    }
   },
   {
+   "id": "fsa-no.1-i-e-zs49-28.6-ec49-40",
+   "name": "FSA No.1 (I/E) (ZS49/28.6|EC49/40)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 11.7,
+    "upper_stack": 7.1,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "No.1 (I/E)",
+    "variant": "ZS49/28.6|EC49/40",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS49/28.6|EC49/40",
+     "steerer": "1-1/8\" to 1.5\" tapered",
+     "upper_stack_mm": 7.1,
+     "lower_stack_mm": 11.7,
+     "weight_g": 151,
+     "total_stack_mm": 18.8,
+     "bearing_upper": "36°/45° ACB",
+     "bearing_lower": "loose balls 7/32\" x20"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/1-I-E-ZS49-28-6-EC49-40-Headset-p35296/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-orbit-i-is41-28.6-is41-30",
+   "name": "FSA Orbit I (IS41/28.6|IS41/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 1,
+    "upper_stack": 15.9,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Orbit I",
+    "variant": "IS41/28.6|IS41/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS41/28.6|IS41/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 15.9,
+     "lower_stack_mm": 1,
+     "weight_g": 62,
+     "total_stack_mm": 16.9,
+     "headtube_id_mm": 41.2,
+     "headtube_od_mm": 45,
+     "bearings": "36°/45° ACB"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/Orbit-I-IS41-28-6-IS41-30-Headset-p35311/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-orbit-uf-ec34-28.6-ec34-30",
+   "name": "FSA Orbit UF (EC34/28.6|EC34/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 13.4,
+    "upper_stack": 15.3,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Orbit UF",
+    "variant": "EC34/28.6|EC34/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "EC34/28.6|EC34/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 15.3,
+     "lower_stack_mm": 13.4,
+     "weight_g": 101,
+     "total_stack_mm": 28.7,
+     "bearing_upper": "loose balls 5/32\" x20",
+     "bearing_lower": "36°/36° ACB"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/Orbit-UF-EC34-28-6-EC34-30-Headset-p35297/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-orbit-ce-is42-28.6-is42-30",
+   "name": "FSA Orbit CE (IS42/28.6|IS42/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 0.5,
+    "upper_stack": 8.3,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Orbit CE",
+    "variant": "IS42/28.6|IS42/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS42/28.6|IS42/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 8.3,
+     "lower_stack_mm": 0.5,
+     "weight_g": 74,
+     "total_stack_mm": 8.8,
+     "upper_stack_alt_mm": "15.5 with 15 mm top cap (total 16)",
+     "headtube_id_mm": 42,
+     "headtube_od_mm": 46,
+     "bearings": "45°/45° ACB"
+    },
+    "notes": "Values use the 8 mm top cap; a 15 mm cap gives 15.5 mm upper stack.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/Orbit-CE-IS42-28-6-IS42-30-Headset-p35303/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-no.42-48cf-acb-is42-28.6-is52-40",
+   "name": "FSA No.42/48CF/ACB (IS42/28.6|IS52/40)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 0.9,
+    "upper_stack": 15.5,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "No.42/48CF/ACB",
+    "variant": "IS42/28.6|IS52/40",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS42/28.6|IS52/40",
+     "steerer": "1-1/8\" to 1.5\" tapered",
+     "upper_stack_mm": 15.5,
+     "lower_stack_mm": 0.9,
+     "weight_g": 91,
+     "total_stack_mm": 16.4,
+     "headtube_id_upper_mm": 42,
+     "headtube_id_lower_mm": 52,
+     "bearing_upper": "45°/45° ACB",
+     "bearing_lower": "36°/45° ACB",
+     "top_cover": "UD carbon"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/No-42-48CF-ACB-IS42-28-6-IS52-40-Headset-p38028/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-th-805st-zs44-28.6-26tpi-zs44-30",
+   "name": "FSA TH-805ST (ZS44/28.6-26tpi|ZS44/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 2.7,
+    "upper_stack": 16.4,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "TH-805ST",
+    "variant": "ZS44/28.6-26tpi|ZS44/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS44/28.6-26tpi|ZS44/30",
+     "steerer": "1-1/8\" threaded",
+     "upper_stack_mm": 16.4,
+     "lower_stack_mm": 2.7,
+     "total_stack_mm": 19.1,
+     "thread_tpi": 26,
+     "bearings": "loose balls 5/32\" x20 upper and lower"
+    },
+    "notes": "Threaded headset for 44 mm head tubes.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/TH-805ST-ZS44-28-6-ZS44-30-Threaded-Headset-p81559/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-orbit-z-zs44-28.6-zs44-30",
+   "name": "FSA Orbit Z (ZS44/28.6|ZS44/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 3.2,
+    "upper_stack": 16.9,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Orbit Z",
+    "variant": "ZS44/28.6|ZS44/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS44/28.6|ZS44/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 16.9,
+     "lower_stack_mm": 3.2,
+     "weight_g": 89,
+     "total_stack_mm": 20.1,
+     "headtube_id_mm": 44,
+     "headtube_od_mm": 50,
+     "bearings": "36°/45° ACB"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/Orbit-Z-ZS44-28-6-ZS44-30-Headset-p1890/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-the-pig-ec34-28.6-ec34-30",
+   "name": "FSA The Pig (EC34/28.6|EC34/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 13.6,
+    "upper_stack": 15.4,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "The Pig",
+    "variant": "EC34/28.6|EC34/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "EC34/28.6|EC34/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 15.4,
+     "lower_stack_mm": 13.6,
+     "weight_g": 193,
+     "total_stack_mm": 29,
+     "bearing_upper": "loose balls 5/32\" x20",
+     "bearing_lower": "loose balls 1/4\" x15"
+    },
+    "sources": [
+     {
+      "url": "https://bike-components.de/en/FSA/The-Pig-EC34-28-6-EC34-30-Headset-p1893/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-orbit-zs-3-zs44-28.6-zs44-30",
+   "name": "FSA Orbit ZS-3 (ZS44/28.6|ZS44/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 5.6,
+    "upper_stack": 8.5,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Orbit ZS-3",
+    "variant": "ZS44/28.6|ZS44/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "ZS44/28.6|ZS44/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 8.5,
+     "lower_stack_mm": 5.6,
+     "weight_g": 104,
+     "total_stack_mm": 14.1,
+     "bearings": "36°/45° ACB"
+    },
+    "sources": [
+     {
+      "url": "https://bike-components.de/en/FSA/Orbit-ZS-3-ZS44-28-6-ZS44-30-Headset-p35305/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-orbit-mx-ec34-28.6-ec34-30",
+   "name": "FSA Orbit MX (EC34/28.6|EC34/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 13.4,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Orbit MX",
+    "variant": "EC34/28.6|EC34/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "EC34/28.6|EC34/30",
+     "steerer": "1-1/8\"",
+     "lower_stack_mm": 13.4,
+     "weight_g": 95,
+     "total_stack_mm": 32.1
+    },
+    "notes": "Top stack not listed separately; total 32.1 mm.",
+    "sources": [
+     {
+      "url": "https://bike-components.de/en/FSA/Orbit-MX-EC34-28-6-EC34-30-Headset-p35302/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-orbit-xl-ii-ec34-28.6-ec34-30",
+   "name": "FSA Orbit XL II (EC34/28.6|EC34/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 13.9,
+    "upper_stack": 13.5,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Orbit XL II",
+    "variant": "EC34/28.6|EC34/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "EC34/28.6|EC34/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 13.5,
+     "lower_stack_mm": 13.9,
+     "weight_g": 103,
+     "total_stack_mm": 27.4,
+     "bearings": "36°/36° ACB"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/Orbit-XL-II-EC34-28-6-EC34-30-Headset-p1887/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-orbit-is-carbon-is41-28.6-is41-30",
+   "name": "FSA Orbit IS Carbon (IS41/28.6|IS41/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 1,
+    "upper_stack": 16,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Orbit IS Carbon",
+    "variant": "IS41/28.6|IS41/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "IS41/28.6|IS41/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 16,
+     "lower_stack_mm": 1,
+     "weight_g": 50,
+     "total_stack_mm": 17,
+     "bearings": "36°/45° ACB"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/Orbit-IS-Carbon-IS41-28-6-IS41-30-Headset-p7669/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-the-pig-dh-pro-ec34-28.6-ec34-30",
+   "name": "FSA The Pig DH Pro (EC34/28.6|EC34/30)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 16,
+    "upper_stack": 15.4,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "The Pig DH Pro",
+    "variant": "EC34/28.6|EC34/30",
+    "status": "unknown",
+    "specs": {
+     "shis": "EC34/28.6|EC34/30",
+     "steerer": "1-1/8\"",
+     "upper_stack_mm": 15.4,
+     "lower_stack_mm": 16,
+     "weight_g": 166,
+     "total_stack_mm": 31.4,
+     "bearing_upper": "36°/36° ACB",
+     "bearing_lower": "cartridge"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/FSA/The-Pig-DH-Pro-EC34-28-6-EC34-30-Headset-p1894/",
+      "publisher": "bike-components.de",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velo-orange-grand-cru-1-sealed-bearing-headset",
+   "name": "Velo Orange 1\" Sealed Bearing Threaded headset (EC30/25.4-24tpi|EC30/26)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 25.4
+   },
+   "meta": {
+    "brand": "Velo Orange",
+    "model": "1\" Sealed Bearing Threaded headset",
+    "variant": "EC30/25.4-24tpi|EC30/26",
+    "status": "current",
+    "specs": {
+     "shis": "EC30/25.4-24tpi|EC30/26",
+     "steerer": "1\" English threaded",
+     "total_stack_mm": 41,
+     "crown_race": "ISO 26.4 mm, split",
+     "weight_g": 106
+    },
+    "notes": "Velo Orange publishes only the total stack height, so upper/lower stack values are not set.",
+    "sources": [
+     {
+      "url": "https://velo-orange.com/products/grand-cru-1-sealed-bearing-headset",
+      "publisher": "Velo Orange",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://velo-orange.com/collections/headsets/products.json",
+      "publisher": "Velo Orange (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velo-orange-grand-cru-1-1-8-threadless-headset",
+   "name": "Velo Orange 1-1/8\" Sealed Bearing Threadless headset (EC34/28.6|EC34/30)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Velo Orange",
+    "model": "1-1/8\" Sealed Bearing Threadless headset",
+    "variant": "EC34/28.6|EC34/30",
+    "status": "current",
+    "specs": {
+     "shis": "EC34/28.6|EC34/30",
+     "steerer": "1-1/8\" threadless",
+     "total_stack_mm": 28,
+     "crown_race": "30.0 mm, split",
+     "weight_g": 112
+    },
+    "notes": "Velo Orange publishes only the total stack height, so upper/lower stack values are not set.",
+    "sources": [
+     {
+      "url": "https://velo-orange.com/products/grand-cru-1-1-8-threadless-headset",
+      "publisher": "Velo Orange",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://velo-orange.com/collections/headsets/products.json",
+      "publisher": "Velo Orange (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velo-orange-1-1-8-to-1-1-2-sealed-bearing-threadless-headset-tapered",
+   "name": "Velo Orange 1-1/8\" to 1-1/2\" Tapered Sealed Bearing Threadless headset (EC34/28.6|EC44/40)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Velo Orange",
+    "model": "1-1/8\" to 1-1/2\" Tapered Sealed Bearing Threadless headset",
+    "variant": "EC34/28.6|EC44/40",
+    "status": "current",
+    "specs": {
+     "shis": "EC34/28.6|EC44/40",
+     "steerer": "1-1/8\" to 1-1/2\" threadless",
+     "total_stack_mm": 31,
+     "crown_race": "40 mm, split",
+     "weight_g": 143
+    },
+    "notes": "Velo Orange publishes only the total stack height, so upper/lower stack values are not set.",
+    "sources": [
+     {
+      "url": "https://velo-orange.com/products/1-1-8-to-1-1-2-sealed-bearing-threadless-headset-tapered",
+      "publisher": "Velo Orange",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://velo-orange.com/collections/headsets/products.json",
+      "publisher": "Velo Orange (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velo-orange-vo-french-thread-headset",
+   "name": "Velo Orange 1\" French Thread headset (EC30/25.0-1.0|EC30/26)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 25.0
+   },
+   "meta": {
+    "brand": "Velo Orange",
+    "model": "1\" French Thread headset",
+    "variant": "EC30/25.0-1.0|EC30/26",
+    "status": "current",
+    "specs": {
+     "shis": "EC30/25.0-1.0|EC30/26",
+     "steerer": "1\" French threaded (25 x 1 mm)",
+     "total_stack_mm": 41,
+     "crown_race": "26.4 mm",
+     "weight_g": 113
+    },
+    "notes": "Velo Orange publishes only the total stack height, so upper/lower stack values are not set.",
+    "sources": [
+     {
+      "url": "https://velo-orange.com/products/vo-french-thread-headset",
+      "publisher": "Velo Orange",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://velo-orange.com/collections/headsets/products.json",
+      "publisher": "Velo Orange (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "velo-orange-vo-alloy-headset-in-iso-or-jis-size",
+   "name": "Velo Orange 1\" Alloy Caged Bearing (JIS) headset (EC29/25.4-24tpi|EC29/27)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 25.4
+   },
+   "meta": {
+    "brand": "Velo Orange",
+    "model": "1\" Alloy Caged Bearing (JIS) headset",
+    "variant": "EC29/25.4-24tpi|EC29/27",
+    "status": "current",
+    "specs": {
+     "shis": "EC29/25.4-24tpi|EC29/27",
+     "steerer": "1\" English threaded",
+     "total_stack_mm": 41,
+     "crown_race": "JIS 27.0 mm",
+     "weight_g": 115
+    },
+    "notes": "Velo Orange publishes only the total stack height, so upper/lower stack values are not set.",
+    "sources": [
+     {
+      "url": "https://velo-orange.com/products/vo-alloy-headset-in-iso-or-jis-size",
+      "publisher": "Velo Orange",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://velo-orange.com/collections/headsets/products.json",
+      "publisher": "Velo Orange (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
    "id": "hope-picknmix-upper-ec34-28.6",
    "name": "Hope Pick'n'Mix upper cup 1 (EC34/28.6)",
    "category": "headsets",
@@ -2800,6 +3875,705 @@
       "url": "https://www.hopetech.com/_repository/1/documents/HOPEHEADSETS2011Web.pdf",
       "publisher": "Hope Technology — Headset Technical Guide (S.H.I.S. ↔ Hope cup ref table)",
       "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-ec34-28.6-upper-16",
+   "name": "Wolf Tooth Premium EC34/28.6 upper, 16 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 16,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium EC headset",
+    "variant": "upper EC34/28.6, 5 mm cover",
+    "status": "current",
+    "specs": {
+     "shis": "EC34/28.6",
+     "position": "upper",
+     "upper_stack_mm": 16,
+     "cover_mm": 5,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 64
+    },
+    "notes": "Wolf Tooth: EC stack designation includes the 10 mm cup; 5/15/25 mm covers give 16/25/35 mm total stack. Tech-spec weights (quoted) differ from the shop variant weights by ~13-16 g.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-ec34-28.6-upper-25",
+   "name": "Wolf Tooth Premium EC34/28.6 upper, 25 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 25,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium EC headset",
+    "variant": "upper EC34/28.6, 15 mm cover",
+    "status": "current",
+    "specs": {
+     "shis": "EC34/28.6",
+     "position": "upper",
+     "upper_stack_mm": 25,
+     "cover_mm": 15,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 70
+    },
+    "notes": "Wolf Tooth: EC stack designation includes the 10 mm cup; 5/15/25 mm covers give 16/25/35 mm total stack. Tech-spec weights (quoted) differ from the shop variant weights by ~13-16 g.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-ec34-28.6-upper-35",
+   "name": "Wolf Tooth Premium EC34/28.6 upper, 35 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 35,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium EC headset",
+    "variant": "upper EC34/28.6, 25 mm cover",
+    "status": "current",
+    "specs": {
+     "shis": "EC34/28.6",
+     "position": "upper",
+     "upper_stack_mm": 35,
+     "cover_mm": 25,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 79
+    },
+    "notes": "Wolf Tooth: EC stack designation includes the 10 mm cup; 5/15/25 mm covers give 16/25/35 mm total stack. Tech-spec weights (quoted) differ from the shop variant weights by ~13-16 g.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-ec34-30-lower",
+   "name": "Wolf Tooth Premium EC34/30 lower",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12.25
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium EC headset",
+    "variant": "lower EC34/30",
+    "status": "current",
+    "specs": {
+     "shis": "EC34/30",
+     "position": "lower",
+     "lower_stack_mm": 12.25,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 37
+    },
+    "notes": "Lower cups sold separately from uppers.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-ec44-40-lower",
+   "name": "Wolf Tooth Premium EC44/40 lower",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12.25
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium EC headset",
+    "variant": "lower EC44/40",
+    "status": "current",
+    "specs": {
+     "shis": "EC44/40",
+     "position": "lower",
+     "lower_stack_mm": 12.25,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 45
+    },
+    "notes": "Lower cups sold separately from uppers.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-ec49-40-lower",
+   "name": "Wolf Tooth Premium EC49/40 lower",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12.25
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium EC headset",
+    "variant": "lower EC49/40",
+    "status": "current",
+    "specs": {
+     "shis": "EC49/40",
+     "position": "lower",
+     "lower_stack_mm": 12.25,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 54
+    },
+    "notes": "Lower cups sold separately from uppers.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-performance-ec34-28.6-upper-16",
+   "name": "Wolf Tooth Performance EC34/28.6 upper, 16 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 16,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Performance EC headset",
+    "variant": "upper EC34/28.6, 5 mm cover",
+    "status": "current",
+    "specs": {
+     "shis": "EC34/28.6",
+     "position": "upper",
+     "upper_stack_mm": 16,
+     "cover_mm": 5,
+     "bearings": "Enduro black oxide steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 64
+    },
+    "notes": "Wolf Tooth: EC stack designation includes the 10 mm cup; 5/15/25 mm covers give 16/25/35 mm total stack. Tech-spec weights (quoted) differ from the shop variant weights by ~13-16 g.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-performance-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-performance-ec34-30-lower",
+   "name": "Wolf Tooth Performance EC34/30 lower",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12.25
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Performance EC headset",
+    "variant": "lower EC34/30",
+    "status": "current",
+    "specs": {
+     "shis": "EC34/30",
+     "position": "lower",
+     "lower_stack_mm": 12.25,
+     "bearings": "Enduro black oxide steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 37
+    },
+    "notes": "Lower cups sold separately from uppers.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-performance-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-performance-ec44-40-lower",
+   "name": "Wolf Tooth Performance EC44/40 lower",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12.25
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Performance EC headset",
+    "variant": "lower EC44/40",
+    "status": "current",
+    "specs": {
+     "shis": "EC44/40",
+     "position": "lower",
+     "lower_stack_mm": 12.25,
+     "bearings": "Enduro black oxide steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 45
+    },
+    "notes": "Lower cups sold separately from uppers.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-performance-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-performance-ec49-40-lower",
+   "name": "Wolf Tooth Performance EC49/40 lower",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12.25
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Performance EC headset",
+    "variant": "lower EC49/40",
+    "status": "current",
+    "specs": {
+     "shis": "EC49/40",
+     "position": "lower",
+     "lower_stack_mm": 12.25,
+     "bearings": "Enduro black oxide steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g": 54
+    },
+    "notes": "Lower cups sold separately from uppers.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-performance-ec-headsets-external-cup",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-zs44-28.6-upper-6",
+   "name": "Wolf Tooth Premium ZS44/28.6 upper, 6 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 6,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium ZS headset",
+    "variant": "upper ZS44/28.6, 6 mm cover",
+    "status": "current",
+    "specs": {
+     "shis": "ZS44/28.6",
+     "position": "upper",
+     "upper_stack_mm": 6,
+     "headtube_id_upper_mm": 44,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g_range": "55-58"
+    },
+    "notes": "ZS56/40 lower sold separately; Wolf Tooth does not publish its stack height on the product page.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-zs-headsets-zero-stack",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-zs44-28.6-upper-15",
+   "name": "Wolf Tooth Premium ZS44/28.6 upper, 15 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 15,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium ZS headset",
+    "variant": "upper ZS44/28.6, 15 mm cover",
+    "status": "current",
+    "specs": {
+     "shis": "ZS44/28.6",
+     "position": "upper",
+     "upper_stack_mm": 15,
+     "headtube_id_upper_mm": 44,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g_range": "55-58"
+    },
+    "notes": "ZS56/40 lower sold separately; Wolf Tooth does not publish its stack height on the product page.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-zs-headsets-zero-stack",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-premium-zs44-28.6-upper-25",
+   "name": "Wolf Tooth Premium ZS44/28.6 upper, 25 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 25,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Premium ZS headset",
+    "variant": "upper ZS44/28.6, 25 mm cover",
+    "status": "current",
+    "specs": {
+     "shis": "ZS44/28.6",
+     "position": "upper",
+     "upper_stack_mm": 25,
+     "headtube_id_upper_mm": 44,
+     "bearings": "Enduro stainless steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g_range": "55-58"
+    },
+    "notes": "ZS56/40 lower sold separately; Wolf Tooth does not publish its stack height on the product page.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-premium-zs-headsets-zero-stack",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-performance-zs44-28.6-upper-6",
+   "name": "Wolf Tooth Performance ZS44/28.6 upper, 6 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 6,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Performance ZS headset",
+    "variant": "upper ZS44/28.6, 6 mm cover",
+    "status": "current",
+    "specs": {
+     "shis": "ZS44/28.6",
+     "position": "upper",
+     "upper_stack_mm": 6,
+     "headtube_id_upper_mm": 44,
+     "bearings": "Enduro black oxide steel sealed",
+     "bevel": "36 x 45 deg",
+     "material": "6061 aluminium",
+     "weight_g_range": "55-58"
+    },
+    "notes": "ZS56/40 lower sold separately; Wolf Tooth does not publish its stack height on the product page.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-performance-zs-headsets-zero-stack",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "wolf-tooth-performance-is41-28.6-upper",
+   "name": "Wolf Tooth Performance IS41/28.6 upper, 8 mm stack",
+   "category": "headsets",
+   "values": {
+    "upper_stack": 8,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Wolf Tooth",
+    "model": "Performance IS headset",
+    "variant": "upper IS41/28.6, 7 mm top cover",
+    "status": "current",
+    "specs": {
+     "shis": "IS41/28.6",
+     "position": "upper",
+     "upper_stack_mm": 8,
+     "top_cover_mm": 7,
+     "bearing_cap_od_mm": 45.8,
+     "bearings": "Enduro black oxide steel sealed",
+     "bevel": "36 x 45 deg",
+     "weight_g": 52
+    },
+    "notes": "'7mm top cover = 8mm total stack'. IS52/40 lower (bearing + crown race) sold separately.",
+    "sources": [
+     {
+      "url": "https://www.wolftoothcomponents.com/products/wolf-tooth-performance-is-headsets-integrated-standard",
+      "publisher": "Wolf Tooth Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "works-components-angle-1.0-zs44-zs56",
+   "name": "Works Components 1.0° Angle Headset (ZS44/ZS56, tapered)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Works Components",
+    "model": "Angle Headset",
+    "variant": "1.0° ZS44 upper / ZS56 lower",
+    "status": "current",
+    "specs": {
+     "angle_adjust_deg": 1.0,
+     "upper_cup": "ZS44",
+     "lower_cup": "ZS56",
+     "headtube_id": "44 mm upper / 56 mm lower",
+     "steerer": "1-1/8\" to 1-1/2\" tapered",
+     "material": "6082-T6 aluminium"
+    },
+    "notes": "Angle-adjust headset; offered per head-tube-length range. Stack heights are not published, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://workscomponents.com/products/1-0-degree-zs44-zs56-angle-headset-to-suit-tapered-steerer-tube",
+      "publisher": "Works Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://workscomponents.com/collections/angle-headsets/products.json",
+      "publisher": "Works Components (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "works-components-angle-2.0-ec44-zs56",
+   "name": "Works Components 2.0° Angle Headset (EC44/ZS56, tapered)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Works Components",
+    "model": "Angle Headset",
+    "variant": "2.0° EC44 upper / ZS56 lower",
+    "status": "current",
+    "specs": {
+     "angle_adjust_deg": 2.0,
+     "upper_cup": "EC44",
+     "lower_cup": "ZS56",
+     "headtube_id": "44 mm upper / 56 mm lower",
+     "steerer": "1-1/8\" to 1-1/2\" tapered",
+     "material": "6082-T6 aluminium"
+    },
+    "notes": "Angle-adjust headset; offered per head-tube-length range. Stack heights are not published, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://workscomponents.com/products/2-0-degree-ec44-zs56-angle-headset-to-suit-tapered-steerer-tube",
+      "publisher": "Works Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://workscomponents.com/collections/angle-headsets/products.json",
+      "publisher": "Works Components (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "works-components-angle-1.0-zs56-zs56",
+   "name": "Works Components 1.0° Angle Headset (ZS56/ZS56, tapered)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Works Components",
+    "model": "Angle Headset",
+    "variant": "1.0° ZS56 upper / ZS56 lower",
+    "status": "current",
+    "specs": {
+     "angle_adjust_deg": 1.0,
+     "upper_cup": "ZS56",
+     "lower_cup": "ZS56",
+     "headtube_id": "56 mm upper / 56 mm lower",
+     "steerer": "1-1/8\" to 1-1/2\" tapered",
+     "material": "6082-T6 aluminium"
+    },
+    "notes": "Angle-adjust headset; offered per head-tube-length range. Stack heights are not published, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://workscomponents.com/products/1-0-degree-zs56-zs56-angle-headset-to-suit-tapered-steerer-tube",
+      "publisher": "Works Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://workscomponents.com/collections/angle-headsets/products.json",
+      "publisher": "Works Components (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "works-components-angle-1.5-ec44-zs56",
+   "name": "Works Components 1.5° Angle Headset (EC44/ZS56, tapered)",
+   "category": "headsets",
+   "values": {
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "brand": "Works Components",
+    "model": "Angle Headset",
+    "variant": "1.5° EC44 upper / ZS56 lower",
+    "status": "current",
+    "specs": {
+     "angle_adjust_deg": 1.5,
+     "upper_cup": "EC44",
+     "lower_cup": "ZS56",
+     "headtube_id": "44 mm upper / 56 mm lower",
+     "steerer": "1-1/8\" to 1-1/2\" tapered",
+     "material": "6082-T6 aluminium"
+    },
+    "notes": "Angle-adjust headset; offered per head-tube-length range. Stack heights are not published, so only the steerer size is set.",
+    "sources": [
+     {
+      "url": "https://workscomponents.com/products/1-5-degree-ec44-zs56-angle-headset-to-suit-tapered-steerer-tube",
+      "publisher": "Works Components",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://workscomponents.com/collections/angle-headsets/products.json",
+      "publisher": "Works Components (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "fsa-duron-x-1-threaded-silver",
+   "name": "FSA Duron X 1\" threaded headset (silver)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 13.1,
+    "upper_stack": 27.5,
+    "steerer_od": 25.4
+   },
+   "meta": {
+    "brand": "FSA",
+    "model": "Duron X",
+    "variant": "1\" threaded, silver",
+    "status": "unknown",
+    "specs": {
+     "steerer": "1\" threaded",
+     "upper_stack_mm": 27.5,
+     "lower_stack_mm": 13.1,
+     "total_stack_mm": 40.6,
+     "crown_race_id_mm": 26.4,
+     "weight_g": 93.8
+    },
+    "notes": "Retailer quotes 'Stack height 27.5+13.1=40.6mm'.",
+    "sources": [
+     {
+      "url": "https://www.rivbike.com/products/headset-fsa-duron-x-silver-1-threaded",
+      "publisher": "Rivendell Bicycle Works",
+      "kind": "retailer",
       "accessed": "2026-10-11"
      }
     ],

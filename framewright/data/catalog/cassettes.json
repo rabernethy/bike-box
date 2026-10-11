@@ -7,6 +7,279 @@
  "compiled": "2026-10-11",
  "items": [
   {
+   "id": "shimano-dura-ace-cs-r9100-11-25",
+   "name": "Shimano Dura-Ace CS-R9100 11-25T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "11-speed 11-25T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "CS-R9100",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 17, 19, 21, 23, 25",
+     "range_t": "11-25",
+     "freehub": "Shimano HG (road 11-speed)",
+     "weight_g": 175,
+     "type": "HG-EV",
+     "titanium_cogs": "largest five cogs (marked * in the handbook)"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-dura-ace-cs-r9100-11-28",
+   "name": "Shimano Dura-Ace CS-R9100 11-28T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "11-speed 11-28T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "CS-R9100",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG (road 11-speed)",
+     "weight_g": 193,
+     "type": "HG-EV",
+     "titanium_cogs": "largest five cogs (marked * in the handbook)"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-dura-ace-cs-r9100-11-30",
+   "name": "Shimano Dura-Ace CS-R9100 11-30T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "11-speed 11-30T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "CS-R9100",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+     "range_t": "11-30",
+     "freehub": "Shimano HG (road 11-speed)",
+     "weight_g": 211,
+     "type": "HG-EV",
+     "titanium_cogs": "largest five cogs (marked * in the handbook)"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-dura-ace-cs-r9100-12-25",
+   "name": "Shimano Dura-Ace CS-R9100 12-25T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "11-speed 12-25T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "CS-R9100",
+     "speeds": 11,
+     "cogs_t": "12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25",
+     "range_t": "12-25",
+     "freehub": "Shimano HG (road 11-speed)",
+     "weight_g": 189,
+     "type": "HG-EV",
+     "titanium_cogs": "largest five cogs (marked * in the handbook)"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-dura-ace-cs-r9100-12-28",
+   "name": "Shimano Dura-Ace CS-R9100 12-28T",
+   "values": {
+    "cogs": "12, 13, 14, 15, 16, 17, 19, 21, 23, 25, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "11-speed 12-28T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "CS-R9100",
+     "speeds": 11,
+     "cogs_t": "12, 13, 14, 15, 16, 17, 19, 21, 23, 25, 28",
+     "range_t": "12-28",
+     "freehub": "Shimano HG (road 11-speed)",
+     "weight_g": 205,
+     "type": "HG-EV",
+     "titanium_cogs": "largest five cogs (marked * in the handbook)"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-105-cs-5700-11-25",
+   "name": "Shimano 105 CS-5700 11-25T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "10-speed 11-25T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "CS-5700",
+     "speeds": 10,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25",
+     "range_t": "11-25",
+     "freehub": "Shimano HG",
+     "weight_g": 245,
+     "type": "HG"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "shimano-105-cs-5700-11-28",
+   "name": "Shimano 105 CS-5700 11-28T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "10-speed 11-28T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "CS-5700",
+     "speeds": 10,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 21, 24, 28",
+     "range_t": "11-28",
+     "freehub": "Shimano HG",
+     "weight_g": 255,
+     "type": "HG"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
    "id": "shimano-dura-ace-cs-r9200-11-30",
    "name": "Shimano Dura-Ace CS-R9200 11-30T",
    "values": {
@@ -3737,6 +4010,2531 @@
      {
       "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
       "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-red-xg-1290-cs-xg-1290-e1-10-28",
+   "name": "SRAM RED XG-1290 CS-XG-1290-E1 10-28T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XG-1290",
+    "variant": "12-speed 10-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1290-E1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 28",
+     "range_t": "10-28",
+     "freehub": "SRAM XDR",
+     "weight_g": 180,
+     "weight_note": "10-28T"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1290-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1290-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-red-xg-1290-cs-xg-1290-e1-10-30",
+   "name": "SRAM RED XG-1290 CS-XG-1290-E1 10-30T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XG-1290",
+    "variant": "12-speed 10-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1290-E1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+     "range_t": "10-30",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1290-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1290-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-red-xg-1290-cs-xg-1290-e1-10-33",
+   "name": "SRAM RED XG-1290 CS-XG-1290-E1 10-33T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 28, 33",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XG-1290",
+    "variant": "12-speed 10-33T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1290-E1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 28, 33",
+     "range_t": "10-33",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1290-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1290-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-red-xg-1290-cs-xg-1290-e1-10-36",
+   "name": "SRAM RED XG-1290 CS-XG-1290-E1 10-36T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XG-1290",
+    "variant": "12-speed 10-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1290-E1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+     "range_t": "10-36",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1290-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1290-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-force-xg-1270-cs-xg-1270-e1-10-28",
+   "name": "SRAM Force XG-1270 CS-XG-1270-E1 10-28T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XG-1270",
+    "variant": "12-speed 10-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1270-E1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 28",
+     "range_t": "10-28",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1270-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1270-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-force-xg-1270-cs-xg-1270-e1-10-30",
+   "name": "SRAM Force XG-1270 CS-XG-1270-E1 10-30T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XG-1270",
+    "variant": "12-speed 10-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1270-E1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+     "range_t": "10-30",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1270-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1270-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-force-xg-1270-cs-xg-1270-e1-10-33",
+   "name": "SRAM Force XG-1270 CS-XG-1270-E1 10-33T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 28, 33",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XG-1270",
+    "variant": "12-speed 10-33T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1270-E1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 28, 33",
+     "range_t": "10-33",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1270-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1270-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-force-xg-1270-cs-xg-1270-e1-10-36",
+   "name": "SRAM Force XG-1270 CS-XG-1270-E1 10-36T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XG-1270",
+    "variant": "12-speed 10-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1270-E1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+     "range_t": "10-36",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1270-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1270-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-rival-xg-1250-cs-xg-1250-d1-10-30",
+   "name": "SRAM Rival XG-1250 CS-XG-1250-D1 10-30T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XG-1250",
+    "variant": "12-speed 10-30T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1250-D1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30",
+     "range_t": "10-30",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1250-d1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1250-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-rival-xg-1250-cs-xg-1250-d1-10-36",
+   "name": "SRAM Rival XG-1250 CS-XG-1250-D1 10-36T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XG-1250",
+    "variant": "12-speed 10-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1250-D1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 36",
+     "range_t": "10-36",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1250-d1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1250-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-red-xplr-xg-1391-cs-xg-1391-e1-10-46",
+   "name": "SRAM RED XPLR XG-1391 CS-XG-1391-E1 10-46T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 38, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XPLR XG-1391",
+    "variant": "13-speed 10-46T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1391-E1",
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 38, 46",
+     "range_t": "10-46",
+     "freehub": "SRAM XDR",
+     "weight_g": 288
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1391-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1391-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-force-xplr-xg-1371-cs-xg-1371-e1-10-46",
+   "name": "SRAM Force XPLR XG-1371 CS-XG-1371-E1 10-46T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 38, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XPLR XG-1371",
+    "variant": "13-speed 10-46T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1371-E1",
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 38, 46",
+     "range_t": "10-46",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1371-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1371-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-rival-xplr-xg-1351-cs-xg-1351-e1-10-46",
+   "name": "SRAM Rival XPLR XG-1351 CS-XG-1351-E1 10-46T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 38, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XPLR XG-1351",
+    "variant": "13-speed 10-46T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1351-E1",
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 38, 46",
+     "range_t": "10-46",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1351-e1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1351-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-xplr-xg-1271-cs-xg-1271-d1-10-44",
+   "name": "SRAM XPLR XG-1271 CS-XG-1271-D1 10-44T",
+   "values": {
+    "cogs": "10, 11, 13, 15, 17, 19, 21, 24, 28, 32, 38, 44",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XPLR XG-1271",
+    "variant": "12-speed 10-44T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1271-D1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 13, 15, 17, 19, 21, 24, 28, 32, 38, 44",
+     "range_t": "10-44",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1271-d1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1271-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-xplr-xg-1251-cs-xg-1251-d1-10-44",
+   "name": "SRAM XPLR XG-1251 CS-XG-1251-D1 10-44T",
+   "values": {
+    "cogs": "10, 11, 13, 15, 17, 19, 21, 24, 28, 32, 38, 44",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XPLR XG-1251",
+    "variant": "12-speed 10-44T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1251-D1",
+     "speeds": 12,
+     "cogs_t": "10, 11, 13, 15, 17, 19, 21, 24, 28, 32, 38, 44",
+     "range_t": "10-44",
+     "freehub": "SRAM XDR"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1251-d1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1251-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-xplr-pg-1231-cs-pg-1231-d1-11-44",
+   "name": "SRAM XPLR PG-1231 CS-PG-1231-D1 11-44T",
+   "values": {
+    "cogs": "11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 38, 44",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XPLR PG-1231",
+    "variant": "12-speed 11-44T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-PG-1231-D1",
+     "speeds": 12,
+     "cogs_t": "11, 12, 13, 15, 17, 19, 21, 24, 28, 32, 38, 44",
+     "range_t": "11-44",
+     "freehub": "11-speed road splined driver"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1231-d1",
+      "publisher": "SRAM (manufacturer) - CS-PG-1231-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-xx-eagle-transmission-xs-1299-cs-xs-1299-a1-10-52",
+   "name": "SRAM XX Eagle Transmission XS-1299 CS-XS-1299-A1 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX Eagle Transmission XS-1299",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XS-1299-A1",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD",
+     "weight_g": 350,
+     "weight_note": "engineering estimate"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xs-1299-a1",
+      "publisher": "SRAM (manufacturer) - CS-XS-1299-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-x0-eagle-transmission-xs-1297-cs-xs-1297-a1-10-52",
+   "name": "SRAM X0 Eagle Transmission XS-1297 CS-XS-1297-A1 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "X0 Eagle Transmission XS-1297",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XS-1297-A1",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD",
+     "weight_g": 385,
+     "weight_note": "engineering estimate"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xs-1297-a1",
+      "publisher": "SRAM (manufacturer) - CS-XS-1297-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-gx-eagle-transmission-xs-1295-cs-xs-1295-a1-10-52",
+   "name": "SRAM GX Eagle Transmission XS-1295 CS-XS-1295-A1 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GX Eagle Transmission XS-1295",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XS-1295-A1",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD",
+     "weight_g": 385,
+     "weight_note": "engineering estimate"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xs-1295-a1",
+      "publisher": "SRAM (manufacturer) - CS-XS-1295-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-eagle-90-transmission-xs-1275-cs-xs-1275-a1-10-52",
+   "name": "SRAM Eagle 90 Transmission XS-1275 CS-XS-1275-A1 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Eagle 90 Transmission XS-1275",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XS-1275-A1",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD",
+     "weight_g": 445,
+     "weight_note": "engineering estimate"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xs-1275-a1",
+      "publisher": "SRAM (manufacturer) - CS-XS-1275-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-eagle-70-transmission-xs-1270-cs-xs-1270-a1-10-52",
+   "name": "SRAM Eagle 70 Transmission XS-1270 CS-XS-1270-A1 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Eagle 70 Transmission XS-1270",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XS-1270-A1",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 38, 44, 52",
+     "range_t": "10-52",
+     "freehub": "splined 8/9/10-speed (HG-type) driver",
+     "weight_g": 565,
+     "weight_note": "engineering estimate"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xs-1270-a1",
+      "publisher": "SRAM (manufacturer) - CS-XS-1270-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-xx-dh-transmission-xs-797-cs-xs-797-a1-10-24",
+   "name": "SRAM XX DH Transmission XS-797 CS-XS-797-A1 10-24T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX DH Transmission XS-797",
+    "variant": "7-speed 10-24T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XS-797-A1",
+     "speeds": 7,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24",
+     "range_t": "10-24",
+     "freehub": "SRAM XD"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xs-797-a1",
+      "publisher": "SRAM (manufacturer) - CS-XS-797-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-xx1-eagle-xg-1299-cs-xg-1299-b1-10-52",
+   "name": "SRAM XX1 Eagle XG-1299 CS-XG-1299-B1 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX1 Eagle XG-1299",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1299-B1",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1299-b1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1299-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-xx1-eagle-xg-1299-cs-xg-1299-a2-10-50",
+   "name": "SRAM XX1 Eagle XG-1299 CS-XG-1299-A2 10-50T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX1 Eagle XG-1299",
+    "variant": "12-speed 10-50T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1299-A2",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 50",
+     "range_t": "10-50",
+     "freehub": "SRAM XD"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1299-a2",
+      "publisher": "SRAM (manufacturer) - CS-XG-1299-A2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-x01-eagle-xg-1295-cs-xg-1295-b1-10-52",
+   "name": "SRAM X01 Eagle XG-1295 CS-XG-1295-B1 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "X01 Eagle XG-1295",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1295-B1",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD",
+     "weight_g": 350
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1295-b1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1295-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-x01-eagle-xg-1295-cs-xg-1295-a3-10-50",
+   "name": "SRAM X01 Eagle XG-1295 CS-XG-1295-A3 10-50T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "X01 Eagle XG-1295",
+    "variant": "12-speed 10-50T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1295-A3",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 50",
+     "range_t": "10-50",
+     "freehub": "SRAM XD"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1295-a3",
+      "publisher": "SRAM (manufacturer) - CS-XG-1295-A3 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-gx-eagle-xg-1275-cs-xg-1275-b1-10-52",
+   "name": "SRAM GX Eagle XG-1275 CS-XG-1275-B1 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GX Eagle XG-1275",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-XG-1275-B1",
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-xg-1275-b1",
+      "publisher": "SRAM (manufacturer) - CS-XG-1275-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-nx-eagle-pg-1230-cs-pg-1230-a1-11-50",
+   "name": "SRAM NX Eagle PG-1230 CS-PG-1230-A1 11-50T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 22, 25, 28, 32, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "NX Eagle PG-1230",
+    "variant": "12-speed 11-50T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-PG-1230-A1",
+     "speeds": 12,
+     "cogs_t": "11, 13, 15, 17, 19, 22, 25, 28, 32, 36, 42, 50",
+     "range_t": "11-50",
+     "freehub": "splined 8/9/10-speed (HG-type) driver",
+     "weight_g": 615
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1230-a1",
+      "publisher": "SRAM (manufacturer) - CS-PG-1230-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-sx-eagle-pg-1210-cs-pg-1210-a1-11-50",
+   "name": "SRAM SX Eagle PG-1210 CS-PG-1210-A1 11-50T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 22, 25, 28, 32, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "SX Eagle PG-1210",
+    "variant": "12-speed 11-50T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-PG-1210-A1",
+     "speeds": 12,
+     "cogs_t": "11, 13, 15, 17, 19, 22, 25, 28, 32, 36, 42, 50",
+     "range_t": "11-50",
+     "freehub": "splined 8/9/10-speed (HG-type) driver"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1210-a1",
+      "publisher": "SRAM (manufacturer) - CS-PG-1210-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-pg-1130-cs-pg-1130-a1-11-28",
+   "name": "SRAM PG-1130 CS-PG-1130-A1 11-28T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 17, 19, 22, 25, 28",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "PG-1130",
+    "variant": "11-speed 11-28T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-PG-1130-A1",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 17, 19, 22, 25, 28",
+     "range_t": "11-28",
+     "freehub": "splined 11-speed driver (10/11-speed MTB driver with 1.85 mm spacer)"
+    },
+    "notes": "11-36T and 11-42T are for 1x use only.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1130-a1",
+      "publisher": "SRAM (manufacturer) - CS-PG-1130-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-pg-1130-cs-pg-1130-a1-11-32",
+   "name": "SRAM PG-1130 CS-PG-1130-A1 11-32T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 22, 25, 28, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "PG-1130",
+    "variant": "11-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-PG-1130-A1",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 14, 15, 17, 19, 22, 25, 28, 32",
+     "range_t": "11-32",
+     "freehub": "splined 11-speed driver (10/11-speed MTB driver with 1.85 mm spacer)"
+    },
+    "notes": "11-36T and 11-42T are for 1x use only.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1130-a1",
+      "publisher": "SRAM (manufacturer) - CS-PG-1130-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-pg-1130-cs-pg-1130-a1-11-36",
+   "name": "SRAM PG-1130 CS-PG-1130-A1 11-36T",
+   "values": {
+    "cogs": "11, 12, 13, 15, 17, 19, 22, 25, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "PG-1130",
+    "variant": "11-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-PG-1130-A1",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 15, 17, 19, 22, 25, 28, 32, 36",
+     "range_t": "11-36",
+     "freehub": "splined 11-speed driver (10/11-speed MTB driver with 1.85 mm spacer)"
+    },
+    "notes": "11-36T and 11-42T are for 1x use only.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1130-a1",
+      "publisher": "SRAM (manufacturer) - CS-PG-1130-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-pg-1130-cs-pg-1130-a1-11-42",
+   "name": "SRAM PG-1130 CS-PG-1130-A1 11-42T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 22, 25, 28, 32, 36, 42",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "PG-1130",
+    "variant": "11-speed 11-42T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-PG-1130-A1",
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 19, 22, 25, 28, 32, 36, 42",
+     "range_t": "11-42",
+     "freehub": "splined 11-speed driver (10/11-speed MTB driver with 1.85 mm spacer)"
+    },
+    "notes": "11-36T and 11-42T are for 1x use only.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1130-a1",
+      "publisher": "SRAM (manufacturer) - CS-PG-1130-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "sram-pg-1170-cs-pg-1170-a1-11-36",
+   "name": "SRAM PG-1170 CS-PG-1170-A1 11-36T",
+   "values": {
+    "cogs": "11, 12, 13, 15, 17, 19, 22, 25, 28, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "PG-1170",
+    "variant": "11-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "model_code": "CS-PG-1170-A1",
+     "speeds": 11,
+     "cogs_t": "11, 12, 13, 15, 17, 19, 22, 25, 28, 32, 36",
+     "range_t": "11-36",
+     "freehub": "splined 11-speed driver"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cs-pg-1170-a1",
+      "publisher": "SRAM (manufacturer) - CS-PG-1170-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-super-record-13-10-29",
+   "name": "Campagnolo Super Record 13 10-29T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 23, 26, 29",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "13-speed 10-29T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 23, 26, 29",
+     "range_t": "10-29",
+     "freehub": "Campagnolo N3W",
+     "weight_g": 217
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-sprockets/CCSSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 sprockets product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-super-record-13-10-33",
+   "name": "Campagnolo Super Record 13 10-33T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 33",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "13-speed 10-33T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 33",
+     "range_t": "10-33",
+     "freehub": "Campagnolo N3W"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-sprockets/CCSSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 sprockets product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-super-record-13-11-32",
+   "name": "Campagnolo Super Record 13 11-32T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 17, 18, 20, 23, 26, 29, 32",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "13-speed 11-32T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 17, 18, 20, 23, 26, 29, 32",
+     "range_t": "11-32",
+     "freehub": "Campagnolo N3W"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-sprockets/CCSSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 sprockets product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-super-record-13-11-36",
+   "name": "Campagnolo Super Record 13 11-36T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "13-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 32, 36",
+     "range_t": "11-36",
+     "freehub": "Campagnolo N3W"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-sprockets/CCSSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 sprockets product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-super-record-13-ultra-10-33",
+   "name": "Campagnolo Super Record 13 Ultra 10-33T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 33",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13 Ultra",
+    "variant": "13-speed 10-33T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 33",
+     "range_t": "10-33",
+     "weight_g": 215
+    },
+    "notes": "Titanium largest sprockets (4 on 10-33T, 5 on 11-36T). Description text gives different partial weights (84 g / 113 g); the spec-table weights are used.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ultra-cassette/CCSSUPERRECORD13ULTRA.html",
+      "publisher": "Campagnolo (manufacturer) - Ultra cassette product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-super-record-13-ultra-11-36",
+   "name": "Campagnolo Super Record 13 Ultra 11-36T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13 Ultra",
+    "variant": "13-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 32, 36",
+     "range_t": "11-36",
+     "weight_g": 238
+    },
+    "notes": "Titanium largest sprockets (4 on 10-33T, 5 on 11-36T). Description text gives different partial weights (84 g / 113 g); the spec-table weights are used.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ultra-cassette/CCSSUPERRECORD13ULTRA.html",
+      "publisher": "Campagnolo (manufacturer) - Ultra cassette product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-record-13-10-33",
+   "name": "Campagnolo Record 13 10-33T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 33",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "13-speed 10-33T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 33",
+     "range_t": "10-33",
+     "freehub": "Campagnolo N3W",
+     "weight_g": 275
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-cassette/CCSRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 cassette product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-record-13-11-36",
+   "name": "Campagnolo Record 13 11-36T",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 32, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "13-speed 11-36T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "11, 12, 13, 14, 15, 16, 18, 20, 23, 26, 29, 32, 36",
+     "range_t": "11-36",
+     "freehub": "Campagnolo N3W"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-cassette/CCSRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 cassette product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-super-record-x-9-42",
+   "name": "Campagnolo Super Record X 9-42T",
+   "values": {
+    "cogs": "9, 10, 11, 12, 13, 14, 16, 18, 21, 25, 30, 36, 42",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record X",
+    "variant": "13-speed 9-42T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "9, 10, 11, 12, 13, 14, 16, 18, 21, 25, 30, 36, 42",
+     "range_t": "9-42",
+     "freehub": "Campagnolo N3W",
+     "weight_g": 322
+    },
+    "notes": "For the Super Record X rear derailleur (1x).",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-x-sprocket-set/CCSSUPERRECORD13X.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record X sprocket set product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-super-record-x-10-48",
+   "name": "Campagnolo Super Record X 10-48T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 16, 18, 21, 25, 30, 36, 42, 48",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record X",
+    "variant": "13-speed 10-48T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 14, 16, 18, 21, 25, 30, 36, 42, 48",
+     "range_t": "10-48",
+     "freehub": "Campagnolo N3W",
+     "weight_g": 364
+    },
+    "notes": "For the Super Record X rear derailleur (1x).",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-x-sprocket-set/CCSSUPERRECORD13X.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record X sprocket set product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-ekar-9-36",
+   "name": "Campagnolo Ekar 9-36T",
+   "values": {
+    "cogs": "9, 10, 11, 12, 13, 14, 16, 18, 20, 23, 27, 31, 36",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar",
+    "variant": "13-speed 9-36T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "9, 10, 11, 12, 13, 14, 16, 18, 20, 23, 27, 31, 36",
+     "range_t": "9-36",
+     "freehub": "Campagnolo N3W",
+     "weight_g": 340
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-13-speed-sprockets/CCSEKAR1X13S.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar 13-speed sprockets product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-ekar-9-42",
+   "name": "Campagnolo Ekar 9-42T",
+   "values": {
+    "cogs": "9, 10, 11, 12, 13, 14, 16, 18, 21, 25, 30, 36, 42",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar",
+    "variant": "13-speed 9-42T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "9, 10, 11, 12, 13, 14, 16, 18, 21, 25, 30, 36, 42",
+     "range_t": "9-42",
+     "freehub": "Campagnolo N3W",
+     "weight_g": 390
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-13-speed-sprockets/CCSEKAR1X13S.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar 13-speed sprockets product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "campagnolo-ekar-10-44",
+   "name": "Campagnolo Ekar 10-44T",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 17, 20, 23, 27, 32, 38, 44",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar",
+    "variant": "13-speed 10-44T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "cogs_t": "10, 11, 12, 13, 14, 15, 17, 20, 23, 27, 32, 38, 44",
+     "range_t": "10-44",
+     "freehub": "Campagnolo N3W",
+     "weight_g": 415
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-13-speed-sprockets/CCSEKAR1X13S.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar 13-speed sprockets product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-advent-x-cs-h104-11-48",
+   "name": "microSHIFT Advent X CS-H104 11-48T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 34, 40, 48",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Advent X CS-H104",
+    "variant": "10-speed 11-48T",
+    "status": "current",
+    "specs": {
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 34, 40, 48",
+     "range_t": "11-48",
+     "freehub": "standard HG freehub",
+     "material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-h104-11-48t/",
+      "publisher": "microSHIFT (manufacturer) - CS-H104-11-48T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-sword-cs-g105-11-38",
+   "name": "microSHIFT Sword CS-G105 11-38T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 38",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Sword CS-G105",
+    "variant": "10-speed 11-38T",
+    "status": "current",
+    "specs": {
+     "speeds": 10,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28, 32, 38",
+     "range_t": "11-38",
+     "freehub": "standard HG freehub",
+     "weight_g": 336,
+     "material": "steel and aluminium cogs, aluminium spider"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-g105-11-38t/",
+      "publisher": "microSHIFT (manufacturer) - CS-G105-11-38T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-advent-cs-h093-11-46",
+   "name": "microSHIFT Advent CS-H093 11-46T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 30, 37, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Advent CS-H093",
+    "variant": "9-speed 11-46T",
+    "status": "current",
+    "specs": {
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 30, 37, 46",
+     "range_t": "11-46",
+     "freehub": "standard HG freehub",
+     "material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-h093-11-46t/",
+      "publisher": "microSHIFT (manufacturer) - CS-H093-11-46T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-advent-cs-h093-11-42",
+   "name": "microSHIFT Advent CS-H093 11-42T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 34, 42",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Advent CS-H093",
+    "variant": "9-speed 11-42T",
+    "status": "current",
+    "specs": {
+     "speeds": 9,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 34, 42",
+     "range_t": "11-42",
+     "freehub": "standard HG freehub",
+     "material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-h093-11-42t/",
+      "publisher": "microSHIFT (manufacturer) - CS-H093-11-42T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-acolyte-cs-h083-12-46",
+   "name": "microSHIFT Acolyte CS-H083 12-46T",
+   "values": {
+    "cogs": "12, 15, 18, 21, 24, 30, 37, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Acolyte CS-H083",
+    "variant": "8-speed 12-46T",
+    "status": "current",
+    "specs": {
+     "speeds": 8,
+     "cogs_t": "12, 15, 18, 21, 24, 30, 37, 46",
+     "range_t": "12-46",
+     "freehub": "standard HG freehub",
+     "material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-h083-12-46t/",
+      "publisher": "microSHIFT (manufacturer) - CS-H083-12-46T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-advent-mx-cs-eh116-11-50",
+   "name": "microSHIFT Advent MX CS-EH116 11-50T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 32, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Advent MX CS-EH116",
+    "variant": "11-speed 11-50T",
+    "status": "current",
+    "specs": {
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 32, 36, 42, 50",
+     "range_t": "11-50",
+     "freehub": "standard HG freehub",
+     "material": "Cr-Mo steel 11-28T, aluminium 42T and 50T",
+     "e_bike_rated": true
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-eh116-11-50t/",
+      "publisher": "microSHIFT (manufacturer) - CS-EH116-11-50T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-advent-mx-cs-xd116-11-50",
+   "name": "microSHIFT Advent MX CS-XD116 11-50T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 32, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Advent MX CS-XD116",
+    "variant": "11-speed 11-50T",
+    "status": "current",
+    "specs": {
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 32, 36, 42, 50",
+     "range_t": "11-50",
+     "freehub": "SRAM XD driver",
+     "weight_g": 550,
+     "material": "Cr-Mo steel 11-28T, aluminium 42T and 50T"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-xd116-11-50t/",
+      "publisher": "microSHIFT (manufacturer) - CS-XD116-11-50T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-xcd-cs-g113-11-46",
+   "name": "microSHIFT XCD CS-G113 11-46T",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 32, 36, 40, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "XCD CS-G113",
+    "variant": "11-speed 11-46T",
+    "status": "current",
+    "specs": {
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 18, 21, 24, 28, 32, 36, 40, 46",
+     "range_t": "11-46",
+     "freehub": "standard HG freehub",
+     "material": "steel / aluminium (largest cogs), aluminium spider"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-g113-11-46t/",
+      "publisher": "microSHIFT (manufacturer) - CS-G113-11-46T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "microshift-cs-h074-12-40",
+   "name": "microSHIFT CS-H074 12-40T",
+   "values": {
+    "cogs": "12, 15, 18, 22, 28, 34, 40",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "CS-H074",
+    "variant": "7-speed 12-40T",
+    "status": "current",
+    "specs": {
+     "speeds": 7,
+     "cogs_t": "12, 15, 18, 22, 28, 34, 40",
+     "range_t": "12-40",
+     "freehub": "standard HG freehub",
+     "material": "steel"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/cs-h074-12-40t/",
+      "publisher": "microSHIFT (manufacturer) - CS-H074-12-40T model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "ethirteen-helix-race-9-52",
+   "name": "e*thirteen Helix Race 9-52T",
+   "values": {
+    "cogs": "9, 11, 13, 15, 17, 20, 23, 27, 31, 36, 43, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "e*thirteen",
+    "model": "Helix Race",
+    "variant": "12-speed 9-52T",
+    "status": "current",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "9, 11, 13, 15, 17, 20, 23, 27, 31, 36, 43, 52",
+     "range_t": "9-52",
+     "freehub": "SRAM XD / XDR (XD driver only mount)",
+     "weight_g": 404,
+     "range": "578%",
+     "material": "2 aluminium + 10 steel cogs"
+    },
+    "sources": [
+     {
+      "url": "https://www.ethirteen.com/products/helix-race-12-speed-9-52-cassette",
+      "publisher": "e*thirteen (manufacturer) - Helix Race cassette page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "ethirteen-helix-race-9-50",
+   "name": "e*thirteen Helix Race 9-50T",
+   "values": {
+    "cogs": "9, 11, 13, 15, 17, 20, 23, 27, 31, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "e*thirteen",
+    "model": "Helix Race",
+    "variant": "12-speed 9-50T",
+    "status": "current",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "9, 11, 13, 15, 17, 20, 23, 27, 31, 36, 42, 50",
+     "range_t": "9-50",
+     "freehub": "SRAM XD / XDR (XD driver only mount)",
+     "weight_g": 384,
+     "range": "556%",
+     "material": "2 aluminium + 10 steel cogs"
+    },
+    "sources": [
+     {
+      "url": "https://www.ethirteen.com/products/helix-r-12-speed-cassette",
+      "publisher": "e*thirteen (manufacturer) - Helix Race cassette page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "ethirteen-helix-race-13-52",
+   "name": "e*thirteen Helix Race 13-52T",
+   "values": {
+    "cogs": "13, 15, 17, 19, 22, 25, 28, 32, 36, 40, 45, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "e*thirteen",
+    "model": "Helix Race",
+    "variant": "12-speed 13-52T",
+    "status": "current",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "13, 15, 17, 19, 22, 25, 28, 32, 36, 40, 45, 52",
+     "range_t": "13-52",
+     "freehub": "SRAM XD / XDR (XD driver only mount)",
+     "weight_g": 467,
+     "range": "400%",
+     "material": "2 aluminium + 10 steel cogs"
+    },
+    "sources": [
+     {
+      "url": "https://www.ethirteen.com/products/helix-race-12-speed-13-52-cassette",
+      "publisher": "e*thirteen (manufacturer) - Helix Race cassette page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "ethirteen-helix-race-gravel-9-45",
+   "name": "e*thirteen Helix Race Gravel 9-45T",
+   "values": {
+    "cogs": "9, 11, 13, 15, 17, 19, 22, 25, 28, 32, 38, 45",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "e*thirteen",
+    "model": "Helix Race Gravel",
+    "variant": "12-speed 9-45T",
+    "status": "current",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "9, 11, 13, 15, 17, 19, 22, 25, 28, 32, 38, 45",
+     "range_t": "9-45",
+     "freehub": "SRAM XD / XDR (XD driver only mount)",
+     "weight_g": 330,
+     "range": "500%",
+     "material": "2 aluminium + 10 steel cogs"
+    },
+    "sources": [
+     {
+      "url": "https://www.ethirteen.com/products/helix-r-12-speed-gravel-cassette",
+      "publisher": "e*thirteen (manufacturer) - Helix Race Gravel cassette page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "garbaruk-12-speed-mtb-10-48-xd",
+   "name": "Garbaruk 12-speed MTB 10-48T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 48",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Garbaruk",
+    "model": "12-speed MTB",
+    "variant": "12-speed 10-48T",
+    "status": "unknown",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 48",
+     "range_t": "10-48",
+     "freehub": "SRAM XD",
+     "weight_g": 340,
+     "weight_note": "comparison table"
+    },
+    "notes": "Marked 'Not Available For Sale' when fetched.",
+    "sources": [
+     {
+      "url": "https://global.garbaruk.com/shop/12-speed-mtb-cassette-sram-xd-freehub-795",
+      "publisher": "Garbaruk (manufacturer) - 12-speed MTB cassette, XD",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "garbaruk-12-speed-mtb-10-50-xd",
+   "name": "Garbaruk 12-speed MTB 10-50T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Garbaruk",
+    "model": "12-speed MTB",
+    "variant": "12-speed 10-50T",
+    "status": "unknown",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 50",
+     "range_t": "10-50",
+     "freehub": "SRAM XD",
+     "weight_g": 343,
+     "weight_note": "comparison table"
+    },
+    "notes": "Marked 'Not Available For Sale' when fetched.",
+    "sources": [
+     {
+      "url": "https://global.garbaruk.com/shop/12-speed-mtb-cassette-sram-xd-freehub-795",
+      "publisher": "Garbaruk (manufacturer) - 12-speed MTB cassette, XD",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "garbaruk-12-speed-mtb-10-52-xd",
+   "name": "Garbaruk 12-speed MTB 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 37, 44, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Garbaruk",
+    "model": "12-speed MTB",
+    "variant": "12-speed 10-52T",
+    "status": "unknown",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 37, 44, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD",
+     "weight_g": 357,
+     "weight_note": "comparison table",
+     "weight_conflict": "page also gives 370 g +/-3%"
+    },
+    "notes": "Marked 'Not Available For Sale' when fetched.",
+    "sources": [
+     {
+      "url": "https://global.garbaruk.com/shop/12-speed-mtb-cassette-sram-xd-freehub-795",
+      "publisher": "Garbaruk (manufacturer) - 12-speed MTB cassette, XD",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "garbaruk-gen2.0-t-type-10-52",
+   "name": "Garbaruk GEN2.0 T-Type 10-52T",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 37, 44, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Garbaruk",
+    "model": "GEN2.0 T-Type",
+    "variant": "12-speed 10-52T",
+    "status": "current",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "10, 12, 14, 16, 18, 21, 24, 28, 32, 37, 44, 52",
+     "range_t": "10-52",
+     "freehub": "SRAM XD",
+     "weight_g": 340,
+     "weight_note": "+/-2%"
+    },
+    "sources": [
+     {
+      "url": "https://global.garbaruk.com/shop/12-speed-gen2-0-mtb-cassette-for-eagle-transmission-t-type-xd-freehub-1110",
+      "publisher": "Garbaruk (manufacturer) - GEN2.0 T-Type cassette",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "garbaruk-12-speed-mtb-11-52-hg",
+   "name": "Garbaruk 12-speed MTB 11-52T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 44, 52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Garbaruk",
+    "model": "12-speed MTB",
+    "variant": "12-speed 11-52T",
+    "status": "unknown",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 44, 52",
+     "range_t": "11-52",
+     "freehub": "Shimano HG",
+     "weight_g": 333,
+     "weight_note": "+/-2% (listing shows 344 g)"
+    },
+    "sources": [
+     {
+      "url": "https://global.garbaruk.com/shop/mtb-cassette-12-speed-shimano-hg-798",
+      "publisher": "Garbaruk (manufacturer) - 12-speed MTB cassette, HG",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "garbaruk-12-speed-gravel-10-44",
+   "name": "Garbaruk 12-speed Gravel 10-44T",
+   "values": {
+    "cogs": "10, 11, 12, 14, 16, 18, 21, 24, 28, 32, 37, 44",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Garbaruk",
+    "model": "12-speed Gravel",
+    "variant": "12-speed 10-44T",
+    "status": "unknown",
+    "specs": {
+     "speeds": 12,
+     "cogs_t": "10, 11, 12, 14, 16, 18, 21, 24, 28, 32, 37, 44",
+     "range_t": "10-44",
+     "freehub": "SRAM XD/XDR",
+     "weight_g": 280,
+     "weight_note": "+/-2% (product details show 275 g)"
+    },
+    "sources": [
+     {
+      "url": "https://global.garbaruk.com/shop/12-speed-10-44t-gravel-cassette-sram-xd-xdr-freehub-800",
+      "publisher": "Garbaruk (manufacturer) - 12-speed 10-44T gravel cassette",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "garbaruk-11-speed-11-46",
+   "name": "Garbaruk 11-speed 11-46T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 24, 28, 32, 36, 42, 46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Garbaruk",
+    "model": "11-speed",
+    "variant": "11-speed 11-46T",
+    "status": "unknown",
+    "specs": {
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 20, 24, 28, 32, 36, 42, 46",
+     "range_t": "11-46",
+     "freehub": "Shimano HG",
+     "weight_g": 300,
+     "weight_note": "+/-2%"
+    },
+    "notes": "Page states production of selected 11-speed parts is paused.",
+    "sources": [
+     {
+      "url": "https://global.garbaruk.com/shop/11-speed-cassette-shimano-hg-freehub-797",
+      "publisher": "Garbaruk (manufacturer) - 11-speed cassette, HG",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "garbaruk-11-speed-11-50",
+   "name": "Garbaruk 11-speed 11-50T",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 24, 28, 32, 36, 42, 50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Garbaruk",
+    "model": "11-speed",
+    "variant": "11-speed 11-50T",
+    "status": "unknown",
+    "specs": {
+     "speeds": 11,
+     "cogs_t": "11, 13, 15, 17, 20, 24, 28, 32, 36, 42, 50",
+     "range_t": "11-50",
+     "freehub": "Shimano HG",
+     "weight_g": 314,
+     "weight_note": "+/-2%"
+    },
+    "notes": "Page states production of selected 11-speed parts is paused.",
+    "sources": [
+     {
+      "url": "https://global.garbaruk.com/shop/11-speed-cassette-shimano-hg-freehub-797",
+      "publisher": "Garbaruk (manufacturer) - 11-speed cassette, HG",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-eno-freewheel-16",
+   "name": "White Industries single freewheel 16T",
+   "values": {
+    "cogs": "16",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "ENO freewheel",
+    "variant": "16T",
+    "status": "current",
+    "specs": {
+     "speeds": 1,
+     "cogs_t": "16",
+     "range_t": "16-16",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 in only",
+     "width_mm": 18.4,
+     "tooth_centre_from_thread_base_mm": 9
+    },
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-eno-freewheel-17",
+   "name": "White Industries single freewheel 17T",
+   "values": {
+    "cogs": "17",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "ENO freewheel",
+    "variant": "17T",
+    "status": "current",
+    "specs": {
+     "speeds": 1,
+     "cogs_t": "17",
+     "range_t": "17-17",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 or 1/8 in",
+     "width_mm": 18.4,
+     "tooth_centre_from_thread_base_mm": 9
+    },
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-eno-freewheel-18",
+   "name": "White Industries single freewheel 18T",
+   "values": {
+    "cogs": "18",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "ENO freewheel",
+    "variant": "18T",
+    "status": "current",
+    "specs": {
+     "speeds": 1,
+     "cogs_t": "18",
+     "range_t": "18-18",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 or 1/8 in",
+     "width_mm": 18.4,
+     "tooth_centre_from_thread_base_mm": 9
+    },
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-eno-freewheel-19",
+   "name": "White Industries single freewheel 19T",
+   "values": {
+    "cogs": "19",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "ENO freewheel",
+    "variant": "19T",
+    "status": "current",
+    "specs": {
+     "speeds": 1,
+     "cogs_t": "19",
+     "range_t": "19-19",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 or 1/8 in",
+     "width_mm": 18.4,
+     "tooth_centre_from_thread_base_mm": 9
+    },
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-eno-freewheel-20",
+   "name": "White Industries single freewheel 20T",
+   "values": {
+    "cogs": "20",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "ENO freewheel",
+    "variant": "20T",
+    "status": "current",
+    "specs": {
+     "speeds": 1,
+     "cogs_t": "20",
+     "range_t": "20-20",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 or 1/8 in",
+     "width_mm": 18.4,
+     "tooth_centre_from_thread_base_mm": 9
+    },
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-eno-freewheel-21",
+   "name": "White Industries single freewheel 21T",
+   "values": {
+    "cogs": "21",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "ENO freewheel",
+    "variant": "21T",
+    "status": "current",
+    "specs": {
+     "speeds": 1,
+     "cogs_t": "21",
+     "range_t": "21-21",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 or 1/8 in",
+     "width_mm": 18.4,
+     "tooth_centre_from_thread_base_mm": 9
+    },
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-eno-freewheel-22",
+   "name": "White Industries single freewheel 22T",
+   "values": {
+    "cogs": "22",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "ENO freewheel",
+    "variant": "22T",
+    "status": "current",
+    "specs": {
+     "speeds": 1,
+     "cogs_t": "22",
+     "range_t": "22-22",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 or 1/8 in",
+     "width_mm": 18.4,
+     "tooth_centre_from_thread_base_mm": 9
+    },
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-double-freewheel-16-18",
+   "name": "White Industries double freewheel 16/18T",
+   "values": {
+    "cogs": "16, 18",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "double freewheel",
+    "variant": "2-speed 16-18T",
+    "status": "current",
+    "specs": {
+     "speeds": 2,
+     "cogs_t": "16, 18",
+     "range_t": "16-18",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 in only",
+     "width_mm": 18.4,
+     "cog_spacing_mm": 5.7,
+     "inner_teeth_from_thread_base_mm": 6.1,
+     "outer_teeth_from_thread_base_mm": 11.8
+    },
+    "notes": "Two-speed (flip-chain) freewheel.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-double-freewheel-16-19",
+   "name": "White Industries double freewheel 16/19T",
+   "values": {
+    "cogs": "16, 19",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "double freewheel",
+    "variant": "2-speed 16-19T",
+    "status": "current",
+    "specs": {
+     "speeds": 2,
+     "cogs_t": "16, 19",
+     "range_t": "16-19",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 in only",
+     "width_mm": 18.4,
+     "cog_spacing_mm": 5.7,
+     "inner_teeth_from_thread_base_mm": 6.1,
+     "outer_teeth_from_thread_base_mm": 11.8
+    },
+    "notes": "Two-speed (flip-chain) freewheel.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-double-freewheel-17-19",
+   "name": "White Industries double freewheel 17/19T",
+   "values": {
+    "cogs": "17, 19",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "double freewheel",
+    "variant": "2-speed 17-19T",
+    "status": "current",
+    "specs": {
+     "speeds": 2,
+     "cogs_t": "17, 19",
+     "range_t": "17-19",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 in only",
+     "width_mm": 18.4,
+     "cog_spacing_mm": 5.7,
+     "inner_teeth_from_thread_base_mm": 6.1,
+     "outer_teeth_from_thread_base_mm": 11.8
+    },
+    "notes": "Two-speed (flip-chain) freewheel.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cassettes"
+  },
+  {
+   "id": "white-industries-double-freewheel-20-22",
+   "name": "White Industries double freewheel 20/22T",
+   "values": {
+    "cogs": "20, 22",
+    "drive_type": "singlespeed"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "double freewheel",
+    "variant": "2-speed 20-22T",
+    "status": "current",
+    "specs": {
+     "speeds": 2,
+     "cogs_t": "20, 22",
+     "range_t": "20-22",
+     "freehub": "threaded freewheel, 1.375 in x 24 TPI",
+     "chain": "3/32 in only",
+     "width_mm": 18.4,
+     "cog_spacing_mm": 5.7,
+     "inner_teeth_from_thread_base_mm": 6.1,
+     "outer_teeth_from_thread_base_mm": 11.8
+    },
+    "notes": "Two-speed (flip-chain) freewheel.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/single-and-double-freewheels/",
+      "publisher": "White Industries (manufacturer) - single and double freewheels page",
       "kind": "manufacturer",
       "accessed": "2026-10-11"
      }

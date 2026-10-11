@@ -8616,6 +8616,6176 @@
     "verified": "source"
    },
    "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-r9100-55-42",
+   "name": "Shimano Dura-Ace FC-R9100 55/42T",
+   "values": {
+    "chainrings": "55, 42",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "55/42T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R9100",
+     "speeds": 11,
+     "chainrings_t": "55, 42",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 650,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Weights from the 2020-21 handbook; the 2017-18 handbook lists 621 g (53-39T) and 609 g (50-34T). Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-r9100-54-42",
+   "name": "Shimano Dura-Ace FC-R9100 54/42T",
+   "values": {
+    "chainrings": "54, 42",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "54/42T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R9100",
+     "speeds": 11,
+     "chainrings_t": "54, 42",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 642,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Weights from the 2020-21 handbook; the 2017-18 handbook lists 621 g (53-39T) and 609 g (50-34T). Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-r9100-53-39",
+   "name": "Shimano Dura-Ace FC-R9100 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "53/39T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R9100",
+     "speeds": 11,
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 626,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Weights from the 2020-21 handbook; the 2017-18 handbook lists 621 g (53-39T) and 609 g (50-34T). Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-r9100-52-36",
+   "name": "Shimano Dura-Ace FC-R9100 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "52/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R9100",
+     "speeds": 11,
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 624,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Weights from the 2020-21 handbook; the 2017-18 handbook lists 621 g (53-39T) and 609 g (50-34T). Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-r9100-50-34",
+   "name": "Shimano Dura-Ace FC-R9100 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "50/34T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R9100",
+     "speeds": 11,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 614,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Weights from the 2020-21 handbook; the 2017-18 handbook lists 621 g (53-39T) and 609 g (50-34T). Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-9000-55-42",
+   "name": "Shimano Dura-Ace FC-9000 55/42T",
+   "values": {
+    "chainrings": "55, 42",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "55/42T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-9000",
+     "speeds": 11,
+     "chainrings_t": "55, 42",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 639,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-9000-54-42",
+   "name": "Shimano Dura-Ace FC-9000 54/42T",
+   "values": {
+    "chainrings": "54, 42",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "54/42T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-9000",
+     "speeds": 11,
+     "chainrings_t": "54, 42",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 632,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-9000-53-39",
+   "name": "Shimano Dura-Ace FC-9000 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "53/39T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-9000",
+     "speeds": 11,
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 618,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-9000-52-38",
+   "name": "Shimano Dura-Ace FC-9000 52/38T",
+   "values": {
+    "chainrings": "52, 38",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "52/38T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-9000",
+     "speeds": 11,
+     "chainrings_t": "52, 38",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 622,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-9000-52-36",
+   "name": "Shimano Dura-Ace FC-9000 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "52/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-9000",
+     "speeds": 11,
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 618,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-dura-ace-fc-9000-50-34",
+   "name": "Shimano Dura-Ace FC-9000 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "50/34T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-9000",
+     "speeds": 11,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5, 180",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded BB-R9100 / press-fit SM-BB92-41B",
+     "weight_g": 610,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5, 180 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-ultegra-fc-r8000-50-34",
+   "name": "Shimano Ultegra FC-R8000 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "50/34T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R8000",
+     "speeds": 11,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded SM-BBR60 / press-fit SM-BB72-41B",
+     "weight_g": 674,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-ultegra-fc-r8000-52-36",
+   "name": "Shimano Ultegra FC-R8000 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "52/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R8000",
+     "speeds": 11,
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded SM-BBR60 / press-fit SM-BB72-41B",
+     "weight_g": 681,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-ultegra-fc-r8000-53-39",
+   "name": "Shimano Ultegra FC-R8000 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "53/39T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R8000",
+     "speeds": 11,
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded SM-BBR60 / press-fit SM-BB72-41B",
+     "weight_g": 690,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-ultegra-fc-r8000-46-36",
+   "name": "Shimano Ultegra FC-R8000 46/36T",
+   "values": {
+    "chainrings": "46, 36",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "46/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-R8000",
+     "speeds": 11,
+     "chainrings_t": "46, 36",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded SM-BBR60 / press-fit SM-BB72-41B",
+     "weight_g": 668,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-ultegra-fc-6800-50-34",
+   "name": "Shimano Ultegra FC-6800 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "50/34T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-6800",
+     "speeds": 11,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146.6,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 681,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-ultegra-fc-6800-52-36",
+   "name": "Shimano Ultegra FC-6800 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "52/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-6800",
+     "speeds": 11,
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146.6,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 689,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-ultegra-fc-6800-53-39",
+   "name": "Shimano Ultegra FC-6800 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "53/39T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-6800",
+     "speeds": 11,
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146.6,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 696,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-ultegra-fc-6800-46-36",
+   "name": "Shimano Ultegra FC-6800 46/36T",
+   "values": {
+    "chainrings": "46, 36",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "46/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-6800",
+     "speeds": 11,
+     "chainrings_t": "46, 36",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146.6,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 677,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-105-fc-5800-53-39",
+   "name": "Shimano 105 FC-5800 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "53/39T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-5800",
+     "speeds": 11,
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 776,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-105-fc-5800-52-36",
+   "name": "Shimano 105 FC-5800 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "52/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-5800",
+     "speeds": 11,
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 773,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-105-fc-5800-50-34",
+   "name": "Shimano 105 FC-5800 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "50/34T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-5800",
+     "speeds": 11,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 4-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 757,
+     "weight_note": "170 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-105-fc-5750-50-34",
+   "name": "Shimano 105 FC-5750 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 146,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "50/34T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-5750",
+     "speeds": 10,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 146,
+     "chainring_mount": "110 mm BCD, 5-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded SM-BB5700 / press-fit SM-BB71-41B"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-105-fc-5703-50-39-30",
+   "name": "Shimano 105 FC-5703 50/39/30T",
+   "values": {
+    "chainrings": "50, 39, 30",
+    "crank_length": 172.5,
+    "chainline": 45,
+    "q_factor": 154.76,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "50/39/30T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-5703",
+     "speeds": 10,
+     "chainrings_t": "50, 39, 30",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 45,
+     "q_factor_mm": 154.76,
+     "chainring_mount": "130/74 mm BCD, 5-arm",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "bottom_bracket": "threaded SM-BB5700 / press-fit SM-BB71-41B"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-fc-cx50-46-36",
+   "name": "Shimano FC-CX50 46/36T",
+   "values": {
+    "chainrings": "46, 36",
+    "crank_length": 172.5,
+    "chainline": 43.5,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "FC-CX50",
+    "variant": "46/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-CX50",
+     "speeds": 10,
+     "chainrings_t": "46, 36",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 43.5,
+     "q_factor_mm": 150,
+     "chainring_mount": "110 mm BCD, 5-arm",
+     "spindle": "2-PIECE CRANKSET (outboard bearing)",
+     "bottom_bracket": "threaded BB-RS500 / press-fit SM-BB71-41B"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Cyclocross crankset. Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-xtr-fc-m9000-1-30",
+   "name": "Shimano XTR FC-M9000-1 30T",
+   "values": {
+    "chainrings": "30",
+    "crank_length": 170,
+    "q_factor": 158,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "30T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-M9000-1",
+     "speeds": 11,
+     "chainrings_t": "30",
+     "crank_lengths_mm": "170, 175",
+     "q_factor_mm": 158,
+     "chainring_mount": "96 mm BCD",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 586,
+     "weight_note": "175 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-xtr-fc-m9000-1-32",
+   "name": "Shimano XTR FC-M9000-1 32T",
+   "values": {
+    "chainrings": "32",
+    "crank_length": 170,
+    "q_factor": 158,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "32T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-M9000-1",
+     "speeds": 11,
+     "chainrings_t": "32",
+     "crank_lengths_mm": "170, 175",
+     "q_factor_mm": 158,
+     "chainring_mount": "96 mm BCD",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 598,
+     "weight_note": "175 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-xtr-fc-m9000-1-34",
+   "name": "Shimano XTR FC-M9000-1 34T",
+   "values": {
+    "chainrings": "34",
+    "crank_length": 170,
+    "q_factor": 158,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "34T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-M9000-1",
+     "speeds": 11,
+     "chainrings_t": "34",
+     "crank_lengths_mm": "170, 175",
+     "q_factor_mm": 158,
+     "chainring_mount": "96 mm BCD",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 600,
+     "weight_note": "175 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-xtr-fc-m9000-1-36",
+   "name": "Shimano XTR FC-M9000-1 36T",
+   "values": {
+    "chainrings": "36",
+    "crank_length": 170,
+    "q_factor": 158,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-M9000-1",
+     "speeds": 11,
+     "chainrings_t": "36",
+     "crank_lengths_mm": "170, 175",
+     "q_factor_mm": 158,
+     "chainring_mount": "96 mm BCD",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 616,
+     "weight_note": "175 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-xtr-fc-m9000-2-38-28",
+   "name": "Shimano XTR FC-M9000-2 38/28T",
+   "values": {
+    "chainrings": "38, 28",
+    "crank_length": 170,
+    "q_factor": 158,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "38/28T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-M9000-2",
+     "speeds": 11,
+     "chainrings_t": "38, 28",
+     "crank_lengths_mm": "170, 175",
+     "q_factor_mm": 158,
+     "chainring_mount": "96/64 mm BCD",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 649,
+     "weight_note": "175 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-xtr-fc-m9000-2-36-26",
+   "name": "Shimano XTR FC-M9000-2 36/26T",
+   "values": {
+    "chainrings": "36, 26",
+    "crank_length": 170,
+    "q_factor": 158,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "36/26T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-M9000-2",
+     "speeds": 11,
+     "chainrings_t": "36, 26",
+     "crank_lengths_mm": "170, 175",
+     "q_factor_mm": 158,
+     "chainring_mount": "96/64 mm BCD",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 631,
+     "weight_note": "175 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "shimano-xtr-fc-m9000-2-34-24",
+   "name": "Shimano XTR FC-M9000-2 34/24T",
+   "values": {
+    "chainrings": "34, 24",
+    "crank_length": 170,
+    "q_factor": 158,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "34/24T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-M9000-2",
+     "speeds": 11,
+     "chainrings_t": "34, 24",
+     "crank_lengths_mm": "170, 175",
+     "q_factor_mm": 158,
+     "chainring_mount": "96/64 mm BCD",
+     "spindle": "HOLLOWTECH II (outboard bearing, two-piece)",
+     "weight_g": 611,
+     "weight_note": "175 mm arms, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 175 mm); choose the rider's length"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-fc-red-e1-46-33",
+   "name": "SRAM RED FC-RED-E1 46/33T",
+   "values": {
+    "chainrings": "46, 33",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED",
+    "variant": "46/33T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-E1",
+     "speeds": 12,
+     "chainrings_t": "46, 33",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0,
+     "weight_172_5mm_48_35t_g": 545,
+     "front_tooth_jump": 13,
+     "front_derailleur_tech": "Road-Yaw"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Weight 545 g quoted for 172.5 mm / 48-35T. Features text also mentions 150 and 155 mm arms.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-fc-red-e1-48-35",
+   "name": "SRAM RED FC-RED-E1 48/35T",
+   "values": {
+    "chainrings": "48, 35",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED",
+    "variant": "48/35T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-E1",
+     "speeds": 12,
+     "chainrings_t": "48, 35",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0,
+     "weight_172_5mm_48_35t_g": 545,
+     "front_tooth_jump": 13,
+     "front_derailleur_tech": "Road-Yaw"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Weight 545 g quoted for 172.5 mm / 48-35T. Features text also mentions 150 and 155 mm arms.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-fc-red-e1-50-37",
+   "name": "SRAM RED FC-RED-E1 50/37T",
+   "values": {
+    "chainrings": "50, 37",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED",
+    "variant": "50/37T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-E1",
+     "speeds": 12,
+     "chainrings_t": "50, 37",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0,
+     "weight_172_5mm_48_35t_g": 545,
+     "front_tooth_jump": 13,
+     "front_derailleur_tech": "Road-Yaw"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Weight 545 g quoted for 172.5 mm / 48-35T. Features text also mentions 150 and 155 mm arms.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-1-fc-red-1-e1-44",
+   "name": "SRAM RED 1 FC-RED-1-E1 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED 1",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "44",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-1-fc-red-1-e1-46",
+   "name": "SRAM RED 1 FC-RED-1-E1 46T",
+   "values": {
+    "chainrings": "46",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED 1",
+    "variant": "46T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "46",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-1-fc-red-1-e1-50",
+   "name": "SRAM RED 1 FC-RED-1-E1 50T",
+   "values": {
+    "chainrings": "50",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED 1",
+    "variant": "50T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "50",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-xplr-fc-red-1w-e1-40",
+   "name": "SRAM RED XPLR FC-RED-1W-E1 40T",
+   "values": {
+    "chainrings": "40",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XPLR",
+    "variant": "40T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "40",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Features text lists 150-175 mm arm lengths; the spec table starts at 160 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-xplr-fc-red-1w-e1-42",
+   "name": "SRAM RED XPLR FC-RED-1W-E1 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XPLR",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "42",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Features text lists 150-175 mm arm lengths; the spec table starts at 160 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-xplr-fc-red-1w-e1-44",
+   "name": "SRAM RED XPLR FC-RED-1W-E1 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XPLR",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "44",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Features text lists 150-175 mm arm lengths; the spec table starts at 160 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-xplr-fc-red-1w-e1-46",
+   "name": "SRAM RED XPLR FC-RED-1W-E1 46T",
+   "values": {
+    "chainrings": "46",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XPLR",
+    "variant": "46T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "46",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Features text lists 150-175 mm arm lengths; the spec table starts at 160 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-xplr-fc-red-1w-e1-48",
+   "name": "SRAM RED XPLR FC-RED-1W-E1 48T",
+   "values": {
+    "chainrings": "48",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XPLR",
+    "variant": "48T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "48",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Features text lists 150-175 mm arm lengths; the spec table starts at 160 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-xplr-fc-red-1w-e1-50",
+   "name": "SRAM RED XPLR FC-RED-1W-E1 50T",
+   "values": {
+    "chainrings": "50",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XPLR",
+    "variant": "50T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RED-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "50",
+     "crank_lengths_mm": "160, 165, 167.5, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 167.5, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Features text lists 150-175 mm arm lengths; the spec table starts at 160 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-red-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RED-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-fc-frc-e1-46-33",
+   "name": "SRAM Force FC-FRC-E1 46/33T",
+   "values": {
+    "chainrings": "46, 33",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force",
+    "variant": "46/33T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-E1",
+     "speeds": 12,
+     "chainrings_t": "46, 33",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-fc-frc-e1-48-35",
+   "name": "SRAM Force FC-FRC-E1 48/35T",
+   "values": {
+    "chainrings": "48, 35",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force",
+    "variant": "48/35T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-E1",
+     "speeds": 12,
+     "chainrings_t": "48, 35",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-fc-frc-e1-50-37",
+   "name": "SRAM Force FC-FRC-E1 50/37T",
+   "values": {
+    "chainrings": "50, 37",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force",
+    "variant": "50/37T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-E1",
+     "speeds": 12,
+     "chainrings_t": "50, 37",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-1-fc-frc-1-e1-44",
+   "name": "SRAM Force 1 FC-FRC-1-E1 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force 1",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "44",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-1-fc-frc-1-e1-46",
+   "name": "SRAM Force 1 FC-FRC-1-E1 46T",
+   "values": {
+    "chainrings": "46",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force 1",
+    "variant": "46T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "46",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-1-fc-frc-1-e1-48",
+   "name": "SRAM Force 1 FC-FRC-1-E1 48T",
+   "values": {
+    "chainrings": "48",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force 1",
+    "variant": "48T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "48",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-1-fc-frc-1-e1-50",
+   "name": "SRAM Force 1 FC-FRC-1-E1 50T",
+   "values": {
+    "chainrings": "50",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force 1",
+    "variant": "50T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "50",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-xplr-fc-frc-1w-e1-42",
+   "name": "SRAM Force XPLR FC-FRC-1W-E1 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XPLR",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "42",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Description says standard rings 38-46T and aero rings 44-50T; spec table lists 42-50T.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-xplr-fc-frc-1w-e1-44",
+   "name": "SRAM Force XPLR FC-FRC-1W-E1 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XPLR",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "44",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Description says standard rings 38-46T and aero rings 44-50T; spec table lists 42-50T.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-xplr-fc-frc-1w-e1-46",
+   "name": "SRAM Force XPLR FC-FRC-1W-E1 46T",
+   "values": {
+    "chainrings": "46",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XPLR",
+    "variant": "46T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "46",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Description says standard rings 38-46T and aero rings 44-50T; spec table lists 42-50T.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-xplr-fc-frc-1w-e1-48",
+   "name": "SRAM Force XPLR FC-FRC-1W-E1 48T",
+   "values": {
+    "chainrings": "48",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XPLR",
+    "variant": "48T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "48",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Description says standard rings 38-46T and aero rings 44-50T; spec table lists 42-50T.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-xplr-fc-frc-1w-e1-50",
+   "name": "SRAM Force XPLR FC-FRC-1W-E1 50T",
+   "values": {
+    "chainrings": "50",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XPLR",
+    "variant": "50T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-FRC-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "50",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Description says standard rings 38-46T and aero rings 44-50T; spec table lists 42-50T.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-frc-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-FRC-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-fc-riv-e1-46-33",
+   "name": "SRAM Rival FC-RIV-E1 46/33T",
+   "values": {
+    "chainrings": "46, 33",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival",
+    "variant": "46/33T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RIV-E1",
+     "speeds": 12,
+     "chainrings_t": "46, 33",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-e1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-fc-riv-e1-48-35",
+   "name": "SRAM Rival FC-RIV-E1 48/35T",
+   "values": {
+    "chainrings": "48, 35",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival",
+    "variant": "48/35T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RIV-E1",
+     "speeds": 12,
+     "chainrings_t": "48, 35",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-e1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-xplr-fc-riv-1w-e1-38",
+   "name": "SRAM Rival XPLR FC-RIV-1W-E1 38T",
+   "values": {
+    "chainrings": "38",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XPLR",
+    "variant": "38T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RIV-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "38",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-xplr-fc-riv-1w-e1-40",
+   "name": "SRAM Rival XPLR FC-RIV-1W-E1 40T",
+   "values": {
+    "chainrings": "40",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XPLR",
+    "variant": "40T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RIV-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "40",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-xplr-fc-riv-1w-e1-42",
+   "name": "SRAM Rival XPLR FC-RIV-1W-E1 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XPLR",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RIV-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "42",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-xplr-fc-riv-1w-e1-44",
+   "name": "SRAM Rival XPLR FC-RIV-1W-E1 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XPLR",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RIV-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "44",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-xplr-fc-riv-1w-e1-46",
+   "name": "SRAM Rival XPLR FC-RIV-1W-E1 46T",
+   "values": {
+    "chainrings": "46",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XPLR",
+    "variant": "46T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-RIV-1W-E1",
+     "speeds": "12, 13",
+     "chainrings_t": "46",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets",
+     "chainring_offset_mm": 6.5
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-1w-e1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-1W-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-apex-1-wide-fc-apx-1w-d1-40",
+   "name": "SRAM Apex 1 Wide FC-APX-1W-D1 40T",
+   "values": {
+    "chainrings": "40",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Apex 1 Wide",
+    "variant": "40T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-APX-1W-D1",
+     "speeds": "12, 13",
+     "chainrings_t": "40",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets (not Ai; DUB 83-A BBs only)",
+     "chainring_offset_mm": 6.5,
+     "chainline_options_mm": "47.5, 51.0"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 47.5 and 51.0 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-apx-1w-d1",
+      "publisher": "SRAM (manufacturer) - FC-APX-1W-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-apex-1-wide-fc-apx-1w-d1-42",
+   "name": "SRAM Apex 1 Wide FC-APX-1W-D1 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "chainline": 47.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Apex 1 Wide",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-APX-1W-D1",
+     "speeds": "12, 13",
+     "chainrings_t": "42",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 47.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road WIDE DUB bottom brackets (not Ai; DUB 83-A BBs only)",
+     "chainring_offset_mm": 6.5,
+     "chainline_options_mm": "47.5, 51.0"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 47.5 and 51.0 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-apx-1w-d1",
+      "publisher": "SRAM (manufacturer) - FC-APX-1W-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-axs-fc-riv-d1-46-33",
+   "name": "SRAM Rival AXS FC-RIV-D1 46/33T",
+   "values": {
+    "chainrings": "46, 33",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival AXS",
+    "variant": "46/33T",
+    "status": "unknown",
+    "specs": {
+     "model_code": "FC-RIV-D1",
+     "speeds": 12,
+     "chainrings_t": "46, 33",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "107 mm BCD integrated spider",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-d1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-rival-axs-fc-riv-d1-48-35",
+   "name": "SRAM Rival AXS FC-RIV-D1 48/35T",
+   "values": {
+    "chainrings": "48, 35",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival AXS",
+    "variant": "48/35T",
+    "status": "unknown",
+    "specs": {
+     "model_code": "FC-RIV-D1",
+     "speeds": 12,
+     "chainrings_t": "48, 35",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "chainline_mm": 45.0,
+     "chainring_mount": "107 mm BCD integrated spider",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM Road DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-riv-d1",
+      "publisher": "SRAM (manufacturer) - FC-RIV-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-axs-fc-frc-d2-46-33",
+   "name": "SRAM Force AXS FC-FRC-D2 46/33T",
+   "values": {
+    "chainrings": "46, 33",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force AXS",
+    "variant": "46/33T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-FRC-D2",
+     "speeds": 12,
+     "chainrings_t": "46, 33",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5 mm); choose the rider's length"
+    },
+    "notes": "Previous-generation Force AXS (D2); listed on SRAM's service site.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/service/models/fc-frc-d2",
+      "publisher": "SRAM (manufacturer) - FC-FRC-D2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-axs-fc-frc-d2-48-35",
+   "name": "SRAM Force AXS FC-FRC-D2 48/35T",
+   "values": {
+    "chainrings": "48, 35",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force AXS",
+    "variant": "48/35T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-FRC-D2",
+     "speeds": 12,
+     "chainrings_t": "48, 35",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5 mm); choose the rider's length"
+    },
+    "notes": "Previous-generation Force AXS (D2); listed on SRAM's service site.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/service/models/fc-frc-d2",
+      "publisher": "SRAM (manufacturer) - FC-FRC-D2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-force-axs-fc-frc-d2-50-37",
+   "name": "SRAM Force AXS FC-FRC-D2 50/37T",
+   "values": {
+    "chainrings": "50, 37",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force AXS",
+    "variant": "50/37T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-FRC-D2",
+     "speeds": 12,
+     "chainrings_t": "50, 37",
+     "crank_lengths_mm": "165, 167.5, 170, 172.5, 175, 177.5",
+     "chainline_mm": 45.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM DUB bottom brackets",
+     "chainring_offset_mm": 0
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 167.5, 170, 172.5, 175, 177.5 mm); choose the rider's length"
+    },
+    "notes": "Previous-generation Force AXS (D2); listed on SRAM's service site.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/service/models/fc-frc-d2",
+      "publisher": "SRAM (manufacturer) - FC-FRC-D2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-11-speed-fc-red-c2-46-36",
+   "name": "SRAM RED (11-speed) FC-RED-C2 46/36T",
+   "values": {
+    "chainrings": "46, 36",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED (11-speed)",
+    "variant": "46/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-RED-C2",
+     "speeds": 11,
+     "chainrings_t": "46, 36",
+     "crank_lengths_mm": "162.5, 165, 167.5, 170, 172.5, 175, 177.5",
+     "chainline_mm": 45.0,
+     "chainring_mount": "integrated spider; spec table lists 110 and 130 mm BCD",
+     "spindle": "30 mm (BB30) or GXP",
+     "bottom_bracket": "BB30 or GXP bottom brackets",
+     "chainline_options_mm": "45.0, 45.5"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (162.5, 165, 167.5, 170, 172.5, 175, 177.5 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 45.0 and 45.5 mm and spindles 30 mm or GXP; BCDs 110 and 130.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/service/models/fc-red-c2",
+      "publisher": "SRAM (manufacturer) - FC-RED-C2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-11-speed-fc-red-c2-50-34",
+   "name": "SRAM RED (11-speed) FC-RED-C2 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED (11-speed)",
+    "variant": "50/34T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-RED-C2",
+     "speeds": 11,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "162.5, 165, 167.5, 170, 172.5, 175, 177.5",
+     "chainline_mm": 45.0,
+     "chainring_mount": "integrated spider; spec table lists 110 and 130 mm BCD",
+     "spindle": "30 mm (BB30) or GXP",
+     "bottom_bracket": "BB30 or GXP bottom brackets",
+     "chainline_options_mm": "45.0, 45.5"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (162.5, 165, 167.5, 170, 172.5, 175, 177.5 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 45.0 and 45.5 mm and spindles 30 mm or GXP; BCDs 110 and 130.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/service/models/fc-red-c2",
+      "publisher": "SRAM (manufacturer) - FC-RED-C2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-11-speed-fc-red-c2-52-36",
+   "name": "SRAM RED (11-speed) FC-RED-C2 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED (11-speed)",
+    "variant": "52/36T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-RED-C2",
+     "speeds": 11,
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "162.5, 165, 167.5, 170, 172.5, 175, 177.5",
+     "chainline_mm": 45.0,
+     "chainring_mount": "integrated spider; spec table lists 110 and 130 mm BCD",
+     "spindle": "30 mm (BB30) or GXP",
+     "bottom_bracket": "BB30 or GXP bottom brackets",
+     "chainline_options_mm": "45.0, 45.5"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (162.5, 165, 167.5, 170, 172.5, 175, 177.5 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 45.0 and 45.5 mm and spindles 30 mm or GXP; BCDs 110 and 130.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/service/models/fc-red-c2",
+      "publisher": "SRAM (manufacturer) - FC-RED-C2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-11-speed-fc-red-c2-53-39",
+   "name": "SRAM RED (11-speed) FC-RED-C2 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED (11-speed)",
+    "variant": "53/39T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-RED-C2",
+     "speeds": 11,
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "162.5, 165, 167.5, 170, 172.5, 175, 177.5",
+     "chainline_mm": 45.0,
+     "chainring_mount": "integrated spider; spec table lists 110 and 130 mm BCD",
+     "spindle": "30 mm (BB30) or GXP",
+     "bottom_bracket": "BB30 or GXP bottom brackets",
+     "chainline_options_mm": "45.0, 45.5"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (162.5, 165, 167.5, 170, 172.5, 175, 177.5 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 45.0 and 45.5 mm and spindles 30 mm or GXP; BCDs 110 and 130.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/service/models/fc-red-c2",
+      "publisher": "SRAM (manufacturer) - FC-RED-C2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-red-11-speed-fc-red-c2-55-42",
+   "name": "SRAM RED (11-speed) FC-RED-C2 55/42T",
+   "values": {
+    "chainrings": "55, 42",
+    "crank_length": 172.5,
+    "chainline": 45.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED (11-speed)",
+    "variant": "55/42T",
+    "status": "discontinued",
+    "specs": {
+     "model_code": "FC-RED-C2",
+     "speeds": 11,
+     "chainrings_t": "55, 42",
+     "crank_lengths_mm": "162.5, 165, 167.5, 170, 172.5, 175, 177.5",
+     "chainline_mm": 45.0,
+     "chainring_mount": "integrated spider; spec table lists 110 and 130 mm BCD",
+     "spindle": "30 mm (BB30) or GXP",
+     "bottom_bracket": "BB30 or GXP bottom brackets",
+     "chainline_options_mm": "45.0, 45.5"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (162.5, 165, 167.5, 170, 172.5, 175, 177.5 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 45.0 and 45.5 mm and spindles 30 mm or GXP; BCDs 110 and 130.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/service/models/fc-red-c2",
+      "publisher": "SRAM (manufacturer) - FC-RED-C2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-xx-eagle-fc-xx-d1-32",
+   "name": "SRAM XX Eagle FC-XX-D1 32T",
+   "values": {
+    "chainrings": "32",
+    "crank_length": 170,
+    "chainline": 55.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX Eagle",
+    "variant": "32T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-XX-D1",
+     "speeds": 12,
+     "chainrings_t": "32",
+     "crank_lengths_mm": "165, 170, 175",
+     "chainline_mm": 55.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM MTB WIDE DUB bottom brackets",
+     "weight_g": 560,
+     "chainring_offset_mm": 3,
+     "chain": "Eagle, T-Type",
+     "weight_note": "170 mm / 32T / DUB wide, Boost"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-xx-d1",
+      "publisher": "SRAM (manufacturer) - FC-XX-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-xx-sl-eagle-fc-xx-sl-d1-34",
+   "name": "SRAM XX SL Eagle FC-XX-SL-D1 34T",
+   "values": {
+    "chainrings": "34",
+    "crank_length": 170,
+    "chainline": 55.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX SL Eagle",
+    "variant": "34T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-XX-SL-D1",
+     "speeds": 12,
+     "chainrings_t": "34",
+     "crank_lengths_mm": "165, 170, 175",
+     "chainline_mm": 55.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM MTB WIDE DUB bottom brackets (DUB BSA73, PF89.5, PF92, PF30 MTB73, BB30 MTB73, BSA MTB68SP)",
+     "weight_g": 475,
+     "chainring_offset_mm": "0 or 3",
+     "weight_note": "175 mm / 34T / DUB wide, Boost"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-xx-sl-d1",
+      "publisher": "SRAM (manufacturer) - FC-XX-SL-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-x0-eagle-fc-x0-d1-30",
+   "name": "SRAM X0 Eagle FC-X0-D1 30T",
+   "values": {
+    "chainrings": "30",
+    "crank_length": 170,
+    "chainline": 55.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "X0 Eagle",
+    "variant": "30T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-X0-D1",
+     "speeds": 12,
+     "chainrings_t": "30",
+     "crank_lengths_mm": "165, 170, 175",
+     "chainline_mm": 55.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM MTB WIDE DUB bottom brackets",
+     "chainring_offset_mm": "3 or -4",
+     "chainline_options_mm": "55.0, 76.5"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 175 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 55.0 and 76.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-x0-d1",
+      "publisher": "SRAM (manufacturer) - FC-X0-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-x0-eagle-fc-x0-d1-32",
+   "name": "SRAM X0 Eagle FC-X0-D1 32T",
+   "values": {
+    "chainrings": "32",
+    "crank_length": 170,
+    "chainline": 55.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "X0 Eagle",
+    "variant": "32T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-X0-D1",
+     "speeds": 12,
+     "chainrings_t": "32",
+     "crank_lengths_mm": "165, 170, 175",
+     "chainline_mm": 55.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM MTB WIDE DUB bottom brackets",
+     "weight_g": 685,
+     "chainring_offset_mm": "3 or -4",
+     "chainline_options_mm": "55.0, 76.5",
+     "weight_note": "170 mm / 32T / DUB wide"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 175 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 55.0 and 76.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-x0-d1",
+      "publisher": "SRAM (manufacturer) - FC-X0-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-x0-eagle-fc-x0-d1-34",
+   "name": "SRAM X0 Eagle FC-X0-D1 34T",
+   "values": {
+    "chainrings": "34",
+    "crank_length": 170,
+    "chainline": 55.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "X0 Eagle",
+    "variant": "34T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-X0-D1",
+     "speeds": 12,
+     "chainrings_t": "34",
+     "crank_lengths_mm": "165, 170, 175",
+     "chainline_mm": 55.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM MTB WIDE DUB bottom brackets",
+     "chainring_offset_mm": "3 or -4",
+     "chainline_options_mm": "55.0, 76.5"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 175 mm); choose the rider's length"
+    },
+    "notes": "Spec table lists chainlines 55.0 and 76.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-x0-d1",
+      "publisher": "SRAM (manufacturer) - FC-X0-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-gx-eagle-fc-gx-d1-32",
+   "name": "SRAM GX Eagle FC-GX-D1 32T",
+   "values": {
+    "chainrings": "32",
+    "crank_length": 170,
+    "chainline": 55.0,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GX Eagle",
+    "variant": "32T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-GX-D1",
+     "speeds": 12,
+     "chainrings_t": "32",
+     "crank_lengths_mm": "165, 170, 175",
+     "chainline_mm": 55.0,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM MTB WIDE DUB bottom brackets",
+     "weight_g": 740,
+     "chainring_offset_mm": 3,
+     "weight_note": "170 mm / 32T / DUB wide"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-gx-d1",
+      "publisher": "SRAM (manufacturer) - FC-GX-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "sram-xx-dh-fc-xx-dh-a1-34",
+   "name": "SRAM XX DH FC-XX-DH-A1 34T",
+   "values": {
+    "chainrings": "34",
+    "crank_length": 165,
+    "chainline": 56.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX DH",
+    "variant": "34T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-XX-DH-A1",
+     "speeds": 7,
+     "chainrings_t": "34",
+     "crank_lengths_mm": "150, 155, 160, 165",
+     "chainline_mm": 56.5,
+     "chainring_mount": "8-bolt direct mount (DM) chainring",
+     "spindle": "DUB",
+     "bottom_bracket": "SRAM MTB WIDE DUB bottom brackets, DUB BSA MTB 83, DUB PF MTB 104.5/107",
+     "chainring_offset_mm": "3 or 6",
+     "chainline_options_mm": "55.0 (DUB Wide), 56.5 (DUB DH)"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (150, 155, 160, 165 mm); choose the rider's length"
+    },
+    "notes": "Chainline 56.5 mm with the DUB DH spindle, 55 mm with DUB Wide; features list 32-36T rings.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fc-xx-dh-a1",
+      "publisher": "SRAM (manufacturer) - FC-XX-DH-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-13-45-29",
+   "name": "Campagnolo Super Record 13 45/29T",
+   "values": {
+    "chainrings": "45, 29",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "45/29T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "45, 29",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "spindle": "Ultra-Torque, titanium semi-axles",
+     "weight_g": 590,
+     "arm_material": "carbon fibre",
+     "weight_note": "172.5 mm, 45x29, bearings assembled"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-crankset/CFCSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-13-48-32",
+   "name": "Campagnolo Super Record 13 48/32T",
+   "values": {
+    "chainrings": "48, 32",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "48/32T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "48, 32",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "spindle": "Ultra-Torque, titanium semi-axles",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-crankset/CFCSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-13-50-34",
+   "name": "Campagnolo Super Record 13 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "50/34T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "spindle": "Ultra-Torque, titanium semi-axles",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-crankset/CFCSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-13-52-36",
+   "name": "Campagnolo Super Record 13 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "52/36T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "spindle": "Ultra-Torque, titanium semi-axles",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-crankset/CFCSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-13-53-39",
+   "name": "Campagnolo Super Record 13 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "53/39T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "spindle": "Ultra-Torque, titanium semi-axles",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-crankset/CFCSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-13-54-39",
+   "name": "Campagnolo Super Record 13 54/39T",
+   "values": {
+    "chainrings": "54, 39",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "54/39T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "54, 39",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "spindle": "Ultra-Torque, titanium semi-axles",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-crankset/CFCSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-13-55-39",
+   "name": "Campagnolo Super Record 13 55/39T",
+   "values": {
+    "chainrings": "55, 39",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13",
+    "variant": "55/39T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "55, 39",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "spindle": "Ultra-Torque, titanium semi-axles",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-crankset/CFCSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-record-13-45-29",
+   "name": "Campagnolo Record 13 45/29T",
+   "values": {
+    "chainrings": "45, 29",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "45/29T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "45, 29",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "weight_g": 686,
+     "arm_material": "carbon fibre",
+     "weight_note": "172.5 mm, 45x29, bearings assembled"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-crankset/CFCRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-record-13-48-32",
+   "name": "Campagnolo Record 13 48/32T",
+   "values": {
+    "chainrings": "48, 32",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "48/32T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "48, 32",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-crankset/CFCRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-record-13-50-34",
+   "name": "Campagnolo Record 13 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "50/34T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-crankset/CFCRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-record-13-52-36",
+   "name": "Campagnolo Record 13 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "52/36T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-crankset/CFCRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-record-13-53-39",
+   "name": "Campagnolo Record 13 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "53/39T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-crankset/CFCRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-record-13-54-39",
+   "name": "Campagnolo Record 13 54/39T",
+   "values": {
+    "chainrings": "54, 39",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "54/39T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "54, 39",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-crankset/CFCRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-record-13-55-39",
+   "name": "Campagnolo Record 13 55/39T",
+   "values": {
+    "chainrings": "55, 39",
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "55/39T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "55, 39",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "arm_material": "carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-crankset/CFCRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-1x13-44",
+   "name": "Campagnolo Super Record 1x13 44T",
+   "values": {
+    "chainrings": "44",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 1x13",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "44",
+     "spindle": "Ultra-Torque, titanium semi-axle",
+     "crank_lengths_mm": "165-175 (range as stated; individual sizes not listed)",
+     "arm_material": "carbon fibre",
+     "max_cassette_cog_t": 36
+    },
+    "notes": "Page states five ring sizes from 44 to 52T in 2-tooth steps.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/1x-super-record-crankset/CFCSUPERRECORD1X13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 1x crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-1x13-46",
+   "name": "Campagnolo Super Record 1x13 46T",
+   "values": {
+    "chainrings": "46",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 1x13",
+    "variant": "46T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "46",
+     "spindle": "Ultra-Torque, titanium semi-axle",
+     "crank_lengths_mm": "165-175 (range as stated; individual sizes not listed)",
+     "arm_material": "carbon fibre",
+     "max_cassette_cog_t": 36
+    },
+    "notes": "Page states five ring sizes from 44 to 52T in 2-tooth steps.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/1x-super-record-crankset/CFCSUPERRECORD1X13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 1x crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-1x13-48",
+   "name": "Campagnolo Super Record 1x13 48T",
+   "values": {
+    "chainrings": "48",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 1x13",
+    "variant": "48T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "48",
+     "spindle": "Ultra-Torque, titanium semi-axle",
+     "crank_lengths_mm": "165-175 (range as stated; individual sizes not listed)",
+     "arm_material": "carbon fibre",
+     "max_cassette_cog_t": 36
+    },
+    "notes": "Page states five ring sizes from 44 to 52T in 2-tooth steps.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/1x-super-record-crankset/CFCSUPERRECORD1X13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 1x crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-1x13-50",
+   "name": "Campagnolo Super Record 1x13 50T",
+   "values": {
+    "chainrings": "50",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 1x13",
+    "variant": "50T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "50",
+     "spindle": "Ultra-Torque, titanium semi-axle",
+     "crank_lengths_mm": "165-175 (range as stated; individual sizes not listed)",
+     "arm_material": "carbon fibre",
+     "max_cassette_cog_t": 36
+    },
+    "notes": "Page states five ring sizes from 44 to 52T in 2-tooth steps.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/1x-super-record-crankset/CFCSUPERRECORD1X13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 1x crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-super-record-1x13-52",
+   "name": "Campagnolo Super Record 1x13 52T",
+   "values": {
+    "chainrings": "52",
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 1x13",
+    "variant": "52T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "52",
+     "spindle": "Ultra-Torque, titanium semi-axle",
+     "crank_lengths_mm": "165-175 (range as stated; individual sizes not listed)",
+     "arm_material": "carbon fibre",
+     "max_cassette_cog_t": 36
+    },
+    "notes": "Page states five ring sizes from 44 to 52T in 2-tooth steps.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/1x-super-record-crankset/CFCSUPERRECORD1X13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 1x crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-38",
+   "name": "Campagnolo Ekar 38T",
+   "values": {
+    "chainrings": "38",
+    "crank_length": 172.5,
+    "q_factor": 145.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar",
+    "variant": "38T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "38",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "q_factor_mm": 145.5,
+     "chainring_mount": "123 mm BCD",
+     "spindle": "24 mm (per tech-manual title), steel axle",
+     "weight_g": 615,
+     "arm_material": "UD carbon fibre",
+     "weight_note": "172.5 mm, 38T"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-crankset-1x13-speed/CFCEKAR1X13S.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar 1x13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-40",
+   "name": "Campagnolo Ekar 40T",
+   "values": {
+    "chainrings": "40",
+    "crank_length": 172.5,
+    "q_factor": 145.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar",
+    "variant": "40T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "40",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "q_factor_mm": 145.5,
+     "chainring_mount": "123 mm BCD",
+     "spindle": "24 mm (per tech-manual title), steel axle",
+     "arm_material": "UD carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-crankset-1x13-speed/CFCEKAR1X13S.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar 1x13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-42",
+   "name": "Campagnolo Ekar 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "q_factor": 145.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "42",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "q_factor_mm": 145.5,
+     "chainring_mount": "123 mm BCD",
+     "spindle": "24 mm (per tech-manual title), steel axle",
+     "arm_material": "UD carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-crankset-1x13-speed/CFCEKAR1X13S.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar 1x13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-44",
+   "name": "Campagnolo Ekar 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "q_factor": 145.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "44",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "q_factor_mm": 145.5,
+     "chainring_mount": "123 mm BCD",
+     "spindle": "24 mm (per tech-manual title), steel axle",
+     "arm_material": "UD carbon fibre"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-crankset-1x13-speed/CFCEKAR1X13S.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar 1x13 crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-gt-36",
+   "name": "Campagnolo Ekar GT 36T",
+   "values": {
+    "chainrings": "36",
+    "crank_length": 172.5,
+    "q_factor": 151,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar GT",
+    "variant": "36T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "36",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "q_factor_mm": 151,
+     "chainring_mount": "104 mm BCD, 4-arm",
+     "spindle": "ProTech (Hirth-joint semi-axles)",
+     "arm_material": "aluminium"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-gt-crankset/CFCEKAR1X13SGT.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar GT crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-gt-38",
+   "name": "Campagnolo Ekar GT 38T",
+   "values": {
+    "chainrings": "38",
+    "crank_length": 172.5,
+    "q_factor": 151,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar GT",
+    "variant": "38T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "38",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "q_factor_mm": 151,
+     "chainring_mount": "104 mm BCD, 4-arm",
+     "spindle": "ProTech (Hirth-joint semi-axles)",
+     "weight_g": 850,
+     "arm_material": "aluminium",
+     "weight_note": "172.5 mm, 38T"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-gt-crankset/CFCEKAR1X13SGT.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar GT crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-gt-40",
+   "name": "Campagnolo Ekar GT 40T",
+   "values": {
+    "chainrings": "40",
+    "crank_length": 172.5,
+    "q_factor": 151,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar GT",
+    "variant": "40T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "40",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "q_factor_mm": 151,
+     "chainring_mount": "104 mm BCD, 4-arm",
+     "spindle": "ProTech (Hirth-joint semi-axles)",
+     "arm_material": "aluminium"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-gt-crankset/CFCEKAR1X13SGT.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar GT crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-gt-42",
+   "name": "Campagnolo Ekar GT 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "q_factor": 151,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar GT",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "42",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "q_factor_mm": 151,
+     "chainring_mount": "104 mm BCD, 4-arm",
+     "spindle": "ProTech (Hirth-joint semi-axles)",
+     "arm_material": "aluminium"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-gt-crankset/CFCEKAR1X13SGT.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar GT crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "campagnolo-ekar-gt-44",
+   "name": "Campagnolo Ekar GT 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "q_factor": 151,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar GT",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "speeds": 13,
+     "chainrings_t": "44",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "q_factor_mm": 151,
+     "chainring_mount": "104 mm BCD, 4-arm",
+     "spindle": "ProTech (Hirth-joint semi-axles)",
+     "arm_material": "aluminium"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-gt-crankset/CFCEKAR1X13SGT.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar GT crankset product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "microshift-sword-fc-g7000-46-46-29",
+   "name": "microSHIFT Sword FC-G7000-46 46/29T",
+   "values": {
+    "chainrings": "46, 29",
+    "crank_length": 172.5,
+    "chainline": 47,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Sword",
+    "variant": "46/29T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-G7000-46",
+     "speeds": 10,
+     "chainrings_t": "46, 29",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 47,
+     "chainring_mount": "110/80 mm BCD asymmetric",
+     "spindle": "24 mm (Shimano-compatible BB)",
+     "bottom_bracket": "press-fit 86.5 mm or BSA 68 mm",
+     "weight_g": 925,
+     "weight_note": "172.5 mm arms"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/fc-g7000-46/",
+      "publisher": "microSHIFT (manufacturer) - FC-G7000-46 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "microshift-sword-fc-g7000-48-48-31",
+   "name": "microSHIFT Sword FC-G7000-48 48/31T",
+   "values": {
+    "chainrings": "48, 31",
+    "crank_length": 172.5,
+    "chainline": 47,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Sword",
+    "variant": "48/31T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-G7000-48",
+     "speeds": 10,
+     "chainrings_t": "48, 31",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 47,
+     "chainring_mount": "110/80 mm BCD asymmetric",
+     "spindle": "24 mm (Shimano-compatible BB)",
+     "bottom_bracket": "press-fit 86.5 mm or BSA 68 mm"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/fc-g7000-48/",
+      "publisher": "microSHIFT (manufacturer) - FC-G7000-48 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "microshift-sword-fc-g7000-42-42",
+   "name": "microSHIFT Sword FC-G7000-42 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "chainline": 50,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Sword",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-G7000-42",
+     "speeds": 10,
+     "chainrings_t": "42",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 50,
+     "chainring_mount": "110 mm BCD asymmetric",
+     "spindle": "24 mm (Shimano-compatible BB)",
+     "bottom_bracket": "press-fit 86.5 mm or BSA 68 mm",
+     "weight_g": 810,
+     "weight_note": "172.5 mm arms"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/fc-g7000-42/",
+      "publisher": "microSHIFT (manufacturer) - FC-G7000-42 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "microshift-sword-fc-g7000-40-40",
+   "name": "microSHIFT Sword FC-G7000-40 40T",
+   "values": {
+    "chainrings": "40",
+    "crank_length": 172.5,
+    "chainline": 50,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Sword",
+    "variant": "40T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-G7000-40",
+     "speeds": 10,
+     "chainrings_t": "40",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 50,
+     "chainring_mount": "110 mm BCD asymmetric",
+     "spindle": "24 mm (Shimano-compatible BB)",
+     "bottom_bracket": "press-fit 86.5 mm or BSA 68 mm",
+     "weight_g": 790,
+     "weight_note": "172.5 mm arms"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/fc-g7000-40/",
+      "publisher": "microSHIFT (manufacturer) - FC-G7000-40 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "microshift-sword-black-fc-g7900-46-46-29",
+   "name": "microSHIFT Sword Black FC-G7900-46 46/29T",
+   "values": {
+    "chainrings": "46, 29",
+    "crank_length": 172.5,
+    "chainline": 47,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Sword Black",
+    "variant": "46/29T",
+    "status": "current",
+    "specs": {
+     "model_code": "FC-G7900-46",
+     "speeds": 9,
+     "chainrings_t": "46, 29",
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainline_mm": 47,
+     "chainring_mount": "110/80 mm BCD asymmetric, 4-bolt",
+     "spindle": "square taper (68x113 mm JIS BB)",
+     "bottom_bracket": "BSA 68 mm"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/fc-g7900-46/",
+      "publisher": "microSHIFT (manufacturer) - FC-G7900-46 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "white-industries-r30-road",
+   "name": "White Industries R30 Road cranks (arm set)",
+   "values": {
+    "crank_length": 172.5,
+    "q_factor": 158.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "R30 Road",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "155, 160, 165, 170, 172.5, 175",
+     "q_factor_mm": 158.5,
+     "chainring_mount": "MR30 direct-mount (TSR 1x / VBC 2x rings)",
+     "spindle": "30 mm",
+     "bottom_bracket": "68 or 86 mm shells; designed for 91 mm (+/-1) outer bearing width",
+     "weight_g": 570,
+     "chainline_options_mm": "1x: 46.5 (3 mm-offset ring inboard), 49.5 (0 mm ring), 52.5 (3 mm ring flipped); 2x: 45",
+     "weight_note": "175 mm with spindle"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (155, 160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Spec section lists 172.5 mm; the order selector omits it. 560 g quoted for 170 mm in the comparison chart.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/r30-cranks/",
+      "publisher": "White Industries (manufacturer) - R30 Road cranks page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "white-industries-g30-gravel",
+   "name": "White Industries G30 Gravel cranks (arm set)",
+   "values": {
+    "crank_length": 172.5,
+    "q_factor": 171,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "G30 Gravel",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "155, 160, 165, 170, 172.5, 175",
+     "q_factor_mm": 171,
+     "chainring_mount": "MR30 direct-mount (TSR 1x / VBC 2x rings)",
+     "spindle": "30 mm",
+     "bottom_bracket": "68 or 86 mm shells; designed for 91 mm (+/-1) outer bearing width",
+     "weight_g": 570,
+     "chainline_options_mm": "1x: 46.5 / 49.5 / 52.5; 2x: 45",
+     "weight_note": "175 mm with spindle"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (155, 160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Order selector also lists 180 mm, spec section lists 172.5 mm; lists conflict.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/g30-cranks/",
+      "publisher": "White Industries (manufacturer) - G30 Gravel cranks page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "white-industries-m30-mountain",
+   "name": "White Industries M30 Mountain cranks (arm set)",
+   "values": {
+    "crank_length": 172.5,
+    "q_factor": 176,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "M30 Mountain",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "155, 160, 165, 170, 172.5, 175, 180",
+     "q_factor_mm": 176,
+     "chainring_mount": "MR30 direct-mount (TSR 1x / VBC 2x rings)",
+     "spindle": "30 mm",
+     "bottom_bracket": "68/73 or 86/92 mm shells; designed for 96 mm (+/-1) OBW",
+     "weight_g": 575,
+     "chainline_options_mm": "1x: 49 / 52 / 55; 2x: 47.5",
+     "weight_note": "175 mm with spindle"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (155, 160, 165, 170, 172.5, 175, 180 mm); choose the rider's length"
+    },
+    "notes": "Order selector omits 172.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/m30-cranks/",
+      "publisher": "White Industries (manufacturer) - M30 Mountain cranks page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "white-industries-a30-adventure",
+   "name": "White Industries A30 Adventure cranks (arm set)",
+   "values": {
+    "crank_length": 172.5,
+    "q_factor": 163.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "A30 Adventure",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "155, 160, 165, 170, 172.5, 175",
+     "q_factor_mm": 163.5,
+     "chainring_mount": "MR30 direct-mount (TSR 1x / VBC 2x rings)",
+     "spindle": "30 mm",
+     "bottom_bracket": "73 mm-shell gravel/adventure frames; designed for 96 mm (+/-1) OBW",
+     "weight_g": 565,
+     "chainline_options_mm": "1x: 49 / 52 / 55; 2x: 47.5",
+     "weight_note": "170 mm with spindle"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (155, 160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Spec section lists 172.5 mm; selector omits it.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/a30-cranks/",
+      "publisher": "White Industries (manufacturer) - A30 Adventure cranks page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "white-industries-t30-titanium",
+   "name": "White Industries T30 Titanium cranks (arm set)",
+   "values": {
+    "crank_length": 170,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "T30 Titanium",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "165, 170, 175",
+     "chainring_mount": "MR30 or SRAM 8-bolt direct mount",
+     "spindle": "29 or 30 mm",
+     "bottom_bracket": "68/86.5 or 73/91.5 mm shells",
+     "weight_g": 432,
+     "weight_note": "165 mm with spindle",
+     "q_factor_options_mm": "159 (MR30, 68/86.5), 170 (MR30, 73/91.5), 163 (SRAM 8-bolt, 68/86.5), 173 (SRAM 8-bolt, 73/91.5)"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 175 mm); choose the rider's length"
+    },
+    "notes": "Q-factor and chainline depend on spindle/ring interface; values read from the page's compatibility table.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/t30-titanium-cranks/",
+      "publisher": "White Industries (manufacturer) - T30 titanium cranks page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "white-industries-square-taper-road",
+   "name": "White Industries Square Taper Road cranks (arm set)",
+   "values": {
+    "crank_length": 172.5,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "White Industries",
+    "model": "Square Taper Road",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "165, 170, 172.5, 175",
+     "chainring_mount": "lockring-mounted ENO/VBC rings",
+     "spindle": "JIS square taper",
+     "bottom_bracket": "68/73 mm BSA, JIS square-taper BB (108/113/121 mm spindles)",
+     "weight_g": 473,
+     "weight_note": "170 mm with hardware, no BB or ring",
+     "chainline_options_mm": "1x TSR: 45 (108 BB), 47.5 (113), 51.5 (121); 2x VBC: 43 (113), 47 (121)"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Selector lists 165/170/175 mm; spec text adds 172.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.whiteind.com/product/square-taper-road-cranks/",
+      "publisher": "White Industries (manufacturer) - Square Taper Road cranks page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "praxis-zayante-carbon-gr-48-32",
+   "name": "Praxis Zayante Carbon GR 48/32T",
+   "values": {
+    "chainrings": "48, 32",
+    "crank_length": 172.5,
+    "chainline": 47,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Praxis",
+    "model": "Zayante Carbon GR",
+    "variant": "48/32T",
+    "status": "current",
+    "specs": {
+     "speeds": "10/11/12",
+     "chainrings_t": "48, 32",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "chainline_mm": 47,
+     "q_factor_mm": 150,
+     "spindle": "M30 alloy (30 mm drive side / 28 mm non-drive)",
+     "bottom_bracket": "Praxis M30 BB (BSA, BB86, T47, BB30, PF30, 386EVO, BBRight)",
+     "weight_g": 605,
+     "weight_note": "172.5 mm with 48/32",
+     "chainline_1x_mm": 48
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://praxiscycles.com/product/zayante-carbon-gr/",
+      "publisher": "Praxis (manufacturer) - Zayante Carbon GR",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "praxis-alba-gr-48-32",
+   "name": "Praxis Alba GR 48/32T",
+   "values": {
+    "chainrings": "48, 32",
+    "crank_length": 172.5,
+    "chainline": 47,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Praxis",
+    "model": "Alba GR",
+    "variant": "48/32T",
+    "status": "current",
+    "specs": {
+     "speeds": "10/11/12",
+     "chainrings_t": "48, 32",
+     "crank_lengths_mm": "165, 170, 172.5",
+     "chainline_mm": 47,
+     "q_factor_mm": 150,
+     "spindle": "M30 alloy (30 mm drive side / 28 mm non-drive)",
+     "bottom_bracket": "Praxis M30 BB (BSA, BB86, T47, BB30, PF30, 386EVO, BBRight)",
+     "weight_g": 800,
+     "weight_note": "about 800 g, 172.5 mm with 48/32",
+     "chainline_1x_mm": 48
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://praxiscycles.com/product/alba-gr/",
+      "publisher": "Praxis (manufacturer) - Alba GR",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "race-face-next-sl",
+   "name": "Race Face Next SL crankset",
+   "values": {
+    "crank_length": 170,
+    "chainline": 52,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Race Face",
+    "model": "Next SL",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "170, 175",
+     "chainline_mm": 52,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm, 136 mm spindle (CINCH)",
+     "weight_g": 428,
+     "weight_note": "170 mm arms, 32T alloy ring",
+     "material": "UD carbon arms, 7075 aluminium axle"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.raceface.com/products/next-sl-crankset",
+      "publisher": "Race Face (manufacturer) - Next SL crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "race-face-turbine",
+   "name": "Race Face Turbine crankset",
+   "values": {
+    "crank_length": 170,
+    "chainline": 52,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Race Face",
+    "model": "Turbine",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "160, 165, 170, 175",
+     "chainline_mm": 52,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm, 136 or 143 mm spindle (CINCH)",
+     "weight_g": 579,
+     "weight_note": "170 mm, 136 mm spindle, 32T ring, pedal washers, hardware",
+     "material": "7050 aluminium arms",
+     "chainline_options_mm": "52 (136 mm spindle), 55.5 (143 mm spindle)"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.raceface.com/products/turbine-crankset",
+      "publisher": "Race Face (manufacturer) - Turbine crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "race-face-aeffect-r",
+   "name": "Race Face Aeffect R crankset",
+   "values": {
+    "crank_length": 170,
+    "chainline": 51,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Race Face",
+    "model": "Aeffect R",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "165, 170, 175",
+     "chainline_mm": 51,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "24 mm steel, 137 mm spindle (CINCH)",
+     "weight_g": 632,
+     "weight_note": "170 mm arms, 32T alloy ring",
+     "material": "7050 aluminium arms"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.raceface.com/products/aeffect-r-crankset",
+      "publisher": "Race Face (manufacturer) - Aeffect R crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "cane-creek-eewings-mountain",
+   "name": "Cane Creek eeWings Mountain titanium cranks",
+   "values": {
+    "crank_length": 170,
+    "q_factor": 176,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Cane Creek",
+    "model": "eeWings Mountain",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "160, 165, 170",
+     "q_factor_mm": 176,
+     "chainring_mount": "SRAM 8-bolt direct mount",
+     "spindle": "30 mm titanium (Hirth joint)",
+     "max_spindle_width_mm": 98.25,
+     "material": "butted Ti-3Al-2.5V arms"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.canecreek.com/products/eewings",
+      "publisher": "Cane Creek (manufacturer) - eeWings page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "cane-creek-eewings-gravel",
+   "name": "Cane Creek eeWings Gravel titanium cranks",
+   "values": {
+    "crank_length": 172.5,
+    "q_factor": 160,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Cane Creek",
+    "model": "eeWings Gravel",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "165, 170, 172.5",
+     "q_factor_mm": 160,
+     "chainring_mount": "SRAM 8-bolt direct mount",
+     "spindle": "30 mm titanium (Hirth joint)",
+     "weight_g": 398,
+     "max_spindle_width_mm": 92.5,
+     "weight_note": "165 mm incl. spindle, bolts, preload assembly",
+     "material": "butted Ti-3Al-2.5V arms"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (165, 170, 172.5 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.canecreek.com/products/eewings",
+      "publisher": "Cane Creek (manufacturer) - eeWings page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "cane-creek-eewings-g1-mountain",
+   "name": "Cane Creek eeWings G1 Mountain cranks",
+   "values": {
+    "crank_length": 170,
+    "q_factor": 176,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Cane Creek",
+    "model": "eeWings G1 Mountain",
+    "variant": "arm set",
+    "status": "unknown",
+    "specs": {
+     "crank_lengths_mm": "160, 165, 170, 175",
+     "q_factor_mm": 176,
+     "chainring_mount": "3-bolt direct mount (or 110x5 BCD via spider)",
+     "spindle": "30 mm titanium",
+     "weight_g": 400
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 175 mm); choose the rider's length"
+    },
+    "notes": "First-generation (2018-2025) eeWings.",
+    "sources": [
+     {
+      "url": "https://www.canecreek.com/products/eewings-g1",
+      "publisher": "Cane Creek (manufacturer) - eeWings G1 page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "cane-creek-eewings-g1-all-road",
+   "name": "Cane Creek eeWings G1 All-Road cranks",
+   "values": {
+    "crank_length": 170,
+    "q_factor": 160,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Cane Creek",
+    "model": "eeWings G1 All-Road",
+    "variant": "arm set",
+    "status": "unknown",
+    "specs": {
+     "crank_lengths_mm": "160, 165, 170, 175",
+     "q_factor_mm": 160,
+     "chainring_mount": "3-bolt direct mount (or 110x5 BCD via spider)",
+     "spindle": "30 mm titanium",
+     "weight_g": 395
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 175 mm); choose the rider's length"
+    },
+    "notes": "First-generation (2018-2025) eeWings.",
+    "sources": [
+     {
+      "url": "https://www.canecreek.com/products/eewings-g1",
+      "publisher": "Cane Creek (manufacturer) - eeWings G1 page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "ethirteen-helix-race-alloy",
+   "name": "e*thirteen Helix Race Alloy MTB cranks",
+   "values": {
+    "crank_length": 170,
+    "chainline": 52,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "e*thirteen",
+    "model": "Helix Race Alloy",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "crank_lengths_mm": "160, 165, 170, 175",
+     "chainline_mm": 52,
+     "chainring_mount": "direct mount (Helix rings)",
+     "spindle": "30 mm, P3 Connect",
+     "bottom_bracket": "68/73 mm shells (BB92, BB30 compatible)",
+     "weight_g": 566,
+     "weight_note": "170 x 73 mm",
+     "chainline_options_mm": "52 (Boost) or 55 (Super Boost)",
+     "weights_by_length_g": "547 (160), 556 (165), 566 (170), 574 (175)"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 175 mm); choose the rider's length"
+    },
+    "sources": [
+     {
+      "url": "https://www.ethirteen.com/products/helix-race-30mm-aluminum-cranks",
+      "publisher": "e*thirteen (manufacturer) - Helix Race alloy cranks",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "ethirteen-xcx-race-carbon-gravel-cs4xra-100",
+   "name": "e*thirteen XCX Race Carbon gravel cranks",
+   "values": {
+    "crank_length": 172.5,
+    "chainline": 47,
+    "q_factor": 155.3,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "e*thirteen",
+    "model": "XCX Race Carbon Gravel",
+    "variant": "arm set",
+    "status": "current",
+    "specs": {
+     "model_code": "CS4XRA-100",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 47,
+     "q_factor_mm": 155.3,
+     "spindle": "30 mm aluminium, 68 mm, P3 Connect",
+     "bottom_bracket": "PF30, BB86/92, BB30, BSA, T47",
+     "weight_g": 355,
+     "weight_note": "without chainring (tech info)"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainline 47 mm with the -5 mm offset UL chainring.",
+    "sources": [
+     {
+      "url": "https://www.ethirteen.com/products/xcx-race-gravel-carbon-cranks",
+      "publisher": "e*thirteen (manufacturer) - XCX Race carbon gravel cranks",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ec90-alx-46-36",
+   "name": "Easton EC90 ALX 46/36T",
+   "values": {
+    "chainrings": "46, 36",
+    "crank_length": 172.5,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EC90 ALX",
+    "variant": "46/36T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "46, 36",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "q_factor_mm": 150,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm CINCH Lite-Spline (LS Standard; LS Wide for Shimano GRX/CUES)",
+     "q_factor_note": "with LS Standard spindle",
+     "ring_family": "AX Gravel 2x",
+     "arm_set_weight_g": 329
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "1x FLT Top 12S rings also offered in 36T.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ec90alx-crank",
+      "publisher": "Easton (manufacturer) - EC90 ALX crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ec90-alx-47-32",
+   "name": "Easton EC90 ALX 47/32T",
+   "values": {
+    "chainrings": "47, 32",
+    "crank_length": 172.5,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EC90 ALX",
+    "variant": "47/32T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "47, 32",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "q_factor_mm": 150,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm CINCH Lite-Spline (LS Standard; LS Wide for Shimano GRX/CUES)",
+     "q_factor_note": "with LS Standard spindle",
+     "ring_family": "AX Gravel 2x",
+     "arm_set_weight_g": 329
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "1x FLT Top 12S rings also offered in 36T.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ec90alx-crank",
+      "publisher": "Easton (manufacturer) - EC90 ALX crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ec90-alx-46-30",
+   "name": "Easton EC90 ALX 46/30T",
+   "values": {
+    "chainrings": "46, 30",
+    "crank_length": 172.5,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EC90 ALX",
+    "variant": "46/30T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "46, 30",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "q_factor_mm": 150,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm CINCH Lite-Spline (LS Standard; LS Wide for Shimano GRX/CUES)",
+     "q_factor_note": "with LS Standard spindle",
+     "ring_family": "AX Gravel 2x",
+     "arm_set_weight_g": 329
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "1x FLT Top 12S rings also offered in 36T.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ec90alx-crank",
+      "publisher": "Easton (manufacturer) - EC90 ALX crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ec90-alx-38",
+   "name": "Easton EC90 ALX 38T",
+   "values": {
+    "chainrings": "38",
+    "crank_length": 172.5,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EC90 ALX",
+    "variant": "38T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "38",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "q_factor_mm": 150,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm CINCH Lite-Spline (LS Standard; LS Wide for Shimano GRX/CUES)",
+     "q_factor_note": "with LS Standard spindle",
+     "ring_family": "1x (SHI 12S or FLT Top 12S)",
+     "arm_set_weight_g": 329
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "1x FLT Top 12S rings also offered in 36T.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ec90alx-crank",
+      "publisher": "Easton (manufacturer) - EC90 ALX crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ec90-alx-40",
+   "name": "Easton EC90 ALX 40T",
+   "values": {
+    "chainrings": "40",
+    "crank_length": 172.5,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EC90 ALX",
+    "variant": "40T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "40",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "q_factor_mm": 150,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm CINCH Lite-Spline (LS Standard; LS Wide for Shimano GRX/CUES)",
+     "weight_g": 419,
+     "q_factor_note": "with LS Standard spindle",
+     "ring_family": "1x (SHI 12S or FLT Top 12S)",
+     "arm_set_weight_g": 329,
+     "weight_note": "170 mm, LS Standard spindle, SHI 12S 40T ring"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "1x FLT Top 12S rings also offered in 36T.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ec90alx-crank",
+      "publisher": "Easton (manufacturer) - EC90 ALX crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ec90-alx-42",
+   "name": "Easton EC90 ALX 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EC90 ALX",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "42",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "q_factor_mm": 150,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm CINCH Lite-Spline (LS Standard; LS Wide for Shimano GRX/CUES)",
+     "q_factor_note": "with LS Standard spindle",
+     "ring_family": "1x (SHI 12S or FLT Top 12S)",
+     "arm_set_weight_g": 329
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "1x FLT Top 12S rings also offered in 36T.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ec90alx-crank",
+      "publisher": "Easton (manufacturer) - EC90 ALX crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ec90-alx-44",
+   "name": "Easton EC90 ALX 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "q_factor": 150,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EC90 ALX",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "44",
+     "crank_lengths_mm": "160, 165, 170, 172.5, 175",
+     "q_factor_mm": 150,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm CINCH Lite-Spline (LS Standard; LS Wide for Shimano GRX/CUES)",
+     "q_factor_note": "with LS Standard spindle",
+     "ring_family": "1x (SHI 12S or FLT Top 12S)",
+     "arm_set_weight_g": 329
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (160, 165, 170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "1x FLT Top 12S rings also offered in 36T.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ec90alx-crank",
+      "publisher": "Easton (manufacturer) - EC90 ALX crankset page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-53-39",
+   "name": "Easton EA90 53/39T",
+   "values": {
+    "chainrings": "53, 39",
+    "crank_length": 172.5,
+    "chainline": 45,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "53/39T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "53, 39",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 45,
+     "chainring_mount": "CINCH direct mount with removable spider",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-52-36",
+   "name": "Easton EA90 52/36T",
+   "values": {
+    "chainrings": "52, 36",
+    "crank_length": 172.5,
+    "chainline": 45,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "52/36T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "52, 36",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 45,
+     "chainring_mount": "CINCH direct mount with removable spider",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-50-34",
+   "name": "Easton EA90 50/34T",
+   "values": {
+    "chainrings": "50, 34",
+    "crank_length": 172.5,
+    "chainline": 45,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "50/34T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "50, 34",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 45,
+     "chainring_mount": "CINCH direct mount with removable spider",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-47-32",
+   "name": "Easton EA90 47/32T",
+   "values": {
+    "chainrings": "47, 32",
+    "crank_length": 172.5,
+    "chainline": 45,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "47/32T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "47, 32",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 45,
+     "chainring_mount": "CINCH direct mount with removable spider",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-46-36",
+   "name": "Easton EA90 46/36T",
+   "values": {
+    "chainrings": "46, 36",
+    "crank_length": 172.5,
+    "chainline": 45,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "46/36T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "46, 36",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 45,
+     "chainring_mount": "CINCH direct mount with removable spider",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-46-30",
+   "name": "Easton EA90 46/30T",
+   "values": {
+    "chainrings": "46, 30",
+    "crank_length": 172.5,
+    "chainline": 45,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "46/30T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "46, 30",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 45,
+     "chainring_mount": "CINCH direct mount with removable spider",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-38",
+   "name": "Easton EA90 38T",
+   "values": {
+    "chainrings": "38",
+    "crank_length": 172.5,
+    "chainline": 47.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "38T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "38",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 47.6,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-40",
+   "name": "Easton EA90 40T",
+   "values": {
+    "chainrings": "40",
+    "crank_length": 172.5,
+    "chainline": 47.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "40T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "40",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 47.6,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "weight_g": 622,
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB",
+     "weight_note": "172.5 mm, 40T 1x, without BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-42",
+   "name": "Easton EA90 42T",
+   "values": {
+    "chainrings": "42",
+    "crank_length": 172.5,
+    "chainline": 47.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "42T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "42",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 47.6,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-44",
+   "name": "Easton EA90 44T",
+   "values": {
+    "chainrings": "44",
+    "crank_length": 172.5,
+    "chainline": 47.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "44T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "44",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 47.6,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-46",
+   "name": "Easton EA90 46T",
+   "values": {
+    "chainrings": "46",
+    "crank_length": 172.5,
+    "chainline": 47.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "46T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "46",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 47.6,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-48",
+   "name": "Easton EA90 48T",
+   "values": {
+    "chainrings": "48",
+    "crank_length": 172.5,
+    "chainline": 47.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "48T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "48",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 47.6,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
+  },
+  {
+   "id": "easton-ea90-50",
+   "name": "Easton EA90 50T",
+   "values": {
+    "chainrings": "50",
+    "crank_length": 172.5,
+    "chainline": 47.6,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Easton",
+    "model": "EA90",
+    "variant": "50T",
+    "status": "current",
+    "specs": {
+     "chainrings_t": "50",
+     "crank_lengths_mm": "170, 172.5, 175",
+     "chainline_mm": 47.6,
+     "chainring_mount": "CINCH direct mount",
+     "spindle": "30 mm alloy (129 mm spindle)",
+     "bottom_bracket": "BB86, BSA 68, PF30 68, BB30 68, BBright, 386EVO",
+     "arm_set_weight_g": 534,
+     "arm_set_weight_note": "172.5 mm, without ring or BB"
+    },
+    "derived": {
+     "crank_length": "representative length from the offered range (170, 172.5, 175 mm); choose the rider's length"
+    },
+    "notes": "Chainrings sold separately.",
+    "sources": [
+     {
+      "url": "https://eastoncycling.com/collections/drivetrain/products/ea90-crankset",
+      "publisher": "Easton (manufacturer) - EA90 crankarms page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "cranks"
   }
  ]
 }

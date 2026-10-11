@@ -7,6 +7,2135 @@
  "compiled": "2026-10-11",
  "items": [
   {
+   "id": "campagnolo-1010-long-horizontal-single-eyelet",
+   "name": "Campagnolo 1010, long horizontal, single eyelet",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "1010",
+    "variant": "long horizontal, single eyelet",
+    "years": "1960s–1980s",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "single",
+     "construction": "forged",
+     "front_rear": "front & rear",
+     "stamping": "Brev. Campagnolo"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=302f60c7-a601-4ef9-9393-df356674a1e3&AbsPos=15",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "campagnolo-1010-with-spring-hole",
+   "name": "Campagnolo 1010, with spring hole",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "1010",
+    "variant": "with spring hole",
+    "years": "late 1950s–1990s",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "single",
+     "construction": "forged",
+     "front_rear": "front & rear",
+     "stamping": "Brev. Campagnolo"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=78ee7e2a-2428-45ad-81cf-38b3278c97fc&AbsPos=14",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "campagnolo-1010-a-no-eyelets",
+   "name": "Campagnolo 1010/A, no eyelets",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "1010/A",
+    "variant": "no eyelets",
+    "years": "1970s–1980s",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "none",
+     "construction": "forged",
+     "front_rear": "front & rear",
+     "stamping": "Brev. Campagnolo"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there). Variation of the 1010 Record set without eyelets.",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=e95a748f-9632-4659-8e66-53bdf25e1927&AbsPos=17",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "campagnolo-1010-b-short-horizontal-no-eyelets",
+   "name": "Campagnolo 1010/B, short horizontal, no eyelets",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "1010/B",
+    "variant": "short horizontal, no eyelets",
+    "years": "late 1970s–early 1990s",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "none",
+     "construction": "forged",
+     "front_rear": "front & rear",
+     "stamping": "Brev Campagnolo"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there). Short-length 1010 variant without eyelets; first seen in the 1978 supplement catalogue.",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=adc9dd3a-b544-4a34-8bfa-bd42cd132b45&AbsPos=18",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "campagnolo-1010-1-sport-stamped",
+   "name": "Campagnolo 1010/1 Sport, stamped",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "1010/1 Sport",
+    "variant": "stamped",
+    "years": "1960s–1970s",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "single",
+     "construction": "stamped",
+     "front_rear": "front & rear"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=f0cdd4ac-c719-4c43-bad6-397e04d83cad&AbsPos=16",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "campagnolo-1009-paris-roubaix-no-derailleur-hanger",
+   "name": "Campagnolo 1009 Paris-Roubaix, no derailleur hanger",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "1009 Paris-Roubaix",
+    "variant": "no derailleur hanger",
+    "years": "1950s",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "none",
+     "eyelets": "single",
+     "front_rear": "front & rear",
+     "stamping": "Brev Campagnolo"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=de1f3e81-bd0b-4829-b598-782e9cdb956a&AbsPos=13",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "campagnolo-1053-track-ends-precision-ground",
+   "name": "Campagnolo 1053 track ends, precision ground",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "track"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "1053 track ends",
+    "variant": "precision ground",
+    "years": "1950s–1990s",
+    "status": "discontinued",
+    "specs": {
+     "design": "track end",
+     "derailleur_hanger": "none",
+     "eyelets": "none",
+     "construction": "precision ground (rear), forged (front)",
+     "front_rear": "front & rear",
+     "stamping": "Brev. Campagnolo"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'track end'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=a3c62233-a26d-4d8b-9cd7-f45035b7c905&AbsPos=19",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "campagnolo-1060-corsa-vertical-single-eyelet",
+   "name": "Campagnolo 1060 Corsa, vertical, single eyelet",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "1060 Corsa",
+    "variant": "vertical, single eyelet",
+    "years": "1960s–mid 1970s",
+    "status": "discontinued",
+    "specs": {
+     "design": "vertical",
+     "derailleur_hanger": "integral",
+     "eyelets": "single",
+     "construction": "stamped",
+     "front_rear": "front & rear",
+     "stamping": "Brev. Campagnolo"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'vertical'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there). Thinner than the 1010; not in Campagnolo catalogues after 1968 but available into the mid 1970s; common on UK time-trial frames.",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=50893e76-cecb-4aaa-8051-17a8eeee52af&AbsPos=20",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-fe-ef20-horizontal",
+   "name": "Shimano FE-EF20, horizontal",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "FE-EF20",
+    "variant": "horizontal",
+    "years": "1980s",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "none",
+     "construction": "forged"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=600adc71-f399-40cc-a650-41d394eb5552&AbsPos=40",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-fe-sf20-horizontal-single-eyelets",
+   "name": "Shimano FE-SF20, horizontal, single eyelets",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "FE-SF20",
+    "variant": "horizontal, single eyelets",
+    "years": "1980s",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "single",
+     "construction": "forged",
+     "front_rear": "front & rear"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=b5120d76-640a-4c19-ac42-0e7fcf951784&AbsPos=41",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-fe-sf21-vertical-single-eyelet",
+   "name": "Shimano FE-SF21, vertical, single eyelet",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "FE-SF21",
+    "variant": "vertical, single eyelet",
+    "years": "1980s",
+    "status": "discontinued",
+    "specs": {
+     "design": "vertical",
+     "derailleur_hanger": "integral",
+     "eyelets": "single"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'vertical'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=73294e54-f52a-4fe7-80b8-6b204432dc33&AbsPos=42",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-ef-uf20-semi-horizontal",
+   "name": "Shimano EF-UF20, semi-horizontal",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Shimano",
+    "model": "EF-UF20",
+    "variant": "semi-horizontal",
+    "years": "1980s",
+    "status": "discontinued",
+    "specs": {
+     "design": "semi-horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "none",
+     "construction": "forged",
+     "front_rear": "front & rear"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there). Semi-horizontal has no exact FrameWright dropout_type, so none is set.",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=9144178a-a3d4-44bd-956c-1347e224bd5a&AbsPos=39",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-sf-semi-horizontal-single-eyelet",
+   "name": "Shimano SF, semi-horizontal, single eyelet",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Shimano",
+    "model": "SF",
+    "variant": "semi-horizontal, single eyelet",
+    "status": "discontinued",
+    "specs": {
+     "design": "semi-horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "single",
+     "front_rear": "front & rear",
+     "stamping": "Shimano SF"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there). Semi-horizontal has no exact FrameWright dropout_type, so none is set.",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=126895ed-7b9e-48ff-98b2-e6fdb33c5883&AbsPos=43",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-uf-semi-horizontal",
+   "name": "Shimano UF, semi-horizontal",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Shimano",
+    "model": "UF",
+    "variant": "semi-horizontal",
+    "years": "late 1970s–early 1980s",
+    "status": "discontinued",
+    "specs": {
+     "design": "semi-horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "none",
+     "front_rear": "front & rear",
+     "stamping": "Shimano UF"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there). Semi-horizontal has no exact FrameWright dropout_type, so none is set.",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=37ca358a-9d0f-4ec9-9236-b7f5acaef62e&AbsPos=46",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-sfr-vertical-rear-only",
+   "name": "Shimano SFR, vertical, rear only",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SFR",
+    "variant": "vertical, rear only",
+    "years": "1980s",
+    "status": "discontinued",
+    "specs": {
+     "design": "vertical",
+     "derailleur_hanger": "integral",
+     "eyelets": "single",
+     "front_rear": "rear only",
+     "stamping": "Shimano SFR"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'vertical'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=1d9939be-d349-4137-bdeb-993b012712fa&AbsPos=45",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "columbus-forged-dropouts-horizontal-single-eyelets",
+   "name": "Columbus forged dropouts, horizontal, single eyelets",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Columbus",
+    "model": "forged dropouts",
+    "variant": "horizontal, single eyelets",
+    "status": "discontinued",
+    "specs": {
+     "design": "horizontal",
+     "derailleur_hanger": "integral",
+     "eyelets": "single",
+     "construction": "forged",
+     "front_rear": "front & rear",
+     "stamping": "Columbus / logo"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'horizontal'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=2a7dca63-64b6-400f-bcb0-246126ac703a&AbsPos=26",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ritchey-vertical-dropout-rear",
+   "name": "Ritchey vertical dropout, rear",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Ritchey",
+    "model": "vertical dropout",
+    "variant": "rear",
+    "status": "discontinued",
+    "specs": {
+     "design": "vertical",
+     "derailleur_hanger": "integral",
+     "eyelets": "none",
+     "front_rear": "rear only (layout ambiguous)"
+    },
+    "derived": {
+     "dropout_type": "VeloBase design type 'vertical'"
+    },
+    "notes": "Classic part; specs from the VeloBase reference entry (no dimensions published there).",
+    "sources": [
+     {
+      "url": "https://www.velobase.com/Pages/ViewFramePart.aspx?ID=4efa2a8c-44fb-43ee-9192-85c6a346b72e&AbsPos=38",
+      "publisher": "VeloBase (collector reference database)",
+      "kind": "independent",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-hooded-rear-thru-axle-dropout-for-udh-rd-c82",
+   "name": "Allotec Hooded rear thru-axle dropout for UDH, RD-C82",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Hooded rear thru-axle dropout for UDH",
+    "variant": "RD-C82",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C82 (dropout), RD-C82-UDH / RD-C82-SRAM (with hanger)",
+     "axle": "12 mm thru, UDH thread M12x1.0",
+     "hanger": "SRAM UDH",
+     "disc_mount": "none (not flat mount)",
+     "material": "steel",
+     "weight_g": 135
+    },
+    "derived": {
+     "dropout_type": "thru-axle dropout per title"
+    },
+    "notes": "Body text gives 135 g; the variant weight field says 159 g.",
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/hooded-rear-thru-axle-dropout-for-sram-universal-derailleur-hanger",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-hooded-rear-thru-axle-dropout-flat-mount-for-udh-rd-c101",
+   "name": "Allotec Hooded rear thru-axle dropout, flat mount, for UDH, RD-C101",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Hooded rear thru-axle dropout, flat mount, for UDH",
+    "variant": "RD-C101",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C101 (+ -UDH / -SRAM kits)",
+     "axle": "thru, UDH thread M12x1.0",
+     "hanger": "SRAM UDH",
+     "disc_mount": "integrated flat mount",
+     "material": "steel",
+     "weight_g": 213
+    },
+    "derived": {
+     "dropout_type": "thru-axle per title",
+     "brake_rear": "integrated flat-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/hooded-rear-thru-axle-dropout-for-flat-mount-for-sram-universal-derailleur-hanger",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "long-shen-rear-thru-axle-dropout-flat-mount-for-udh-rd-lr43-1",
+   "name": "Long Shen Rear thru-axle dropout, flat mount, for UDH, RD-LR43-1",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Long Shen",
+    "model": "Rear thru-axle dropout, flat mount, for UDH",
+    "variant": "RD-LR43-1",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-LR43-1 (+ -UDH / -SRAM kits)",
+     "axle": "thru, UDH thread M12x1.0",
+     "hanger": "SRAM UDH",
+     "disc_mount": "integrated flat mount",
+     "material": "steel",
+     "weight_g": 216
+    },
+    "derived": {
+     "dropout_type": "thru-axle per title",
+     "brake_rear": "integrated flat-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/long-shen-rear-thru-axle-dropout-for-flat-mount-with-universal-derailleur-hanger",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "long-shen-hooded-rear-thru-axle-dropout-flat-mount-replaceable-hanger-rd-lr26-a-1",
+   "name": "Long Shen Hooded rear thru-axle dropout, flat mount, replaceable hanger, RD-LR26-A-1",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Long Shen",
+    "model": "Hooded rear thru-axle dropout, flat mount, replaceable hanger",
+    "variant": "RD-LR26-A-1",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-LR26-A-1 (dropout), RDH-LR25-05 (hanger)",
+     "axle": "thru, M12x1.5",
+     "hanger": "replaceable aluminium",
+     "disc_mount": "integrated flat mount",
+     "eyelets": 1,
+     "material": "steel",
+     "weight_g": 267,
+     "weight_note": "dropout with hanger"
+    },
+    "derived": {
+     "dropout_type": "thru-axle per title",
+     "brake_rear": "integrated flat-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/long-shen-hooded-rear-thru-axle-dropout-for-flat-mount-disc-brakes-w-replaceable-der-hanger",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-thru-axle-dropouts-flat-mount-eyelets-m12x1.0-rd-c64-1.0",
+   "name": "Allotec Rear thru-axle dropouts, flat mount, eyelets, M12x1.0 (RD-C64-1.0)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear thru-axle dropouts, flat mount, eyelets",
+    "variant": "M12x1.0 (RD-C64-1.0)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C64-1.0",
+     "axle": "thru, M12x1.0",
+     "disc_mount": "integrated flat mount",
+     "eyelets": 2,
+     "axle_to_hanger_mm": 28,
+     "stay_angle_deg": 68,
+     "material": "steel",
+     "weight_g_pair": 339
+    },
+    "derived": {
+     "dropout_type": "thru-axle per title",
+     "brake_rear": "integrated flat-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-thru-axle-m12-x-1-0-dropouts-for-flat-mount-disc-brakes-with-eyelets",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-thru-axle-dropouts-flat-mount-eyelets-m12x1.5-rd-c64-1.5",
+   "name": "Allotec Rear thru-axle dropouts, flat mount, eyelets, M12x1.5 (RD-C64-1.5)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear thru-axle dropouts, flat mount, eyelets",
+    "variant": "M12x1.5 (RD-C64-1.5)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C64-1.5",
+     "axle": "thru, M12x1.5",
+     "disc_mount": "integrated flat mount",
+     "eyelets": 2,
+     "axle_to_hanger_mm": 28,
+     "stay_angle_deg": 68,
+     "material": "steel",
+     "weight_g_pair": 339
+    },
+    "derived": {
+     "dropout_type": "thru-axle per title",
+     "brake_rear": "integrated flat-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-thru-axle-dropouts-with-flat-mount-disc-tab-and-eyelets",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-dropouts-flat-mount-eyelets-rd-c53",
+   "name": "Allotec Rear dropouts, flat mount, eyelets, RD-C53",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear dropouts, flat mount, eyelets",
+    "variant": "RD-C53",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C53",
+     "type": "vertical",
+     "disc_mount": "integrated flat mount",
+     "eyelets": 2,
+     "axle_to_hanger_mm": 30,
+     "stay_angle_deg": 62,
+     "material": "steel",
+     "weight_g_pair": 321
+    },
+    "derived": {
+     "dropout_type": "described as vertical",
+     "brake_rear": "integrated flat-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-dropouts-with-integrated-flat-mount-disc-tab-and-eyelets",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-dropouts-post-mount-eyelets-rd-c24-2",
+   "name": "Allotec Rear dropouts, post mount, eyelets, RD-C24-2",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear dropouts, post mount, eyelets",
+    "variant": "RD-C24-2",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C24-2 (pair), RD-C24H (replacement hanger)",
+     "type": "vertical",
+     "disc_mount": "integrated post mount",
+     "eyelets": 2,
+     "hanger": "replaceable",
+     "axle_to_hanger_mm": 31,
+     "stay_angle_deg": 70,
+     "material": "steel",
+     "weight_g_pair": 355
+    },
+    "derived": {
+     "dropout_type": "described as vertical",
+     "brake_rear": "integrated post-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-dropouts-with-integrated-post-mount-disc-tab-and-eyelets",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-dropouts-iso-disc-eyelets-rd-c23",
+   "name": "Allotec Rear dropouts, ISO disc, eyelets, RD-C23",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear dropouts, ISO disc, eyelets",
+    "variant": "RD-C23",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C23",
+     "type": "vertical",
+     "disc_mount": "integrated ISO (IS)",
+     "eyelets": 2,
+     "axle_to_hanger_mm": 30,
+     "stay_angle_deg": 65,
+     "material": "steel",
+     "weight_g_pair": 340
+    },
+    "derived": {
+     "dropout_type": "described as vertical",
+     "brake_rear": "integrated ISO tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-dropouts-with-integrated-iso-disc-tab-and-eyelets",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-dropouts-hooded-breezer-style-single-eyelet-rd-c20-1e",
+   "name": "Allotec Rear dropouts, hooded (Breezer style), single eyelet, RD-C20-1E",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear dropouts, hooded (Breezer style), single eyelet",
+    "variant": "RD-C20-1E",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C20-1E",
+     "style": "hooded, 'Breezer style'",
+     "eyelets": 1,
+     "axle_to_hanger_mm_approx": 30,
+     "material": "steel",
+     "weight_g_pair": 103
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/hooded-droput",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-dropouts-hooded-replaceable-hanger-rd-c05",
+   "name": "Allotec Rear dropouts, hooded, replaceable hanger, RD-C05",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear dropouts, hooded, replaceable hanger",
+    "variant": "RD-C05",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C05 (pair), RD-C05H (hanger)",
+     "style": "hooded",
+     "hanger": "replaceable",
+     "plug_dia_mm": 10.45,
+     "axle_to_hanger_mm_approx": 30,
+     "material": "steel",
+     "weight_g_set": 102
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-dropouts-hooded-style-with-replaceable-hanger",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ira-ryan-rear-vertical-dropouts-tab-style-1-eyelet-stainless-faces-rd-tb-irc",
+   "name": "Ira Ryan Rear vertical dropouts, tab style, 1 eyelet, stainless faces, RD-TB-IRC",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Ira Ryan",
+    "model": "Rear vertical dropouts, tab style, 1 eyelet, stainless faces",
+    "variant": "RD-TB-IRC",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-TB-IRC",
+     "type": "vertical, tab style",
+     "eyelets": 1,
+     "faces": "stainless, silver-brazed on",
+     "stay_angle_range_deg": "50-75",
+     "material": "steel",
+     "made_in": "USA",
+     "weight_g": 121
+    },
+    "derived": {
+     "dropout_type": "described as vertical"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-vertical-dropouts-by-ira-ryan-tab-style-1-eyelet-w-stainless-faces",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ira-ryan-rear-vertical-dropouts-lug-style-12.5-mm-ss-13.5-mm-cs-66-deg-rd-irc-66",
+   "name": "Ira Ryan Rear vertical dropouts, lug style, 12.5 mm SS / 13.5 mm CS, 66 deg (RD-IRC-66)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Ira Ryan",
+    "model": "Rear vertical dropouts, lug style, 12.5 mm SS / 13.5 mm CS",
+    "variant": "66 deg (RD-IRC-66)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-IRC-66 (RD-IR-66 in text)",
+     "type": "vertical, lug style",
+     "seatstay_socket_mm": 12.5,
+     "chainstay_socket_mm": 13.5,
+     "stay_angle_deg": 66,
+     "axle_to_hanger_mm": 25,
+     "material": "steel",
+     "weight_g": 82
+    },
+    "derived": {
+     "dropout_type": "described as vertical"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-vertical-dropouts-lug-style-for-12-5mm-seat-stay-13-5mm-chain-stay-66-ss-cs-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ira-ryan-rear-vertical-dropouts-lug-style-12.5-mm-ss-13.5-mm-cs-74-deg-rd-irc-74",
+   "name": "Ira Ryan Rear vertical dropouts, lug style, 12.5 mm SS / 13.5 mm CS, 74 deg (RD-IRC-74)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Ira Ryan",
+    "model": "Rear vertical dropouts, lug style, 12.5 mm SS / 13.5 mm CS",
+    "variant": "74 deg (RD-IRC-74)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-IRC-74 (RD-IR-74 in text)",
+     "type": "vertical, lug style",
+     "seatstay_socket_mm": 12.5,
+     "chainstay_socket_mm": 13.5,
+     "stay_angle_deg": 74,
+     "axle_to_hanger_mm": 25,
+     "material": "steel",
+     "weight_g": 82
+    },
+    "derived": {
+     "dropout_type": "described as vertical"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-vertical-dropouts-lug-style-for-12-5mm-seat-stay-13-5mm-chain-stay-74-ss-cs-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-vertical-dropouts-lug-style-11-mm-ss-12.5-mm-cs-65-deg-rd-c16-65",
+   "name": "Allotec Rear vertical dropouts, lug style, 11 mm SS / 12.5 mm CS, 65 deg (RD-C16-65)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear vertical dropouts, lug style, 11 mm SS / 12.5 mm CS",
+    "variant": "65 deg (RD-C16-65)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C16-65",
+     "type": "vertical, lug style",
+     "seatstay_socket_mm": 11,
+     "chainstay_socket_mm": 12.5,
+     "stay_angle_deg": 65,
+     "axle_to_hanger_mm": 30,
+     "material": "steel",
+     "weight_g": 117
+    },
+    "derived": {
+     "dropout_type": "described as vertical"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-dropout-lug-style-for-11mm-seatstay-and-12-5-chainstay-65-degree-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-vertical-dropouts-lug-style-11-mm-ss-12.5-mm-cs-70-deg-rd-c16-70",
+   "name": "Allotec Rear vertical dropouts, lug style, 11 mm SS / 12.5 mm CS, 70 deg (RD-C16-70)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear vertical dropouts, lug style, 11 mm SS / 12.5 mm CS",
+    "variant": "70 deg (RD-C16-70)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C16-70",
+     "type": "vertical, lug style",
+     "seatstay_socket_mm": 11,
+     "chainstay_socket_mm": 12.5,
+     "stay_angle_deg": 70,
+     "axle_to_hanger_mm": 30,
+     "material": "steel",
+     "weight_g": 117
+    },
+    "derived": {
+     "dropout_type": "described as vertical"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-dropout-lug-style-for-11mm-seatstay-and-12-5mm-chainstay-70-degree-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "framebuilder-supply-us-made-track-dropouts-tab-style-rd-trk-fs-with-bantam-bicycle-works",
+   "name": "Framebuilder Supply US-made track dropouts, tab style, RD-TRK-FS (with Bantam Bicycle Works)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "track"
+   },
+   "meta": {
+    "brand": "Framebuilder Supply",
+    "model": "US-made track dropouts, tab style",
+    "variant": "RD-TRK-FS (with Bantam Bicycle Works)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-TRK-FS",
+     "type": "track, tab style",
+     "pattern": "based on Shimano UFP 10 style",
+     "material": "steel",
+     "made_in": "Portland, OR",
+     "weight_g_pair": 165
+    },
+    "derived": {
+     "dropout_type": "track dropout per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/us-made-track-dropouts-tab-style",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-track-dropouts-plug-style-11-mm-ss-cs-66-deg-rd-c17-66",
+   "name": "Allotec Rear track dropouts, plug style, 11 mm SS & CS, 66 deg (RD-C17-66)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "track"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear track dropouts, plug style, 11 mm SS & CS",
+    "variant": "66 deg (RD-C17-66)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C17-66",
+     "type": "track, plug style",
+     "stay_plug_fits_id_mm": 11,
+     "stay_angle_deg": 66,
+     "material": "steel",
+     "weight_g_pair": 184
+    },
+    "derived": {
+     "dropout_type": "track dropout per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-track-dropout-plug-style-for-11mm-id-seatstay-and-chainstay-66-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-track-dropouts-plug-style-11-mm-ss-cs-70-deg-rd-c17-70",
+   "name": "Allotec Rear track dropouts, plug style, 11 mm SS & CS, 70 deg (RD-C17-70)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "track"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear track dropouts, plug style, 11 mm SS & CS",
+    "variant": "70 deg (RD-C17-70)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C17-70",
+     "type": "track, plug style",
+     "stay_plug_fits_id_mm": 11,
+     "stay_angle_deg": 70,
+     "material": "steel",
+     "weight_g_pair": 178
+    },
+    "derived": {
+     "dropout_type": "track dropout per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-track-dropout-plug-style-for-11mm-id-seatstay-and-chainstay-70-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-track-style-dropouts-with-derailleur-hanger-plug-style-10-mm-55-deg-rd-c14-55",
+   "name": "Allotec Rear track-style dropouts with derailleur hanger, plug style, 10 mm, 55 deg (RD-C14-55)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "track"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear track-style dropouts with derailleur hanger, plug style, 10 mm",
+    "variant": "55 deg (RD-C14-55)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C14-55",
+     "type": "track-style with derailleur hanger, plug style",
+     "stay_plug_fits_id_mm": 10,
+     "stay_angle_deg": 55,
+     "axle_to_hanger_mm_approx": 28,
+     "material": "steel",
+     "weight_g_pair": 199
+    },
+    "derived": {
+     "dropout_type": "track-style dropout per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-track-style-dropout-w-derailleur-hanger-plug-style-for-10mm-id-seatstay-chainstay-55-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-rear-track-style-dropouts-with-derailleur-hanger-plug-style-10-mm-62-deg-rd-c14-62",
+   "name": "Allotec Rear track-style dropouts with derailleur hanger, plug style, 10 mm, 62 deg (RD-C14-62)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "track"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Rear track-style dropouts with derailleur hanger, plug style, 10 mm",
+    "variant": "62 deg (RD-C14-62)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C14-62",
+     "type": "track-style with derailleur hanger, plug style",
+     "stay_plug_fits_id_mm": 10,
+     "stay_angle_deg": 62,
+     "material": "steel",
+     "weight_g_pair": 200
+    },
+    "derived": {
+     "dropout_type": "track-style dropout per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-track-style-dropout-w-derailleur-hanger-plug-style-for-10mm-id-seatstay-chainstay-62-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-horizontal-modular-dropouts-rd-c42-b-rd-c42-b-e",
+   "name": "Allotec Horizontal modular dropouts, RD-C42-B / RD-C42-B-E",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Horizontal modular dropouts",
+    "variant": "RD-C42-B / RD-C42-B-E",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C42-B (no eyelet), RD-C42-B-E (eyelet); complete set with receivers RD-C42-B-C40",
+     "material": "black anodized aluminium (bolt-on); receivers RD-C40 steel",
+     "weight_g": 88,
+     "weight_note": "dropouts with bolts"
+    },
+    "derived": {
+     "dropout_type": "horizontal modular dropout per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/horizontal-modular-dropouts-only",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-vertical-modular-dropouts-rd-c41-b-rd-c41-b-e",
+   "name": "Allotec Vertical modular dropouts, RD-C41-B / RD-C41-B-E",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Vertical modular dropouts",
+    "variant": "RD-C41-B / RD-C41-B-E",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C41-B (no eyelet), RD-C41-B-E (eyelet); complete set RD-C41-B-C40",
+     "material": "anodized aluminium (bolt-on); receivers RD-C40 steel",
+     "axle_to_hanger_mm": "just under 30",
+     "weight_g": 76
+    },
+    "derived": {
+     "dropout_type": "vertical modular dropout per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/vertical-modular-dropouts-only-black-and-silver",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-thru-axle-modular-dropouts-12-mm-x-1.5-rd-c43-1.5",
+   "name": "Allotec Thru-axle modular dropouts, 12 mm x 1.5, RD-C43-1.5",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Thru-axle modular dropouts, 12 mm x 1.5",
+    "variant": "RD-C43-1.5",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C43-1.5, RD-C43-1.5-E (eyelet); set with receivers RD-C43-1.5-C40",
+     "axle": "12 mm thru, M12x1.5",
+     "spacing": "142 or 148 Boost",
+     "material": "anodized aluminium (bolt-on); receivers steel",
+     "weight_g": 93
+    },
+    "derived": {
+     "dropout_type": "thru-axle per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/thru-axle-modular-dropouts-only-142-12-1-5-thread-pitch",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-thru-axle-modular-dropouts-12-mm-x-1.0-rd-c43-1.0",
+   "name": "Allotec Thru-axle modular dropouts, 12 mm x 1.0, RD-C43-1.0",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "thru"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Thru-axle modular dropouts, 12 mm x 1.0",
+    "variant": "RD-C43-1.0",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C43-1.0, RD-C43-1.0-E (eyelet); set RD-C43-1.0-C40",
+     "axle": "12 mm thru, M12x1.0",
+     "spacing": "142 or 148 Boost",
+     "material": "anodized aluminium (bolt-on); receivers steel",
+     "weight_g_set": 185
+    },
+    "derived": {
+     "dropout_type": "thru-axle per title"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/complete-thru-axle-modular-dropout-set-142-12-1-0-thread-pitch",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-slider-dropouts-thru-axle-12x1.5-flat-mount-rd-c97",
+   "name": "Allotec Slider dropouts, thru-axle 12x1.5, flat mount, RD-C97",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Slider dropouts, thru-axle 12x1.5, flat mount",
+    "variant": "RD-C97",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C97 (dropouts), RD-C97-C25 (with steel receivers)",
+     "axle": "12 mm thru, M12x1.5",
+     "disc_mount": "integrated flat mount",
+     "hanger": "none (not UDH)",
+     "material": "anodized aluminium sliders, steel receivers",
+     "weight_g": 107,
+     "receiver_slot_mm": "9.2 x 62",
+     "receiver_weight_g_pair": 267
+    },
+    "derived": {
+     "dropout_type": "sliding dropout per title",
+     "brake_rear": "integrated flat-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/slider-dropouts-only-thru-axle-12x1-5-with-flat-mount-tab",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-slider-dropouts-thru-axle-12x1.5-iso-tab-and-hanger-rd-c52",
+   "name": "Allotec Slider dropouts, thru-axle 12x1.5, ISO tab and hanger, RD-C52",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Slider dropouts, thru-axle 12x1.5, ISO tab and hanger",
+    "variant": "RD-C52",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C52 (dropouts), RD-C52-C25 (with steel receivers)",
+     "axle": "12 mm thru, M12x1.5",
+     "disc_mount": "integrated ISO (IS)",
+     "hanger": "integrated",
+     "material": "anodized aluminium sliders, steel receivers",
+     "weight_g": 165,
+     "receiver_slot_mm": "9.2 x 62"
+    },
+    "derived": {
+     "dropout_type": "sliding dropout per title",
+     "brake_rear": "integrated ISO tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/slider-dropouts-only-thru-axle-with-iso-tab-derailleur-hanger",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-slider-dropouts-udh-thru-axle-flat-mount-rd-c152",
+   "name": "Allotec Slider dropouts, UDH thru-axle, flat mount, RD-C152",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "sliding",
+    "brake_rear": "disc"
+   },
+   "meta": {
+    "brand": "Allotec",
+    "model": "Slider dropouts, UDH thru-axle, flat mount",
+    "variant": "RD-C152",
+    "status": "current",
+    "specs": {
+     "part_numbers": "RD-C152 (dropouts), RD-C152-C25 (with steel receivers)",
+     "axle": "12 mm thru",
+     "disc_mount": "integrated flat mount",
+     "hanger": "SRAM UDH (sold separately)",
+     "material": "anodized aluminium sliders, steel receivers",
+     "weight_g": 148,
+     "receiver_slot_mm": "9.2 x 62"
+    },
+    "derived": {
+     "dropout_type": "sliding dropout per title",
+     "brake_rear": "integrated flat-mount tab"
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/udh-thru-axle-modular-slider-dropouts-only-with-without-eyelets-12mm-x-1-5-thread-pitch",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "co-motion-rear-vertical-dropouts-tab-style-2-eyelets-51-deg-cm-rd-tb-51",
+   "name": "Co-Motion Rear vertical dropouts, tab style, 2 eyelets, 51 deg (CM-RD-TB-51)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Co-Motion",
+    "model": "Rear vertical dropouts, tab style, 2 eyelets",
+    "variant": "51 deg (CM-RD-TB-51)",
+    "status": "discontinued",
+    "specs": {
+     "part_numbers": "CM-RD-TB-51",
+     "type": "vertical, tab style",
+     "eyelets": "2 per side",
+     "stay_angle_deg": 51,
+     "material": "steel",
+     "weight_g": 131
+    },
+    "derived": {
+     "dropout_type": "described as vertical"
+    },
+    "notes": "Co-Motion old stock sold by Framebuilder Supply.",
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-vertical-dropouts-tab-style-2-eyelets-51-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "co-motion-rear-vertical-dropouts-tab-style-2-eyelets-59-deg-cm-rd-tb-59",
+   "name": "Co-Motion Rear vertical dropouts, tab style, 2 eyelets, 59 deg (CM-RD-TB-59)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Co-Motion",
+    "model": "Rear vertical dropouts, tab style, 2 eyelets",
+    "variant": "59 deg (CM-RD-TB-59)",
+    "status": "discontinued",
+    "specs": {
+     "part_numbers": "CM-RD-TB-59",
+     "type": "vertical, tab style",
+     "eyelets": "2 per side",
+     "stay_angle_deg": 59,
+     "material": "steel",
+     "weight_g": 136
+    },
+    "derived": {
+     "dropout_type": "described as vertical"
+    },
+    "notes": "Co-Motion old stock sold by Framebuilder Supply.",
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-vertical-dropouts-tab-style-2-eyelets-59-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "co-motion-rear-vertical-dropouts-tab-style-2-eyelets-74-deg-cm-rd-tb-74",
+   "name": "Co-Motion Rear vertical dropouts, tab style, 2 eyelets, 74 deg (CM-RD-TB-74)",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Co-Motion",
+    "model": "Rear vertical dropouts, tab style, 2 eyelets",
+    "variant": "74 deg (CM-RD-TB-74)",
+    "status": "discontinued",
+    "specs": {
+     "part_numbers": "CM-RD-TB-74",
+     "type": "vertical, tab style",
+     "eyelets": "2 per side",
+     "stay_angle_deg": 74,
+     "material": "steel",
+     "weight_g": 138
+    },
+    "derived": {
+     "dropout_type": "described as vertical"
+    },
+    "notes": "Co-Motion old stock sold by Framebuilder Supply.",
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/rear-vertical-dropouts-tab-style-2-eyelets-74-seatstay-chainstay-angle",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "ira-ryan-front-dropouts-tab-style-1-eyelet-stainless-faces-fd-tb-irc",
+   "name": "Ira Ryan Front dropouts, tab style, 1 eyelet, stainless faces, FD-TB-IRC",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Ira Ryan",
+    "model": "Front dropouts, tab style, 1 eyelet, stainless faces",
+    "variant": "FD-TB-IRC",
+    "status": "current",
+    "specs": {
+     "part_numbers": "FD-TB-IRC",
+     "position": "front",
+     "type": "tab style",
+     "eyelets": 1,
+     "faces": "stainless, silver-brazed on",
+     "made_in": "USA",
+     "weight_g": 65
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/us-made-front-dropouts-by-ira-ryan-tab-style-1-eyelet-w-stainless-faces",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-front-dropouts-lug-style-for-13-mm-blade-tip-two-eyelets-fd-d13-2e",
+   "name": "Allotec Front dropouts, lug style for 13 mm blade tip, two eyelets, FD-D13-2E",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Front dropouts, lug style for 13 mm blade tip, two eyelets",
+    "variant": "FD-D13-2E",
+    "status": "current",
+    "specs": {
+     "part_numbers": "FD-D13-2E",
+     "position": "front",
+     "blade_tip_mm": 13,
+     "eyelets": 2,
+     "retention_tabs": true,
+     "material": "steel",
+     "weight_g_pair": 55
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/front-dropouts-lug-style-for-13mm-fork-blade-tip-two-eyelets",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-front-dropouts-lug-style-for-13.9-mm-blade-tip-straight-slot-steel-fd-d01",
+   "name": "Allotec Front dropouts, lug style for 13.9 mm blade tip, straight slot, steel (FD-D01)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Front dropouts, lug style for 13.9 mm blade tip, straight slot",
+    "variant": "steel (FD-D01)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "FD-D01",
+     "position": "front",
+     "blade_tip_mm": 13.9,
+     "socket_mm": 14,
+     "slot": "in line with blade",
+     "retention_tabs": false,
+     "material": "steel",
+     "weight_g_pair": 37
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/front-dropouts-lug-style-for-13-9mm-fork-blade-tip-straight-slot",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-front-dropouts-lug-style-for-13.9-mm-blade-tip-straight-slot-stainless-fd-d01sus",
+   "name": "Allotec Front dropouts, lug style for 13.9 mm blade tip, straight slot, stainless (FD-D01sus)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Front dropouts, lug style for 13.9 mm blade tip, straight slot",
+    "variant": "stainless (FD-D01sus)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "FD-D01sus",
+     "position": "front",
+     "blade_tip_mm": 13.9,
+     "socket_mm": 14,
+     "slot": "in line with blade",
+     "retention_tabs": false,
+     "material": "stainless steel",
+     "weight_g_pair": 37
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/front-dropouts-lug-style-for-13-9mm-fork-blade-tip-straight-slot-stainless-steel",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-thru-axle-front-dropouts-14-mm-plug-m12x1.5-1-eyelet-d26-12-1",
+   "name": "Allotec Thru-axle front dropouts, 14 mm plug, M12x1.5, 1 eyelet (D26-12-1)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Thru-axle front dropouts, 14 mm plug, M12x1.5",
+    "variant": "1 eyelet (D26-12-1)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "D26-12-1",
+     "position": "front",
+     "axle": "12 mm thru, M12x1.5",
+     "blade_id_mm": 14,
+     "type": "plug style",
+     "eyelets": 1,
+     "material": "steel",
+     "weight_g_pair": 131
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/thru-axle-front-dropouts-14mm-plug-style-m12-x-1-5-thread-pitch-one-eyelet",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-thru-axle-front-dropouts-14-mm-plug-m12x1.5-2-eyelets-d26-12-2",
+   "name": "Allotec Thru-axle front dropouts, 14 mm plug, M12x1.5, 2 eyelets (D26-12-2)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Thru-axle front dropouts, 14 mm plug, M12x1.5",
+    "variant": "2 eyelets (D26-12-2)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "D26-12-2",
+     "position": "front",
+     "axle": "12 mm thru, M12x1.5",
+     "blade_id_mm": 14,
+     "type": "plug style",
+     "eyelets": 2,
+     "material": "steel",
+     "weight_g_pair": 135
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/thru-axle-front-dropouts-14mm-plug-style-m12-x-1-5-thread-pitch-two-eyelets",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-thru-axle-front-dropouts-14-mm-plug-m15x1.5-1-eyelet-d26-15-1",
+   "name": "Allotec Thru-axle front dropouts, 14 mm plug, M15x1.5, 1 eyelet (D26-15-1)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Thru-axle front dropouts, 14 mm plug, M15x1.5",
+    "variant": "1 eyelet (D26-15-1)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "D26-15-1",
+     "position": "front",
+     "axle": "15 mm thru, M15x1.5",
+     "blade_id_mm": 14,
+     "type": "plug style",
+     "eyelets": 1,
+     "material": "steel",
+     "weight_g_pair": 117
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/thru-axle-front-dropouts-14mm-plug-style-m15-x-1-5-thread-pitch-one-eyelet",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "allotec-thru-axle-front-dropouts-14-mm-plug-m15x1.5-2-eyelets-d26-15-2",
+   "name": "Allotec Thru-axle front dropouts, 14 mm plug, M15x1.5, 2 eyelets (D26-15-2)",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Allotec",
+    "model": "Thru-axle front dropouts, 14 mm plug, M15x1.5",
+    "variant": "2 eyelets (D26-15-2)",
+    "status": "current",
+    "specs": {
+     "part_numbers": "D26-15-2",
+     "position": "front",
+     "axle": "15 mm thru, M15x1.5",
+     "blade_id_mm": 14,
+     "type": "plug style",
+     "eyelets": 2,
+     "material": "steel",
+     "weight_g_pair": 124
+    },
+    "sources": [
+     {
+      "url": "https://framebuildersupply.com/products/thru-axle-front-dropouts-14mm-plug-style-m15-x-1-5-thread-pitch-two-eyelets",
+      "publisher": "Framebuilder Supply (distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "llewellyn-rear-dropout-64-deg-vertical",
+   "name": "Llewellyn rear dropout, 64 deg, vertical",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Llewellyn",
+    "model": "rear dropout",
+    "variant": "64 deg, vertical",
+    "years": "2006–",
+    "status": "current",
+    "specs": {
+     "stay_angle_deg": 64,
+     "position": "rear",
+     "eyelets": "two cast M5 eyelets (per design description)",
+     "material": "investment cast steel or SU304 stainless"
+    },
+    "derived": {
+     "dropout_type": "page describes vertical rear wheel slot dropouts"
+    },
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/Llewellyndropouts.htm",
+      "publisher": "Ceeway (Llewellyn distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "llewellyn-rear-dropout-68-deg-vertical",
+   "name": "Llewellyn rear dropout, 68 deg, vertical",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Llewellyn",
+    "model": "rear dropout",
+    "variant": "68 deg, vertical",
+    "years": "2006–",
+    "status": "current",
+    "specs": {
+     "stay_angle_deg": 68,
+     "position": "rear",
+     "eyelets": "two cast M5 eyelets (per design description)",
+     "material": "investment cast steel or SU304 stainless"
+    },
+    "derived": {
+     "dropout_type": "page describes vertical rear wheel slot dropouts"
+    },
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/Llewellyndropouts.htm",
+      "publisher": "Ceeway (Llewellyn distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "llewellyn-rear-dropout-72-deg-vertical",
+   "name": "Llewellyn rear dropout, 72 deg, vertical",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "vertical"
+   },
+   "meta": {
+    "brand": "Llewellyn",
+    "model": "rear dropout",
+    "variant": "72 deg, vertical",
+    "years": "2010–",
+    "status": "current",
+    "specs": {
+     "stay_angle_deg": 72,
+     "position": "rear",
+     "eyelets": "two cast M5 eyelets (per design description)",
+     "material": "investment cast steel or SU304 stainless"
+    },
+    "derived": {
+     "dropout_type": "page describes vertical rear wheel slot dropouts"
+    },
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/Llewellyndropouts.htm",
+      "publisher": "Ceeway (Llewellyn distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "llewellyn-front-dropout-with-or-without-m5-eyelets",
+   "name": "Llewellyn front dropout, with or without M5 eyelets",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Llewellyn",
+    "model": "front dropout",
+    "variant": "with or without M5 eyelets",
+    "status": "current",
+    "specs": {
+     "position": "front",
+     "eyelets": "2x M5 (eyelet version) or none",
+     "slot": "angle suits curved or straight blades",
+     "material": "investment cast steel or SU304 stainless"
+    },
+    "sources": [
+     {
+      "url": "https://www.framebuilding.com/Llewellyndropouts.htm",
+      "publisher": "Ceeway (Llewellyn distributor)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "richard-sachs-horizontal-dropouts-forged-merckx-era-pattern",
+   "name": "Richard Sachs horizontal dropouts, forged, Merckx-era pattern",
+   "category": "dropouts",
+   "values": {
+    "dropout_type": "horizontal"
+   },
+   "meta": {
+    "brand": "Richard Sachs",
+    "model": "horizontal dropouts",
+    "variant": "forged, Merckx-era pattern",
+    "status": "current",
+    "specs": {
+     "position": "rear",
+     "construction": "forged",
+     "includes": "adjusting screws, springs, end caps (per pair)"
+    },
+    "derived": {
+     "dropout_type": "described as horizontal dropouts"
+    },
+    "sources": [
+     {
+      "url": "https://richardsachs.com/product/richard-sachs-horizontal-dropouts/",
+      "publisher": "Richard Sachs Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "richard-sachs-piccoli-gioielli-rear-dropouts-steel-or-stainless",
+   "name": "Richard Sachs Piccoli Gioielli rear dropouts, steel or stainless",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Richard Sachs",
+    "model": "Piccoli Gioielli rear dropouts",
+    "variant": "steel or stainless",
+    "status": "current",
+    "specs": {
+     "position": "rear",
+     "construction": "investment cast",
+     "material": "steel or stainless",
+     "angles": "three seat/chainstay angles incl. 72 deg (72 deg no longer in stainless)"
+    },
+    "sources": [
+     {
+      "url": "https://richardsachs.com/product/richard-sachs-piccoli-gioielli-rear-dropouts/",
+      "publisher": "Richard Sachs Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "richard-sachs-piccoli-gioielli-front-dropouts-steel-or-stainless",
+   "name": "Richard Sachs Piccoli Gioielli front dropouts, steel or stainless",
+   "category": "dropouts",
+   "values": {},
+   "meta": {
+    "brand": "Richard Sachs",
+    "model": "Piccoli Gioielli front dropouts",
+    "variant": "steel or stainless",
+    "status": "current",
+    "specs": {
+     "position": "front",
+     "construction": "investment cast",
+     "material": "steel or stainless"
+    },
+    "sources": [
+     {
+      "url": "https://richardsachs.com/product/richard-sachs-piccoli-gioielli-front-dropouts/",
+      "publisher": "Richard Sachs Cycles (manufacturer)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
    "id": "paragon-machine-works-conventional-slider-flanged-titanium-ds0001",
    "name": "Paragon Machine Works Conventional Slider, Flanged, titanium (DS0001)",
    "category": "dropouts",

@@ -16,7 +16,7 @@ from .param_panel import ParamPanel
 from .results_panel import ResultsPanel
 
 Qt = QtCore.Qt
-FILE_FILTER = f"FrameWright designs (*{FILE_SUFFIX});;All files (*)"
+FILE_FILTER = f"FrameWright designs (*{FILE_SUFFIX});;BikeCAD designs (*.bcad);;All files (*)"
 
 
 def _optional(module: str):

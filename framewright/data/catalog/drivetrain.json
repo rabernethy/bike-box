@@ -7,6 +7,470 @@
  "compiled": "2026-10-11",
  "items": [
   {
+   "id": "shimano-dura-ace-rd-r9100-ss",
+   "name": "Shimano Dura-Ace RD-R9100-SS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-R9100-SS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 35,
+     "max_low_sprocket_t": 30,
+     "min_low_sprocket_t": 25,
+     "max_top_sprocket_t": 14,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 16,
+     "pulley_teeth": 11,
+     "construction": "SHIMANO SHADOW RD",
+     "cage_code": "SS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-dura-ace-rd-9000-ss",
+   "name": "Shimano Dura-Ace RD-9000-SS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Dura-Ace",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-9000-SS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 33,
+     "max_low_sprocket_t": 28,
+     "min_low_sprocket_t": 23,
+     "max_top_sprocket_t": 14,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 16,
+     "pulley_teeth": 11,
+     "cage_code": "SS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-ultegra-rd-6800-ss",
+   "name": "Shimano Ultegra RD-6800-SS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-6800-SS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 33,
+     "max_low_sprocket_t": 28,
+     "min_low_sprocket_t": 23,
+     "max_top_sprocket_t": 14,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 16,
+     "pulley_teeth": 11,
+     "cage_code": "SS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-ultegra-rd-6800-gs",
+   "name": "Shimano Ultegra RD-6800-GS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Ultegra",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-6800-GS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 37,
+     "max_low_sprocket_t": 32,
+     "min_low_sprocket_t": 28,
+     "max_top_sprocket_t": 12,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 16,
+     "pulley_teeth": 11,
+     "cage_code": "GS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-105-rd-5800-ss",
+   "name": "Shimano 105 RD-5800-SS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-5800-SS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 33,
+     "max_low_sprocket_t": 28,
+     "min_low_sprocket_t": 23,
+     "max_top_sprocket_t": 14,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 16,
+     "pulley_teeth": 11,
+     "weight_g": 234,
+     "cage_code": "SS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-105-rd-5800-gs",
+   "name": "Shimano 105 RD-5800-GS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-5800-GS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 37,
+     "max_low_sprocket_t": 32,
+     "min_low_sprocket_t": 28,
+     "max_top_sprocket_t": 12,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 16,
+     "pulley_teeth": 11,
+     "weight_g": 250,
+     "cage_code": "GS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-105-rd-5701-ss",
+   "name": "Shimano 105 RD-5701-SS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-5701-SS",
+     "speeds": 10,
+     "actuation": "mechanical",
+     "total_capacity_t": 34,
+     "max_low_sprocket_t": 30,
+     "min_low_sprocket_t": 25,
+     "max_top_sprocket_t": 14,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 16,
+     "pulley_teeth": 11,
+     "weight_g": 230,
+     "cage_code": "SS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-105-rd-5701-gs",
+   "name": "Shimano 105 RD-5701-GS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "105",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-5701-GS",
+     "speeds": 10,
+     "actuation": "mechanical",
+     "total_capacity_t": 40,
+     "max_low_sprocket_t": "32 (front double), 30 (front triple)",
+     "min_low_sprocket_t": "27 (front double), 25 (front triple)",
+     "max_top_sprocket_t": "12 (front double), 14 (front triple)",
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": "16 (front double), 22 (front triple)",
+     "pulley_teeth": 11,
+     "weight_g": 243,
+     "cage_code": "GS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-sora-rd-r350-gs",
+   "name": "Shimano Sora RD-R350-GS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Sora",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-R350-GS",
+     "speeds": 9,
+     "actuation": "mechanical",
+     "total_capacity_t": 41,
+     "max_low_sprocket_t": 32,
+     "min_low_sprocket_t": 25,
+     "max_top_sprocket_t": 14,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 20,
+     "pulley_teeth": 11,
+     "cage_code": "GS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2020-2021_Specifications_v032_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2020-2021 Spec. Handbook Ver. 3.2, Nov. 30, 2020",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-xtr-rd-m9000-sgs",
+   "name": "Shimano XTR RD-M9000-SGS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-M9000-SGS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 45,
+     "max_low_sprocket_t": "40 (3x11), 42 (2x11), 46 (1x11)",
+     "min_low_sprocket_t": 40,
+     "max_top_sprocket_t": 11,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 18,
+     "pulley_teeth": 11,
+     "weight_g": 224,
+     "cage_code": "SGS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-xtr-rd-m9000-gs",
+   "name": "Shimano XTR RD-M9000-GS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "XTR",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-M9000-GS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 37,
+     "max_low_sprocket_t": "42 (2x11), 46 (1x11)",
+     "min_low_sprocket_t": 40,
+     "max_top_sprocket_t": 11,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 10,
+     "pulley_teeth": 11,
+     "weight_g": 221,
+     "cage_code": "GS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "shimano-deore-xt-rd-m8000-gs",
+   "name": "Shimano Deore XT RD-M8000-GS rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "Deore XT",
+    "variant": "rear derailleur",
+    "status": "discontinued",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-M8000-GS",
+     "speeds": 11,
+     "actuation": "mechanical",
+     "total_capacity_t": 39,
+     "max_low_sprocket_t": "42 (2x11), 46 (1x11)",
+     "min_low_sprocket_t": 40,
+     "max_top_sprocket_t": 11,
+     "min_top_sprocket_t": 11,
+     "max_front_difference_t": 10,
+     "pulley_teeth": 11,
+     "weight_g": 271,
+     "cage_code": "GS"
+    },
+    "notes": "Not listed in Shimano's current (2026) specifications; data from the archived handbook cited.",
+    "sources": [
+     {
+      "url": "https://productinfo.shimano.com/pdfs/product/archive/2017-2018_Specifications_v028_en.pdf",
+      "publisher": "Shimano (manufacturer) - 2017-2018 Specifications Ver. 2.8, Feb. 6, 2018",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
    "id": "shimano-xtr-rd-m9250-gs",
    "name": "Shimano XTR RD-M9250-GS rear derailleur",
    "values": {
@@ -7115,6 +7579,2248 @@
      {
       "url": "https://productinfo.shimano.com/pdfs/product/latest/Specifications_en.pdf",
       "publisher": "Shimano (manufacturer) - Specifications Ver. 2.8, Oct. 7, 2026",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-red-axs-rd-red-e-e1",
+   "name": "SRAM RED AXS rear derailleur (RD-RED-E-E1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED AXS",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-RED-E-E1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 36,
+     "min_largest_cog_t": 28,
+     "drivetrain_configuration": "1x, 2x",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "notes": "Compatible cassettes 10-28T to 10-36T.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-red-e-e1",
+      "publisher": "SRAM (manufacturer) - RD-RED-E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-force-axs-rd-frc-e-e1",
+   "name": "SRAM Force AXS rear derailleur (RD-FRC-E-E1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force AXS",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-FRC-E-E1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 36,
+     "min_largest_cog_t": 28,
+     "drivetrain_configuration": "1x, 2x",
+     "cage": "long",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-frc-e-e1",
+      "publisher": "SRAM (manufacturer) - RD-FRC-E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-rival-axs-rd-riv-e-e1",
+   "name": "SRAM Rival AXS rear derailleur (RD-RIV-E-E1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival AXS",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-RIV-E-E1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 36,
+     "min_largest_cog_t": 28,
+     "drivetrain_configuration": "1x, 2x",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-riv-e-e1",
+      "publisher": "SRAM (manufacturer) - RD-RIV-E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-red-xplr-axs-rd-red-1e-e1",
+   "name": "SRAM RED XPLR AXS rear derailleur (RD-RED-1E-E1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED XPLR AXS",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-RED-1E-E1",
+     "speeds": 13,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 46,
+     "min_largest_cog_t": 46,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Road Flattop D1/E1",
+     "mount": "Full Mount, hangerless (UDH frame interface required)"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "notes": "For the 10-46T XPLR 13-speed cassette.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-red-1e-e1",
+      "publisher": "SRAM (manufacturer) - RD-RED-1E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-force-xplr-axs-rd-frc-1e-e1",
+   "name": "SRAM Force XPLR AXS rear derailleur (RD-FRC-1E-E1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XPLR AXS",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-FRC-1E-E1",
+     "speeds": 13,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 46,
+     "min_largest_cog_t": 46,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Road Flattop D1/E1",
+     "mount": "Full Mount, hangerless"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "notes": "For the 10-46T XPLR 13-speed cassette.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-frc-1e-e1",
+      "publisher": "SRAM (manufacturer) - RD-FRC-1E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-rival-xplr-axs-rd-riv-1e-e1",
+   "name": "SRAM Rival XPLR AXS rear derailleur (RD-RIV-1E-E1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival XPLR AXS",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-RIV-1E-E1",
+     "speeds": 13,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 46,
+     "min_largest_cog_t": 46,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Road Flattop D1/E1",
+     "mount": "Full Mount, hangerless"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "notes": "For the 10-46T XPLR 13-speed cassette.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-riv-1e-e1",
+      "publisher": "SRAM (manufacturer) - RD-RIV-1E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-apex-xplr-axs-rd-apx-1e-d1",
+   "name": "SRAM Apex XPLR AXS rear derailleur (RD-APX-1E-D1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Apex XPLR AXS",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-APX-1E-D1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 44,
+     "min_largest_cog_t": 36,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-apx-1e-d1",
+      "publisher": "SRAM (manufacturer) - RD-APX-1E-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-xx-sl-eagle-transmission-rd-xx-sle-b1",
+   "name": "SRAM XX SL Eagle Transmission rear derailleur (RD-XX-SLE-B1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX SL Eagle Transmission",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-XX-SLE-B1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 52,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "T-Type",
+     "mount": "Full Mount (hangerless)",
+     "weight_g": 440,
+     "weight_note": "engineering estimate including battery"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-xx-sle-b1",
+      "publisher": "SRAM (manufacturer) - RD-XX-SLE-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-xx-eagle-transmission-rd-xx-e-b1",
+   "name": "SRAM XX Eagle Transmission rear derailleur (RD-XX-E-B1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX Eagle Transmission",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-XX-E-B1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 52,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "T-Type",
+     "mount": "Full Mount (hangerless)",
+     "weight_g": 450,
+     "weight_note": "engineering estimate including battery"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-xx-e-b1",
+      "publisher": "SRAM (manufacturer) - RD-XX-E-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-x0-eagle-transmission-rd-x0-e-b1",
+   "name": "SRAM X0 Eagle Transmission rear derailleur (RD-X0-E-B1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "X0 Eagle Transmission",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-X0-E-B1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 52,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "T-Type",
+     "mount": "Full Mount (hangerless)",
+     "weight_g": 466,
+     "weight_note": "engineering estimate including battery"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-x0-e-b1",
+      "publisher": "SRAM (manufacturer) - RD-X0-E-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-gx-eagle-transmission-rd-gx-e-b1",
+   "name": "SRAM GX Eagle Transmission rear derailleur (RD-GX-E-B1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GX Eagle Transmission",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-GX-E-B1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 52,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "T-Type",
+     "mount": "Full Mount (hangerless)",
+     "weight_g": 470,
+     "weight_note": "without battery"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-gx-e-b1",
+      "publisher": "SRAM (manufacturer) - RD-GX-E-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-s1000-eagle-transmission-rd-s1000-e-a1",
+   "name": "SRAM S1000 Eagle Transmission rear derailleur (RD-S1000-E-A1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "S1000 Eagle Transmission",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-S1000-E-A1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 52,
+     "drivetrain_configuration": "1x",
+     "cage": "long",
+     "chain_technology": "T-Type",
+     "mount": "Full Mount (hangerless)"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-s1000-e-a1",
+      "publisher": "SRAM (manufacturer) - RD-S1000-E-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-xx-dh-transmission-rd-xx-dhe-a1",
+   "name": "SRAM XX DH Transmission rear derailleur (RD-XX-DHE-A1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX DH Transmission",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-XX-DHE-A1",
+     "speeds": 7,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 24,
+     "min_largest_cog_t": 24,
+     "drivetrain_configuration": "1x",
+     "cage": "long",
+     "chain_technology": "T-Type",
+     "mount": "Full Mount (hangerless)"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-xx-dhe-a1",
+      "publisher": "SRAM (manufacturer) - RD-XX-DHE-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-xx1-eagle-rd-xx-1-b2",
+   "name": "SRAM XX1 Eagle rear derailleur (RD-XX-1-B2)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX1 Eagle",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-XX-1-B2",
+     "speeds": 12,
+     "actuation": "mechanical (X-Actuation)",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 50,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Eagle"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-xx-1-b2",
+      "publisher": "SRAM (manufacturer) - RD-XX-1-B2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-x01-eagle-rd-x0-1-b2",
+   "name": "SRAM X01 Eagle rear derailleur (RD-X0-1-B2)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "X01 Eagle",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-X0-1-B2",
+     "speeds": 12,
+     "actuation": "mechanical (X-Actuation)",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 50,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Eagle"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-x0-1-b2",
+      "publisher": "SRAM (manufacturer) - RD-X0-1-B2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-gx-eagle-rd-gx-1-b2",
+   "name": "SRAM GX Eagle rear derailleur (RD-GX-1-B2)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GX Eagle",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-GX-1-B2",
+     "speeds": 12,
+     "actuation": "mechanical (X-Actuation)",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 50,
+     "drivetrain_configuration": "1x",
+     "cage": "long",
+     "chain_technology": "Eagle"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-gx-1-b2",
+      "publisher": "SRAM (manufacturer) - RD-GX-1-B2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-nx-eagle-rd-nx-1-b1",
+   "name": "SRAM NX Eagle rear derailleur (RD-NX-1-B1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "NX Eagle",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-NX-1-B1",
+     "speeds": 12,
+     "actuation": "mechanical (X-Actuation)",
+     "max_largest_cog_t": 50,
+     "min_largest_cog_t": 50,
+     "drivetrain_configuration": "1x",
+     "cage": "long",
+     "chain_technology": "Eagle",
+     "weight_g": 339
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "notes": "Description gives 11-50T and 10-50T cassette capacity.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-nx-1-b1",
+      "publisher": "SRAM (manufacturer) - RD-NX-1-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-sx-eagle-rd-sx-1-b1",
+   "name": "SRAM SX Eagle rear derailleur (RD-SX-1-B1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "SX Eagle",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-SX-1-B1",
+     "speeds": 12,
+     "actuation": "mechanical (X-Actuation)",
+     "max_largest_cog_t": 50,
+     "min_largest_cog_t": 50,
+     "drivetrain_configuration": "1x",
+     "cage": "long",
+     "chain_technology": "Eagle"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-sx-1-b1",
+      "publisher": "SRAM (manufacturer) - RD-SX-1-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-red-22-rd-red-c2",
+   "name": "SRAM RED 22 rear derailleur (RD-RED-C2)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED 22",
+    "variant": "rear derailleur",
+    "status": "unknown",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-RED-C2",
+     "speeds": 11,
+     "actuation": "mechanical (Exact Actuation)",
+     "max_largest_cog_t": "28, 32 (as listed)",
+     "min_largest_cog_t": 25,
+     "drivetrain_configuration": "2x",
+     "cage": "Mid (WiFLi), Short (as listed)",
+     "chain_technology": "11-speed PowerChain"
+    },
+    "notes": "SRAM's spec table lists both max-tooth values and both cages without pairing them.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-red-c2",
+      "publisher": "SRAM (manufacturer) - RD-RED-C2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-red-axs-fd-red-e-e1",
+   "name": "SRAM RED AXS front derailleur (FD-RED-E-E1)",
+   "values": {
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED AXS",
+    "variant": "front derailleur",
+    "status": "current",
+    "specs": {
+     "component": "front derailleur",
+     "model_code": "FD-RED-E-E1",
+     "speeds": 12,
+     "compatible_chainrings_t": "46/33, 48/35, 50/37",
+     "chainline_mm": 45.0,
+     "mount": "braze-on",
+     "actuation": "AXS wireless (Yaw)",
+     "chainstay_angle_deg": "61-66",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "notes": "Features list 46/33T through 56/43T compatibility; spec table lists 46/33, 48/35, 50/37.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fd-red-e-e1",
+      "publisher": "SRAM (manufacturer) - FD-RED-E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-force-axs-fd-frc-e-e1",
+   "name": "SRAM Force AXS front derailleur (FD-FRC-E-E1)",
+   "values": {
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force AXS",
+    "variant": "front derailleur",
+    "status": "current",
+    "specs": {
+     "component": "front derailleur",
+     "model_code": "FD-FRC-E-E1",
+     "speeds": 12,
+     "compatible_chainrings_t": "46/33, 48/35, 50/37",
+     "chainline_mm": 45.0,
+     "mount": "braze-on or clamp 31.8 / 34.9 mm",
+     "actuation": "AXS wireless (Yaw)",
+     "chainstay_angle_deg": "61-66",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fd-frc-e-e1",
+      "publisher": "SRAM (manufacturer) - FD-FRC-E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-rival-axs-fd-riv-e-e1",
+   "name": "SRAM Rival AXS front derailleur (FD-RIV-E-E1)",
+   "values": {
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival AXS",
+    "variant": "front derailleur",
+    "status": "current",
+    "specs": {
+     "component": "front derailleur",
+     "model_code": "FD-RIV-E-E1",
+     "speeds": 12,
+     "compatible_chainrings_t": "46/33, 48/35, 50/37",
+     "chainline_mm": 45.0,
+     "mount": "braze-on or clamp 31.8 / 34.9 mm",
+     "actuation": "AXS wireless (Yaw)",
+     "chainstay_angle_deg": "61-66",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fd-riv-e-e1",
+      "publisher": "SRAM (manufacturer) - FD-RIV-E-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-force-axs-wide-fd-frc-ew-d2",
+   "name": "SRAM Force AXS Wide front derailleur (FD-FRC-EW-D2)",
+   "values": {
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force AXS Wide",
+    "variant": "front derailleur",
+    "status": "current",
+    "specs": {
+     "component": "front derailleur",
+     "model_code": "FD-FRC-EW-D2",
+     "speeds": 12,
+     "compatible_chainrings_t": "43/30",
+     "chainline_mm": 47.5,
+     "mount": "braze-on",
+     "actuation": "AXS wireless (Yaw)",
+     "chainstay_angle_deg": "61-66",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fd-frc-ew-d2",
+      "publisher": "SRAM (manufacturer) - FD-FRC-EW-D2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-force-22-yaw-fd-frc-b1",
+   "name": "SRAM Force 22 Yaw front derailleur (FD-FRC-B1)",
+   "values": {
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force 22 Yaw",
+    "variant": "front derailleur",
+    "status": "unknown",
+    "specs": {
+     "component": "front derailleur",
+     "model_code": "FD-FRC-B1",
+     "speeds": 11,
+     "compatible_chainrings_t": "46/36, 50/34, 52/36, 53/39",
+     "chainline_mm": 45.0,
+     "mount": "braze-on",
+     "actuation": "mechanical, bottom pull (Yaw)",
+     "chain_technology": "11-speed PowerChain"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fd-frc-b1",
+      "publisher": "SRAM (manufacturer) - FD-FRC-B1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-red-cn-red-e1",
+   "name": "SRAM RED chain (CN-RED-E1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "RED",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-RED-E1",
+     "speeds": "12, 13",
+     "chain_technology": "Road Flattop D1/E1",
+     "link_counts": "114, 126",
+     "connector": "PowerLock D1",
+     "pin": "hollow",
+     "weight_g": 249,
+     "weight_note": "114 links"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-red-e1",
+      "publisher": "SRAM (manufacturer) - CN-RED-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-force-cn-frc-e1",
+   "name": "SRAM Force chain (CN-FRC-E1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-FRC-E1",
+     "speeds": "12, 13",
+     "chain_technology": "Road Flattop D1/E1",
+     "link_counts": "102-126 (even counts)",
+     "connector": "PowerLock D1",
+     "pin": "solid"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-frc-e1",
+      "publisher": "SRAM (manufacturer) - CN-FRC-E1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-xx-eagle-transmission-flattop-cn-ttyp-xx-a1",
+   "name": "SRAM XX Eagle Transmission Flattop chain (CN-TTYP-XX-A1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX Eagle Transmission Flattop",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-TTYP-XX-A1",
+     "speeds": 12,
+     "chain_technology": "T-Type",
+     "link_counts": "126, 128",
+     "connector": "PowerLock 12s T-Type",
+     "pin": "hollow",
+     "weight_g": 247,
+     "weight_note": "engineering estimate, 114 links"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-ttyp-xx-a1",
+      "publisher": "SRAM (manufacturer) - CN-TTYP-XX-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-gx-eagle-transmission-flattop-cn-ttyp-gx-a1",
+   "name": "SRAM GX Eagle Transmission Flattop chain (CN-TTYP-GX-A1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GX Eagle Transmission Flattop",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-TTYP-GX-A1",
+     "speeds": 12,
+     "chain_technology": "T-Type",
+     "link_counts": "126, 128",
+     "connector": "PowerLock 12s T-Type",
+     "pin": "solid",
+     "weight_g": 285,
+     "weight_note": "126 links with PowerLock"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-ttyp-gx-a1",
+      "publisher": "SRAM (manufacturer) - CN-TTYP-GX-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-xx1-eagle-cn-eagl-xx1-a2",
+   "name": "SRAM XX1 Eagle chain (CN-EAGL-XX1-A2)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX1 Eagle",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-EAGL-XX1-A2",
+     "speeds": 12,
+     "chain_technology": "Eagle",
+     "link_counts": "126",
+     "connector": "PowerLock",
+     "pin": "hollow"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-eagl-xx1-a2",
+      "publisher": "SRAM (manufacturer) - CN-EAGL-XX1-A2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-gx-eagle-cn-eagl-gx-a1",
+   "name": "SRAM GX Eagle chain (CN-EAGL-GX-A1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GX Eagle",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-EAGL-GX-A1",
+     "speeds": 12,
+     "chain_technology": "Eagle",
+     "link_counts": "126",
+     "connector": "PowerLock",
+     "pin": "solid",
+     "weight_g": 244,
+     "weight_note": "114 links"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-eagl-gx-a1",
+      "publisher": "SRAM (manufacturer) - CN-EAGL-GX-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-pc-1170-cn-1170-a1",
+   "name": "SRAM PC-1170 chain (CN-1170-A1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "PC-1170",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-1170-A1",
+     "speeds": 11,
+     "chain_technology": "11-speed PowerChain",
+     "link_counts": "114, 120",
+     "connector": "PowerLock",
+     "pin": "hollow",
+     "weight_g": 256,
+     "weight_note": "114 links"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-1170-a1",
+      "publisher": "SRAM (manufacturer) - CN-1170-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-pc-1130-cn-1130-a1",
+   "name": "SRAM PC-1130 chain (CN-1130-A1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "PC-1130",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-1130-A1",
+     "speeds": 11,
+     "chain_technology": "11-speed PowerChain",
+     "link_counts": "114, 120",
+     "connector": "PowerLock",
+     "pin": "solid",
+     "weight_g": 259,
+     "weight_note": "114 links"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-1130-a1",
+      "publisher": "SRAM (manufacturer) - CN-1130-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-pc-1071-cn-1071-a1",
+   "name": "SRAM PC-1071 chain (CN-1071-A1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "PC-1071",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "model_code": "CN-1071-A1",
+     "speeds": 10,
+     "chain_technology": "10-speed PowerChain",
+     "link_counts": "114",
+     "connector": "PowerLock",
+     "pin": "hollow"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/cn-1071-a1",
+      "publisher": "SRAM (manufacturer) - CN-1071-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-force-axs-d2-rd-frc-e-d2",
+   "name": "SRAM Force AXS (D2) rear derailleur (RD-FRC-E-D2)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force AXS (D2)",
+    "variant": "rear derailleur",
+    "status": "unknown",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-FRC-E-D2",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 36,
+     "min_largest_cog_t": 28,
+     "drivetrain_configuration": "2x",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "notes": "Description says single cage, 1x or 2x.",
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-frc-e-d2",
+      "publisher": "SRAM (manufacturer) - RD-FRC-E-D2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-rival-etap-axs-rd-riv-e-d1",
+   "name": "SRAM Rival eTap AXS rear derailleur (RD-RIV-E-D1)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival eTap AXS",
+    "variant": "rear derailleur",
+    "status": "unknown",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-RIV-E-D1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 36,
+     "min_largest_cog_t": 28,
+     "drivetrain_configuration": "2x",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-riv-e-d1",
+      "publisher": "SRAM (manufacturer) - RD-RIV-E-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-force-xplr-axs-d2-rd-frc-1e-d2",
+   "name": "SRAM Force XPLR AXS (D2) rear derailleur (RD-FRC-1E-D2)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Force XPLR AXS (D2)",
+    "variant": "rear derailleur",
+    "status": "unknown",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-FRC-1E-D2",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 44,
+     "min_largest_cog_t": 36,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-frc-1e-d2",
+      "publisher": "SRAM (manufacturer) - RD-FRC-1E-D2 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-xx1-eagle-axs-rd-xx-1e-a1",
+   "name": "SRAM XX1 Eagle AXS rear derailleur (RD-XX-1E-A1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "XX1 Eagle AXS",
+    "variant": "rear derailleur",
+    "status": "unknown",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-XX-1E-A1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 50,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Eagle"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-xx-1e-a1",
+      "publisher": "SRAM (manufacturer) - RD-XX-1E-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-gx-eagle-axs-rd-gx-1e-a1",
+   "name": "SRAM GX Eagle AXS rear derailleur (RD-GX-1E-A1)",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GX Eagle AXS",
+    "variant": "rear derailleur",
+    "status": "unknown",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-GX-1E-A1",
+     "speeds": 12,
+     "actuation": "AXS wireless",
+     "max_largest_cog_t": 52,
+     "min_largest_cog_t": 50,
+     "drivetrain_configuration": "1x",
+     "chain_technology": "Eagle"
+    },
+    "derived": {
+     "front_derailleur": "SRAM lists the drivetrain configuration as 1x only"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/rd-gx-1e-a1",
+      "publisher": "SRAM (manufacturer) - RD-GX-1E-A1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "sram-rival-etap-axs-wide-fd-riv-ew-d1",
+   "name": "SRAM Rival eTap AXS Wide front derailleur (FD-RIV-EW-D1)",
+   "values": {
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "Rival eTap AXS Wide",
+    "variant": "front derailleur",
+    "status": "unknown",
+    "specs": {
+     "component": "front derailleur",
+     "model_code": "FD-RIV-EW-D1",
+     "speeds": 12,
+     "compatible_chainrings_t": "43/30",
+     "chainline_mm": 47.5,
+     "mount": "braze-on",
+     "actuation": "AXS wireless (Yaw)",
+     "chainstay_angle_deg": "61-66",
+     "chain_technology": "Road Flattop D1/E1"
+    },
+    "sources": [
+     {
+      "url": "https://www.sram.com/en/sram/models/fd-riv-ew-d1",
+      "publisher": "SRAM (manufacturer) - FD-RIV-EW-D1 model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-super-record-13-wireless-rear-derailleur",
+   "name": "Campagnolo Super Record 13 Wireless rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13 Wireless",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "speeds": 13,
+     "actuation": "wireless electronic",
+     "smallest_cog_t": "10 or 11",
+     "max_largest_cog_t": 36,
+     "pulley_teeth": "14/14",
+     "mount": "Campagnolo UDH, classic hanger link, or direct-mount dropout",
+     "weight_g": 286,
+     "weight_note": "battery included"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 rear derailleur product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-super-record-13-nano-clutch-rear-derailleur",
+   "name": "Campagnolo Super Record 13 Nano Clutch rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13 Nano Clutch",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "speeds": 13,
+     "actuation": "wireless electronic",
+     "smallest_cog_t": "10 or 11",
+     "max_largest_cog_t": 36,
+     "pulley_teeth": "14/14",
+     "clutch": "Nano Clutch",
+     "mount": "Campagnolo UDH, classic hanger link, or direct-mount dropout",
+     "weight_g": 315,
+     "weight_note": "battery included"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur-with-nano-clutch/CRDSUPERRECORD13NC.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 rear derailleur with Nano Clutch product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-super-record-x-rear-derailleur",
+   "name": "Campagnolo Super Record X rear derailleur",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record X",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "speeds": 13,
+     "actuation": "wireless electronic",
+     "max_largest_cog_t": 48,
+     "pulley_teeth": "12 upper / 16 lower",
+     "cage_geometry_mm": 92.5,
+     "mount": "universal (UDH or traditional dropout)",
+     "weight_g": 347,
+     "weight_note": "with battery",
+     "chainline_mm": "47.5 (steel-axle crankset); 45.8 mm 1x road cranksets also compatible"
+    },
+    "notes": "1x gravel derailleur.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-x-rear-derailleur/CRDSUPERRECORD13X.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record X rear derailleur product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-record-13-rear-derailleur",
+   "name": "Campagnolo Record 13 rear derailleur",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "speeds": 13,
+     "actuation": "wireless electronic",
+     "smallest_cog_t": "10 or 11",
+     "max_largest_cog_t": 36,
+     "pulley_teeth": "14/14",
+     "mount": "Campagnolo UDH, classic hanger link, or direct-mount dropout",
+     "weight_g": 297,
+     "weight_note": "without battery"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-rear-derailleur/CRDRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 rear derailleur product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-ekar-rear-derailleur",
+   "name": "Campagnolo Ekar rear derailleur",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "speeds": 13,
+     "actuation": "mechanical",
+     "cassette_range": "9-36T to 10-44T",
+     "cage": "mid-length",
+     "pulley_teeth": "12 upper / 14 lower",
+     "weight_g": 275
+    },
+    "notes": "1x13 system.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-rear-derailleur/CRDEKAR1X13S.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar rear derailleur product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-ekar-gt-rear-derailleur",
+   "name": "Campagnolo Ekar GT rear derailleur",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": false
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Ekar GT",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "speeds": 13,
+     "actuation": "mechanical",
+     "cassette_range": "9-36T to 10-48T (four combinations)",
+     "clutch": "permanently engaged, lockable",
+     "weight_g": 310
+    },
+    "notes": "1x13 system.",
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/ekar-gt-rear-derailleur/CRDEKAR1X13SGT.html",
+      "publisher": "Campagnolo (manufacturer) - Ekar GT rear derailleur product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-super-record-13-wireless-front-derailleur",
+   "name": "Campagnolo Super Record 13 Wireless front derailleur",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": true
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Super Record 13 Wireless",
+    "variant": "front derailleur",
+    "status": "current",
+    "specs": {
+     "component": "front derailleur",
+     "actuation": "wireless electronic",
+     "chainring_range": "45/29 to 55/39",
+     "weight_g": 153,
+     "weight_note": "battery included"
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/super-record-13-front-derailleur/CFDSUPERRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Super Record 13 front derailleur product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-record-13-front-derailleur",
+   "name": "Campagnolo Record 13 front derailleur",
+   "values": {
+    "drive_type": "derailleur",
+    "front_derailleur": true
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "Record 13",
+    "variant": "front derailleur",
+    "status": "current",
+    "specs": {
+     "component": "front derailleur",
+     "actuation": "wireless electronic",
+     "chainring_range": "45/29 to 55/39",
+     "weight_g": 142
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/record-13-front-derailleur/CFDRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - Record 13 front derailleur product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "campagnolo-13s-chain",
+   "name": "Campagnolo 13s chain",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "Campagnolo",
+    "model": "13s",
+    "variant": "chain",
+    "status": "current",
+    "specs": {
+     "component": "chain",
+     "speeds": 13,
+     "width_mm": 4.9,
+     "pin": "solid",
+     "connector": "C-Link",
+     "weight_g": 254
+    },
+    "sources": [
+     {
+      "url": "https://www.campagnolo.com/us-en/campagnolo-13s-chain/CCNRECORD13.html",
+      "publisher": "Campagnolo (manufacturer) - 13s chain product page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "microshift-advent-x-rd-m6205am",
+   "name": "microSHIFT Advent X rear derailleur (RD-M6205AM)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Advent X",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-M6205AM",
+     "speeds": 10,
+     "max_largest_cog_t": "46-48",
+     "total_capacity_t": 41,
+     "cage": "medium",
+     "weight_g": 313
+    },
+    "notes": "Clutch (switchable). For Advent X 10-speed only.",
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/rd-m6205am/",
+      "publisher": "microSHIFT (manufacturer) - RD-M6205AM model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "microshift-sword-1x-rd-g7005m",
+   "name": "microSHIFT Sword 1x rear derailleur (RD-G7005M)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Sword 1x",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-G7005M",
+     "speeds": "9/10",
+     "max_largest_cog_t": "42-48",
+     "total_capacity_t": 37,
+     "cage": "medium",
+     "weight_g": 305
+    },
+    "notes": "Clutch with switch.",
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/rd-g7005m/",
+      "publisher": "microSHIFT (manufacturer) - RD-G7005M model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "microshift-sword-2x-rd-g7025l",
+   "name": "microSHIFT Sword 2x rear derailleur (RD-G7025L)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Sword 2x",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-G7025L",
+     "speeds": "9/10",
+     "max_largest_cog_t": "34-38",
+     "total_capacity_t": 44,
+     "cage": "long",
+     "weight_g": 329
+    },
+    "notes": "Clutch.",
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/rd-g7025l/",
+      "publisher": "microSHIFT (manufacturer) - RD-G7025L model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "microshift-advent-mx-pro-rd-m7015m",
+   "name": "microSHIFT Advent MX Pro rear derailleur (RD-M7015M)",
+   "values": {
+    "drive_type": "derailleur"
+   },
+   "meta": {
+    "brand": "microSHIFT",
+    "model": "Advent MX Pro",
+    "variant": "rear derailleur",
+    "status": "current",
+    "specs": {
+     "component": "rear derailleur",
+     "model_code": "RD-M7015M",
+     "speeds": "10/11",
+     "max_largest_cog_t": "48-50",
+     "total_capacity_t": 39,
+     "cage": "medium",
+     "weight_g": 358
+    },
+    "notes": "Clutch.",
+    "sources": [
+     {
+      "url": "https://www.microshift.com/models/rd-m7015m/",
+      "publisher": "microSHIFT (manufacturer) - RD-M7015M model page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "rohloff-speedhub-500-14-135-mm",
+   "name": "Rohloff SPEEDHUB 500/14, 135 mm",
+   "values": {
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Rohloff",
+    "model": "SPEEDHUB 500/14",
+    "variant": "135 mm",
+    "status": "current",
+    "specs": {
+     "component": "internal geared hub",
+     "speeds": 14,
+     "gear_step": "13.6% (even)",
+     "total_range": "526%",
+     "spoke_holes": "32 or 36",
+     "flange_spacing_mm": 58,
+     "spoke_hole_circle_mm": 100,
+     "max_input_torque_nm": 130,
+     "chain": "1/2 x 3/32 in (ISO 082)",
+     "sprockets_t": "16 standard; 13, 15, 17 threaded or 13-19, 21 splined",
+     "brake": "disc only (Rohloff 4-bolt disc mount)",
+     "shifter": "twist shifter, two pull-pull cables",
+     "weights_g": "1700 (CC), 1800 (CC EX), 1825 (CC DB)",
+     "old_mm": "135",
+     "chainline_threaded_sprocket_mm": "54 (57 with 13T)"
+    },
+    "sources": [
+     {
+      "url": "https://rohloff.de/en/service/handbook/speedhub/technical-data",
+      "publisher": "Rohloff (manufacturer) - SPEEDHUB 500/14 technical data",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "rohloff-speedhub-500-14-a12-142-mm",
+   "name": "Rohloff SPEEDHUB 500/14, A12-142 mm",
+   "values": {
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Rohloff",
+    "model": "SPEEDHUB 500/14",
+    "variant": "A12-142 mm",
+    "status": "current",
+    "specs": {
+     "component": "internal geared hub",
+     "speeds": 14,
+     "gear_step": "13.6% (even)",
+     "total_range": "526%",
+     "spoke_holes": "32 or 36",
+     "flange_spacing_mm": 58,
+     "spoke_hole_circle_mm": 100,
+     "max_input_torque_nm": 130,
+     "chain": "1/2 x 3/32 in (ISO 082)",
+     "sprockets_t": "16 standard; 13, 15, 17 threaded or 13-19, 21 splined",
+     "brake": "disc only (Rohloff 4-bolt disc mount)",
+     "shifter": "twist shifter, two pull-pull cables",
+     "weights_g": "1700 (CC), 1800 (CC EX), 1825 (CC DB)",
+     "old_mm": "A12-142",
+     "chainline_threaded_sprocket_mm": "54 (57 with 13T)"
+    },
+    "sources": [
+     {
+      "url": "https://rohloff.de/en/service/handbook/speedhub/technical-data",
+      "publisher": "Rohloff (manufacturer) - SPEEDHUB 500/14 technical data",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "rohloff-speedhub-500-14-a12-148-mm",
+   "name": "Rohloff SPEEDHUB 500/14, A12-148 mm",
+   "values": {
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Rohloff",
+    "model": "SPEEDHUB 500/14",
+    "variant": "A12-148 mm",
+    "status": "current",
+    "specs": {
+     "component": "internal geared hub",
+     "speeds": 14,
+     "gear_step": "13.6% (even)",
+     "total_range": "526%",
+     "spoke_holes": "32 or 36",
+     "flange_spacing_mm": 58,
+     "spoke_hole_circle_mm": 100,
+     "max_input_torque_nm": 130,
+     "chain": "1/2 x 3/32 in (ISO 082)",
+     "sprockets_t": "16 standard; 13, 15, 17 threaded or 13-19, 21 splined",
+     "brake": "disc only (Rohloff 4-bolt disc mount)",
+     "shifter": "twist shifter, two pull-pull cables",
+     "weights_g": "1700 (CC), 1800 (CC EX), 1825 (CC DB)",
+     "old_mm": "A12-148",
+     "chainline_threaded_sprocket_mm": "51 (55 with 13T)"
+    },
+    "sources": [
+     {
+      "url": "https://rohloff.de/en/service/handbook/speedhub/technical-data",
+      "publisher": "Rohloff (manufacturer) - SPEEDHUB 500/14 technical data",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "rohloff-speedhub-500-14-fatbike-170-177-190-197-mm",
+   "name": "Rohloff SPEEDHUB 500/14 Fatbike",
+   "values": {
+    "drive_type": "hub_gear"
+   },
+   "meta": {
+    "brand": "Rohloff",
+    "model": "SPEEDHUB 500/14 Fatbike",
+    "variant": "170/177/190/197 mm",
+    "status": "current",
+    "specs": {
+     "component": "internal geared hub",
+     "speeds": 14,
+     "gear_step": "13.6% (even)",
+     "total_range": "526%",
+     "old_mm": "170, A12-177, 190, A12-197",
+     "spoke_holes": "32",
+     "flange_spacing_mm": 93,
+     "chainline_threaded_sprocket_mm": "71.5 (75 with 13T)",
+     "chainline_splined_mm": 75.5,
+     "weight_g": 1980,
+     "weight_note": "CC DB"
+    },
+    "sources": [
+     {
+      "url": "https://rohloff.de/en/service/handbook/speedhub/technical-data",
+      "publisher": "Rohloff (manufacturer) - SPEEDHUB 500/14 technical data",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "pinion-c1.12",
+   "name": "Pinion C1.12 gearbox",
+   "values": {
+    "drive_type": "gearbox"
+   },
+   "meta": {
+    "brand": "Pinion",
+    "model": "C1.12",
+    "variant": "gearbox",
+    "status": "current",
+    "specs": {
+     "component": "gearbox",
+     "speeds": 12,
+     "total_range": "600%",
+     "gear_step": "17.7%",
+     "easiest_gear_ratio": 1.82,
+     "fastest_gear_ratio": 0.3,
+     "weight_g": 2100,
+     "weight_note": "approx.",
+     "q_factor_mm": 166,
+     "max_torque_nm": 250
+    },
+    "sources": [
+     {
+      "url": "https://pinion.eu/en/c-line",
+      "publisher": "Pinion (manufacturer) - C-Line gearbox page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "pinion-c1.9",
+   "name": "Pinion C1.9 gearbox",
+   "values": {
+    "drive_type": "gearbox"
+   },
+   "meta": {
+    "brand": "Pinion",
+    "model": "C1.9",
+    "variant": "gearbox",
+    "status": "current",
+    "specs": {
+     "component": "gearbox",
+     "speeds": 9,
+     "total_range": "568%",
+     "gear_step": "24.3%",
+     "easiest_gear_ratio": 1.82,
+     "fastest_gear_ratio": 0.32,
+     "weight_g": 2000,
+     "weight_note": "approx.",
+     "q_factor_mm": 166,
+     "max_torque_nm": 250
+    },
+    "sources": [
+     {
+      "url": "https://pinion.eu/en/c-line",
+      "publisher": "Pinion (manufacturer) - C-Line gearbox page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "pinion-c1.6",
+   "name": "Pinion C1.6 gearbox",
+   "values": {
+    "drive_type": "gearbox"
+   },
+   "meta": {
+    "brand": "Pinion",
+    "model": "C1.6",
+    "variant": "gearbox",
+    "status": "current",
+    "specs": {
+     "component": "gearbox",
+     "speeds": 6,
+     "total_range": "295%",
+     "gear_step": "24.3%",
+     "easiest_gear_ratio": 0.95,
+     "fastest_gear_ratio": 0.32,
+     "weight_g": 1800,
+     "weight_note": "approx.",
+     "q_factor_mm": 166,
+     "max_torque_nm": 250
+    },
+    "sources": [
+     {
+      "url": "https://pinion.eu/en/c-line",
+      "publisher": "Pinion (manufacturer) - C-Line gearbox page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "pinion-p1.18",
+   "name": "Pinion P1.18 gearbox",
+   "values": {
+    "drive_type": "gearbox"
+   },
+   "meta": {
+    "brand": "Pinion",
+    "model": "P1.18",
+    "variant": "gearbox",
+    "status": "current",
+    "specs": {
+     "component": "gearbox",
+     "speeds": 18,
+     "total_range": "636%",
+     "gear_step": "11.5%",
+     "easiest_gear_ratio": 1.82,
+     "fastest_gear_ratio": 0.29,
+     "weight_g": 2700,
+     "weight_note": "approx.",
+     "q_factor_mm": 174,
+     "max_torque_nm": 250
+    },
+    "sources": [
+     {
+      "url": "https://pinion.eu/en/p-line",
+      "publisher": "Pinion (manufacturer) - P-Line gearbox page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "pinion-p1.12",
+   "name": "Pinion P1.12 gearbox",
+   "values": {
+    "drive_type": "gearbox"
+   },
+   "meta": {
+    "brand": "Pinion",
+    "model": "P1.12",
+    "variant": "gearbox",
+    "status": "current",
+    "specs": {
+     "component": "gearbox",
+     "speeds": 12,
+     "total_range": "600%",
+     "gear_step": "17.7%",
+     "easiest_gear_ratio": 1.82,
+     "fastest_gear_ratio": 0.3,
+     "weight_g": 2350,
+     "weight_note": "approx.",
+     "q_factor_mm": 174,
+     "max_torque_nm": 250
+    },
+    "sources": [
+     {
+      "url": "https://pinion.eu/en/p-line",
+      "publisher": "Pinion (manufacturer) - P-Line gearbox page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "effigear-mimic-evo-6-speed",
+   "name": "Effigear MIMIC Evo 6-speed gearbox",
+   "values": {
+    "drive_type": "gearbox"
+   },
+   "meta": {
+    "brand": "Effigear",
+    "model": "MIMIC Evo",
+    "variant": "6-speed",
+    "status": "current",
+    "specs": {
+     "component": "gearbox",
+     "speeds": 6,
+     "total_range": "259%",
+     "lowest_ratio": 1.35,
+     "highest_ratio": 3.42,
+     "weight_g": 1845,
+     "q_factor_mm": 177,
+     "max_input_torque_nm": 250,
+     "frame_interface": "Effigear / Pinion Bridge H6GB",
+     "crank_axle": "ISIS",
+     "output_sprocket": "ISO 4156 9-spline / HG"
+    },
+    "notes": "Lowest/highest ratio are the demultiplication values as listed by Effigear.",
+    "sources": [
+     {
+      "url": "https://www.effigear.com/fr/content/50-mimic-evo",
+      "publisher": "Effigear (manufacturer) - MIMIC Evo page",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   },
+   "category": "drivetrain"
+  },
+  {
+   "id": "effigear-mimic-evo-9-speed",
+   "name": "Effigear MIMIC Evo 9-speed gearbox",
+   "values": {
+    "drive_type": "gearbox"
+   },
+   "meta": {
+    "brand": "Effigear",
+    "model": "MIMIC Evo",
+    "variant": "9-speed",
+    "status": "current",
+    "specs": {
+     "component": "gearbox",
+     "speeds": 9,
+     "total_range": "469%",
+     "lowest_ratio": 0.85,
+     "highest_ratio": 4.0,
+     "weight_g": 2000,
+     "q_factor_mm": 177,
+     "max_input_torque_nm": 250,
+     "frame_interface": "Effigear / Pinion Bridge H6GB",
+     "crank_axle": "ISIS",
+     "output_sprocket": "ISO 4156 9-spline / HG"
+    },
+    "notes": "Lowest/highest ratio are the demultiplication values as listed by Effigear.",
+    "sources": [
+     {
+      "url": "https://www.effigear.com/fr/content/50-mimic-evo",
+      "publisher": "Effigear (manufacturer) - MIMIC Evo page",
       "kind": "manufacturer",
       "accessed": "2026-10-11"
      }

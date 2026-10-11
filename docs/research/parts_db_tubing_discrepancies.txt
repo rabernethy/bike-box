@@ -1,0 +1,47 @@
+Discrepancies: user's framebuilder-parts-db (data/parts.json) vs sources fetched 2026-10-11
+=== Columbus (checked by main agent) ===
+Sources: C89 = equusbicycle.com/bike/columbus/columbuschart.htm (c.1989 Columbus chart, walls + set weights, no ODs)
+         C1919 = columbus1919.com/pages/tube-specifications (+ material-* pages); MG = metal-guru.com; FBS = framebuildersupply.com
+columbus-sl:   chain_stay wall DB 0.9 -> C89 0.8; fork_blade wall DB 1.0/0.8 -> C89 0.9 (current SL blade drawing SL0I16V1: 28x19 oval, 0.9); set_weight DB 1580 -> C89 1925 g
+columbus-slx:  down_tube DB 1.0/0.7/1.0 -> C89 0.9/0.6/0.9 (also columbustubi SLX project SLXI112650 0.9/0.6/0.9); seat_tube DB 1.0/0.7/1.0 -> single-butted 0.9/0.6 (C89) / 0.8/0.6 re-issue; set_weight DB 1720 -> C89 1966
+columbus-sp:   down_tube DB 1.0/0.8/1.0 -> C89 1/0.7/1; top_tube DB 0.9/0.7/0.9 -> C89 1/0.7/1; seat_tube DB 1.0/0.8/1.0 -> C89 single-butted 1/0.7; set_weight DB 1900 -> C89 2215
+columbus-max:  (C89 MAX) down 0.9/0.6/0.9 -> 0.8/0.5/0.8; top 0.8/0.5/0.8 -> 0.7/0.4/0.7; seat 0.9/0.6/0.9 -> single-butted 0.8/0.5; head wall 1.0 -> 1.5; set_weight 1650 -> 1900.
+               Current MAX kit (MG): TT 31.7 (DB 32.0), DT 35 0.8/0.5/0.8, ST tapered oval 31.7/28.6 0.8/0.5
+columbus-el:   seat_tube DB 0.8/0.5/0.8 -> C89 single-butted 0.8/0.6; head wall DB 0.9 -> C89 1; set_weight DB 1420 -> C89 1670
+columbus-tsx:  down DB 0.9/0.5/0.7 -> C89 0.8/0.6/0.8; top DB 0.8/0.5/0.6 -> C89 0.8/0.6/0.8; seat DB 0.9/0.5/0.7 -> C89 single 0.9/0.6; set_weight DB 1550 -> C89 1945
+columbus-aelle: walls DB DT 1.0 / TT 0.9 / ST 1.0 -> C89 0.8 / 0.8 / 0.8 (plain gauge); set_weight DB 2200 -> C89 2345
+columbus-cromor: tensile DB 700 -> Columbus Cromor UTS 750 MPa (700 is the YIELD); current Cromor DT (MG CRMI12640) is 28.6 OD 0.9/0.6/0.9 (DB 31.7); C89 Cromor TT 0.9/0.7/0.9 (DB 0.8/0.5/0.8), DT 1/0.7/1, set 2190 g (DB 1900)
+columbus-zona: tensile DB 700 -> Columbus 25CrMo4 UTS 900 / YS 800; HT DB 33.0x1.0 -> Columbus Zona HT 36 x 1.1 (C1919 TZ360H600C043); TT 28.6 DB 0.8/0.6/0.8 -> C1919 TZ286T650C105 0.8/0.5/0.8; DT DB 28.6 0.9/0.7/0.9 -> no such Zona DT (C1919 Zona DTs 35-44 OD; FBS Zona 28.6 DT is .8/.6/.8)
+columbus-spirit: alloy DB "Nivacrom" -> Columbus: OMNICROM (UTS 1300, YS>=920; DB tensile 1200); HT DB 33/0.8 -> Spirit/Life HTs are 46x1.1 / 56x1.0 (C1919); SS DB 16/0.6 -> 17 x 0.5 (TL170V560S127); CS DB 22.2/0.7 -> 22.2 x 0.75 (TL222C500S161) or 24 0.7/0.5; Spirit FL DT 31.7 = 0.75/0.45/0.75 (MG single page, FBS; DB 0.7/0.4/0.7 matches only MG kit page)
+columbus-life: alloy DB "Nivacrom" -> OMNICROM; DT DB 35 0.7/0.4/0.7 -> C1919 TL350D650C176 0.65/0.45/0.65; TT DB 31.7 0.6/0.35/0.6 -> TL317T600C112 0.6/0.4/0.6; ST DB 31.7 0.7/0.4/0.7 -> TL317S635C110 single-butted 0.8/0.5; HT DB 44/0.8 -> 46x1.1 or 56x1.0
+columbus-xcr:  tensile DB 1100 -> Columbus UTS 1450 / YS 1000; TT DB 28.6 -> C1919 TX317T600C098 31.7 0.6/0.4/0.6; DT DB 31.7 -> Columbus XCr DTs 35/38/44; ST DB 28.6 0.7/0.4/0.7 -> TX286S635C105 single-butted 0.8/0.6 (or TX330S650C093 33 0.65/0.45/0.65); HT DB 33/0.9 -> 46x1.1, 52x1, 56x1
+columbus-hyperion: walls DB 0.9/0.6 (DT), 0.7/0.5 (TT) -> Columbus Hyperion main tubes all 0.9/0.7/0.9 (TB) / ST single 0.9/0.7; HT DB 39x1.2 -> 46.4x1.2 / 56x1.2; DT DB 35 -> C1919 40/44/50 (FBS also 35/38/42)
+columbus-gilco: C89 credits Gilco as co-designer of "MS" (MS: DT 1/0.7/1, TT 0.9/0.6/0.9, ST single 0.9/0.6, set 1930 g) - DB gilco walls (DT 0.9/0.6/0.9, TT 0.8/0.5/0.8, ST 0.9/0.6/0.9) match none.
+Internal conflict in Columbus sources (not DB): SL DT current: C1919 0.75/0.45/0.75 vs FBS .8/.5/.8 vs MG kit 0.9/0.6/0.9; Life CS TL240C410S172 description "1/0,5" vs cells 0.7/0.5; XCr TT C1919 0.6/0.4/0.6 vs FBS .7/.5/.7; Spirit FL DT/TT MG kit 0.7/0.4/0.7 vs MG single + FBS 0.75/0.45/0.75
+
+=== Reynolds (from the Reynolds research agent; sources: Ebykr catalogue transcriptions E88 = ebykr.com/library/reynolds-1988-product-range-..., E87 = ebykr.com/library/reynolds-c-1987-tube-talk-...; reynoldstechnology.biz; firsthand.bike + Reynolds drawings) ===
+reynolds-531: tensile DB 700 -> 802 N/mm2 typical (E88; 650-850 in 2014 brochure); year_disc DB 2000 -> still stocked (firsthand BB112) + limited re-launch; seat tube DB 0.9/0.6/0.9 -> 28.6 0.8/0.5 single-butted (CB112); head DB 32.4/1.0 -> 31.75 x 0.9 (DB151); fork DB 22.2 1.2/0.8 -> 27.5x20 oval 1.0/0.5 (EB708)
+reynolds-531c: set weight DB 1600 -> 1800 (E87); DT DB 0.8/0.5/0.8 -> 0.91/0.61; TT DB 0.7/0.4/0.7 -> 0.81/0.55; ST -> single-butted 0.81/0.55; intro 1965 -> early 1980s (soft)
+reynolds-531st: set weight DB 2000 -> 1935 (E87); TT DB 0.9/0.6/0.9 -> 0.81/0.55 (E87) or 1.0/0.7 (1988 Super Tourist); ST -> 0.81/0.55 SB; head DB 32.4/1.2 -> 31.75 x 0.9; tensile 700 -> 802
+reynolds-531-professional: tensile 700 -> 802 typical (no tube data found)
+reynolds-753: tensile DB 1100 -> 1315 N/mm2 (E88/E90); set weight DB 1350 -> 1650 (753R, E87); DT DB 0.7/0.4/0.7 -> 0.8/0.5 DB (BA112); TT DB 0.6/0.35/0.6 -> 0.7/0.5 (AA101); ST -> 0.7/0.5 SB (CA102); head DB 32.4/0.8 -> 31.75 x 0.9 (DA151); disc 2000 -> "special order only" per Reynolds (soft)
+reynolds-501: tensile DB 620 -> 802; set weight DB 2300 -> 2025 (E87); DT/TT/ST DB plain 1.0/0.9/1.0 -> 0.9/0.6 butted (BC122/AC121/CC122) or 1.0/0.8 SB; head DB 32.4/1.2 -> 31.75 x 0.9
+reynolds-520: tensile DB 650 -> 700-900 MPa (reynoldstechnology.biz steel-520)
+reynolds-525: intro DB 1995 -> listed in 1988 range; TT DB 0.8/0.5/0.8 -> 0.9/0.6 (AC121); head 32.4/1.0 -> 31.75 x 0.9; ST -> 0.9/0.6 single-butted
+reynolds-631: intro DB 2008 -> 1996 (Reynolds blog; drawing BX5050 first issued 1997); head 33.0 -> 36 x 1.0 / 36.4 x 1.2 listed (soft)
+reynolds-725: tensile DB 900 -> 1080-1280 MPa; intro DB 2005 -> drawing AG206 first issued 1997; ST -> AG401 28.6 0.9/0.6 SB (soft); head 33.0 -> 31.8x0.9 / 36.4x1.2 (soft)
+reynolds-853: tensile DB 1100 -> 1250-1400 MPa (Reynolds 853 page); chainstay DB 0.8 -> 0.8/0.6 butted (FX3525L); head 33.0/0.9 -> 36.0x1.0 / 36.4x1.2 (soft)
+reynolds-953: intro DB 2007 -> 2005 (Wikipedia, independent); now "no longer offered for new orders" per Reynolds
+reynolds-921: tensile DB 900 -> 950-1080 MPa (2014 brochure) / "over 1000" (Reynolds 921 page)
+reynolds-ti-325: tensile DB 620 -> 810-960 MPa (2014 brochure); DT DB 35.0 0.9/0.5 -> 34.9 0.9/0.7/0.9 (BT123); TT DB 31.7 0.7/0.5 -> 31.75 0.9/0.7/0.9 (BT122)
+
+=== Dedacciai / Tange (from the Dedacciai-Kaisei-Tange research agent) ===
+Sources: DS = dedacciai.com/media/wysiwyg/download/steel.pdf (Zero/Zero Uno REV 03/2017); DTi = dedacciai.com/pub/media/wysiwyg/download/dedacciai_titanium_tubes_manual_2025-v1.pdf;
+         T97 = equusbicycle.com/bike/tange/tangecat97/pdf/14tangecat1997.pdf & 15tangecat1997.pdf; TR = equusbicycle.com/bike/tange/Tange-road-tubing-I.jpg / -II.jpg; TD = tange-design.com/tubing_detail.php?sn=NN
+dedacciai-zero-uno: alloy DB "CrMo microalloyed" -> 25CrMo4 (EN 10305-1), "acciaio microlegato BK+S"; tensile DB 800 -> 850-1100 N/mm2 (BKS); DT DB 0.9/0.6/0.9 -> 28.6 0.8/0.5/0.8 (MTQ286B301); TT DB 28.6 0.8/0.5/0.8 -> 28.6 0.75/0.45/0.75 (MTO286B301) or 25.4 0.8/0.6/0.8; ST DB 0.9/0.6/0.9 -> SB 0.8/0.6 (MTV286B301); HT DB 33.0 -> 31.7x1.0, 32.5x1.3, 36.5x1.3, 38x1.0, 46x1.0 (no 33)
+dedacciai-ti: tensile DB 620 -> Gr.9 butted UTS >850 (yield 790); 620 is plain-gauge YIELD; DT DB 35 0.9/0.6 -> 38.1/41.5/44.5/45/48/50.8 (no 35, no 0.6 centre); TT DB 31.7 0.7/0.5 -> 31.7 PG 0.9 or 34.9 0.9/0.7/0.9; ST DB 0.9/0.6 -> PG 0.9; HT DB 39x1.2 -> 45/56 tapered 1.25, 46x1.3, 56x1.25
+tange-prestige: tensile DB 1100 -> 123.5 kg/mm2 (~1211 MPa) (T97); set weight DB 1450 -> 1987 g (TR-I, with TBT seat tube + 23 mm blades); DT DB 0.8/0.5/0.7 -> 0.7/0.4/0.7 (1997 #3430) or 0.8/0.5/0.8 (current TPR286, TD sn=52); TT DB 0.7/0.4/0.6 -> 0.7/0.4/0.7 (1997) / 0.8/0.5/0.8 (current); ST DB 0.8/0.5/0.7 -> 0.7/0.4/0.7, 1.0/0.8/0.6 TBT, or 0.9/0.6 SBT
+tange-infinity: DT/TT/ST DB 0.8/0.5/0.8 -> 0.9/0.6/0.9 (8432/8412/8452; TR-II, T97); "air-hardening" not stated by source (only "Cr-Mo tapered butted")
+tange-champion-2: TT DB 0.8/0.5/0.8 -> No.2 TN2254 0.9/0.6/0.9 (0.8/0.5/0.8 is No.1) (TD sn=48); HT DB 31.8x1.0 -> 31.8x0.9 (TPG318-09-200, TD sn=50)
+tange-no2 (likely duplicate of champion-2): DT DB 0.9/0.7/0.9 -> 0.9/0.6/0.9; TT DB 0.8/0.6/0.8 -> 0.9/0.6/0.9 (TD sn=48)
+Not checkable (no source found): dedacciai-zero-tre, dedacciai-sat145, tange-crmo-special, tange-mangaloy, all kaisei-* leads (022, 019, 4130r, 8630, 8630r, ultima-019).
