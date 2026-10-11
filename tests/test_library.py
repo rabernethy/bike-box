@@ -58,6 +58,7 @@ CATEGORY_CHECKS = {
     "tandem": lambda d, g: (d["frame_type"] == "tandem" and 650 <= g.v["tandem_bb_distance"] <= 850
                             and {"st2", "tt2", "boom"} <= set(g.tubes) and g.v["stoker_knee_room"] > 0),
     "ebike": lambda d, g: d["bb_housing"] == "mid_motor" and d["battery"] != "none" and d["fenders"],
+    "tall": lambda d, g: d["frame_type"] == "tall" and g.v["rider_bb_height"] > 700 and "uht" in g.tubes,
 }
 
 

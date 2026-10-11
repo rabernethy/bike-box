@@ -225,3 +225,35 @@ def test_extra_tube_surface_attachment(design):
     assert close(abs(point_line_distance(top.a, tt.a, tt.b - tt.a)), tt.od_b / 2 + 12.7, 1e-6)
     assert close(abs(point_line_distance(top.b, tt.a, tt.b - tt.a)), tt.od_b / 2 + 12.7 + 5, 1e-6)
     assert lat.join_a == "ht" and top.join_a == "tt"
+
+
+def test_tall_bike(design):
+    single = solve(design)
+    design.set("frame_type", "tall")
+    g = solve(design)
+    R = g.p["crank_bb"]
+    assert close(R.dist(V(0, 0)), design.f("tall_offset"))
+    for t in ("uht", "utt", "udt", "ust", "strut_rear"):
+        assert t in g.tubes
+    # upper head tube coaxial with the lower one
+    from framewright.geometry.vec import point_line_distance
+    ht, uht = g.tubes["ht"], g.tubes["uht"]
+    assert abs(point_line_distance(uht.a, ht.a, ht.b - ht.a)) < 1e-6
+    # the rider moves up as a whole: fit numbers relative to the crank BB are unchanged
+    for k in ("saddle_height", "saddle_setback", "saddle_bar_drop", "nose_to_bar"):
+        assert close(g.v[k], single.v[k], 1e-6), k
+    assert close(g.p["saddle"].dist(R), single.p["saddle"].length(), 1e-6)
+    # frame geometry of the lower bike is unchanged
+    for k in ("stack", "reach", "wheelbase", "trail", "chainstay_length"):
+        assert close(g.v[k], single.v[k], 1e-6), k
+    assert g.v["standover"] > single.v["standover"] + 300
+    assert g.v["pedal_clearance"] > single.v["pedal_clearance"] + 300
+
+
+def test_tall_bike_rider_pedals_at_upper_bb(design):
+    from framewright.fit.rider import solve_pose
+    design.update({"frame_type": "tall", "show_rider": True})
+    g = solve(design)
+    pose = solve_pose(g)
+    assert pose.joints["pedal"].dist(g.p["pedal"]) < 1e-6
+    assert 130 < pose.angles["knee_extension_bdc"] < 160

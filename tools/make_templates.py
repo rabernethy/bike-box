@@ -603,6 +603,35 @@ template(
     ))
 
 
+template(
+    "tall_bike", "Tall bike (stacked frames)", "tall",
+    "Two steel frames stacked with coaxial head tubes: the rider sits about half a metre higher, a long steerer "
+    "passes through both head tubes, struts tie the upper BB to the rear dropouts, single speed with a long chain.",
+    merge(
+        wheels(622, 35, 33),
+        tubes("tt", 28.6, "0.9/0.6/0.9", 80), tubes("dt", 31.8, "0.9/0.6/0.9", 90),
+        tubes("st", 28.6, "0.9/0.6/0.9", 120),
+        FLAT_COCKPIT,
+        frame_type="tall", tall_offset=520, tall_struts="dropouts", tall_strut_od=19.0,
+        frame_size_label="56 over 56", frame_material="steel", joint_style="tig",
+        head_tube_angle=72.0, seat_tube_angle=73.5, stack=584, reach=385,
+        seat_tube_length=540, st_extension=25, tt_ht_offset=20, dt_ht_offset=30,
+        bb_drop=68, chainstay_length=430, rear_hub_spacing=130, front_hub_spacing=100,
+        bb_shell_od=40, bb_shell_width=68,
+        ht_od_top=36, ht_od_bottom=36, ht_wall=1.2, cs_od_bb=22.2, cs_od_drop=16, cs_wall=0.9,
+        ss_od_top=16, ss_od_drop=14, ss_wall=0.9,
+        fork_type="rigid", fork_length=395, fork_offset=45, fork_crown_height=25, fork_crown_width=110,
+        fork_blade_od=28, fork_blade_od_tip=16, fork_blade_shape="straight",
+        lower_stack=12, upper_stack=8, spacers=20, steerer_od=28.6,
+        stem_length=70, stem_angle=10, bar_type="riser", bar_rise=30, bar_backsweep=12, bar_width=640,
+        saddle_height=730,
+        drive_type="singlespeed", crank_length=170, chainrings="38", cogs="18", front_derailleur=False,
+        pedal_type="flat", brake_front="v", brake_rear="v",
+        bottle_dt=True, bottle_st=False, paint_frame="#2e8b57", paint_fork="#2e8b57",
+        paint_head_tube="#f2f2f2", decal_text="TALL",
+    ))
+
+
 # 3-D clearance fixes found with geometry.clearance.problems(): chainstay bends,
 # yokes and seat-stay spreads, as a builder would use for these tire sizes.
 CLEARANCE_TWEAKS = {

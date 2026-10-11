@@ -247,11 +247,15 @@ def _foot_angle(pos: _Position, crank: float, bdc: float) -> float:
     return pos.ankle - pos.ankling * (1.0 - math.cos(phi)) / 2.0
 
 
-def leg_pose(hip: V, crank: float, a: dict[str, float], pos: _Position) -> tuple[dict[str, V], float]:
-    """Joints of one leg with the pedal at ``crank`` degrees.  Returns
-    (joints {pedal, ball, ankle, heel, toe, knee}, reach error from :func:`two_link`)."""
-    pedal = V.polar(pos.crank_length, crank)
-    bdc = math.degrees(math.atan2(-hip.y, -hip.x))
+def leg_pose(hip: V, crank: float, a: dict[str, float], pos: _Position,
+             bb: V | None = None) -> tuple[dict[str, V], float]:
+    """Joints of one leg with the pedal at ``crank`` degrees about ``bb`` (the
+    crank centre; the origin unless the cranks sit elsewhere, e.g. a tall bike).
+    Returns (joints {pedal, ball, ankle, heel, toe, knee}, reach error from :func:`two_link`)."""
+    bb = bb or V(0.0, 0.0)
+    pedal = bb + V.polar(pos.crank_length, crank)
+    rel = hip - bb
+    bdc = math.degrees(math.atan2(-rel.y, -rel.x))
     fa = _foot_angle(pos, crank, bdc)
     s = V(cosd(fa), -sind(fa))          # along the sole, heel -> toe
     n = s.perp()                         # out of the sole, into the foot
@@ -268,7 +272,7 @@ def leg_pose(hip: V, crank: float, a: dict[str, float], pos: _Position) -> tuple
 
 
 def leg_sweep(hip: V, a: dict[str, float], pos: _Position, shoulder: V | None = None,
-              step: float = 5.0) -> dict[str, float]:
+              step: float = 5.0, bb: V | None = None) -> dict[str, float]:
     """Knee (and hip) angles over a full crank revolution.
 
     Returns ``knee_max`` (extension, ≈ BDC), ``knee_min`` (flexion, ≈ TDC),
@@ -280,14 +284,14 @@ def leg_sweep(hip: V, a: dict[str, float], pos: _Position, shoulder: V | None = 
     n = max(int(round(360.0 / step)), 8)
     for i in range(n):
         c = 360.0 * i / n
-        j, err = leg_pose(hip, c, a, pos)
+        j, err = leg_pose(hip, c, a, pos, bb)
         k = _interior(j["knee"], hip, j["ankle"])
         kmax, kmin = max(kmax, k), min(kmin, k)
         reach_err = max(reach_err, err)
         fold_err = min(fold_err, err)
         if shoulder is not None:
             hmin = min(hmin, _interior(hip, shoulder, j["knee"]))
-    j0, _ = leg_pose(hip, 0.0, a, pos)
+    j0, _ = leg_pose(hip, 0.0, a, pos, bb)
     out = {"knee_max": kmax, "knee_min": kmin, "reach_err": reach_err, "fold_err": fold_err,
            "kops": j0["knee"].x - j0["pedal"].x}
     if shoulder is not None:
@@ -361,11 +365,12 @@ def solve_pose(g: Geometry, crank_angle: float | None = None) -> Pose:
               "head_top": head + V.polar(a["head_ry"], head_up)})
 
     # -- legs
-    near, err_n = leg_pose(hip, crank, a, pos)
-    far, _ = leg_pose(hip, crank + 180.0, a, pos)
+    cbb = g.p.get("crank_bb", V(0.0, 0.0))
+    near, err_n = leg_pose(hip, crank, a, pos, cbb)
+    far, _ = leg_pose(hip, crank + 180.0, a, pos, cbb)
     J.update(near)
     J.update({k + "_far": v for k, v in far.items()})
-    sweep = leg_sweep(hip, a, pos, shoulder)
+    sweep = leg_sweep(hip, a, pos, shoulder, bb=cbb)
     if sweep["reach_err"] > 0.5:
         pose.warn(f"Leg cannot reach the pedal at the bottom of the stroke (short by {sweep['reach_err']:.0f} mm); "
                   "saddle too high for this rider")

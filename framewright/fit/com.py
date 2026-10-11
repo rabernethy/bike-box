@@ -125,7 +125,7 @@ def _bike_parts(g: Geometry) -> list[tuple[str, float, V]]:
         add("cassette", min(cogs) * 2.0 + 15.0, ax)
     add("chain", {"belt": 80.0, "derailleur": 250.0}.get(drive, 290.0), p["bb"].lerp(ax, 0.5) + V(0, -10))
     cl = d.f("crank_length")
-    add("crankset", 2 * (0.9 * cl + 45.0) + sum(rings) * 1.6 + 90.0, V(0, 0))
+    add("crankset", 2 * (0.9 * cl + 45.0) + sum(rings) * 1.6 + 90.0, p.get("chain_bb", V(0, 0)))
     if d["pedal_type"] != "none":
         add("pedal", 150.0, p["pedal"])
         add("pedal_far", 150.0, p["pedal_l"])

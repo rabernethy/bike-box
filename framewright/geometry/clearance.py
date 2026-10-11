@@ -437,8 +437,14 @@ def _line_dist(p: V3, a: V3, d: V3) -> float:
 
 
 def drive_bb(g: Geometry) -> V:
-    """Centre of the BB the chainstays and chainrings belong to (the stoker BB of a tandem)."""
+    """Centre of the BB the chainstays attach to (the stoker BB of a tandem)."""
     return g.p.get("stoker_bb", V(0.0, 0.0))
+
+
+def chain_bb(g: Geometry) -> V:
+    """Centre of the drive cranks and chainrings (the stoker BB of a tandem, the
+    upper BB of a tall bike)."""
+    return g.p.get("chain_bb", drive_bb(g))
 
 
 def receiver_axis(g: Geometry, join: str | None) -> tuple[V3, V3, float] | None:
@@ -658,7 +664,7 @@ def crank_contact(g: Geometry, cs: Path3) -> Contact:
     """Crank arm inner face (swept through a full turn) to the drive-side chainstay."""
     cl = g.design.f("crank_length")
     z0, z1 = crank_faces(g)
-    bb = drive_bb(g)
+    bb = chain_bb(g)
     best = Contact(INF)
     ez = V3(0, 0, 1)
     for t in cs.ts(120):
@@ -751,7 +757,7 @@ def heel_contact(g: Geometry, paths: list[Path3]) -> Contact:
     al = math.radians(d.f("heel_in_angle"))
     hdx = -back * math.cos(al)
     hz = shoe_z(g) - back * math.sin(al)
-    bb = drive_bb(g)
+    bb = chain_bb(g)
     samples = []
     for path in paths:
         for t in path.ts(36):
@@ -1119,7 +1125,7 @@ def clearance_details(g: Geometry, use_cache: bool = True) -> dict[str, Contact]
         out["cs_tire"] = tube_contact(cs, rear_sdf)
         rings = chainrings(g)
         best = Contact(INF)
-        bbc = drive_bb(g)
+        bbc = chain_bb(g)
         for ring in rings:
             c = tube_contact(cs, lambda p, r=ring: _disc_sdf(p, r.z, r.r_out, r.half_t, bbc))
             c.extra["teeth"] = ring.teeth
@@ -1200,7 +1206,7 @@ def rear_clearances(g: Geometry) -> dict[str, float]:
         return {"cs_tire": NAN, "cs_chainring": NAN, "cs_crank": NAN}
     rear = tire_model(g, "rear")
     best = INF
-    bbc = drive_bb(g)
+    bbc = chain_bb(g)
     for ring in chainrings(g):
         best = min(best, tube_contact(cs, lambda p, r=ring: _disc_sdf(p, r.z, r.r_out, r.half_t, bbc)).value)
     return {"cs_tire": tube_contact(cs, rear.sdf).value, "cs_chainring": best,

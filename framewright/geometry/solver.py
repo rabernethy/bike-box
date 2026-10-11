@@ -595,6 +595,8 @@ def solve(d: Design) -> Geometry:
 
     if tandem:
         _tandem_tubes(g, d, SB, s2, P2, stay_node, hub_r)
+    if d["frame_type"] == "tall":
+        _tall_frame(g, d, u, stay_node, hub_r)
 
     # fork blades (side view centre-line from crown to axle)
     crown_bottom = crown - u * d.f("fork_crown_height")
@@ -716,6 +718,11 @@ def solve(d: Design) -> Geometry:
     # -- warnings -----------------------------------------------------------------
     if v["st_extension"] < -1 and "st" in tubes and "tt" in tubes:
         g.warn("Top tube meets the seat tube above its top; lengthen the seat tube or lower the top tube")
+    if d["frame_type"] == "tall":
+        R = p["crank_bb"]
+        v["toe_clearance"] = toe_clear = front_axle.dist(R) - cl_toe - Rf - fender_extra
+        v["pedal_clearance"] = pedal_clear = (R.y - g.ground_y) - cl - d.f("pedal_thickness") / 2
+        v["lean_angle"] = math.degrees(math.atan2(max(pedal_clear, 0.0), d.f("q_factor") / 2 + d.f("pedal_width")))
     if insertion < d.f("seatpost_min_insertion"):
         g.warn(f"Seatpost insertion {insertion:.0f} mm is below the minimum {d.f('seatpost_min_insertion'):.0f} mm")
     if toe_clear < d.f("toe_clearance_min"):
@@ -773,6 +780,49 @@ def solve(d: Design) -> Geometry:
     if "ss" in tubes:
         v["angle_st_ss"] = _interior(s * -1, tubes["ss"].dir_b() * -1)
     return g
+
+
+RIDER_POINTS = ("saddle", "saddle_nose", "saddle_tail", "saddle_rails", "seatpost_top", "seatpost_bottom",
+                "stem_clamp", "bar", "steerer_top", "hand", "hoods", "drops", "tops", "lever", "pedal", "pedal_l",
+                "pedal_fwd", "headset_top")
+
+
+def _tall_frame(g: Geometry, d: Design, u: V, stay_node: V, hub_r: float) -> None:
+    """Tall bike: a copy of the main triangle stacked with its head tube coaxial
+    above the lower one.  The rider (cranks, saddle, cockpit) moves up with it;
+    struts tie the upper BB to the lower frame."""
+    p, tubes, v = g.p, g.tubes, g.v
+    lift = u * d.f("tall_offset")
+    R = lift                                   # upper (rider) BB
+    for name in RIDER_POINTS:
+        if name in p:
+            p[name] = p[name] + lift
+    g.bar_path = [q + lift for q in g.bar_path]
+    p["crank_bb"] = p["chain_bb"] = p["upper_bb"] = R
+    p["cockpit_ht_top"] = p["ht_top"] + lift
+    p["cockpit_ht_bottom"] = p["ht_bottom"] + lift
+    p["post_st_top"] = p["st_top"] + lift
+    for name in ("ht", "tt", "dt", "st"):
+        t = tubes.get(name)
+        if t is None:
+            continue
+        tubes["u" + name] = Tube("u" + name, "Upper " + t.label.lower(), t.a + lift, t.b + lift, t.od_a, t.od_b,
+                                 t.w_a, t.w_b, t.wall_end, t.wall_mid, t.butt_length, t.bend, t.profile, t.material,
+                                 kind="extra", join_a={"bb": "ubb", "st": "ust"}.get(t.join_a or "", t.join_a),
+                                 join_b={"ht": "uht", "st": "ust"}.get(t.join_b or "", t.join_b))
+    struts = d["tall_struts"]
+    od = d.f("tall_strut_od")
+    if struts in ("both", "seat_cluster") and R.dist(p["tt_st"]) > od:
+        tubes["strut_sc"] = Tube("strut_sc", "Strut (upper BB to seat cluster)", p["tt_st"], R, od, od,
+                                 wall_end=0.9, wall_mid=0.9, material=d["frame_material"], kind="extra",
+                                 join_a="st", join_b="ubb")
+    if struts in ("both", "dropouts"):
+        tubes["strut_rear"] = Tube("strut_rear", "Struts (upper BB to dropouts)", stay_node, R, od * 0.85, od,
+                                   wall_end=0.9, wall_mid=0.9, material=d["frame_material"], kind="extra",
+                                   za=hub_r, zb=d.f("bb_shell_width") / 2 - od / 2, mirrored=True,
+                                   join_a="dropout", join_b="ubb")
+    v["tall_offset"] = d.f("tall_offset")
+    v["rider_bb_height"] = R.y - g.ground_y
 
 
 def _tandem_tubes(g: Geometry, d: Design, SB: V, s2: V, P2: V, stay_node: V, hub_r: float) -> None:

@@ -581,7 +581,7 @@ def rear_view_scene(g: Geometry, theme: Theme | None = None) -> Scene:
     # far parts: BB shell, seat tube, chainrings
     fst = v.frame_st()
     W, R = d.f("bb_shell_width"), d.f("bb_shell_od") / 2
-    by = CL.drive_bb(g).y
+    by = CL.chain_bb(g).y
     v.poly(_rect(-W / 2, by - R, W / 2, by + R), fst, "frame", Z_BACK, True, "tube:bb")
     st = g.tubes.get("st2") or g.tubes.get("st")
     if st is not None:

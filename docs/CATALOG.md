@@ -6,6 +6,8 @@ alongside the generic libraries (same category names), so every item can be appl
 
 ## File format
 
+Illustrative example (not a real product):
+
 ```json
 {
   "format": "framewright-library",
@@ -16,22 +18,22 @@ alongside the generic libraries (same category names), so every item can be appl
   "compiled": "2026-10-10",
   "items": [
     {
-      "id": "rockshox-sid-sl-ultimate-29-100-44",
-      "name": "RockShox SID SL Ultimate 29\" 100 mm, 44 mm offset",
+      "id": "examplebrand-trail-29-100-44",
+      "name": "ExampleBrand Trail 29\" 100 mm, 44 mm offset",
       "category": "forks",
-      "values": {"fork_type": "suspension", "fork_length": 488, "fork_offset": 44, "fork_travel": 100,
+      "values": {"fork_type": "suspension", "fork_length": 506, "fork_offset": 44, "fork_travel": 100,
                  "front_hub_spacing": 110, "steerer_od": 28.6, "fork_stanchion_od": 32},
       "meta": {
-        "brand": "RockShox",
-        "model": "SID SL Ultimate",
+        "brand": "ExampleBrand",
+        "model": "Trail",
         "variant": "29 in, 100 mm travel, 44 mm offset",
         "years": "2021–",
         "status": "current",
-        "specs": {"axle_to_crown_mm": 488, "offset_mm": 44, "travel_mm": 100, "wheel": "29",
+        "specs": {"axle_to_crown_mm": 506, "offset_mm": 44, "travel_mm": 100, "wheel": "29",
                   "steerer": "1-1/8 to 1.5 tapered", "axle": "15x110 Boost", "max_rotor_mm": 180,
                   "weight_g": 1278},
         "derived": {"front_hub_spacing": "from the 15x110 Boost axle standard"},
-        "sources": [{"url": "https://www.sram.com/...", "publisher": "SRAM (manufacturer)",
+        "sources": [{"url": "https://example.com/...", "publisher": "ExampleBrand (manufacturer)",
                      "kind": "manufacturer", "accessed": "2026-10-10"}],
         "verified": "source"
       }

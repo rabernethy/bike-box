@@ -305,8 +305,8 @@ class BikeSceneBuilder:
             sc.circle(V(0, 0), d.f("bb_shell_od") / 2, Style(t.outline, 1.2, None), "frame", Z_FRAME, "tube:bb")
             return
         base = t.frame_fill
-        order = (["cs", "ss", "ss_mono", "lat"] + [n for n in tubes if n.startswith("x")]
-                 + ["boom", "mid", "tt2", "dt", "tt", "st2", "st"])
+        order = (["cs", "ss", "ss_mono", "lat", "strut_rear"] + [n for n in tubes if n.startswith("x")]
+                 + ["boom", "mid", "tt2", "dt", "tt", "st2", "st", "strut_sc", "udt", "utt", "ust"])
         for name in order:
             tb = tubes.get(name)
             if tb is None:
@@ -314,11 +314,14 @@ class BikeSceneBuilder:
             z = Z_STAY if tb.kind == "stay" else Z_FRAME
             sc.poly(tube_outline(tb), t.frame(self._paint(tb, base)), "frame", z, True, f"tube:{name}")
         self.dropout()
-        # head tube on top of TT/DT
-        ht = tubes["ht"]
-        sc.poly(tube_outline(ht), t.frame(self._paint(ht, t.ht_fill or base)), "frame", Z_FRAME + 2, True, "tube:ht")
+        # head tube(s) on top of TT/DT
+        for hname in ("ht", "uht"):
+            ht = tubes.get(hname)
+            if ht is not None:
+                sc.poly(tube_outline(ht), t.frame(self._paint(tubes["ht"], t.ht_fill or base)), "frame",
+                        Z_FRAME + 2, True, f"tube:{hname}")
         # BB shell(s)
-        shells = [V(0, 0)] + ([g.p["drive_bb"]] if g.p["drive_bb"].length() > 1e-6 else [])
+        shells = [V(0, 0)] + [g.p[k] for k in ("drive_bb", "upper_bb") if k in g.p and g.p[k].length() > 1e-6]
         for c in shells:
             sc.circle(c, d.f("bb_shell_od") / 2, t.frame(base), "frame", Z_FRAME + 2, "tube:bb")
             sc.circle(c, d.f("bb_shell_od") / 2 - 4, t.thin(t.outline, 0.5), "frame", Z_FRAME + 2, "tube:bb")
@@ -706,8 +709,8 @@ class BikeSceneBuilder:
     def cockpit(self):
         g, sc, t, d = self.g, self.sc, self.t, self.d
         u, n = g.u, g.n
-        T = g.p["ht_top"]
-        B = g.p["ht_bottom"]
+        T = g.p.get("cockpit_ht_top", g.p["ht_top"])
+        B = g.p.get("cockpit_ht_bottom", g.p["ht_bottom"])
         ht_top_r = d.f("ht_od_top") / 2
         hs = t.comp("#4d4d4d")
         # headset cups
@@ -785,7 +788,7 @@ class BikeSceneBuilder:
         post_top = g.p["seatpost_top"]
         post_bottom = g.p["seatpost_bottom"]
         r = d.f("seatpost_od") / 2
-        st_top = g.p["st_top"]
+        st_top = g.p.get("post_st_top", g.p["st_top"])
         # hidden part of the post (inside the seat tube) drawn dashed
         sc.poly(rect_along(post_bottom, st_top, r), Style(t.outline, t.width * 0.4, None, dash=(2, 1.5)),
                 "saddle", Z_FRAME + 1, True, "seatpost")
@@ -827,8 +830,8 @@ class BikeSceneBuilder:
         cogs = sorted(d.lst("cogs") or [16])
         drive = d["drive_type"]
         pitch = d.f("belt_pitch") if drive == "belt" else d.f("chain_pitch")
-        bb = g.p["drive_bb"]
-        if bb.length() > 1e-6:
+        bb = g.p.get("chain_bb", g.p["drive_bb"])
+        if "stoker_bb" in g.p:
             self._tandem_drive(pitch)
         ax = g.p["rear_axle"]
         R = pitch_radius(rings[0], pitch)
@@ -888,7 +891,8 @@ class BikeSceneBuilder:
             sc.poly(cage, t.comp("#5a5a5a"), "drivetrain", Z_COMPONENT + 3, True, "fd")
         # cranks
         cl = d.f("crank_length")
-        pedal = g.p["pedal"] + bb
+        # drive-side pedal about the chainring BB (the pedal point is stored about the rider's crank BB)
+        pedal = bb + (g.p["pedal"] - g.p.get("crank_bb", V(0.0, 0.0)))
         crank_fill = "#2b2b2b" if t.mode == "filled" else None
         lp = bb - (pedal - bb)
         sc.poly(stroke_polygon([bb + (pedal - bb) * 0.12, lp], [11, 8], caps=True), Style(t.outline, t.width * 0.5, "#777777" if crank_fill else None),

@@ -284,7 +284,16 @@ _frame = [
 ]
 
 _frame += [
-    _choice("frame_type", "Frame type", G, "Tandem", "single", (("single", "Single"), ("tandem", "Tandem"))),
+    _choice("frame_type", "Frame type", G, "Tandem", "single",
+            (("single", "Single"), ("tandem", "Tandem"), ("tall", "Tall bike (stacked frames)"))),
+    _mm("tall_offset", "Upper frame offset along steering axis", G, "Tall bike", 520, 100, 2000,
+        vis=("frame_type", ("tall",)),
+        help="The upper main triangle is stacked with its head tube coaxial above the lower one; this is the "
+             "distance between the two head tubes along the steering axis"),
+    _choice("tall_struts", "Upper frame struts", G, "Tall bike", "both",
+            (("both", "To seat cluster and rear dropouts"), ("seat_cluster", "To the seat cluster"),
+             ("dropouts", "To the rear dropouts"), ("none", "None")), vis=("frame_type", ("tall",))),
+    _mm("tall_strut_od", "Strut OD", G, "Tall bike", 19.0, 6, 60, 0.1, vis=("frame_type", ("tall",))),
     _mm("tandem_bb_distance", "Captain BB to stoker BB", G, "Tandem", 740, 400, 1400, vis=("frame_type", ("tandem",)),
         help="Horizontal distance from the captain (front) BB back to the stoker (rear) BB"),
     _mm("tandem_bb_dy", "Stoker BB height offset", G, "Tandem", 0, -100, 100, vis=("frame_type", ("tandem",)),
