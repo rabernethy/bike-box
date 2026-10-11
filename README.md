@@ -6,6 +6,8 @@ analysis and 3-D export, built to cover the feature set of commercial frame-desi
 
 ![screenshot](docs/screenshot.png)
 
+See the [user guide](docs/USER_GUIDE.md) and the [feature parity table](docs/FEATURE_PARITY.md).
+
 ## Run
 
 Requirements: Python ≥ 3.10, PyQt6 (or PySide6), numpy. Pillow is optional (GIF export).
