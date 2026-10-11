@@ -48,6 +48,7 @@ class BikeCanvas(QtWidgets.QWidget):
         self.ui_scale = 1.0
         self.show_handles = True
         self.reverse_wheel = False
+        self.zoom_locked = False
         self.tool = "select"
         self._scene: Scene | None = None
         self._geom: Geometry | None = None
@@ -94,6 +95,8 @@ class BikeCanvas(QtWidgets.QWidget):
         return self._scene
 
     def fit(self) -> None:
+        if self.zoom_locked:
+            return
         sc = self.scene()
         x0, y0, x1, y1 = sc.bounds()
         if x1 - x0 < 1:
@@ -246,6 +249,8 @@ class BikeCanvas(QtWidgets.QWidget):
 
     # -- mouse ---------------------------------------------------------------------
     def wheelEvent(self, e) -> None:
+        if self.zoom_locked:
+            return
         dy = e.angleDelta().y()
         if self.reverse_wheel:
             dy = -dy

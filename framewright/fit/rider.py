@@ -72,7 +72,7 @@ P.register([
     _mm("head_neck_length", "Head & neck (shoulder to head centre)", _SEG, 0, 0, 400,
         help="0 = estimate (0.115 × height)"),
     _mm("hip_above_saddle", "Hip joint above saddle top", _POS, 0, 0, 250,
-        help="Height of the hip joint centre above the saddle reference point. 0 = estimate (0.075 × inseam)"),
+        help="Height of the hip joint centre above the saddle reference point. 0 = estimate (0.09 × inseam)"),
     _mm("hip_forward", "Hip joint forward of saddle reference", _POS, 0, -150, 150,
         help="Along the saddle; negative = hip behind the saddle reference point"),
     _mm("cleat_offset", "Ball of foot ahead of pedal spindle", _POS, 0, -60, 80,
@@ -110,7 +110,7 @@ R_HEAD_NECK = 0.115       # shoulder joint to head centre (ear canal)
 R_HEAD_RX = 0.055         # half head length (front-back)
 R_HEAD_RY = 0.065         # half head height
 BMI_DEFAULT = 22.5
-HIP_ABOVE_SADDLE_K = 0.075   # × inseam; calibrated so LeMond height gives ~145° knee extension
+HIP_ABOVE_SADDLE_K = 0.090   # × inseam; calibrated so LeMond height gives ~147° knee extension
 FOOT_HEEL_TO_BALL = 0.73     # × foot length, heel to 1st metatarsal head
 FOOT_ANKLE_TO_BALL = 0.53    # × foot length, ankle joint to 1st metatarsal head (along the sole)
 SHOE_SOLE = 8.0              # outer sole to the plantar skin (mm)
@@ -191,7 +191,6 @@ class Pose:
 
 @dataclass
 class _Position:
-    hip_up: float
     hip_fwd: float
     cleat: float
     ankle: float
@@ -203,7 +202,7 @@ class _Position:
 
 
 def _position(d: Design) -> _Position:
-    return _Position(0.0, d.f("hip_forward"), d.f("cleat_offset"), d.f("ankle_angle"), d.f("ankling"),
+    return _Position(d.f("hip_forward"), d.f("cleat_offset"), d.f("ankle_angle"), d.f("ankling"),
                      d.f("pedal_stack") if d.get("pedal_type", "clipless") != "none" else 0.0,
                      d.f("elbow_bend"), d.f("head_tilt"), d.f("crank_length"))
 
@@ -587,8 +586,10 @@ def draw_rider(scene: Scene, g: Geometry, theme: Theme) -> None:
 
 def _register() -> None:
     from ..render import bike_scene
-    if draw_rider not in bike_scene.EXTRA_BUILDERS:
-        bike_scene.EXTRA_BUILDERS.append(draw_rider)
+    hooks = bike_scene.EXTRA_BUILDERS
+    hooks[:] = [f for f in hooks if (getattr(f, "__module__", None), getattr(f, "__name__", None))
+                != (__name__, "draw_rider")]           # idempotent across reloads
+    hooks.append(draw_rider)
 
 
 _register()

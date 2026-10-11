@@ -1,0 +1,2939 @@
+{
+ "format": "framewright-library",
+ "version": 1,
+ "label": "Standard components",
+ "items": [
+  {
+   "id": "forks-rigid-road-rim-brake-368-45",
+   "name": "Rigid road, rim brake 368/45",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 368,
+    "fork_offset": 45,
+    "fork_crown_height": 22,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "road, 23-28 mm tires"
+   }
+  },
+  {
+   "id": "forks-rigid-road-disc-370-45",
+   "name": "Rigid road, disc 370/45",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 370,
+    "fork_offset": 45,
+    "fork_crown_height": 22,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "road disc, up to 32 mm tires",
+    "axle": "12x100"
+   }
+  },
+  {
+   "id": "forks-rigid-endurance-disc-375-50",
+   "name": "Rigid endurance, disc 375/50",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 375,
+    "fork_offset": 50,
+    "fork_crown_height": 24,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "endurance, up to 35 mm tires"
+   }
+  },
+  {
+   "id": "forks-rigid-cyclocross-395-47",
+   "name": "Rigid cyclocross 395/47",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 395,
+    "fork_offset": 47,
+    "fork_crown_height": 28,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "cyclocross, 33 mm tires + mud"
+   }
+  },
+  {
+   "id": "forks-rigid-gravel-395-50",
+   "name": "Rigid gravel 395/50",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 395,
+    "fork_offset": 50,
+    "fork_crown_height": 28,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "gravel, up to 45 mm tires"
+   }
+  },
+  {
+   "id": "forks-rigid-gravel-adventure-405-55",
+   "name": "Rigid gravel/adventure 405/55",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 405,
+    "fork_offset": 55,
+    "fork_crown_height": 30,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "700x50 / 650bx2.1"
+   }
+  },
+  {
+   "id": "forks-rigid-touring-375-50",
+   "name": "Rigid touring 375/50",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 375,
+    "fork_offset": 50,
+    "fork_crown_height": 22,
+    "fork_blade_shape": "curved",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "touring, 32-35 mm without fenders"
+   }
+  },
+  {
+   "id": "forks-rigid-touring-fender-clearance-400-55",
+   "name": "Rigid touring, fender clearance 400/55",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 400,
+    "fork_offset": 55,
+    "fork_crown_height": 30,
+    "fork_blade_shape": "curved",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "touring, 37-42 mm with fenders"
+   }
+  },
+  {
+   "id": "forks-rigid-650b-randonneur-low-trail-385-60",
+   "name": "Rigid 650b randonneur, low trail 385/60",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 385,
+    "fork_offset": 60,
+    "fork_crown_height": 30,
+    "fork_blade_shape": "curved",
+    "front_hub_spacing": 100,
+    "steerer_od": 25.4
+   },
+   "meta": {
+    "use": "650bx42 with fenders, threaded 1in"
+   }
+  },
+  {
+   "id": "forks-rigid-track-365-40",
+   "name": "Rigid track 365/40",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 365,
+    "fork_offset": 40,
+    "fork_crown_height": 22,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "track, 23 mm tires"
+   }
+  },
+  {
+   "id": "forks-rigid-26in-mtb-413-40",
+   "name": "Rigid 26in MTB 413/40",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 413,
+    "fork_offset": 40,
+    "fork_crown_height": 35,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "classic 26in rigid MTB"
+   }
+  },
+  {
+   "id": "forks-rigid-29er-100-mm-corrected-483-44",
+   "name": "Rigid 29er, 100 mm corrected 483/44",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 483,
+    "fork_offset": 44,
+    "fork_crown_height": 35,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "29er, suspension corrected"
+   }
+  },
+  {
+   "id": "forks-rigid-fat-bike-468-51",
+   "name": "Rigid fat bike 468/51",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 468,
+    "fork_offset": 51,
+    "fork_crown_height": 30,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 150,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "26x4-4.8 fat, suspension corrected"
+   }
+  },
+  {
+   "id": "forks-rigid-kids-24in-360-38",
+   "name": "Rigid kids 24in 360/38",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 360,
+    "fork_offset": 38,
+    "fork_crown_height": 30,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "24in kids"
+   }
+  },
+  {
+   "id": "forks-rigid-kids-20in-320-32",
+   "name": "Rigid kids 20in 320/32",
+   "category": "forks",
+   "values": {
+    "fork_type": "rigid",
+    "fork_length": 320,
+    "fork_offset": 32,
+    "fork_crown_height": 28,
+    "fork_blade_shape": "straight",
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "use": "20in kids"
+   }
+  },
+  {
+   "id": "forks-29er-suspension-100-mm-44-offset-a-c-501",
+   "name": "29er suspension 100 mm, 44 offset (A-C 501)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 501,
+    "fork_offset": 44,
+    "fork_travel": 100,
+    "fork_stanchion_od": 32,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "29er"
+   }
+  },
+  {
+   "id": "forks-29er-suspension-100-mm-51-offset-a-c-501",
+   "name": "29er suspension 100 mm, 51 offset (A-C 501)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 501,
+    "fork_offset": 51,
+    "fork_travel": 100,
+    "fork_stanchion_od": 32,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "29er"
+   }
+  },
+  {
+   "id": "forks-29er-suspension-110-mm-44-offset-a-c-511",
+   "name": "29er suspension 110 mm, 44 offset (A-C 511)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 511,
+    "fork_offset": 44,
+    "fork_travel": 110,
+    "fork_stanchion_od": 34,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "29er"
+   }
+  },
+  {
+   "id": "forks-29er-suspension-110-mm-51-offset-a-c-511",
+   "name": "29er suspension 110 mm, 51 offset (A-C 511)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 511,
+    "fork_offset": 51,
+    "fork_travel": 110,
+    "fork_stanchion_od": 34,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "29er"
+   }
+  },
+  {
+   "id": "forks-29er-suspension-120-mm-44-offset-a-c-521",
+   "name": "29er suspension 120 mm, 44 offset (A-C 521)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 521,
+    "fork_offset": 44,
+    "fork_travel": 120,
+    "fork_stanchion_od": 34,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "29er"
+   }
+  },
+  {
+   "id": "forks-29er-suspension-120-mm-51-offset-a-c-521",
+   "name": "29er suspension 120 mm, 51 offset (A-C 521)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 521,
+    "fork_offset": 51,
+    "fork_travel": 120,
+    "fork_stanchion_od": 34,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "29er"
+   }
+  },
+  {
+   "id": "forks-29er-suspension-140-mm-44-offset-a-c-561",
+   "name": "29er suspension 140 mm, 44 offset (A-C 561)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 561,
+    "fork_offset": 44,
+    "fork_travel": 140,
+    "fork_stanchion_od": 35,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "29er"
+   }
+  },
+  {
+   "id": "forks-29er-suspension-160-mm-44-offset-a-c-581",
+   "name": "29er suspension 160 mm, 44 offset (A-C 581)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 581,
+    "fork_offset": 44,
+    "fork_travel": 160,
+    "fork_stanchion_od": 36,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "29er"
+   }
+  },
+  {
+   "id": "forks-27-5-suspension-120-mm-42-offset-a-c-517",
+   "name": "27.5 suspension 120 mm, 42 offset (A-C 517)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 517,
+    "fork_offset": 42,
+    "fork_travel": 120,
+    "fork_stanchion_od": 34,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "27.5"
+   }
+  },
+  {
+   "id": "forks-27-5-suspension-140-mm-42-offset-a-c-537",
+   "name": "27.5 suspension 140 mm, 42 offset (A-C 537)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 537,
+    "fork_offset": 42,
+    "fork_travel": 140,
+    "fork_stanchion_od": 35,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "27.5"
+   }
+  },
+  {
+   "id": "forks-27-5-suspension-160-mm-44-offset-a-c-557",
+   "name": "27.5 suspension 160 mm, 44 offset (A-C 557)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 557,
+    "fork_offset": 44,
+    "fork_travel": 160,
+    "fork_stanchion_od": 36,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 110,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "27.5"
+   }
+  },
+  {
+   "id": "forks-26in-suspension-100-mm-40-offset-a-c-465",
+   "name": "26in suspension 100 mm, 40 offset (A-C 465)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 465,
+    "fork_offset": 40,
+    "fork_travel": 100,
+    "fork_stanchion_od": 32,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 100,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "26"
+   }
+  },
+  {
+   "id": "forks-fat-bike-suspension-100-mm-51-offset-a-c-502",
+   "name": "Fat bike suspension 100 mm, 51 offset (A-C 502)",
+   "category": "forks",
+   "values": {
+    "fork_type": "suspension",
+    "fork_length": 502,
+    "fork_offset": 51,
+    "fork_travel": 100,
+    "fork_stanchion_od": 34,
+    "fork_crown_height": 35,
+    "front_hub_spacing": 150,
+    "steerer_od": 28.6
+   },
+   "meta": {
+    "wheel": "26 fat"
+   }
+  },
+  {
+   "id": "headsets-threaded-1in-iso-jis",
+   "name": "Threaded 1in (ISO/JIS)",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 13.5,
+    "upper_stack": 25,
+    "steerer_od": 25.4,
+    "stem_type": "quill"
+   },
+   "meta": {
+    "standard": "threaded",
+    "note": "upper stack includes locknut"
+   }
+  },
+  {
+   "id": "headsets-threaded-1-1-8in",
+   "name": "Threaded 1-1/8in",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 14,
+    "upper_stack": 28,
+    "steerer_od": 28.6,
+    "stem_type": "quill"
+   },
+   "meta": {
+    "standard": "threaded",
+    "note": "upper stack includes locknut"
+   }
+  },
+  {
+   "id": "headsets-ec34-external-1-1-8in",
+   "name": "EC34 external 1-1/8in",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12.5,
+    "upper_stack": 14,
+    "steerer_od": 28.6,
+    "stem_type": "threadless"
+   },
+   "meta": {
+    "standard": "EC34/28.6 | EC34/30"
+   }
+  },
+  {
+   "id": "headsets-zs44-zero-stack-1-1-8in",
+   "name": "ZS44 zero-stack 1-1/8in",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 3,
+    "upper_stack": 8,
+    "steerer_od": 28.6,
+    "stem_type": "threadless"
+   },
+   "meta": {
+    "standard": "ZS44/28.6 | ZS44/30"
+   }
+  },
+  {
+   "id": "headsets-is42-integrated-1-1-8in",
+   "name": "IS42 integrated 1-1/8in",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 2,
+    "upper_stack": 8,
+    "steerer_od": 28.6,
+    "stem_type": "threadless"
+   },
+   "meta": {
+    "standard": "IS42/28.6 | IS42/30"
+   }
+  },
+  {
+   "id": "headsets-is42-is52-integrated-tapered",
+   "name": "IS42/IS52 integrated tapered",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 2,
+    "upper_stack": 8,
+    "steerer_od": 28.6,
+    "stem_type": "threadless"
+   },
+   "meta": {
+    "standard": "IS42/28.6 | IS52/40"
+   }
+  },
+  {
+   "id": "headsets-zs44-ec44-tapered",
+   "name": "ZS44/EC44 tapered",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 11.5,
+    "upper_stack": 8,
+    "steerer_od": 28.6,
+    "stem_type": "threadless"
+   },
+   "meta": {
+    "standard": "ZS44/28.6 | EC44/40"
+   }
+  },
+  {
+   "id": "headsets-zs44-zs56-tapered",
+   "name": "ZS44/ZS56 tapered",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 3,
+    "upper_stack": 8,
+    "steerer_od": 28.6,
+    "stem_type": "threadless"
+   },
+   "meta": {
+    "standard": "ZS44/28.6 | ZS56/40"
+   }
+  },
+  {
+   "id": "headsets-ec44-ec56-external-tapered",
+   "name": "EC44/EC56 external tapered",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 13,
+    "upper_stack": 15,
+    "steerer_od": 28.6,
+    "stem_type": "threadless"
+   },
+   "meta": {
+    "standard": "EC44/28.6 | EC56/40"
+   }
+  },
+  {
+   "id": "headsets-zs49-ec49-1-5in-straight",
+   "name": "ZS49/EC49 1.5in straight",
+   "category": "headsets",
+   "values": {
+    "lower_stack": 12,
+    "upper_stack": 10,
+    "steerer_od": 38.1,
+    "stem_type": "threadless"
+   },
+   "meta": {
+    "standard": "EC49/38.1 (1.5in)"
+   }
+  },
+  {
+   "id": "stems-road-80-mm-6",
+   "name": "Road 80 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 80,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-90-mm-6",
+   "name": "Road 90 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 90,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-100-mm-6",
+   "name": "Road 100 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 100,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-110-mm-6",
+   "name": "Road 110 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 110,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-120-mm-6",
+   "name": "Road 120 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 120,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-130-mm-6",
+   "name": "Road 130 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 130,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-100-mm-17",
+   "name": "Road 100 mm, -17°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 100,
+    "stem_angle": -17,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-110-mm-17",
+   "name": "Road 110 mm, -17°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 110,
+    "stem_angle": -17,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-120-mm-17",
+   "name": "Road 120 mm, -17°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 120,
+    "stem_angle": -17,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-road-130-mm-17",
+   "name": "Road 130 mm, -17°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 130,
+    "stem_angle": -17,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-mtb-35-mm-0",
+   "name": "MTB 35 mm, 0°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 35,
+    "stem_angle": 0,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-mtb-40-mm-0",
+   "name": "MTB 40 mm, 0°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 40,
+    "stem_angle": 0,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-mtb-45-mm-0",
+   "name": "MTB 45 mm, 0°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 45,
+    "stem_angle": 0,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-mtb-50-mm-0",
+   "name": "MTB 50 mm, 0°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 50,
+    "stem_angle": 0,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-mtb-60-mm-6",
+   "name": "MTB 60 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 60,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-mtb-70-mm-6",
+   "name": "MTB 70 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 70,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-mtb-80-mm-6",
+   "name": "MTB 80 mm, -6°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 80,
+    "stem_angle": -6,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-mtb-90-mm-8",
+   "name": "MTB 90 mm, -8°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 90,
+    "stem_angle": -8,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-high-rise-90-mm-17",
+   "name": "High-rise 90 mm, +17°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 90,
+    "stem_angle": 17,
+    "stem_clamp_height": 40
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-adjustable-city-100-mm-30",
+   "name": "Adjustable city 100 mm, +30°",
+   "category": "stems",
+   "values": {
+    "stem_type": "threadless",
+    "stem_length": 100,
+    "stem_angle": 30,
+    "stem_clamp_height": 42
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-quill-60-mm-17-60-mm-extension",
+   "name": "Quill 60 mm, -17° (60 mm extension)",
+   "category": "stems",
+   "values": {
+    "stem_type": "quill",
+    "stem_length": 60,
+    "stem_angle": -17,
+    "quill_height": 60
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-quill-80-mm-17-60-mm-extension",
+   "name": "Quill 80 mm, -17° (60 mm extension)",
+   "category": "stems",
+   "values": {
+    "stem_type": "quill",
+    "stem_length": 80,
+    "stem_angle": -17,
+    "quill_height": 60
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-quill-100-mm-17-60-mm-extension",
+   "name": "Quill 100 mm, -17° (60 mm extension)",
+   "category": "stems",
+   "values": {
+    "stem_type": "quill",
+    "stem_length": 100,
+    "stem_angle": -17,
+    "quill_height": 60
+   },
+   "meta": {}
+  },
+  {
+   "id": "stems-quill-120-mm-17-60-mm-extension",
+   "name": "Quill 120 mm, -17° (60 mm extension)",
+   "category": "stems",
+   "values": {
+    "stem_type": "quill",
+    "stem_length": 120,
+    "stem_angle": -17,
+    "quill_height": 60
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-compact-road-drop-400-70-120",
+   "name": "Compact road drop 400 (70/120)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "drop",
+    "bar_width": 400,
+    "bar_reach": 70,
+    "bar_drop": 120,
+    "bar_od": 31.8,
+    "lever_type": "road_sti",
+    "hand_position": "hoods"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-compact-road-drop-420-75-125",
+   "name": "Compact road drop 420 (75/125)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "drop",
+    "bar_width": 420,
+    "bar_reach": 75,
+    "bar_drop": 125,
+    "bar_od": 31.8,
+    "lever_type": "road_sti",
+    "hand_position": "hoods"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-compact-road-drop-440-80-128",
+   "name": "Compact road drop 440 (80/128)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "drop",
+    "bar_width": 440,
+    "bar_reach": 80,
+    "bar_drop": 128,
+    "bar_od": 31.8,
+    "lever_type": "road_sti",
+    "hand_position": "hoods"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-classic-round-drop-420-90-140",
+   "name": "Classic round drop 420 (90/140)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "drop",
+    "bar_width": 420,
+    "bar_reach": 90,
+    "bar_drop": 140,
+    "bar_od": 26.0,
+    "lever_type": "road_sti",
+    "hand_position": "hoods"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-gravel-flared-drop-440-70-115",
+   "name": "Gravel flared drop 440 (70/115)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "drop",
+    "bar_width": 440,
+    "bar_reach": 70,
+    "bar_drop": 115,
+    "bar_od": 31.8,
+    "lever_type": "road_sti",
+    "hand_position": "hoods"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-gravel-flared-drop-480-75-115",
+   "name": "Gravel flared drop 480 (75/115)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "drop",
+    "bar_width": 480,
+    "bar_reach": 75,
+    "bar_drop": 115,
+    "bar_od": 31.8,
+    "lever_type": "road_sti",
+    "hand_position": "hoods"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-track-drop-400-95-150",
+   "name": "Track drop 400 (95/150)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "drop",
+    "bar_width": 400,
+    "bar_reach": 95,
+    "bar_drop": 150,
+    "bar_od": 31.8,
+    "lever_type": "none",
+    "hand_position": "drops"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-aero-base-bar-bullhorn-420",
+   "name": "Aero base bar / bullhorn 420",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "bullhorn",
+    "bar_width": 420,
+    "bar_reach": 80,
+    "bar_rise": 0,
+    "bar_od": 31.8,
+    "lever_type": "none",
+    "hand_position": "hoods"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-pursuit-bullhorn-400-30-rise",
+   "name": "Pursuit bullhorn 400 (30 rise)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "bullhorn",
+    "bar_width": 400,
+    "bar_reach": 90,
+    "bar_rise": 30,
+    "bar_od": 31.8,
+    "lever_type": "none",
+    "hand_position": "hoods"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-xc-flat-740-0-rise-9",
+   "name": "XC flat 740 (0 rise, 9°)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "flat",
+    "bar_width": 740,
+    "bar_rise": 0,
+    "bar_backsweep": 9,
+    "bar_od": 31.8,
+    "lever_type": "flat",
+    "hand_position": "grips"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-xc-flat-760-0-rise-9",
+   "name": "XC flat 760 (0 rise, 9°)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "flat",
+    "bar_width": 760,
+    "bar_rise": 0,
+    "bar_backsweep": 9,
+    "bar_od": 31.8,
+    "lever_type": "flat",
+    "hand_position": "grips"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-trail-riser-780-20-rise-9",
+   "name": "Trail riser 780 (20 rise, 9°)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "riser",
+    "bar_width": 780,
+    "bar_rise": 20,
+    "bar_backsweep": 9,
+    "bar_od": 35.0,
+    "lever_type": "flat",
+    "hand_position": "grips"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-enduro-riser-800-35-rise-8",
+   "name": "Enduro riser 800 (35 rise, 8°)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "riser",
+    "bar_width": 800,
+    "bar_rise": 35,
+    "bar_backsweep": 8,
+    "bar_od": 35.0,
+    "lever_type": "flat",
+    "hand_position": "grips"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-kids-riser-560-25-rise-9",
+   "name": "Kids riser 560 (25 rise, 9°)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "riser",
+    "bar_width": 560,
+    "bar_rise": 25,
+    "bar_backsweep": 9,
+    "bar_od": 31.8,
+    "lever_type": "flat",
+    "hand_position": "grips"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-trekking-riser-640-40-rise-20",
+   "name": "Trekking riser 640 (40 rise, 20°)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "riser",
+    "bar_width": 640,
+    "bar_rise": 40,
+    "bar_backsweep": 20,
+    "bar_od": 31.8,
+    "lever_type": "flat",
+    "hand_position": "grips"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-city-swept-600-40-rise-45",
+   "name": "City swept 600 (40 rise, 45°)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "swept",
+    "bar_width": 600,
+    "bar_rise": 40,
+    "bar_backsweep": 45,
+    "bar_od": 25.4,
+    "lever_type": "flat",
+    "hand_position": "grips"
+   },
+   "meta": {}
+  },
+  {
+   "id": "handlebars-north-road-swept-580-50-rise-50",
+   "name": "North-road swept 580 (50 rise, 50°)",
+   "category": "handlebars",
+   "values": {
+    "bar_type": "swept",
+    "bar_width": 580,
+    "bar_rise": 50,
+    "bar_backsweep": 50,
+    "bar_od": 25.4,
+    "lever_type": "flat",
+    "hand_position": "grips"
+   },
+   "meta": {}
+  },
+  {
+   "id": "saddles-road-race-saddle-270",
+   "name": "Road race saddle 270",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 270,
+    "saddle_ref_to_nose": 140,
+    "saddle_stack": 45
+   },
+   "meta": {}
+  },
+  {
+   "id": "saddles-short-nose-saddle-245",
+   "name": "Short-nose saddle 245",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 245,
+    "saddle_ref_to_nose": 115,
+    "saddle_stack": 50
+   },
+   "meta": {}
+  },
+  {
+   "id": "saddles-mtb-saddle-275",
+   "name": "MTB saddle 275",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275,
+    "saddle_ref_to_nose": 140,
+    "saddle_stack": 50
+   },
+   "meta": {}
+  },
+  {
+   "id": "saddles-leather-touring-saddle-275",
+   "name": "Leather touring saddle 275",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 275,
+    "saddle_ref_to_nose": 135,
+    "saddle_stack": 60
+   },
+   "meta": {}
+  },
+  {
+   "id": "saddles-comfort-city-saddle-260",
+   "name": "Comfort / city saddle 260",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 260,
+    "saddle_ref_to_nose": 125,
+    "saddle_stack": 70
+   },
+   "meta": {}
+  },
+  {
+   "id": "saddles-time-trial-noseless-saddle-230",
+   "name": "Time-trial noseless saddle 230",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 230,
+    "saddle_ref_to_nose": 100,
+    "saddle_stack": 50
+   },
+   "meta": {}
+  },
+  {
+   "id": "saddles-kids-saddle-230",
+   "name": "Kids saddle 230",
+   "category": "saddles",
+   "values": {
+    "saddle_length": 230,
+    "saddle_ref_to_nose": 115,
+    "saddle_stack": 45
+   },
+   "meta": {}
+  },
+  {
+   "id": "seatposts-25-4-x-300-inline",
+   "name": "25.4 x 300, inline",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 25.4,
+    "seatpost_length": 300,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "seatposts-26-8-x-300-20-mm-setback",
+   "name": "26.8 x 300, 20 mm setback",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 26.8,
+    "seatpost_length": 300,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 20
+   }
+  },
+  {
+   "id": "seatposts-27-2-x-350-inline",
+   "name": "27.2 x 350, inline",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 27.2,
+    "seatpost_length": 350,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "seatposts-27-2-x-350-15-mm-setback",
+   "name": "27.2 x 350, 15 mm setback",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 27.2,
+    "seatpost_length": 350,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 15
+   }
+  },
+  {
+   "id": "seatposts-27-2-x-350-25-mm-setback",
+   "name": "27.2 x 350, 25 mm setback",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 27.2,
+    "seatpost_length": 350,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 25
+   }
+  },
+  {
+   "id": "seatposts-30-9-x-400-inline",
+   "name": "30.9 x 400, inline",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 400,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "seatposts-31-6-x-400-inline",
+   "name": "31.6 x 400, inline",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 400,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "seatposts-31-6-x-400-20-mm-setback",
+   "name": "31.6 x 400, 20 mm setback",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 400,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 20
+   }
+  },
+  {
+   "id": "seatposts-34-9-x-400-inline",
+   "name": "34.9 x 400, inline",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 400,
+    "seatpost_type": "standard",
+    "seatpost_min_insertion": 80
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "seatposts-dropper-30-9-125-mm-travel",
+   "name": "Dropper 30.9, 125 mm travel",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 30.9,
+    "seatpost_length": 400,
+    "seatpost_type": "dropper",
+    "seatpost_min_insertion": 100,
+    "dropper_travel": 125,
+    "dropper_drop": 0
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "seatposts-dropper-31-6-150-mm-travel",
+   "name": "Dropper 31.6, 150 mm travel",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 440,
+    "seatpost_type": "dropper",
+    "seatpost_min_insertion": 100,
+    "dropper_travel": 150,
+    "dropper_drop": 0
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "seatposts-dropper-31-6-170-mm-travel",
+   "name": "Dropper 31.6, 170 mm travel",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 31.6,
+    "seatpost_length": 480,
+    "seatpost_type": "dropper",
+    "seatpost_min_insertion": 100,
+    "dropper_travel": 170,
+    "dropper_drop": 0
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "seatposts-dropper-34-9-200-mm-travel",
+   "name": "Dropper 34.9, 200 mm travel",
+   "category": "seatposts",
+   "values": {
+    "seatpost_od": 34.9,
+    "seatpost_length": 540,
+    "seatpost_type": "dropper",
+    "seatpost_min_insertion": 110,
+    "dropper_travel": 200,
+    "dropper_drop": 0
+   },
+   "meta": {
+    "setback_mm": 0
+   }
+  },
+  {
+   "id": "cranks-127-mm-crank",
+   "name": "127 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 127
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-140-mm-crank",
+   "name": "140 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 140
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-152-mm-crank",
+   "name": "152 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 152
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-160-mm-crank",
+   "name": "160 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 160
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-165-mm-crank",
+   "name": "165 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 165
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-167-5-mm-crank",
+   "name": "167.5 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 167.5
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-170-mm-crank",
+   "name": "170 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 170
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-172-5-mm-crank",
+   "name": "172.5 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 172.5
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-175-mm-crank",
+   "name": "175 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 175
+   },
+   "meta": {}
+  },
+  {
+   "id": "cranks-177-5-mm-crank",
+   "name": "177.5 mm crank",
+   "category": "cranks",
+   "values": {
+    "crank_length": 177.5
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-road-standard-53-39",
+   "name": "Road standard 53/39",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "53, 39",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-road-mid-compact-52-36",
+   "name": "Road mid-compact 52/36",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "52, 36",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-road-compact-50-34",
+   "name": "Road compact 50/34",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "50, 34",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-cyclocross-46-36",
+   "name": "Cyclocross 46/36",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "46, 36",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-gravel-sub-compact-46-30",
+   "name": "Gravel sub-compact 46/30",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "46, 30",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-road-triple-50-39-30",
+   "name": "Road triple 50/39/30",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "50, 39, 30",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-touring-triple-48-36-26",
+   "name": "Touring triple 48/36/26",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "48, 36, 26",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-mtb-triple-44-32-22",
+   "name": "MTB triple 44/32/22",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "44, 32, 22",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-mtb-double-36-26",
+   "name": "MTB double 36/26",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "36, 26",
+    "front_derailleur": true,
+    "drive_type": "derailleur"
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-28t",
+   "name": "1x 28t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "28",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-30t",
+   "name": "1x 30t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "30",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-32t",
+   "name": "1x 32t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "32",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-34t",
+   "name": "1x 34t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "34",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-36t",
+   "name": "1x 36t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "36",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-38t",
+   "name": "1x 38t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "38",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-40t",
+   "name": "1x 40t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "40",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-42t",
+   "name": "1x 42t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "42",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-1x-44t",
+   "name": "1x 44t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "44",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-track-singlespeed-48t",
+   "name": "Track / singlespeed 48t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "48",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "chainrings-track-singlespeed-50t",
+   "name": "Track / singlespeed 50t",
+   "category": "chainrings",
+   "values": {
+    "chainrings": "50",
+    "front_derailleur": false
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-road-11-25-11s",
+   "name": "Road 11-25 (11s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 17, 19, 21, 23, 25"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-road-11-28-11s",
+   "name": "Road 11-28 (11s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-road-11-32-11s",
+   "name": "Road 11-32 (11s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 12, 13, 14, 16, 18, 20, 22, 25, 28, 32"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-road-11-34-11s",
+   "name": "Road 11-34 (11s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 23, 25, 27, 30, 34"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-road-10-33-12s",
+   "name": "Road 10-33 (12s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "10, 11, 12, 13, 14, 15, 17, 19, 21, 24, 28, 33"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-road-11-30-12s",
+   "name": "Road 11-30 (12s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 16, 17, 19, 21, 24, 27, 30"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-road-11-34-12s",
+   "name": "Road 11-34 (12s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30, 34"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-touring-11-34-9s",
+   "name": "Touring 11-34 (9s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 13, 15, 17, 20, 23, 26, 30, 34"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-classic-13-26-8s",
+   "name": "Classic 13-26 (8s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "13, 14, 15, 17, 19, 21, 23, 26"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-1x-11-42-11s",
+   "name": "1x 11-42 (11s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 36, 42"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-1x-10-42-11s",
+   "name": "1x 10-42 (11s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-1x-11-46-11s",
+   "name": "1x 11-46 (11s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 37, 46"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-1x-10-50-12s",
+   "name": "1x 10-50 (12s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 50"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-1x-10-52-12s",
+   "name": "1x 10-52 (12s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 42, 52"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-kids-11-34-8s",
+   "name": "Kids 11-34 (8s)",
+   "category": "cassettes",
+   "values": {
+    "cogs": "11, 13, 15, 18, 21, 24, 28, 34"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-single-cog-14t",
+   "name": "Single cog 14t",
+   "category": "cassettes",
+   "values": {
+    "cogs": "14"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-single-cog-15t",
+   "name": "Single cog 15t",
+   "category": "cassettes",
+   "values": {
+    "cogs": "15"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-single-cog-16t",
+   "name": "Single cog 16t",
+   "category": "cassettes",
+   "values": {
+    "cogs": "16"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-single-cog-17t",
+   "name": "Single cog 17t",
+   "category": "cassettes",
+   "values": {
+    "cogs": "17"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-single-cog-18t",
+   "name": "Single cog 18t",
+   "category": "cassettes",
+   "values": {
+    "cogs": "18"
+   },
+   "meta": {}
+  },
+  {
+   "id": "cassettes-single-cog-20t",
+   "name": "Single cog 20t",
+   "category": "cassettes",
+   "values": {
+    "cogs": "20"
+   },
+   "meta": {}
+  },
+  {
+   "id": "wheels-700c-x-23",
+   "name": "700c x 23",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 23,
+    "rear_tire_height": 23.0,
+    "front_bsd": 622,
+    "front_tire_width": 23,
+    "front_tire_height": 23.0
+   },
+   "meta": {
+    "iso": "23-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-25",
+   "name": "700c x 25",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 25,
+    "rear_tire_height": 25.0,
+    "front_bsd": 622,
+    "front_tire_width": 25,
+    "front_tire_height": 25.0
+   },
+   "meta": {
+    "iso": "25-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-28",
+   "name": "700c x 28",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 28,
+    "rear_tire_height": 26.9,
+    "front_bsd": 622,
+    "front_tire_width": 28,
+    "front_tire_height": 26.9
+   },
+   "meta": {
+    "iso": "28-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-30",
+   "name": "700c x 30",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 30,
+    "rear_tire_height": 28.8,
+    "front_bsd": 622,
+    "front_tire_width": 30,
+    "front_tire_height": 28.8
+   },
+   "meta": {
+    "iso": "30-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-32",
+   "name": "700c x 32",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 32,
+    "rear_tire_height": 30.7,
+    "front_bsd": 622,
+    "front_tire_width": 32,
+    "front_tire_height": 30.7
+   },
+   "meta": {
+    "iso": "32-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-35",
+   "name": "700c x 35",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 35,
+    "rear_tire_height": 33.6,
+    "front_bsd": 622,
+    "front_tire_width": 35,
+    "front_tire_height": 33.6
+   },
+   "meta": {
+    "iso": "35-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-38",
+   "name": "700c x 38",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 38,
+    "rear_tire_height": 36.5,
+    "front_bsd": 622,
+    "front_tire_width": 38,
+    "front_tire_height": 36.5
+   },
+   "meta": {
+    "iso": "38-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-40",
+   "name": "700c x 40",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 40,
+    "rear_tire_height": 38.4,
+    "front_bsd": 622,
+    "front_tire_width": 40,
+    "front_tire_height": 38.4
+   },
+   "meta": {
+    "iso": "40-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-45",
+   "name": "700c x 45",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 45,
+    "rear_tire_height": 43.2,
+    "front_bsd": 622,
+    "front_tire_width": 45,
+    "front_tire_height": 43.2
+   },
+   "meta": {
+    "iso": "45-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-700c-x-50",
+   "name": "700c x 50",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 50,
+    "rear_tire_height": 48.0,
+    "front_bsd": 622,
+    "front_tire_width": 50,
+    "front_tire_height": 48.0
+   },
+   "meta": {
+    "iso": "50-622",
+    "size": "700c"
+   }
+  },
+  {
+   "id": "wheels-650b-x-38",
+   "name": "650b x 38",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 38,
+    "rear_tire_height": 36.5,
+    "front_bsd": 584,
+    "front_tire_width": 38,
+    "front_tire_height": 36.5
+   },
+   "meta": {
+    "iso": "38-584",
+    "size": "650b"
+   }
+  },
+  {
+   "id": "wheels-650b-x-42",
+   "name": "650b x 42",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 42,
+    "rear_tire_height": 40.3,
+    "front_bsd": 584,
+    "front_tire_width": 42,
+    "front_tire_height": 40.3
+   },
+   "meta": {
+    "iso": "42-584",
+    "size": "650b"
+   }
+  },
+  {
+   "id": "wheels-650b-x-47",
+   "name": "650b x 47",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 47,
+    "rear_tire_height": 45.1,
+    "front_bsd": 584,
+    "front_tire_width": 47,
+    "front_tire_height": 45.1
+   },
+   "meta": {
+    "iso": "47-584",
+    "size": "650b"
+   }
+  },
+  {
+   "id": "wheels-650b-x-48",
+   "name": "650b x 48",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 48,
+    "rear_tire_height": 46.1,
+    "front_bsd": 584,
+    "front_tire_width": 48,
+    "front_tire_height": 46.1
+   },
+   "meta": {
+    "iso": "48-584",
+    "size": "650b"
+   }
+  },
+  {
+   "id": "wheels-27-5-x-2-25in",
+   "name": "27.5 x 2.25in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 57,
+    "rear_tire_height": 54.7,
+    "front_bsd": 584,
+    "front_tire_width": 57,
+    "front_tire_height": 54.7
+   },
+   "meta": {
+    "iso": "57-584",
+    "size": "27.5"
+   }
+  },
+  {
+   "id": "wheels-27-5-x-2-35in",
+   "name": "27.5 x 2.35in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 60,
+    "rear_tire_height": 57.6,
+    "front_bsd": 584,
+    "front_tire_width": 60,
+    "front_tire_height": 57.6
+   },
+   "meta": {
+    "iso": "60-584",
+    "size": "27.5"
+   }
+  },
+  {
+   "id": "wheels-27-5-x-2-4in",
+   "name": "27.5 x 2.4in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 61,
+    "rear_tire_height": 58.6,
+    "front_bsd": 584,
+    "front_tire_width": 61,
+    "front_tire_height": 58.6
+   },
+   "meta": {
+    "iso": "61-584",
+    "size": "27.5"
+   }
+  },
+  {
+   "id": "wheels-27-5-x-2-6in",
+   "name": "27.5 x 2.6in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 66,
+    "rear_tire_height": 63.4,
+    "front_bsd": 584,
+    "front_tire_width": 66,
+    "front_tire_height": 63.4
+   },
+   "meta": {
+    "iso": "66-584",
+    "size": "27.5"
+   }
+  },
+  {
+   "id": "wheels-27-5-x-2-8in",
+   "name": "27.5 x 2.8in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 71,
+    "rear_tire_height": 68.2,
+    "front_bsd": 584,
+    "front_tire_width": 71,
+    "front_tire_height": 68.2
+   },
+   "meta": {
+    "iso": "71-584",
+    "size": "27.5"
+   }
+  },
+  {
+   "id": "wheels-27-5-x-3-0in",
+   "name": "27.5 x 3.0in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 76,
+    "rear_tire_height": 73.0,
+    "front_bsd": 584,
+    "front_tire_width": 76,
+    "front_tire_height": 73.0
+   },
+   "meta": {
+    "iso": "76-584",
+    "size": "27.5"
+   }
+  },
+  {
+   "id": "wheels-29er-x-2-1in",
+   "name": "29er x 2.1in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 53,
+    "rear_tire_height": 50.9,
+    "front_bsd": 622,
+    "front_tire_width": 53,
+    "front_tire_height": 50.9
+   },
+   "meta": {
+    "iso": "53-622",
+    "size": "29er"
+   }
+  },
+  {
+   "id": "wheels-29er-x-2-25in",
+   "name": "29er x 2.25in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 57,
+    "rear_tire_height": 54.7,
+    "front_bsd": 622,
+    "front_tire_width": 57,
+    "front_tire_height": 54.7
+   },
+   "meta": {
+    "iso": "57-622",
+    "size": "29er"
+   }
+  },
+  {
+   "id": "wheels-29er-x-2-35in",
+   "name": "29er x 2.35in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 60,
+    "rear_tire_height": 57.6,
+    "front_bsd": 622,
+    "front_tire_width": 60,
+    "front_tire_height": 57.6
+   },
+   "meta": {
+    "iso": "60-622",
+    "size": "29er"
+   }
+  },
+  {
+   "id": "wheels-29er-x-2-4in",
+   "name": "29er x 2.4in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 61,
+    "rear_tire_height": 58.6,
+    "front_bsd": 622,
+    "front_tire_width": 61,
+    "front_tire_height": 58.6
+   },
+   "meta": {
+    "iso": "61-622",
+    "size": "29er"
+   }
+  },
+  {
+   "id": "wheels-29er-x-2-6in",
+   "name": "29er x 2.6in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 66,
+    "rear_tire_height": 63.4,
+    "front_bsd": 622,
+    "front_tire_width": 66,
+    "front_tire_height": 63.4
+   },
+   "meta": {
+    "iso": "66-622",
+    "size": "29er"
+   }
+  },
+  {
+   "id": "wheels-29er-x-3-0in",
+   "name": "29er x 3.0in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 622,
+    "rear_tire_width": 76,
+    "rear_tire_height": 73.0,
+    "front_bsd": 622,
+    "front_tire_width": 76,
+    "front_tire_height": 73.0
+   },
+   "meta": {
+    "iso": "76-622",
+    "size": "29er"
+   }
+  },
+  {
+   "id": "wheels-26in-x-1-5in",
+   "name": "26in x 1.5in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 559,
+    "rear_tire_width": 38,
+    "rear_tire_height": 36.5,
+    "front_bsd": 559,
+    "front_tire_width": 38,
+    "front_tire_height": 36.5
+   },
+   "meta": {
+    "iso": "38-559",
+    "size": "26in"
+   }
+  },
+  {
+   "id": "wheels-26in-x-1-95in",
+   "name": "26in x 1.95in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 559,
+    "rear_tire_width": 50,
+    "rear_tire_height": 48.0,
+    "front_bsd": 559,
+    "front_tire_width": 50,
+    "front_tire_height": 48.0
+   },
+   "meta": {
+    "iso": "50-559",
+    "size": "26in"
+   }
+  },
+  {
+   "id": "wheels-26in-x-2-1in",
+   "name": "26in x 2.1in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 559,
+    "rear_tire_width": 53,
+    "rear_tire_height": 50.9,
+    "front_bsd": 559,
+    "front_tire_width": 53,
+    "front_tire_height": 50.9
+   },
+   "meta": {
+    "iso": "53-559",
+    "size": "26in"
+   }
+  },
+  {
+   "id": "wheels-26in-x-2-35in",
+   "name": "26in x 2.35in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 559,
+    "rear_tire_width": 60,
+    "rear_tire_height": 57.6,
+    "front_bsd": 559,
+    "front_tire_width": 60,
+    "front_tire_height": 57.6
+   },
+   "meta": {
+    "iso": "60-559",
+    "size": "26in"
+   }
+  },
+  {
+   "id": "wheels-26in-x-4-0in-fat",
+   "name": "26in x 4.0in fat",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 559,
+    "rear_tire_width": 101.6,
+    "rear_tire_height": 96,
+    "front_bsd": 559,
+    "front_tire_width": 101.6,
+    "front_tire_height": 96
+   },
+   "meta": {
+    "iso": "101.6-559",
+    "size": "26in fat"
+   }
+  },
+  {
+   "id": "wheels-26in-x-4-8in-fat",
+   "name": "26in x 4.8in fat",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 559,
+    "rear_tire_width": 122,
+    "rear_tire_height": 112,
+    "front_bsd": 559,
+    "front_tire_width": 122,
+    "front_tire_height": 112
+   },
+   "meta": {
+    "iso": "122-559",
+    "size": "26in fat"
+   }
+  },
+  {
+   "id": "wheels-27-5-x-4-0in-fat",
+   "name": "27.5 x 4.0in fat",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 584,
+    "rear_tire_width": 101.6,
+    "rear_tire_height": 96,
+    "front_bsd": 584,
+    "front_tire_width": 101.6,
+    "front_tire_height": 96
+   },
+   "meta": {
+    "iso": "101.6-584",
+    "size": "27.5 fat"
+   }
+  },
+  {
+   "id": "wheels-24in-x-1-75in",
+   "name": "24in x 1.75in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 507,
+    "rear_tire_width": 44,
+    "rear_tire_height": 42.2,
+    "front_bsd": 507,
+    "front_tire_width": 44,
+    "front_tire_height": 42.2
+   },
+   "meta": {
+    "iso": "44-507",
+    "size": "24in"
+   }
+  },
+  {
+   "id": "wheels-24in-x-1-95in",
+   "name": "24in x 1.95in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 507,
+    "rear_tire_width": 50,
+    "rear_tire_height": 48.0,
+    "front_bsd": 507,
+    "front_tire_width": 50,
+    "front_tire_height": 48.0
+   },
+   "meta": {
+    "iso": "50-507",
+    "size": "24in"
+   }
+  },
+  {
+   "id": "wheels-24in-x-2-2in",
+   "name": "24in x 2.2in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 507,
+    "rear_tire_width": 56,
+    "rear_tire_height": 53.8,
+    "front_bsd": 507,
+    "front_tire_width": 56,
+    "front_tire_height": 53.8
+   },
+   "meta": {
+    "iso": "56-507",
+    "size": "24in"
+   }
+  },
+  {
+   "id": "wheels-20in-x-1-75in",
+   "name": "20in x 1.75in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 406,
+    "rear_tire_width": 44,
+    "rear_tire_height": 42.2,
+    "front_bsd": 406,
+    "front_tire_width": 44,
+    "front_tire_height": 42.2
+   },
+   "meta": {
+    "iso": "44-406",
+    "size": "20in"
+   }
+  },
+  {
+   "id": "wheels-20in-x-2-125in",
+   "name": "20in x 2.125in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 406,
+    "rear_tire_width": 54,
+    "rear_tire_height": 51.8,
+    "front_bsd": 406,
+    "front_tire_width": 54,
+    "front_tire_height": 51.8
+   },
+   "meta": {
+    "iso": "54-406",
+    "size": "20in"
+   }
+  },
+  {
+   "id": "wheels-20in-451-x-28",
+   "name": "20in (451) x 28",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 451,
+    "rear_tire_width": 28,
+    "rear_tire_height": 26.9,
+    "front_bsd": 451,
+    "front_tire_width": 28,
+    "front_tire_height": 26.9
+   },
+   "meta": {
+    "iso": "28-451",
+    "size": "20in 451"
+   }
+  },
+  {
+   "id": "wheels-27in-630-x-1-1-4",
+   "name": "27in (630) x 1-1/4",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 630,
+    "rear_tire_width": 32,
+    "rear_tire_height": 30.7,
+    "front_bsd": 630,
+    "front_tire_width": 32,
+    "front_tire_height": 30.7
+   },
+   "meta": {
+    "iso": "32-630",
+    "size": "27in"
+   }
+  },
+  {
+   "id": "wheels-16in-x-2-125in",
+   "name": "16in x 2.125in",
+   "category": "wheels",
+   "values": {
+    "rear_bsd": 305,
+    "rear_tire_width": 54,
+    "rear_tire_height": 51.8,
+    "front_bsd": 305,
+    "front_tire_width": 54,
+    "front_tire_height": 51.8
+   },
+   "meta": {
+    "iso": "54-305",
+    "size": "16in"
+   }
+  },
+  {
+   "id": "bb_shells-bsa-68-english-threaded",
+   "name": "BSA 68 (English threaded)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 40,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "standard": "BSA",
+    "thread": "1.37in x 24 tpi"
+   }
+  },
+  {
+   "id": "bb_shells-bsa-73-english-threaded-mtb",
+   "name": "BSA 73 (English threaded, MTB)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 40,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "standard": "BSA",
+    "thread": "1.37in x 24 tpi"
+   }
+  },
+  {
+   "id": "bb_shells-bsa-83-downhill",
+   "name": "BSA 83 (downhill)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 40,
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "standard": "BSA",
+    "thread": "1.37in x 24 tpi"
+   }
+  },
+  {
+   "id": "bb_shells-bsa-100-fat-bike",
+   "name": "BSA 100 (fat bike)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 40,
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "standard": "BSA",
+    "thread": "1.37in x 24 tpi"
+   }
+  },
+  {
+   "id": "bb_shells-italian-70",
+   "name": "Italian 70",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 41,
+    "bb_shell_width": 70
+   },
+   "meta": {
+    "standard": "ITA",
+    "thread": "36 x 24 tpi"
+   }
+  },
+  {
+   "id": "bb_shells-t47-68-external",
+   "name": "T47 68 (external)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "standard": "T47",
+    "thread": "M47 x 1"
+   }
+  },
+  {
+   "id": "bb_shells-t47-73-external",
+   "name": "T47 73 (external)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "standard": "T47",
+    "thread": "M47 x 1"
+   }
+  },
+  {
+   "id": "bb_shells-t47-86-5-internal",
+   "name": "T47 86.5 (internal)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "standard": "T47",
+    "thread": "M47 x 1"
+   }
+  },
+  {
+   "id": "bb_shells-bb30-68",
+   "name": "BB30 68",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 46,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "standard": "BB30",
+    "id_mm": 42
+   }
+  },
+  {
+   "id": "bb_shells-pf30-68",
+   "name": "PF30 68",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "standard": "PF30",
+    "id_mm": 46
+   }
+  },
+  {
+   "id": "bb_shells-pf30-73",
+   "name": "PF30 73",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "standard": "PF30",
+    "id_mm": 46
+   }
+  },
+  {
+   "id": "bb_shells-bb86-road-press-fit",
+   "name": "BB86 (road press-fit)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 45,
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "standard": "BB86",
+    "id_mm": 41
+   }
+  },
+  {
+   "id": "bb_shells-bb92-mtb-press-fit",
+   "name": "BB92 (MTB press-fit)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 45,
+    "bb_shell_width": 89.5
+   },
+   "meta": {
+    "standard": "BB92",
+    "id_mm": 41
+   }
+  },
+  {
+   "id": "bb_shells-bb386evo",
+   "name": "BB386EVO",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50,
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "standard": "BB386EVO",
+    "id_mm": 46
+   }
+  },
+  {
+   "id": "bb_shells-eccentric-bb-shell-54-55-mm-id",
+   "name": "Eccentric BB shell (54-55 mm ID)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 58,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "standard": "EBB",
+    "id_mm": 55
+   }
+  },
+  {
+   "id": "hubs-track-120-100",
+   "name": "Track 120 / 100",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 120,
+    "front_hub_spacing": 100
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-classic-road-126-100",
+   "name": "Classic road 126 / 100",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 126,
+    "front_hub_spacing": 100
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-road-qr-130-100",
+   "name": "Road QR 130 / 100",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 130,
+    "front_hub_spacing": 100
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-mtb-touring-qr-135-100",
+   "name": "MTB / touring QR 135 / 100",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 135,
+    "front_hub_spacing": 100
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-road-disc-thru-axle-142x12-100x12",
+   "name": "Road disc thru-axle 142x12 / 100x12",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 142,
+    "front_hub_spacing": 100
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-mtb-thru-axle-142x12-100x15",
+   "name": "MTB thru-axle 142x12 / 100x15",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 142,
+    "front_hub_spacing": 100
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-boost-148x12-110x15",
+   "name": "Boost 148x12 / 110x15",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 148,
+    "front_hub_spacing": 110
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-downhill-150x12-110x20",
+   "name": "Downhill 150x12 / 110x20",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 150,
+    "front_hub_spacing": 110
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-super-boost-157x12-110x15",
+   "name": "Super Boost 157x12 / 110x15",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 157,
+    "front_hub_spacing": 110
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-fat-177-135",
+   "name": "Fat 177 / 135",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 177,
+    "front_hub_spacing": 135
+   },
+   "meta": {}
+  },
+  {
+   "id": "hubs-fat-197-150",
+   "name": "Fat 197 / 150",
+   "category": "hubs",
+   "values": {
+    "rear_hub_spacing": 197,
+    "front_hub_spacing": 150
+   },
+   "meta": {}
+  }
+ ]
+}

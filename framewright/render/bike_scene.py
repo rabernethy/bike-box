@@ -287,7 +287,8 @@ class BikeSceneBuilder:
             sc.circle(V(0, 0), d.f("bb_shell_od") / 2, Style(t.outline, 1.2, None), "frame", Z_FRAME, "tube:bb")
             return
         base = t.frame_fill
-        order = ["cs", "ss", "ss_mono"] + [n for n in tubes if n.startswith("x")] + ["dt", "tt", "st"]
+        order = (["cs", "ss", "ss_mono", "lat"] + [n for n in tubes if n.startswith("x")]
+                 + ["boom", "mid", "tt2", "dt", "tt", "st2", "st"])
         for name in order:
             tb = tubes.get(name)
             if tb is None:
@@ -298,9 +299,13 @@ class BikeSceneBuilder:
         # head tube on top of TT/DT
         ht = tubes["ht"]
         sc.poly(tube_outline(ht), t.frame(self._paint(ht, t.ht_fill or base)), "frame", Z_FRAME + 2, True, "tube:ht")
-        # BB shell
-        sc.circle(V(0, 0), d.f("bb_shell_od") / 2, t.frame(base), "frame", Z_FRAME + 2, "tube:bb")
-        sc.circle(V(0, 0), d.f("bb_shell_od") / 2 - 4, t.thin(t.outline, 0.5), "frame", Z_FRAME + 2, "tube:bb")
+        # BB shell(s)
+        shells = [V(0, 0)] + ([g.p["drive_bb"]] if g.p["drive_bb"].length() > 1e-6 else [])
+        for c in shells:
+            sc.circle(c, d.f("bb_shell_od") / 2, t.frame(base), "frame", Z_FRAME + 2, "tube:bb")
+            sc.circle(c, d.f("bb_shell_od") / 2 - 4, t.thin(t.outline, 0.5), "frame", Z_FRAME + 2, "tube:bb")
+        if d["bb_housing"] != "none":
+            self.drive_unit()
         js = d["joint_style"]
         if js == "lugged":
             self.lugs()
@@ -308,6 +313,38 @@ class BikeSceneBuilder:
             self.fillets()
         self.decals()
         self.braze_ons()
+
+    def drive_unit(self):
+        """Gearbox or mid-drive motor housing around the BB (+ battery)."""
+        g, sc, t, d = self.g, self.sc, self.t, self.d
+        c = g.p["drive_bb"] + V(d.f("housing_dx"), d.f("housing_dy"))
+        L, H, rot = d.f("housing_length"), d.f("housing_height"), d.f("housing_rotation")
+        r = min(L, H) * 0.28
+        pts = []
+        for cx, cy, a0 in ((L / 2 - r, H / 2 - r, 0), (-L / 2 + r, H / 2 - r, 90), (-L / 2 + r, -H / 2 + r, 180),
+                           (L / 2 - r, -H / 2 + r, 270)):
+            pts += [V(cx, cy) + V.polar(r, a0 + k * 15) for k in range(7)]
+        pts = [c + q.rot(rot) for q in pts]
+        fill = "#3a3a3a" if t.mode == "filled" else t.component_fill
+        sc.poly(pts, t.frame(fill), "frame", Z_FRAME + 3, True, "housing")
+        sc.circle(g.p["drive_bb"], 22, t.comp("#555555"), "frame", Z_FRAME + 4, "housing")
+        g.p["housing_center"] = c
+        bat = d["battery"]
+        dt = g.tubes.get("dt")
+        if bat in ("downtube", "integrated") and dt is not None:
+            p0, tan = dt.point_at(d.f("battery_pos"))
+            p1, _ = dt.point_at(min(dt.length, d.f("battery_pos") + d.f("battery_length")))
+            th = d.f("battery_thickness")
+            off = tan.perp() * ((dt.od_b / 2 + th / 2 + 2) if bat == "downtube" else 0.0)
+            body = rounded_rect_along(p0 + off, p1 + off, th / 2 if bat == "downtube" else dt.od_b * 0.42, th * 0.2)
+            sc.poly(body, t.frame("#262626" if t.mode == "filled" else None), "frame", Z_FRAME + 4, True, "battery")
+        elif bat == "rack":
+            ax = g.p["rear_axle"]
+            top = ax.y + d.f("rack_height")
+            th = d.f("battery_thickness") * 0.6
+            sc.poly(rounded_rect_along(V(ax.x - 200, top + th / 2 + 3), V(ax.x - 200 + d.f("battery_length"),
+                                                                            top + th / 2 + 3), th / 2, 6),
+                    t.frame("#262626" if t.mode == "filled" else None), "accessories", Z_OVER, True, "battery")
 
     def dropout(self):
         g, t = self.g, self.t
@@ -719,7 +756,9 @@ class BikeSceneBuilder:
         cogs = sorted(d.lst("cogs") or [16])
         drive = d["drive_type"]
         pitch = d.f("belt_pitch") if drive == "belt" else d.f("chain_pitch")
-        bb = V(0, 0)
+        bb = g.p["drive_bb"]
+        if bb.length() > 1e-6:
+            self._tandem_drive(pitch)
         ax = g.p["rear_axle"]
         R = pitch_radius(rings[0], pitch)
         st_ring = t.comp("#9c9c9c" if t.mode == "filled" else None)
@@ -769,7 +808,8 @@ class BikeSceneBuilder:
             else:
                 sc.circle(bb, r + 2, t.thin(t.outline, 0.6), "drivetrain", Z_COMPONENT + 2, "chainring")
         # front derailleur
-        if drive == "derailleur" and d["front_derailleur"] and len(rings) > 1 and "st" in g.tubes:
+        if drive == "derailleur" and d["front_derailleur"] and len(rings) > 1 and "st" in g.tubes \
+                and bb.length() < 1e-6:
             s = g.s
             # clamp on the seat tube ~ 2-3 mm above the big ring
             base = s * ((R + 15) / max(s.y, 0.3) * 0.98)
@@ -777,9 +817,10 @@ class BikeSceneBuilder:
             sc.poly(cage, t.comp("#5a5a5a"), "drivetrain", Z_COMPONENT + 3, True, "fd")
         # cranks
         cl = d.f("crank_length")
-        pedal = g.p["pedal"]
+        pedal = g.p["pedal"] + bb
         crank_fill = "#2b2b2b" if t.mode == "filled" else None
-        sc.poly(stroke_polygon([pedal * 0.12, -pedal], [11, 8], caps=True), Style(t.outline, t.width * 0.5, "#777777" if crank_fill else None),
+        lp = bb - (pedal - bb)
+        sc.poly(stroke_polygon([bb + (pedal - bb) * 0.12, lp], [11, 8], caps=True), Style(t.outline, t.width * 0.5, "#777777" if crank_fill else None),
                 "drivetrain", Z_STAY - 1, True, "crank:left")
         spider = [bb + V.polar(R * 0.62, d.f("crank_angle") + a) for a in range(0, 360, 72)]
         for sp in spider:
@@ -789,11 +830,51 @@ class BikeSceneBuilder:
                 True, "crank")
         sc.circle(bb, 13, t.comp("#555555"), "drivetrain", Z_COMPONENT + 5, "crank")
         if d["pedal_type"] != "none":
-            for p_, z in ((pedal, Z_COMPONENT + 5), (-pedal, Z_STAY - 1)):
+            for p_, z in ((pedal, Z_COMPONENT + 5), (bb - (pedal - bb), Z_STAY - 1)):
                 w = 50 if d["pedal_type"] == "flat" else 36
                 h = 18 if d["pedal_type"] == "flat" else 12
                 sc.poly([p_ + V(-w / 2, -h / 2), p_ + V(w / 2, -h / 2), p_ + V(w / 2, h / 2), p_ + V(-w / 2, h / 2)],
                         t.comp("#3a3a3a"), "drivetrain", z, True, "pedal")
+
+    def _tandem_drive(self, pitch: float):
+        """Captain cranks with timing ring and the timing chain (non-drive side)."""
+        g, sc, t, d = self.g, self.sc, self.t, self.d
+        bb2 = g.p["drive_bb"]
+        r = pitch_radius(int(d["timing_ring"]), pitch)
+        st = Style("#3b3b3b" if t.mode == "filled" else t.outline, 0.5, None, dash=(3, 2))
+        for c in (V(0, 0), bb2):
+            sc.circle(c, r + 2, Style(t.outline, t.width * 0.5, None, dash=(2, 1.5)), "drivetrain", Z_STAY - 2,
+                      "timing")
+        for a_, b_ in external_tangents(V(0, 0), r, bb2, r):
+            sc.line(a_, b_, st, "drivetrain", Z_STAY - 2, "timing")
+        pedal = g.p["pedal"]
+        fill = "#2b2b2b" if t.mode == "filled" else None
+        sc.poly(stroke_polygon([V(0, 0), pedal], [12, 8], caps=True), t.comp(fill), "drivetrain", Z_COMPONENT + 4,
+                True, "crank:captain")
+        sc.poly(stroke_polygon([V(0, 0), -pedal], [11, 8], caps=True), Style(t.outline, t.width * 0.5,
+                "#777777" if fill else None), "drivetrain", Z_STAY - 1, True, "crank:captain")
+        sc.circle(V(0, 0), 13, t.comp("#555555"), "drivetrain", Z_COMPONENT + 5, "crank:captain")
+        if d["pedal_type"] != "none":
+            for p_, z in ((pedal, Z_COMPONENT + 5), (-pedal, Z_STAY - 1)):
+                sc.poly([p_ + V(-18, -6), p_ + V(18, -6), p_ + V(18, 6), p_ + V(-18, 6)], t.comp("#3a3a3a"),
+                        "drivetrain", z, True, "pedal")
+        # stoker saddle, post and bars
+        if "stoker_saddle" in g.p:
+            S2 = g.p["stoker_saddle"]
+            s2 = (g.p["stoker_st_top"] - g.p["stoker_bb"]).norm()
+            r_post = d.f("seatpost_od") / 2
+            rails = g.p["stoker_saddle_rails"]
+            sc.poly(rect_along(g.p["stoker_st_top"], rails, r_post), t.comp("#1c1c1c"), "saddle", Z_COMPONENT, True,
+                    "seatpost:stoker")
+            nose, tail = g.p["stoker_saddle_nose"], g.p["stoker_saddle_tail"]
+            prof = [tail + V(0, -14), tail + V(6, 0), nose + V(-30, 0), nose + V(0, -8), nose + V(-10, -16),
+                    tail + V(30, -26), tail + V(0, -20)]
+            sc.poly(prof, t.comp("#1a1a1a"), "saddle", Z_COMPONENT + 2, True, "saddle:stoker")
+            clamp, bar = g.p["stoker_stem_clamp"], g.p["stoker_bar"]
+            sc.poly(stroke_polygon([clamp, bar], 9, caps=True), t.comp("#2e2e2e"), "cockpit", Z_COMPONENT + 1, True,
+                    "stem:stoker")
+            sc.poly(stroke_polygon([bar, bar + V(-25, -10)], 11, caps=True), t.comp("#1f1f1f"), "cockpit",
+                    Z_COMPONENT + 2, True, "bar:stoker")
 
     # brakes ------------------------------------------------------------------------------
     def brakes(self):

@@ -33,7 +33,12 @@ class ColorButton(QtWidgets.QToolButton):
         self.setToolTip(c)
 
     def _pick(self) -> None:
+        settings = QtCore.QSettings("FrameWright", "FrameWright")
+        palette = settings.value("paint/palette") or []
+        for i, col in enumerate(list(palette)[:16]):
+            QtWidgets.QColorDialog.setCustomColor(i, QtGui.QColor(str(col)))
         c = QtWidgets.QColorDialog.getColor(QtGui.QColor(self._color), self, "Choose colour")
+        settings.setValue("paint/palette", [QtWidgets.QColorDialog.customColor(i).name() for i in range(16)])
         if c.isValid():
             self.set_color(c.name())
             self.color_changed.emit(c.name())

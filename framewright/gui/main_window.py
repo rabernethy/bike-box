@@ -214,6 +214,11 @@ class MainWindow(QtWidgets.QMainWindow):
         units = m.addMenu("Units")
         units.addAction("Millimetres", lambda: self.doc() and self.doc().set_param("units", "mm"))
         units.addAction("Inches", lambda: self.doc() and self.doc().set_param("units", "in"))
+        self.a_lock = self._act("Lock zoom", self._toggle_lock, checkable=True,
+                                tip="Keep the current scale (disables wheel zoom and fit)")
+        m.addAction(self.a_lock)
+        m.addAction("Find parameter…", "Ctrl+F", lambda: (self.dock_params.show(), self.params.search.setFocus(),
+                                                          self.params.search.selectAll()))
         m.addSeparator()
         m.addAction("Dimensions…", "Ctrl+D", self.dimensions_dialog)
         m.addAction("Compare designs…", "Ctrl+K", self.compare)
@@ -539,6 +544,10 @@ class MainWindow(QtWidgets.QMainWindow):
         v = self.view()
         if v:
             v.canvas.set_tool(key)
+
+    def _toggle_lock(self, on):
+        for d in range(self.tabs.count()):
+            self.tabs.widget(d).canvas.zoom_locked = bool(on)
 
     def dimensions_dialog(self):
         if self.doc():

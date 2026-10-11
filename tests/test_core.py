@@ -138,3 +138,21 @@ def test_scene_builds_all_modes(qapp, design):
             design.set("joint_style", joint)
             sc = build_scene(solve(design))
             assert len(sc.prims) > 50
+
+
+def test_tandem_geometry(design):
+    single = solve(design)
+    design.set("frame_type", "tandem")
+    design.set("tandem_bb_distance", 760)
+    g = solve(design)
+    sb = g.p["drive_bb"]
+    assert close(sb.x, -760) and close(sb.y, 0)
+    # chainstay measured from the stoker BB; front end unchanged
+    assert close(g.v["chainstay_length"], design.f("chainstay_length"))
+    for k in ("stack", "reach", "front_center", "trail"):
+        assert close(g.v[k], single.v[k]), k
+    assert close(g.v["wheelbase"], single.v["wheelbase"] + 760)
+    for t in ("st2", "tt2", "boom", "mid"):
+        assert t in g.tubes
+    assert g.tubes["cs"].join_b == "bb2" and g.tubes["ss"].join_b == "st2"
+    assert "stoker_saddle" in g.p and "stoker_bar" in g.p

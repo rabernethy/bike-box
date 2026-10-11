@@ -286,9 +286,12 @@ def solve(d: Design) -> Geometry:
     else:
         bb_drop = d.f("bb_drop")
         bb_height = Rr - bb_drop
-    g.ground_y = -bb_height
-    ry = bb_drop
-    fy = Rf - bb_height
+    tandem = d["frame_type"] == "tandem"
+    # drive (rear) BB: the origin, or the stoker BB of a tandem
+    SB = V(-d.f("tandem_bb_distance"), d.f("tandem_bb_dy")) if tandem else V(0.0, 0.0)
+    g.ground_y = SB.y - bb_height
+    ry = SB.y + bb_drop
+    fy = Rf + g.ground_y
 
     sta = d.f("seat_tube_angle")
     hta = d.f("head_tube_angle")
@@ -302,23 +305,30 @@ def solve(d: Design) -> Geometry:
     def x_on_st(y: float) -> float:
         return P0.x - (y - P0.y) * cosd(sta) / sind(sta)
 
+    # rear seat tube: the seat tube itself, or the stoker seat tube of a tandem
+    if tandem:
+        ssta = d.f("stoker_st_angle")
+        s2, n_s2, P2 = V(-cosd(ssta), sind(ssta)), V(sind(ssta), cosd(ssta)), SB
+    else:
+        ssta, s2, n_s2, P2 = sta, s, n_st, P0
+
     # -- rear axle --------------------------------------------------------------
     st_od = d.f("st_od")
     if d["cs_mode"] == "tire_gap":
         dd = Rr + d.f("rear_tire_gap") + st_od / 2
-        rx = P0.x - (dd + (ry - P0.y) * cosd(sta)) / sind(sta)
+        rx = P2.x - (dd + (ry - P2.y) * cosd(ssta)) / sind(ssta)
     else:
         cs = d.f("chainstay_length")
-        if cs <= abs(ry):
+        if cs <= abs(bb_drop):
             g.warn("Chainstay shorter than the BB drop; using minimum length")
-            cs = abs(ry) + 1
-        rx = -math.sqrt(cs * cs - ry * ry)
+            cs = abs(bb_drop) + 1
+        rx = SB.x - math.sqrt(cs * cs - bb_drop * bb_drop)
     rear_axle = V(rx, ry)
     stay_node = rear_axle - V(d.f("dropout_offset_x"), d.f("dropout_offset_y"))
     dtype = d["dropout_type"]
     if dtype in ("horizontal", "track", "sliding"):
         # slot direction (pointing forward along the chainstay, rotated by the slot angle)
-        f = (V(0, 0) - rear_axle).norm().rot(-d.f("dropout_slot_angle"))
+        f = (SB - rear_axle).norm().rot(-d.f("dropout_slot_angle"))
         L, pos = d.f("dropout_slot_length"), min(d.f("axle_in_slot"), d.f("dropout_slot_length"))
         if dtype == "horizontal":            # opening faces forward, closed end at the rear
             closed = rear_axle - f * pos
@@ -409,10 +419,19 @@ def solve(d: Design) -> Geometry:
 
     # seat stay junction
     ss_attach = d["ss_attach"]
-    if ss_attach == "top_tube":
-        SSJ = J_st + tt_dir * d.f("ss_offset")
+    if tandem:
+        # stoker top tube from the captain seat tube back to the stoker seat tube
+        st_a = J_st - s * d.f("stoker_tt_drop")
+        sta2 = d.f("stoker_tt_angle")
+        J2 = line_intersect(st_a, V(cosd(sta2), sind(sta2)), P2, s2) or (P2 + s2 * d.f("stoker_st_length") * 0.9)
+        g.p["stoker_tt_front"], g.p["stoker_tt_st"] = st_a, J2
+        rear_J, rear_dir = J2, (st_a - J2).norm()
     else:
-        SSJ = J_st - s * d.f("ss_offset")
+        rear_J, rear_dir = J_st, tt_dir
+    if ss_attach == "top_tube":
+        SSJ = rear_J + rear_dir * d.f("ss_offset")
+    else:
+        SSJ = rear_J - s2 * d.f("ss_offset")
 
     # -- saddle -----------------------------------------------------------------
     if d["saddle_mode"] == "xy":
@@ -466,7 +485,7 @@ def solve(d: Design) -> Geometry:
         "hoods": hands.get("hoods", bar), "drops": hands.get("drops", bar), "tops": hands.get("tops", bar),
         "pedal": pedal, "pedal_l": -pedal, "pedal_fwd": V(cl, 0),
         "ground_rear": V(rx, g.ground_y), "ground_front": V(Ax, g.ground_y),
-        "ground_bb": V(0, g.ground_y),
+        "ground_bb": V(0, g.ground_y), "drive_bb": SB,
     })
     if "lever" in hands:
         p["lever"] = hands["lever"]
@@ -499,12 +518,12 @@ def solve(d: Design) -> Geometry:
 
     hub_r = rear.hub_spacing / 2 + 3.0
     if "cs" not in removed:
-        cs_dir = (V(0, 0) - stay_node).norm()
-        tubes["cs"] = Tube("cs", "Chainstay", stay_node, V(0, 0), d.f("cs_od_drop"), d.f("cs_od_bb"),
+        cs_dir = (SB - stay_node).norm()
+        tubes["cs"] = Tube("cs", "Chainstay", stay_node, SB, d.f("cs_od_drop"), d.f("cs_od_bb"),
                            wall_end=d.f("cs_wall"), wall_mid=d.f("cs_wall"), bend=d.f("cs_bend"),
                            profile=d["cs_profile"], material=_material(d, "cs_material"),
                            za=hub_r, zb=d.f("cs_spread_bb") / 2, mirrored=True, kind="stay",
-                           join_a="dropout", join_b="bb",
+                           join_a="dropout", join_b="bb2" if tandem else "bb",
                            draw_a=stay_node + cs_dir * d.f("cs_dropout_length"))
     if ss_attach != "none" and "ss" not in removed:
         ss_target = SSJ
@@ -515,7 +534,8 @@ def solve(d: Design) -> Geometry:
             tubes["ss_mono"] = Tube("ss_mono", "Seat stay (wishbone)", W, SSJ, d.f("ss_od_top") * 1.4,
                                     d.f("ss_od_top") * 1.4, wall_end=d.f("ss_wall") * 1.2,
                                     wall_mid=d.f("ss_wall") * 1.2, material=_material(d, "ss_material"),
-                                    kind="stay", join_a="ss", join_b="tt" if ss_attach == "top_tube" else "st")
+                                    kind="stay", join_a="ss",
+                                    join_b=("tt" if ss_attach == "top_tube" else "st") + ("2" if tandem else ""))
             ss_target = W
         ss_dir = (ss_target - stay_node).norm()
         ztop = d.f("ss_spread_top") / 2 if style == "conventional" else max(d.f("ss_od_top"), 8)
@@ -526,8 +546,11 @@ def solve(d: Design) -> Geometry:
                            profile=d["ss_profile"], material=_material(d, "ss_material"),
                            za=hub_r, zb=ztop, mirrored=True, kind="stay", join_a="dropout",
                            join_b=("ss_mono" if style in ("wishbone", "mono")
-                                   else ("tt" if ss_attach == "top_tube" else "st")),
+                                   else ("tt" if ss_attach == "top_tube" else "st") + ("2" if tandem else "")),
                            draw_a=stay_node + ss_dir * d.f("ss_dropout_length"))
+
+    if tandem:
+        _tandem_tubes(g, d, SB, s2, P2, stay_node, hub_r)
 
     # fork blades (side view centre-line from crown to axle)
     crown_bottom = crown - u * d.f("fork_crown_height")
@@ -595,7 +618,9 @@ def solve(d: Design) -> Geometry:
     toe_clear = fc_dist - cl_toe - Rf - fender_extra
 
     st_tube = tubes.get("st")
-    rear_tire_clear = (abs(point_line_distance(rear_axle, P0, s)) - Rr
+    if tandem:
+        st_tube = tubes.get("st2")
+    rear_tire_clear = (abs(point_line_distance(rear_axle, P2, s2)) - Rr
                        - (st_tube.od_at(0.15) if st_tube else st_od) / 2)
     dt_tube = tubes.get("dt")
     front_tire_clear = (abs(point_line_distance(front_axle, dt_a, w_dt)) - Rf - (dt_tube.od_b if dt_tube else 0) / 2)
@@ -611,7 +636,7 @@ def solve(d: Design) -> Geometry:
         "top_tube_effective": T.x - x_on_st(T.y),
         "top_tube_virtual": T.x + T.y * cosd(sa_eff) / max(sind(sa_eff), 1e-6),
         "down_tube_cc": (J_dt - dt_a).length(),
-        "chainstay_length": rear_axle.length(), "rear_center_h": -rx,
+        "chainstay_length": rear_axle.dist(SB), "rear_center_h": SB.x - rx,
         "front_center": fc_dist, "front_center_h": Ax, "wheelbase": Ax - rx,
         "bb_drop": bb_drop, "bb_height": bb_height, "bb_drop_front": fy,
         "fork_length": AC, "fork_offset": off, "lower_stack": LS,
@@ -659,6 +684,48 @@ def solve(d: Design) -> Geometry:
     if "ss" in tubes:
         v["angle_st_ss"] = _interior(s * -1, tubes["ss"].dir_b() * -1)
     return g
+
+
+def _tandem_tubes(g: Geometry, d: Design, SB: V, s2: V, P2: V, stay_node: V, hub_r: float) -> None:
+    """Stoker seat tube, stoker top tube, boom and mid/lateral tubes, stoker
+    saddle and bars."""
+    p, tubes = g.p, g.tubes
+    od = d.f("tandem_tube_od")
+    mat = d["frame_material"]
+    st2_top = P2 + s2 * d.f("stoker_st_length")
+    p["stoker_st_top"] = st2_top
+    p["stoker_bb"] = SB
+
+    def t(name, label, a, b, od_, join_a, join_b, **kw):
+        tubes[name] = Tube(name, label, a, b, od_, od_, wall_end=d.f("st_wall_end"), wall_mid=d.f("st_wall_mid"),
+                           butt_length=d.f("st_butt_length"), material=mat, kind="extra",
+                           join_a=join_a, join_b=join_b, **kw)
+    t("st2", "Stoker seat tube", P2, st2_top, d.f("st_od"), "bb2", None)
+    t("tt2", "Stoker top tube", p["stoker_tt_st"], p["stoker_tt_front"], d.f("tt_od"), "st2", "st")
+    t("boom", "Boom tube", SB, V(0, 0), od, "bb2", "bb")
+    mid = d["tandem_mid_tube"]
+    if mid == "marathon":
+        t("mid", "Marathon tube", SB, p["tt_st"], od * 0.9, "bb2", "st")
+    elif mid == "direct":
+        t("mid", "Direct lateral", SB, p["dt_ht"] + g.u * 25, od * 0.9, "bb2", "ht")
+    elif mid == "twin_laterals":
+        t("lat", "Lateral tubes", stay_node, p["dt_ht"] + g.u * 25, 19.0, "dropout", "ht", za=hub_r, zb=12.0,
+          mirrored=True)
+    # stoker saddle on its seat tube angle, stoker bars on the captain seatpost
+    a2 = d.f("stoker_st_angle")
+    S2 = SB + V(-cosd(a2), sind(a2)) * d.f("stoker_saddle_height")
+    p["stoker_saddle"] = S2
+    p["stoker_saddle_nose"] = S2 + V(d.f("saddle_ref_to_nose"), 0)
+    p["stoker_saddle_tail"] = p["stoker_saddle_nose"] - V(d.f("saddle_length"), 0)
+    p["stoker_saddle_rails"] = S2 - s2 * (d.f("saddle_stack") / max(s2.y, 0.2))
+    clamp = p["saddle_rails"] - g.s * d.f("stoker_bar_drop")
+    p["stoker_stem_clamp"] = clamp
+    p["stoker_bar"] = clamp - V(d.f("stoker_stem_length"), 0)
+    p["stoker_pedal"] = SB + (p["pedal"] - V(0, 0))
+    g.v["tandem_bb_distance"] = SB.dist(V(0, 0))
+    g.v["stoker_saddle_height"] = d.f("stoker_saddle_height")
+    g.v["stoker_saddle_to_bar"] = S2.dist(p["stoker_bar"])
+    g.v["stoker_knee_room"] = p["stoker_bar"].x - p["stoker_saddle_nose"].x
 
 
 def _interior(a: V, b: V) -> float:

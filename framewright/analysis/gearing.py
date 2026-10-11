@@ -60,8 +60,11 @@ _COG_SPACING = {1: 0.0, 2: 5.5, 3: 5.5, 4: 5.5, 5: 5.5, 6: 5.0, 7: 5.0, 8: 4.8, 
                 11: 3.74, 12: 3.65}
 # Approximate chainring spacing by number of rings (mm).
 _RING_SPACING = {1: 0.0, 2: 7.5, 3: 5.5}
-# Typical rear chainline (cassette / cog centre) by rear hub spacing (mm).
-_REAR_CHAINLINE = {120.0: 42.0, 126.0: 43.5, 130.0: 43.5, 135.0: 47.5, 142.0: 47.5, 148.0: 52.0, 157.0: 56.5}
+# Typical rear chainline (cassette / cog centre) by rear hub spacing (mm).  135 / 142 mm hubs
+# come in road/gravel-disc (~44) and mountain (~47.5) families: the one nearer the front
+# chainline is assumed.
+_REAR_CHAINLINE = {120.0: (42.0,), 126.0: (43.5,), 130.0: (43.5,), 135.0: (44.0, 47.5),
+                   142.0: (44.0, 47.5), 148.0: (52.0,), 157.0: (56.5,)}
 
 
 # --------------------------------------------------------------------------
@@ -132,9 +135,10 @@ def rear_chainline(d: Design) -> tuple[float, bool]:
     if v > 0:
         return v, False
     old = d.f("rear_hub_spacing")
-    for k, cl in _REAR_CHAINLINE.items():
+    front = d.f("chainline")
+    for k, cands in _REAR_CHAINLINE.items():
         if abs(old - k) < 0.6:
-            return cl, True
+            return min(cands, key=lambda c: abs(c - front)), True
     return old / 2.0 - 21.5, True
 
 
