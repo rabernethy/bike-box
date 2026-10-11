@@ -100,3 +100,45 @@ def test_dialogs_construct(window, qapp):
         dlg.reject()
     D.CompareDialog(doc, window.docs(), window).reject()
     D.PhotoDialog(doc, None, window).reject()
+
+
+def test_aux_panel_values(window, qapp):
+    window.show_aux()
+    qapp.processEvents()
+    panel = window.aux_dock.widget()
+    tree = panel.values
+    assert tree.topLevelItemCount() > 10
+    labels = [tree.topLevelItem(i).text(0) for i in range(tree.topLevelItemCount())]
+    assert "Chainstay to tire" in labels
+    for i in range(panel.tabs.count()):
+        panel.tabs.setCurrentIndex(i)
+        panel.refresh()
+        assert panel.viewers[i]._scene is not None
+
+
+def test_feature_dialogs_construct(window, qapp):
+    """Every integration dialog opens against the real feature modules."""
+    from framewright.gui.dialogs import DecalsDialog
+    from framewright.gui.drawing_dialog import DrawingDialog
+    from framewright.gui.fit_dialog import FitAdvisorDialog
+    from framewright.gui.library_dialog import LibraryDialog
+    from framewright.gui.main_window import TemplatePicker
+    from framewright.gui.mitre_dialog import MitreDialog
+    from framewright.gui.report_dialog import ReportDialog
+    from framewright.model import templates
+    doc = window.doc()
+    dlgs = [FitAdvisorDialog(doc, window), MitreDialog(doc, window), ReportDialog(doc, window, focus="UCI"),
+            LibraryDialog(doc, window), DrawingDialog(doc, window, "pdf"), DecalsDialog(doc, window),
+            TemplatePicker(templates, window)]
+    for dlg in dlgs:
+        dlg.show()
+        qapp.processEvents()
+    assert dlgs[0].recs and len(dlgs[1].cuts) >= 6 and dlgs[2].tabs.count() >= 5
+    assert dlgs[3].cats.count() >= 10 and dlgs[6].infos
+    lib = dlgs[3]
+    lib.cats.setCurrentRow(0)
+    lib.items.setCurrentRow(0)
+    lib.apply()                                   # tube set applies through undo
+    assert doc.undo.canUndo()
+    for dlg in dlgs:
+        dlg.reject()

@@ -68,11 +68,14 @@ class AuxViewsPanel(QtWidgets.QWidget):
         units = self.doc.design["units"]
         from ..model.units import fmt_len
         for k, v in vals.items():
-            label = labels.get(k, k.replace("_", " "))
+            entry = labels.get(k)
+            label, unit = (entry if isinstance(entry, tuple) else (entry or k.replace("_", " "), None))
+            if unit is None:
+                unit = "deg" if any(w in k for w in ("angle", "phase", "_deg")) else "mm"
             if isinstance(v, (int, float)):
                 if v == float("inf"):
                     txt = "no contact"
-                elif any(w in k for w in ("angle", "phase", "_deg")):
+                elif unit in ("deg", "°"):
                     txt = f"{v:.1f}°"
                 else:
                     txt = fmt_len(v, units, suffix=True)
