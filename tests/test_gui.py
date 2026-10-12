@@ -246,6 +246,21 @@ def test_catalog_pickers_apply_parts(window):
     assert abs(doc.design.f("fork_length") - float(chosen_fork.values["fork_length"])) < 1e-6
 
 
+def test_param_panel_shows_picked_catalog_part(window):
+    from bikebox.gui.catalog_picker import CatalogPicker
+    panel = window.params
+    panel.show_group("Tubes")
+    page = panel.pages["Tubes"]
+    lbl, _ = page.catalog_picked["Down tube"]
+    assert not lbl.text()                                    # nothing picked yet
+    pk = CatalogPicker(window.doc(), "tubing", "dt", window)
+    pk.list.setCurrentRow(0)
+    name = pk._items[0].name
+    pk.use()
+    page.refresh()
+    assert name in lbl.text() and lbl.text().startswith("✓")
+
+
 def test_param_panel_has_catalog_buttons(window):
     from bikebox.gui.param_panel import SECTION_CATALOG, ordered_groups
     from bikebox.qt import QtWidgets

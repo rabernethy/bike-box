@@ -87,6 +87,7 @@ class ParamPage(QtWidgets.QScrollArea):
         self.editors: dict[str, QtWidgets.QWidget] = {}
         self.rows: dict[str, tuple[QtWidgets.QWidget, QtWidgets.QWidget, QtWidgets.QGroupBox]] = {}
         self.sections: dict[str, QtWidgets.QGroupBox] = {}
+        self.catalog_picked: dict[str, tuple] = {}     # section -> (label, specs)
         self._units = doc.design["units"]
         self._build()
         self.vbox.addStretch(1)
@@ -130,6 +131,34 @@ class ParamPage(QtWidgets.QScrollArea):
         host = QtWidgets.QWidget()
         host.setLayout(row)
         form.addRow(host)
+        # a line under the buttons naming the catalog part(s) picked for this section
+        picked = QtWidgets.QLabel()
+        picked.setWordWrap(True)
+        picked.setTextInteractionFlags(Qt.TextInteractionFlag.TextBrowserInteraction)
+        picked.setStyleSheet("color: #1d8a3a; font-size: 11px;")
+        form.addRow(picked)
+        self.catalog_picked[section] = (picked, specs)
+
+    def _bom_slot_keys(self, category: str, pos: str | None) -> list[str]:
+        return [pos] if pos else [category]
+
+    def _refresh_catalog_picked(self) -> None:
+        bom = self.doc.design.extras.get("bom") or {}
+        for section, (lbl, specs) in self.catalog_picked.items():
+            names = []
+            for _label, category, pos in specs:
+                for key in self._bom_slot_keys(category, pos):
+                    entry = bom.get(key)
+                    if isinstance(entry, dict) and entry.get("name"):
+                        names.append(str(entry["name"]))
+            # dedupe, keep order
+            seen, uniq = set(), []
+            for n in names:
+                if n not in seen:
+                    seen.add(n)
+                    uniq.append(n)
+            lbl.setText(("✓ " + " · ".join(uniq)) if uniq else "")
+            lbl.setVisible(bool(uniq))
 
     def _open_catalog(self, category: str, pos: str | None) -> None:
         from .catalog_picker import CatalogPicker
@@ -231,6 +260,7 @@ class ParamPage(QtWidgets.QScrollArea):
                         ed.setText(str(v))
             finally:
                 ed.blockSignals(False)
+        self._refresh_catalog_picked()
         self.apply_visibility()
 
     def apply_visibility(self, filter_text: str = "") -> None:
