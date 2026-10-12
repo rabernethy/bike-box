@@ -15,11 +15,14 @@ EXPECTED_SLUGS = {
 
 @pytest.fixture
 def config_home(tmp_path, monkeypatch):
-    """Point the per-user config directory at a temporary folder."""
-    monkeypatch.delenv("FRAMEWRIGHT_CONFIG_DIR", raising=False)
+    """Point the per-user config directory at a temporary folder (cross-platform:
+    on Windows %APPDATA% would otherwise win over XDG, so set the explicit
+    override too)."""
+    cfg = tmp_path / ".config" / "bikebox"
     monkeypatch.setenv("HOME", str(tmp_path))
     monkeypatch.setenv("XDG_CONFIG_HOME", str(tmp_path / ".config"))
-    return tmp_path / ".config" / "bikebox"
+    monkeypatch.setenv("BIKEBOX_CONFIG_DIR", str(cfg))
+    return cfg
 
 
 # --------------------------------------------------------------------------

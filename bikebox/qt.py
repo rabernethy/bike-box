@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import os
 
-_api = os.environ.get("FRAMEWRIGHT_QT", "").lower()
+_api = (os.environ.get("BIKEBOX_QT") or os.environ.get("FRAMEWRIGHT_QT", "")).lower()
 
 QtPrintSupport = None
 if _api != "pyside6":

@@ -82,10 +82,10 @@ class LibraryItem:
 def config_dir() -> Path:
     """Bike Box's per-user configuration directory (not created here).
 
-    ``$FRAMEWRIGHT_CONFIG_DIR`` if set, else ``%APPDATA%/bikebox`` on
+    ``$BIKEBOX_CONFIG_DIR`` if set, else ``%APPDATA%/bikebox`` on
     Windows, else ``$XDG_CONFIG_HOME/bikebox`` or ``~/.config/bikebox``.
     """
-    env = os.environ.get("FRAMEWRIGHT_CONFIG_DIR")
+    env = os.environ.get("BIKEBOX_CONFIG_DIR") or os.environ.get("FRAMEWRIGHT_CONFIG_DIR")  # old name too
     if env:
         return Path(env)
     if os.name == "nt" and os.environ.get("APPDATA"):
