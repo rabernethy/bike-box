@@ -25,7 +25,7 @@ a = Analysis(
     [str(Path(SPECPATH) / "entry.py")],
     pathex=[str(ROOT)],
     datas=datas,
-    hiddenimports=collect_submodules("bikebox"),
+    hiddenimports=collect_submodules("bikebox") + ["defusedxml", "defusedxml.ElementTree"],
     hookspath=[],
     excludes=["tkinter", "PySide6", "PyQt5", "scipy", "matplotlib", "pandas", "PIL"],
     noarchive=False,
