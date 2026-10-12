@@ -293,6 +293,9 @@ def _tube_values(tube: str, spec: Any) -> dict[str, Any]:
             out["cs_od_drop"] = tip
         if end is not None:
             out["cs_wall"] = end
+        prof = _get(spec, "profile")
+        if prof:
+            out["cs_profile"] = prof
     elif tube == "ss":
         if od is not None:
             out["ss_od_top"] = od
@@ -301,6 +304,9 @@ def _tube_values(tube: str, spec: Any) -> dict[str, Any]:
             out["ss_od_drop"] = tip
         if end is not None:
             out["ss_wall"] = end
+        prof = _get(spec, "profile")
+        if prof:
+            out["ss_profile"] = prof
     elif tube == "fork":
         if od is not None:
             out["fork_blade_od"] = od

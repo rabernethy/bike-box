@@ -74,7 +74,7 @@ Illustrative example (not a real product):
 | `forks` | `fork_type` (rigid/suspension), `fork_length` (axle-to-crown), `fork_offset`, `fork_travel`, `fork_stanchion_od`, `fork_crown_height`, `fork_crown_width`, `fork_blade_shape` (straight/curved), `front_hub_spacing`, `steerer_od` (upper steerer OD), `fork_material` |
 | `tubing` | `material` + `tubes` shorthand: `{"tt"/"dt"/"st"/"ht"/"cs"/"ss"/"fork_blade"/"steerer": {"od": mm, "wall": "end/centre/end" or single, "butt_length": mm, "od_end"/"od_tip": mm, "profile": round/oval/aero, "od2": mm, "length_mm": mm}}` |
 | `frame_hardware` | `bb_shell_od`, `bb_shell_width`, `lug_ht_angle`, `lug_st_angle`, `dropout_type`, `rear_hub_spacing`, `front_hub_spacing`, `ht_od_top`, `ht_od_bottom` |
-| `dropouts` | `dropout_type` (vertical/horizontal/track/sliding/thru), `rear_hub_spacing`, `front_hub_spacing`, `brake_rear`/`brake_front` (disc) |
+| `dropouts` | `dropout_type` (vertical/horizontal/track/sliding/thru), `rear_hub_spacing`, `front_hub_spacing`, `brake_rear`/`brake_front` (disc), `dropout_slot_length`, `dropout_slot_angle` (deg from horizontal), `axle_in_slot` (axle position along the slot), `dropout_offset_x`/`dropout_offset_y` (dropout face vs axle), `cs_dropout_length`/`ss_dropout_length` (stay stub into the dropout) |
 | `rims` | `front_bsd`, `rear_bsd`, `rim_depth_front`, `rim_depth_rear`, `spokes_front`, `spokes_rear` |
 | `hubs` | `front_hub_spacing` or `rear_hub_spacing`, `hub_flange_front` or `hub_flange_rear` (flange Ø), `spokes_front`/`spokes_rear` |
 | `tires` | `front_bsd`, `rear_bsd`, `front_tire_width`, `rear_tire_width` (and `*_tire_height` only from a measured, cited value) |
