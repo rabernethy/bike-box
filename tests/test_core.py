@@ -250,6 +250,26 @@ def test_tall_bike(design):
     assert g.v["pedal_clearance"] > single.v["pedal_clearance"] + 300
 
 
+def test_tall_bike_drag_rider_tracks_cursor(design):
+    """Dragging the lifted rider points (saddle, pedal) on a tall bike must land
+    where the cursor is, not hundreds of mm away because of the frame lift."""
+    from framewright.gui.canvas import drag_point_changes
+    design.set("frame_type", "tall")
+    g = solve(design)
+    # saddle: moving it up 10 mm along the seat axis should raise it ~10 mm
+    s0 = g.p["saddle"]
+    seat_up = (g.p["st_top"] - g.p["st_bottom"]).norm()
+    ch, _ = drag_point_changes("saddle", s0 + seat_up * 10, design, g, False)
+    d2 = design.copy(); d2.update(ch)
+    assert close(solve(d2).p["saddle"].dist(s0 + seat_up * 10), 0.0, 0.5)
+    # pedal: setting crank angle to straight-down puts the pedal below the upper BB
+    R = g.p["crank_bb"]
+    ch, _ = drag_point_changes("pedal", R + V(0, -100), design, g, False)
+    d2 = design.copy(); d2.update(ch)
+    ped = solve(d2).p["pedal"]
+    assert ped.y < R.y and abs(ped.x - R.x) < 5
+
+
 def test_tall_bike_rider_pedals_at_upper_bb(design):
     from framewright.fit.rider import solve_pose
     design.update({"frame_type": "tall", "show_rider": True})

@@ -690,6 +690,11 @@ def _dist(a: QPointF, b: QPointF) -> float:
 
 def drag_point_changes(name: str, m: V, d0, g0: Geometry, shift: bool) -> tuple[dict, str]:
     """Parameter changes that move point ``name`` of the baseline design to ``m``."""
+    # On a tall bike the rider (saddle, cranks/pedal) is drawn lifted onto the
+    # upper frame, but the parameters below are measured from the real (lower)
+    # BB at the origin.  Undo the lift so the drag math stays in frame coords.
+    if d0["frame_type"] == "tall" and name in ("saddle", "pedal"):
+        m = m - (g0.p.get("crank_bb", g0.p["bb"]) - g0.p["bb"])
     if name == "saddle":
         if d0["saddle_mode"] == "xy":
             return {"saddle_x": m.x, "saddle_y": m.y}, "Saddle X {saddle_x}  Y {saddle_y}"
