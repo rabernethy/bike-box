@@ -402,6 +402,8 @@ _tubes += [
     _choice("ss_profile", "Seat stay profile", G, "Seat stays", "round", PROFILES),
     _mm("ss_od_top", "Seat stay OD at top", G, "Seat stays", 16.0, 5, 60, 0.1),
     _mm("ss_od_drop", "Seat stay OD at dropout", G, "Seat stays", 12.7, 5, 60, 0.1),
+    _mm("ss_od2", "Seat stay width (top view)", G, "Seat stays", 0, 0, 60, 0.1,
+        help="Oval section width seen from above (0 = round, same as OD)"),
     _mm("ss_wall", "Seat stay wall", G, "Seat stays", 0.7, 0.2, 5, 0.05),
     _mm("ss_bend", "Seat stay bend (sagitta)", G, "Seat stays", 0, -100, 100, 0.5),
     _mm("ss_dropout_length", "Seat stay end to axle", G, "Seat stays", 35, 0, 150),

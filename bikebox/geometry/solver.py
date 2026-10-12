@@ -585,7 +585,9 @@ def solve(d: Design) -> Geometry:
         ztop = ss_z if style == "conventional" else max(d.f("ss_od_top"), 8)
         if style == "mono":
             ztop = 0.0
+        ss_w_top = d.f("ss_od2") or d.f("ss_od_top")      # top-view width (oval section) if set
         tubes["ss"] = Tube("ss", "Seat stay", stay_node, ss_target, d.f("ss_od_drop"), d.f("ss_od_top"),
+                           d.f("ss_od_drop"), ss_w_top,
                            wall_end=d.f("ss_wall"), wall_mid=d.f("ss_wall"), bend=d.f("ss_bend"),
                            profile=d["ss_profile"], material=_material(d, "ss_material"),
                            za=hub_r, zb=ztop, mirrored=True, kind="stay", join_a="dropout",

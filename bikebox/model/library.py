@@ -296,6 +296,9 @@ def _tube_values(tube: str, spec: Any) -> dict[str, Any]:
         prof = _get(spec, "profile")
         if prof:
             out["cs_profile"] = prof
+        width = _get(spec, "od2", "width")           # oval top-view width at the BB
+        if width is not None:
+            out["cs_width_bb"] = width
     elif tube == "ss":
         if od is not None:
             out["ss_od_top"] = od
@@ -307,6 +310,9 @@ def _tube_values(tube: str, spec: Any) -> dict[str, Any]:
         prof = _get(spec, "profile")
         if prof:
             out["ss_profile"] = prof
+        width = _get(spec, "od2", "width")           # oval top-view width
+        if width is not None:
+            out["ss_od2"] = width
     elif tube == "fork":
         if od is not None:
             out["fork_blade_od"] = od
