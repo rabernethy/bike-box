@@ -33,8 +33,19 @@
 7. **Top & down tubes**: junction offsets on the head tube, top tube by angle or seat tube extension.
 8. **Seat stays**: on the seat or top tube, conventional/wishbone/mono, dropout type and offsets.
 9. **Tubes**: OD, oval/aero profile (side depth + top width), taper, butted walls, bends (curved tubes),
-   materials. Edit ▸ Parts libraries applies a tube set (e.g. from your parts database) in one click.
+   materials.
 10. **Cockpit & saddle**: stem, bars, levers, hand position; saddle by height + seat angle or X/Y.
+
+### Using the parts catalog
+
+Every component section in the left panel has a **“… from catalog…”** button that opens a picker of real,
+sourced parts for that component — the fork, stem, handlebar, saddle, seatpost, crankset, cassette, derailleur,
+rim, hub, tire, brakes, BB shell, dropouts and lugs. For **tubing** each frame position has its own picker
+(*Top tube from catalog…*, *Down tube…*, etc.) that lists only tubes that fit there and applies that one tube —
+OD, butted walls and profile — without touching the others; the Material section’s *Tube set from catalog…*
+applies a whole set at once. The picker shows what it will change (current → new), the manufacturer’s specs and
+the source, and applies as a single undo step. Edit ▸ **Parts libraries** (Ctrl+L) is the full browser across
+all 5,300+ catalogued parts, and you can save your own items there.
 
 ### Direct manipulation
 Drag the blue handles: **saddle** (height; Shift = free move/custom seat angle), **handlebar** (stem length and

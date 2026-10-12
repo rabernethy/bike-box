@@ -364,6 +364,34 @@ def expand_values(values: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
+def item_tube_positions(item: LibraryItem | dict[str, Any]) -> set[str]:
+    """Canonical tube positions (tt/dt/st/ht/cs/ss/fork/steerer) an item specs."""
+    values = item.values if isinstance(item, LibraryItem) else dict(item)
+    tubes = values.get("tubes")
+    out: set[str] = set()
+    if isinstance(tubes, dict):
+        for name in tubes:
+            key = TUBE_ALIASES.get(str(name).strip().lower())
+            if key:
+                out.add(key)
+    return out
+
+
+def apply_tube(design, item: LibraryItem | dict[str, Any], pos: str) -> list[str]:
+    """Apply only one tube position of a tubing item (so a builder can pick a
+    tube per frame position without disturbing the others or the material)."""
+    values = item.values if isinstance(item, LibraryItem) else dict(item)
+    tubes = values.get("tubes") or {}
+    spec = None
+    for name, s in tubes.items():
+        if TUBE_ALIASES.get(str(name).strip().lower()) == pos:
+            spec = s
+            break
+    if spec is None:
+        return []
+    return apply(design, {"tubes": {pos: spec}})
+
+
 def apply(design, item: LibraryItem | dict[str, Any]) -> list[str]:
     """Apply a library item to ``design``; returns the keys whose value changed.
     Keys not in the parameter schema and invalid choice values are ignored."""

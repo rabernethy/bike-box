@@ -18,6 +18,32 @@ def ordered_groups() -> list[str]:
     return [g for g in GROUP_ORDER if g in gs] + [g for g in gs if g not in GROUP_ORDER]
 
 
+# "Choose from catalog" buttons per (group, section): (button label, category, tube position|None)
+SECTION_CATALOG: dict[tuple[str, str], list[tuple[str, str, str | None]]] = {
+    ("Tubes", "Material"): [("Tube set from catalog…", "tubing", None)],
+    ("Tubes", "Top tube"): [("Top tube from catalog…", "tubing", "tt")],
+    ("Tubes", "Down tube"): [("Down tube from catalog…", "tubing", "dt")],
+    ("Tubes", "Seat tube"): [("Seat tube from catalog…", "tubing", "st")],
+    ("Tubes", "Head tube"): [("Head tube from catalog…", "tubing", "ht")],
+    ("Tubes", "Chainstays"): [("Chainstay from catalog…", "tubing", "cs")],
+    ("Tubes", "Seat stays"): [("Seat stay from catalog…", "tubing", "ss")],
+    ("Fork & headset", "Fork"): [("Fork from catalog…", "forks", None)],
+    ("Fork & headset", "Headset"): [("Headset from catalog…", "headsets", None)],
+    ("Cockpit", "Stem"): [("Stem from catalog…", "stems", None)],
+    ("Cockpit", "Handlebar"): [("Handlebar from catalog…", "handlebars", None)],
+    ("Saddle & seatpost", "Saddle"): [("Saddle from catalog…", "saddles", None)],
+    ("Saddle & seatpost", "Seatpost"): [("Seatpost from catalog…", "seatposts", None)],
+    ("Drivetrain", "Drive"): [("Crankset…", "cranks", None), ("Cassette…", "cassettes", None),
+                              ("Derailleur / groupset…", "drivetrain", None)],
+    ("Wheels & brakes", "Rims"): [("Rim from catalog…", "rims", None), ("Hub from catalog…", "hubs", None)],
+    ("Wheels & brakes", "Brakes"): [("Brakes from catalog…", "brakes", None)],
+    ("Frame", "Wheels"): [("Tire from catalog…", "tires", None)],
+    ("Frame", "Bottom bracket & rear"): [("BB shell from catalog…", "bb_shells", None)],
+    ("Frame", "Dropouts"): [("Dropouts from catalog…", "dropouts", None)],
+    ("Joints", "Lugs"): [("Lug / hardware from catalog…", "frame_hardware", None)],
+}
+
+
 class ColorButton(QtWidgets.QToolButton):
     color_changed = Signal(str)
 
@@ -78,6 +104,7 @@ class ParamPage(QtWidgets.QScrollArea):
                 form.setVerticalSpacing(3)
                 self.sections[pd.section] = box
                 self.vbox.addWidget(box)
+                self._add_catalog_buttons(box.layout(), pd.section)
             ed = self._editor(pd)
             label = QtWidgets.QLabel(pd.label)
             label.setWordWrap(True)
@@ -87,6 +114,26 @@ class ParamPage(QtWidgets.QScrollArea):
             self.editors[pd.key] = ed
             self.rows[pd.key] = (label, ed, box)
         self.refresh()
+
+    def _add_catalog_buttons(self, form: QtWidgets.QFormLayout, section: str) -> None:
+        specs = SECTION_CATALOG.get((self.group, section))
+        if not specs:
+            return
+        row = QtWidgets.QHBoxLayout()
+        row.setContentsMargins(0, 0, 0, 2)
+        for label, category, pos in specs:
+            b = QtWidgets.QPushButton(label)
+            b.setToolTip(f"Pick a real, sourced part from the {category} catalog and apply it here")
+            b.clicked.connect(lambda _c=False, cat=category, p=pos: self._open_catalog(cat, p))
+            row.addWidget(b)
+        row.addStretch(1)
+        host = QtWidgets.QWidget()
+        host.setLayout(row)
+        form.addRow(host)
+
+    def _open_catalog(self, category: str, pos: str | None) -> None:
+        from .catalog_picker import CatalogPicker
+        CatalogPicker(self.doc, category, pos, self).exec()
 
     def _editor(self, pd: P.ParamDef) -> QtWidgets.QWidget:
         key = pd.key

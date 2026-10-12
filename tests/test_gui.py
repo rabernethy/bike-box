@@ -224,6 +224,39 @@ def test_dimension_tool_snaps_to_tubes(window):
     assert DIM.build_user(g, {"id": "u1", "kind": "aligned", "points": [spec, xspec], "offset": 30}) is not None
 
 
+def test_catalog_pickers_apply_parts(window):
+    from bikebox.gui.catalog_picker import CatalogPicker
+    from bikebox.model import library as L
+    doc = window.doc()
+    # per-tube picker changes only that tube position
+    pk = CatalogPicker(doc, "tubing", "dt", window)
+    assert pk._items and all("dt" in L.item_tube_positions(i) for i in pk._items)
+    tt0 = doc.design.f("tt_od")
+    pk.list.setCurrentRow(0)
+    chosen = pk._items[0]
+    pk.use()
+    assert abs(doc.design.f("dt_od") - float(chosen.values["tubes"]["dt"]["od"])) < 1e-6
+    assert doc.design.f("tt_od") == tt0                       # other tubes untouched
+    assert doc.undo.canUndo()                                 # applied as one undo step
+    # a component picker (fork) applies its values
+    fk = CatalogPicker(doc, "forks", None, window)
+    fk.list.setCurrentRow(0)
+    chosen_fork = fk._items[0]
+    fk.use()
+    assert abs(doc.design.f("fork_length") - float(chosen_fork.values["fork_length"])) < 1e-6
+
+
+def test_param_panel_has_catalog_buttons(window):
+    from bikebox.gui.param_panel import SECTION_CATALOG, ordered_groups
+    from bikebox.qt import QtWidgets
+    panel = window.params
+    for g in ordered_groups():
+        panel.show_group(g)
+    found = sum(len([b for b in page.findChildren(QtWidgets.QPushButton) if b.text().endswith("…")])
+                for page in panel.pages.values())
+    assert found >= sum(len(v) for v in SECTION_CATALOG.values())
+
+
 def test_junction_handles_are_exact(window):
     from bikebox.gui.canvas import drag_point_changes
     doc = window.doc()
