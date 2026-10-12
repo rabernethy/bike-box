@@ -58,8 +58,8 @@ class ResultsPanel(QtWidgets.QWidget):
         self.warn.setWordWrap(True)
         self.warn.setTextFormat(Qt.TextFormat.RichText)
         lay.addWidget(self.warn)
-        self.fix_btn = QtWidgets.QPushButton("Fix clearance…")
-        self.fix_btn.setToolTip("Find the smallest changes that make the tires fit")
+        self.fix_btn = QtWidgets.QPushButton("Resolve issues…")
+        self.fix_btn.setToolTip("Show options for addressing each clearance or geometry issue")
         self.fix_btn.setStyleSheet("QPushButton { font-weight: bold; }")
         self.fix_btn.clicked.connect(self._fix)
         self.fix_btn.hide()
@@ -113,15 +113,15 @@ class ResultsPanel(QtWidgets.QWidget):
         g = self.doc.geometry
         units = self.doc.design["units"]
         issues = list(g.warnings)
-        tire_issue = False
+        has_fixable = False
         try:
             from ..geometry.clearance import problems
-            from ..geometry.clearance_fix import tire_problems
+            from ..geometry.remedies import active_keys
             issues += [f"3-D: {p}" for p in problems(g)]
-            tire_issue = bool(tire_problems(g)) or g.v.get("rear_tire_clearance", 99) < 3
+            has_fixable = bool(active_keys(g))
         except Exception:
             pass
-        self.fix_btn.setVisible(tire_issue)
+        self.fix_btn.setVisible(has_fixable)
         if issues:
             self.warn.setText("".join(f"<div style='color:#c62828'>⚠ {w}</div>" for w in issues))
             self.warn.show()

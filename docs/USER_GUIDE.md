@@ -79,6 +79,17 @@ Tools ▸ **Analysis report** (Ctrl+R): gearing table, chain/belt length, UCI ch
 stiffness and stress estimate, clearances. Tools ▸ **Auxiliary views**: top, rear and front views for stay,
 tire, chainring, heel and crown clearances; lean angle; steered toe overlap; stay true lengths.
 
+### Resolving issues
+
+When any clearance or geometry check fails, a **Resolve issues…** button appears above the Results list (also
+Tools ▸ **Resolve issues**). It lists every issue — tire/chainring/crank clearance, seat-stay and bridge
+clearance, fork crown and blade, steered toe overlap, heel clearance, seatpost insertion too shallow, top/down
+tube overlap on the head tube — and for each one offers several ways to address it (e.g. for a seat-tube/tire
+clash: lengthen the chainstays *or* fit a narrower tire). Each option shows the resulting clearance, its effect
+on the rest of the geometry (stack, reach, wheelbase, trail…), and any new problem it would introduce. The
+recommended option is preselected; choose another, or **Leave unchanged**, per issue. A live preview says how
+many issues would remain, and **Apply selected** makes all the chosen changes in one undo step.
+
 ## Output
 
 * File ▸ Export ▸ **Drawing (PDF/SVG/PNG)** or File ▸ **Print**: paper size, scale (auto or standard), border,

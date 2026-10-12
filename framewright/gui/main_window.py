@@ -247,7 +247,7 @@ class MainWindow(QtWidgets.QMainWindow):
         m.addAction("Fit advisor…", "Ctrl+Shift+F", self.fit_advisor)
         m.addAction("Miter templates…", "Ctrl+M", self.mitre_dialog)
         m.addAction("Auxiliary views (stays, crown, toe, lean)", self.show_aux)
-        m.addAction("Fix tire clearance…", self.fix_clearance)
+        m.addAction("Resolve issues…", self.fix_clearance)
         m.addAction("Analysis report…", "Ctrl+R", self.report_dialog)
         m.addAction("Gearing & chain/belt…", lambda: self.report_dialog("Gearing"))
         m.addAction("UCI check…", lambda: self.report_dialog("UCI"))
