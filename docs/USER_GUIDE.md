@@ -47,6 +47,11 @@ applies a whole set at once. The picker shows what it will change (current → n
 the source, and applies as a single undo step. Edit ▸ **Parts libraries** (Ctrl+L) is the full browser across
 all 5,300+ catalogued parts, and you can save your own items there.
 
+Parts you apply from the catalog are remembered per component and collected into a **Bill of materials** —
+shown in the Results report and exportable as CSV via File ▸ Export ▸ *Bill of materials CSV…*. It lists every
+frame tube and the fork with their computed specs (OD, butted wall, length, material), plus each assigned
+component with its catalogued name, brand and source.
+
 ### Direct manipulation
 Drag the blue handles: **saddle** (height; Shift = free move/custom seat angle), **handlebar** (stem length and
 spacers), **head tube top** (stack & reach), **rear axle** (chainstay & BB drop; Shift = length only),

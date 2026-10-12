@@ -148,14 +148,38 @@ class CatalogPicker(QtWidgets.QDialog):
             L.apply(tmp, it)
         return {k: v for k, v in tmp.values.items() if self.doc.design.values.get(k) != v}
 
+    def _bom_entry(self, it: L.LibraryItem) -> dict:
+        m = it.meta
+        src = ""
+        srcs = m.get("sources")
+        if isinstance(srcs, list) and srcs and isinstance(srcs[0], dict):
+            src = str(srcs[0].get("url") or srcs[0].get("publisher") or "")
+        return {k: v for k, v in {
+            "id": it.id, "name": it.name, "category": it.category, "brand": m.get("brand"),
+            "model": m.get("model"), "variant": m.get("variant"), "source": src,
+        }.items() if v}
+
     def use(self):
         it = self._selected()
         if it is None:
             return
         changes = self._preview_changes(it)
+        what = f"{TUBE_LABELS.get(self.tube_pos, self.tube_pos)}: " if self.tube_pos else ""
+        # record the assignment for the bill of materials, in the same undo step
+        bom = dict(self.doc.design.extras.get("bom") or {})
+        entry = self._bom_entry(it)
+        if self.tube_pos:
+            bom[self.tube_pos] = entry
+        elif self.category == "tubing":
+            for pos in L.item_tube_positions(it):      # a whole tube set
+                bom[pos] = entry
+        else:
+            bom[self.category] = entry
+        self.doc.undo.beginMacro(f"Use {what}{it.name}")
         if changes:
-            what = f"{TUBE_LABELS.get(self.tube_pos, self.tube_pos)}: " if self.tube_pos else ""
             self.doc.set_params(changes, f"Use {what}{it.name}")
+        self.doc.set_extra("bom", bom, "Assign catalog part")
+        self.doc.undo.endMacro()
         self.accept()
 
 

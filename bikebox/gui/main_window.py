@@ -173,6 +173,7 @@ class MainWindow(QtWidgets.QMainWindow):
         ex.addAction("Miter templates…", self.mitre_dialog)
         ex.addAction("Spec sheet CSV (this design)…", self.export_csv)
         ex.addAction("Spec sheet CSV (folder of designs)…", self.export_csv_folder)
+        ex.addAction("Bill of materials CSV…", self.export_bom)
         ex.addAction("Multi-model PDF…", self.export_multi_pdf)
         ex.addAction("Bulk export folder…", self.bulk_export)
         ex.addSeparator()
@@ -718,6 +719,16 @@ class MainWindow(QtWidgets.QMainWindow):
         fn = self._save_name("Export CSV", ".csv", "CSV (*.csv)")
         if fn:
             mod.export_csv([(self.doc().design.title, self.doc().design)], fn)
+            self.status.showMessage(f"Exported {fn}", 5000)
+
+    def export_bom(self):
+        if self.doc() is None:
+            return
+        from ..analysis import bom
+        fn = self._save_name("Export bill of materials", ".csv", "CSV (*.csv)")
+        if fn:
+            with open(fn, "w", encoding="utf-8", newline="") as fh:
+                fh.write(bom.to_csv(self.doc().design, self.doc().geometry))
             self.status.showMessage(f"Exported {fn}", 5000)
 
     def export_csv_folder(self):

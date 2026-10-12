@@ -251,10 +251,15 @@ def _fixture(g: Geometry) -> Section:
     return Section("Fixture", rows)
 
 
+def _bom(g: Geometry) -> Section:
+    from .bom import report_rows
+    return Section("Bill of materials", report_rows(g.design, g))
+
+
 _BUILDERS: list[tuple[str, Callable[[Geometry], Section]]] = [
     ("Key geometry", _geometry), ("Clearances & warnings", _clearances), ("Gearing", _gearing),
     ("Chain", _chain), ("Weight", _weight), ("UCI (road)", _uci), ("Structure (FEA estimate)", _structure),
-    ("Fixture", _fixture),
+    ("Fixture", _fixture), ("Bill of materials", _bom),
 ]
 
 
