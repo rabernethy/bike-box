@@ -64,7 +64,13 @@ jobs:
         run: |
           $ver = (python -c "import bikebox; print(bikebox.__version__)")
           choco install innosetup --no-progress -y
-          & "$Env:ProgramFiles(x86)\Inno Setup 6\ISCC.exe" /DAppVersion=$ver packaging\windows\bikebox.iss
+          $iscc = "${Env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe"
+          if (-not (Test-Path $iscc)) {
+            $iscc = (Get-ChildItem "C:\Program Files*\Inno Setup*\ISCC.exe" -Recurse -ErrorAction SilentlyContinue |
+                     Select-Object -First 1).FullName
+          }
+          if (-not $iscc) { throw "ISCC.exe (Inno Setup) not found" }
+          & $iscc /DAppVersion=$ver packaging\windows\bikebox.iss
           Compress-Archive -Path dist\BikeBox\* -DestinationPath "dist\BikeBox-windows-portable-$ver.zip"
 
       # ---- macOS: .dmg from the .app ------------------------------------------
