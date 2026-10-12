@@ -1,39 +1,18 @@
 # Bike Box
 
-Open-source, parametric bicycle frame design for Linux (and anywhere Python + Qt run).
-Geometry, rider fit, dimensioned drawings, full-scale miter templates, CNC G-code,
-analysis and 3-D export, built to cover the feature set of commercial frame-design tools.
+Open-source, bicycle frame design tool for Linux, MacOS, and Windows.
+Geometry, rider fit, spec. drawings, full-scale miter templates, CNC G-code,
+analysis and 3-D export.
 
 ![screenshot](docs/screenshot.png)
 
 See the [user guide](docs/USER_GUIDE.md) and the [feature parity table](docs/FEATURE_PARITY.md).
 
-## Run
-
-Requirements: Python ≥ 3.10, PyQt6 (or PySide6), numpy. Pillow is optional (GIF export).
-On Debian/Kali/Ubuntu everything is available from the distribution:
-
-```bash
-sudo apt install python3-pyqt6 python3-numpy python3-pil
-```
-
-From a checkout, no install needed:
-
-```bash
-./bin/bikebox                      # GUI
-./bin/bikebox design.bikebox           # open a design
-./bin/bikebox export design.bikebox drawing.pdf   # headless: .pdf .svg .png .dxf .csv
-./bin/bikebox info design.bikebox      # print key geometry
-```
-
-Or install it: `pip install .` (adds a `bikebox` command).
-Set `FRAMEWRIGHT_QT=pyside6` to use PySide6 instead of PyQt6.
-
 ## Features
 
 **Geometry**
 - Front end defined six ways: head tube length or stack or handlebar height (vertical) × reach,
-  front centre, effective top tube, wheelbase or handlebar reach (horizontal)
+  front center, effective top tube, wheelbase or handlebar reach (horizontal)
 - BB by drop or height; rear end by chainstay length or rear tire gap; seat tube c-t or c-c;
   top tube by angle or seat tube extension; BB offsets for seat and down tubes
 - Saddle by height + seat angle (effective seat angle independent of the seat tube) or X/Y
@@ -53,11 +32,11 @@ Set `FRAMEWRIGHT_QT=pyside6` to use PySide6 instead of PyQt6.
 - Parameter editors generated from one schema, searchable; full undo/redo; tabs for many designs
 - Dimension catalogue, dimension states, user dimensions (distance, horizontal, vertical, angle)
 - Measure tool, on-screen notes, photo underlay with two-point scale calibration
-- Compare designs as coloured overlays (open designs, files, snapshots); snapshot tool
-- Units: mm or inches; display modes: painted, outline, centre-line, blueprint
+- Compare designs as colored overlays (open designs, files, snapshots); snapshot tool
+- Units: mm or inches; display modes: painted, outline, center-line, blueprint
 
 **Fit** — rider anatomy from basic measurements, rider pose (knee/hip/torso/shoulder/elbow angles,
-KOPS), Fit Advisor with editable formula-based fitting schemes, centre of mass and weight distribution.
+KOPS), Fit Advisor with editable formula-based fitting schemes, center of mass and weight distribution.
 
 **Analysis** — trail, mechanical trail, wheel flop, standover, toe overlap (side view and steered 3-D),
 tire/chainring/heel/crown clearances, lean angle, gearing table, chain and belt length, UCI rule
@@ -81,8 +60,7 @@ opened, and a design can be saved as `.bcad` (core geometry) via Save As.
 
 ## Installers
 
-Pre-built apps for Windows, macOS and Linux are produced by the
-[build workflow](.github/workflows/build.yml) (GitHub Actions) and attached to tagged releases.
+Pre-built apps for Windows, macOS and Linux are attached to tagged releases.
 
 To build locally with [PyInstaller](https://pyinstaller.org):
 
