@@ -464,13 +464,22 @@ class MainWindow(QtWidgets.QMainWindow):
             return False
         start = str(Path(str(self.settings.value("files/last_dir", str(Path.home())))) /
                     (d.design.title.replace("/", "-") + FILE_SUFFIX))
-        fn, _ = QtWidgets.QFileDialog.getSaveFileName(self, "Save design", start, FILE_FILTER)
+        dlg = QtWidgets.QFileDialog(self, "Save design", start, FILE_FILTER)
+        dlg.setAcceptMode(QtWidgets.QFileDialog.AcceptMode.AcceptSave)
+        dlg.setDefaultSuffix(FILE_SUFFIX.lstrip("."))
+        # as the format filter changes, default to that format's extension
+        dlg.filterSelected.connect(
+            lambda f: dlg.setDefaultSuffix("bcad" if "bcad" in f.lower() else FILE_SUFFIX.lstrip(".")))
+        if not dlg.exec():
+            return False
+        fn = (dlg.selectedFiles() or [""])[0]
         if not fn:
             return False
-        if not fn.endswith(FILE_SUFFIX):
+        sel = dlg.selectedNameFilter()
+        if "bcad" not in sel.lower() and not fn.lower().endswith((".bcad", FILE_SUFFIX)):
             fn += FILE_SUFFIX
         try:
-            d.save(fn)
+            d.save(fn)                    # Design.save dispatches .bcad to the BikeCAD writer
         except OSError as exc:
             QtWidgets.QMessageBox.warning(self, "Save failed", str(exc))
             return False

@@ -50,6 +50,33 @@ def test_param_pages_build_for_every_group(window):
     assert len(panel.pages) == len(ordered_groups())
 
 
+def test_joints_page_not_empty_with_default_joint_style(window):
+    # the Joints page must show at least the joint-style selector even for the
+    # default TIG joint (regression: it was empty because every lug option is
+    # hidden and the selector lived on another page)
+    panel = window.params
+    panel.show_group("Joints")
+    page = panel.pages["Joints"]
+    assert window.doc().design["joint_style"] == "tig"
+    assert "joint_style" in page.rows
+    label, ed, _box = page.rows["joint_style"]
+    assert ed.isVisibleTo(page) and label.isVisibleTo(page)
+
+
+def test_extra_tube_paint_and_in_phase(window):
+    from framewright.gui import extra_tubes as XT
+    doc = window.doc()
+    XT.add_tubes(doc, [{"name": "lat", "a": {"tube": "st", "pos": 0.4}, "b": {"tube": "ht", "pos": 0.6},
+                        "od": 19, "wall": 0.9, "paint": "#2277cc", "parallel_to": "tt", "phase_anchor": "a"}])
+    g = doc.geometry
+    tt, x = g.tubes["tt"], g.tubes["x0_lat"]
+    td, xd = (tt.b - tt.a).norm(), (x.b - x.a).norm()
+    assert abs(td.x * xd.y - td.y * xd.x) < 1e-6          # parallel to the top tube
+    from framewright.render.bike_scene import build_scene
+    fills = [getattr(p.style, "fill", None) for p in build_scene(g).prims if getattr(p, "tag", "") == "tube:x0_lat"]
+    assert "#2277cc" in fills
+
+
 def test_drag_changes(window):
     from framewright.gui.canvas import drag_point_changes
     doc = window.doc()
@@ -175,6 +202,26 @@ def test_extra_tube_tool_and_presets(window, qapp):
     assert dlg.tube["od"] == 22.2 and dlg.tube["profile"] == "oval"
     XT.delete_tube(doc, 0)
     assert len([t for t in doc.geometry.tubes.values() if t.kind == "extra"]) == len(XT.PRESETS) - 1
+
+
+def test_dimension_tool_snaps_to_tubes(window):
+    # the measure/dimension tools snap to positions along tubes (incl. extra
+    # tubes), storing a {"tube","pos"} spec, not just named frame points
+    from framewright.gui import extra_tubes as XT
+    doc = window.doc()
+    XT.add_tubes(doc, [{"name": "lat", "a": "st_top", "b": "ht_top", "od": 19, "wall": 0.9}])
+    c = window.view().canvas
+    c.zoom = 3.0                                              # zoomed in: a realistic snap radius
+    g = doc.geometry
+    mid = (g.tubes["tt"].a + g.tubes["tt"].b) * 0.5          # a point on the top tube, not a named point
+    q, spec, _ = c._snap_spec(mid)
+    assert isinstance(spec, dict) and spec.get("tube") == "tt"
+    xmid = (g.tubes["x0_lat"].a + g.tubes["x0_lat"].b) * 0.5  # a point on the extra tube
+    _, xspec, _ = c._snap_spec(xmid)
+    assert isinstance(xspec, dict) and xspec.get("tube") == "x0_lat"
+    # a user dimension built from those specs resolves and follows the geometry
+    from framewright.geometry import dimensions as DIM
+    assert DIM.build_user(g, {"id": "u1", "kind": "aligned", "points": [spec, xspec], "offset": 30}) is not None
 
 
 def test_junction_handles_are_exact(window):

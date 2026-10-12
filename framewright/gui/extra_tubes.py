@@ -10,7 +10,7 @@ from __future__ import annotations
 import copy
 
 from ..model import params as P
-from ..qt import QtCore, QtWidgets
+from ..qt import QtCore, QtGui, QtWidgets
 
 from .document import Document
 
@@ -252,6 +252,33 @@ class ExtraTubeEditor(QtWidgets.QDialog):
         for val, label in P.MATERIALS:
             self.material.addItem(label, val)
         self.material.setCurrentIndex(max(0, self.material.findData(t.get("material", "frame"))))
+        # paint: a custom colour for just this tube
+        from .param_panel import ColorButton
+        self.paint_on = QtWidgets.QCheckBox("Paint this tube")
+        self.paint_on.setChecked(bool(t.get("paint")))
+        self.paint = ColorButton()
+        self.paint.set_color(str(t.get("paint") or doc.design.get("paint_frame", "#c8102e")))
+        self.paint.setEnabled(bool(t.get("paint")))
+        self.paint_on.toggled.connect(self.paint.setEnabled)
+        prow = QtWidgets.QHBoxLayout()
+        prow.addWidget(self.paint_on)
+        prow.addWidget(self.paint)
+        prow.addStretch(1)
+        # in phase: keep this tube parallel to another tube
+        self.parallel = QtWidgets.QComboBox()
+        self.parallel.addItem("Not aligned (free)", "")
+        for name, tb in g.tubes.items():
+            if name != own:
+                self.parallel.addItem(f"{tb.label} [{name}]", name)
+        self.parallel.setCurrentIndex(max(0, self.parallel.findData(t.get("parallel_to", "") or "")))
+        self.parallel.setToolTip("Keep this tube in phase (parallel) with the chosen tube as the geometry changes")
+        self.phase_anchor = QtWidgets.QComboBox()
+        for val, label in (("a", "holding the start"), ("b", "holding the end"), ("mid", "about the middle")):
+            self.phase_anchor.addItem(label, val)
+        self.phase_anchor.setCurrentIndex(max(0, self.phase_anchor.findData(t.get("phase_anchor", "a"))))
+        parow = QtWidgets.QHBoxLayout()
+        parow.addWidget(self.parallel, 1)
+        parow.addWidget(self.phase_anchor)
         self.mirrored = QtWidgets.QCheckBox("Pair (mirrored to both sides)")
         self.mirrored.setChecked(bool(t.get("mirrored", False)))
         self.za = spin(t.get("za", 0.0), -200, 200)
@@ -263,8 +290,12 @@ class ExtraTubeEditor(QtWidgets.QDialog):
         for label, w in (("Name", self.name), ("OD (side view)", self.od),
                          ("OD at start (taper)", self.od_end), ("Profile", self.profile), ("Width (top view)", self.od2),
                          ("Wall (ends)", self.wall), ("Wall (centre)", self.wall_mid), ("Butt length", self.butt),
-                         ("Bend", self.bend), ("Material", self.material), ("", self.mirrored),
-                         ("Lateral offset at start", self.za), ("Lateral offset at end", self.zb)):
+                         ("Bend", self.bend), ("Material", self.material)):
+            form.addRow(label, w)
+        form.addRow("Paint", prow)
+        form.addRow("In phase with", parow)
+        for label, w in (("", self.mirrored), ("Lateral offset at start", self.za),
+                         ("Lateral offset at end", self.zb)):
             form.addRow(label, w)
         bb = QtWidgets.QDialogButtonBox(QtWidgets.QDialogButtonBox.StandardButton.Ok |
                                         QtWidgets.QDialogButtonBox.StandardButton.Cancel)
@@ -279,7 +310,10 @@ class ExtraTubeEditor(QtWidgets.QDialog):
                           "od2": self.od2.value(), "wall": self.wall.value(), "wall_mid": self.wall_mid.value(),
                           "butt_length": self.butt.value(), "bend": self.bend.value(),
                           "material": self.material.currentData(), "mirrored": self.mirrored.isChecked(),
-                          "za": self.za.value(), "zb": self.zb.value()})
+                          "za": self.za.value(), "zb": self.zb.value(),
+                          "paint": self.paint._color if self.paint_on.isChecked() else "",
+                          "parallel_to": self.parallel.currentData() or "",
+                          "phase_anchor": self.phase_anchor.currentData()})
         super().accept()
 
 

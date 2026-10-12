@@ -163,6 +163,10 @@ class Design:
 
     def save(self, path: str | Path) -> None:
         path = Path(path)
+        if path.suffix.lower() == ".bcad":
+            from ..export.bcad_export import save_bcad
+            save_bcad(self, path)
+            return
         tmp = path.with_suffix(path.suffix + ".tmp")
         tmp.write_text(self.to_json(), encoding="utf-8")
         tmp.replace(path)

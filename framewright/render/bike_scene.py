@@ -275,6 +275,14 @@ class BikeSceneBuilder:
             return base
         if self.d["paint_per_tube"] and t.name in ("tt", "dt", "st", "cs", "ss", "ss_mono"):
             base = self.d["paint_ss" if t.name == "ss_mono" else f"paint_{t.name}"]
+        if t.name.startswith("x") and "_" in t.name:          # a painted extra tube
+            try:
+                idx = int(t.name[1:t.name.index("_")])
+            except ValueError:
+                idx = -1
+            ets = self.d.extras.get("extra_tubes") or []
+            if 0 <= idx < len(ets) and ets[idx].get("paint"):
+                return ets[idx]["paint"]                       # explicit colour, no fade
         fade = self.d["fade_style"]
         to = self.d["paint_fade_to"]
         pos = self.d.f("fade_position") / 100.0

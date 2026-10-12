@@ -363,8 +363,6 @@ _frame += [
 G = "Tubes"
 _tubes = [
     _choice("frame_material", "Frame material", G, "Material", "steel", MATERIALS),
-    _choice("joint_style", "Joint style", G, "Material", "tig",
-            (("tig", "TIG / welded"), ("fillet", "Fillet brazed"), ("lugged", "Lugged"), ("bonded", "Bonded / carbon"))),
 ]
 for key, name, od, wall_e, wall_m, butt in (
         ("tt", "Top tube", 28.6, 0.8, 0.5, 80),
@@ -568,6 +566,9 @@ _acc = [
 
 G = "Joints"
 _joints = [
+    _choice("joint_style", "Joint style", G, "Joint style", "tig",
+            (("tig", "TIG / welded"), ("fillet", "Fillet brazed"), ("lugged", "Lugged"), ("bonded", "Bonded / carbon")),
+            help="Lugged and fillet-brazed joints add the options below"),
     _mm("lug_socket_length", "Lug socket length", G, "Lugs", 32, 5, 100, vis=("joint_style", ("lugged",))),
     _mm("lug_point_length", "Lug point length", G, "Lugs", 18, 0, 80, vis=("joint_style", ("lugged",))),
     _mm("lug_wall", "Lug thickness", G, "Lugs", 1.2, 0.3, 5, 0.1, vis=("joint_style", ("lugged",))),

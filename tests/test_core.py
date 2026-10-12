@@ -314,3 +314,30 @@ def test_bcad_import_real_file():
     assert close(g.v["seat_tube_ct"], 515.2, 1e-6) and close(g.v["seat_tube_cc"], 466.0, 1e-6)
     assert close(d.f("crank_length"), 172.5) and close(g.v["saddle_height"], 718.0)
     assert d.extras["bcad_import"]["entries"] > 6000
+
+
+def test_bcad_export_round_trip(tmp_path):
+    """Writing a design to .bcad and reading it back reproduces the core geometry."""
+    from framewright.export.bcad_import import load_bcad
+    d = Design()
+    d.update({"title": "RT", "head_tube_angle": 71.5, "seat_tube_angle": 73.5, "chainstay_length": 425,
+              "fork_length": 398, "fork_offset": 47, "rear_tire_width": 35, "rear_tire_height": 33,
+              "front_tire_width": 35, "front_tire_height": 33, "paint_frame": "#2277cc"})
+    g0 = solve(d)
+    p = tmp_path / "out.bcad"
+    d.save(p)                                   # Design.save dispatches .bcad to the exporter
+    g1 = solve(load_bcad(p))
+    for k in ("stack", "reach", "head_tube_angle", "seat_tube_angle", "chainstay_length", "bb_drop",
+              "wheelbase", "front_center", "trail", "seat_tube_cc"):
+        assert close(g0.v[k], g1.v[k], 0.2), f"{k}: {g0.v[k]} vs {g1.v[k]}"
+    d2 = load_bcad(p)
+    assert d2.get("title") == "RT" and d2.get("paint_frame") == "#2277cc"
+
+
+def test_bcad_export_is_bikecad_readable(tmp_path):
+    from framewright.export.bcad_import import read_properties
+    d = Design()
+    p = tmp_path / "out.bcad"
+    d.save(p)
+    props = read_properties(p)                  # parses as a Java properties XML
+    assert "Head angle" in props and len(props) >= 20

@@ -173,6 +173,9 @@ def resolve(g: Geometry, spec) -> V:
     if isinstance(spec, dict):
         if "point" in spec:
             return g.p[spec["point"]] + V(float(spec.get("dx", 0)), float(spec.get("dy", 0)))
+        if "tube" in spec:                         # a position along a tube (incl. extra tubes)
+            from .solver import _resolve_point
+            return _resolve_point(g, spec)
         return V(float(spec["x"]), float(spec["y"]))
     return V(float(spec[0]), float(spec[1]))
 

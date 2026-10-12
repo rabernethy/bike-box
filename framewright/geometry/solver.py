@@ -618,6 +618,25 @@ def solve(d: Design) -> Geometry:
         except (KeyError, TypeError, ValueError):
             g.warn(f"Extra tube {et.get('name', i)}: unresolved end point")
             continue
+        # "in phase": keep this tube parallel to another tube (its side-view
+        # direction), holding the chosen end fixed and preserving its length
+        par = et.get("parallel_to")
+        if par:
+            ref = tubes.get(par)
+            rdir = (ref.b - ref.a) if ref is not None else None
+            if rdir is not None and rdir.length() > 1e-6:
+                rdir = rdir.norm()
+                length_ab = (b - a).length()
+                anchor = str(et.get("phase_anchor", "a"))
+                if anchor == "b":
+                    a = b - rdir * length_ab
+                elif anchor == "mid":
+                    mid = (a + b) * 0.5
+                    a, b = mid - rdir * (length_ab * 0.5), mid + rdir * (length_ab * 0.5)
+                else:
+                    b = a + rdir * length_ab
+            else:
+                g.warn(f"Extra tube {et.get('name', i)}: tube '{par}' to stay parallel to is not available")
         name = f"x{i}_" + str(et.get("name", f"tube{i}"))
         od = float(et.get("od", 25.4))
         od_end = float(et.get("od_end", 0.0) or od)              # optional taper toward the start

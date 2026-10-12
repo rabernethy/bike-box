@@ -190,7 +190,7 @@ class BikeCanvas(QtWidgets.QWidget):
         if self.tool in ("measure", "user_dim", "user_angle", "calibrate") and self._tool_pts:
             pen = QtGui.QPen(QtGui.QColor("#e0006e"), 1.4, Qt.PenStyle.DashLine)
             p.setPen(pen)
-            pts = self._tool_pts + [self._snap(self._mouse_model)[0]]
+            pts = self._tool_pts + [self._snap_spec(self._mouse_model)[0]]
             for a, b in zip(pts, pts[1:]):
                 p.drawLine(self.to_device(a), self.to_device(b))
             for a in pts:
@@ -203,13 +203,13 @@ class BikeCanvas(QtWidgets.QWidget):
                 p.setPen(QtGui.QColor("#e0006e"))
                 p.drawText(self.to_device(b) + QPointF(10, -10), txt)
         if self.tool != "select":
-            snap, name = self._snap(self._mouse_model)
-            if name:
+            snap, spec, label = self._snap_spec(self._mouse_model)
+            if isinstance(spec, str) or (isinstance(spec, dict) and "tube" in spec):
                 p.setPen(QtGui.QPen(QtGui.QColor("#00a060"), 1.5))
                 p.setBrush(Qt.BrushStyle.NoBrush)
                 c = self.to_device(snap)
                 p.drawRect(QtCore.QRectF(c.x() - 5, c.y() - 5, 10, 10))
-                p.drawText(c + QPointF(8, 14), name)
+                p.drawText(c + QPointF(8, 14), label)
 
     # -- hit testing -------------------------------------------------------------------
     def _extra_ends(self):
@@ -288,10 +288,11 @@ class BikeCanvas(QtWidgets.QWidget):
         p, name = self._snap(m)
         if name:
             return p, name, name
-        g = self._geom or self.doc.geometry
+        g = self.doc.geometry
         tol = 10 / self.zoom
         best = None
-        for tname in self.SNAP_TUBES:
+        candidates = list(self.SNAP_TUBES) + [n for n in g.tubes if n.startswith("x")]  # incl. extra tubes
+        for tname in candidates:
             tb = g.tubes.get(tname)
             if tb is None:
                 continue
@@ -317,7 +318,7 @@ class BikeCanvas(QtWidgets.QWidget):
         return m, {"x": round(m.x, 1), "y": round(m.y, 1)}, f"{m.x:.0f}, {m.y:.0f}"
 
     def _hit_extra_tube(self, pos: QPointF) -> str | None:
-        g = self._geom or self.doc.geometry
+        g = self.doc.geometry
         m = self.to_model(pos)
         from ..geometry.vec import point_segment_distance
         for name, tb in g.tubes.items():
@@ -330,7 +331,7 @@ class BikeCanvas(QtWidgets.QWidget):
         return None
 
     def _snap(self, m: V) -> tuple[V, str | None]:
-        g = self._geom or self.doc.geometry
+        g = self.doc.geometry
         best, bn, bd = m, None, 12 / self.zoom
         for name, q in g.p.items():
             d = q.dist(m)
@@ -552,8 +553,8 @@ class BikeCanvas(QtWidgets.QWidget):
         self.update()
 
     def _tool_click(self, m: V, e) -> None:
-        snap, name = self._snap(m)
-        pt_spec = name if name else {"x": round(m.x, 1), "y": round(m.y, 1)}
+        # snap to frame points, positions along tubes (incl. extra tubes), or free X/Y
+        snap, pt_spec, _label = self._snap_spec(m)
         doc = self.doc
         if self.tool == "note":
             text, ok = QtWidgets.QInputDialog.getMultiLineText(self, "Add note", "Note text:")

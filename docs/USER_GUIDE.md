@@ -45,7 +45,9 @@ Double-click a dimension to type a value; FrameWright switches the front-end mod
 
 ### Special frames
 * **Step-through, mixte, cargo, braces**: Frame ▸ Advanced ▸ *Remove tubes*, and Edit ▸ *Extra tubes* with end
-  points such as `ht_bottom`, `st@0.25`, `rear_axle`, `ht_bottom+0,-40` or `-200,150`.
+  points such as `ht_bottom`, `st@0.25`, `rear_axle`, `ht_bottom+0,-40` or `-200,150`. Each extra tube can be
+  **painted its own colour** (Paint ▸ *Paint this tube*) and kept **in phase (parallel)** with another tube
+  (*In phase with*), so a lateral or twin tube stays parallel as you change the geometry.
 * **Tandem**: Frame ▸ Tandem ▸ *Frame type = Tandem*. The captain's front triangle uses the normal inputs;
   set the BB-to-BB distance, stoker seat tube, stoker top tube, mid/lateral tubes, stoker saddle and bars.
 * **E-bikes / gearboxes**: Frame ▸ Drive unit: housing size/position, battery on or in the down tube or on a rack.
@@ -53,7 +55,8 @@ Double-click a dimension to type a value; FrameWright switches the front-end mod
 ## Dimensions, notes, comparison
 
 * View ▸ **Dimensions** (Ctrl+D): pick from the catalogue, save/restore **dimension states**, manage user dimensions.
-* Toolbar: **Measure** (M), **user dimension** (D), **angle dimension**, **note** (N). Points snap to frame points.
+* Toolbar: **Measure** (M), **user dimension** (D), **angle dimension**, **note** (N). Points snap to frame
+  points and to positions along any tube, including extra tubes, so a dimension follows the geometry.
 * View ▸ **Compare designs** (Ctrl+K) overlays other open designs, files or snapshots as coloured ghosts.
 * Edit ▸ **Snapshots** saves the current state, shows differences, overlays or restores it.
 * View ▸ **Photo underlay**: import a photo (or drop it on the window), then Tools ▸ *Calibrate photo* and
@@ -97,6 +100,8 @@ many issues would remain, and **Apply selected** makes all the chosen changes in
 * **DXF** (full size, mm, layers), **SVG** of the bike, **spec CSV** (one design or a whole folder),
   **multi-model PDF** of all open designs, **bulk export** of a folder, **animated GIF** morph from another
   design or snapshot.
+* **BikeCAD** (`.bcad`): File ▸ Save As and choose the *BikeCAD designs* format — the filename defaults to
+  `.bcad` and the core geometry is written as a BikeCAD-readable file (import it back, or open it in BikeCAD).
 * Headless: `framewright export design.fwd out.pdf` (also .svg .png .dxf .csv).
 
 ## Customising
