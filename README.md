@@ -76,7 +76,24 @@ tubing library and standard parts libraries (forks, stems, bars, wheels/tires, B
 ## Files
 
 Designs are JSON (`.bikebox`): parameter values by key plus structured extras (notes, user dimensions,
-snapshots, extra tubes, title block, tables). Unknown keys survive round trips.
+snapshots, extra tubes, title block, tables). Unknown keys survive round trips. BikeCAD `.bcad` files can be
+opened, and a design can be saved as `.bcad` (core geometry) via Save As.
+
+## Installers
+
+Pre-built apps for Windows, macOS and Linux are produced by the
+[build workflow](.github/workflows/build.yml) (GitHub Actions) and attached to tagged releases.
+
+To build locally with [PyInstaller](https://pyinstaller.org):
+
+```bash
+pip install . pyinstaller pillow
+python packaging/pyinstaller/make_icons.py          # optional app icons
+pyinstaller --noconfirm packaging/pyinstaller/bikebox.spec
+```
+
+The one-folder app lands in `dist/BikeBox/` (`BikeBox.app` on macOS). The Windows installer is built from
+`packaging/windows/bikebox.iss` with Inno Setup.
 
 ## Development
 

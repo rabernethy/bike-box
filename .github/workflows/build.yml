@@ -1,0 +1,99 @@
+name: Build installers
+
+# Builds the Bike Box desktop app for Windows, macOS and Linux with PyInstaller.
+# Runs on demand and on version tags; tagged builds are attached to a GitHub Release.
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write        # needed to create releases on tags
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            name: windows
+          - os: macos-latest
+            name: macos
+          - os: ubuntu-latest
+            name: linux
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install . pyinstaller pillow
+
+      - name: Run tests
+        env:
+          QT_QPA_PLATFORM: offscreen
+        run: |
+          pip install pytest
+          python -m pytest -q
+
+      - name: Generate icons
+        run: python packaging/pyinstaller/make_icons.py
+
+      - name: Build app (PyInstaller)
+        run: pyinstaller --noconfirm packaging/pyinstaller/bikebox.spec
+
+      # ---- Windows: Inno Setup installer + a portable zip ----------------------
+      - name: Windows installer (Inno Setup)
+        if: matrix.name == 'windows'
+        shell: pwsh
+        run: |
+          $ver = (python -c "import bikebox; print(bikebox.__version__)")
+          choco install innosetup --no-progress -y
+          & "$Env:ProgramFiles(x86)\Inno Setup 6\ISCC.exe" /DAppVersion=$ver packaging\windows\bikebox.iss
+          Compress-Archive -Path dist\BikeBox\* -DestinationPath "dist\BikeBox-windows-portable-$ver.zip"
+
+      # ---- macOS: .dmg from the .app ------------------------------------------
+      - name: macOS disk image
+        if: matrix.name == 'macos'
+        run: |
+          ver=$(python -c "import bikebox; print(bikebox.__version__)")
+          mkdir -p dist/dmg
+          cp -R "dist/BikeBox.app" dist/dmg/
+          ln -s /Applications dist/dmg/Applications
+          hdiutil create -volname "Bike Box" -srcfolder dist/dmg -ov -format UDZO \
+            "dist/BikeBox-macos-$ver.dmg"
+
+      # ---- Linux: tarball of the one-folder build ------------------------------
+      - name: Linux tarball
+        if: matrix.name == 'linux'
+        run: |
+          ver=$(python -c "import bikebox; print(bikebox.__version__)")
+          tar -C dist -czf "dist/BikeBox-linux-$ver.tar.gz" BikeBox
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bikebox-${{ matrix.name }}
+          path: |
+            dist/*.dmg
+            dist/*.zip
+            dist/*.tar.gz
+            dist/installer/*.exe
+          if-no-files-found: ignore
+
+      - name: Attach to release (tags only)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.dmg
+            dist/*.zip
+            dist/*.tar.gz
+            dist/installer/*.exe
