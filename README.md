@@ -6,7 +6,7 @@ analysis and 3-D export.
 
 ![screenshot](docs/screenshot.png)
 
-See the [user guide](docs/USER_GUIDE.md) and the [feature parity table](docs/FEATURE_PARITY.md).
+See the [user guide](docs/USER_GUIDE.md).
 
 ## Features
 
