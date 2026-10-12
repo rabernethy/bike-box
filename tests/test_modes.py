@@ -1,11 +1,11 @@
 """Switching between equivalent measurement modes must not change the geometry."""
 import pytest
 
-from framewright.geometry.modes import RULES, mode_switch_values
-from framewright.geometry.solver import solve
-from framewright.model import params as P
-from framewright.model.design import Design
-from framewright.model.templates import load_template
+from bikebox.geometry.modes import RULES, mode_switch_values
+from bikebox.geometry.solver import solve
+from bikebox.model import params as P
+from bikebox.model.design import Design
+from bikebox.model.templates import load_template
 
 POINTS = ("rear_axle", "front_axle", "ht_top", "ht_bottom", "tt_st", "tt_ht", "st_top", "saddle", "bar", "hoods",
           "stem_clamp", "ss_top")
@@ -61,7 +61,7 @@ def test_round_trip_through_every_front_end_mode():
 
 
 def test_document_mode_switch_is_one_undo_step(qapp):
-    from framewright.gui.document import Document
+    from bikebox.gui.document import Document
     doc = Document(Design())
     bb0 = doc.geometry.v["bb_height"]
     doc.set_param("bb_mode", "height")

@@ -1,16 +1,16 @@
-"""Convert a framebuilder parts database into FrameWright library files.
+"""Convert a framebuilder parts database into Bike Box library files.
 
 Reads the ``parts.json`` of a framebuilder parts database (a JSON document
 ``{"meta": {...}, "parts": [...]}`` whose parts carry ``category``,
 ``subcategory``, ``vendor``, ``name``, ``material``, ``alloy`` and ``specs``)
 and writes:
 
-* ``framewright/data/libraries/tubing.json``   - one item per tube set
-* ``framewright/data/libraries/dropouts.json`` - rear dropouts and fork ends
+* ``bikebox/data/libraries/tubing.json``   - one item per tube set
+* ``bikebox/data/libraries/dropouts.json`` - rear dropouts and fork ends
 
 Only names and numeric/short specifications are copied; long descriptions,
 notes, prices, images and URLs are left out.  Tube walls keep the database's
-butting strings (``"0.9/0.6/0.9"``) - :func:`framewright.model.library.apply`
+butting strings (``"0.9/0.6/0.9"``) - :func:`bikebox.model.library.apply`
 turns them into ``*_wall_end`` / ``*_wall_mid`` when an item is applied.
 
 Usage::
@@ -18,7 +18,7 @@ Usage::
     /usr/bin/python3 tools/import_parts_db.py [path/to/parts.json] [--out DIR]
 
 The default source is ``../framebuilder-parts-db/data/parts.json`` next to the
-FrameWright checkout (override with ``$FRAMEBUILDER_PARTS_DB``).
+Bike Box checkout (override with ``$FRAMEBUILDER_PARTS_DB``).
 """
 from __future__ import annotations
 
@@ -30,13 +30,13 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "framewright" / "data" / "libraries"
+OUT_DIR = ROOT / "bikebox" / "data" / "libraries"
 DEFAULT_SOURCE = ROOT.parent / "framebuilder-parts-db" / "data" / "parts.json"
 
-FORMAT = "framewright-library"
+FORMAT = "bikebox-library"
 VERSION = 1
 
-# database tube names -> FrameWright tube keys (see model/library.py)
+# database tube names -> Bike Box tube keys (see model/library.py)
 TUBE_KEYS = {
     "top_tube": "tt", "down_tube": "dt", "seat_tube": "st", "head_tube": "ht",
     "chain_stay": "cs", "chainstay": "cs", "seat_stay": "ss", "seatstay": "ss",
@@ -207,7 +207,7 @@ def write_json(path: Path, doc: dict) -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="Convert a framebuilder parts database to FrameWright libraries")
+    ap = argparse.ArgumentParser(description="Convert a framebuilder parts database to Bike Box libraries")
     ap.add_argument("source", nargs="?", type=Path,
                     default=Path(os.environ.get("FRAMEBUILDER_PARTS_DB", DEFAULT_SOURCE)))
     ap.add_argument("--out", type=Path, default=OUT_DIR)

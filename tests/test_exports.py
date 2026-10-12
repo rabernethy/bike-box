@@ -11,8 +11,8 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from framewright.model.design import Design
-from framewright.geometry.solver import solve
+from bikebox.model.design import Design
+from bikebox.geometry.solver import solve
 
 
 # --------------------------------------------------------------------------
@@ -29,7 +29,7 @@ def _design(**vals) -> Design:
 # drawing sheets: PDF / SVG / PNG / scale
 # --------------------------------------------------------------------------
 def test_pdf_starts_with_magic_and_one_page(qapp, tmp_path):
-    from framewright.export import drawing as D
+    from bikebox.export import drawing as D
     d = _design(title="Road", designer="RD")
     path = D.save_pdf(d, tmp_path / "sheet.pdf")
     raw = Path(path).read_bytes()
@@ -39,7 +39,7 @@ def test_pdf_starts_with_magic_and_one_page(qapp, tmp_path):
 
 
 def test_multi_pdf_page_count(qapp, tmp_path):
-    from framewright.export.multi_pdf import save_multi_pdf
+    from bikebox.export.multi_pdf import save_multi_pdf
     designs = [_design(title=f"D{i}", reach=380 + 10 * i) for i in range(3)]
     path = save_multi_pdf(designs, tmp_path / "multi.pdf", overlay_page=True)
     raw = Path(path).read_bytes()
@@ -54,7 +54,7 @@ def test_multi_pdf_page_count(qapp, tmp_path):
 
 def test_sheet_svg_parses(qapp, tmp_path):
     import defusedxml.ElementTree as ET
-    from framewright.export import drawing as D
+    from bikebox.export import drawing as D
     path = D.save_sheet_svg(_design(title="SVG"), tmp_path / "sheet.svg")
     root = ET.parse(str(path)).getroot()
     assert root.tag.endswith("svg")
@@ -62,8 +62,8 @@ def test_sheet_svg_parses(qapp, tmp_path):
 
 
 def test_sheet_png_dimensions(qapp, tmp_path):
-    from framewright.export import drawing as D
-    from framewright.qt import QtGui
+    from bikebox.export import drawing as D
+    from bikebox.qt import QtGui
     opts = D.SheetOptions(page="A4", dpi=100)
     path = D.save_sheet_png(_design(), tmp_path / "sheet.png", opts, dpi=100)
     img = QtGui.QImage(str(path))
@@ -73,7 +73,7 @@ def test_sheet_png_dimensions(qapp, tmp_path):
 
 
 def test_scale_auto_selection_fits(qapp):
-    from framewright.export import drawing as D
+    from bikebox.export import drawing as D
     d = _design()
     for page in ("A4", "A3", "A2", "Letter"):
         opts = D.SheetOptions(page=page)
@@ -89,20 +89,20 @@ def test_scale_auto_selection_fits(qapp):
 
 
 def test_scale_explicit_and_label():
-    from framewright.export import drawing as D
+    from bikebox.export import drawing as D
     assert D.scale_label(0.1) == "1:10"
     assert D.scale_label(0.4) == "1:2.5"
     assert D.scale_label(1.0) == "1:1"
 
 
 def test_explicit_scale_honoured(qapp):
-    from framewright.export import drawing as D
+    from bikebox.export import drawing as D
     sheet = D.build_sheet(_design(), opts=D.SheetOptions(page="A0", scale=0.2))
     assert abs(sheet.scale - 0.2) < 1e-9
 
 
 def test_geometry_and_tube_tables(qapp):
-    from framewright.export import drawing as D
+    from bikebox.export import drawing as D
     g = solve(_design())
     gt = D.geometry_table(g, "mm")
     assert gt[0][0] == "Dimension"
@@ -120,7 +120,7 @@ def test_geometry_and_tube_tables(qapp):
 # --------------------------------------------------------------------------
 def test_csv_record_driving_vs_driven():
     d = _design(title="Rec", reach=395)
-    rec = __import__("framewright.export.csv_export", fromlist=["design_record"]).design_record(d)
+    rec = __import__("bikebox.export.csv_export", fromlist=["design_record"]).design_record(d)
     assert rec["title"] == "Rec"
     assert "reach" in rec                        # driving (input) column
     assert "calc:stack" in rec                   # driven (computed) column, prefixed
@@ -128,7 +128,7 @@ def test_csv_record_driving_vs_driven():
 
 
 def test_csv_roundtrip_and_union_columns(tmp_path):
-    from framewright.export import csv_export as C
+    from bikebox.export import csv_export as C
     a = _design(title="A")
     b = _design(title="B")
     b.set("some_future_param", "xyz")            # unknown key -> not a column
@@ -148,7 +148,7 @@ def test_csv_roundtrip_and_union_columns(tmp_path):
 
 
 def test_csv_union_across_differing_columns(tmp_path):
-    from framewright.export import csv_export as C
+    from bikebox.export import csv_export as C
     a = _design(title="A")
     b = _design(title="B")
     path = C.export_csv([("a", a), ("b", b)], tmp_path / "u.csv")
@@ -158,10 +158,10 @@ def test_csv_union_across_differing_columns(tmp_path):
 
 
 def test_export_folder_csv(tmp_path):
-    from framewright.export import csv_export as C
+    from bikebox.export import csv_export as C
     (tmp_path / "x").mkdir()
-    _design(title="One").save(tmp_path / "x" / "one.fwd")
-    _design(title="Two").save(tmp_path / "x" / "two.fwd")
+    _design(title="One").save(tmp_path / "x" / "one.bikebox")
+    _design(title="Two").save(tmp_path / "x" / "two.bikebox")
     path = C.export_folder_csv(tmp_path / "x", tmp_path / "folder.csv")
     rows = C.read_csv_table(path)
     assert len(rows) == 3
@@ -173,7 +173,7 @@ def test_export_folder_csv(tmp_path):
 # FreeCAD macro (stub execution)
 # --------------------------------------------------------------------------
 def test_freecad_macro_compiles_and_runs_against_stubs(qapp):
-    from framewright.export import freecad as F
+    from bikebox.export import freecad as F
     g = solve(_design())
     macro = F.freecad_macro(g, mitre=True)
     code = compile(macro, "<macro>", "exec")    # must be valid Python
@@ -200,7 +200,7 @@ def test_freecad_macro_compiles_and_runs_against_stubs(qapp):
 
 
 def test_freecad_macro_saved(qapp, tmp_path):
-    from framewright.export import freecad as F
+    from bikebox.export import freecad as F
     path = F.save_freecad_macro(solve(_design()), tmp_path / "frame.FCMacro")
     text = Path(path).read_text()
     assert "import FreeCAD" in text and "Part" in text
@@ -211,7 +211,7 @@ def test_freecad_macro_saved(qapp, tmp_path):
 # STL
 # --------------------------------------------------------------------------
 def test_stl_binary_format(tmp_path):
-    from framewright.export import stl as S
+    from bikebox.export import stl as S
     g = solve(_design())
     tris = S.frame_mesh(g, segments=16)
     assert len(tris) > 0
@@ -223,7 +223,7 @@ def test_stl_binary_format(tmp_path):
 
 
 def test_stl_mesh_bounds_match_frame(tmp_path):
-    from framewright.export import stl as S
+    from bikebox.export import stl as S
     g = solve(_design())
     tris = S.frame_mesh(g, segments=24)
     (minx, miny, minz), (maxx, maxy, maxz) = S.mesh_bounds(tris)
@@ -238,11 +238,11 @@ def test_stl_mesh_bounds_match_frame(tmp_path):
 
 
 def test_stl_ascii(tmp_path):
-    from framewright.export import stl as S
+    from bikebox.export import stl as S
     g = solve(_design())
     path = S.save_stl(g, tmp_path / "frame_ascii.stl", binary=False, segments=8)
     text = Path(path).read_text()
-    assert text.startswith("solid ") and text.strip().endswith("endsolid framewright")
+    assert text.startswith("solid ") and text.strip().endswith("endsolid bikebox")
     assert "facet normal" in text and "vertex" in text
 
 
@@ -250,7 +250,7 @@ def test_stl_ascii(tmp_path):
 # GIF morph
 # --------------------------------------------------------------------------
 def test_morph_frames_endpoints():
-    from framewright.export.gif import morph_frames
+    from bikebox.export.gif import morph_frames
     a = _design(reach=370)
     b = _design(reach=410)
     frames = morph_frames(a, b, 5)
@@ -262,7 +262,7 @@ def test_morph_frames_endpoints():
 
 def test_gif_frame_count(qapp, tmp_path):
     from PIL import Image
-    from framewright.export.gif import save_morph_gif
+    from bikebox.export.gif import save_morph_gif
     a = _design(title="S", reach=370, front_v_mode="stack", stack=560)
     b = _design(title="B", reach=410, front_v_mode="stack", stack=600)
     n = save_morph_gif(a, b, tmp_path / "m.gif", frames=6, size=(240, 160), pingpong=False)
@@ -272,7 +272,7 @@ def test_gif_frame_count(qapp, tmp_path):
 
 def test_gif_pingpong_frame_count(qapp, tmp_path):
     from PIL import Image
-    from framewright.export.gif import save_morph_gif
+    from bikebox.export.gif import save_morph_gif
     a = _design(reach=370, front_v_mode="stack", stack=560)
     b = _design(reach=410, front_v_mode="stack", stack=600)
     n = save_morph_gif(a, b, tmp_path / "pp.gif", frames=6, size=(240, 160), pingpong=True)
@@ -284,13 +284,13 @@ def test_gif_pingpong_frame_count(qapp, tmp_path):
 # bulk
 # --------------------------------------------------------------------------
 def test_bulk_export(qapp, tmp_path):
-    from framewright.export.bulk import bulk_export
+    from bikebox.export.bulk import bulk_export
     src = tmp_path / "src"
     src.mkdir()
-    _design(title="One").save(src / "one.fwd")
-    _design(title="Two", reach=405).save(src / "two.fwd")
+    _design(title="One").save(src / "one.bikebox")
+    _design(title="Two", reach=405).save(src / "two.bikebox")
     out = tmp_path / "out"
-    written = bulk_export(sorted(src.glob("*.fwd")), out, formats=("pdf", "svg", "dxf", "csv"))
+    written = bulk_export(sorted(src.glob("*.bikebox")), out, formats=("pdf", "svg", "dxf", "csv"))
     exts = {Path(w).suffix for w in written}
     assert {".pdf", ".svg", ".dxf", ".csv"} <= exts
     # one combined CSV, one of each per-design format
@@ -309,8 +309,8 @@ def _mediaboxes(path):
 @pytest.mark.parametrize("page,landscape", [("A3", True), ("A4", False), ("Letter", True)])
 def test_pdf_page_orientation(qapp, tmp_path, page, landscape):
     """Regression: landscape sheets must not be rotated twice onto a portrait page."""
-    from framewright.export.drawing import PAGE_SIZES, SheetOptions, save_pdf
-    from framewright.model.design import Design
+    from bikebox.export.drawing import PAGE_SIZES, SheetOptions, save_pdf
+    from bikebox.model.design import Design
     p = tmp_path / "o.pdf"
     save_pdf(Design(), p, SheetOptions(page=page, landscape=landscape))
     (w, h), = _mediaboxes(p)

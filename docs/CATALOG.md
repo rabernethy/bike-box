@@ -1,7 +1,7 @@
-# FrameWright parts catalog — schema and accuracy rules
+# Bike Box parts catalog — schema and accuracy rules
 
 The catalog is real, branded components and framebuilding parts with **sourced** specifications.
-Files live in `framewright/data/catalog/<category>.json` and load through `framewright.model.library`
+Files live in `bikebox/data/catalog/<category>.json` and load through `bikebox.model.library`
 alongside the generic libraries (same category names), so every item can be applied to a design.
 
 ## File format
@@ -10,7 +10,7 @@ Illustrative example (not a real product):
 
 ```json
 {
-  "format": "framewright-library",
+  "format": "bikebox-library",
   "version": 1,
   "category": "forks",
   "label": "Forks",
@@ -44,7 +44,7 @@ Illustrative example (not a real product):
 
 * `id` — lowercase slug `brand-model-variant`, unique within the file.
 * `name` — brand + model + the distinguishing variant (size, length, travel, offset ...).
-* `values` — **only FrameWright parameter keys** listed for the category below (or the `tubes`/`material`
+* `values` — **only Bike Box parameter keys** listed for the category below (or the `tubes`/`material`
   shorthands for tubing). These are what "Apply to design" sets. Omit anything not sourced.
 * `meta.specs` — the manufacturer's numbers in plain units, with the unit in the key (`_mm`, `_g`, `_deg`).
   Text fields (standards, materials) are fine. Record what the source says; do not convert ambiguous figures.
@@ -67,7 +67,7 @@ Illustrative example (not a real product):
 6. Quality over volume — but be broad: cover current mainstream products, popular framebuilder choices and
    notable classic/discontinued parts.
 
-## FrameWright parameter keys per category
+## Bike Box parameter keys per category
 
 | Category (`category`) | Allowed `values` keys |
 |---|---|

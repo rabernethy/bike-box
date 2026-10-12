@@ -5,12 +5,12 @@ from pathlib import Path
 
 import pytest
 
-from framewright.geometry import clearance as C
-from framewright.geometry.solver import solve
-from framewright.geometry.vec import V3
-from framewright.model.design import Design
-from framewright.render import aux_views as AV
-from framewright.render.scene import AngleDim, LinearDim, Text
+from bikebox.geometry import clearance as C
+from bikebox.geometry.solver import solve
+from bikebox.geometry.vec import V3
+from bikebox.model.design import Design
+from bikebox.render import aux_views as AV
+from bikebox.render.scene import AngleDim, LinearDim, Text
 
 MTB = dict(rear_bsd=622, front_bsd=622, rear_tire_width=60, rear_tire_height=58, front_tire_width=60,
            front_tire_height=58, rear_hub_spacing=148, front_hub_spacing=110, bb_shell_width=73,
@@ -203,7 +203,7 @@ def test_toe_view_marks_the_contact():
 
 @pytest.mark.parametrize("variant", ["default", "mtb"])
 def test_views_render_to_png(qapp, tmp_path, variant):
-    from framewright.render.qt_render import render_image
+    from bikebox.render.qt_render import render_image
     g = solve(Design(VARIANTS[variant]))
     for i, (title, fn) in enumerate(AV.AUX_VIEWS):
         img = render_image(fn(g), 800, 600)
@@ -217,7 +217,7 @@ def test_views_render_to_png(qapp, tmp_path, variant):
 
 
 def test_modules_do_not_import_qt():
-    code = ("import sys; import framewright.geometry.clearance, framewright.render.aux_views; "
+    code = ("import sys; import bikebox.geometry.clearance, bikebox.render.aux_views; "
             "bad = [m for m in sys.modules if m.startswith(('PyQt', 'PySide'))]; "
             "sys.exit(1 if bad else 0)")
     root = Path(__file__).resolve().parents[1]

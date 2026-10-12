@@ -1,10 +1,10 @@
 import pytest
 
-from framewright.geometry.solver import solve
-from framewright.model import library as L
-from framewright.model import params as P
-from framewright.model import templates as T
-from framewright.model.design import Design
+from bikebox.geometry.solver import solve
+from bikebox.model import library as L
+from bikebox.model import params as P
+from bikebox.model import templates as T
+from bikebox.model.design import Design
 
 BUILTINS = [t for t in T.list_templates() if t.builtin]
 EXPECTED_SLUGS = {
@@ -19,7 +19,7 @@ def config_home(tmp_path, monkeypatch):
     monkeypatch.delenv("FRAMEWRIGHT_CONFIG_DIR", raising=False)
     monkeypatch.setenv("HOME", str(tmp_path))
     monkeypatch.setenv("XDG_CONFIG_HOME", str(tmp_path / ".config"))
-    return tmp_path / ".config" / "framewright"
+    return tmp_path / ".config" / "bikebox"
 
 
 # --------------------------------------------------------------------------
@@ -64,7 +64,7 @@ CATEGORY_CHECKS = {
 
 @pytest.mark.parametrize("info", BUILTINS, ids=lambda t: t.slug)
 def test_template_loads_solves_and_is_plausible(info, qapp):
-    from framewright.render.bike_scene import build_scene
+    from bikebox.render.bike_scene import build_scene
 
     d = T.load_template(info.slug)
     assert d.extras["meta"]["template"] == info.slug
@@ -258,7 +258,7 @@ def test_user_item_overrides_builtin_with_same_id(config_home):
     builtin = L.items("cranks")[0]
     path = config_home / "libraries" / "override.json"
     path.parent.mkdir(parents=True)
-    path.write_text('{"format": "framewright-library", "version": 1, "category": "cranks", "items": '
+    path.write_text('{"format": "bikebox-library", "version": 1, "category": "cranks", "items": '
                     '[{"id": "%s", "name": "Override", "values": {"crank_length": 171}}]}' % builtin.id)
     items = L.items("cranks")
     assert items[0].name == "Override" and items[0].user
@@ -268,6 +268,6 @@ def test_user_item_overrides_builtin_with_same_id(config_home):
 
 @pytest.mark.parametrize("info", BUILTINS, ids=lambda t: t.slug)
 def test_template_has_no_3d_clearance_problems(info):
-    from framewright.geometry import clearance as C
+    from bikebox.geometry import clearance as C
     g = solve(T.load_template(info.slug))
     assert C.problems(g) == []

@@ -1,4 +1,4 @@
-# FrameWright
+# Bike Box
 
 Open-source, parametric bicycle frame design for Linux (and anywhere Python + Qt run).
 Geometry, rider fit, dimensioned drawings, full-scale miter templates, CNC G-code,
@@ -20,13 +20,13 @@ sudo apt install python3-pyqt6 python3-numpy python3-pil
 From a checkout, no install needed:
 
 ```bash
-./bin/framewright                      # GUI
-./bin/framewright design.fwd           # open a design
-./bin/framewright export design.fwd drawing.pdf   # headless: .pdf .svg .png .dxf .csv
-./bin/framewright info design.fwd      # print key geometry
+./bin/bikebox                      # GUI
+./bin/bikebox design.bikebox           # open a design
+./bin/bikebox export design.bikebox drawing.pdf   # headless: .pdf .svg .png .dxf .csv
+./bin/bikebox info design.bikebox      # print key geometry
 ```
 
-Or install it: `pip install .` (adds a `framewright` command).
+Or install it: `pip install .` (adds a `bikebox` command).
 Set `FRAMEWRIGHT_QT=pyside6` to use PySide6 instead of PyQt6.
 
 ## Features
@@ -75,7 +75,7 @@ tubing library and standard parts libraries (forks, stems, bars, wheels/tires, B
 
 ## Files
 
-Designs are JSON (`.fwd`): parameter values by key plus structured extras (notes, user dimensions,
+Designs are JSON (`.bikebox`): parameter values by key plus structured extras (notes, user dimensions,
 snapshots, extra tubes, title block, tables). Unknown keys survive round trips.
 
 ## Development
@@ -85,7 +85,7 @@ QT_QPA_PLATFORM=offscreen python3 -m pytest -q
 ```
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). New features usually start by registering
-parameters (`framewright.model.params.register`) — the GUI, file format and CSV pick them up
+parameters (`bikebox.model.params.register`) — the GUI, file format and CSV pick them up
 automatically.
 
 ## License

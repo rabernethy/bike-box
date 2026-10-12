@@ -10,18 +10,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 @pytest.fixture(scope="session")
 def qapp():
-    from framewright.qt import QtWidgets
+    from bikebox.qt import QtWidgets
     app = QtWidgets.QApplication.instance() or QtWidgets.QApplication([])
     yield app
 
 
 @pytest.fixture
 def design():
-    from framewright.model.design import Design
+    from bikebox.model.design import Design
     return Design()
 
 
 @pytest.fixture
 def geometry(design):
-    from framewright.geometry.solver import solve
+    from bikebox.geometry.solver import solve
     return solve(design)

@@ -1,10 +1,10 @@
-"""Generate the built-in design templates (``framewright/data/templates/*.fwd``).
+"""Generate the built-in design templates (``bikebox/data/templates/*.bikebox``).
 
 Each template is a complete, realistic medium-size design for one category of
 bicycle.  The designs are built programmatically from the parameter schema so
 they can be regenerated whenever the schema grows::
 
-    /usr/bin/python3 tools/make_templates.py              # write the .fwd files
+    /usr/bin/python3 tools/make_templates.py              # write the .bikebox files
     /usr/bin/python3 tools/make_templates.py --report     # + print key numbers and warnings
     QT_QPA_PLATFORM=offscreen /usr/bin/python3 tools/make_templates.py --render /tmp/fw_png
 
@@ -24,17 +24,17 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from framewright.geometry.solver import solve  # noqa: E402  (registers solver params)
-import framewright.geometry.clearance  # noqa: E402,F401  (registers 3-D clearance params)
-from framewright.model.design import Design  # noqa: E402
+from bikebox.geometry.solver import solve  # noqa: E402  (registers solver params)
+import bikebox.geometry.clearance  # noqa: E402,F401  (registers 3-D clearance params)
+from bikebox.model.design import Design  # noqa: E402
 
-OUT_DIR = ROOT / "framewright" / "data" / "templates"
+OUT_DIR = ROOT / "bikebox" / "data" / "templates"
 
 # --------------------------------------------------------------------------
 # shared building blocks
 # --------------------------------------------------------------------------
 COMMON = {
-    "designer": "FrameWright",
+    "designer": "Bike Box",
     "front_v_mode": "stack",
     "front_h_mode": "reach",
     "st_length_mode": "ct",
@@ -710,9 +710,9 @@ def write(d: Design, path: Path) -> None:
 
 
 def render(slug: str, d: Design, out: Path) -> Path:
-    from framewright.qt import QtWidgets
-    from framewright.render.bike_scene import build_scene
-    from framewright.render.qt_render import render_image
+    from bikebox.qt import QtWidgets
+    from bikebox.render.bike_scene import build_scene
+    from bikebox.render.qt_render import render_image
     _app = QtWidgets.QApplication.instance() or QtWidgets.QApplication([])
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"{slug}.png"
@@ -722,16 +722,16 @@ def render(slug: str, d: Design, out: Path) -> Path:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("--out", type=Path, default=OUT_DIR, help="output directory for .fwd files")
+    ap.add_argument("--out", type=Path, default=OUT_DIR, help="output directory for .bikebox files")
     ap.add_argument("--report", action="store_true", help="print key numbers and solver warnings")
     ap.add_argument("--render", type=Path, metavar="DIR", help="also render each template to DIR/<slug>.png")
-    ap.add_argument("--dry-run", action="store_true", help="do not write .fwd files")
+    ap.add_argument("--dry-run", action="store_true", help="do not write .bikebox files")
     args = ap.parse_args(argv)
     if not args.dry_run:
         args.out.mkdir(parents=True, exist_ok=True)
     for slug, d in designs():
         if not args.dry_run:
-            write(d, args.out / f"{slug}.fwd")
+            write(d, args.out / f"{slug}.bikebox")
         if args.report:
             print(report(slug, d))
         if args.render:

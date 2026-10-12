@@ -1,10 +1,10 @@
 """Automatic tire-clearance fixes."""
 import pytest
 
-from framewright.geometry import clearance as C
-from framewright.geometry.clearance_fix import merged_changes, plan_fixes, tire_problems
-from framewright.geometry.solver import solve
-from framewright.model.design import Design
+from bikebox.geometry import clearance as C
+from bikebox.geometry.clearance_fix import merged_changes, plan_fixes, tire_problems
+from bikebox.geometry.solver import solve
+from bikebox.model.design import Design
 
 
 def _wide(width, **kw):

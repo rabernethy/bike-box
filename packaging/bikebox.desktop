@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Bike Box
+GenericName=Bicycle Frame Designer
+Comment=Open-source bicycle frame design: geometry, fit, drawings, miter templates
+Exec=bikebox %F
+Icon=bikebox
+Terminal=false
+Categories=Graphics;Engineering;
+MimeType=application/x-bikebox-design;

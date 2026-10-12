@@ -2,10 +2,10 @@ import math
 
 import pytest
 
-from framewright.geometry import dimensions as D
-from framewright.geometry.solver import solve
-from framewright.geometry.vec import V, arc_through, polyline_length
-from framewright.model.design import Design
+from bikebox.geometry import dimensions as D
+from bikebox.geometry.solver import solve
+from bikebox.geometry.vec import V, arc_through, polyline_length
+from bikebox.model.design import Design
 
 
 def close(a, b, tol=1e-6):
@@ -115,7 +115,7 @@ def test_dimension_catalog_builds(geometry):
 def test_design_roundtrip(tmp_path, design):
     design.set("stack", 600)
     design.extras["notes"].append({"id": "n1", "x": 1, "y": 2, "text": "hi"})
-    p = tmp_path / "x.fwd"
+    p = tmp_path / "x.bikebox"
     design.save(p)
     d2 = Design.load(p)
     assert d2["stack"] == 600
@@ -131,7 +131,7 @@ def test_lerp_interpolates(design):
 
 
 def test_scene_builds_all_modes(qapp, design):
-    from framewright.render.bike_scene import build_scene
+    from bikebox.render.bike_scene import build_scene
     for mode in ("filled", "outline", "centerline", "blueprint"):
         for joint in ("tig", "lugged", "fillet"):
             design.set("display_mode", mode)
@@ -166,8 +166,8 @@ def _dxf_pairs(text):
 
 def test_dxf_structure(qapp, design):
     """Group-code pairs, balanced sections and POLYLINE/VERTEX/SEQEND nesting."""
-    from framewright.export.dxf import scene_to_dxf
-    from framewright.render.bike_scene import build_scene
+    from bikebox.export.dxf import scene_to_dxf
+    from bikebox.render.bike_scene import build_scene
     pairs = _dxf_pairs(scene_to_dxf(build_scene(solve(design))))
     depth, in_poly, layers, ents = 0, False, set(), 0
     for code, val in pairs:
@@ -193,14 +193,14 @@ def test_dxf_structure(qapp, design):
 
 
 def test_svg_uses_generic_font_fallback(qapp, design):
-    from framewright.export.svg import scene_to_svg
-    from framewright.render.bike_scene import build_scene
+    from bikebox.export.svg import scene_to_svg
+    from bikebox.render.bike_scene import build_scene
     s = scene_to_svg(build_scene(solve(design)))
     assert 'font-family="sans-serif"' in s
 
 
 def test_head_tube_stickout_mode(design):
-    from framewright.geometry.modes import mode_switch_values
+    from bikebox.geometry.modes import mode_switch_values
     g0 = solve(design)
     design.update(mode_switch_values(design, "ht_junction_mode", "stickout"))
     g1 = solve(design)
@@ -213,7 +213,7 @@ def test_head_tube_stickout_mode(design):
 
 
 def test_extra_tube_surface_attachment(design):
-    from framewright.geometry.vec import point_line_distance
+    from bikebox.geometry.vec import point_line_distance
     design.extras["extra_tubes"] = [
         {"name": "lat", "a": {"tube": "ht", "s": 40, "surface": "above"}, "b": "stay_node", "od": 19},
         {"name": "top", "a": {"tube": "tt", "pos": 0.2, "surface": "above"},
@@ -236,7 +236,7 @@ def test_tall_bike(design):
     for t in ("uht", "utt", "udt", "ust", "strut_rear"):
         assert t in g.tubes
     # upper head tube coaxial with the lower one
-    from framewright.geometry.vec import point_line_distance
+    from bikebox.geometry.vec import point_line_distance
     ht, uht = g.tubes["ht"], g.tubes["uht"]
     assert abs(point_line_distance(uht.a, ht.a, ht.b - ht.a)) < 1e-6
     # the rider moves up as a whole: fit numbers relative to the crank BB are unchanged
@@ -253,7 +253,7 @@ def test_tall_bike(design):
 def test_tall_bike_drag_rider_tracks_cursor(design):
     """Dragging the lifted rider points (saddle, pedal) on a tall bike must land
     where the cursor is, not hundreds of mm away because of the frame lift."""
-    from framewright.gui.canvas import drag_point_changes
+    from bikebox.gui.canvas import drag_point_changes
     design.set("frame_type", "tall")
     g = solve(design)
     # saddle: moving it up 10 mm along the seat axis should raise it ~10 mm
@@ -271,7 +271,7 @@ def test_tall_bike_drag_rider_tracks_cursor(design):
 
 
 def test_tall_bike_rider_pedals_at_upper_bb(design):
-    from framewright.fit.rider import solve_pose
+    from bikebox.fit.rider import solve_pose
     design.update({"frame_type": "tall", "show_rider": True})
     g = solve(design)
     pose = solve_pose(g)
@@ -280,7 +280,7 @@ def test_tall_bike_rider_pedals_at_upper_bb(design):
 
 
 def test_bcad_import_synthetic(tmp_path):
-    from framewright.export.bcad_import import load_bcad
+    from bikebox.export.bcad_import import load_bcad
     entries = {"Head angle": 73.0, "Seat angle": 73.5, "Head tube length textfield": 145.0, "FORK0L": 375.0,
                "FORK0R": 45.0, "Fork type": 0, "Lower stack height": 12.0, "BSD rear": 622.0, "BSD front": 622.0,
                "Wheel diameter rear": 674.0, "Wheel diameter front": 674.0, "Wheel width rear": 23.0,
@@ -302,9 +302,9 @@ def test_bcad_import_synthetic(tmp_path):
 def test_bcad_import_real_file():
     """A real BikeCAD-saved design (BIKED project, MIT licence; see tests/fixtures/BIKED-LICENSE.txt).
     It is driven by front centre + head tube length; BikeCAD's stored stack (565.6) and the reach it
-    stores for the same bike in stack/reach mode (392.3) must come out of FrameWright's solver."""
+    stores for the same bike in stack/reach mode (392.3) must come out of Bike Box's solver."""
     from pathlib import Path
-    from framewright.model.design import Design
+    from bikebox.model.design import Design
     d = Design.load(Path(__file__).parent / "fixtures" / "biked_plain_road.bcad")
     g = solve(d)
     assert d["front_v_mode"] == "ht_length" and d["front_h_mode"] == "front_center"
@@ -318,7 +318,7 @@ def test_bcad_import_real_file():
 
 def test_bcad_export_round_trip(tmp_path):
     """Writing a design to .bcad and reading it back reproduces the core geometry."""
-    from framewright.export.bcad_import import load_bcad
+    from bikebox.export.bcad_import import load_bcad
     d = Design()
     d.update({"title": "RT", "head_tube_angle": 71.5, "seat_tube_angle": 73.5, "chainstay_length": 425,
               "fork_length": 398, "fork_offset": 47, "rear_tire_width": 35, "rear_tire_height": 33,
@@ -335,7 +335,7 @@ def test_bcad_export_round_trip(tmp_path):
 
 
 def test_bcad_export_is_bikecad_readable(tmp_path):
-    from framewright.export.bcad_import import read_properties
+    from bikebox.export.bcad_import import read_properties
     d = Design()
     p = tmp_path / "out.bcad"
     d.save(p)

@@ -1,8 +1,8 @@
 """Options for resolving geometry and clearance issues."""
-from framewright.geometry import clearance as C
-from framewright.geometry.remedies import active_keys, apply_choices, find_issues
-from framewright.geometry.solver import solve
-from framewright.model.design import Design
+from bikebox.geometry import clearance as C
+from bikebox.geometry.remedies import active_keys, apply_choices, find_issues
+from bikebox.geometry.solver import solve
+from bikebox.model.design import Design
 
 
 def _wide(width, **kw):

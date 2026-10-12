@@ -1,9 +1,9 @@
 # Feature parity with BikeCAD Pro
 
 BikeCAD Pro's product page lists 25 Pro features; its user guide covers the general feature set.
-This table maps each Pro feature to FrameWright and is honest about gaps.
+This table maps each Pro feature to Bike Box and is honest about gaps.
 
-| BikeCAD Pro feature | FrameWright | Where |
+| BikeCAD Pro feature | Bike Box | Where |
 |---|---|---|
 | Export a frame model to FreeCAD | ✅ FreeCAD macro (hollow tubes, tapered HT, mirrored stays, mitre booleans) + STL | File ▸ Export |
 | AI estimate of frame weight and in-plane / transverse / eccentric loading | ✅ Physics-based instead: per-tube weight estimate and a 3-D beam FEA with 7 load cases (stiffness, stress, safety factor) | Tools ▸ Analysis report |
@@ -45,7 +45,7 @@ display modes, wheel detail levels, toe overlap, lean angle, gearing tables, cha
 ## Not done yet
 
 * **BikeCAD `.bcad` import**: the format is Java Properties XML with undocumented keys; it needs sample
-  files to map and test. FrameWright currently reports the file contents and refuses to guess.
+  files to map and test. Bike Box currently reports the file contents and refuses to guess.
 * **Translations**: the interface is English only.
 * **Online design archive / cloud save**: not planned (local files and git work well for this).
 * Fork crown mitres, inner-wall miter templates and aero-bar (top view) components.

@@ -1,0 +1,4562 @@
+{
+ "format": "bikebox-library",
+ "version": 1,
+ "category": "bb_shells",
+ "label": "BB standards & bottom brackets",
+ "catalog": true,
+ "compiled": "2026-10-11",
+ "items": [
+  {
+   "id": "paragon-machine-works-steel-bb-shell-bsa-1.500-68.5",
+   "name": "Paragon Machine Works Steel BB shell (BSA, 1.500\" OD, 68.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 68.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "BSA, 1.500\" OD, 68.5 mm (BB2007)",
+    "status": "current",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB2007",
+     "listed_width_mm": 68.5,
+     "od": "1.500\"",
+     "material": "4130 steel, 1-1/2\" x .083\" wall tube",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.500\" converted to mm",
+     "bb_shell_width": "supplied 68.5 mm, stated as 0.5 mm oversize for clean-up after welding → 68.0 mm finished"
+    },
+    "notes": "Availability at access: available.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-bsa-1-5-od-83-5mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-bsa-1.500-73.5",
+   "name": "Paragon Machine Works Steel BB shell (BSA, 1.500\" OD, 73.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 73.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "BSA, 1.500\" OD, 73.5 mm (BB2008)",
+    "status": "current",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB2008",
+     "listed_width_mm": 73.5,
+     "od": "1.500\"",
+     "material": "4130 steel, 1-1/2\" x .083\" wall tube",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.500\" converted to mm",
+     "bb_shell_width": "supplied 73.5 mm, stated as 0.5 mm oversize for clean-up after welding → 73.0 mm finished"
+    },
+    "notes": "Availability at access: available.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-bsa-1-5-od-83-5mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-bsa-1.500-83.5",
+   "name": "Paragon Machine Works Steel BB shell (BSA, 1.500\" OD, 83.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 83.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "BSA, 1.500\" OD, 83.5 mm (BB2009)",
+    "status": "current",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB2009",
+     "listed_width_mm": 83.5,
+     "od": "1.500\"",
+     "material": "4130 steel, 1-1/2\" x .083\" wall tube",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.500\" converted to mm",
+     "bb_shell_width": "supplied 83.5 mm, stated as 0.5 mm oversize for clean-up after welding → 83.0 mm finished"
+    },
+    "notes": "Availability at access: available.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-bsa-1-5-od-83-5mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-bsa-1.500-100.5",
+   "name": "Paragon Machine Works Steel BB shell (BSA, 1.500\" OD, 100.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 100.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "BSA, 1.500\" OD, 100.5 mm (BB2010)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB2010",
+     "listed_width_mm": 100.5,
+     "od": "1.500\"",
+     "material": "4130 steel, 1-1/2\" x .083\" wall tube",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.500\" converted to mm",
+     "bb_shell_width": "supplied 100.5 mm, stated as 0.5 mm oversize for clean-up after welding → 100.0 mm finished"
+    },
+    "notes": "Availability at access: unavailable.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-bsa-1-5-od-83-5mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-t47-2.000-69",
+   "name": "Paragon Machine Works Steel BB shell (T47, 2.000\" OD, 69 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 68.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "T47, 2.000\" OD, 69 mm (BB2040)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB2040",
+     "listed_width_mm": 69,
+     "od": "2.000\"",
+     "material": "4130 steel, 2\" OD x .156\" wall tube",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm",
+     "bb_shell_width": "supplied 69 mm, stated as 1.0 mm oversize for clean-up after welding → 68.0 mm finished"
+    },
+    "notes": "Availability at access: available.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-t47-2.000-74",
+   "name": "Paragon Machine Works Steel BB shell (T47, 2.000\" OD, 74 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 73.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "T47, 2.000\" OD, 74 mm (BB2042)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB2042",
+     "listed_width_mm": 74,
+     "od": "2.000\"",
+     "material": "4130 steel, 2\" OD x .156\" wall tube",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm",
+     "bb_shell_width": "supplied 74 mm, stated as 1.0 mm oversize for clean-up after welding → 73.0 mm finished"
+    },
+    "notes": "Availability at access: available.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-t47-2.000-87.5",
+   "name": "Paragon Machine Works Steel BB shell (T47, 2.000\" OD, 87.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "T47, 2.000\" OD, 87.5 mm (BB2045)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB2045",
+     "listed_width_mm": 87.5,
+     "od": "2.000\"",
+     "material": "4130 steel, 2\" OD x .156\" wall tube",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm",
+     "bb_shell_width": "supplied 87.5 mm, stated as 1.0 mm oversize for clean-up after welding → 86.5 mm finished"
+    },
+    "notes": "Availability at access: available.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-t47-2.000-92.5",
+   "name": "Paragon Machine Works Steel BB shell (T47, 2.000\" OD, 92.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 91.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "T47, 2.000\" OD, 92.5 mm (BB2049)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB2049",
+     "listed_width_mm": 92.5,
+     "od": "2.000\"",
+     "material": "4130 steel, 2\" OD x .156\" wall tube",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm",
+     "bb_shell_width": "supplied 92.5 mm, stated as 1.0 mm oversize for clean-up after welding → 91.5 mm finished"
+    },
+    "notes": "Availability at access: unavailable.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-t47-2.000-108",
+   "name": "Paragon Machine Works Steel BB shell (T47, 2.000\" OD, 108 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 107.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "T47, 2.000\" OD, 108 mm (BB2048)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB2048",
+     "listed_width_mm": 108,
+     "od": "2.000\"",
+     "material": "4130 steel, 2\" OD x .156\" wall tube",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm",
+     "bb_shell_width": "supplied 108 mm, stated as 1.0 mm oversize for clean-up after welding → 107.0 mm finished"
+    },
+    "notes": "Availability at access: unavailable.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-steel-bb-shell-t47-2.000-121",
+   "name": "Paragon Machine Works Steel BB shell (T47, 2.000\" OD, 121 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 120.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Steel BB shell",
+    "variant": "T47, 2.000\" OD, 121 mm (BB2047)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB2047",
+     "listed_width_mm": 121,
+     "od": "2.000\"",
+     "material": "4130 steel, 2\" OD x .156\" wall tube",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm",
+     "bb_shell_width": "supplied 121 mm, stated as 1.0 mm oversize for clean-up after welding → 120.0 mm finished"
+    },
+    "notes": "Availability at access: unavailable.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-steel-t47-2-od-108mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-bsa-1.562-1-9-16-68.5",
+   "name": "Paragon Machine Works Titanium BB shell (BSA, 1.562\" (1-9/16\") OD, 68.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 39.7,
+    "bb_shell_width": 68.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "BSA, 1.562\" (1-9/16\") OD, 68.5 mm (BB0021)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB0021",
+     "listed_width_mm": 68.5,
+     "od": "1.562\" (1-9/16\")",
+     "material": "3/2.5 titanium, 1-5/8\" x .151\" wall tube",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.562\" (1-9/16\") converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-bsa-1.562-1-9-16-73.5",
+   "name": "Paragon Machine Works Titanium BB shell (BSA, 1.562\" (1-9/16\") OD, 73.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 39.7,
+    "bb_shell_width": 73.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "BSA, 1.562\" (1-9/16\") OD, 73.5 mm (BB0022)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB0022",
+     "listed_width_mm": 73.5,
+     "od": "1.562\" (1-9/16\")",
+     "material": "3/2.5 titanium, 1-5/8\" x .151\" wall tube",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.562\" (1-9/16\") converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-bsa-1.562-1-9-16-83.5",
+   "name": "Paragon Machine Works Titanium BB shell (BSA, 1.562\" (1-9/16\") OD, 83.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 39.7,
+    "bb_shell_width": 83.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "BSA, 1.562\" (1-9/16\") OD, 83.5 mm (BB0017)",
+    "status": "current",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB0017",
+     "listed_width_mm": 83.5,
+     "od": "1.562\" (1-9/16\")",
+     "material": "3/2.5 titanium, 1-5/8\" x .151\" wall tube",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.562\" (1-9/16\") converted to mm"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-bsa-1.562-1-9-16-100.5",
+   "name": "Paragon Machine Works Titanium BB shell (BSA, 1.562\" (1-9/16\") OD, 100.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 39.7,
+    "bb_shell_width": 100.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "BSA, 1.562\" (1-9/16\") OD, 100.5 mm (BB0018)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB0018",
+     "listed_width_mm": 100.5,
+     "od": "1.562\" (1-9/16\")",
+     "material": "3/2.5 titanium, 1-5/8\" x .151\" wall tube",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.562\" (1-9/16\") converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-bsa-1.500-68.5",
+   "name": "Paragon Machine Works Titanium BB shell (BSA, 1.500\" OD, 68.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 68.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "BSA, 1.500\" OD, 68.5 mm (BB0001)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB0001",
+     "listed_width_mm": 68.5,
+     "od": "1.500\"",
+     "material": "3/2.5 titanium",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\"",
+     "note": "page lists 1-5/8\" x .151\" wall tubing, inconsistent with the 1.5\" OD"
+    },
+    "derived": {
+     "bb_shell_od": "1.500\" converted to mm",
+     "bb_shell_width": "supplied 68.5 mm, stated as 0.5 mm oversize for clean-up after welding → 68.0 mm finished"
+    },
+    "notes": "Availability at access: unavailable.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-bsa-1-9-16-39-7-od-select-width-copy",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-pf30-2.000-69",
+   "name": "Paragon Machine Works Titanium BB shell (PF30, 2.000\" OD, 69 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 68.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "PF30, 2.000\" OD, 69 mm (BB0028)",
+    "status": "current",
+    "specs": {
+     "standard": "PF30",
+     "sku": "BB0028",
+     "listed_width_mm": 69,
+     "od": "2.000\"",
+     "material": "3/2.5 titanium, 2\" x .189\" wall tube",
+     "bore_mm": "45.5 (1.791\"), supplied 0.5 mm undersize",
+     "application": "PF30 BB or PF30 eccentrics"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm",
+     "bb_shell_width": "supplied 69 mm, stated as 1.0 mm oversize for clean-up after welding → 68.0 mm finished"
+    },
+    "notes": "Availability at access: available.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-pf30-2-od-69mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-pf30-2.000-74",
+   "name": "Paragon Machine Works Titanium BB shell (PF30, 2.000\" OD, 74 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 73.0
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "PF30, 2.000\" OD, 74 mm (BB0029)",
+    "status": "current",
+    "specs": {
+     "standard": "PF30",
+     "sku": "BB0029",
+     "listed_width_mm": 74,
+     "od": "2.000\"",
+     "material": "3/2.5 titanium, 2\" x .189\" wall tube",
+     "bore_mm": "45.5 (1.791\"), supplied 0.5 mm undersize",
+     "application": "PF30 BB or PF30 eccentrics"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm",
+     "bb_shell_width": "supplied 74 mm, stated as 1.0 mm oversize for clean-up after welding → 73.0 mm finished"
+    },
+    "notes": "Availability at access: available.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-pf30-2-od-69mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-stainless-bb-shell-bsa-1.500-68.5",
+   "name": "Paragon Machine Works Stainless BB shell (BSA, 1.500\" OD, 68.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 68.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Stainless BB shell",
+    "variant": "BSA, 1.500\" OD, 68.5 mm (BB1001)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB1001",
+     "listed_width_mm": 68.5,
+     "od": "1.500\"",
+     "material": "17-4 stainless solid round bar",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.500\" converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-stainless-bsa-1-5-38mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-stainless-bb-shell-bsa-1.500-73.5",
+   "name": "Paragon Machine Works Stainless BB shell (BSA, 1.500\" OD, 73.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 73.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Stainless BB shell",
+    "variant": "BSA, 1.500\" OD, 73.5 mm (BB1002)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB1002",
+     "listed_width_mm": 73.5,
+     "od": "1.500\"",
+     "material": "17-4 stainless solid round bar",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.500\" converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-stainless-bsa-1-5-38mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-stainless-bb-shell-bsa-1.500-100.5",
+   "name": "Paragon Machine Works Stainless BB shell (BSA, 1.500\" OD, 100.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 100.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Stainless BB shell",
+    "variant": "BSA, 1.500\" OD, 100.5 mm (BB1018)",
+    "status": "current",
+    "specs": {
+     "standard": "BSA",
+     "sku": "BB1018",
+     "listed_width_mm": 100.5,
+     "od": "1.500\"",
+     "material": "17-4 stainless solid round bar",
+     "thread": "1.370\"-24 RH/LH, thread length 0.50\", minor dia 1.330/1.340\", relieved ID 1.385/1.395\""
+    },
+    "derived": {
+     "bb_shell_od": "1.500\" converted to mm"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-stainless-bsa-1-5-38mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-stainless-bb-shell-t47-2.000-69",
+   "name": "Paragon Machine Works Stainless BB shell (T47, 2.000\" OD, 69 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 69
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Stainless BB shell",
+    "variant": "T47, 2.000\" OD, 69 mm (BB1040)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB1040",
+     "listed_width_mm": 69,
+     "od": "2.000\"",
+     "material": "17-4 stainless solid round bar",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-stainless-t47-2-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-stainless-bb-shell-t47-2.000-74",
+   "name": "Paragon Machine Works Stainless BB shell (T47, 2.000\" OD, 74 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 74
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Stainless BB shell",
+    "variant": "T47, 2.000\" OD, 74 mm (BB1042)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB1042",
+     "listed_width_mm": 74,
+     "od": "2.000\"",
+     "material": "17-4 stainless solid round bar",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-stainless-t47-2-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-stainless-bb-shell-t47-2.000-87.5",
+   "name": "Paragon Machine Works Stainless BB shell (T47, 2.000\" OD, 87.5 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 50.8,
+    "bb_shell_width": 87.5
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Stainless BB shell",
+    "variant": "T47, 2.000\" OD, 87.5 mm (BB1045)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB1045",
+     "listed_width_mm": 87.5,
+     "od": "2.000\"",
+     "material": "17-4 stainless solid round bar",
+     "thread": "M47 x 1 RH/LH, thread length 0.50\", minor dia 46 mm +0.1/-0, relieved ID 47.75 mm ±0.1"
+    },
+    "derived": {
+     "bb_shell_od": "2.000\" converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-stainless-t47-2-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-1-16-52-mm-per-title-69",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2-1/16\" (52 mm per title) OD, 69 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 52,
+    "bb_shell_width": 69
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2-1/16\" (52 mm per title) OD, 69 mm (BB0050)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0050",
+     "listed_width_mm": 69,
+     "od": "2-1/16\" (52 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-t47-2-1-16-52mm-od-100mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-1-16-52-mm-per-title-74",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2-1/16\" (52 mm per title) OD, 74 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 52,
+    "bb_shell_width": 74
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2-1/16\" (52 mm per title) OD, 74 mm (BB0052)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0052",
+     "listed_width_mm": 74,
+     "od": "2-1/16\" (52 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-t47-2-1-16-52mm-od-100mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-1-16-52-mm-per-title-87",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2-1/16\" (52 mm per title) OD, 87 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 52,
+    "bb_shell_width": 87
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2-1/16\" (52 mm per title) OD, 87 mm (BB0055)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0055",
+     "listed_width_mm": 87,
+     "od": "2-1/16\" (52 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-t47-2-1-16-52mm-od-100mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-1-16-52-mm-per-title-92",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2-1/16\" (52 mm per title) OD, 92 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 52,
+    "bb_shell_width": 92
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2-1/16\" (52 mm per title) OD, 92 mm (BB0059)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0059",
+     "listed_width_mm": 92,
+     "od": "2-1/16\" (52 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-t47-2-1-16-52mm-od-100mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-1-16-52-mm-per-title-100",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2-1/16\" (52 mm per title) OD, 100 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 52,
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2-1/16\" (52 mm per title) OD, 100 mm (BB0057)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0057",
+     "listed_width_mm": 100,
+     "od": "2-1/16\" (52 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/bb-shell-titanium-t47-2-1-16-52mm-od-100mm",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-51-mm-per-title-69",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2\" (51 mm per title) OD, 69 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 69
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 69 mm (BB0040)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0040",
+     "listed_width_mm": 69,
+     "od": "2\" (51 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-t47-bb-shell-2-51mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-51-mm-per-title-74",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2\" (51 mm per title) OD, 74 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 74
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 74 mm (BB0042)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0042",
+     "listed_width_mm": 74,
+     "od": "2\" (51 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-t47-bb-shell-2-51mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-51-mm-per-title-84",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2\" (51 mm per title) OD, 84 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 84
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 84 mm (BB0044)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0044",
+     "listed_width_mm": 84,
+     "od": "2\" (51 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-t47-bb-shell-2-51mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-51-mm-per-title-101",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2\" (51 mm per title) OD, 101 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 101
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 101 mm (BB0046)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0046",
+     "listed_width_mm": 101,
+     "od": "2\" (51 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-t47-bb-shell-2-51mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-51-mm-per-title-108",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2\" (51 mm per title) OD, 108 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 108
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 108 mm (BB0048)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0048",
+     "listed_width_mm": 108,
+     "od": "2\" (51 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-t47-bb-shell-2-51mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "paragon-machine-works-titanium-bb-shell-t47-2-51-mm-per-title-121",
+   "name": "Paragon Machine Works Titanium BB shell (T47, 2\" (51 mm per title) OD, 121 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 121
+   },
+   "meta": {
+    "brand": "Paragon Machine Works",
+    "model": "Titanium BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 121 mm (BB0047)",
+    "status": "current",
+    "specs": {
+     "standard": "T47",
+     "sku": "BB0047",
+     "listed_width_mm": 121,
+     "od": "2\" (51 mm per title)",
+     "material": "titanium"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: available. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/paragon-titanium-t47-bb-shell-2-51mm-od-select-width",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "reynolds-631-bb-shell-bsa-1.5-68",
+   "name": "Reynolds 631 BB shell (BSA, 1.5\" OD, 68 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Reynolds",
+    "model": "631 BB shell",
+    "variant": "BSA, 1.5\" OD, 68 mm (LX113)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "LX113",
+     "listed_width_mm": 68,
+     "od": "1.5\"",
+     "material": "Reynolds 631 steel"
+    },
+    "derived": {
+     "bb_shell_od": "1.5\" converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/reynolds-631-bottom-bracket-shell-lx113",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "reynolds-631-bb-shell-bsa-1.5-73",
+   "name": "Reynolds 631 BB shell (BSA, 1.5\" OD, 73 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Reynolds",
+    "model": "631 BB shell",
+    "variant": "BSA, 1.5\" OD, 73 mm (LX114)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "LX114",
+     "listed_width_mm": 73,
+     "od": "1.5\"",
+     "material": "Reynolds 631 steel"
+    },
+    "derived": {
+     "bb_shell_od": "1.5\" converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/reynolds-631-bottom-bracket-shell-lx113",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "reynolds-631-bb-shell-t47-2-51-mm-per-title-68",
+   "name": "Reynolds 631 BB shell (T47, 2\" (51 mm per title) OD, 68 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Reynolds",
+    "model": "631 BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 68 mm (LXT47-1)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "LXT47-1",
+     "listed_width_mm": 68,
+     "od": "2\" (51 mm per title)",
+     "material": "Reynolds 631 steel"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/reynolds-525-bottom-bracket-shell-lxt47-1",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "reynolds-631-bb-shell-t47-2-51-mm-per-title-73",
+   "name": "Reynolds 631 BB shell (T47, 2\" (51 mm per title) OD, 73 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Reynolds",
+    "model": "631 BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 73 mm (LXT47-2)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "LXT47-2",
+     "listed_width_mm": 73,
+     "od": "2\" (51 mm per title)",
+     "material": "Reynolds 631 steel"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/reynolds-525-bottom-bracket-shell-lxt47-1",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "reynolds-631-bb-shell-t47-2-51-mm-per-title-86",
+   "name": "Reynolds 631 BB shell (T47, 2\" (51 mm per title) OD, 86 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 51,
+    "bb_shell_width": 86
+   },
+   "meta": {
+    "brand": "Reynolds",
+    "model": "631 BB shell",
+    "variant": "T47, 2\" (51 mm per title) OD, 86 mm (LXT47-3)",
+    "status": "unknown",
+    "specs": {
+     "standard": "T47",
+     "sku": "LXT47-3",
+     "listed_width_mm": 86,
+     "od": "2\" (51 mm per title)",
+     "material": "Reynolds 631 steel"
+    },
+    "derived": {
+     "bb_shell_od": "OD in mm as given in the product title"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/reynolds-525-bottom-bracket-shell-lxt47-1",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "reynolds-931-bb-shell-bsa-1.5-68",
+   "name": "Reynolds 931 BB shell (BSA, 1.5\" OD, 68 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_od": 38.1,
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Reynolds",
+    "model": "931 BB shell",
+    "variant": "BSA, 1.5\" OD, 68 mm (LS110)",
+    "status": "unknown",
+    "specs": {
+     "standard": "BSA",
+     "sku": "LS110",
+     "listed_width_mm": 68,
+     "od": "1.5\"",
+     "material": "Reynolds 931 stainless"
+    },
+    "derived": {
+     "bb_shell_od": "1.5\" converted to mm"
+    },
+    "notes": "Availability at access: unavailable. Width is the listed (as-supplied) width; the finished width after facing is not stated for this product.",
+    "sources": [
+     {
+      "url": "https://firsthand.bike/products/reynolds-931-bottom-bracket-shell-ls110",
+      "publisher": "Firsthand Framebuilding (Paragon/Reynolds)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://firsthand.bike/collections/bottom-bracket-shells/products.json",
+      "publisher": "Firsthand Framebuilding (Paragon catalog product data)",
+      "kind": "distributor",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bsa-68",
+   "name": "BSA / English threaded — 68 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BSA / English threaded",
+    "variant": "68 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bsa",
+     "shell_width_mm": 68,
+     "shell_bore": "33.6-33.9 mm",
+     "thread": "1.37 in x 24 TPI; LH thread drive side, RH non-drive"
+    },
+    "notes": "Wheels Mfg lists 68 mm for road.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/square-taper-bottom-brackets",
+      "publisher": "Phil Wood & Co. (cup threading: British 1.370 x 24 tpi RH & LH)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bsa-73",
+   "name": "BSA / English threaded — 73 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BSA / English threaded",
+    "variant": "73 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bsa",
+     "shell_width_mm": 73,
+     "shell_bore": "33.6-33.9 mm",
+     "thread": "1.37 in x 24 TPI; LH thread drive side, RH non-drive"
+    },
+    "notes": "Wheels Mfg lists 73 mm for mountain.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/square-taper-bottom-brackets",
+      "publisher": "Phil Wood & Co. (cup threading: British 1.370 x 24 tpi RH & LH)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bsa-83",
+   "name": "BSA / English threaded — 83 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BSA / English threaded",
+    "variant": "83 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bsa",
+     "shell_width_mm": 83,
+     "shell_bore": "33.6-33.9 mm",
+     "thread": "1.37 in x 24 TPI; LH thread drive side, RH non-drive"
+    },
+    "notes": "Wheels Mfg lists 83 mm for downhill.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/square-taper-bottom-brackets",
+      "publisher": "Phil Wood & Co. (cup threading: British 1.370 x 24 tpi RH & LH)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bsa-100",
+   "name": "BSA / English threaded — 100 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BSA / English threaded",
+    "variant": "100 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bsa",
+     "shell_width_mm": 100,
+     "shell_bore": "33.6-33.9 mm",
+     "thread": "1.37 in x 24 TPI; LH thread drive side, RH non-drive"
+    },
+    "notes": "Wheels Mfg lists 100 mm for fat bike.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/square-taper-bottom-brackets",
+      "publisher": "Phil Wood & Co. (cup threading: British 1.370 x 24 tpi RH & LH)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-italian-70",
+   "name": "Italian threaded — 70 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 70
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "Italian threaded",
+    "variant": "70 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "italian",
+     "shell_width_mm": 70,
+     "thread": "36 mm x 24 tpi"
+    },
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/square-taper-bottom-brackets",
+      "publisher": "Phil Wood & Co. (cup threading: Italian 36 x 24 tpi)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://www.bike-components.de/en/Shimano/Dura-Ace-BB-R9100-Hollowtech-II-Bottom-Bracket-p51416/",
+      "publisher": "bike-components.de (Shimano BB-R9100 ITA: 70 mm)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-t47-68",
+   "name": "T47 threaded — 68 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "T47 threaded",
+    "variant": "68 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "t47",
+     "shell_width_mm": 68,
+     "shell_bore": "approx. 46 mm ID",
+     "thread": "M47 x 1; LH thread drive side, RH non-drive"
+    },
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-t47-73",
+   "name": "T47 threaded — 73 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "T47 threaded",
+    "variant": "73 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "t47",
+     "shell_width_mm": 73,
+     "shell_bore": "approx. 46 mm ID",
+     "thread": "M47 x 1; LH thread drive side, RH non-drive"
+    },
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-t47-83",
+   "name": "T47 threaded — 83 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "T47 threaded",
+    "variant": "83 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "t47",
+     "shell_width_mm": 83,
+     "shell_bore": "approx. 46 mm ID",
+     "thread": "M47 x 1; LH thread drive side, RH non-drive"
+    },
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-t47-100",
+   "name": "T47 threaded — 100 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "T47 threaded",
+    "variant": "100 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "t47",
+     "shell_width_mm": 100,
+     "shell_bore": "approx. 46 mm ID",
+     "thread": "M47 x 1; LH thread drive side, RH non-drive"
+    },
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-t47-77",
+   "name": "T47 threaded — 77 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 77
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "T47 threaded",
+    "variant": "77 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "t47",
+     "shell_width_mm": 77,
+     "shell_bore": "approx. 46 mm ID",
+     "thread": "M47 x 1"
+    },
+    "notes": "77 mm width is listed by SRAM's DUB T47 variants, not on the Wheels Mfg page.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-T47-Bottom-Bracket-p90346/",
+      "publisher": "bike-components.de (SRAM DUB T47 variants)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-t47-85.5",
+   "name": "T47 threaded (internal-bearing) — 85.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 85.5
+   },
+   "meta": {
+    "brand": "SRAM / Chris King",
+    "model": "T47 threaded (internal-bearing)",
+    "variant": "85.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "t47",
+     "shell_width_mm": 85.5,
+     "thread": "M47 x 1"
+    },
+    "notes": "85.5 mm T47 width from SRAM DUB T47 variants and Chris King's BB fit guide.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-T47-Bottom-Bracket-p90346/",
+      "publisher": "bike-components.de (SRAM DUB T47 variants)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-t47-86.5",
+   "name": "T47 threaded (internal-bearing) — 86.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "T47 threaded (internal-bearing)",
+    "variant": "86.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "t47",
+     "shell_width_mm": 86.5,
+     "thread": "M47 x 1"
+    },
+    "notes": "86.5 mm T47 shell width column in Chris King's BB fit guide.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-t47-92",
+   "name": "T47 threaded (internal-bearing) — 92 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 92
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "T47 threaded (internal-bearing)",
+    "variant": "92 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "t47",
+     "shell_width_mm": 92,
+     "thread": "M47 x 1"
+    },
+    "notes": "92 mm T47 shell width column in Chris King's BB fit guide.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb90-90.5",
+   "name": "Trek BB90 (direct-fit) — 90.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 90.5
+   },
+   "meta": {
+    "brand": "Trek",
+    "model": "Trek BB90 (direct-fit)",
+    "variant": "90.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb90",
+     "shell_width_mm": 90.5,
+     "shell_bore": "37 mm"
+    },
+    "notes": "Bearings pressed directly into frame.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb95-95.5",
+   "name": "Trek BB95 (direct-fit) — 95.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 95.5
+   },
+   "meta": {
+    "brand": "Trek",
+    "model": "Trek BB95 (direct-fit)",
+    "variant": "95.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb95",
+     "shell_width_mm": 95.5,
+     "shell_bore": "37 mm"
+    },
+    "notes": "Bearings pressed directly into frame.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb86-92-86.5",
+   "name": "BB86 (Press Fit, 41 mm bore) — 86.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB86 (Press Fit, 41 mm bore)",
+    "variant": "86.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb86-92",
+     "shell_width_mm": 86.5,
+     "shell_bore": "41 mm"
+    },
+    "notes": "Wheels Mfg: designed for 24 mm spindle cranks; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb86-92-91.5",
+   "name": "BB92 (Press Fit, 41 mm bore) — 91.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 91.5
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB92 (Press Fit, 41 mm bore)",
+    "variant": "91.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb86-92",
+     "shell_width_mm": 91.5,
+     "shell_bore": "41 mm"
+    },
+    "notes": "Wheels Mfg: designed for 24 mm spindle cranks; removable cups. Shimano/SRAM retailer listings give BB92 as '89.5/92 mm' with spacers; Wheels Mfg lists 91.5 mm.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb86-92-104.5",
+   "name": "BB86/92 family, 104.5 mm (41 mm bore) — 104.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 104.5
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB86/92 family, 104.5 mm (41 mm bore)",
+    "variant": "104.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb86-92",
+     "shell_width_mm": 104.5,
+     "shell_bore": "41 mm"
+    },
+    "notes": "Wheels Mfg: designed for 24 mm spindle cranks; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb86-92-107",
+   "name": "BB107 (Press Fit, 41 mm bore, DH/mountain) — 107 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 107
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB107 (Press Fit, 41 mm bore, DH/mountain)",
+    "variant": "107 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb86-92",
+     "shell_width_mm": 107,
+     "shell_bore": "41 mm"
+    },
+    "notes": "Wheels Mfg: designed for 24 mm spindle cranks; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb86-92-121",
+   "name": "BB86/92 family, 121 mm fat bike (41 mm bore) — 121 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 121
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB86/92 family, 121 mm fat bike (41 mm bore)",
+    "variant": "121 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb86-92",
+     "shell_width_mm": 121,
+     "shell_bore": "41 mm"
+    },
+    "notes": "Wheels Mfg: designed for 24 mm spindle cranks; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb86-92-132",
+   "name": "BB86/92 family, 132 mm fat bike (41 mm bore) — 132 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 132
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB86/92 family, 132 mm fat bike (41 mm bore)",
+    "variant": "132 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb86-92",
+     "shell_width_mm": 132,
+     "shell_bore": "41 mm"
+    },
+    "notes": "Wheels Mfg: designed for 24 mm spindle cranks; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb86-92-89.5",
+   "name": "BB89.5 (Press Fit, 41 mm bore) — 89.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 89.5
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB89.5 (Press Fit, 41 mm bore)",
+    "variant": "89.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb86-92",
+     "shell_width_mm": 89.5,
+     "shell_bore": "41 mm"
+    },
+    "notes": "Wheels Mfg lists a 90 mm width in this family; Shimano BB-MT800-PA and SRAM DUB/GXP MTB press-fit listings give 89.5 mm (spacer-selected).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://www.bike-components.de/en/Shimano/BB-MT800-PA-Hollowtech-II-Press-Fit-Bottom-Bracket-41-x-89-5-92-mm-p43965/",
+      "publisher": "bike-components.de (Shimano BB-MT800-PA)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-Pressfit-MTB-41-x-89-5-92-mm-Bottom-Bracket-p61951/",
+      "publisher": "bike-components.de (SRAM DUB Pressfit MTB)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb30-68",
+   "name": "BB30 (bearings pressed into shell, 42 mm bore) — 68 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB30 (bearings pressed into shell, 42 mm bore)",
+    "variant": "68 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb30",
+     "shell_width_mm": 68,
+     "shell_bore": "42 mm"
+    },
+    "notes": "6806 bearings pressed directly into frame; symmetrical shell. Wheels Mfg lists 68 mm (road).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb30-73",
+   "name": "BB30 (bearings pressed into shell, 42 mm bore) — 73 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB30 (bearings pressed into shell, 42 mm bore)",
+    "variant": "73 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb30",
+     "shell_width_mm": 73,
+     "shell_bore": "42 mm"
+    },
+    "notes": "6806 bearings pressed directly into frame; symmetrical shell. Wheels Mfg lists 73 mm (mountain).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb30-83",
+   "name": "BB30 (bearings pressed into shell, 42 mm bore) — 83 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB30 (bearings pressed into shell, 42 mm bore)",
+    "variant": "83 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb30",
+     "shell_width_mm": 83,
+     "shell_bore": "42 mm"
+    },
+    "notes": "6806 bearings pressed directly into frame; symmetrical shell. Wheels Mfg lists 83 mm (Cannondale MTB).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb30-84.5",
+   "name": "BB30 (bearings pressed into shell, 42 mm bore) — 84.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 84.5
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB30 (bearings pressed into shell, 42 mm bore)",
+    "variant": "84.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb30",
+     "shell_width_mm": 84.5,
+     "shell_bore": "42 mm"
+    },
+    "notes": "6806 bearings pressed directly into frame; symmetrical shell. Wheels Mfg lists 84.5 mm (Specialized MTB alloy OSBB).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb30-120",
+   "name": "BB30 (bearings pressed into shell, 42 mm bore) — 120 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 120
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB30 (bearings pressed into shell, 42 mm bore)",
+    "variant": "120 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb30",
+     "shell_width_mm": 120,
+     "shell_bore": "42 mm"
+    },
+    "notes": "6806 bearings pressed directly into frame; symmetrical shell. Wheels Mfg lists 120 mm (Cannondale fat bike).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb30a-73",
+   "name": "Cannondale BB30A (asymmetric, 42 mm bore) — 73 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Cannondale",
+    "model": "Cannondale BB30A (asymmetric, 42 mm bore)",
+    "variant": "73 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb30a",
+     "shell_width_mm": 73,
+     "shell_bore": "42 mm"
+    },
+    "notes": "Shell +5 mm wider on the non-drive side; 6806 bearings pressed into frame.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb30a-83",
+   "name": "Cannondale BB30A (asymmetric, 42 mm bore) — 83 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Cannondale",
+    "model": "Cannondale BB30A (asymmetric, 42 mm bore)",
+    "variant": "83 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb30a",
+     "shell_width_mm": 83,
+     "shell_bore": "42 mm"
+    },
+    "notes": "Shell +5 mm wider on the non-drive side; 6806 bearings pressed into frame.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bbright-direct-79",
+   "name": "BBRight direct fit (42 mm bore) — 79 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 79
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BBRight direct fit (42 mm bore)",
+    "variant": "79 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bbright-direct",
+     "shell_width_mm": 79,
+     "shell_bore": "42 mm"
+    },
+    "notes": "Shell 11 mm wider on the non-drive side; 6806 bearings pressed into frame.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-osbb-alloy-68",
+   "name": "Specialized OSBB alloy (42 mm bore) — 68 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Specialized",
+    "model": "Specialized OSBB alloy (42 mm bore)",
+    "variant": "68 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "osbb-alloy",
+     "shell_width_mm": 68,
+     "shell_bore": "42 mm"
+    },
+    "notes": "Same as BB30.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-osbb-alloy-84.5",
+   "name": "Specialized OSBB alloy (42 mm bore) — 84.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 84.5
+   },
+   "meta": {
+    "brand": "Specialized",
+    "model": "Specialized OSBB alloy (42 mm bore)",
+    "variant": "84.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "osbb-alloy",
+     "shell_width_mm": 84.5,
+     "shell_bore": "42 mm"
+    },
+    "notes": "Same as BB30.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-pf30-61",
+   "name": "PF30 (Press Fit 30, 46 mm bore) — 61 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 61
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "PF30 (Press Fit 30, 46 mm bore)",
+    "variant": "61 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "pf30",
+     "shell_width_mm": 61,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Removable cups. Wheels Mfg lists 61 mm (Specialized OSBB/FACT).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-pf30-68",
+   "name": "PF30 (Press Fit 30, 46 mm bore) — 68 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "PF30 (Press Fit 30, 46 mm bore)",
+    "variant": "68 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "pf30",
+     "shell_width_mm": 68,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Removable cups. Wheels Mfg lists 68 mm (road).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-pf30-73",
+   "name": "PF30 (Press Fit 30, 46 mm bore) — 73 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "PF30 (Press Fit 30, 46 mm bore)",
+    "variant": "73 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "pf30",
+     "shell_width_mm": 73,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Removable cups. Wheels Mfg lists 73 mm (mountain).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-pf30-83",
+   "name": "PF30 (Press Fit 30, 46 mm bore) — 83 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "PF30 (Press Fit 30, 46 mm bore)",
+    "variant": "83 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "pf30",
+     "shell_width_mm": 83,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Removable cups. Wheels Mfg lists 83 mm (downhill).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-pf30-100",
+   "name": "PF30 (Press Fit 30, 46 mm bore) — 100 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "PF30 (Press Fit 30, 46 mm bore)",
+    "variant": "100 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "pf30",
+     "shell_width_mm": 100,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Removable cups. Wheels Mfg lists 100 mm (fat bike).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bbright-pf-79",
+   "name": "BBRight press fit (46 mm bore) — 79 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 79
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BBRight press fit (46 mm bore)",
+    "variant": "79 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bbright-pf",
+     "shell_width_mm": 79,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Shell 11 mm wider on the non-drive side; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-pf30a-73",
+   "name": "Cannondale PF30A (asymmetric, 46 mm bore) — 73 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Cannondale",
+    "model": "Cannondale PF30A (asymmetric, 46 mm bore)",
+    "variant": "73 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "pf30a",
+     "shell_width_mm": 73,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Shell +5 mm wider on the non-drive side; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-pf30a-83",
+   "name": "Cannondale PF30A (asymmetric, 46 mm bore) — 83 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Cannondale",
+    "model": "Cannondale PF30A (asymmetric, 46 mm bore)",
+    "variant": "83 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "pf30a",
+     "shell_width_mm": 83,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Shell +5 mm wider on the non-drive side; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-cannondale-ai-83",
+   "name": "Cannondale Ai (46 mm bore) — 83 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Cannondale",
+    "model": "Cannondale Ai (46 mm bore)",
+    "variant": "83 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "cannondale-ai",
+     "shell_width_mm": 83,
+     "shell_bore": "46 mm"
+    },
+    "notes": "83 mm shell, symmetrical; removable cups.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb386evo-86.5",
+   "name": "BB386EVO (46 mm bore) — 86.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB386EVO (46 mm bore)",
+    "variant": "86.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb386evo",
+     "shell_width_mm": 86.5,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Wheels Mfg table shows '86mm' but describes it as 'essentially a PF30 with 86.5mm wide shell'; 86.5 used.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-bb392evo-92",
+   "name": "BB392EVO (46 mm bore) — 92 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 92
+   },
+   "meta": {
+    "brand": "Industry standard",
+    "model": "BB392EVO (46 mm bore)",
+    "variant": "92 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "bb392evo",
+     "shell_width_mm": 92,
+     "shell_bore": "46 mm"
+    },
+    "notes": "Essentially a PF30 with a 92 mm shell.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-colnago-threadfit82.5-86.5",
+   "name": "Colnago ThreadFit 82.5 — 86.5 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "Colnago",
+    "model": "Colnago ThreadFit 82.5",
+    "variant": "86.5 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "colnago-threadfit82.5",
+     "shell_width_mm": 86.5,
+     "shell_bore": "41 mm",
+     "thread": "threaded (Colnago-specific)"
+    },
+    "notes": "Colnago threaded shell standard.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-look-bb95-90",
+   "name": "Look BB95 (65 mm bore) — 90 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 90
+   },
+   "meta": {
+    "brand": "Look",
+    "model": "Look BB95 (65 mm bore)",
+    "variant": "90 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "look-bb95",
+     "shell_width_mm": 90,
+     "shell_bore": "65 mm"
+    },
+    "notes": "Unique to Look frames; bearings and hardware from Look.",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "std-wilier-bb94-93",
+   "name": "Wilier BB94 — 93 mm shell",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 93
+   },
+   "meta": {
+    "brand": "Wilier",
+    "model": "Wilier BB94",
+    "variant": "93 mm shell",
+    "status": "current",
+    "specs": {
+     "standard": "wilier-bb94",
+     "shell_width_mm": 93,
+     "shell_bore": "37 mm"
+    },
+    "notes": "Unique to Wilier; bearings press directly into frame (similar to Trek BB90).",
+    "sources": [
+     {
+      "url": "https://wheelsmfg.com/pages/bb-standards",
+      "publisher": "Wheels Manufacturing — Identify your frame BB standard",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-30-bsa-68",
+   "name": "Chris King ThreadFit 30 (BSA 68 mm, 30 mm / 28.99 mm (DUB with fit kit))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit 30",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "30 mm / 28.99 mm (DUB with fit kit)",
+     "crank_fitment": "SRAM DUB, 30 mm road/MTB cranks (with fit kits)"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-30-bsa-73",
+   "name": "Chris King ThreadFit 30 (BSA 73 mm, 30 mm / 28.99 mm (DUB with fit kit))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit 30",
+    "variant": "BSA 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 73,
+     "spindle": "30 mm / 28.99 mm (DUB with fit kit)",
+     "crank_fitment": "SRAM DUB, 30 mm road/MTB cranks (with fit kits)"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-24-bsa-68",
+   "name": "Chris King ThreadFit 24 (BSA 68 mm, 24 mm (and 22/24 GXP with Fit Kit 6))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit 24",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "24 mm (and 22/24 GXP with Fit Kit 6)",
+     "crank_fitment": "Shimano Hollowtech II, FSA, Rotor 3D, Race Face X; SRAM GXP"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-24-bsa-73",
+   "name": "Chris King ThreadFit 24 (BSA 73 mm, 24 mm (and 22/24 GXP with Fit Kit 6))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit 24",
+    "variant": "BSA 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 73,
+     "spindle": "24 mm (and 22/24 GXP with Fit Kit 6)",
+     "crank_fitment": "Shimano Hollowtech II, FSA, Rotor 3D, Race Face X; SRAM GXP"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-30x-t47-68",
+   "name": "Chris King ThreadFit T47 30X (T47 68 mm, 30 mm / 28.99 mm (DUB with fit kit))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 30X",
+    "variant": "T47 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 68,
+     "spindle": "30 mm / 28.99 mm (DUB with fit kit)",
+     "crank_fitment": "external-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-30x-t47-73",
+   "name": "Chris King ThreadFit T47 30X (T47 73 mm, 30 mm / 28.99 mm (DUB with fit kit))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 30X",
+    "variant": "T47 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 73,
+     "spindle": "30 mm / 28.99 mm (DUB with fit kit)",
+     "crank_fitment": "external-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-24x-t47-68",
+   "name": "Chris King ThreadFit T47 24X (T47 68 mm, 24 mm (and 22/24 GXP with Fit Kit 6))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 24X",
+    "variant": "T47 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 68,
+     "spindle": "24 mm (and 22/24 GXP with Fit Kit 6)",
+     "crank_fitment": "external-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-24x-t47-73",
+   "name": "Chris King ThreadFit T47 24X (T47 73 mm, 24 mm (and 22/24 GXP with Fit Kit 6))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 24X",
+    "variant": "T47 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 73,
+     "spindle": "24 mm (and 22/24 GXP with Fit Kit 6)",
+     "crank_fitment": "external-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-30i-t47-85.5",
+   "name": "Chris King ThreadFit T47 30i (T47 85.5 mm, 30 mm / 28.99 mm (DUB with fit kit))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 85.5
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 30i",
+    "variant": "T47 85.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 85.5,
+     "spindle": "30 mm / 28.99 mm (DUB with fit kit)",
+     "crank_fitment": "internal-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-30i-t47-86.5",
+   "name": "Chris King ThreadFit T47 30i (T47 86.5 mm, 30 mm / 28.99 mm (DUB with fit kit))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 30i",
+    "variant": "T47 86.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 86.5,
+     "spindle": "30 mm / 28.99 mm (DUB with fit kit)",
+     "crank_fitment": "internal-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-30i-t47-92",
+   "name": "Chris King ThreadFit T47 30i (T47 92 mm, 30 mm / 28.99 mm (DUB with fit kit))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 92
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 30i",
+    "variant": "T47 92 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 92,
+     "spindle": "30 mm / 28.99 mm (DUB with fit kit)",
+     "crank_fitment": "internal-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-24i-t47-85.5",
+   "name": "Chris King ThreadFit T47 24i (T47 85.5 mm, 24 mm (and 22/24 GXP with Fit Kit 6))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 85.5
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 24i",
+    "variant": "T47 85.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 85.5,
+     "spindle": "24 mm (and 22/24 GXP with Fit Kit 6)",
+     "crank_fitment": "internal-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-24i-t47-86.5",
+   "name": "Chris King ThreadFit T47 24i (T47 86.5 mm, 24 mm (and 22/24 GXP with Fit Kit 6))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 24i",
+    "variant": "T47 86.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 86.5,
+     "spindle": "24 mm (and 22/24 GXP with Fit Kit 6)",
+     "crank_fitment": "internal-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "chris-king-threadfit-t47-24i-t47-92",
+   "name": "Chris King ThreadFit T47 24i (T47 92 mm, 24 mm (and 22/24 GXP with Fit Kit 6))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 92
+   },
+   "meta": {
+    "brand": "Chris King",
+    "model": "ThreadFit T47 24i",
+    "variant": "T47 92 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 92,
+     "spindle": "24 mm (and 22/24 GXP with Fit Kit 6)",
+     "crank_fitment": "internal-bearing T47"
+    },
+    "notes": "Shell widths are the columns in which Chris King's fit guide specifies this BB; spacer/fit-kit setup depends on the crank.",
+    "sources": [
+     {
+      "url": "https://cdn.shopify.com/s/files/1/2920/2114/files/bb_fit_guide_2024.pdf",
+      "publisher": "Chris King Precision Components — BB fit guide (Sept 2021 R1)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-bb-mt801-xt-slx-bsa-68",
+   "name": "Shimano BB-MT801 (XT/SLX) (BSA 68 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "BB-MT801 (XT/SLX)",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "24 mm Hollowtech II",
+     "weight_g": 84,
+     "recommended_for": "XT FC-M8100/M8120/M8130, SLX FC-M7100/M7120/M7130, FC-MT700/MT600"
+    },
+    "notes": "One part covers 68 and 73 mm shells with the enclosed spacers.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/XT-SLX-BB-MT801-Hollowtech-II-Bottom-Bracket-p90360/",
+      "publisher": "bike-components.de (Shimano BB-MT801)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-bb-mt801-xt-slx-bsa-73",
+   "name": "Shimano BB-MT801 (XT/SLX) (BSA 73 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "BB-MT801 (XT/SLX)",
+    "variant": "BSA 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 73,
+     "spindle": "24 mm Hollowtech II",
+     "weight_g": 84,
+     "recommended_for": "XT FC-M8100/M8120/M8130, SLX FC-M7100/M7120/M7130, FC-MT700/MT600"
+    },
+    "notes": "One part covers 68 and 73 mm shells with the enclosed spacers.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/XT-SLX-BB-MT801-Hollowtech-II-Bottom-Bracket-p90360/",
+      "publisher": "bike-components.de (Shimano BB-MT801)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-sm-bbr60-ultegra-105-bsa-68",
+   "name": "Shimano SM-BBR60 (Ultegra/105) (BSA 68 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SM-BBR60 (Ultegra/105)",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "24 mm Hollowtech II",
+     "weight_g": 77,
+     "recommended_for": "Ultegra FC-R8100/R8000/6800, 105 FC-R7100/R7000/5800, GRX FC-RX820/RX810"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/Ultegra-FC-CX70-105-SM-BBR60-Hollowtech-II-Bottom-Bracket-p35878/",
+      "publisher": "bike-components.de (Shimano SM-BBR60)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-sm-bbr60-ultegra-105-italian-70",
+   "name": "Shimano SM-BBR60 (Ultegra/105) (Italian 70 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 70
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SM-BBR60 (Ultegra/105)",
+    "variant": "Italian 70 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "Italian",
+     "shell_width_mm": 70,
+     "spindle": "24 mm Hollowtech II",
+     "recommended_for": "Ultegra FC-R8100/R8000/6800, 105 FC-R7100/R7000/5800"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/Ultegra-FC-CX70-105-SM-BBR60-Hollowtech-II-Bottom-Bracket-p35878/",
+      "publisher": "bike-components.de (Shimano SM-BBR60)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-bb-r9100-dura-ace-bsa-68",
+   "name": "Shimano BB-R9100 (Dura-Ace) (BSA 68 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "BB-R9100 (Dura-Ace)",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "24 mm Hollowtech II",
+     "weight_g": 65,
+     "recommended_for": "Dura-Ace FC-R9200, FC-R9100, FC-9000"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/Dura-Ace-BB-R9100-Hollowtech-II-Bottom-Bracket-p51416/",
+      "publisher": "bike-components.de (Shimano BB-R9100)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-bb-r9100-dura-ace-italian-70",
+   "name": "Shimano BB-R9100 (Dura-Ace) (Italian 70 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 70
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "BB-R9100 (Dura-Ace)",
+    "variant": "Italian 70 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "Italian",
+     "shell_width_mm": 70,
+     "spindle": "24 mm Hollowtech II",
+     "recommended_for": "Dura-Ace FC-R9200, FC-R9100, FC-9000"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/Dura-Ace-BB-R9100-Hollowtech-II-Bottom-Bracket-p51416/",
+      "publisher": "bike-components.de (Shimano BB-R9100)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-sm-bb52-deore-alivio-bsa-68",
+   "name": "Shimano SM-BB52 (Deore/Alivio) (BSA 68 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SM-BB52 (Deore/Alivio)",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "24 mm Hollowtech II",
+     "recommended_for": "Deore, Alivio, ZEE and FC-MT series cranks"
+    },
+    "notes": "68/73 mm share one part (spacers); 83 mm is a separate variant.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/Deore-Alivio-SM-BB52-Hollowtech-II-Bottom-Bracket-p40091/",
+      "publisher": "bike-components.de (Shimano SM-BB52)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-sm-bb52-deore-alivio-bsa-73",
+   "name": "Shimano SM-BB52 (Deore/Alivio) (BSA 73 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SM-BB52 (Deore/Alivio)",
+    "variant": "BSA 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 73,
+     "spindle": "24 mm Hollowtech II",
+     "recommended_for": "Deore, Alivio, ZEE and FC-MT series cranks"
+    },
+    "notes": "68/73 mm share one part (spacers); 83 mm is a separate variant.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/Deore-Alivio-SM-BB52-Hollowtech-II-Bottom-Bracket-p40091/",
+      "publisher": "bike-components.de (Shimano SM-BB52)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-sm-bb52-deore-alivio-bsa-83",
+   "name": "Shimano SM-BB52 (Deore/Alivio) (BSA 83 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SM-BB52 (Deore/Alivio)",
+    "variant": "BSA 83 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 83,
+     "spindle": "24 mm Hollowtech II",
+     "recommended_for": "Deore, Alivio, ZEE and FC-MT series cranks"
+    },
+    "notes": "68/73 mm share one part (spacers); 83 mm is a separate variant.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/Deore-Alivio-SM-BB52-Hollowtech-II-Bottom-Bracket-p40091/",
+      "publisher": "bike-components.de (Shimano SM-BB52)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-bsa-bsa-68",
+   "name": "SRAM DUB BSA (BSA 68 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB BSA",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "28.99 mm (DUB)",
+     "weight_g": 76
+    },
+    "notes": "68/73 mm share one part; 83 and 100 mm are separate variants.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-BSA-Bottom-Bracket-p61954/",
+      "publisher": "bike-components.de (SRAM DUB BSA)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-bsa-bsa-73",
+   "name": "SRAM DUB BSA (BSA 73 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB BSA",
+    "variant": "BSA 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 73,
+     "spindle": "28.99 mm (DUB)",
+     "weight_g": 76
+    },
+    "notes": "68/73 mm share one part; 83 and 100 mm are separate variants.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-BSA-Bottom-Bracket-p61954/",
+      "publisher": "bike-components.de (SRAM DUB BSA)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-bsa-bsa-83",
+   "name": "SRAM DUB BSA (BSA 83 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB BSA",
+    "variant": "BSA 83 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 83,
+     "spindle": "28.99 mm (DUB)"
+    },
+    "notes": "68/73 mm share one part; 83 and 100 mm are separate variants.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-BSA-Bottom-Bracket-p61954/",
+      "publisher": "bike-components.de (SRAM DUB BSA)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-bsa-bsa-100",
+   "name": "SRAM DUB BSA (BSA 100 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB BSA",
+    "variant": "BSA 100 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 100,
+     "spindle": "28.99 mm (DUB)"
+    },
+    "notes": "68/73 mm share one part; 83 and 100 mm are separate variants.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-BSA-Bottom-Bracket-p61954/",
+      "publisher": "bike-components.de (SRAM DUB BSA)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-t47-t47-68",
+   "name": "SRAM DUB T47 (T47 68 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB T47",
+    "variant": "T47 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 68,
+     "spindle": "28.99 mm (DUB)",
+     "crank_fitment": "SRAM DUB Road and Road Wide"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-T47-Bottom-Bracket-p90346/",
+      "publisher": "bike-components.de (SRAM DUB T47)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-t47-t47-77",
+   "name": "SRAM DUB T47 (T47 77 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 77
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB T47",
+    "variant": "T47 77 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 77,
+     "spindle": "28.99 mm (DUB)",
+     "crank_fitment": "SRAM DUB Road and Road Wide"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-T47-Bottom-Bracket-p90346/",
+      "publisher": "bike-components.de (SRAM DUB T47)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-t47-t47-85.5",
+   "name": "SRAM DUB T47 (T47 85.5 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 85.5
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB T47",
+    "variant": "T47 85.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 85.5,
+     "spindle": "28.99 mm (DUB)",
+     "crank_fitment": "SRAM DUB Road"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-T47-Bottom-Bracket-p90346/",
+      "publisher": "bike-components.de (SRAM DUB T47)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-t47-85.5-wide",
+   "name": "SRAM DUB T47 (T47 85.5 mm Wide, 28.99 mm DUB)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 85.5
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB T47",
+    "variant": "T47 85.5 mm Wide",
+    "status": "current",
+    "specs": {
+     "shell_standard": "T47",
+     "shell_width_mm": 85.5,
+     "spindle": "28.99 mm (DUB)",
+     "crank_fitment": "SRAM DUB Road Wide"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-T47-Bottom-Bracket-p90346/",
+      "publisher": "bike-components.de (SRAM DUB T47)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-pressfit-road-bb86-86.5",
+   "name": "SRAM DUB Pressfit Road (BB86 86.5 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB Pressfit Road",
+    "variant": "BB86 86.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB86",
+     "shell_width_mm": 86.5,
+     "spindle": "28.99 mm (DUB)",
+     "shell_bore_mm": 41,
+     "weight_g": 100
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-Pressfit-Road-86-5-mm-Bottom-Bracket-p68729/",
+      "publisher": "bike-components.de (SRAM DUB Pressfit Road)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-pressfit-mtb-bb92-89.5",
+   "name": "SRAM DUB Pressfit MTB (BB92 89.5 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 89.5
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB Pressfit MTB",
+    "variant": "BB92 89.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB92",
+     "shell_width_mm": 89.5,
+     "spindle": "28.99 mm (DUB)",
+     "shell_bore_mm": 41,
+     "weight_g": 71,
+     "spacer": "4.5 mm for 89.5 / 2 mm for 92"
+    },
+    "notes": "Retailer lists BB92 shell width as 89.5-92 mm (spacer-selected); Wheels Mfg gives BB92 as 91.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-Pressfit-MTB-41-x-89-5-92-mm-Bottom-Bracket-p61951/",
+      "publisher": "bike-components.de (SRAM DUB Pressfit MTB)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-dub-pressfit-mtb-bb92-92",
+   "name": "SRAM DUB Pressfit MTB (BB92 92 mm, 28.99 mm (DUB))",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 92
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "DUB Pressfit MTB",
+    "variant": "BB92 92 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB92",
+     "shell_width_mm": 92,
+     "spindle": "28.99 mm (DUB)",
+     "shell_bore_mm": 41,
+     "weight_g": 71,
+     "spacer": "4.5 mm for 89.5 / 2 mm for 92"
+    },
+    "notes": "Retailer lists BB92 shell width as 89.5-92 mm (spacer-selected); Wheels Mfg gives BB92 as 91.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/DUB-Pressfit-MTB-41-x-89-5-92-mm-Bottom-Bracket-p61951/",
+      "publisher": "bike-components.de (SRAM DUB Pressfit MTB)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-sm-bb72-41b-bb86-86.5",
+   "name": "Shimano SM-BB72-41B (BB86 86.5 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "SM-BB72-41B",
+    "variant": "BB86 86.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB86",
+     "shell_width_mm": 86.5,
+     "spindle": "24 mm Hollowtech II",
+     "shell_bore_mm": 41,
+     "weight_g": 69,
+     "recommended_for": "Ultegra FC-R8100/R8000/6800, 105 FC-R7100/R7000/5800, GRX, FC-RS500"
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/SM-BB72-41B-Hollowtech-II-Press-Fit-41-x-86-5-mm-Bottom-Bracket-p35879/",
+      "publisher": "bike-components.de (Shimano SM-BB72-41B)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-bb-mt800-pa-bb92-89.5",
+   "name": "Shimano BB-MT800-PA (BB92 89.5 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 89.5
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "BB-MT800-PA",
+    "variant": "BB92 89.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB92",
+     "shell_width_mm": 89.5,
+     "spindle": "24 mm Hollowtech II",
+     "shell_bore_mm": 41,
+     "weight_g": 68,
+     "recommended_for": "XT FC-M8100/M8000, SLX FC-M7100/M7000, FC-MT700/MT610/MT600"
+    },
+    "notes": "Retailer lists '89.5 mm / 92 mm'; Wheels Mfg gives BB92 as 91.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/BB-MT800-PA-Hollowtech-II-Press-Fit-Bottom-Bracket-41-x-89-5-92-mm-p43965/",
+      "publisher": "bike-components.de (Shimano BB-MT800-PA)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "shimano-bb-mt800-pa-bb92-92",
+   "name": "Shimano BB-MT800-PA (BB92 92 mm, 24 mm Hollowtech II)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 92
+   },
+   "meta": {
+    "brand": "Shimano",
+    "model": "BB-MT800-PA",
+    "variant": "BB92 92 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB92",
+     "shell_width_mm": 92,
+     "spindle": "24 mm Hollowtech II",
+     "shell_bore_mm": 41,
+     "weight_g": 68,
+     "recommended_for": "XT FC-M8100/M8000, SLX FC-M7100/M7000, FC-MT700/MT610/MT600"
+    },
+    "notes": "Retailer lists '89.5 mm / 92 mm'; Wheels Mfg gives BB92 as 91.5 mm.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Shimano/BB-MT800-PA-Hollowtech-II-Press-Fit-Bottom-Bracket-41-x-89-5-92-mm-p43965/",
+      "publisher": "bike-components.de (Shimano BB-MT800-PA)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-gxp-pressfit-road-bb86-86.5",
+   "name": "SRAM GXP Pressfit (Road) (BB86 86.5 mm, GXP 24/22 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 86.5
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GXP Pressfit (Road)",
+    "variant": "BB86 86.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB86",
+     "shell_width_mm": 86.5,
+     "spindle": "GXP 24/22 mm",
+     "shell_bore_mm": 41
+    },
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/GXP-Pressfit-41-x-86-5-92-mm-Bottom-Bracket-p24338/",
+      "publisher": "bike-components.de (SRAM GXP Pressfit)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-gxp-pressfit-mtb-bb92-89.5",
+   "name": "SRAM GXP Pressfit (MTB) (BB92 89.5 mm, GXP 24/22 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 89.5
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GXP Pressfit (MTB)",
+    "variant": "BB92 89.5 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB92",
+     "shell_width_mm": 89.5,
+     "spindle": "GXP 24/22 mm",
+     "shell_bore_mm": 41
+    },
+    "notes": "Retailer lists MTB shell width as 89.5-92 mm.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/GXP-Pressfit-41-x-86-5-92-mm-Bottom-Bracket-p24338/",
+      "publisher": "bike-components.de (SRAM GXP Pressfit)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "sram-gxp-pressfit-mtb-bb92-92",
+   "name": "SRAM GXP Pressfit (MTB) (BB92 92 mm, GXP 24/22 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 92
+   },
+   "meta": {
+    "brand": "SRAM",
+    "model": "GXP Pressfit (MTB)",
+    "variant": "BB92 92 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BB92",
+     "shell_width_mm": 92,
+     "spindle": "GXP 24/22 mm",
+     "shell_bore_mm": 41
+    },
+    "notes": "Retailer lists MTB shell width as 89.5-92 mm.",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/SRAM/GXP-Pressfit-41-x-86-5-92-mm-Bottom-Bracket-p24338/",
+      "publisher": "bike-components.de (SRAM GXP Pressfit)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "hope-stainless-steel-mtb-bb-bsa-68",
+   "name": "Hope Stainless Steel MTB BB (BSA 68 mm, 24 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Hope",
+    "model": "Stainless Steel MTB BB",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "24 mm",
+     "weight_g": 110
+    },
+    "notes": "68/73 mm share one part; 83 mm is a separate version. Fits Shimano Hollowtech II and Race Face X-Type (Truvativ with adapter).",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Hope/Stainless-Steel-MTB-Bottom-Bracket-p27281/",
+      "publisher": "bike-components.de (Hope Stainless Steel MTB BB)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "hope-stainless-steel-mtb-bb-bsa-73",
+   "name": "Hope Stainless Steel MTB BB (BSA 73 mm, 24 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Hope",
+    "model": "Stainless Steel MTB BB",
+    "variant": "BSA 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 73,
+     "spindle": "24 mm",
+     "weight_g": 110
+    },
+    "notes": "68/73 mm share one part; 83 mm is a separate version. Fits Shimano Hollowtech II and Race Face X-Type (Truvativ with adapter).",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Hope/Stainless-Steel-MTB-Bottom-Bracket-p27281/",
+      "publisher": "bike-components.de (Hope Stainless Steel MTB BB)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "hope-stainless-steel-mtb-bb-bsa-83",
+   "name": "Hope Stainless Steel MTB BB (BSA 83 mm, 24 mm)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Hope",
+    "model": "Stainless Steel MTB BB",
+    "variant": "BSA 83 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 83,
+     "spindle": "24 mm"
+    },
+    "notes": "68/73 mm share one part; 83 mm is a separate version. Fits Shimano Hollowtech II and Race Face X-Type (Truvativ with adapter).",
+    "sources": [
+     {
+      "url": "https://www.bike-components.de/en/Hope/Stainless-Steel-MTB-Bottom-Bracket-p27281/",
+      "publisher": "bike-components.de (Hope Stainless Steel MTB BB)",
+      "kind": "retailer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "phil-wood-outboard-bottom-bracket-cup-set-british-bsa-68",
+   "name": "Phil Wood Outboard Bottom Bracket Cup Set (British) (BSA 68 mm, Shimano 24 mm or SRAM/GXP)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Phil Wood",
+    "model": "Outboard Bottom Bracket Cup Set (British)",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "Shimano 24 mm or SRAM/GXP",
+     "weight_g": 254,
+     "weight_carbonyte_g": 142,
+     "center_sleeve": "68/73, 83 or 100 mm"
+    },
+    "sources": [
+     {
+      "url": "https://philwood.com/products/outboard-bottom-bracket-cup-set",
+      "publisher": "Phil Wood & Co.",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/outboard-bottom-bracket/products.json",
+      "publisher": "Phil Wood & Co. (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "phil-wood-outboard-bottom-bracket-cup-set-british-bsa-73",
+   "name": "Phil Wood Outboard Bottom Bracket Cup Set (British) (BSA 73 mm, Shimano 24 mm or SRAM/GXP)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 73
+   },
+   "meta": {
+    "brand": "Phil Wood",
+    "model": "Outboard Bottom Bracket Cup Set (British)",
+    "variant": "BSA 73 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 73,
+     "spindle": "Shimano 24 mm or SRAM/GXP",
+     "weight_g": 254,
+     "weight_carbonyte_g": 142,
+     "center_sleeve": "68/73, 83 or 100 mm"
+    },
+    "sources": [
+     {
+      "url": "https://philwood.com/products/outboard-bottom-bracket-cup-set",
+      "publisher": "Phil Wood & Co.",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/outboard-bottom-bracket/products.json",
+      "publisher": "Phil Wood & Co. (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "phil-wood-outboard-bottom-bracket-cup-set-british-bsa-83",
+   "name": "Phil Wood Outboard Bottom Bracket Cup Set (British) (BSA 83 mm, Shimano 24 mm or SRAM/GXP)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 83
+   },
+   "meta": {
+    "brand": "Phil Wood",
+    "model": "Outboard Bottom Bracket Cup Set (British)",
+    "variant": "BSA 83 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 83,
+     "spindle": "Shimano 24 mm or SRAM/GXP",
+     "weight_g": 254,
+     "weight_carbonyte_g": 142,
+     "center_sleeve": "68/73, 83 or 100 mm"
+    },
+    "sources": [
+     {
+      "url": "https://philwood.com/products/outboard-bottom-bracket-cup-set",
+      "publisher": "Phil Wood & Co.",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/outboard-bottom-bracket/products.json",
+      "publisher": "Phil Wood & Co. (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "phil-wood-outboard-bottom-bracket-cup-set-british-bsa-100",
+   "name": "Phil Wood Outboard Bottom Bracket Cup Set (British) (BSA 100 mm, Shimano 24 mm or SRAM/GXP)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 100
+   },
+   "meta": {
+    "brand": "Phil Wood",
+    "model": "Outboard Bottom Bracket Cup Set (British)",
+    "variant": "BSA 100 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 100,
+     "spindle": "Shimano 24 mm or SRAM/GXP",
+     "weight_g": 254,
+     "weight_carbonyte_g": 142,
+     "center_sleeve": "68/73, 83 or 100 mm"
+    },
+    "sources": [
+     {
+      "url": "https://philwood.com/products/outboard-bottom-bracket-cup-set",
+      "publisher": "Phil Wood & Co.",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/outboard-bottom-bracket/products.json",
+      "publisher": "Phil Wood & Co. (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source"
+   }
+  },
+  {
+   "id": "phil-wood-philcentric-outboard-bb-british-eccentric-bsa-68",
+   "name": "Phil Wood Philcentric Outboard BB (British, eccentric) (BSA 68 mm, Shimano 24 mm or SRAM/GXP)",
+   "category": "bb_shells",
+   "values": {
+    "bb_shell_width": 68
+   },
+   "meta": {
+    "brand": "Phil Wood",
+    "model": "Philcentric Outboard BB (British, eccentric)",
+    "variant": "BSA 68 mm",
+    "status": "current",
+    "specs": {
+     "shell_standard": "BSA",
+     "shell_width_mm": 68,
+     "spindle": "Shimano 24 mm or SRAM/GXP",
+     "weight_g": 207,
+     "shell_width_range_mm": "68-100",
+     "type": "eccentric outboard cups for chain tension in a threaded BSA shell"
+    },
+    "notes": "Philcentric covers 68-100 mm BSA shells; 68 mm set as the value as the lower bound of the published range.",
+    "sources": [
+     {
+      "url": "https://philwood.com/products/philcentric",
+      "publisher": "Phil Wood & Co.",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     },
+     {
+      "url": "https://philwood.com/collections/outboard-bottom-bracket/products.json",
+      "publisher": "Phil Wood & Co. (product data)",
+      "kind": "manufacturer",
+      "accessed": "2026-10-11"
+     }
+    ],
+    "verified": "source",
+    "derived": {
+     "bb_shell_width": "lower bound of Phil Wood's published 68-100 mm range; adjust to the frame's BSA width"
+    }
+   }
+  }
+ ]
+}

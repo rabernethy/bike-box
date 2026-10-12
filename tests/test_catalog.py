@@ -3,9 +3,9 @@ import json
 
 import pytest
 
-import framewright.geometry.clearance  # noqa: F401  (registers parameters)
-import framewright.geometry.solver  # noqa: F401
-from framewright.model import catalog, library
+import bikebox.geometry.clearance  # noqa: F401  (registers parameters)
+import bikebox.geometry.solver  # noqa: F401
+from bikebox.model import catalog, library
 
 FILES = catalog.catalog_files()
 
@@ -16,7 +16,7 @@ def test_catalog_file_validates(path):
 
 
 def test_catalog_items_load_and_apply():
-    from framewright.model.design import Design
+    from bikebox.model.design import Design
     library.reload()
     for path in FILES:
         doc = json.loads(path.read_text(encoding="utf-8"))

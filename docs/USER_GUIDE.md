@@ -1,4 +1,4 @@
-# FrameWright user guide
+# Bike Box user guide
 
 ## The window
 
@@ -40,7 +40,7 @@
 Drag the blue handles: **saddle** (height; Shift = free move/custom seat angle), **handlebar** (stem length and
 spacers), **head tube top** (stack & reach), **rear axle** (chainstay & BB drop; Shift = length only),
 **seat tube top**, **front axle**, **pedal** (crank angle).
-Double-click a dimension to type a value; FrameWright switches the front-end mode as needed (e.g. editing
+Double-click a dimension to type a value; Bike Box switches the front-end mode as needed (e.g. editing
 *Stack* makes stack a driving dimension). Drag dimensions to move them; right-click to hide/reset them.
 
 ### Special frames
@@ -102,7 +102,7 @@ many issues would remain, and **Apply selected** makes all the chosen changes in
   design or snapshot.
 * **BikeCAD** (`.bcad`): File ▸ Save As and choose the *BikeCAD designs* format — the filename defaults to
   `.bcad` and the core geometry is written as a BikeCAD-readable file (import it back, or open it in BikeCAD).
-* Headless: `framewright export design.fwd out.pdf` (also .svg .png .dxf .csv).
+* Headless: `bikebox export design.bikebox out.pdf` (also .svg .png .dxf .csv).
 
 ## Customising
 

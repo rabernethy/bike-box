@@ -6,16 +6,16 @@ from pathlib import Path
 
 import pytest
 
-from framewright.fit import advisor as A
-from framewright.fit import com as C
-from framewright.fit import expr as X
-from framewright.fit import rider as R
-from framewright.geometry.solver import solve
-from framewright.geometry.vec import V
-from framewright.model.design import Design
-from framewright.render.bike_scene import EXTRA_BUILDERS, build_scene
-from framewright.render.scene import Scene
-from framewright.render.theme import Theme
+from bikebox.fit import advisor as A
+from bikebox.fit import com as C
+from bikebox.fit import expr as X
+from bikebox.fit import rider as R
+from bikebox.geometry.solver import solve
+from bikebox.geometry.vec import V
+from bikebox.model.design import Design
+from bikebox.render.bike_scene import EXTRA_BUILDERS, build_scene
+from bikebox.render.scene import Scene
+from bikebox.render.theme import Theme
 
 
 def close(a, b, tol=1e-6):
@@ -314,7 +314,7 @@ def test_custom_formula_overrides_and_safety():
             "saddle_height": {"label": "SH", "expr": "inseam - 100", "unit": "mm", "param": "saddle_height"}}},
         "Evil": {"formulas": {"saddle_height": {"expr": "__import__('os').system('true')"}}},
     }
-    schemes = A.load_schemes(d, directory=Path("/nonexistent-framewright-dir"))
+    schemes = A.load_schemes(d, directory=Path("/nonexistent-bikebox-dir"))
     road = {r.key: r for r in A.evaluate(schemes["Classic road"], d)}
     assert road["saddle_height"].value == pytest.approx(765)
     assert road["saddle_height"].label.startswith("Saddle height")      # merged, label kept
@@ -408,8 +408,8 @@ def test_rider_moves_weight_forward_when_bars_lower():
 # --------------------------------------------------------------------------
 def test_hooks_registered():
     names = [(f.__module__, f.__name__) for f in EXTRA_BUILDERS]
-    assert ("framewright.fit.rider", "draw_rider") in names
-    assert ("framewright.fit.com", "draw_com") in names
+    assert ("bikebox.fit.rider", "draw_rider") in names
+    assert ("bikebox.fit.com", "draw_com") in names
 
 
 @pytest.mark.parametrize("style", ["silhouette", "outline", "skeleton"])
@@ -442,8 +442,8 @@ def test_build_scene_layers():
 
 def test_fit_modules_do_not_import_qt():
     root = Path(__file__).resolve().parents[1]
-    code = ("import sys, framewright.fit\n"
-            "bad = [m for m in sys.modules if m.startswith(('PyQt', 'PySide')) or m == 'framewright.qt']\n"
+    code = ("import sys, bikebox.fit\n"
+            "bad = [m for m in sys.modules if m.startswith(('PyQt', 'PySide')) or m == 'bikebox.qt']\n"
             "assert not bad, bad\n")
     res = subprocess.run([sys.executable, "-c", code], cwd=root, capture_output=True, text=True, timeout=60)
     assert res.returncode == 0, res.stderr

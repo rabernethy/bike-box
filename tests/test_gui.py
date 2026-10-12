@@ -1,16 +1,16 @@
 """GUI smoke tests (offscreen)."""
 import pytest
 
-from framewright.geometry.solver import solve
-from framewright.geometry.vec import V
+from bikebox.geometry.solver import solve
+from bikebox.geometry.vec import V
 
 
 @pytest.fixture
 def window(qapp, tmp_path, monkeypatch):
     monkeypatch.setenv("XDG_CONFIG_HOME", str(tmp_path))
-    from framewright.gui.app import _load_plugins
+    from bikebox.gui.app import _load_plugins
     _load_plugins()
-    from framewright.gui.main_window import MainWindow
+    from bikebox.gui.main_window import MainWindow
     w = MainWindow()
     w.settings.clear()
     w.resize(1400, 900)
@@ -43,7 +43,7 @@ def test_param_edit_and_undo(window):
 
 
 def test_param_pages_build_for_every_group(window):
-    from framewright.gui.param_panel import ordered_groups
+    from bikebox.gui.param_panel import ordered_groups
     panel = window.params
     for g in ordered_groups():
         panel.show_group(g)
@@ -64,7 +64,7 @@ def test_joints_page_not_empty_with_default_joint_style(window):
 
 
 def test_extra_tube_paint_and_in_phase(window):
-    from framewright.gui import extra_tubes as XT
+    from bikebox.gui import extra_tubes as XT
     doc = window.doc()
     XT.add_tubes(doc, [{"name": "lat", "a": {"tube": "st", "pos": 0.4}, "b": {"tube": "ht", "pos": 0.6},
                         "od": 19, "wall": 0.9, "paint": "#2277cc", "parallel_to": "tt", "phase_anchor": "a"}])
@@ -72,13 +72,13 @@ def test_extra_tube_paint_and_in_phase(window):
     tt, x = g.tubes["tt"], g.tubes["x0_lat"]
     td, xd = (tt.b - tt.a).norm(), (x.b - x.a).norm()
     assert abs(td.x * xd.y - td.y * xd.x) < 1e-6          # parallel to the top tube
-    from framewright.render.bike_scene import build_scene
+    from bikebox.render.bike_scene import build_scene
     fills = [getattr(p.style, "fill", None) for p in build_scene(g).prims if getattr(p, "tag", "") == "tube:x0_lat"]
     assert "#2277cc" in fills
 
 
 def test_drag_changes(window):
-    from framewright.gui.canvas import drag_point_changes
+    from bikebox.gui.canvas import drag_point_changes
     doc = window.doc()
     d0, g0 = doc.design.copy(), doc.geometry
     ch, _ = drag_point_changes("saddle", g0.p["saddle"] + g0.s * 20, d0, g0, False)
@@ -107,7 +107,7 @@ def test_dimension_drag_offset(window):
 def test_save_and_reopen(window, tmp_path):
     doc = window.doc()
     doc.set_param("reach", 401)
-    p = tmp_path / "bike.fwd"
+    p = tmp_path / "bike.bikebox"
     doc.save(p)
     assert not doc.dirty
     d2 = window.open_path(p)
@@ -118,7 +118,7 @@ def test_save_and_reopen(window, tmp_path):
 
 
 def test_dialogs_construct(window, qapp):
-    from framewright.gui import dialogs as D
+    from bikebox.gui import dialogs as D
     doc = window.doc()
     for cls in (D.DimensionsDialog, D.SnapshotsDialog, D.TitleBlockDialog, D.ExtraTubesDialog):
         dlg = cls(doc, window)
@@ -145,14 +145,14 @@ def test_aux_panel_values(window, qapp):
 
 def test_feature_dialogs_construct(window, qapp):
     """Every integration dialog opens against the real feature modules."""
-    from framewright.gui.dialogs import DecalsDialog
-    from framewright.gui.drawing_dialog import DrawingDialog
-    from framewright.gui.fit_dialog import FitAdvisorDialog
-    from framewright.gui.library_dialog import LibraryDialog
-    from framewright.gui.main_window import TemplatePicker
-    from framewright.gui.mitre_dialog import MitreDialog
-    from framewright.gui.report_dialog import ReportDialog
-    from framewright.model import templates
+    from bikebox.gui.dialogs import DecalsDialog
+    from bikebox.gui.drawing_dialog import DrawingDialog
+    from bikebox.gui.fit_dialog import FitAdvisorDialog
+    from bikebox.gui.library_dialog import LibraryDialog
+    from bikebox.gui.main_window import TemplatePicker
+    from bikebox.gui.mitre_dialog import MitreDialog
+    from bikebox.gui.report_dialog import ReportDialog
+    from bikebox.model import templates
     doc = window.doc()
     dlgs = [FitAdvisorDialog(doc, window), MitreDialog(doc, window), ReportDialog(doc, window, focus="UCI"),
             LibraryDialog(doc, window), DrawingDialog(doc, window, "pdf"), DecalsDialog(doc, window),
@@ -178,7 +178,7 @@ def test_feature_dialogs_construct(window, qapp):
 
 
 def test_extra_tube_tool_and_presets(window, qapp):
-    from framewright.gui import extra_tubes as XT
+    from bikebox.gui import extra_tubes as XT
     doc = window.doc()
     c = window.view().canvas
     g = doc.geometry
@@ -207,7 +207,7 @@ def test_extra_tube_tool_and_presets(window, qapp):
 def test_dimension_tool_snaps_to_tubes(window):
     # the measure/dimension tools snap to positions along tubes (incl. extra
     # tubes), storing a {"tube","pos"} spec, not just named frame points
-    from framewright.gui import extra_tubes as XT
+    from bikebox.gui import extra_tubes as XT
     doc = window.doc()
     XT.add_tubes(doc, [{"name": "lat", "a": "st_top", "b": "ht_top", "od": 19, "wall": 0.9}])
     c = window.view().canvas
@@ -220,12 +220,12 @@ def test_dimension_tool_snaps_to_tubes(window):
     _, xspec, _ = c._snap_spec(xmid)
     assert isinstance(xspec, dict) and xspec.get("tube") == "x0_lat"
     # a user dimension built from those specs resolves and follows the geometry
-    from framewright.geometry import dimensions as DIM
+    from bikebox.geometry import dimensions as DIM
     assert DIM.build_user(g, {"id": "u1", "kind": "aligned", "points": [spec, xspec], "offset": 30}) is not None
 
 
 def test_junction_handles_are_exact(window):
-    from framewright.gui.canvas import drag_point_changes
+    from bikebox.gui.canvas import drag_point_changes
     doc = window.doc()
     for mode in ("centerline", "stickout"):
         doc.set_param("ht_junction_mode", mode)

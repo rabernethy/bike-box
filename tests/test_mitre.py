@@ -6,9 +6,9 @@ import xml.etree.ElementTree as ET
 import numpy as np
 import pytest
 
-from framewright.geometry import mitre as M
-from framewright.geometry.solver import solve
-from framewright.model.design import Design
+from bikebox.geometry import mitre as M
+from bikebox.geometry.solver import solve
+from bikebox.model.design import Design
 
 X3, Y3, Z3 = np.array([1.0, 0, 0]), np.array([0, 1.0, 0]), np.array([0, 0, 1.0])
 
@@ -279,8 +279,8 @@ def _pages(path):
 
 
 def test_template_scene(geometry):
-    from framewright.export.mitre_output import mitre_template_scene
-    from framewright.render.scene import Polyline, Text
+    from bikebox.export.mitre_output import mitre_template_scene
+    from bikebox.render.scene import Polyline, Text
     cut = _cut(M.compute_mitres(geometry), "tt", "b")
     sc = mitre_template_scene(cut, "Test")
     texts = " ".join(p.text for p in sc.prims if isinstance(p, Text))
@@ -297,7 +297,7 @@ def test_template_scene(geometry):
 
 
 def test_pdf_true_scale_and_tiling(qapp, tmp_path, geometry):
-    from framewright.export.mitre_output import save_mitre_pdf
+    from bikebox.export.mitre_output import save_mitre_pdf
     cuts = M.compute_mitres(geometry)
     small = tmp_path / "small.pdf"
     n = save_mitre_pdf(cuts, small, "A4", True, "Test")
@@ -309,7 +309,7 @@ def test_pdf_true_scale_and_tiling(qapp, tmp_path, geometry):
 
 
 def test_svg_and_dxf(tmp_path, geometry):
-    from framewright.export.mitre_output import save_mitre_dxf, save_mitre_svg
+    from bikebox.export.mitre_output import save_mitre_dxf, save_mitre_svg
     cuts = M.compute_mitres(geometry)
     svg = tmp_path / "m.svg"
     save_mitre_svg(cuts, svg, "Test")
@@ -325,7 +325,7 @@ def test_svg_and_dxf(tmp_path, geometry):
 
 
 def test_cut_list_rows(geometry):
-    from framewright.export.mitre_output import cut_list_rows
+    from bikebox.export.mitre_output import cut_list_rows
     cuts = M.compute_mitres(geometry)
     rows = cut_list_rows(geometry, cuts)
     assert rows[0][0] == "Tube" and "Phase" in rows[0] and "Long-to-long" in rows[0]
@@ -334,7 +334,7 @@ def test_cut_list_rows(geometry):
 
 
 def test_gcode(tmp_path, geometry):
-    from framewright.export.gcode import mitre_gcode, save_gcode, toolpath
+    from bikebox.export.gcode import mitre_gcode, save_gcode, toolpath
     cuts = M.compute_mitres(geometry)
     cut = _cut(cuts, "tt", "b")
     s = mitre_gcode(cut, kerf=1.2, lead_in=3.0)

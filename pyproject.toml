@@ -3,13 +3,13 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "framewright"
+name = "bikebox"
 version = "0.1.0"
 description = "Open-source parametric bicycle frame design (geometry, fit, drawings, miter templates)"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "GPL-3.0-or-later"
-authors = [{ name = "FrameWright contributors" }]
+authors = [{ name = "Bike Box contributors" }]
 dependencies = ["PyQt6>=6.4", "numpy>=1.24"]
 
 [project.optional-dependencies]
@@ -18,13 +18,13 @@ pyside = ["PySide6>=6.5"]
 dev = ["pytest>=7"]
 
 [project.scripts]
-framewright = "framewright.__main__:main"
+bikebox = "bikebox.__main__:main"
 
 [tool.setuptools.packages.find]
-include = ["framewright*"]
+include = ["bikebox*"]
 
 [tool.setuptools.package-data]
-framewright = ["data/templates/*.fwd", "data/libraries/*.json", "data/*.svg"]
+bikebox = ["data/templates/*.bikebox", "data/libraries/*.json", "data/*.svg"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

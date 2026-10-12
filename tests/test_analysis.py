@@ -4,10 +4,10 @@ import time
 import numpy as np
 import pytest
 
-from framewright.analysis import gearing, jig, report, structure, uci, weight
-from framewright.geometry.solver import MATERIAL_YOUNG, solve
-from framewright.model import params as P
-from framewright.model.design import Design
+from bikebox.analysis import gearing, jig, report, structure, uci, weight
+from bikebox.geometry.solver import MATERIAL_YOUNG, solve
+from bikebox.model import params as P
+from bikebox.model.design import Design
 
 
 def rel(a, b):
@@ -280,8 +280,8 @@ def test_fixture_numbers(geometry):
 
 
 def test_stay_phase_planar_and_bb():
-    from framewright.geometry.solver import Tube
-    from framewright.geometry.vec import V
+    from bikebox.geometry.solver import Tube
+    from bikebox.geometry.vec import V
     planar = Tube("ss", "Seat stay", V(-400, 70), V(-140, 480), 12, 16, za=30, zb=30, mirrored=True)
     splay, phase = jig.stay_angles(planar, (-0.28, 0.96, 0.0))
     assert splay == pytest.approx(0, abs=1e-9) and phase == pytest.approx(0, abs=1e-9)
@@ -304,7 +304,7 @@ def test_full_report(geometry):
 
 
 def test_report_honours_units(design):
-    from framewright.model.units import fmt_len
+    from bikebox.model.units import fmt_len
     design.set("units", "in")
     g = solve(design)
     secs = {s.title: s for s in report.full_report(g)}
