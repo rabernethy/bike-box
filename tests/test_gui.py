@@ -137,9 +137,15 @@ def test_feature_dialogs_construct(window, qapp):
     assert dlgs[3].cats.count() >= 10 and dlgs[6].infos
     lib = dlgs[3]
     lib.cats.setCurrentRow(0)
-    lib.items.setCurrentRow(0)
+    lib.items.setCurrentItem(lib.items.topLevelItem(0))
     lib.apply()                                   # tube set applies through undo
     assert doc.undo.canUndo()
+    # the sourced catalog shows specs and source links
+    lib.search.setText("SID SL")
+    lib.sourced.setChecked(True)
+    assert lib.items.topLevelItemCount() > 0
+    lib.items.setCurrentItem(lib.items.topLevelItem(0))
+    assert "Sources" in lib.info.toHtml() and "sram.com" in lib.info.toHtml()
     for dlg in dlgs:
         dlg.reject()
 

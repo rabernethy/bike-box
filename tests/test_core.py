@@ -277,3 +277,20 @@ def test_bcad_import_synthetic(tmp_path):
     assert close(g.v["stack"], 565.6, 0.05)            # BikeCAD stored 565.6 for this geometry
     assert close(g.v["reach"], 392.3, 0.05)            # same design saved in stack/reach mode stores 392.3
     assert close(g.v["seat_tube_cc"], 466.0) and close(g.v["st_extension"], 49.2)
+
+
+def test_bcad_import_real_file():
+    """A real BikeCAD-saved design (BIKED project, MIT licence; see tests/fixtures/BIKED-LICENSE.txt).
+    It is driven by front centre + head tube length; BikeCAD's stored stack (565.6) and the reach it
+    stores for the same bike in stack/reach mode (392.3) must come out of FrameWright's solver."""
+    from pathlib import Path
+    from framewright.model.design import Design
+    d = Design.load(Path(__file__).parent / "fixtures" / "biked_plain_road.bcad")
+    g = solve(d)
+    assert d["front_v_mode"] == "ht_length" and d["front_h_mode"] == "front_center"
+    assert close(g.v["head_tube_length"], 145.0) and close(g.v["front_center"], 595.0)
+    assert close(g.v["stack"], 565.6, 0.05)
+    assert close(g.v["reach"], 392.3, 0.05)
+    assert close(g.v["seat_tube_ct"], 515.2, 1e-6) and close(g.v["seat_tube_cc"], 466.0, 1e-6)
+    assert close(d.f("crank_length"), 172.5) and close(g.v["saddle_height"], 718.0)
+    assert d.extras["bcad_import"]["entries"] > 6000
