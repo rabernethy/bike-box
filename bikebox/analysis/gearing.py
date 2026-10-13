@@ -129,6 +129,21 @@ def _rings_cogs(d: Design) -> tuple[list[float], list[float]]:
     return rings, cogs
 
 
+def drivetrain_range(d: Design) -> dict:
+    """Required rear-derailleur capacity and largest cog for this drivetrain.
+
+    Capacity = front difference (big-small ring) + rear difference (big-small
+    cog) — the total chain slack the rear derailleur must take up.
+    """
+    rings, cogs = _rings_cogs(d)
+    if not rings or not cogs:
+        return {}
+    front = max(rings) - min(rings)
+    rear = max(cogs) - min(cogs)
+    return {"front_range": front, "rear_range": rear, "required_capacity": front + rear,
+            "max_cog": max(cogs), "min_cog": min(cogs), "rings": len(set(rings)), "cogs": len(set(cogs))}
+
+
 def rear_chainline(d: Design) -> tuple[float, bool]:
     """(rear chainline mm, estimated?) from the parameter or the hub spacing."""
     v = d.f("rear_chainline")

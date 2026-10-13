@@ -37,3 +37,25 @@ def test_report_includes_compatibility_section():
     from bikebox.analysis.report import full_report
     titles = [s.title for s in full_report(solve(Design()))]
     assert "Compatibility" in titles
+
+
+def test_derailleur_capacity_and_max_cog():
+    d = Design()
+    d.update({"chainrings": "50, 34", "cogs": "11, 13, 15, 17, 19, 21, 24, 28, 32, 36, 40",
+              "rd_capacity": 39, "rd_max_cog": 34})
+    levels = _levels(d)
+    assert ("Derailleur capacity", "fail") in levels
+    assert ("Derailleur max cog", "fail") in levels
+    # a matching big-capacity RD clears it
+    d.update({"rd_capacity": 45, "rd_max_cog": 40})
+    levels = _levels(d)
+    assert ("Derailleur capacity", "fail") not in levels
+
+
+def test_drivetrain_range_math():
+    from bikebox.analysis.gearing import drivetrain_range
+    d = Design()
+    d.update({"chainrings": "46, 30", "cogs": "11, 28"})
+    dr = drivetrain_range(d)
+    assert dr["front_range"] == 16 and dr["rear_range"] == 17 and dr["required_capacity"] == 33
+    assert dr["max_cog"] == 28

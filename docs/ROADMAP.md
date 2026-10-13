@@ -25,7 +25,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 ## Components & drivetrain
 - [x] Braze-on / mount **placement UI** (bottle bosses, cable stops, disc mount, rack/fender eyelets) — drawn + in the build sheet
 - [ ] Full cable/hose/Di2 routing paths (internal/external); housing-stop/port placement
-- [ ] Derailleur capacity, chain wrap, b-gap, max/min sprocket, crank-to-frame envelope
+- [x] Derailleur capacity + max-cog check (chain wrap vs RD rating); crank-to-frame envelope still open
 - [ ] Brake mount standards (IS/post/flat-mount) + rotor-size placement + caliper clearance
 - [ ] Dropout/hanger database incl. UDH; thru-axle thread/length picker
 - [ ] Dynamo/light/fender/rack load & mount modeling; kickstand plate placement

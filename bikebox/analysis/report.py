@@ -137,6 +137,18 @@ def _gearing(g: Geometry) -> Section:
     rows.append(("Gain ratio", f"{s['lowest']['gain_ratio']:.2f} – {s['highest']['gain_ratio']:.2f}", "info"))
     rows.append(("Speeds at", f"{d.f('cadence'):g} rpm", "info"))
     rows.append(("Rear wheel diameter used", _L(g, g.wheels["rear"].diameter), "info"))
+    if d["drive_type"] == "derailleur":
+        from .gearing import drivetrain_range
+        dr = drivetrain_range(d)
+        if dr:
+            cap = d.get("rd_capacity") or 0
+            over_cap = cap and dr["required_capacity"] > cap
+            rows.append(("RD capacity needed", f"{dr['required_capacity']:.0f} T"
+                         + (f" (RD rated {cap} T)" if cap else ""), "fail" if over_cap else "ok"))
+            mx = d.get("rd_max_cog") or 0
+            over_cog = mx and dr["max_cog"] > mx
+            rows.append(("Largest cog", f"{dr['max_cog']:.0f} T"
+                         + (f" (RD max {mx} T)" if mx else ""), "fail" if over_cog else "ok"))
     return Section("Gearing", rows)
 
 

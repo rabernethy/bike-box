@@ -515,6 +515,12 @@ _drive = [
     _mm("pedal_stack", "Pedal + cleat stack", G, "Drive", 12, 0, 40, help="Pedal axle to shoe sole"),
     _mm("q_factor", "Q factor", G, "Drive", 147, 100, 250),
     _bool("front_derailleur", "Front derailleur", G, "Drive", True),
+    _int("rd_capacity", "Rear derailleur capacity (T)", G, "Drive", 39, 0, 60,
+         help="Total chain-wrap capacity the rear derailleur is rated for (0 = don't check)",
+         vis=("drive_type", ("derailleur",))),
+    _int("rd_max_cog", "Rear derailleur max cog (T)", G, "Drive", 34, 0, 60,
+         help="Largest cog the rear derailleur can handle (0 = don't check)",
+         vis=("drive_type", ("derailleur",))),
 ]
 
 G = "Wheels & brakes"

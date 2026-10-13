@@ -48,6 +48,19 @@ def check(g: Geometry) -> list[tuple[str, str, str]]:
     if d["drive_type"] == "singlespeed" and nring > 1:
         out.append(("warn", "Drivetrain", f"Single-speed drive with {nring} chainrings"))
 
+    # rear derailleur capacity vs the drivetrain range
+    if d["drive_type"] == "derailleur":
+        from .gearing import drivetrain_range
+        dr = drivetrain_range(d)
+        cap = d.get("rd_capacity") or 0
+        mx = d.get("rd_max_cog") or 0
+        if dr and cap and dr["required_capacity"] > cap:
+            out.append(("fail", "Derailleur capacity", f"Drivetrain needs {dr['required_capacity']:.0f} T of "
+                        f"wrap but the rear derailleur is rated for {cap} T"))
+        if dr and mx and dr["max_cog"] > mx:
+            out.append(("fail", "Derailleur max cog", f"{dr['max_cog']:.0f} T largest cog exceeds the rear "
+                        f"derailleur's {mx} T limit"))
+
     # belt drive needs a frame break
     if d["drive_type"] == "belt" and d["dropout_type"] not in ("sliding", "track") and not d.get("couplers"):
         out.append(("warn", "Belt drive", "Belt drive needs a frame break (split seat stay, sliding dropout or "
