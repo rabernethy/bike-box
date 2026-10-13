@@ -17,7 +17,9 @@ class FixClearanceDialog(QtWidgets.QDialog):
         super().__init__(parent)
         self.doc = doc
         self.setWindowTitle("Resolve issues")
-        self.resize(760, 620)
+        self.setMinimumSize(480, 360)
+        avail = QtGui.QGuiApplication.primaryScreen().availableGeometry()
+        self.resize(min(760, avail.width() - 80), min(620, avail.height() - 80))
         lay = QtWidgets.QVBoxLayout(self)
         self.summary = QtWidgets.QLabel("Checking the design…")
         self.summary.setWordWrap(True)
@@ -75,11 +77,20 @@ class FixClearanceDialog(QtWidgets.QDialog):
         group.setExclusive(True)
         if iss.options:
             for i, opt in enumerate(iss.options):
-                rb = QtWidgets.QRadioButton(self._option_text(opt))
+                # QRadioButton text is plain, so keep the label on the button and
+                # put the styled detail in a rich-text label indented beneath it
+                rb = QtWidgets.QRadioButton(opt.label + (" (recommended)" if i == 0 else ""))
                 rb.setProperty("option_index", i)
                 rb.toggled.connect(self._refresh_preview)
                 group.addButton(rb)
                 v.addWidget(rb)
+                detail = self._option_detail(opt)
+                if detail:
+                    lbl = QtWidgets.QLabel(detail)
+                    lbl.setTextFormat(Qt.TextFormat.RichText)
+                    lbl.setWordWrap(True)
+                    lbl.setContentsMargins(24, 0, 0, 6)
+                    v.addWidget(lbl)
                 if i == 0:
                     rb.setChecked(True)
             leave = QtWidgets.QRadioButton("Leave unchanged")
@@ -95,15 +106,19 @@ class FixClearanceDialog(QtWidgets.QDialog):
         self._groups.append(group)
         self.vbox.insertWidget(self.vbox.count() - 1, box)
 
-    def _option_text(self, opt: Option) -> str:
-        parts = [f"<b>{opt.label}</b> → {opt.after_text}"]
+    def _option_detail(self, opt: Option) -> str:
+        """The styled detail shown under an option's radio button (the label is
+        on the button itself)."""
+        parts = []
+        if opt.after_text:
+            parts.append(f"→ {opt.after_text}")
         if opt.detail:
-            parts.append(f"<span style='color:#444'>{opt.detail}</span>")
+            parts.append(f"<span style='color:#666'>{opt.detail}</span>")
         if opt.side_effects:
             parts.append(f"<span style='color:#7a5000'>changes: {'; '.join(opt.side_effects)}</span>")
         if opt.new_problems:
             parts.append(f"<span style='color:#c62828'>introduces: {', '.join(opt.new_problems)}</span>")
-        return "<br>".join(parts).replace("font-weight: bold", "")
+        return "<br>".join(parts)
 
     # -- selection / preview ------------------------------------------------------
     def _chosen(self) -> list[Option]:
