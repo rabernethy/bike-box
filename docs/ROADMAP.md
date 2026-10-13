@@ -62,7 +62,12 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
   most away. Added a `keys` filter to `clearance_details` so tire-fit computes only the tire/fork contacts, cut
   the binary search to 11 iters (finer than the 0.1 mm it reports), and memoised `full_report`/`analyse` on the
   geometry so all panels/tabs/dialogs share one build. Full report 700 ms -> ~108 ms, recomputed once per edit
-  rather than once per consumer. Still open: trim the ~200 MB bundle.
+  rather than once per consumer.
+- [x] Installer size (2026-10-13): module excludes alone don't help (PyInstaller's Qt hook bundles the Qt6
+  runtime wholesale), so inspected the real CI artifact (253 MB uncompressed, 105 MB of it PyQt6) and pruned the
+  parts the app never loads -- Qt UI translations (~7 MB), the Qt PDF viewer lib (~4 MB; objdump-confirmed
+  nothing we ship links it) and the SQL/QML plugins. Download sizes: Linux 96->91, macOS 44->37, Windows
+  portable 56->52 MB. The rest (Qt Core/Gui/Widgets, Python, numpy BLAS/LAPACK, Qt ICU data) is all required.
 - [ ] Test coverage: a real-GL smoke test in CI (currently import-level only); BikeCAD round-trip fixtures.
 - [ ] Docs & presence: screenshots, a short website/README gallery, example designs.
 
