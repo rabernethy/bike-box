@@ -274,10 +274,25 @@ def _compat(g: Geometry) -> Section:
     return Section("Compatibility", [(label, msg, status) for status, label, msg in check(g)])
 
 
+def _tire_fit(g: Geometry) -> Section:
+    from .tirefit import max_tire_width
+    rows = []
+    for end in ("rear", "front"):
+        r = max_tire_width(g.design, end)
+        cur = g.design.f(f"{end}_tire_width")
+        if not r:
+            rows.append((f"Max {end} tire", f"current {cur:.0f} mm already interferes", "warn"))
+        else:
+            note = f" (limited by {r['limited_by']})" if r.get("limited_by") and r["limited_by"] != "search limit" \
+                else " (beyond 120 mm)"
+            rows.append((f"Max {end} tire", f"{r['width']:.0f} mm{note}", "info"))
+    return Section("Tire fit", rows)
+
+
 _BUILDERS: list[tuple[str, Callable[[Geometry], Section]]] = [
     ("Key geometry", _geometry), ("Clearances & warnings", _clearances), ("Gearing", _gearing),
     ("Chain", _chain), ("Weight", _weight), ("UCI (road)", _uci), ("Structure (FEA estimate)", _structure),
-    ("Fixture", _fixture), ("Compatibility", _compat), ("Bill of materials", _bom),
+    ("Fixture", _fixture), ("Tire fit", _tire_fit), ("Compatibility", _compat), ("Bill of materials", _bom),
 ]
 
 

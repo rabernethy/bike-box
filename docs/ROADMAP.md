@@ -34,7 +34,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 ## Clearances & safety
 - [ ] Crank-arm-to-chainstay 3D envelope through full rotation *(partial via cs_crank)*
 - [ ] Toe-overlap with real shoe size + fender; heel-to-stay through the pedal stroke
-- [ ] Tire-to-everything at max size + mud-clearance target; chainring-to-tire for 1x/2x
+- [x] Maximum tire size (widest tire that clears, front & rear) in the report; mud-clearance target still open
 - [ ] Suspension travel-sweep clearance (fork + rear); bottom-out checks
 - [ ] Standover/top-tube safety; min-insertion enforcement across sizes
 
