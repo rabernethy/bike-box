@@ -183,6 +183,8 @@ class MainWindow(QtWidgets.QMainWindow):
         ex.addSeparator()
         ex.addAction("FreeCAD macro (3-D)…", self.export_freecad)
         ex.addAction("STL mesh (3-D)…", self.export_stl)
+        ex.addAction("STEP solids (3-D CAD)…", self.export_step)
+        ex.addAction("IGES solids (3-D CAD)…", self.export_iges)
         ex.addAction("Animated GIF morph…", self.export_gif)
         m.addAction("&Print…", QtGui.QKeySequence.StandardKey.Print, self.print_drawing)
         m.addSeparator()
@@ -920,6 +922,24 @@ class MainWindow(QtWidgets.QMainWindow):
         if fn:
             mod.save_stl(self.doc().geometry, fn)
             self.status.showMessage(f"Exported {fn}", 5000)
+
+    def export_step(self):
+        mod = _optional("..export.step")
+        if mod is None or self.doc() is None:
+            return self._missing("STEP export")
+        fn = self._save_name("STEP solids", ".step", "STEP (*.step *.stp)")
+        if fn:
+            mod.save_step(self.doc().geometry, fn)
+            self.status.showMessage(f"Exported {fn} (un-mitred tube solids)", 5000)
+
+    def export_iges(self):
+        mod = _optional("..export.iges")
+        if mod is None or self.doc() is None:
+            return self._missing("IGES export")
+        fn = self._save_name("IGES solids", ".iges", "IGES (*.iges *.igs)")
+        if fn:
+            mod.save_iges(self.doc().geometry, fn)
+            self.status.showMessage(f"Exported {fn} (un-mitred tube solids)", 5000)
 
     def export_gif(self):
         mod = _optional("..export.gif")

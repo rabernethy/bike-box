@@ -16,8 +16,13 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
   the model doesn't yet capture; an approximate check would risk false warnings (against the trust goal).
 
 ## P1 — high-value features
-- [ ] **STEP/IGES export** — the top "pro" interchange ask (CAD, CNC, FEA). Needs a solid-modelling dependency
-  (OpenCASCADE/cadquery) — evaluate bundle-size vs value before committing.
+- [x] **STEP/IGES export** — the top "pro" interchange ask (CAD, CNC, FEA). Each tube exports as a faceted B-rep
+  **solid** (STEP AP214 `manifold_solid_brep`; IGES 5.3 MSBO type 186) from the same tessellation the 3-D view
+  and STL use. Evaluated the kernel route (OpenCASCADE/cadquery) and rejected it: a few-hundred-MB dependency
+  would bloat every installer, so the writers are hand-rolled and validated by re-parsing their own output back
+  into closed, orientable manifolds (Euler V−E+F=2, every edge shared by exactly two faces) matching the source.
+  Tubes are the outer envelope and **un-mitred** — they run full centre-to-centre length and interpenetrate at
+  joints, ready to be coped in CAD. (A true analytic-surface / mitred-solid export would need a kernel.)
 - [x] **Shop CNC outputs** — tube-notcher setup (hole-saw Ø, notch angle, offset, rotation, long/short points)
   and tube-bender specs (radius, included angle, arc length) in the build sheet + `cnc` CSV export. Flat-pattern
   dropout/gusset DXF still open (needs plate outlines the model doesn't carry).

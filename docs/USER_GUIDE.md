@@ -93,7 +93,9 @@ angles; Display ▸ *Centre of mass* shows the combined COM and weight distribut
 * Tools ▸ **Miter templates** (Ctrl+M): preview every cope, export a full-scale PDF (print at 100% and check the
   50 mm square), SVG or DXF; hole-saw angle/offset; cut list; rotary-axis **G-code** (verify in a simulator first).
 * Tools ▸ **Frame fixture numbers**: coordinates and lengths to set a frame up in a jig.
-* File ▸ Export ▸ **FreeCAD macro** or **STL** for 3-D work.
+* File ▸ Export ▸ **FreeCAD macro**, **STL**, **STEP** or **IGES** for 3-D work. STEP and IGES write each tube
+  as a B-rep **solid** that imports into any CAD package. The tubes are the outer envelope and *un-mitred* —
+  they run the full centre-to-centre length and interpenetrate at the joints, ready for you to cope in CAD.
 
 ## Analysis
 

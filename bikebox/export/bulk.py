@@ -59,6 +59,16 @@ def bulk_export(paths: Sequence, out_dir, formats: Sequence[str] = DEFAULT_FORMA
             from .freecad import save_freecad_macro
             save_freecad_macro(solve(design), out_dir / f"{stem}.FCMacro")
             written.append(out_dir / f"{stem}.FCMacro")
+        if "step" in formats:
+            from ..geometry.solver import solve
+            from .step import save_step
+            save_step(solve(design), out_dir / f"{stem}.step")
+            written.append(out_dir / f"{stem}.step")
+        if "iges" in formats:
+            from ..geometry.solver import solve
+            from .iges import save_iges
+            save_iges(solve(design), out_dir / f"{stem}.iges")
+            written.append(out_dir / f"{stem}.iges")
 
     if "csv" in formats and loaded:
         from .csv_export import export_csv
