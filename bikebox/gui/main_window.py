@@ -175,6 +175,7 @@ class MainWindow(QtWidgets.QMainWindow):
             m.addAction(a)
         self.recent_menu = m.addMenu("Open &recent")
         self.recent_menu.aboutToShow.connect(self._fill_recent)
+        m.addAction("Online designs…", self._online_designs)
         m.addSeparator()
         for a in (self.a_save, self.a_save_as, self.a_save_tpl):
             m.addAction(a)
@@ -293,6 +294,10 @@ class MainWindow(QtWidgets.QMainWindow):
         m.addAction("What's New", self._whats_new)
         m.addSeparator()
         m.addAction(f"About {APP_NAME}", self.about)
+
+    def _online_designs(self):
+        from .gallery_dialog import GalleryDialog
+        GalleryDialog(self).exec()
 
     def _settings(self):
         from .update_dialog import show_settings
