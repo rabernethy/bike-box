@@ -51,7 +51,12 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
 - [ ] **More frame types** — recumbents, cargo/longtail, folders, S&S coupler placement optimiser.
 
 ## Ongoing quality
-- [ ] Performance: cache solves across panels; profile large catalogs; trim the ~200 MB bundle.
+- [~] Performance: profiled the interactive paths (2026-10-13). solve() ~0.3 ms and FEA ~4 ms are already fast;
+  the real lag was the parts catalog -- `all_items()` rebuilt and re-copied all ~5.9k items (and re-read the user
+  library from disk) on **every** call, so each picker keystroke paid a full rebuild. Now cached + indexed
+  (invalidated by the built-in cache or a user-library file change): `items()` 143 ms -> 0.25 ms, `search()`
+  65 ms -> 2 ms per keystroke. 3-D libs already import lazily. Still open: cache solves across panels; trim the
+  bundle.
 - [ ] Test coverage: a real-GL smoke test in CI (currently import-level only); BikeCAD round-trip fixtures.
 - [ ] Docs & presence: screenshots, a short website/README gallery, example designs.
 

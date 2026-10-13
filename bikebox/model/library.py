@@ -159,36 +159,82 @@ def _builtin_items() -> tuple[LibraryItem, ...]:
 
 
 def reload() -> None:
-    """Forget cached built-in libraries (user libraries are always re-read)."""
+    """Forget cached built-in libraries (user libraries are re-read on demand)."""
     _builtin_items.cache_clear()
+    _MERGED.clear()
+
+
+# The merged catalog (built-ins + user items) and the indexes derived from it are
+# expensive to rebuild (~5-6k items), so they are cached and only recomputed when
+# the built-in cache is cleared or a user-library file changes on disk.  Every
+# read path -- all_items/items/categories/get/search -- goes through this cache.
+_MERGED: dict = {}
+
+
+def _user_stamp() -> tuple:
+    """A cheap fingerprint of the user library dir: recompute the cache when it
+    changes (save_user_item / import_stock_csv / external edits all touch it)."""
+    d = user_dir()
+    if not d.is_dir():
+        return ()
+    try:
+        return tuple(sorted((p.name, p.stat().st_mtime_ns, p.stat().st_size)
+                            for p in d.glob("*.json")))
+    except OSError:
+        return ()
+
+
+def _haystack(it: LibraryItem) -> str:
+    meta = {k: v for k, v in it.meta.items() if k not in ("user", "source_file")}
+    return " ".join([it.id, it.name, it.category, category_label(it.category),
+                     *_flatten(meta)]).lower()
+
+
+def _merged() -> dict:
+    stamp = (id(_builtin_items()), _user_stamp())
+    if _MERGED.get("stamp") != stamp:
+        merged: dict[tuple[str, str], LibraryItem] = {}
+        for it in _builtin_items():
+            merged[(it.category, it.id)] = LibraryItem(
+                it.id, it.name, it.category, dict(it.values), dict(it.meta))
+        for it in _load_dir(user_dir(), user=True):
+            merged[(it.category, it.id)] = it
+        items_ = list(merged.values())                      # built-in file order, user merged in
+        by_cat: dict[str, list[LibraryItem]] = {}
+        for it in items_:
+            by_cat.setdefault(it.category, []).append(it)
+        search_index = [(_haystack(it), it)
+                        for it in sorted(items_, key=lambda i: _cat_key(i.category))]
+        _MERGED.update(stamp=stamp, items=items_, by_cat=by_cat, search_index=search_index)
+    return _MERGED
+
+
+@functools.lru_cache(maxsize=1)
+def _cat_order() -> dict[str, int]:
+    return {c: i for i, c in enumerate(CATEGORY_LABELS)}
+
+
+def _cat_key(cat: str) -> tuple[int, str]:
+    order = _cat_order()
+    return (order.get(cat, len(order)), cat)
 
 
 def all_items() -> list[LibraryItem]:
     """Built-in items in file order with user items merged in (same category+id replaces)."""
-    merged: dict[tuple[str, str], LibraryItem] = {}
-    for it in _builtin_items():
-        merged[(it.category, it.id)] = LibraryItem(it.id, it.name, it.category, dict(it.values), dict(it.meta))
-    for it in _load_dir(user_dir(), user=True):
-        merged[(it.category, it.id)] = it
-    return list(merged.values())
-
-
-def _cat_key(cat: str) -> tuple[int, str]:
-    order = list(CATEGORY_LABELS)
-    return (order.index(cat) if cat in order else len(order), cat)
+    return list(_merged()["items"])
 
 
 def categories() -> list[str]:
     """Non-empty categories in display order."""
-    return sorted({it.category for it in all_items()}, key=_cat_key)
+    return sorted(_merged()["by_cat"].keys(), key=_cat_key)
 
 
 def items(category: str) -> list[LibraryItem]:
-    return [it for it in all_items() if it.category == category]
+    return list(_merged()["by_cat"].get(category, []))
 
 
 def get(item_id: str, category: str | None = None) -> LibraryItem | None:
-    for it in all_items():
+    for it in _merged()["items"]:
         if it.id == item_id and (category is None or it.category == category):
             return it
     return None
@@ -208,13 +254,10 @@ def _flatten(v: Any) -> Iterable[str]:
 def search(text: str) -> list[LibraryItem]:
     """Items whose id, name, category or metadata contain every word of ``text``."""
     words = str(text).lower().split()
-    out = []
-    for it in sorted(all_items(), key=lambda i: _cat_key(i.category)):
-        meta = {k: v for k, v in it.meta.items() if k not in ("user", "source_file")}
-        hay = " ".join([it.id, it.name, it.category, category_label(it.category), *_flatten(meta)]).lower()
-        if all(w in hay for w in words):
-            out.append(it)
-    return out
+    index = _merged()["search_index"]          # (haystack, item) in display order
+    if not words:
+        return [it for _hay, it in index]
+    return [it for hay, it in index if all(w in hay for w in words)]
 
 
 # --------------------------------------------------------------------------
@@ -509,11 +552,13 @@ def save_user_item(category: str, name: str, values: dict[str, Any], meta: dict[
     tmp = path.with_suffix(".json.tmp")
     tmp.write_text(json.dumps(doc, indent=1, default=str), encoding="utf-8")
     tmp.replace(path)
+    _MERGED.pop("stamp", None)                 # force the merged cache to rebuild
     return path
 
 
 def remove_user_item(category: str, item_id: str) -> bool:
     """Remove a user item; returns True when something was removed."""
+    _MERGED.pop("stamp", None)                 # force the merged cache to rebuild
     path = _user_file(category)
     if not path.is_file():
         return False
