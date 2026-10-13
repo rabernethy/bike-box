@@ -23,8 +23,9 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
   dropout/gusset DXF still open (needs plate outlines the model doesn't carry).
 - [x] **Fit-to-rider auto-size** — the size run now recommends the best size for the current rider (matches the
   fit scheme's target stack/reach + standover feasibility). Aero/CdA estimate still open.
-- [ ] **Customer / order management** — link a design to a customer, a build spec and a quote from the BOM; track
-  jobs. (The owner has related sessions, so this is a real workflow need.)
+- [x] **Customer / order management** — a design carries a customer + order (status, due, pricing); a quote is
+  built from the BOM + labour + frame price and exports as PDF; orders are logged per user. (Catalog has no
+  prices, so line prices are the shop's own.)
 - [ ] **Cable / hose / Di2 routing** — internal/external paths and port/stop placement, exported with the frame.
 - [ ] **Catalog depth** — fill remaining tube gaps (Reynolds matrix, True Temper OX Gold, KVA MS2), add
   lugs/fork-crown geometry and headset/BB-standard matrices; CSV import of a shop's own stock + prices.

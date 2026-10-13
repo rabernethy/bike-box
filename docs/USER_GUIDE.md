@@ -148,3 +148,7 @@ setback, bar position, cranks and frame size (with sensible ranges). Schemes are
 slightly forward of KOPS, flatter torso ~90–95° torso-to-arm, 20–30° elbow bend — Colby Pearce / Track Cycling
 Academy), *Time trial*, and *Knee angle (Holmes)* (25–35°). Tools ▸ **Rider database** saves a rider's
 measurements by name and applies them to any design.
+
+### Customers & orders
+
+Tools ▸ **Customer & order** attaches a customer (name, contact, notes), an order number, status and due date to the design, and builds a **quote** from the bill of materials plus labour (hours × rate) and a frame build price. Export the quote as a PDF, and each saved order is logged per user. Prices are your own — the catalog carries specs and weights, not prices.
