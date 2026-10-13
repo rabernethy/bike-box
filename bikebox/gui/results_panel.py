@@ -22,6 +22,7 @@ SECTIONS = [
         ("BB height", "bb_height", L), ("Fork axle-to-crown", "fork_length", L), ("Fork offset", "fork_offset", L),
         ("Trail", "trail", L), ("Mechanical trail", "mech_trail", L), ("Wheel flop", "wheel_flop", L),
         ("Standover", "standover", L), ("Standover (lowest)", "standover_min", L),
+        ("Stack vs target", "stack_to_target", L), ("Reach vs target", "reach_to_target", L),
         ("Stack to headset top", "stack_headset", L),
         ("Steerer length (crown to top)", "steerer_length", L),
     ]),

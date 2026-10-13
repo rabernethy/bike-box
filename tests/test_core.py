@@ -352,3 +352,12 @@ def test_minimum_standover(design):
     design.set("top_tube_angle", -10)
     g2 = solve(design)
     assert g2.v["standover_min"] < g.v["standover"]
+
+
+def test_fit_target_deltas(design):
+    g = solve(design)
+    assert "stack_to_target" not in g.v and "reach_to_target" not in g.v   # off by default
+    design.update({"fit_target_stack": 600, "fit_target_reach": 380})
+    g = solve(design)
+    assert abs(g.v["stack_to_target"] - (g.v["stack"] - 600)) < 1e-6
+    assert abs(g.v["reach_to_target"] - (g.v["reach"] - 380)) < 1e-6

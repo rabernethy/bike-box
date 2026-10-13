@@ -24,6 +24,10 @@ P.register([
                morph=False),
     P.ParamDef("standover_x", "Standover point forward of BB", "Analysis", "Standover", P.FLOAT, 150.0, "mm",
                -300, 600, 1, visible_if=("standover_at", ("custom",))),
+    P.ParamDef("fit_target_stack", "Target stack", "Analysis", "Fit target", P.FLOAT, 0.0, "mm", 0, 1200, 1,
+               help="Desired stack to size against (0 = no target)", morph=False),
+    P.ParamDef("fit_target_reach", "Target reach", "Analysis", "Fit target", P.FLOAT, 0.0, "mm", 0, 800, 1,
+               help="Desired reach to size against (0 = no target)", morph=False),
     P.ParamDef("toe_overhang", "Toe ahead of pedal spindle", "Analysis", "Toe overlap", P.FLOAT, 95.0, "mm",
                0, 250, 1, help="Distance from the pedal axle forward to the shoe toe (≈ 85-115 mm)"),
     P.ParamDef("toe_clearance_min", "Minimum toe clearance", "Analysis", "Toe overlap", P.FLOAT, 0.0, "mm",
@@ -733,6 +737,11 @@ def solve(d: Design) -> Geometry:
     bridge_w = float(d.get("cs_bridge_width", 16.0) or 16.0)
     cs_bridge = d.f("cs_bridge_pos") or max(rear_axle.dist(SB) - Rr - bridge_w / 2 - 6.0, 40.0)
     v["cs_bridge_pos"] = cs_bridge
+    ts, tr = d.f("fit_target_stack"), d.f("fit_target_reach")
+    if ts > 0:
+        v["stack_to_target"] = T.y - ts
+    if tr > 0:
+        v["reach_to_target"] = T.x - tr
     v.update({
         "stack": T.y, "reach": T.x, "head_tube_length": HTL, "head_tube_angle": hta,
         "seat_tube_angle": sta, "seat_angle_eff": sa_eff,

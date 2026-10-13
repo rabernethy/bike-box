@@ -18,7 +18,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 ## Fit & ergonomics
 - [ ] Rider database (body measurements); fit-to-rider sizing from inseam/height/flexibility
 - [ ] Pedaling dynamics, KOPS, saddle-setback optimizer, cleat/Q-factor fit
-- [ ] Stack/reach fit-envelope overlay vs a target fit coordinate
+- [x] Stack/reach vs a target fit coordinate (delta shown in Results); on-canvas overlay still open
 - [ ] Position presets (TT/road/gravel/MTB); aero position + simple CdA estimate
 - [x] Minimum standover (lowest point along the top tube) in Results; step-through clearance still open
 
