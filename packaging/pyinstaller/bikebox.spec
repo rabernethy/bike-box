@@ -56,6 +56,29 @@ a = Analysis(
               + [f"PyQt6.{m}" for m in _UNUSED_QT] + _DEV),
     noarchive=False,
 )
+
+# PyInstaller's Qt hook bundles the Qt6 runtime wholesale, so module excludes
+# alone don't shrink it.  Drop the parts the app provably never loads: Qt's own
+# UI translations (we never install a QTranslator), the Qt PDF *viewer* library
+# (we write PDFs via QPrinter/QtPrintSupport, not QtPdf), and the SQL-driver /
+# QML-tooling plugins.  Matched on the bundled destination path, cross-platform.
+def _is_dead_weight(dest: str) -> bool:
+    low = dest.replace("\\", "/").lower()
+    base = low.rsplit("/", 1)[-1]
+    if "/qt6/translations/" in low or "/pyqt6/translations/" in low:
+        return True                                 # ~7 MB of unused .qm files
+    if base.startswith(("libqt6pdf", "qt6pdf")) or "/qtpdf.framework/" in low:
+        return True                                 # PDF viewer lib, unused
+    if "/plugins/sqldrivers/" in low or "/plugins/qmltooling/" in low:
+        return True
+    return False
+
+
+_before = len(a.binaries) + len(a.datas)
+a.binaries = [x for x in a.binaries if not _is_dead_weight(x[0])]
+a.datas = [x for x in a.datas if not _is_dead_weight(x[0])]
+print(f"[bikebox.spec] pruned {_before - len(a.binaries) - len(a.datas)} unused Qt files")
+
 pyz = PYZ(a.pure)
 
 exe = EXE(
