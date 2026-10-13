@@ -1,5 +1,9 @@
 # Bike Box — What's New
 
+## 0.1.19
+- **Click any part** on the drawing — wheels, fork, saddle, bars, cranks, battery, couplers, and more, not just tubes — to jump straight to its editing section.
+- **Updates live in Settings** (Help ▸ Settings…): a *Check for updates* button and a *Download & install* button that fetches the right installer for your OS. The old automatic startup check is now opt-in and off by default.
+
 ## 0.1.18
 - A proper **Remove-tubes** panel: a checkbox per tube that updates the drawing live (was a text box under Advanced).
 - **Update check & What's New**: Bike Box can check GitHub for a newer version on startup (toggle it in the Help menu) and this What's New page shows what changed.
