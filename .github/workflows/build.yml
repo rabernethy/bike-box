@@ -24,6 +24,16 @@ jobs:
           - os: ubuntu-latest
             name: linux
     runs-on: ${{ matrix.os }}
+    env:
+      # code-signing secrets (optional — steps no-op when unset). See docs/SIGNING.md.
+      MACOS_CERT_P12: ${{ secrets.MACOS_CERT_P12 }}
+      MACOS_CERT_PASSWORD: ${{ secrets.MACOS_CERT_PASSWORD }}
+      MACOS_SIGN_IDENTITY: ${{ secrets.MACOS_SIGN_IDENTITY }}
+      MACOS_NOTARY_APPLE_ID: ${{ secrets.MACOS_NOTARY_APPLE_ID }}
+      MACOS_NOTARY_TEAM_ID: ${{ secrets.MACOS_NOTARY_TEAM_ID }}
+      MACOS_NOTARY_PASSWORD: ${{ secrets.MACOS_NOTARY_PASSWORD }}
+      WINDOWS_CERT_PFX: ${{ secrets.WINDOWS_CERT_PFX }}
+      WINDOWS_CERT_PASSWORD: ${{ secrets.WINDOWS_CERT_PASSWORD }}
     steps:
       - uses: actions/checkout@v7
 
@@ -73,6 +83,35 @@ jobs:
           & $iscc /DAppVersion=$ver packaging\windows\bikebox.iss
           Compress-Archive -Path dist\BikeBox\* -DestinationPath "dist\BikeBox-windows-portable-$ver.zip"
 
+      - name: Windows code-sign installer
+        if: matrix.name == 'windows' && env.WINDOWS_CERT_PFX != ''
+        shell: pwsh
+        run: |
+          [IO.File]::WriteAllBytes("cert.pfx", [Convert]::FromBase64String($Env:WINDOWS_CERT_PFX))
+          $st = (Get-ChildItem "${Env:ProgramFiles(x86)}\Windows Kits\10\bin\*\x64\signtool.exe" |
+                 Select-Object -Last 1).FullName
+          Get-ChildItem dist\installer\*.exe | ForEach-Object {
+            & $st sign /f cert.pfx /p $Env:WINDOWS_CERT_PASSWORD /fd SHA256 /tr http://timestamp.digicert.com /td SHA256 $_.FullName
+          }
+          Remove-Item cert.pfx
+
+      # ---- macOS: code-sign the .app (only when signing secrets are set) -------
+      - name: macOS code-sign
+        if: matrix.name == 'macos' && env.MACOS_CERT_P12 != ''
+        run: |
+          KEYCHAIN=build.keychain
+          security create-keychain -p actions "$KEYCHAIN"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN"
+          security unlock-keychain -p actions "$KEYCHAIN"
+          echo "$MACOS_CERT_P12" | base64 --decode > cert.p12
+          security import cert.p12 -k "$KEYCHAIN" -P "$MACOS_CERT_PASSWORD" -T /usr/bin/codesign
+          security list-keychains -d user -s "$KEYCHAIN" login.keychain
+          security set-key-partition-list -S apple-tool:,apple: -s -k actions "$KEYCHAIN"
+          codesign --deep --force --options runtime --timestamp \
+            --sign "$MACOS_SIGN_IDENTITY" "dist/BikeBox.app"
+          codesign --verify --deep --strict --verbose=2 "dist/BikeBox.app"
+          rm -f cert.p12
+
       # ---- macOS: .dmg from the .app ------------------------------------------
       - name: macOS disk image
         if: matrix.name == 'macos'
@@ -83,6 +122,15 @@ jobs:
           ln -s /Applications dist/dmg/Applications
           hdiutil create -volname "Bike Box" -srcfolder dist/dmg -ov -format UDZO \
             "dist/BikeBox-macos-$ver.dmg"
+
+      - name: macOS notarize & staple
+        if: matrix.name == 'macos' && env.MACOS_NOTARY_PASSWORD != ''
+        run: |
+          ver=$(python -c "import bikebox; print(bikebox.__version__)")
+          xcrun notarytool submit "dist/BikeBox-macos-$ver.dmg" \
+            --apple-id "$MACOS_NOTARY_APPLE_ID" --team-id "$MACOS_NOTARY_TEAM_ID" \
+            --password "$MACOS_NOTARY_PASSWORD" --wait
+          xcrun stapler staple "dist/BikeBox-macos-$ver.dmg"
 
       # ---- Linux: tarball of the one-folder build ------------------------------
       - name: Linux tarball
