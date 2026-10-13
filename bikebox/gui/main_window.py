@@ -203,6 +203,7 @@ class MainWindow(QtWidgets.QMainWindow):
             a_.setToolTip(tip)
         presets.setToolTipsVisible(True)
         xt.addAction("Edit all extra tubes…", self.extra_tubes)
+        m.addAction("Braze-ons & mounts…", self.brazeons)
         m.addAction("Decals & logos…", self.decals)
         m.addAction("Parts libraries…", "Ctrl+L", self.library_dialog)
         m.addSeparator()
@@ -614,6 +615,11 @@ class MainWindow(QtWidgets.QMainWindow):
         from .extra_tubes import add_tubes
         add_tubes(self.doc(), tubes, f"Add {name.lower()}")
         self.status.showMessage(f"Added {name.lower()} — right-click or double-click it to edit", 6000)
+
+    def brazeons(self):
+        if self.doc():
+            from .brazeons_dialog import BrazeOnsDialog
+            BrazeOnsDialog(self.doc(), self).exec()
 
     def decals(self):
         if self.doc():

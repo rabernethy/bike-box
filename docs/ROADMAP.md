@@ -23,7 +23,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - [ ] Standover at multiple points; step-through clearance for a given rider
 
 ## Components & drivetrain
-- [ ] Braze-on / mount **placement UI** (bottle bosses, cable stops, disc mount, rack/fender eyelets, dynamo) — *in progress*
+- [x] Braze-on / mount **placement UI** (bottle bosses, cable stops, disc mount, rack/fender eyelets) — drawn + in the build sheet
 - [ ] Full cable/hose/Di2 routing paths (internal/external); housing-stop/port placement
 - [ ] Derailleur capacity, chain wrap, b-gap, max/min sprocket, crank-to-frame envelope
 - [ ] Brake mount standards (IS/post/flat-mount) + rotor-size placement + caliper clearance
@@ -97,6 +97,6 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - Tube + dropout catalog expanded from manufacturer/CAD sources (tubing 431, dropouts 189)
 - Oval/aero tubes render with true elliptical sections (2-D, 3-D, STL)
 - Interactive 3-D clearance view
-- Size-run generator; build / cut sheet PDF
+- Size-run generator; build / cut sheet PDF; braze-on / mount placement
 - Resolve-issues options engine; extra-tube paint & in-phase; seat-stay oval section
 - BikeCAD .bcad import **and** export; renamed to Bike Box; Win/mac/Linux installers via CI

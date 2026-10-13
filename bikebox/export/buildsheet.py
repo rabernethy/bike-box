@@ -54,6 +54,13 @@ def build_html(g: Geometry, units: str | None = None) -> str:
 
     fix_rows = [[lab, val, note] for lab, val, note in jig.fixture_numbers(g)]
 
+    bo_rows = []
+    for bo in getattr(g, "brazeons", []) or []:
+        p = bo.get("point")
+        xy = f"X {fmt_len(p.x, units)}, Y {fmt_len(p.y, units)}" if p is not None else ""
+        bo_rows.append([bo.get("type", ""), bo.get("label", ""), bo.get("tube", ""),
+                        fmt_len(float(bo.get("s", 0) or 0), units, suffix=True), xy])
+
     parts = [f"""<html><head><style>
       body {{ font-family: sans-serif; color: #111; }}
       h1 {{ font-size: 20px; margin: 0 0 2px 0; }}
@@ -70,6 +77,7 @@ def build_html(g: Geometry, units: str | None = None) -> str:
       <h2>Cut list (mitred tubes)</h2>{_table(cut_head, cut_body)}
       <h2>Bill of materials</h2>{_table(['Component', 'Part', 'Spec', 'Brand'], bom_rows)}
       <h2>Fixture setup</h2>{_table(['Datum', 'Value', 'Note'], fix_rows)}
+      {'<h2>Braze-ons &amp; mounts</h2>' + _table(['Type', 'Label', 'Tube', 'Position', 'Coordinates'], bo_rows) if bo_rows else ''}
     </body></html>"""]
     return "".join(parts)
 

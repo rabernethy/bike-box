@@ -67,6 +67,9 @@ Double-click a dimension to type a value; Bike Box switches the front-end mode a
 * **Tandem**: Frame ▸ Tandem ▸ *Frame type = Tandem*. The captain's front triangle uses the normal inputs;
   set the BB-to-BB distance, stoker seat tube, stoker top tube, mid/lateral tubes, stoker saddle and bars.
 * **E-bikes / gearboxes**: Frame ▸ Drive unit: housing size/position, battery on or in the down tube or on a rack.
+* **Braze-ons & mounts**: Edit ▸ *Braze-ons & mounts* — place bottle bosses, cable stops/guides, rack and fender
+  eyelets and disc mounts on any tube (position along the tube, side offset, boss spacing). They draw on the
+  frame and their coordinates appear on the build / cut sheet.
 
 ## Dimensions, notes, comparison
 

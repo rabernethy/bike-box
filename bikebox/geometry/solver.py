@@ -203,6 +203,7 @@ class Geometry:
     s: V = field(default_factory=lambda: V(0, 1))        # seat tube axis (up)
     n_st: V = field(default_factory=lambda: V(1, 0))
     bar_path: list[V] = field(default_factory=list)      # handlebar centreline (side view)
+    brazeons: list = field(default_factory=list)         # resolved braze-ons: [{type,label,point,tube,...}]
     ok: bool = True
 
     def point(self, name: str) -> V:
@@ -654,6 +655,19 @@ def solve(d: Design) -> Geometry:
                            mirrored=bool(et.get("mirrored", False)), kind="extra",
                            join_a=et.get("join_a") or _spec_join(et.get("a")),
                            join_b=et.get("join_b") or _spec_join(et.get("b")))
+
+    # user-placed braze-ons / mounts (bosses, cable stops, eyelets, disc tabs ...)
+    for i, bo in enumerate(d.extras.get("brazeons") or []):
+        try:
+            pt = _resolve_point(g, bo.get("at") or {"tube": bo.get("tube", "dt"),
+                                                    "s": float(bo.get("s", 0.0)), "from": bo.get("from", "a"),
+                                                    "side": float(bo.get("side", 0.0) or 0.0)})
+        except (KeyError, TypeError, ValueError):
+            g.warn(f"Braze-on {bo.get('label', i)}: unresolved position")
+            continue
+        g.brazeons.append({"type": str(bo.get("type", "boss")), "label": str(bo.get("label", "")),
+                           "point": pt, "tube": bo.get("tube", ""), "s": bo.get("s", 0.0),
+                           "side": bo.get("side", 0.0), "spacing": float(bo.get("spacing", 0.0) or 0.0)})
 
     # -- derived values -----------------------------------------------------------
     sa_eff = math.degrees(math.atan2(S.y, -S.x)) if S.length() > 1 else sta

@@ -603,10 +603,45 @@ class BikeSceneBuilder:
                     Z_FRAME + 5, annotative=False, font=str(dc.get("font", self.d["decal_font"])),
                     bold=bool(dc.get("bold", True)), italic=bool(dc.get("italic", False)), tag=f"decal:{i}")
 
+    def _draw_brazeon(self, bo: dict, i: int, st) -> None:
+        """One user-placed braze-on at its resolved point; glyph by type."""
+        sc, t, g = self.sc, self.t, self.g
+        p = bo.get("point")
+        if p is None:
+            return
+        typ = bo.get("type", "boss")
+        tag = f"brazeon:user:{i}"
+        tube = g.tubes.get(bo.get("tube"))
+        s = float(bo.get("s", 0.0) or 0.0)
+        spacing = float(bo.get("spacing", 0.0) or 0.0)
+        fill = t.frame(t.frame_fill)
+        if typ in ("bottle", "boss") and tube is not None:
+            # one or a pair of M5 bosses along the tube
+            pts = [p]
+            if spacing > 0:
+                q, _ = tube.point_at(max(0.0, min(tube.length, s + spacing)))
+                pts.append(q)
+            for q in pts:
+                sc.circle(q, 2.6, st, "frame", Z_FRAME + 6, tag)
+        elif typ in ("cable_stop", "cable_guide", "stop", "guide"):
+            tan = (tube.point_at(s)[1] if tube is not None else V(1, 0))
+            sc.poly(rect_along(p - tan * 6, p + tan * 6, 2.6), st, "frame", Z_FRAME + 6, True, tag)
+        elif typ in ("eyelet", "rack_eyelet", "fender_eyelet"):
+            sc.circle(p, 3.4, st, "frame", Z_FRAME + 6, tag)
+            sc.circle(p, 1.6, t.thin(t.outline, 0.5), "frame", Z_FRAME + 7, tag)
+        elif typ in ("disc_mount", "disc_tab", "disc"):
+            tan = (tube.point_at(s)[1] if tube is not None else V(0, 1))
+            sc.poly(rounded_rect_along(p - tan * 10, p + tan * 10, 5.0), fill, "frame", Z_FRAME + 6, True, tag)
+        else:
+            sc.circle(p, 2.6, st, "frame", Z_FRAME + 6, tag)
+
     def braze_ons(self):
         g, sc, t, d = self.g, self.sc, self.t, self.d
         st = t.comp("#9a9a9a")
         tubes = g.tubes
+        # user-placed braze-ons / mounts
+        for i, bo in enumerate(getattr(g, "brazeons", []) or []):
+            self._draw_brazeon(bo, i, st)
         # bottle bosses
         for key, tname, side in (("bottle_dt", "dt", 1), ("bottle_st", "st", -1)):
             tb = tubes.get(tname)
