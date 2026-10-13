@@ -22,6 +22,18 @@ from typing import Any, Iterable
 FLOAT, INT, BOOL, CHOICE, STR, COLOR, LIST = (
     "float", "int", "bool", "choice", "str", "color", "list")
 
+_UNLOCK_LIMITS = False          # when True, coerce() does not clamp to min/max
+
+
+def set_unlock_limits(on: bool) -> None:
+    """Power-user override: allow numeric values beyond each param's min/max."""
+    global _UNLOCK_LIMITS
+    _UNLOCK_LIMITS = bool(on)
+
+
+def unlock_limits() -> bool:
+    return _UNLOCK_LIMITS
+
 
 @dataclass(frozen=True)
 class ParamDef:
@@ -49,17 +61,19 @@ class ParamDef:
         k = self.kind
         if k == FLOAT:
             v = float(value)
-            if self.min is not None and v < self.min:
-                v = float(self.min)
-            if self.max is not None and v > self.max:
-                v = float(self.max)
+            if not _UNLOCK_LIMITS:
+                if self.min is not None and v < self.min:
+                    v = float(self.min)
+                if self.max is not None and v > self.max:
+                    v = float(self.max)
             return v
         if k == INT:
             v = int(round(float(value)))
-            if self.min is not None and v < self.min:
-                v = int(self.min)
-            if self.max is not None and v > self.max:
-                v = int(self.max)
+            if not _UNLOCK_LIMITS:
+                if self.min is not None and v < self.min:
+                    v = int(self.min)
+                if self.max is not None and v > self.max:
+                    v = int(self.max)
             return v
         if k == BOOL:
             if isinstance(value, str):
