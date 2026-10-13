@@ -98,6 +98,11 @@ Tools ▸ **Analysis report** (Ctrl+R): gearing table, chain/belt length, UCI ch
 stiffness and stress estimate, clearances. Tools ▸ **Auxiliary views**: top, rear and front views for stay,
 tire, chainring, heel and crown clearances; lean angle; steered toe overlap; stay true lengths.
 
+View ▸ **3-D clearance view**: an interactive 3-D model of the frame and wheels you can orbit, zoom and pan.
+Every clearance is drawn as a gap line between the two closest surface points — green where it meets its
+threshold, red where it fails — with the measured value, plus a side list you can click to focus each one.
+(Needs the optional `pyqtgraph` and `PyOpenGL` packages; the bundled installers already include them.)
+
 ### Resolving issues
 
 When any clearance or geometry check fails, a **Resolve issues…** button appears above the Results list (also

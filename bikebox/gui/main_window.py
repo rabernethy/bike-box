@@ -68,6 +68,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.dock_params.setMinimumWidth(360)
         self.dock_results.setMinimumWidth(250)
         self.aux_dock = None
+        self.view3d_dock = None
 
         self.undo_group = QtGui.QUndoGroup(self)
         self._build_actions()
@@ -248,6 +249,7 @@ class MainWindow(QtWidgets.QMainWindow):
         m.addAction("Fit advisor…", "Ctrl+Shift+F", self.fit_advisor)
         m.addAction("Miter templates…", "Ctrl+M", self.mitre_dialog)
         m.addAction("Auxiliary views (stays, crown, toe, lean)", self.show_aux)
+        m.addAction("3-D clearance view…", self.show_3d)
         m.addAction("Resolve issues…", self.fix_clearance)
         m.addAction("Analysis report…", "Ctrl+R", self.report_dialog)
         m.addAction("Gearing & chain/belt…", lambda: self.report_dialog("Gearing"))
@@ -367,6 +369,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.results.set_document(d)
         if self.aux_dock is not None:
             self.aux_dock.widget().set_document(d)
+        if self.view3d_dock is not None:
+            self.view3d_dock.widget().set_document(d)
         self._sync_toolbar()
         self._update_title()
 
@@ -659,6 +663,25 @@ class MainWindow(QtWidgets.QMainWindow):
         self.aux_dock.widget().set_document(self.doc())
         self.aux_dock.show()
         self.aux_dock.raise_()
+
+    def show_3d(self):
+        from . import view3d
+        if not view3d.available():
+            QtWidgets.QMessageBox.information(
+                self, "3-D clearance view",
+                "The 3-D view needs the 'pyqtgraph' and 'PyOpenGL' packages.\n\nInstall them with:\n"
+                "    pip install pyqtgraph PyOpenGL")
+            return
+        if self.doc() is None:
+            return
+        if self.view3d_dock is None:
+            self.view3d_dock = self._dock("3-D clearance view", view3d.View3DWidget(self.doc()),
+                                          Qt.DockWidgetArea.RightDockWidgetArea)
+            self.view_menu.addAction(self.view3d_dock.toggleViewAction())
+        else:
+            self.view3d_dock.widget().set_document(self.doc())
+        self.view3d_dock.show()
+        self.view3d_dock.raise_()
 
     # -- export ------------------------------------------------------------------------
     def _save_name(self, title, suffix, filt):
