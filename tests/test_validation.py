@@ -98,3 +98,64 @@ def test_cope_plane_cut_depth(theta):
     depth = float(cp.v.max() - cp.v.min())
     expected = 0.0 if theta == 90 else 2 * r / math.tan(th)
     assert abs(depth - expected) < 0.1
+
+
+# -- broader per-measurement cross-checks ------------------------------------------
+
+@pytest.mark.parametrize("name", TEMPLATES)
+def test_wheel_diameter_from_bsd_and_tire(name):
+    d = _design(name)
+    g = solve(d)
+    for end, dia in (("front", g.v["front_wheel_dia"]), ("rear", g.v["rear_wheel_dia"])):
+        assert abs(dia - (d.f(f"{end}_bsd") + 2 * d.f(f"{end}_tire_height"))) < 0.01
+
+
+@pytest.mark.parametrize("name", TEMPLATES)
+def test_trail_triad_consistent(name):
+    g = solve(_design(name))
+    hta = math.radians(g.v["head_tube_angle"])
+    assert abs(g.v["mech_trail"] - g.v["trail"] * math.sin(hta)) < 0.05
+    assert abs(g.v["wheel_flop"] - g.v["trail"] * math.sin(hta) * math.cos(hta)) < 0.05
+
+
+@pytest.mark.parametrize("name", TEMPLATES)
+def test_standover_min_not_above_point(name):
+    g = solve(_design(name))
+    if "standover_min" in g.v and g.v.get("standover"):
+        assert g.v["standover_min"] <= g.v["standover"] + 1e-6
+
+
+def test_trail_golden_value():
+    # hand-computed: HTA 73, offset 45, 700x30 wheel (dia 682 -> Rf 341)
+    # trail = (Rf*cos(HTA) - offset)/sin(HTA) = (341*cos73 - 45)/sin73 = 57.2 mm
+    d = Design()
+    d.update({"head_tube_angle": 73, "fork_offset": 45, "front_bsd": 622, "front_tire_height": 30})
+    assert abs(solve(d).v["trail"] - 57.2) < 0.4
+
+
+def test_gearing_development_matches_ratio():
+    from bikebox.analysis.gearing import gearing_summary
+    d = Design()
+    g = solve(d)
+    s = gearing_summary(d, g)
+    hi = s["highest"]
+    gi = hi["ring"] / hi["cog"] * (g.v["rear_wheel_dia"] / 25.4)        # gear inches
+    assert abs(hi["gear_inches"] - gi) < 0.1
+    assert abs(hi["development_m"] - gi * math.pi * 0.0254) < 0.01       # metres per crank rev
+    assert s["highest"]["gear_inches"] >= s["lowest"]["gear_inches"]
+
+
+@pytest.mark.parametrize("name", TEMPLATES)
+def test_seat_tube_points_collinear(name):
+    g = solve(_design(name))
+    # top-tube/seat-tube junction and seat-tube top lie on the seat axis through the BB-end
+    v = g.v
+    assert abs(v["seat_tube_ct"] - (v["seat_tube_cc"] + v["st_extension"])) < 0.2
+
+
+def test_bcad_real_fixture_values_stable():
+    # the real BikeCAD fixture must keep reproducing BikeCAD's stored stack/reach
+    from pathlib import Path
+    d = Design.load(Path(__file__).parent / "fixtures" / "biked_plain_road.bcad")
+    g = solve(d)
+    assert abs(g.v["stack"] - 565.6) < 0.1 and abs(g.v["reach"] - 392.3) < 0.1
