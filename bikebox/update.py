@@ -8,7 +8,10 @@ raises into the UI.
 from __future__ import annotations
 
 import json
+import os
 import re
+import subprocess
+import sys
 import urllib.request
 from pathlib import Path
 
@@ -47,8 +50,62 @@ def check_latest(timeout: float = 4.0) -> dict | None:
     tag = str(data.get("tag_name", "")).lstrip("vV")
     if not tag:
         return None
+    assets = [{"name": a.get("name", ""), "url": a.get("browser_download_url", ""),
+               "size": int(a.get("size", 0) or 0)}
+              for a in (data.get("assets") or []) if a.get("browser_download_url")]
     return {"version": tag, "url": data.get("html_url") or RELEASES_URL,
-            "notes": (data.get("body") or "").strip(), "newer": is_newer(tag)}
+            "notes": (data.get("body") or "").strip(), "newer": is_newer(tag), "assets": assets}
+
+
+# -- download & install ----------------------------------------------------------
+def asset_for_platform(assets: list[dict]) -> dict | None:
+    """Pick the release asset matching this OS (Windows installer, macOS disk
+    image, Linux tarball)."""
+    if sys.platform.startswith("win"):
+        exts, prefer = (".exe", ".msi"), "setup"
+    elif sys.platform == "darwin":
+        exts, prefer = (".dmg",), ""
+    else:
+        exts, prefer = (".tar.gz", ".appimage", ".tgz"), "linux"
+    cands = [a for a in assets if a.get("name", "").lower().endswith(exts)]
+    if not cands:
+        return None
+    cands.sort(key=lambda a: (prefer not in a["name"].lower(), len(a["name"])))
+    return cands[0]
+
+
+def download(url: str, dest: Path, progress=None) -> Path:
+    """Download ``url`` to ``dest`` (progress is an optional callback(fraction))."""
+    req = urllib.request.Request(url, headers={"User-Agent": f"BikeBox/{__version__}"})
+    dest = Path(dest)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    with urllib.request.urlopen(req, timeout=30) as r:   # noqa: S310
+        total = int(r.headers.get("Content-Length", 0) or 0)
+        done = 0
+        tmp = dest.with_suffix(dest.suffix + ".part")
+        with tmp.open("wb") as fh:
+            while True:
+                chunk = r.read(65536)
+                if not chunk:
+                    break
+                fh.write(chunk)
+                done += len(chunk)
+                if progress and total:
+                    progress(done / total)
+        tmp.replace(dest)
+    return dest
+
+
+def launch_installer(path: Path) -> None:
+    """Open the downloaded installer / image so the user can complete the update
+    (a packaged app can't safely overwrite itself while running)."""
+    path = Path(path)
+    if sys.platform.startswith("win"):
+        os.startfile(str(path))                          # noqa: S606 (user-initiated installer)
+    elif sys.platform == "darwin":
+        subprocess.Popen(["open", str(path)])
+    else:
+        subprocess.Popen(["xdg-open", str(path.parent)])  # reveal the tarball
 
 
 # -- changelog / what's new ------------------------------------------------------
@@ -103,7 +160,7 @@ def save_settings(**changes) -> None:
 
 
 def update_check_enabled() -> bool:
-    return bool(load_settings().get("update_check", True))
+    return bool(load_settings().get("update_check", False))      # opt-in; off by default
 
 
 def whats_new_unseen() -> bool:

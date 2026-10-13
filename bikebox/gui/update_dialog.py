@@ -98,3 +98,127 @@ def maybe_show_whats_new(window) -> None:
 
 def show_whats_new(window) -> None:
     WhatsNewDialog(window).exec()
+
+
+class _Downloader(QtCore.QObject):
+    progress = Signal(float)
+    done = Signal(object)                             # Path on success, None on failure
+
+    def __init__(self, url: str, dest):
+        super().__init__()
+        self.url, self.dest = url, dest
+
+    def start(self):
+        threading.Thread(target=self._run, daemon=True).start()
+
+    def _run(self):
+        try:
+            path = U.download(self.url, self.dest, progress=lambda f: self.progress.emit(f))
+        except Exception:
+            path = None
+        self.done.emit(path)
+
+
+class SettingsDialog(QtWidgets.QDialog):
+    """Preferences, including manual update check and download/install."""
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle("Settings")
+        self.setMinimumWidth(460)
+        self._latest: dict | None = None
+        lay = QtWidgets.QVBoxLayout(self)
+
+        box = QtWidgets.QGroupBox("Updates")
+        v = QtWidgets.QVBoxLayout(box)
+        v.addWidget(QtWidgets.QLabel(f"You have <b>Bike Box {__version__}</b>."))
+        self.status = QtWidgets.QLabel("Use the buttons below to check for and install updates.")
+        self.status.setWordWrap(True)
+        v.addWidget(self.status)
+        self.bar = QtWidgets.QProgressBar()
+        self.bar.setVisible(False)
+        v.addWidget(self.bar)
+
+        row = QtWidgets.QHBoxLayout()
+        self.check_btn = QtWidgets.QPushButton("Check for updates")
+        self.check_btn.clicked.connect(self._check)
+        row.addWidget(self.check_btn)
+        self.install_btn = QtWidgets.QPushButton("Download && install update")
+        self.install_btn.setEnabled(False)
+        self.install_btn.clicked.connect(self._install)
+        row.addWidget(self.install_btn)
+        row.addStretch(1)
+        v.addLayout(row)
+
+        self.startup = QtWidgets.QCheckBox("Check for updates when Bike Box starts")
+        self.startup.setChecked(U.update_check_enabled())
+        self.startup.toggled.connect(lambda on: U.save_settings(update_check=bool(on)))
+        v.addWidget(self.startup)
+
+        wn = QtWidgets.QPushButton("What's New…")
+        wn.clicked.connect(lambda: WhatsNewDialog(self).exec())
+        v.addWidget(wn, 0, Qt.AlignmentFlag.AlignLeft)
+        lay.addWidget(box)
+
+        bb = QtWidgets.QDialogButtonBox(QtWidgets.QDialogButtonBox.StandardButton.Close)
+        bb.rejected.connect(self.accept)
+        bb.accepted.connect(self.accept)
+        lay.addWidget(bb)
+
+    def _check(self):
+        self.check_btn.setEnabled(False)
+        self.status.setText("Checking…")
+        chk = _Checker(self)
+
+        def handle(info):
+            self.check_btn.setEnabled(True)
+            self._latest = info
+            if info is None:
+                self.status.setText("Couldn't reach the update server. Please try again later.")
+            elif info["newer"]:
+                self.status.setText(f"<b>Bike Box {info['version']}</b> is available.")
+                self.install_btn.setEnabled(bool(U.asset_for_platform(info.get("assets", []))))
+                if not self.install_btn.isEnabled():
+                    self.status.setText(self.status.text() + " No installer for this platform — "
+                                        "<a href='%s'>open the downloads page</a>." % info["url"])
+                    self.status.setOpenExternalLinks(True)
+            else:
+                self.status.setText(f"You're up to date (Bike Box {__version__}).")
+        chk.done.connect(handle)
+        self._checker = chk
+        chk.start()
+
+    def _install(self):
+        info = self._latest or {}
+        asset = U.asset_for_platform(info.get("assets", []))
+        if not asset:
+            return
+        import tempfile
+        dest = __import__("pathlib").Path(tempfile.gettempdir()) / asset["name"]
+        self.install_btn.setEnabled(False)
+        self.check_btn.setEnabled(False)
+        self.bar.setVisible(True)
+        self.bar.setRange(0, 100)
+        self.status.setText(f"Downloading {asset['name']}…")
+        dl = _Downloader(asset["url"], dest)
+        dl.progress.connect(lambda f: self.bar.setValue(int(f * 100)))
+
+        def done(path):
+            self.bar.setVisible(False)
+            self.check_btn.setEnabled(True)
+            if path is None:
+                self.status.setText("Download failed. Please try again or download manually.")
+                self.install_btn.setEnabled(True)
+                return
+            self.status.setText("Downloaded. Opening the installer — close Bike Box to finish updating.")
+            try:
+                U.launch_installer(path)
+            except Exception:
+                QtGui.QDesktopServices.openUrl(QtCore.QUrl.fromLocalFile(str(path)))
+        dl.done.connect(done)
+        self._downloader = dl
+        dl.start()
+
+
+def show_settings(window) -> None:
+    SettingsDialog(window).exec()

@@ -270,23 +270,18 @@ class MainWindow(QtWidgets.QMainWindow):
         m = mb.addMenu("&Help")
         m.addAction("Keyboard & mouse", self.help_controls)
         m.addSeparator()
+        m.addAction("Settings…", self._settings)
         m.addAction("What's New", self._whats_new)
-        m.addAction("Check for updates…", self._check_updates)
-        from .. import update as _U
-        chk = m.addAction("Check for updates on startup")
-        chk.setCheckable(True)
-        chk.setChecked(_U.update_check_enabled())
-        chk.toggled.connect(lambda on: _U.save_settings(update_check=bool(on)))
         m.addSeparator()
         m.addAction(f"About {APP_NAME}", self.about)
+
+    def _settings(self):
+        from .update_dialog import show_settings
+        show_settings(self)
 
     def _whats_new(self):
         from .update_dialog import show_whats_new
         show_whats_new(self)
-
-    def _check_updates(self):
-        from .update_dialog import check_now
-        check_now(self)
 
     def _startup_checks(self):
         from .update_dialog import check_on_startup, maybe_show_whats_new
