@@ -88,7 +88,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - [ ] (bug) CI uses deprecated Node-20 actions — bump checkout/setup-python/upload-artifact
 - [ ] (bug) macOS app unsigned (Gatekeeper warning) — code-sign / notarize
 - [ ] Aero tubes approximated as ellipse (teardrop not modeled); mesh bends approximated
-- [ ] Headless CLI should export build sheet / BOM / size chart too (currently GUI-only)
+- [x] Headless CLI exports build sheet / BOM / size chart (`bikebox bom|buildsheet|sizes`)
 - [ ] GL viewer has import-level tests only (no GL context in CI)
 - [ ] Performance: cache solves, profile large catalogs; trim packaging size (~200 MB)
 
