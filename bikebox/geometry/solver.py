@@ -35,8 +35,9 @@ P.register([
     P.ParamDef("pedal_width", "Pedal body half-width outboard of spindle end", "Analysis", "Lean angle",
                P.FLOAT, 45.0, "mm", 0, 120, 1),
     P.ParamDef("pedal_thickness", "Pedal body thickness", "Analysis", "Lean angle", P.FLOAT, 18.0, "mm", 0, 60, 1),
-    P.ParamDef("remove_tubes", "Remove tubes", "Frame", "Advanced", P.STR, "",
-               help="Comma-separated tube names to omit: tt, dt, st, ss, cs (e.g. 'tt' for a step-through)",
+    P.ParamDef("remove_tubes", "Tubes to omit", "Frame", "Remove tubes", P.STR, "",
+               help="Omit frame tubes for a step-through, monostay, etc. Stored as a comma-separated list "
+                    "(tt, dt, st, ss, cs).",
                morph=False),
 ])
 

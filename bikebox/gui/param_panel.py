@@ -7,6 +7,37 @@ from ..qt import QtCore, QtGui, QtWidgets, Signal
 from .document import Document
 from .scrub import ScrubDoubleSpinBox, ScrubSpinBox
 
+
+class RemoveTubesWidget(QtWidgets.QWidget):
+    """Checkboxes for the tubes that can be omitted from the frame (step-through,
+    monostay, etc.), backed by the comma-separated ``remove_tubes`` value and
+    updating the drawing live as you toggle."""
+    changed = Signal(str)
+    TUBES = (("tt", "top tube"), ("dt", "down tube"), ("st", "seat tube"),
+             ("cs", "chainstays"), ("ss", "seat stays"))
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        lay = QtWidgets.QVBoxLayout(self)
+        lay.setContentsMargins(0, 0, 0, 0)
+        lay.setSpacing(1)
+        self.boxes: dict[str, QtWidgets.QCheckBox] = {}
+        for key, label in self.TUBES:
+            cb = QtWidgets.QCheckBox(f"Remove {label}")
+            cb.toggled.connect(self._emit)
+            self.boxes[key] = cb
+            lay.addWidget(cb)
+
+    def _emit(self, *_):
+        self.changed.emit(",".join(k for k, cb in self.boxes.items() if cb.isChecked()))
+
+    def set_value(self, text: str) -> None:
+        sel = {s.strip().lower() for s in str(text or "").split(",") if s.strip()}
+        for k, cb in self.boxes.items():
+            cb.blockSignals(True)
+            cb.setChecked(k in sel)
+            cb.blockSignals(False)
+
 Qt = QtCore.Qt
 
 GROUP_ORDER = ["Frame", "Tubes", "Fork & headset", "Cockpit", "Saddle & seatpost", "Drivetrain",
@@ -179,6 +210,10 @@ class ParamPage(QtWidgets.QScrollArea):
 
     def _editor(self, pd: P.ParamDef) -> QtWidgets.QWidget:
         key = pd.key
+        if key == "remove_tubes":
+            w = RemoveTubesWidget()
+            w.changed.connect(lambda v: self.doc.set_param("remove_tubes", v))
+            return w
         if pd.kind in (P.FLOAT,):
             sb = ScrubDoubleSpinBox()
             sb.setKeyboardTracking(False)
@@ -269,6 +304,8 @@ class ParamPage(QtWidgets.QScrollArea):
                         ed.setCurrentIndex(i)
                 elif isinstance(ed, ColorButton):
                     ed.set_color(str(v))
+                elif isinstance(ed, RemoveTubesWidget):
+                    ed.set_value(str(v))
                 elif isinstance(ed, QtWidgets.QLineEdit):
                     if not ed.hasFocus():
                         ed.setText(str(v))
