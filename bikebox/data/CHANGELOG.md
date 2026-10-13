@@ -1,5 +1,9 @@
 # Bike Box — What's New
 
+## 0.1.18
+- A proper **Remove-tubes** panel: a checkbox per tube that updates the drawing live (was a text box under Advanced).
+- **Update check & What's New**: Bike Box can check GitHub for a newer version on startup (toggle it in the Help menu) and this What's New page shows what changed.
+
 ## 0.1.17
 - Numeric fields are now **scrubbable**: click and drag left/right to change a value in real time, instead of the arrows one step at a time.
 - **Click a tube or part** on the drawing to jump straight to its editing section on the left.
