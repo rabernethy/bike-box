@@ -158,7 +158,11 @@ class ParamPage(QtWidgets.QScrollArea):
         self.ensureWidgetVisible(box)
         old = box.styleSheet()
         box.setStyleSheet(old + "\nQGroupBox { background: rgba(70,140,240,0.16); }")
-        QtCore.QTimer.singleShot(900, lambda b=box, s=old: b.setStyleSheet(s))
+        # parent the timer to the box so it is destroyed (and can't fire) with it
+        timer = QtCore.QTimer(box)
+        timer.setSingleShot(True)
+        timer.timeout.connect(lambda b=box, s=old: b.setStyleSheet(s))
+        timer.start(900)
 
     def _add_catalog_buttons(self, form: QtWidgets.QFormLayout, section: str) -> None:
         specs = SECTION_CATALOG.get((self.group, section))
@@ -391,12 +395,12 @@ class ParamPanel(QtWidgets.QWidget):
         if group in self.groups:
             self.list.setCurrentRow(self.groups.index(group))
 
-    # a clicked tube / part -> a representative parameter whose section to open
+    # a clicked tube name -> a representative parameter whose section to open
     PART_PARAM = {
         "tt": "tt_od", "tt2": "tt_od", "utt": "tt_od", "dt": "dt_od", "udt": "dt_od",
         "st": "st_od", "st2": "st_od", "ust": "st_od", "ht": "ht_od_bottom", "uht": "ht_od_bottom",
         "cs": "cs_od_bb", "ss": "ss_od_top", "ss_mono": "ss_od_top",
-        "fork": "fork_blade_od", "lj_fork": "fork_blade_od",
+        "fork": "fork_blade_od", "lj_fork": "fork_blade_od", "steerer": "fork_blade_od",
         "boom": "bent_boom_od", "beam": "bent_beam_od", "seat_back": "bent_seat_length",
         "seat_mast": "bent_seat_x", "rear_stay": "ss_od_top",
         "lt_deck": "longtail_length", "lt_lower": "longtail_length", "lt_rear": "longtail_length",
@@ -404,13 +408,41 @@ class ParamPanel(QtWidgets.QWidget):
         "lj_down": "lj_front_center", "lj_front_up": "lj_front_center", "lj_steer": "lj_front_center",
         "lj_link": "lj_front_center",
     }
+    # a clicked non-tube part (scene tag) -> a representative parameter
+    TAG_PARAM = {
+        "front": "front_bsd", "rear": "rear_bsd", "fork": "fork_blade_od",
+        "saddle": "saddle_height", "seatpost": "seatpost_od", "post": "seatpost_od",
+        "stem": "stem_length", "bar": "bar_od", "bar_od": "bar_od", "lever": "bar_type",
+        "headset": "lower_stack", "lower_stack": "lower_stack", "upper_stack": "upper_stack",
+        "steerer_od": "steerer_od", "battery": "battery", "housing": "bb_housing",
+        "integrated": "battery", "drive_unit": "bb_housing",
+        "chainring": "chainrings", "chainrings": "chainrings", "cassette": "cogs", "cogs": "cogs",
+        "crank": "crank_length", "pedal": "pedal_type", "chain": "chain_pitch",
+        "fd": "front_derailleur", "rd": "rd_capacity", "coupler": "couplers",
+        "brake": "brake_reach", "brakes": "brake_reach", "v": "brake_reach",
+        "fender": "fenders", "fenders": "fenders", "rack": "rack_rear",
+        "bottle": "bottle_dt", "decal": "decal_text", "decals": "decal_text", "kickstand": "kickstand_plate",
+        "dropout": "dropout_type", "spacers": "upper_stack", "boss": "bottle_dt",
+    }
+
+    def _param_for_tag(self, tag: str) -> str | None:
+        base = tag.split(":", 1)[0]                       # "coupler:tt" -> "coupler"
+        name = tag.split(":", 1)[1] if ":" in tag else tag
+        if base == "tube":
+            return self.PART_PARAM.get(name)
+        if base in ("brazeon", "cl", "dim", "udim", "note", "route"):
+            return None
+        return (self.PART_PARAM.get(name) or self.TAG_PARAM.get(base) or self.TAG_PARAM.get(tag)
+                or self.TAG_PARAM.get(name))
 
     def focus_part(self, part: str) -> None:
-        """Open the editing section for a tube / part clicked on the canvas."""
-        key = self.PART_PARAM.get(part)
-        if key is None and part.startswith("x"):          # a user extra tube
+        """Open the editing section for a tube / part clicked on the canvas.
+        ``part`` is a scene tag (e.g. 'tube:tt', 'battery', 'coupler:tt')."""
+        name = part.split(":", 1)[1] if part.startswith("tube:") else part
+        if name.startswith("x") and "_" in name:          # a user extra tube
             self.show_group("Extra tubes")
             return
+        key = self._param_for_tag(part)
         if key is None or not P.has(key):
             return
         pd = P.get(key)

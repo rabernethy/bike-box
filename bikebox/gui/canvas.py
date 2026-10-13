@@ -18,6 +18,22 @@ from .document import Document
 Qt = QtCore.Qt
 QPointF = QtCore.QPointF
 
+
+def _point_in_poly(m: V, pts) -> bool:
+    """Ray-casting point-in-polygon test (model coordinates)."""
+    inside = False
+    n = len(pts)
+    j = n - 1
+    for i in range(n):
+        a, b = pts[i], pts[j]
+        if (a.y > m.y) != (b.y > m.y):
+            x = a.x + (m.y - a.y) * (b.x - a.x) / ((b.y - a.y) or 1e-12)
+            if m.x < x:
+                inside = not inside
+        j = i
+    return inside
+
+
 HANDLES = [
     ("saddle", "Saddle (drag: height, Shift: free)"),
     ("bar", "Handlebar (drag: stem length/spacers)"),
@@ -425,30 +441,47 @@ class BikeCanvas(QtWidgets.QWidget):
         if dim is not None:
             self._drag = {"kind": "dim", "prim": dim, "id": next(_drag_ids)}
             return
-        part = self._hit_tube(m)
+        part = self._hit_part(m)
         if part is not None:
             self.select_part.emit(part)
             return
         self._pan_last = pos
         self.setCursor(Qt.CursorShape.ClosedHandCursor)
 
-    def _hit_tube(self, m: V) -> str | None:
-        """The frame tube nearest the model-space point ``m``, if the click lands
-        on one (within its half-width plus a few pixels)."""
+    _SKIP_TAGS = ("dim:", "udim:", "note:", "cl:", "ghost", "route:", "grid", "ground", "photo")
+
+    def _hit_part(self, m: V) -> str | None:
+        """The tag of the top-most drawn part under the model-space point ``m``.
+        Clicking a filled shape (tube, wheel, saddle, battery, …) selects it; a
+        stroked part counts within a few pixels. The highest-z (front-most) part
+        under the cursor wins."""
         from ..geometry.vec import point_segment_distance
-        g = self.doc.geometry if self.doc else None
-        if g is None:
+        from ..render.scene import Circle, Polyline
+        sc = self.scene()
+        if sc is None:
             return None
-        best, best_d = None, 1e18
-        margin = 8.0 / max(self.zoom, 1e-6)
-        for name, tb in g.tubes.items():
-            pts = tb.points()
-            thr = max(tb.od_a, tb.od_b) / 2.0 + margin
-            for i in range(len(pts) - 1):
-                dist = point_segment_distance(m, pts[i], pts[i + 1])
-                if dist <= thr and dist < best_d:
-                    best_d, best = dist, name
-        return best
+        tol = 6.0 / max(self.zoom, 1e-6)
+        best_tag, best_z, best_d = None, -1, 1e18
+        for prim in sc.prims:
+            tag = getattr(prim, "tag", "") or ""
+            if not tag or tag.startswith(self._SKIP_TAGS):
+                continue
+            if isinstance(prim, Polyline) and prim.pts:
+                n = len(prim.pts)
+                if prim.closed and n >= 3 and _point_in_poly(m, prim.pts):
+                    d = 0.0
+                else:
+                    segs = range(n) if prim.closed else range(n - 1)
+                    d = min((point_segment_distance(m, prim.pts[i], prim.pts[(i + 1) % n]) for i in segs),
+                            default=1e18)
+            elif isinstance(prim, Circle):
+                dc = m.dist(prim.c)
+                d = 0.0 if (prim.style.fill is not None and dc <= prim.r) else abs(dc - prim.r)
+            else:
+                continue
+            if d <= tol and (prim.z, -d) > (best_z, -best_d):
+                best_tag, best_z, best_d = tag, prim.z, d
+        return best_tag
 
     def mouseMoveEvent(self, e) -> None:
         pos = e.position()
