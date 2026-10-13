@@ -55,6 +55,10 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
   need a dedicated non-diamond skeleton (forward BB boom / seat, or a second steering axis + linkage); the
   diamond solver can't represent them without inventing geometry, so they warrant their own build. **S&S
   coupler placement optimiser** also still open.
+- [x] **Travel couplings** — frame couplers now have a style: **S&S** (torque couplers on the top and down
+  tube, positions adjustable) and **Ritchey Break-Away** (a down-tube coupler just above the BB and a clamp
+  joint at the top-tube/seat-cluster). Both show the cut points and a travel-case-fit check (front/rear half
+  spans vs the case diagonal) in the report. An auto-placement *optimiser* is still open.
 
 ## Ongoing quality
 - [~] Performance: profiled the interactive paths (2026-10-13). solve() ~0.3 ms and FEA ~4 ms are already fast;

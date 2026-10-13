@@ -646,6 +646,12 @@ class BikeSceneBuilder:
         elif typ in ("disc_mount", "disc_tab", "disc"):
             tan = (tube.point_at(s)[1] if tube is not None else V(0, 1))
             sc.poly(rounded_rect_along(p - tan * 10, p + tan * 10, 5.0), fill, "frame", Z_FRAME + 6, True, tag)
+        elif typ == "hinge" and tube is not None:
+            axis = (tube.b - tube.a).norm()
+            half = tube.od_at(0.5) / 2 + 1.5
+            sc.poly(rect_along(p - axis.perp() * half, p + axis.perp() * half, 2.6),
+                    st, "frame", Z_FRAME + 7, True, tag)
+            sc.circle(p, 2.2, fill, "frame", Z_FRAME + 8, tag)
         else:
             sc.circle(p, 2.6, st, "frame", Z_FRAME + 6, tag)
 

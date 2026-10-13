@@ -74,6 +74,10 @@ Double-click a dimension to type a value; Bike Box switches the front-end mode a
 * **Folder**: *Frame type = Folder*. A small-wheel single frame with a folding-hinge marker on the down tube
   (set its position along the tube).
 * **E-bikes / gearboxes**: Frame ▸ Drive unit: housing size/position, battery on or in the down tube or on a rack.
+* **Travel couplings**: Frame ▸ *Couplers & travel case* — tick *Frame couplers* and pick a style: **S&S**
+  (torque couplers on the top and down tube, positions adjustable) or **Ritchey Break-Away** (a down-tube
+  coupler above the BB and a clamp joint at the seat cluster). Set the travel-case inside length/width; the
+  report shows the cut points and whether each frame half fits the case diagonal.
 * **Braze-ons & mounts**: Edit ▸ *Braze-ons & mounts* — place bottle bosses, cable stops/guides, rack and fender
   eyelets and disc mounts on any tube (position along the tube, side offset, boss spacing). They draw on the
   frame and their coordinates appear on the build / cut sheet.

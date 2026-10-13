@@ -366,10 +366,17 @@ _frame += [
 
 _frame += [
     _bool("couplers", "Frame couplers (travel)", G, "Couplers & travel case", False),
+    _choice("coupler_style", "Coupler style", G, "Couplers & travel case", "s_and_s",
+            (("s_and_s", "S&S (torque couplers on top + down tube)"),
+             ("ritchey", "Ritchey Break-Away (down-tube coupler + seat-cluster joint)")),
+            vis=("couplers", (True,)),
+            help="S&S cuts the top tube and down tube with threaded torque couplers. Ritchey Break-Away splits "
+                 "into a front and rear triangle: a down-tube coupler just above the BB and a clamp joint at the "
+                 "top-tube/seat-cluster."),
     _mm("coupler_tt_pos", "Top tube coupler from seat tube", G, "Couplers & travel case", 120, 30, 600,
-        vis=("couplers", (True,))),
+        vis=("coupler_style", ("s_and_s",))),
     _mm("coupler_dt_pos", "Down tube coupler from BB", G, "Couplers & travel case", 160, 30, 700,
-        vis=("couplers", (True,))),
+        vis=("coupler_style", ("s_and_s",))),
     _mm("coupler_length", "Coupler length", G, "Couplers & travel case", 70, 30, 150, vis=("couplers", (True,))),
     _mm("case_length", "Travel case inside length", G, "Couplers & travel case", 660, 300, 1500,
         vis=("couplers", (True,))),

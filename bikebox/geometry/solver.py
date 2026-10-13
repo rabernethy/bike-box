@@ -992,12 +992,25 @@ def _tandem_tubes(g: Geometry, d: Design, SB: V, s2: V, P2: V, stay_node: V, hub
 
 def _couplers(g: Geometry, d: Design) -> None:
     """Coupler positions and a travel-case check: the frame splits into a front
-    half (head tube, fork stub) and a rear half; each must fit the case
-    diagonal in side view (wheels and fork removed)."""
+    half and a rear half; each must fit the case diagonal in side view (wheels
+    and fork removed).
+
+    S&S puts a torque coupler mid top tube and mid down tube. Ritchey Break-Away
+    instead splits into a front and rear triangle: a down-tube coupler just above
+    the BB and a clamp joint at the top-tube / seat-cluster, so the seat tube and
+    rear triangle come away as one piece."""
     tt, dt = g.tubes["tt"], g.tubes["dt"]
-    ptt, _ = tt.point_at(min(d.f("coupler_tt_pos"), tt.length - 20))
-    pdt, _ = dt.point_at(min(d.f("coupler_dt_pos"), dt.length - 20))
+    style = d["coupler_style"]
+    if style == "ritchey":
+        # tt.a is the seat cluster, dt.a is the BB: joint at the seat cluster, coupler just above the BB
+        ptt, _ = tt.point_at(min(25.0, tt.length - 20))
+        pdt, _ = dt.point_at(min(70.0, dt.length - 20))
+    else:
+        ptt, _ = tt.point_at(min(d.f("coupler_tt_pos"), tt.length - 20))
+        pdt, _ = dt.point_at(min(d.f("coupler_dt_pos"), dt.length - 20))
     g.p["coupler_tt"], g.p["coupler_dt"] = ptt, pdt
+    g.v["coupler_style"] = 1.0 if style == "ritchey" else 0.0
+    # front half (head tube + cut stubs) and rear half (seat tube + rear triangle)
     front = [ptt, pdt, g.p["ht_top"], g.p["ht_bottom"], g.p["tt_ht"], g.p["dt_ht"]]
     rear = [ptt, pdt, g.p["bb"], g.p["st_top"], g.p["tt_st"], g.p["stay_node"], g.p["drive_bb"]]
     case_diag = math.hypot(d.f("case_length"), d.f("case_width"))

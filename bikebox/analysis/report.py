@@ -299,11 +299,37 @@ def _tire_fit(g: Geometry) -> Section:
     return Section("Tire fit", rows)
 
 
-_BUILDERS: list[tuple[str, Callable[[Geometry], Section]]] = [
+def _couplings(g: Geometry) -> Section | None:
+    """Travel couplings (S&S / Ritchey Break-Away): style, cut points and whether
+    the frame halves fit the travel case. Omitted when the frame has no couplers."""
+    d = g.design
+    if not d["couplers"] or "coupler_tt" not in g.p:
+        return None
+    system = {"s_and_s": "S&S torque couplers", "ritchey": "Ritchey Break-Away"}.get(
+        d["coupler_style"], d["coupler_style"])
+    rows: list[Row] = [("Style", system, "info")]
+    if d["coupler_style"] == "ritchey":
+        rows.append(("Down-tube coupler", "just above the BB", "info"))
+        rows.append(("Top-tube joint", "at the seat cluster", "info"))
+    else:
+        rows.append(("Top-tube coupler", _L(g, d.f("coupler_tt_pos")) + " from the seat tube", "info"))
+        rows.append(("Down-tube coupler", _L(g, d.f("coupler_dt_pos")) + " from the BB", "info"))
+    fs, rs = g.v.get("coupler_front_span"), g.v.get("coupler_rear_span")
+    case_diag = (d.f("case_length") ** 2 + d.f("case_width") ** 2) ** 0.5
+    if fs and rs:
+        fits = fs <= case_diag and rs <= case_diag
+        rows.append(("Front / rear half span", f"{_L(g, fs)} / {_L(g, rs)}",
+                     "ok" if fits else "fail"))
+        rows.append(("Travel case diagonal", f"{_L(g, case_diag)} ({_L(g, d.f('case_length'))} × "
+                     f"{_L(g, d.f('case_width'))})", "ok" if fits else "warn"))
+    return Section("Travel coupling", rows)
+
+
+_BUILDERS: list[tuple[str, Callable[[Geometry], Section | None]]] = [
     ("Key geometry", _geometry), ("Clearances & warnings", _clearances), ("Gearing", _gearing),
     ("Chain", _chain), ("Weight", _weight), ("UCI (road)", _uci), ("Structure (FEA estimate)", _structure),
     ("Fixture", _fixture), ("Tire fit", _tire_fit), ("Aerodynamics (estimate)", _aero),
-    ("Compatibility", _compat), ("Bill of materials", _bom),
+    ("Compatibility", _compat), ("Travel coupling", _couplings), ("Bill of materials", _bom),
 ]
 
 
@@ -320,7 +346,9 @@ def full_report(g: Geometry) -> list[Section]:
     out: list[Section] = []
     for title, fn in _BUILDERS:
         try:
-            out.append(fn(g))
+            sec = fn(g)
+            if sec is not None:                   # a builder may opt out (e.g. no coupling)
+                out.append(sec)
         except Exception as exc:                  # keep the rest of the report
             out.append(Section(title, [("Error", f"{type(exc).__name__}: {exc}", "fail")]))
     try:
