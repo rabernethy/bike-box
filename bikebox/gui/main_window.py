@@ -250,6 +250,7 @@ class MainWindow(QtWidgets.QMainWindow):
         m.addAction("Miter templates…", "Ctrl+M", self.mitre_dialog)
         m.addAction("Auxiliary views (stays, crown, toe, lean)", self.show_aux)
         m.addAction("3-D clearance view…", self.show_3d)
+        m.addAction("Size run…", self.size_run)
         m.addAction("Resolve issues…", self.fix_clearance)
         m.addAction("Analysis report…", "Ctrl+R", self.report_dialog)
         m.addAction("Gearing & chain/belt…", lambda: self.report_dialog("Gearing"))
@@ -663,6 +664,12 @@ class MainWindow(QtWidgets.QMainWindow):
         self.aux_dock.widget().set_document(self.doc())
         self.aux_dock.show()
         self.aux_dock.raise_()
+
+    def size_run(self):
+        if self.doc() is None:
+            return
+        from .sizerun_dialog import SizeRunDialog
+        SizeRunDialog(self.doc(), self).exec()
 
     def show_3d(self):
         from . import view3d
