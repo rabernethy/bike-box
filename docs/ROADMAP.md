@@ -28,8 +28,9 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
   prices, so line prices are the shop's own.)
 - [x] **Cable / hose routing** — add internal/external routes (presets for shift/brake/dropper/Di2/dynamo);
   drawn on the frame with entry/exit ports listed on the build sheet.
-- [ ] **Catalog depth** — fill remaining tube gaps (Reynolds matrix, True Temper OX Gold, KVA MS2), add
-  lugs/fork-crown geometry and headset/BB-standard matrices; CSV import of a shop's own stock + prices.
+- [x] **CSV import of a shop's own stock + prices** (Parts libraries ▸ Import stock CSV) — imported prices feed
+  the quote. Remaining tube gaps (Reynolds matrix, True Temper OX Gold, KVA MS2) and lugs/fork-crown geometry
+  still open (need web-sourced data).
 
 ## P2 — bigger / later
 - [ ] **Full suspension** — pivot locations, shock, leverage curve, anti-squat; opens the MTB market.

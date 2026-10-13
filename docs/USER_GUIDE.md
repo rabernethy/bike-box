@@ -156,3 +156,7 @@ Tools ▸ **Customer & order** attaches a customer (name, contact, notes), an or
 ### Cable & hose routing
 
 Edit ▸ **Cable & hose routing** adds common routes (rear/front shift, rear brake, dropper, Di2, dynamo) as internal or external paths along the tubes. They draw on the frame; internal routes mark entry/exit **ports**, whose coordinates are listed on the build sheet for drilling.
+
+### Importing your own stock
+
+Edit ▸ Parts libraries ▸ **Import stock CSV** loads your own parts (with prices) into the selected category from a CSV. Use parameter-key columns (e.g. `fork_length`, `stem_length`) plus `name`, `brand`, `price`, `notes`. Imported parts appear in the catalog pickers, and a part's price flows into the customer quote.

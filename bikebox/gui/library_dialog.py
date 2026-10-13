@@ -65,6 +65,10 @@ class LibraryDialog(QtWidgets.QDialog):
         b = QtWidgets.QPushButton("Save current values as library item…")
         b.clicked.connect(self.save_item)
         row.addWidget(b)
+        b = QtWidgets.QPushButton("Import stock CSV…")
+        b.setToolTip("Import your own parts (with prices) into the selected category from a CSV")
+        b.clicked.connect(self.import_csv)
+        row.addWidget(b)
         self.count = QtWidgets.QLabel()
         self.count.setStyleSheet("color: gray")
         row.addWidget(self.count)
@@ -224,3 +228,22 @@ class LibraryDialog(QtWidgets.QDialog):
             p = self.L.save_user_item(cat, name.strip(), vals)
             QtWidgets.QMessageBox.information(self, "Library", f"Saved to {p}")
             self._fill_items()
+
+    def import_csv(self):
+        cat = self._category()
+        if not cat:
+            QtWidgets.QMessageBox.information(self, "Import stock", "Select a category first.")
+            return
+        fn, _ = QtWidgets.QFileDialog.getOpenFileName(self, f"Import {cat} stock CSV", "", "CSV (*.csv)")
+        if not fn:
+            return
+        try:
+            added, errors = self.L.import_stock_csv(cat, fn)
+        except Exception as exc:
+            QtWidgets.QMessageBox.warning(self, "Import stock", f"Could not import: {exc}")
+            return
+        msg = f"Imported {added} item(s) into '{cat}'."
+        if errors:
+            msg += "\n\nSkipped:\n" + "\n".join(errors[:10]) + ("\n…" if len(errors) > 10 else "")
+        QtWidgets.QMessageBox.information(self, "Import stock", msg)
+        self._fill_items()

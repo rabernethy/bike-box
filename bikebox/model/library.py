@@ -437,6 +437,53 @@ def _user_file(category: str) -> Path:
     return user_dir() / f"{slugify(category).replace('-', '_')}.json"
 
 
+def import_stock_csv(category: str, path, name_cols=("name", "model")) -> tuple[int, list[str]]:
+    """Import a shop's own parts from a CSV into the user library for ``category``.
+
+    Columns that are FrameWright parameter keys become ``values`` (numeric ones
+    are coerced); ``name``/``model``/``brand``/``price``/``notes`` become the
+    item name and meta. Returns (items added, error messages).
+    """
+    import csv
+    added, errors = 0, []
+    with open(path, newline="", encoding="utf-8-sig") as fh:
+        reader = csv.DictReader(fh)
+        for n, row in enumerate(reader, start=2):
+            row = {(k or "").strip(): (v or "").strip() for k, v in row.items() if k}
+            name = next((row[c] for c in name_cols if row.get(c)), "") or row.get("brand", "")
+            if not name:
+                errors.append(f"row {n}: no name/model")
+                continue
+            values: dict[str, Any] = {}
+            for k, v in row.items():
+                if k in ("name", "brand", "model", "price", "notes") or not v:
+                    continue
+                if P.has(k):
+                    pd = P.get(k)
+                    if pd.kind in (P.FLOAT, P.INT):
+                        try:
+                            values[k] = float(v)
+                        except ValueError:
+                            errors.append(f"row {n}: {k}={v!r} not a number")
+                    else:
+                        values[k] = v
+            meta = {"brand": row.get("brand", ""), "model": row.get("model", ""), "user": True,
+                    "source": f"imported from {Path(path).name}"}
+            if row.get("price"):
+                try:
+                    meta["price_usd"] = float(row["price"])
+                except ValueError:
+                    pass
+            if row.get("notes"):
+                meta["notes"] = row["notes"]
+            try:
+                save_user_item(category, name, values, meta)
+                added += 1
+            except (TypeError, ValueError) as exc:
+                errors.append(f"row {n}: {exc}")
+    return added, errors
+
+
 def save_user_item(category: str, name: str, values: dict[str, Any], meta: dict[str, Any] | None = None) -> Path:
     """Add (or replace, matched by name) an item in the user library for
     ``category``; returns the file written."""

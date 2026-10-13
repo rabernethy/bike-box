@@ -40,10 +40,17 @@ def quote(design, geometry=None) -> dict:
     prices = o.get("prices", {})
     lines = []
     parts_total = 0.0
+    bom_entries = design.extras.get("bom") or {}
+    cat_price = {}                           # component label -> catalogued price (imported stock)
     for r in BOM.build(design, geometry):
         if r.component == "Frame":
             continue
-        price = float(prices.get(r.component, 0) or 0)
+        # a manual per-order price overrides; otherwise fall back to an imported catalog price
+        entry = next((e for e in bom_entries.values()
+                      if isinstance(e, dict) and e.get("name") == r.part), None)
+        default = float(entry["price"]) if isinstance(entry, dict) and isinstance(entry.get("price"),
+                                                                                  (int, float)) else 0.0
+        price = float(prices.get(r.component, default) or default)
         name = r.part or r.spec or "—"
         lines.append({"component": r.component, "part": name, "price": price})
         parts_total += price

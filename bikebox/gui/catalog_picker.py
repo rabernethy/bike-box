@@ -172,6 +172,7 @@ class CatalogPicker(QtWidgets.QDialog):
             "id": it.id, "name": it.name, "category": it.category, "brand": m.get("brand"),
             "model": m.get("model"), "variant": m.get("variant"), "source": src,
             "weight_g": _weight_g(m.get("specs")),
+            "price": m.get("price_usd") if isinstance(m.get("price_usd"), (int, float)) else None,
         }.items() if v is not None and v != ""}
 
     def use(self):
