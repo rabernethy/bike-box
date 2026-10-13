@@ -53,6 +53,11 @@ def app_icon(size: int = 256) -> QtGui.QIcon:
 
 
 def run(argv: list[str]) -> int:
+    try:                                   # request an OpenGL >= 2.1 format for the 3-D view
+        from .view3d import ensure_gl_format
+        ensure_gl_format()
+    except Exception:
+        pass
     QtCore.QCoreApplication.setOrganizationName("Bike Box")
     QtCore.QCoreApplication.setApplicationName(APP_NAME)
     QtCore.QCoreApplication.setApplicationVersion(__version__)

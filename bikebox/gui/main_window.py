@@ -285,6 +285,10 @@ class MainWindow(QtWidgets.QMainWindow):
                            ("Fit", self.fit_advisor), ("Miters", self.mitre_dialog), ("Report", self.report_dialog),
                            ("Drawing", lambda: self.export_drawing("pdf"))):
             tb2.addAction(self._act(text, slot))
+        self.a_3d = self._act("3-D", self.toggle_3d)
+        self.a_3d.setCheckable(True)
+        self.a_3d.setToolTip("Show the 3-D clearance view (orbit the frame; clearances in green/red)")
+        tb2.addAction(self.a_3d)
         self.mode_combo = QtWidgets.QComboBox()
         from ..model import params as P
         for val, label in P.get("display_mode").choices:
@@ -678,20 +682,37 @@ class MainWindow(QtWidgets.QMainWindow):
         from .sizerun_dialog import SizeRunDialog
         SizeRunDialog(self.doc(), self).exec()
 
+    def toggle_3d(self):
+        # toolbar toggle: hide if already open, else open/raise
+        if self.view3d_dock is not None and self.view3d_dock.isVisible():
+            self.view3d_dock.hide()
+            return
+        self.show_3d()
+
     def show_3d(self):
         from . import view3d
+        if self.doc() is None:
+            return
         if not view3d.available():
             QtWidgets.QMessageBox.information(
                 self, "3-D clearance view",
                 "The 3-D view needs the 'pyqtgraph' and 'PyOpenGL' packages.\n\nInstall them with:\n"
                 "    pip install pyqtgraph PyOpenGL")
             return
-        if self.doc() is None:
-            return
         if self.view3d_dock is None:
-            self.view3d_dock = self._dock("3-D clearance view", view3d.View3DWidget(self.doc()),
-                                          Qt.DockWidgetArea.RightDockWidgetArea)
+            try:
+                widget = view3d.View3DWidget(self.doc())
+            except Exception as exc:
+                QtWidgets.QMessageBox.warning(
+                    self, "3-D clearance view",
+                    f"Could not start the 3-D view (OpenGL problem):\n\n{exc}\n\n"
+                    "The 2-D auxiliary views (Tools ▸ Auxiliary views) show the same clearances.")
+                return
+            self.view3d_dock = self._dock("3-D clearance view", widget, Qt.DockWidgetArea.RightDockWidgetArea)
+            self.tabifyDockWidget(self.dock_results, self.view3d_dock)   # tabbed beside Results
             self.view_menu.addAction(self.view3d_dock.toggleViewAction())
+            if hasattr(self, "a_3d"):
+                self.view3d_dock.visibilityChanged.connect(self.a_3d.setChecked)
         else:
             self.view3d_dock.widget().set_document(self.doc())
         self.view3d_dock.show()

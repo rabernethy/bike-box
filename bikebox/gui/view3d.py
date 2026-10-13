@@ -25,6 +25,21 @@ def available() -> bool:
         return False
 
 
+def ensure_gl_format() -> None:
+    """Request an OpenGL >= 2.1 surface so pyqtgraph.opengl's version gate passes.
+
+    Many Mesa drivers report a 4.x compatibility context whose default
+    QSurfaceFormat version is < (2, 1); pyqtgraph then refuses to initialise even
+    though the hardware is fine. Setting the default format version fixes it. Must
+    run before the first GL widget is created.
+    """
+    fmt = QtGui.QSurfaceFormat.defaultFormat()
+    if fmt.version() < (2, 1):
+        fmt.setVersion(2, 1)
+        fmt.setProfile(QtGui.QSurfaceFormat.OpenGLContextProfile.CompatibilityProfile)
+        QtGui.QSurfaceFormat.setDefaultFormat(fmt)
+
+
 OK = (0.20, 0.65, 0.25, 1.0)
 FAIL = (0.85, 0.15, 0.15, 1.0)
 FRAME = (0.62, 0.66, 0.72, 1.0)
@@ -36,10 +51,14 @@ class View3DWidget(QtWidgets.QWidget):
         import pyqtgraph.opengl as gl
         self.gl = gl
         self.doc = doc
+        ensure_gl_format()
         lay = QtWidgets.QHBoxLayout(self)
         lay.setContentsMargins(0, 0, 0, 0)
-        self.view = gl.GLViewWidget()
-        self.view.setBackgroundColor(QtGui.QColor("#101418"))
+        try:
+            self.view = gl.GLViewWidget()
+            self.view.setBackgroundColor(QtGui.QColor("#101418"))
+        except Exception as exc:                 # no usable OpenGL context
+            raise RuntimeError(f"OpenGL is not available: {exc}") from exc
         lay.addWidget(self.view, 1)
 
         side = QtWidgets.QVBoxLayout()
@@ -63,11 +82,42 @@ class View3DWidget(QtWidgets.QWidget):
 
         self._items: list = []
         self._scene = None
+        # live updates: rebuild shortly after the design changes (debounced)
+        self._timer = QtCore.QTimer(self)
+        self._timer.setSingleShot(True)
+        self._timer.setInterval(120)
+        self._timer.timeout.connect(self.rebuild)
+        self._connect(doc)
         self.rebuild()
 
+    def _connect(self, doc: Document) -> None:
+        try:
+            doc.changed.connect(self._schedule)
+        except (TypeError, RuntimeError):
+            pass
+
+    def _schedule(self, *_):
+        # only recompute when actually visible, to avoid background cost
+        if self.isVisible():
+            self._timer.start()
+        else:
+            self._dirty = True
+
     # -- build --------------------------------------------------------------------
+    def showEvent(self, e):
+        super().showEvent(e)
+        if getattr(self, "_dirty", False):
+            self._dirty = False
+            self.rebuild()
+
     def set_document(self, doc: Document) -> None:
+        if self.doc is not None and self.doc is not doc:
+            try:
+                self.doc.changed.disconnect(self._schedule)
+            except (TypeError, RuntimeError):
+                pass
         self.doc = doc
+        self._connect(doc)
         self.rebuild()
 
     def _clear(self) -> None:
