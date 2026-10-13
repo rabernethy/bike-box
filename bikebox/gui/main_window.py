@@ -363,8 +363,14 @@ class MainWindow(QtWidgets.QMainWindow):
         view.canvas.status.connect(self.coord_label.setText)
         view.canvas.edit_dimension.connect(lambda did, d=doc: D.edit_dimension_value(d, did, self))
         view.canvas.tool_finished.connect(lambda: self.tool_actions["select"].setChecked(True))
+        view.canvas.select_part.connect(self._focus_part)
         self.tabs.setCurrentIndex(idx)
         return view
+
+    def _focus_part(self, part: str) -> None:
+        """Clicking a tube/part on the canvas opens its editing section."""
+        self.dock_params.show()
+        self.params.focus_part(part)
 
     def _update_tab_title(self, view):
         i = self.tabs.indexOf(view)

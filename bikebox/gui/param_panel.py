@@ -5,6 +5,7 @@ from ..model import params as P
 from ..model.units import MM_PER_IN
 from ..qt import QtCore, QtGui, QtWidgets, Signal
 from .document import Document
+from .scrub import ScrubDoubleSpinBox, ScrubSpinBox
 
 Qt = QtCore.Qt
 
@@ -116,6 +117,18 @@ class ParamPage(QtWidgets.QScrollArea):
             self.rows[pd.key] = (label, ed, box)
         self.refresh()
 
+    def flash_section(self, section: str) -> None:
+        """Scroll a section into view and briefly highlight it."""
+        box = self.sections.get(section)
+        if box is None:
+            return
+        if not box.isVisible():                       # unhide it if a filter/visibility hid it
+            box.setVisible(True)
+        self.ensureWidgetVisible(box)
+        old = box.styleSheet()
+        box.setStyleSheet(old + "\nQGroupBox { background: rgba(70,140,240,0.16); }")
+        QtCore.QTimer.singleShot(900, lambda b=box, s=old: b.setStyleSheet(s))
+
     def _add_catalog_buttons(self, form: QtWidgets.QFormLayout, section: str) -> None:
         specs = SECTION_CATALOG.get((self.group, section))
         if not specs:
@@ -167,16 +180,17 @@ class ParamPage(QtWidgets.QScrollArea):
     def _editor(self, pd: P.ParamDef) -> QtWidgets.QWidget:
         key = pd.key
         if pd.kind in (P.FLOAT,):
-            sb = QtWidgets.QDoubleSpinBox()
+            sb = ScrubDoubleSpinBox()
             sb.setKeyboardTracking(False)
             sb.setAccelerated(True)
             sb.setRange(-1e6, 1e6)
             sb.setMinimumWidth(90)
+            sb.setToolTip("Drag left/right to scrub the value, or type / use the arrows")
             sb.valueChanged.connect(lambda v, k=key, s=sb: self._commit_float(k, v))
             self._configure_spin(sb, pd)
             return sb
         if pd.kind == P.INT:
-            sb = QtWidgets.QSpinBox()
+            sb = ScrubSpinBox()
             sb.setKeyboardTracking(False)
             sb.setRange(int(pd.min if pd.min is not None else -10 ** 6), int(pd.max if pd.max is not None else 10 ** 6))
             sb.valueChanged.connect(lambda v, k=key: self.doc.set_param(k, v))
@@ -339,6 +353,34 @@ class ParamPanel(QtWidgets.QWidget):
     def show_group(self, group: str) -> None:
         if group in self.groups:
             self.list.setCurrentRow(self.groups.index(group))
+
+    # a clicked tube / part -> a representative parameter whose section to open
+    PART_PARAM = {
+        "tt": "tt_od", "tt2": "tt_od", "utt": "tt_od", "dt": "dt_od", "udt": "dt_od",
+        "st": "st_od", "st2": "st_od", "ust": "st_od", "ht": "ht_od_bottom", "uht": "ht_od_bottom",
+        "cs": "cs_od_bb", "ss": "ss_od_top", "ss_mono": "ss_od_top",
+        "fork": "fork_blade_od", "lj_fork": "fork_blade_od",
+        "boom": "bent_boom_od", "beam": "bent_beam_od", "seat_back": "bent_seat_length",
+        "seat_mast": "bent_seat_x", "rear_stay": "ss_od_top",
+        "lt_deck": "longtail_length", "lt_lower": "longtail_length", "lt_rear": "longtail_length",
+        "lt_brace": "longtail_length", "lj_bed": "lj_front_center", "lj_top": "lj_front_center",
+        "lj_down": "lj_front_center", "lj_front_up": "lj_front_center", "lj_steer": "lj_front_center",
+        "lj_link": "lj_front_center",
+    }
+
+    def focus_part(self, part: str) -> None:
+        """Open the editing section for a tube / part clicked on the canvas."""
+        key = self.PART_PARAM.get(part)
+        if key is None and part.startswith("x"):          # a user extra tube
+            self.show_group("Extra tubes")
+            return
+        if key is None or not P.has(key):
+            return
+        pd = P.get(key)
+        self.show_group(pd.group)
+        page = self.pages.get(pd.group)
+        if page is not None:
+            page.flash_section(pd.section)
 
     def _page(self, group: str) -> ParamPage:
         page = self.pages.get(group)

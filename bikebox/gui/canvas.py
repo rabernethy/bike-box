@@ -38,6 +38,7 @@ class BikeCanvas(QtWidgets.QWidget):
     status = Signal(str)
     edit_dimension = Signal(str)          # dimension id (catalogue)
     tool_finished = Signal()
+    select_part = Signal(str)             # a frame tube / part was clicked -> open its edit section
 
     def __init__(self, doc: Document, parent=None):
         super().__init__(parent)
@@ -424,8 +425,30 @@ class BikeCanvas(QtWidgets.QWidget):
         if dim is not None:
             self._drag = {"kind": "dim", "prim": dim, "id": next(_drag_ids)}
             return
+        part = self._hit_tube(m)
+        if part is not None:
+            self.select_part.emit(part)
+            return
         self._pan_last = pos
         self.setCursor(Qt.CursorShape.ClosedHandCursor)
+
+    def _hit_tube(self, m: V) -> str | None:
+        """The frame tube nearest the model-space point ``m``, if the click lands
+        on one (within its half-width plus a few pixels)."""
+        from ..geometry.vec import point_segment_distance
+        g = self.doc.geometry if self.doc else None
+        if g is None:
+            return None
+        best, best_d = None, 1e18
+        margin = 8.0 / max(self.zoom, 1e-6)
+        for name, tb in g.tubes.items():
+            pts = tb.points()
+            thr = max(tb.od_a, tb.od_b) / 2.0 + margin
+            for i in range(len(pts) - 1):
+                dist = point_segment_distance(m, pts[i], pts[i + 1])
+                if dist <= thr and dist < best_d:
+                    best_d, best = dist, name
+        return best
 
     def mouseMoveEvent(self, e) -> None:
         pos = e.position()
