@@ -315,6 +315,9 @@ class BikeSceneBuilder:
         base = t.frame_fill
         order = (["cs", "ss", "ss_mono", "lat", "strut_rear"] + [n for n in tubes if n.startswith("x")]
                  + ["boom", "mid", "tt2", "dt", "tt", "st2", "st", "strut_sc", "udt", "utt", "ust"])
+        # any remaining tubes (e.g. the longtail cargo deck) so nothing is left undrawn
+        handled = set(order) | {"fork", "ufork", "ht", "uht"}
+        order += [n for n in tubes if n not in handled]
         for name in order:
             tb = tubes.get(name)
             if tb is None:
