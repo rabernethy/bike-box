@@ -22,17 +22,27 @@ from typing import Any, Iterable
 FLOAT, INT, BOOL, CHOICE, STR, COLOR, LIST = (
     "float", "int", "bool", "choice", "str", "color", "list")
 
-_UNLOCK_LIMITS = False          # when True, coerce() does not clamp to min/max
+_UNLOCK_LIMITS = False          # when True, coerce() does not clamp ANY param to min/max
+_UNLOCKED_KEYS: set[str] = set()  # individual params whose min/max are overridden
 
 
 def set_unlock_limits(on: bool) -> None:
-    """Power-user override: allow numeric values beyond each param's min/max."""
+    """Power-user override: allow numeric values beyond every param's min/max."""
     global _UNLOCK_LIMITS
     _UNLOCK_LIMITS = bool(on)
 
 
 def unlock_limits() -> bool:
     return _UNLOCK_LIMITS
+
+
+def set_key_unlocked(key: str, on: bool) -> None:
+    """Override the min/max of a single parameter."""
+    (_UNLOCKED_KEYS.add if on else _UNLOCKED_KEYS.discard)(key)
+
+
+def key_unlocked(key: str) -> bool:
+    return _UNLOCK_LIMITS or key in _UNLOCKED_KEYS
 
 
 @dataclass(frozen=True)
@@ -59,9 +69,10 @@ class ParamDef:
     def coerce(self, value: Any) -> Any:
         """Convert ``value`` (possibly from JSON or a text field) to this kind."""
         k = self.kind
+        clamp = not key_unlocked(self.key)
         if k == FLOAT:
             v = float(value)
-            if not _UNLOCK_LIMITS:
+            if clamp:
                 if self.min is not None and v < self.min:
                     v = float(self.min)
                 if self.max is not None and v > self.max:
@@ -69,7 +80,7 @@ class ParamDef:
             return v
         if k == INT:
             v = int(round(float(value)))
-            if not _UNLOCK_LIMITS:
+            if clamp:
                 if self.min is not None and v < self.min:
                     v = int(self.min)
                 if self.max is not None and v > self.max:
