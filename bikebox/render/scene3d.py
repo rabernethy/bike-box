@@ -74,7 +74,7 @@ def build(g: Geometry, segments: int = 28) -> Scene3D:
     # crank arms (drive + non-drive) as line segments from the BB axis to the pedals
     segs = []
     p = g.p
-    if "crank_bb" in p and "pedal" in p:
+    if "crank_bb" in p and "pedal" in p and C.has_drivetrain(g):
         bb = p["crank_bb"]
         q = g.design.f("q_factor") / 2
         ped = p["pedal"]

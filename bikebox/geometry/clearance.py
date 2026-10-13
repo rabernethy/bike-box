@@ -633,9 +633,16 @@ class Ring:
     half_t: float
 
 
+def has_drivetrain(g: Geometry) -> bool:
+    """A balance / baby bike has no cranks, chain or chainrings."""
+    return g.design["frame_type"] != "balance"
+
+
 def chainrings(g: Geometry) -> list[Ring]:
     """Chainring envelopes, biggest (outermost) first."""
     d = g.design
+    if not has_drivetrain(g):
+        return []
     rings = sorted(d.lst("chainrings") or [42.0], reverse=True)
     pitch = d.f("belt_pitch") if d["drive_type"] == "belt" else d.f("chain_pitch")
     n = len(rings)
@@ -1133,9 +1140,10 @@ def clearance_details(g: Geometry, use_cache: bool = True,
     rear_sdf = rear.sdf
     cs, ss, mono = stay_path(g, "cs"), stay_path(g, "ss"), stay_path(g, "ss_mono")
 
+    drivetrain = has_drivetrain(g)
     if cs is not None:
         out["cs_tire"] = tube_contact(cs, rear_sdf)
-        if want("cs_chainring") or want("cs_crank"):
+        if (want("cs_chainring") or want("cs_crank")) and drivetrain:
             rings = chainrings(g)
             best = Contact(INF)
             bbc = chain_bb(g)
@@ -1181,7 +1189,7 @@ def clearance_details(g: Geometry, use_cache: bool = True,
     out["fork_blade_tire"] = tube_contact(leg, front.sdf) if leg is not None else Contact.none()
 
     heel_paths = [p for p in (cs, ss) if p is not None]
-    if heel_paths and (want("heel") or want("heel_cs") or want("heel_ss")):
+    if heel_paths and drivetrain and (want("heel") or want("heel_cs") or want("heel_ss")):
         hc = heel_contact(g, [cs]) if cs is not None else Contact.none()
         hs = heel_contact(g, [ss]) if ss is not None else Contact.none()
         out["heel_cs"], out["heel_ss"] = hc, hs
@@ -1195,7 +1203,7 @@ def clearance_details(g: Geometry, use_cache: bool = True,
         else:
             c = toe_gap(g, ang, front, ffend)
             out["toe_steer_angle"] = Contact(ang, c.p, c.q, ang)
-    if want("lean_angle_3d"):
+    if want("lean_angle_3d") and drivetrain:
         out["lean_angle_3d"] = Contact(lean_solution(g).angle)
 
     if not partial:                               # stay-fabrication + bridge lengths

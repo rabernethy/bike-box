@@ -121,6 +121,8 @@ def _clearances(g: Geometry) -> Section:
 def _gearing(g: Geometry) -> Section:
     from .gearing import gearing_summary
     d = g.design
+    if d["frame_type"] == "balance":
+        return Section("Gearing", [("Drivetrain", "None — balance / baby bike", "info")])
     s = gearing_summary(d, g)
     rows: list[Row] = []
     if not s.get("count"):
@@ -156,6 +158,8 @@ def _gearing(g: Geometry) -> Section:
 def _chain(g: Geometry) -> Section:
     from .gearing import chain_length, chainline_check
     d = g.design
+    if d["frame_type"] == "balance":
+        return Section("Chain", [("Chain / belt", "None — balance / baby bike", "info")])
     rows: list[Row] = []
     c = chain_length(g)
     if not c.get("ok"):

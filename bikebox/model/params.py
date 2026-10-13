@@ -285,7 +285,11 @@ _frame = [
 
 _frame += [
     _choice("frame_type", "Frame type", G, "Tandem", "single",
-            (("single", "Single"), ("tandem", "Tandem"), ("tall", "Tall bike (stacked frames)"))),
+            (("single", "Single"), ("tandem", "Tandem"), ("tall", "Tall bike (stacked frames)"),
+             ("balance", "Balance / baby bike (no drivetrain)"), ("longtail", "Cargo (longtail)"),
+             ("folder", "Folder")),
+            help="Balance: a child's push bike with no cranks, chain or pedals. Longtail: a single frame with "
+                 "an extended rear cargo deck. Folder: a single frame with a folding hinge on the down tube."),
     _mm("tall_offset", "Upper frame offset along steering axis", G, "Tall bike", 520, 100, 2000,
         vis=("frame_type", ("tall",)),
         help="The upper main triangle is stacked with its head tube coaxial above the lower one; this is the "
@@ -317,6 +321,19 @@ _frame += [
         vis=("frame_type", ("tandem",)), help="Stoker stem clamp on the captain's seatpost, below the rails"),
     _mm("stoker_stem_length", "Stoker stem length", G, "Tandem", 110, 0, 250, vis=("frame_type", ("tandem",))),
     _int("timing_ring", "Timing ring teeth", G, "Tandem", 32, 20, 60, vis=("frame_type", ("tandem",))),
+    # -- cargo longtail: an extended rear deck behind the rear wheel ----------------
+    _mm("longtail_length", "Deck length past rear axle", G, "Cargo (longtail)", 480, 100, 1000,
+        vis=("frame_type", ("longtail",)),
+        help="How far the cargo deck extends behind the rear axle"),
+    _mm("longtail_deck_rise", "Deck height above rear axle", G, "Cargo (longtail)", 60, -100, 300,
+        vis=("frame_type", ("longtail",)), help="Top deck rail height relative to the rear axle (+ = above)"),
+    _mm("longtail_drop", "Lower rail drop at the tail", G, "Cargo (longtail)", 120, 0, 400,
+        vis=("frame_type", ("longtail",)), help="How far the lower (running-board) rail sits below the deck"),
+    _mm("longtail_strut_od", "Deck tube OD", G, "Cargo (longtail)", 19.0, 6, 50, 0.1,
+        vis=("frame_type", ("longtail",))),
+    # -- folder: a folding hinge on the down tube ----------------------------------
+    _num("fold_hinge_pos", "Hinge position on down tube", G, "Folder", 0.5, "", 0.05, 0.95, 0.05,
+         vis=("frame_type", ("folder",)), help="Fraction along the down tube (0 = bottom bracket, 1 = head tube)"),
 ]
 
 _frame += [

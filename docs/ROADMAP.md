@@ -48,7 +48,13 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
 - [ ] **3-D polish** — shaded materials & paint, section cut-planes, exploded view, turntable/GIF export,
   measurement in 3-D.
 - [ ] **UI polish** — keyboard-shortcut editor, multi-select + numeric nudge, guide/grid snapping, theme/DPI.
-- [ ] **More frame types** — recumbents, cargo/longtail, folders, S&S coupler placement optimiser.
+- [~] **More frame types** — added **balance / baby bike** (small-wheel single with the drivetrain removed:
+  no chainrings, cranks, chain, or their clearances/gearing), **cargo longtail** (an extended rear deck:
+  top + lower rails, tail upright and brace, mirrored), and **folder** (a single frame with a folding-hinge
+  marker on the down tube). Still open: **recumbents** and **front-loader cargo (long-john/bakfiets)** — these
+  need a dedicated non-diamond skeleton (forward BB boom / seat, or a second steering axis + linkage); the
+  diamond solver can't represent them without inventing geometry, so they warrant their own build. **S&S
+  coupler placement optimiser** also still open.
 
 ## Ongoing quality
 - [~] Performance: profiled the interactive paths (2026-10-13). solve() ~0.3 ms and FEA ~4 ms are already fast;

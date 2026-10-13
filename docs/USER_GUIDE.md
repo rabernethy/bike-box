@@ -66,6 +66,13 @@ Double-click a dimension to type a value; Bike Box switches the front-end mode a
   (*In phase with*), so a lateral or twin tube stays parallel as you change the geometry.
 * **Tandem**: Frame ▸ Tandem ▸ *Frame type = Tandem*. The captain's front triangle uses the normal inputs;
   set the BB-to-BB distance, stoker seat tube, stoker top tube, mid/lateral tubes, stoker saddle and bars.
+* **Balance / baby bike**: *Frame type = Balance*. A child's push bike — an ordinary small-wheel single frame
+  (set the wheel BSD small, e.g. 203/254/305 for 10/12/16″) with no drivetrain, so there are no chainrings,
+  cranks, chain or pedals and the gearing/chain report and their clearances are omitted.
+* **Cargo (longtail)**: *Frame type = Longtail*. Adds an extended rear deck behind the rear wheel — set the deck
+  length past the axle, its height above the axle and the lower-rail drop.
+* **Folder**: *Frame type = Folder*. A small-wheel single frame with a folding-hinge marker on the down tube
+  (set its position along the tube).
 * **E-bikes / gearboxes**: Frame ▸ Drive unit: housing size/position, battery on or in the down tube or on a rack.
 * **Braze-ons & mounts**: Edit ▸ *Braze-ons & mounts* — place bottle bosses, cable stops/guides, rack and fender
   eyelets and disc mounts on any tube (position along the tube, side offset, boss spacing). They draw on the

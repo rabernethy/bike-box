@@ -605,6 +605,10 @@ def solve(d: Design) -> Geometry:
         _tandem_tubes(g, d, SB, s2, P2, stay_node, hub_r)
     if d["frame_type"] == "tall":
         _tall_frame(g, d, u, stay_node, hub_r)
+    if d["frame_type"] == "longtail":
+        _longtail_frame(g, d, stay_node, rear_axle, hub_r)
+    if d["frame_type"] == "folder" and "dt" in tubes:
+        _folder_hinge(g, d)
 
     # fork blades (side view centre-line from crown to axle)
     crown_bottom = crown - u * d.f("fork_crown_height")
@@ -903,6 +907,45 @@ def _tall_frame(g: Geometry, d: Design, u: V, stay_node: V, hub_r: float) -> Non
                                    join_a="dropout", join_b="ubb")
     v["tall_offset"] = d.f("tall_offset")
     v["rider_bb_height"] = R.y - g.ground_y
+
+
+def _longtail_frame(g: Geometry, d: Design, stay_node: V, rear_axle: V, hub_r: float) -> None:
+    """Cargo longtail: an extended rear deck behind the rear wheel -- a top deck
+    rail from the seat cluster, a lower (running-board) rail from the dropouts, a
+    tail upright joining them and a diagonal brace, all mirrored as a pair."""
+    p, tubes = g.p, g.tubes
+    od = d.f("longtail_strut_od")
+    mat = d["frame_material"]
+    z = max(hub_r, 70.0)
+    L, rise, drop = d.f("longtail_length"), d.f("longtail_deck_rise"), d.f("longtail_drop")
+    tail_top = V(rear_axle.x - L, rear_axle.y + rise)
+    tail_bot = V(rear_axle.x - L, rear_axle.y + rise - drop)
+    seat_cluster = p.get("tt_st") or p.get("st_top")
+    p["longtail_tail_top"], p["longtail_tail_bot"] = tail_top, tail_bot
+
+    def t(name, label, a, b, za=z, zb=z, **kw):
+        tubes[name] = Tube(name, label, a, b, od, od, wall_end=0.9, wall_mid=0.9, material=mat,
+                           kind="extra", za=za, zb=zb, mirrored=True, **kw)
+
+    if seat_cluster is not None:
+        t("lt_deck", "Cargo deck rail", seat_cluster, tail_top, join_a="st")
+    t("lt_lower", "Cargo lower rail", stay_node, tail_bot, za=hub_r, join_a="dropout")
+    t("lt_rear", "Cargo tail upright", tail_top, tail_bot)
+    t("lt_brace", "Cargo deck brace", stay_node, tail_top, za=hub_r, join_a="dropout")
+    g.v["longtail_length"] = L
+    g.v["longtail_deck_x"] = tail_top.x
+
+
+def _folder_hinge(g: Geometry, d: Design) -> None:
+    """Folder: mark the folding hinge on the down tube (a simplified model of a
+    folding frame; the rest of the geometry is an ordinary small-wheel single)."""
+    dt = g.tubes["dt"]
+    pos = max(0.0, min(1.0, d.f("fold_hinge_pos")))
+    point = dt.a.lerp(dt.b, pos)                     # dt.a = BB end, dt.b = head-tube end
+    g.p["fold_hinge"] = point
+    g.v["fold_hinge_pos"] = pos
+    g.brazeons.append({"type": "hinge", "label": "Fold hinge", "point": point,
+                       "tube": "dt", "s": pos, "side": 0.0, "spacing": 0.0})
 
 
 def _tandem_tubes(g: Geometry, d: Design, SB: V, s2: V, P2: V, stay_node: V, hub_r: float) -> None:
