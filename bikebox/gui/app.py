@@ -85,4 +85,5 @@ def run(argv: list[str]) -> int:
     win.show()
     if splash is not None:
         QtCore.QTimer.singleShot(900, lambda: splash.finish(win))
+    QtCore.QTimer.singleShot(1200, win._startup_checks)   # what's-new + update check
     return app.exec()
