@@ -35,6 +35,7 @@ def _point_in_poly(m: V, pts) -> bool:
 
 
 HANDLES = [
+    ("bb", "Bottom bracket (drag: height; sideways: move the BB fore/aft between the wheels)"),
     ("saddle", "Saddle (drag: height, Shift: free)"),
     ("bar", "Handlebar (drag: stem length/spacers)"),
     ("ht_top", "Head tube top (drag: stack & reach)"),
@@ -47,6 +48,15 @@ HANDLES = [
     ("tt_st", "Top tube / seat tube junction (drag along the seat tube)"),
     ("ss_top", "Seat stay junction (drag along the tube it attaches to)"),
 ]
+
+# dragging a tube body slides its nearer end; each end maps to the handle that
+# moves that junction (tube.a -> "a", tube.b -> "b").
+TUBE_ENDS = {
+    "st": {"a": "bb", "b": "st_top"}, "dt": {"a": "bb", "b": "dt_ht"},
+    "tt": {"a": "tt_st", "b": "tt_ht"}, "ht": {"a": "dt_ht", "b": "ht_top"},
+    "cs": {"a": "rear_axle", "b": "bb"}, "ss": {"a": "rear_axle", "b": "ss_top"},
+    "fork": {"a": "front_axle", "b": "front_axle"},
+}
 _drag_ids = itertools.count(1000)
 
 
@@ -77,6 +87,7 @@ class BikeCanvas(QtWidgets.QWidget):
         self._ghost_geoms: list[tuple[Geometry, str]] = []
         self._cache: QtGui.QPixmap | None = None
         self._drag = None
+        self._press: dict | None = None
         self._hover: str | None = None
         self._pan_last: QPointF | None = None
         self._space = False
@@ -443,10 +454,30 @@ class BikeCanvas(QtWidgets.QWidget):
             return
         part = self._hit_part(m)
         if part is not None:
-            self.select_part.emit(part)
+            # defer: a plain click selects the part; a drag slides the tube
+            tube = part[5:] if part.startswith("tube:") else None
+            self._press = {"pos": pos, "m": m, "part": part, "tube": tube}
             return
         self._pan_last = pos
         self.setCursor(Qt.CursorShape.ClosedHandCursor)
+
+    def _begin_tube_drag(self, tube: str, m: V) -> bool:
+        """Start dragging a tube's nearer end (as a parametric handle)."""
+        g = self.doc.geometry
+        if tube == "bb":
+            handle = "bb"
+        else:
+            t = g.tubes.get(tube)
+            ends = TUBE_ENDS.get(tube)
+            if t is None or ends is None:
+                return False
+            handle = ends["a"] if m.dist(t.a) <= m.dist(t.b) else ends["b"]
+        if handle not in g.p:
+            return False
+        self._drag = {"kind": "point", "point": handle, "design": self.doc.design.copy(),
+                      "geom": g, "id": next(_drag_ids), "start": m}
+        self.setCursor(Qt.CursorShape.SizeAllCursor)
+        return True
 
     _SKIP_TAGS = ("dim:", "udim:", "note:", "cl:", "ghost", "route:", "grid", "ground", "photo")
 
@@ -488,6 +519,15 @@ class BikeCanvas(QtWidgets.QWidget):
         m = self.to_model(pos)
         self._mouse_model = m
         units = self.doc.design["units"]
+        if getattr(self, "_press", None) is not None:
+            if _dist(self._press["pos"], pos) > 4:        # a drag, not a click
+                pr, self._press = self._press, None
+                if pr["tube"] and self._begin_tube_drag(pr["tube"], pr["m"]):
+                    self._drag_move(m, e.modifiers())
+                else:                                     # non-tube part: pan
+                    self._pan_last = pr["pos"]
+                    self.setCursor(Qt.CursorShape.ClosedHandCursor)
+            return
         if self._pan_last is not None:
             d = pos - self._pan_last
             self._pan_last = pos
@@ -513,6 +553,10 @@ class BikeCanvas(QtWidgets.QWidget):
             if not moved:
                 self._context_menu(e.position())
             return
+        press = getattr(self, "_press", None)
+        if press is not None:                             # a plain click: select the part
+            self._press = None
+            self.select_part.emit(press["part"])
         self._pan_last = None
         self._drag = None
         self.unsetCursor()
@@ -797,6 +841,18 @@ def drag_point_changes(name: str, m: V, d0, g0: Geometry, shift: bool) -> tuple[
     # BB at the origin.  Undo the lift so the drag math stays in frame coords.
     if d0["frame_type"] == "tall" and name in ("saddle", "pedal"):
         m = m - (g0.p.get("crank_bb", g0.p["bb"]) - g0.p["bb"])
+    if name == "bb":
+        # The BB is the origin; move it by re-placing the (fixed, on-ground) axles
+        # relative to its new position. Vertical drag = BB height; sideways drag =
+        # fore/aft between the wheels (rebalances front-centre and chainstay).
+        fa, ra = g0.p["front_axle"], g0.p["rear_axle"]
+        drop = ra.y - m.y
+        return ({"bb_mode": "height", "bb_height": max(m.y - g0.ground_y, 20.0),
+                 "front_h_mode": "front_center",
+                 "front_center": max(math.hypot(fa.x - m.x, fa.y - m.y), 50.0),
+                 "cs_mode": "length",
+                 "chainstay_length": max(math.hypot(ra.x - m.x, ra.y - m.y), abs(drop) + 1.0)},
+                "BB height {bb_height}  front centre {front_center}  chainstay {chainstay_length}")
     if name == "saddle":
         if d0["saddle_mode"] == "xy":
             return {"saddle_x": m.x, "saddle_y": m.y}, "Saddle X {saddle_x}  Y {saddle_y}"
