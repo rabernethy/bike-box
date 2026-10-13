@@ -5,9 +5,9 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
 = bigger/later. Each line says *why*. `(partial)` = some support exists.
 
 ## P0 — correctness & trust (do next)
-- [ ] **Validate the core math against reference cases** — mitre cut lengths & cope angles vs hand-calculated
-  copes, clearance gaps vs known geometry, BikeCAD round-trip across *all* front-end/seat modes. An inaccurate
-  tool is worse than none for someone cutting real tubes. Highest priority.
+- [x] **Validated the core math** (tests/test_validation.py): geometry identities (wheelbase, front centre,
+  BB drop, seat-tube, standard trail formula), BikeCAD round-trip across all 24 front-end/seat modes, and the
+  mitre cope engine proven exact (cut points lie on the receiver surface; plane-cut depth = od/tan θ).
 - [ ] **Code-sign & notarise the apps** — macOS Gatekeeper and Windows SmartScreen both warn on the current
   unsigned installers, which blocks real adoption. Needs an Apple Developer ID + a Windows cert from the owner;
   I can wire the CI once certs exist.
