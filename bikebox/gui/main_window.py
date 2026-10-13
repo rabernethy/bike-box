@@ -177,6 +177,7 @@ class MainWindow(QtWidgets.QMainWindow):
         ex.addAction("Bill of materials CSV…", self.export_bom)
         ex.addAction("Build / cut sheet (PDF)…", self.export_buildsheet)
         ex.addAction("Full-size 1:1 template (PDF)…", self.export_fullsize)
+        ex.addAction("CNC notcher & bender (CSV)…", self.export_cnc)
         ex.addAction("Multi-model PDF…", self.export_multi_pdf)
         ex.addAction("Bulk export folder…", self.bulk_export)
         ex.addSeparator()
@@ -818,6 +819,15 @@ class MainWindow(QtWidgets.QMainWindow):
             except Exception as exc:
                 QtWidgets.QMessageBox.warning(self, "Build sheet", str(exc))
                 return
+            self.status.showMessage(f"Exported {fn}", 5000)
+
+    def export_cnc(self):
+        if self.doc() is None:
+            return
+        from ..export import cnc
+        fn = self._save_name("Export CNC notcher & bender", ".csv", "CSV (*.csv)")
+        if fn:
+            cnc.save_csv(self.doc().geometry, fn)
             self.status.showMessage(f"Exported {fn}", 5000)
 
     def export_fullsize(self):

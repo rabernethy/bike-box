@@ -5,6 +5,7 @@
     bikebox bom design.bikebox out.csv           bill of materials (CSV)
     bikebox buildsheet design.bikebox out.pdf    build / cut sheet (PDF)
     bikebox sizes design.bikebox out.csv [N]     size-run geometry chart (CSV, N sizes)
+    bikebox cnc design.bikebox out.csv           tube notcher + bender setup (CSV)
     bikebox info design.bikebox                  print key geometry
 """
 from __future__ import annotations
@@ -69,6 +70,15 @@ def _buildsheet(src: str, dst: str) -> int:
     return 0
 
 
+def _cnc(src: str, dst: str) -> int:
+    from .export import cnc
+    from .geometry.solver import solve
+    from .model.design import Design
+    cnc.save_csv(solve(Design.load(src)), dst)
+    print(f"wrote {dst}")
+    return 0
+
+
 def _sizes(src: str, dst: str, count: int = 5) -> int:
     from .export import csv_export
     from .model import sizerun
@@ -104,6 +114,8 @@ def main(argv: list[str] | None = None) -> int:
         return _bom(argv[1], argv[2])
     if argv and argv[0] == "buildsheet" and len(argv) == 3:
         return _buildsheet(argv[1], argv[2])
+    if argv and argv[0] == "cnc" and len(argv) == 3:
+        return _cnc(argv[1], argv[2])
     if argv and argv[0] == "sizes" and len(argv) in (3, 4):
         return _sizes(argv[1], argv[2], int(argv[3]) if len(argv) == 4 else 5)
     if argv and argv[0] == "info" and len(argv) == 2:

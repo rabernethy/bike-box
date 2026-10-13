@@ -50,6 +50,10 @@ def build_html(g: Geometry, units: str | None = None) -> str:
     cut_rows = mitre_output.cut_list_rows(g, cuts, units) if cuts else [["No mitred tubes"]]
     cut_head, cut_body = (cut_rows[0], cut_rows[1:]) if cuts else (["Cut list"], cut_rows)
 
+    from . import cnc
+    notch = cnc.notcher_rows(g, units)
+    bend = cnc.bender_rows(g, units)
+
     _bom = BOM.build(d, g)
     bom_rows = [[r.component, r.part or "—", r.spec, r.brand,
                  "" if r.weight_g is None else f"{r.weight_g:.0f}{'*' if r.weight_est else ''}"] for r in _bom]
@@ -80,6 +84,8 @@ def build_html(g: Geometry, units: str | None = None) -> str:
         {_esc(d.get('joint_style', ''))} · units: {_esc(units)}</div>
       <h2>Key geometry</h2>{_table(['Measurement', 'Value'], geo_rows)}
       <h2>Cut list (mitred tubes)</h2>{_table(cut_head, cut_body)}
+      <h2>Notcher setup</h2>{_table(notch[0], notch[1:])}
+      {('<h2>Tube bender</h2>' + _table(bend[0], bend[1:])) if len(bend) > 1 else ''}
       <h2>Bill of materials</h2>{_table(['Component', 'Part', 'Spec', 'Brand', 'Weight (g)'], bom_rows)}
       <h2>Fixture setup</h2>{_table(['Datum', 'Value', 'Note'], fix_rows)}
       {'<h2>Braze-ons &amp; mounts</h2>' + _table(['Type', 'Label', 'Tube', 'Position', 'Coordinates'], bo_rows) if bo_rows else ''}

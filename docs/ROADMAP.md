@@ -19,8 +19,9 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
 ## P1 — high-value features
 - [ ] **STEP/IGES export** — the top "pro" interchange ask (CAD, CNC, FEA). Needs a solid-modelling dependency
   (OpenCASCADE/cadquery) — evaluate bundle-size vs value before committing.
-- [ ] **Shop CNC/laser outputs** — flat-pattern dropout & gusset DXF, tube-bender specs (radius/sweep/spring-back),
-  notcher miter report with hole-saw sizes. Turns designs into cut parts.
+- [x] **Shop CNC outputs** — tube-notcher setup (hole-saw Ø, notch angle, offset, rotation, long/short points)
+  and tube-bender specs (radius, included angle, arc length) in the build sheet + `cnc` CSV export. Flat-pattern
+  dropout/gusset DXF still open (needs plate outlines the model doesn't carry).
 - [ ] **Fit-to-rider auto-size** — pick the frame size from a rider's measurements and show the best size in the
   size run; aero position + a simple CdA/drag estimate. Builds on the rider database + fit schemes.
 - [ ] **Customer / order management** — link a design to a customer, a build spec and a quote from the BOM; track

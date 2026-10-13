@@ -127,8 +127,9 @@ many issues would remain, and **Apply selected** makes all the chosen changes in
   design or snapshot.
 * **BikeCAD** (`.bcad`): File ▸ Save As and choose the *BikeCAD designs* format — the filename defaults to
   `.bcad` and the core geometry is written as a BikeCAD-readable file (import it back, or open it in BikeCAD).
-* File ▸ Export ▸ **Build / cut sheet (PDF)**: one shop document — key geometry, the mitre cut list (per-tube
-  length, long/short points, joint angles), the bill of materials and the fixture setup numbers.
+* File ▸ Export ▸ **Build / cut sheet (PDF)**: one shop document — key geometry, the mitre cut list, the notcher
+  setup (hole-saw Ø, notch angle, offset, rotation), tube-bender specs, the bill of materials and fixture numbers.
+* File ▸ Export ▸ **CNC notcher & bender (CSV)** (or `bikebox cnc`): the notcher and bender tables on their own.
 * View ▸ **Size run**: generate a family of sizes from the current design and export the geometry chart (CSV).
 * Headless: `bikebox export design.bikebox out.pdf` (also .svg .png .dxf .csv).
 
