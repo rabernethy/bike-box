@@ -15,6 +15,20 @@ from .document import Document
 
 Qt = QtCore.Qt
 
+def _weight_g(specs) -> float | None:
+    """A grams figure from a catalog item's specs, if one is published."""
+    if not isinstance(specs, dict):
+        return None
+    for key in ("weight_g", "weight_g_approx", "weight_from_g", "set_weight_g", "weight_g_pair", "weight"):
+        v = specs.get(key)
+        if isinstance(v, (int, float)):
+            return float(v)
+    lo, hi = specs.get("weight_g_min"), specs.get("weight_g_max")
+    if isinstance(lo, (int, float)) and isinstance(hi, (int, float)):
+        return (lo + hi) / 2.0
+    return None
+
+
 # human labels for the per-position tube pickers
 TUBE_LABELS = {"tt": "top tube", "dt": "down tube", "st": "seat tube", "ht": "head tube",
                "cs": "chainstay", "ss": "seat stay", "fork": "fork blade", "steerer": "steerer"}
@@ -157,7 +171,8 @@ class CatalogPicker(QtWidgets.QDialog):
         return {k: v for k, v in {
             "id": it.id, "name": it.name, "category": it.category, "brand": m.get("brand"),
             "model": m.get("model"), "variant": m.get("variant"), "source": src,
-        }.items() if v}
+            "weight_g": _weight_g(m.get("specs")),
+        }.items() if v is not None and v != ""}
 
     def use(self):
         it = self._selected()

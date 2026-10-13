@@ -43,7 +43,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - [ ] Stiffness metrics (BB, head-tube, torsional); compliance; natural frequency
 - [ ] Material comparison for a design; butting optimizer (weight vs stiffness)
 - [ ] Ride-quality/flex indicators; wheel/tire compliance
-- [ ] Weight breakdown by part fed from the catalog BOM *(BOM exists; not yet feeding weight)*
+- [x] Weight breakdown by part fed from the catalog BOM (BOM shows per-part weight + total)
 - [ ] Carbon layup schedule for carbon tubes
 
 ## Catalog & data

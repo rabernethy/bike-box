@@ -31,6 +31,8 @@ class BomRow:
     brand: str = ""
     source: str = ""
     sourced: bool = False   # chosen from the catalog
+    weight_g: float | None = None   # catalogued weight, or estimated for tubes
+    weight_est: bool = False        # True = estimated (not a catalogued figure)
 
 
 def _num(v: float) -> str:
@@ -81,25 +83,58 @@ def _entry_part(entry) -> tuple[str, str, str]:
     return str(entry.get("name", "")), str(entry.get("brand", "") or ""), str(entry.get("source", "") or "")
 
 
+def _entry_weight(entry) -> float | None:
+    return entry.get("weight_g") if isinstance(entry, dict) and isinstance(entry.get("weight_g"), (int, float)) \
+        else None
+
+
+def _tube_weights(geometry) -> dict:
+    """Per-tube estimated mass (g), pairs doubled, from the weight analysis."""
+    if geometry is None:
+        return {}
+    try:
+        from .weight import frame_weight
+        fw = frame_weight(geometry)
+        out = {}
+        for name, m in fw.get("tubes", {}).items():
+            tb = geometry.tubes.get(name)
+            out[name] = m * 2 if (tb is not None and tb.mirrored) else m
+        return out
+    except Exception:
+        return {}
+
+
 def build(design, geometry=None) -> list[BomRow]:
     bom = design.extras.get("bom") or {}
+    tw = _tube_weights(geometry)
     rows: list[BomRow] = []
     # frame material header
     rows.append(BomRow("Frame", "", str(design.get("frame_material", "")).capitalize(), sourced=False))
     for pos, label in TUBE_SLOTS:
         part, brand, src = _entry_part(bom.get(pos))
-        rows.append(BomRow(label, part, _tube_spec(design, pos, geometry), brand, src, bool(part)))
+        w = _entry_weight(bom.get(pos))
+        rows.append(BomRow(label, part, _tube_spec(design, pos, geometry), brand, src, bool(part),
+                           weight_g=w if w is not None else tw.get(pos), weight_est=w is None and pos in tw))
     # fork (always; spec from the design, part if assigned)
     part, brand, src = _entry_part(bom.get("forks"))
-    rows.append(BomRow("Fork", part, _fork_spec(design), brand, src, bool(part)))
+    w = _entry_weight(bom.get("forks"))
+    rows.append(BomRow("Fork", part, _fork_spec(design), brand, src, bool(part),
+                       weight_g=w if w is not None else tw.get("fork"), weight_est=w is None and "fork" in tw))
     # other components only when assigned
     for cat, label in COMPONENT_SLOTS:
         if cat in ("forks",) or cat not in bom:
             continue
         part, brand, src = _entry_part(bom.get(cat))
         spec = str(bom[cat].get("variant") or bom[cat].get("model") or "") if isinstance(bom[cat], dict) else ""
-        rows.append(BomRow(label, part, spec, brand, src, bool(part)))
+        rows.append(BomRow(label, part, spec, brand, src, bool(part), weight_g=_entry_weight(bom.get(cat))))
     return rows
+
+
+def total_weight(rows: list[BomRow]) -> tuple[float, bool]:
+    """(sum of known weights in g, whether any were estimated)."""
+    total = sum(r.weight_g for r in rows if r.weight_g is not None)
+    est = any(r.weight_est for r in rows if r.weight_g is not None)
+    return total, est
 
 
 def to_csv(design, geometry=None) -> str:
@@ -107,16 +142,27 @@ def to_csv(design, geometry=None) -> str:
     import io
     buf = io.StringIO()
     w = csv.writer(buf)
-    w.writerow(["Component", "Part", "Spec", "Brand", "Sourced", "Source"])
-    for r in build(design, geometry):
-        w.writerow([r.component, r.part, r.spec, r.brand, "yes" if r.sourced else "", r.source])
+    w.writerow(["Component", "Part", "Spec", "Brand", "Weight (g)", "Sourced", "Source"])
+    rows = build(design, geometry)
+    for r in rows:
+        wt = "" if r.weight_g is None else f"{r.weight_g:.0f}{'*' if r.weight_est else ''}"
+        w.writerow([r.component, r.part, r.spec, r.brand, wt, "yes" if r.sourced else "", r.source])
+    total, est = total_weight(rows)
+    if total:
+        w.writerow(["Total", "", "", "", f"{total:.0f}{'*' if est else ''}", "", "* = estimated"])
     return buf.getvalue()
 
 
 def report_rows(design, geometry=None):
     """(label, value, status) rows for the analysis report."""
+    rows = build(design, geometry)
     out = []
-    for r in build(design, geometry):
+    for r in rows:
         value = r.part + (f"  ({r.spec})" if r.spec else "") if r.part else (r.spec or "—")
+        if r.weight_g is not None:
+            value += f"  · {r.weight_g:.0f} g{'*' if r.weight_est else ''}"
         out.append((r.component, value, "ok" if r.sourced else "info"))
+    total, est = total_weight(rows)
+    if total:
+        out.append(("Total weight", f"{total:.0f} g{'* (incl. estimates)' if est else ''}", "info"))
     return out

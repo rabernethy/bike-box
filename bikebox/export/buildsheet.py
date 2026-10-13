@@ -50,7 +50,12 @@ def build_html(g: Geometry, units: str | None = None) -> str:
     cut_rows = mitre_output.cut_list_rows(g, cuts, units) if cuts else [["No mitred tubes"]]
     cut_head, cut_body = (cut_rows[0], cut_rows[1:]) if cuts else (["Cut list"], cut_rows)
 
-    bom_rows = [[r.component, r.part or "—", r.spec, r.brand] for r in BOM.build(d, g)]
+    _bom = BOM.build(d, g)
+    bom_rows = [[r.component, r.part or "—", r.spec, r.brand,
+                 "" if r.weight_g is None else f"{r.weight_g:.0f}{'*' if r.weight_est else ''}"] for r in _bom]
+    _tot, _est = BOM.total_weight(_bom)
+    if _tot:
+        bom_rows.append(["Total", "", "", "", f"{_tot:.0f}{'* (incl. estimates)' if _est else ''}"])
 
     fix_rows = [[lab, val, note] for lab, val, note in jig.fixture_numbers(g)]
 
@@ -75,7 +80,7 @@ def build_html(g: Geometry, units: str | None = None) -> str:
         {_esc(d.get('joint_style', ''))} · units: {_esc(units)}</div>
       <h2>Key geometry</h2>{_table(['Measurement', 'Value'], geo_rows)}
       <h2>Cut list (mitred tubes)</h2>{_table(cut_head, cut_body)}
-      <h2>Bill of materials</h2>{_table(['Component', 'Part', 'Spec', 'Brand'], bom_rows)}
+      <h2>Bill of materials</h2>{_table(['Component', 'Part', 'Spec', 'Brand', 'Weight (g)'], bom_rows)}
       <h2>Fixture setup</h2>{_table(['Datum', 'Value', 'Note'], fix_rows)}
       {'<h2>Braze-ons &amp; mounts</h2>' + _table(['Type', 'Label', 'Tube', 'Position', 'Coordinates'], bo_rows) if bo_rows else ''}
     </body></html>"""]

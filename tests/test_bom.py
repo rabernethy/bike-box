@@ -29,7 +29,7 @@ def test_bom_csv_round_structure():
     d = Design()
     csv = bom.to_csv(d, solve(d))
     lines = csv.strip().splitlines()
-    assert lines[0] == "Component,Part,Spec,Brand,Sourced,Source"
+    assert lines[0] == "Component,Part,Spec,Brand,Weight (g),Sourced,Source"
     assert any(line.startswith("Fork,") for line in lines)
 
 
@@ -40,3 +40,16 @@ def test_component_only_listed_when_assigned():
     d.extras["bom"] = {"cranks": {"name": "Dura-Ace", "category": "cranks"}}
     rows = {r.component for r in bom.build(d, solve(d))}
     assert "Crankset" in rows
+
+
+def test_bom_weights_and_total():
+    d = Design()
+    d.extras["bom"] = {"forks": {"name": "ACME Fork", "weight_g": 480, "category": "forks"},
+                       "saddles": {"name": "Flite", "weight_g": 220, "category": "saddles"}}
+    rows = {r.component: r for r in bom.build(d, solve(d))}
+    assert rows["Fork"].weight_g == 480 and not rows["Fork"].weight_est
+    assert rows["Top tube"].weight_g and rows["Top tube"].weight_est      # tube estimated
+    total, est = bom.total_weight(list(rows.values()))
+    assert total > 480 + 220 and est
+    csv = bom.to_csv(d, solve(d))
+    assert "Weight (g)" in csv and "Total" in csv
