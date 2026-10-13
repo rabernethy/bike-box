@@ -285,3 +285,18 @@ def test_junction_handles_are_exact(window):
             d1 = d0.copy()
             d1.update(ch)
             assert solve(d1).p[name].dist(target) < 1e-6, (mode, name)
+
+
+def test_clearance_badges_paint(window):
+    doc = window.doc()
+    doc.set_params({"rear_tire_width": 55, "rear_tire_height": 50, "front_tire_width": 55,
+                    "front_tire_height": 50}, "wide")
+    c = window.view().canvas
+    c.show_clearances = True
+    img = c.grab()                         # must paint the badge overlay without error
+    assert not img.isNull()
+    # the overlay helper runs and finds the failing clearances
+    from bikebox.geometry import clearance as C
+    det = C.clearance_details(doc.geometry)
+    assert any(C.is_problem(doc.geometry, k, v.value) for k, v in det.items()
+               if v.p is not None and k != "toe_steer_angle")

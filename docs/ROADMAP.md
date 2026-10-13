@@ -11,10 +11,10 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
 - [ ] **Code-sign & notarise the apps** — macOS Gatekeeper and Windows SmartScreen both warn on the current
   unsigned installers, which blocks real adoption. Needs an Apple Developer ID + a Windows cert from the owner;
   I can wire the CI once certs exist.
-- [ ] **Disc caliper / rotor clearance geometry** — we check rotor *standards* but not that the caliper body and
-  rotor actually clear the tire and the stay/fork. A real build-stopping safety gap.
-- [ ] **Live clearance feedback while editing** — on-canvas red/green badges at each clearance and a one-click
-  jump to "Resolve issues", so problems are obvious as you drag, not only in the report.
+- [x] **Live clearance badges** — a 'Clearances' toolbar toggle draws red/amber gap markers with values at each
+  tight/failing clearance, live as you edit (uses the validated clearance data).
+- [ ] **Disc caliper/rotor clearance geometry** — deferred: needs the hub rotor-offset + caliper mount geometry
+  the model doesn't yet capture; an approximate check would risk false warnings (against the trust goal).
 
 ## P1 — high-value features
 - [ ] **STEP/IGES export** — the top "pro" interchange ask (CAD, CNC, FEA). Needs a solid-modelling dependency

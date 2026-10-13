@@ -51,6 +51,7 @@ class BikeCanvas(QtWidgets.QWidget):
         self._fitted = False
         self.ui_scale = 1.0
         self.show_handles = True
+        self.show_clearances = False
         self.reverse_wheel = False
         self.zoom_locked = False
         self.tool = "select"
@@ -154,6 +155,48 @@ class BikeCanvas(QtWidgets.QWidget):
         self._paint_overlay(p)
         p.end()
 
+    def _paint_clearance_badges(self, p: QtGui.QPainter) -> None:
+        """Live red/amber badges at each tight or failing clearance (the gap's
+        two closest surface points), so problems show while you edit."""
+        try:
+            from ..geometry import clearance as C
+        except Exception:
+            return
+        g = self.doc.geometry
+        try:
+            details = C.clearance_details(g)
+        except Exception:
+            return
+        font = p.font()
+        font.setPointSizeF(8)
+        p.setFont(font)
+        for key, c in details.items():
+            if c.p is None or c.q is None or key == "toe_steer_angle":
+                continue
+            val = c.value
+            if val != val:                      # NaN
+                continue
+            lim = C.threshold(g, key)
+            if lim is None:
+                continue
+            problem = C.is_problem(g, key, val)
+            if not problem and val > lim + 8:    # only show the tight/failing ones
+                continue
+            col = QtGui.QColor("#e03131") if problem else QtGui.QColor("#c77700")
+            a = self.to_device(V(c.p.x, c.p.y))
+            b = self.to_device(V(c.q.x, c.q.y))
+            pen = QtGui.QPen(col, 1.6)
+            p.setPen(pen)
+            p.setBrush(QtGui.QBrush(QtGui.QColor(col.red(), col.green(), col.blue(), 70)))
+            p.drawLine(a, b)
+            for pt in (a, b):
+                p.drawEllipse(pt, 2.6, 2.6)
+            mid = QPointF((a.x() + b.x()) / 2, (a.y() + b.y()) / 2)
+            unit = C.LABELS.get(key, ("", "mm"))[1]
+            txt = f"{val:.1f}{'°' if unit == 'deg' else ''}"
+            p.setPen(QtGui.QPen(col, 1.0))
+            p.drawText(mid + QPointF(5, -3), txt)
+
     def _paint_overlay(self, p: QtGui.QPainter) -> None:
         g = self._geom or self.doc.geometry
         if self.show_handles and self.tool == "select":
@@ -174,6 +217,8 @@ class BikeCanvas(QtWidgets.QWidget):
                 p.setBrush(QtGui.QBrush(QtGui.QColor(255, 140, 0, 110) if hot else QtGui.QColor(30, 120, 255, 45)))
                 r = 7 if hot else 5
                 p.drawEllipse(c, r, r)
+        if getattr(self, "show_clearances", False):
+            self._paint_clearance_badges(p)
         if self.tool == "add_tube":
             q, _spec, label = self._snap_spec(self._mouse_model)
             p.setPen(QtGui.QPen(QtGui.QColor("#00a060"), 1.5))

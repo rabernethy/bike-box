@@ -266,6 +266,12 @@ class MainWindow(QtWidgets.QMainWindow):
         m.addAction("Keyboard & mouse", self.help_controls)
         m.addAction(f"About {APP_NAME}", self.about)
 
+    def _toggle_clearances(self, on):
+        v = self.view()
+        if v is not None:
+            v.canvas.show_clearances = bool(on)
+            v.canvas.update()
+
     def _build_toolbars(self):
         tb = self.addToolBar("Main")
         tb.setObjectName("main_toolbar")
@@ -304,8 +310,12 @@ class MainWindow(QtWidgets.QMainWindow):
         self.rider_check.toggled.connect(lambda v: self.doc() and self.doc().set_param("show_rider", v))
         self.dims_check = QtWidgets.QCheckBox("Dims")
         self.dims_check.toggled.connect(lambda v: self.doc() and self.doc().set_param("show_dimensions", v))
+        self.clear_check = QtWidgets.QCheckBox("Clearances")
+        self.clear_check.setToolTip("Show live red/amber badges at tight or failing clearances")
+        self.clear_check.toggled.connect(self._toggle_clearances)
         tb2.addWidget(self.rider_check)
         tb2.addWidget(self.dims_check)
+        tb2.addWidget(self.clear_check)
         self.toolbars = [tb, tb2]
 
     def apply_settings(self):
