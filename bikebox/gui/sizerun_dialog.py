@@ -53,6 +53,11 @@ class SizeRunDialog(QtWidgets.QDialog):
         self.drv.itemChanged.connect(lambda _i: self._regenerate())
         lay.addWidget(self.drv)
 
+        self.rec_label = QtWidgets.QLabel()
+        self.rec_label.setWordWrap(True)
+        self.rec_label.setStyleSheet("font-weight: bold; color: #1d8a3a;")
+        lay.addWidget(self.rec_label)
+
         lay.addWidget(QtWidgets.QLabel("Resulting geometry:"))
         self.chart = QtWidgets.QTableWidget(len(CHART), 1)
         self.chart.verticalHeader().setVisible(False)
@@ -120,6 +125,22 @@ class SizeRunDialog(QtWidgets.QDialog):
                 v = g.v.get(key)
                 txt = "" if v is None else (fmt_angle(v) if is_ang else fmt_len(v, units, suffix=True))
                 self.chart.setItem(r, c, QtWidgets.QTableWidgetItem(txt))
+        self._recommend(units)
+
+    def _recommend(self, units):
+        from ..fit import sizing
+        rec = sizing.recommend(self.doc.design, self._sizes)
+        if rec.best and rec.target_stack:
+            self.rec_label.setText(
+                f"Best size for this rider: {rec.best}  (target stack {fmt_len(rec.target_stack, units, suffix=True)}, "
+                f"reach {fmt_len(rec.target_reach, units, suffix=True)}){'  — ' + rec.note if rec.note else ''}")
+            # highlight the recommended column header
+            for c, (n, _d) in enumerate(self._sizes):
+                it = self.chart.horizontalHeaderItem(c)
+                if it:
+                    it.setText(("★ " + n) if n == rec.best else n)
+        else:
+            self.rec_label.setText(rec.note or "")
 
     # -- actions ----------------------------------------------------------------
     def overlay(self):

@@ -22,8 +22,8 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
 - [x] **Shop CNC outputs** — tube-notcher setup (hole-saw Ø, notch angle, offset, rotation, long/short points)
   and tube-bender specs (radius, included angle, arc length) in the build sheet + `cnc` CSV export. Flat-pattern
   dropout/gusset DXF still open (needs plate outlines the model doesn't carry).
-- [ ] **Fit-to-rider auto-size** — pick the frame size from a rider's measurements and show the best size in the
-  size run; aero position + a simple CdA/drag estimate. Builds on the rider database + fit schemes.
+- [x] **Fit-to-rider auto-size** — the size run now recommends the best size for the current rider (matches the
+  fit scheme's target stack/reach + standover feasibility). Aero/CdA estimate still open.
 - [ ] **Customer / order management** — link a design to a customer, a build spec and a quote from the BOM; track
   jobs. (The owner has related sessions, so this is a real workflow need.)
 - [ ] **Cable / hose / Di2 routing** — internal/external paths and port/stop placement, exported with the frame.
