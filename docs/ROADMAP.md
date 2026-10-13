@@ -55,8 +55,14 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
   the real lag was the parts catalog -- `all_items()` rebuilt and re-copied all ~5.9k items (and re-read the user
   library from disk) on **every** call, so each picker keystroke paid a full rebuild. Now cached + indexed
   (invalidated by the built-in cache or a user-library file change): `items()` 143 ms -> 0.25 ms, `search()`
-  65 ms -> 2 ms per keystroke. 3-D libs already import lazily. Still open: cache solves across panels; trim the
-  bundle.
+  65 ms -> 2 ms per keystroke. 3-D libs already import lazily.
+- [~] Analysis across panels (2026-10-13): the geometry solve was already cached on the document, but the
+  analysis report was not -- and profiling found the **Tire fit** builder was ~700 ms because its max-tire search
+  recomputed *all* clearances (including the expensive heel/toe/crank sampling) on each of ~40 probes and threw
+  most away. Added a `keys` filter to `clearance_details` so tire-fit computes only the tire/fork contacts, cut
+  the binary search to 11 iters (finer than the 0.1 mm it reports), and memoised `full_report`/`analyse` on the
+  geometry so all panels/tabs/dialogs share one build. Full report 700 ms -> ~108 ms, recomputed once per edit
+  rather than once per consumer. Still open: trim the ~200 MB bundle.
 - [ ] Test coverage: a real-GL smoke test in CI (currently import-level only); BikeCAD round-trip fixtures.
 - [ ] Docs & presence: screenshots, a short website/README gallery, example designs.
 

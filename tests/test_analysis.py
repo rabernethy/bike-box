@@ -261,9 +261,22 @@ def test_fea_runtime(geometry):
     # the threshold is generous because CI runners vary in speed. A healthy solve
     # is a few tens of ms locally; anything approaching this bound is a real
     # regression (e.g. an accidental O(n^2) assembly), not runner noise.
-    structure.analyse(geometry)                       # warm-up (imports, caches)
-    best = min(_timed(lambda: structure.analyse(geometry)) for _ in range(5))
+    def fresh_solve():
+        geometry.__dict__.pop("_analyse_cache", None)  # bypass the per-geometry memo
+        structure.analyse(geometry)
+
+    fresh_solve()                                      # warm-up (imports)
+    best = min(_timed(fresh_solve) for _ in range(5))
     assert best < 0.25, f"FEA solve too slow ({best * 1e3:.0f} ms) -- possible regression"
+
+
+def test_analyse_is_memoised_per_geometry(geometry):
+    geometry.__dict__.pop("_analyse_cache", None)
+    a = structure.analyse(geometry)
+    b = structure.analyse(geometry)
+    assert a is b                                      # same geometry -> cached result
+    # an explicit case list bypasses the cache (returns a fresh run)
+    assert structure.analyse(geometry, cases=["torsion"]) is not a
 
 
 def _timed(fn):

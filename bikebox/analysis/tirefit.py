@@ -14,8 +14,12 @@ FRONT_KEYS = ("fork_crown_tire", "fork_crown_tire_bottomed", "fork_crown_fender"
 
 
 def _clears(g, keys) -> bool:
-    vals = C.clearances(g)
-    return not any(C.is_problem(g, k, vals.get(k)) for k in keys)
+    # only the tire-vs-frame/fork contacts matter here, so ask for just those --
+    # this skips the expensive heel/toe/crank sampling clearance_details would
+    # otherwise compute on every probe and throw away.
+    details = C.clearance_details(g, keys=set(keys))
+    nan = float("nan")
+    return not any(C.is_problem(g, k, details[k].value if k in details else nan) for k in keys)
 
 
 def max_tire_width(design, end: str, hi: float = 120.0) -> dict:
@@ -40,7 +44,7 @@ def max_tire_width(design, end: str, hi: float = 120.0) -> dict:
     lo = w0
     if _clears(probe(hi), keys):
         return {"width": hi, "limited_by": "search limit"}
-    for _ in range(18):
+    for _ in range(11):                             # 120 mm / 2^11 ~ 0.06 mm, finer than the 0.1 mm report
         mid = (lo + hi) / 2
         if _clears(probe(mid), keys):
             lo = mid

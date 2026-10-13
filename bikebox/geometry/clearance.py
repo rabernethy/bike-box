@@ -1108,13 +1108,25 @@ for _n, _lab in (("cs", "Chainstay"), ("ss", "Seat stay")):
         LABELS[f"{_n}_{_k}"] = (f"{_lab} {_l}", _u)
 
 
-def clearance_details(g: Geometry, use_cache: bool = True) -> dict[str, Contact]:
+def clearance_details(g: Geometry, use_cache: bool = True,
+                      keys: set[str] | None = None) -> dict[str, Contact]:
     """All 3-D clearances as :class:`Contact` records (see ``LABELS``).
-    Missing parts give ``Contact(nan)``; "never touches" gives ``inf``."""
+    Missing parts give ``Contact(nan)``; "never touches" gives ``inf``.
+
+    Pass ``keys`` to compute only the contacts needed for those keys: the
+    expensive crank/chainring, heel, toe, lean and stay-fabrication blocks are
+    skipped when none of their keys are wanted (the tire-fit search uses this to
+    avoid the heel/toe sampling it would only throw away).  A full run is still
+    cached on the geometry and reused by any later call, filtered or not."""
     if use_cache:
         cached = getattr(g, "_fw_clearance_details", None)
         if cached is not None:
             return cached
+    partial = keys is not None
+
+    def want(k: str) -> bool:
+        return not partial or k in keys
+
     d = g.design
     out: dict[str, Contact] = {}
     rear, front = tire_model(g, "rear"), tire_model(g, "front")
@@ -1123,16 +1135,17 @@ def clearance_details(g: Geometry, use_cache: bool = True) -> dict[str, Contact]
 
     if cs is not None:
         out["cs_tire"] = tube_contact(cs, rear_sdf)
-        rings = chainrings(g)
-        best = Contact(INF)
-        bbc = chain_bb(g)
-        for ring in rings:
-            c = tube_contact(cs, lambda p, r=ring: _disc_sdf(p, r.z, r.r_out, r.half_t, bbc))
-            c.extra["teeth"] = ring.teeth
-            if c.value < best.value:
-                best = c
-        out["cs_chainring"] = best
-        out["cs_crank"] = crank_contact(g, cs)
+        if want("cs_chainring") or want("cs_crank"):
+            rings = chainrings(g)
+            best = Contact(INF)
+            bbc = chain_bb(g)
+            for ring in rings:
+                c = tube_contact(cs, lambda p, r=ring: _disc_sdf(p, r.z, r.r_out, r.half_t, bbc))
+                c.extra["teeth"] = ring.teeth
+                if c.value < best.value:
+                    best = c
+            out["cs_chainring"] = best
+            out["cs_crank"] = crank_contact(g, cs)
         if d.get("cs_bridge"):
             t = _clamp(1.0 - g.v.get("cs_bridge_pos", d.f("cs_bridge_pos")) / cs.L, cs.vis[0], cs.vis[1])
             out["cs_bridge_tire"] = bridge_contact(g, cs, t, d.f("cs_bridge_width"), rear)
@@ -1168,29 +1181,32 @@ def clearance_details(g: Geometry, use_cache: bool = True) -> dict[str, Contact]
     out["fork_blade_tire"] = tube_contact(leg, front.sdf) if leg is not None else Contact.none()
 
     heel_paths = [p for p in (cs, ss) if p is not None]
-    if heel_paths:
+    if heel_paths and (want("heel") or want("heel_cs") or want("heel_ss")):
         hc = heel_contact(g, [cs]) if cs is not None else Contact.none()
         hs = heel_contact(g, [ss]) if ss is not None else Contact.none()
         out["heel_cs"], out["heel_ss"] = hc, hs
         vals = [c for c in (hc, hs) if math.isfinite(c.value)]
         out["heel"] = min(vals, key=lambda c: c.value) if vals else Contact(INF)
-    out["toe_clearance_3d"] = toe_gap(g, 0.0, front, ffend)
-    ang = toe_steer_angle(g)
-    if ang is None:
-        out["toe_steer_angle"] = Contact(INF)
-    else:
-        c = toe_gap(g, ang, front, ffend)
-        out["toe_steer_angle"] = Contact(ang, c.p, c.q, ang)
-    out["lean_angle_3d"] = Contact(lean_solution(g).angle)
+    if want("toe_clearance_3d") or want("toe_steer_angle"):
+        out["toe_clearance_3d"] = toe_gap(g, 0.0, front, ffend)
+        ang = toe_steer_angle(g)
+        if ang is None:
+            out["toe_steer_angle"] = Contact(INF)
+        else:
+            c = toe_gap(g, ang, front, ffend)
+            out["toe_steer_angle"] = Contact(ang, c.p, c.q, ang)
+    if want("lean_angle_3d"):
+        out["lean_angle_3d"] = Contact(lean_solution(g).angle)
 
-    for name in ("cs", "ss"):
-        for k, v in stay_fabrication(g, name).items():
-            out[f"{name}_{k}"] = Contact(v)
-    if ss is not None and d.get("ss_bridge"):
-        out["ss_bridge_length"] = Contact(2 * out["ss_bridge_tire"].extra.get("z_in", NAN))
-    if cs is not None and d.get("cs_bridge"):
-        out["cs_bridge_length"] = Contact(2 * out["cs_bridge_tire"].extra.get("z_in", NAN))
-    if use_cache:
+    if not partial:                               # stay-fabrication + bridge lengths
+        for name in ("cs", "ss"):
+            for k, v in stay_fabrication(g, name).items():
+                out[f"{name}_{k}"] = Contact(v)
+        if ss is not None and d.get("ss_bridge"):
+            out["ss_bridge_length"] = Contact(2 * out["ss_bridge_tire"].extra.get("z_in", NAN))
+        if cs is not None and d.get("cs_bridge"):
+            out["cs_bridge_length"] = Contact(2 * out["cs_bridge_tire"].extra.get("z_in", NAN))
+    if use_cache and not partial:
         try:
             g._fw_clearance_details = out
         except AttributeError:

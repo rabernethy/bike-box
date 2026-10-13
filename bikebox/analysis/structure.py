@@ -678,7 +678,25 @@ def analyse(g: Geometry, cases: Iterable[str] | None = None) -> dict[str, Any]:
     (named node -> (ux, uy, uz, rx, ry, rz) in mm / rad), ``members`` (member
     -> stress / bending / sf), ``max_stress``, ``critical_member``,
     ``min_sf`` and ``metric`` (the case's stiffness figure).
+
+    The default (full) run is memoised on the geometry instance -- it is shared
+    across the report builders and the UI, and replaced on every edit -- so the
+    FEA solves once per geometry instead of once per consumer.
     """
+    if cases is None:
+        cached = getattr(g, "_analyse_cache", None)
+        if cached is not None:
+            return cached
+        result = _analyse_impl(g, None)
+        try:
+            g._analyse_cache = result
+        except Exception:                             # pragma: no cover
+            pass
+        return result
+    return _analyse_impl(g, cases)
+
+
+def _analyse_impl(g: Geometry, cases: Iterable[str] | None) -> dict[str, Any]:
     t0 = time.perf_counter()
     d = g.design
     want = [c for c in (cases or CASES) if c in CASES]

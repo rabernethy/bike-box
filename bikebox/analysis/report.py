@@ -304,13 +304,25 @@ _BUILDERS: list[tuple[str, Callable[[Geometry], Section]]] = [
 
 
 def full_report(g: Geometry) -> list[Section]:
-    """All analysis sections for a solved geometry."""
+    """All analysis sections for a solved geometry.
+
+    The result is memoised on the geometry instance: a solved geometry is shared
+    (and replaced on every edit) by the whole UI, so the several panels, dialogs
+    and tab switches that want the report compute it once instead of each
+    re-running the FEA, compatibility, aero and BOM builders."""
+    cached = getattr(g, "_full_report_cache", None)
+    if cached is not None:
+        return cached
     out: list[Section] = []
     for title, fn in _BUILDERS:
         try:
             out.append(fn(g))
         except Exception as exc:                  # keep the rest of the report
             out.append(Section(title, [("Error", f"{type(exc).__name__}: {exc}", "fail")]))
+    try:
+        g._full_report_cache = out
+    except Exception:                             # pragma: no cover (e.g. if Geometry gained __slots__)
+        pass
     return out
 
 
