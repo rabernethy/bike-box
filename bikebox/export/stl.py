@@ -33,14 +33,17 @@ def _norm(a: Vec3) -> Vec3:
     return (a[0] / n, a[1] / n, a[2] / n) if n > 1e-12 else (0.0, 0.0, 1.0)
 
 
-def _ring(center: Vec3, tangent: Vec3, n1: Vec3, n2: Vec3, r: float, segs: int) -> list[Vec3]:
+def _ring(center: Vec3, tangent: Vec3, n1: Vec3, n2: Vec3, r1: float, r2: float, segs: int) -> list[Vec3]:
+    """An elliptical ring: radius ``r1`` along ``n1`` (section depth, in the
+    drawing plane) and ``r2`` along ``n2`` (section width, across the frame).
+    ``r1 == r2`` gives a circle."""
     out = []
     for i in range(segs):
         a = 2 * math.pi * i / segs
         c, s = math.cos(a), math.sin(a)
-        out.append((center[0] + r * (c * n1[0] + s * n2[0]),
-                    center[1] + r * (c * n1[1] + s * n2[1]),
-                    center[2] + r * (c * n1[2] + s * n2[2])))
+        out.append((center[0] + r1 * c * n1[0] + r2 * s * n2[0],
+                    center[1] + r1 * c * n1[1] + r2 * s * n2[1],
+                    center[2] + r1 * c * n1[2] + r2 * s * n2[2]))
     return out
 
 
@@ -55,7 +58,14 @@ def _frame_axes(tangent: Vec3) -> tuple[Vec3, Vec3]:
     return n1, n2
 
 
-def _sweep(centers: list[Vec3], radii: list[float], segs: int, cap: bool = True) -> list[Tri]:
+def _as_pair(r) -> tuple[float, float]:
+    return (r, r) if isinstance(r, (int, float)) else (r[0], r[1])
+
+
+def _sweep(centers: list[Vec3], radii: list, segs: int, cap: bool = True) -> list[Tri]:
+    """Sweep a section along ``centers``.  Each ``radii[i]`` is a scalar (circle)
+    or a ``(depth_r, width_r)`` pair (ellipse: depth in the drawing plane, width
+    across the frame)."""
     tris: list[Tri] = []
     if len(centers) < 2:
         return tris
@@ -66,7 +76,8 @@ def _sweep(centers: list[Vec3], radii: list[float], segs: int, cap: bool = True)
         else:
             tan = _sub(centers[i], centers[i - 1])
         n1, n2 = _frame_axes(tan)
-        rings.append(_ring(centers[i], tan, n1, n2, radii[i], segs))
+        r1, r2 = _as_pair(radii[i])
+        rings.append(_ring(centers[i], tan, n1, n2, r1, r2, segs))
     for i in range(len(rings) - 1):
         r0, r1 = rings[i], rings[i + 1]
         for j in range(segs):
@@ -94,11 +105,11 @@ def _mirror_z(tris: list[Tri]) -> list[Tri]:
     return out
 
 
-def _tube_centers(t: Tube, segments: int) -> tuple[list[Vec3], list[float]]:
+def _tube_centers(t: Tube, segments: int) -> tuple[list[Vec3], list]:
     pts = t.points(segments if abs(t.bend) > 1e-6 else 2)
     L = sum(pts[i].dist(pts[i + 1]) for i in range(len(pts) - 1)) or 1.0
     centers: list[Vec3] = []
-    radii: list[float] = []
+    radii: list = []
     acc = 0.0
     for i, p in enumerate(pts):
         if i:
@@ -106,7 +117,9 @@ def _tube_centers(t: Tube, segments: int) -> tuple[list[Vec3], list[float]]:
         f = acc / L
         z = t.za + (t.zb - t.za) * f
         centers.append((p.x, p.y, z))
-        radii.append(max(t.od_at(f) / 2.0, 0.2))
+        # depth (in the drawing plane) from od; width (across the frame) from w;
+        # oval/aero sections have w != od, round ones have w == od
+        radii.append((max(t.od_at(f) / 2.0, 0.2), max(t.w_at(f) / 2.0, 0.2)))
     return centers, radii
 
 

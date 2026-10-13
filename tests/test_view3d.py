@@ -23,3 +23,17 @@ def test_scene3d_flags_problem_clearances():
     sc = scene3d.build(solve(d))
     fails = [c for c in sc.clearances if not c.ok]
     assert fails and any(c.key in ("cs_tire", "ss_tire", "st_tire") for c in fails)
+
+
+def test_oval_tube_meshes_elliptically():
+    from bikebox.export import stl
+    d = Design()
+    d.update({"ss_od_top": 16, "ss_od2": 30, "ss_profile": "oval"})
+    g = solve(d)
+    _c, radii = stl._tube_centers(g.tubes["ss"], 8)
+    depth, width = radii[-1]            # top end carries the oval section
+    assert abs(width - 15.0) < 0.1 and abs(depth - 8.0) < 0.1 and width > depth
+    # round tubes stay circular
+    dr = Design(); gr = solve(dr)
+    rd = stl._tube_centers(gr.tubes["dt"], 4)[1][0]
+    assert abs(rd[0] - rd[1]) < 1e-6
