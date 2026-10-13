@@ -20,7 +20,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - [ ] Pedaling dynamics, KOPS, saddle-setback optimizer, cleat/Q-factor fit
 - [ ] Stack/reach fit-envelope overlay vs a target fit coordinate
 - [ ] Position presets (TT/road/gravel/MTB); aero position + simple CdA estimate
-- [ ] Standover at multiple points; step-through clearance for a given rider
+- [x] Minimum standover (lowest point along the top tube) in Results; step-through clearance still open
 
 ## Components & drivetrain
 - [x] Braze-on / mount **placement UI** (bottle bosses, cable stops, disc mount, rack/fender eyelets) — drawn + in the build sheet

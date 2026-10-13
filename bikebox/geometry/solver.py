@@ -684,13 +684,16 @@ def solve(d: Design) -> Geometry:
         xs = 0.0
     else:
         xs = (J_st.x + J_ht.x) / 2
-    ys = None
-    for name, tb in tubes.items():
-        if name in ("ht", "st", "st2", "cs", "ss", "ss_mono", "fork") or tb.kind == "stay":
-            continue
-        top = _tube_top_at(tb, xs)
-        if top is not None and (ys is None or top > ys):
-            ys = top
+    def _top_surface_at(x: float) -> float | None:
+        best = None
+        for name, tb in tubes.items():
+            if name in ("ht", "st", "st2", "cs", "ss", "ss_mono", "fork") or tb.kind == "stay":
+                continue
+            top = _tube_top_at(tb, x)
+            if top is not None and (best is None or top > best):
+                best = top
+        return best
+    ys = _top_surface_at(xs)
     if ys is None and "tt" in tubes:          # outside the top tube: use its higher end
         ys = max(J_st.y, J_ht.y) + tubes["tt"].od_b / 2
     if ys is not None:
@@ -698,6 +701,20 @@ def solve(d: Design) -> Geometry:
         p["standover"] = V(xs, ys)
     else:
         standover = float("nan")
+    # lowest standover anywhere along the straddle span (what a rider actually clears)
+    x_lo, x_hi = sorted((J_st.x, J_ht.x))
+    so_min = None
+    for i in range(41):
+        x = x_lo + (x_hi - x_lo) * i / 40
+        top = _top_surface_at(x)
+        if top is not None:
+            h = top - g.ground_y
+            if so_min is None or h < so_min[0]:
+                so_min = (h, x, top)
+    if so_min is not None:
+        v["standover_min"] = so_min[0]
+        v["standover_min_x"] = so_min[1]
+        p["standover_min"] = V(so_min[1], so_min[2])
     cl_toe = cl + d.f("toe_overhang")
     fender_extra = (d.f("fender_clearance") + 2.0) if d["fenders"] else 0.0
     fc_dist = front_axle.length()

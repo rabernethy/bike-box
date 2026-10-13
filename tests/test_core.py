@@ -341,3 +341,14 @@ def test_bcad_export_is_bikecad_readable(tmp_path):
     d.save(p)
     props = read_properties(p)                  # parses as a Java properties XML
     assert "Head angle" in props and len(props) >= 20
+
+
+def test_minimum_standover(design):
+    g = solve(design)
+    assert "standover_min" in g.v and "standover_min_x" in g.v
+    # the lowest standover is never above the single-point measurement
+    assert g.v["standover_min"] <= g.v["standover"] + 1e-6
+    # a sloping top tube lowers the minimum standover vs a level one
+    design.set("top_tube_angle", -10)
+    g2 = solve(design)
+    assert g2.v["standover_min"] < g.v["standover"]
