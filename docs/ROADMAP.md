@@ -84,7 +84,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - [ ] Comment/review mode; shareable read-only design
 
 ## Quality / infra & current bugs
-- [ ] (bug) 3-D build untested on macOS/Windows (pyqtgraph/PyOpenGL bundling) — verify before relying on it
+- [x] (was bug) 3-D build verified on macOS/Windows/Linux in v0.1.4 (pyqtgraph/PyOpenGL bundle cleanly)
 - [ ] (bug) CI uses deprecated Node-20 actions — bump checkout/setup-python/upload-artifact
 - [ ] (bug) macOS app unsigned (Gatekeeper warning) — code-sign / notarize
 - [ ] Aero tubes approximated as ellipse (teardrop not modeled); mesh bends approximated
