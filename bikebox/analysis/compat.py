@@ -66,14 +66,28 @@ def check(g: Geometry) -> list[tuple[str, str, str]]:
         out.append(("warn", "Belt drive", "Belt drive needs a frame break (split seat stay, sliding dropout or "
                     "coupler) to install the belt"))
 
-    # disc / rotor consistency
+    # disc / rotor consistency + mount-standard rotor sizes
+    STD_ROTORS = {140.0, 160.0, 180.0, 203.0}
+    MOUNT_NATIVE = {"flat_mount": {140.0, 160.0}, "post_mount": {160.0}, "is": {160.0}}
+    MOUNT_LABEL = {"flat_mount": "flat mount", "post_mount": "post mount", "is": "IS mount"}
     for end in ("front", "rear"):
         brake = d[f"brake_{end}"]
         rotor = d.f(f"rotor_{end}")
-        if brake == "disc" and rotor <= 0:
+        if brake != "disc":
+            if rotor > 0:
+                out.append(("info", f"{end.capitalize()} brake", f"Rotor size set but the brake is '{brake}'"))
+            continue
+        if rotor <= 0:
             out.append(("warn", f"{end.capitalize()} brake", "Disc brake with no rotor size set"))
-        if brake != "disc" and rotor > 0:
-            out.append(("info", f"{end.capitalize()} brake", f"Rotor size set but the brake is '{brake}'"))
+            continue
+        if rotor not in STD_ROTORS:
+            out.append(("warn", f"{end.capitalize()} rotor", f"{rotor:.0f} mm is not a standard rotor size "
+                        "(140/160/180/203)"))
+        mount = d.get("disc_mount_front" if end == "front" else "disc_mount", "flat_mount")
+        native = MOUNT_NATIVE.get(mount, {160.0})
+        if rotor in STD_ROTORS and rotor not in native:
+            out.append(("info", f"{end.capitalize()} disc mount", f"{rotor:.0f} mm rotor on {MOUNT_LABEL[mount]} "
+                        f"needs an adapter (native {'/'.join(f'{x:.0f}' for x in sorted(native))} mm)"))
 
     # wheel sizes
     if abs(d.f("front_bsd") - d.f("rear_bsd")) > 1:

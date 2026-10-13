@@ -539,6 +539,12 @@ _wheels = [
             (("disc", "Disc"), ("caliper", "Rim caliper"), ("cantilever", "Cantilever"), ("v", "V-brake"), ("none", "None"))),
     _mm("rotor_front", "Front rotor", G, "Brakes", 160, 100, 230),
     _mm("rotor_rear", "Rear rotor", G, "Brakes", 160, 100, 230),
+    _choice("disc_mount", "Rear disc mount", G, "Brakes", "flat_mount",
+            (("flat_mount", "Flat mount"), ("post_mount", "Post mount"), ("is", "IS (international std.)")),
+            vis=("brake_rear", ("disc",))),
+    _choice("disc_mount_front", "Front disc mount (fork)", G, "Brakes", "flat_mount",
+            (("flat_mount", "Flat mount"), ("post_mount", "Post mount"), ("is", "IS (international std.)")),
+            vis=("brake_front", ("disc",))),
     _mm("brake_reach", "Caliper reach (rim brakes)", G, "Brakes", 49, 30, 80,
         help="Mounting bolt to brake track centre; places the brake bridge"),
 ]

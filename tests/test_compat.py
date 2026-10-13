@@ -59,3 +59,15 @@ def test_drivetrain_range_math():
     dr = drivetrain_range(d)
     assert dr["front_range"] == 16 and dr["rear_range"] == 17 and dr["required_capacity"] == 33
     assert dr["max_cog"] == 28
+
+
+def test_disc_rotor_mount_checks():
+    d = Design()
+    d.update({"brake_rear": "disc", "rotor_rear": 160, "disc_mount": "flat_mount"})
+    assert not any(l.startswith("Rear") and s != "ok" for s, l, _m in compat.check(solve(d)))
+    # 180 on flat mount -> adapter info
+    d.update({"rotor_rear": 180})
+    assert ("Rear disc mount", "info") in _levels(d)
+    # odd rotor -> warn
+    d.update({"rotor_rear": 150})
+    assert ("Rear rotor", "warn") in _levels(d)
