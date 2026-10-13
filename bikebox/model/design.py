@@ -33,6 +33,7 @@ def _default_extras() -> dict[str, Any]:
         "extra_tubes": [],                   # [{name,a,b,od,wall,...}]
         "brazeons": [],                      # [{type,tube,s|pos,from,side,label}] user-placed mounts
         "order": None,                       # customer/order record (see model.orders)
+        "routing": [],                       # [{type,internal,points:[spec...],label}] cable/hose routes
         "decals": [],                        # [{tube,pos,text|image,font,size,color,angle,...}]
         "snapshots": [],                     # [{name, time, values}]
         "fit_formulas": {},                  # custom fitting schemes for the fit advisor

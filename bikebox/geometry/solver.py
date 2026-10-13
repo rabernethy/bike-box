@@ -208,6 +208,7 @@ class Geometry:
     n_st: V = field(default_factory=lambda: V(1, 0))
     bar_path: list[V] = field(default_factory=list)      # handlebar centreline (side view)
     brazeons: list = field(default_factory=list)         # resolved braze-ons: [{type,label,point,tube,...}]
+    routes: list = field(default_factory=list)           # resolved cable/hose routes: [{type,internal,pts,ports,label}]
     ok: bool = True
 
     def point(self, name: str) -> V:
@@ -672,6 +673,24 @@ def solve(d: Design) -> Geometry:
         g.brazeons.append({"type": str(bo.get("type", "boss")), "label": str(bo.get("label", "")),
                            "point": pt, "tube": bo.get("tube", ""), "s": bo.get("s", 0.0),
                            "side": bo.get("side", 0.0), "spacing": float(bo.get("spacing", 0.0) or 0.0)})
+
+    # cable / hose routes: a polyline through resolved points; internal routes mark entry/exit ports
+    for i, rt in enumerate(d.extras.get("routing") or []):
+        pts = []
+        ok = True
+        for spec in rt.get("points") or []:
+            try:
+                pts.append(_resolve_point(g, spec))
+            except (KeyError, TypeError, ValueError):
+                ok = False
+                break
+        if not ok or len(pts) < 2:
+            if rt.get("points"):
+                g.warn(f"Route {rt.get('label', i)}: unresolved point")
+            continue
+        internal = bool(rt.get("internal", False))
+        g.routes.append({"type": str(rt.get("type", "cable")), "internal": internal, "pts": pts,
+                         "ports": [pts[0], pts[-1]] if internal else [], "label": str(rt.get("label", ""))})
 
     # -- derived values -----------------------------------------------------------
     sa_eff = math.degrees(math.atan2(S.y, -S.x)) if S.length() > 1 else sta

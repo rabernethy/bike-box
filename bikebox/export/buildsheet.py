@@ -70,6 +70,14 @@ def build_html(g: Geometry, units: str | None = None) -> str:
         bo_rows.append([bo.get("type", ""), bo.get("label", ""), bo.get("tube", ""),
                         fmt_len(float(bo.get("s", 0) or 0), units, suffix=True), xy])
 
+    port_rows = []
+    for rt in getattr(g, "routes", []) or []:
+        if not rt.get("internal"):
+            continue
+        for j, q in enumerate(rt.get("ports") or []):
+            port_rows.append([rt.get("label") or rt.get("type", ""), "entry" if j == 0 else "exit",
+                              f"X {fmt_len(q.x, units)}, Y {fmt_len(q.y, units)}"])
+
     parts = [f"""<html><head><style>
       body {{ font-family: sans-serif; color: #111; }}
       h1 {{ font-size: 20px; margin: 0 0 2px 0; }}
@@ -89,6 +97,7 @@ def build_html(g: Geometry, units: str | None = None) -> str:
       <h2>Bill of materials</h2>{_table(['Component', 'Part', 'Spec', 'Brand', 'Weight (g)'], bom_rows)}
       <h2>Fixture setup</h2>{_table(['Datum', 'Value', 'Note'], fix_rows)}
       {'<h2>Braze-ons &amp; mounts</h2>' + _table(['Type', 'Label', 'Tube', 'Position', 'Coordinates'], bo_rows) if bo_rows else ''}
+      {'<h2>Cable/hose ports (internal)</h2>' + _table(['Route', 'Port', 'Coordinates'], port_rows) if port_rows else ''}
     </body></html>"""]
     return "".join(parts)
 

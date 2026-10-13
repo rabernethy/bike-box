@@ -206,6 +206,7 @@ class MainWindow(QtWidgets.QMainWindow):
         presets.setToolTipsVisible(True)
         xt.addAction("Edit all extra tubes…", self.extra_tubes)
         m.addAction("Braze-ons & mounts…", self.brazeons)
+        m.addAction("Cable & hose routing…", self.routing)
         m.addAction("Decals & logos…", self.decals)
         m.addAction("Parts libraries…", "Ctrl+L", self.library_dialog)
         m.addSeparator()
@@ -638,6 +639,11 @@ class MainWindow(QtWidgets.QMainWindow):
         if self.doc():
             from .brazeons_dialog import BrazeOnsDialog
             BrazeOnsDialog(self.doc(), self).exec()
+
+    def routing(self):
+        if self.doc():
+            from .routing_dialog import RoutingDialog
+            RoutingDialog(self.doc(), self).exec()
 
     def decals(self):
         if self.doc():

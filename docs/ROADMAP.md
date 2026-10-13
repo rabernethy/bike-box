@@ -26,7 +26,8 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
 - [x] **Customer / order management** — a design carries a customer + order (status, due, pricing); a quote is
   built from the BOM + labour + frame price and exports as PDF; orders are logged per user. (Catalog has no
   prices, so line prices are the shop's own.)
-- [ ] **Cable / hose / Di2 routing** — internal/external paths and port/stop placement, exported with the frame.
+- [x] **Cable / hose routing** — add internal/external routes (presets for shift/brake/dropper/Di2/dynamo);
+  drawn on the frame with entry/exit ports listed on the build sheet.
 - [ ] **Catalog depth** — fill remaining tube gaps (Reynolds matrix, True Temper OX Gold, KVA MS2), add
   lugs/fork-crown geometry and headset/BB-standard matrices; CSV import of a shop's own stock + prices.
 

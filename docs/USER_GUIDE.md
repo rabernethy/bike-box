@@ -152,3 +152,7 @@ measurements by name and applies them to any design.
 ### Customers & orders
 
 Tools ▸ **Customer & order** attaches a customer (name, contact, notes), an order number, status and due date to the design, and builds a **quote** from the bill of materials plus labour (hours × rate) and a frame build price. Export the quote as a PDF, and each saved order is logged per user. Prices are your own — the catalog carries specs and weights, not prices.
+
+### Cable & hose routing
+
+Edit ▸ **Cable & hose routing** adds common routes (rear/front shift, rear brake, dropper, Di2, dynamo) as internal or external paths along the tubes. They draw on the frame; internal routes mark entry/exit **ports**, whose coordinates are listed on the build sheet for drilling.

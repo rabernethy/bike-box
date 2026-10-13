@@ -603,6 +603,20 @@ class BikeSceneBuilder:
                     Z_FRAME + 5, annotative=False, font=str(dc.get("font", self.d["decal_font"])),
                     bold=bool(dc.get("bold", True)), italic=bool(dc.get("italic", False)), tag=f"decal:{i}")
 
+    _ROUTE_COLORS = {"shift": "#2277cc", "shift_front": "#2277cc", "brake": "#c0392b", "brake_hose": "#c0392b",
+                     "dropper": "#8e44ad", "di2": "#16a085", "dynamo": "#e67e22", "cable": "#555555"}
+
+    def _draw_route(self, rt: dict, i: int) -> None:
+        sc, t = self.sc, self.t
+        pts = rt.get("pts") or []
+        if len(pts) < 2:
+            return
+        col = self._ROUTE_COLORS.get(rt.get("type"), "#555555")
+        dash = (5, 3) if rt.get("internal") else None
+        sc.poly(pts, Style(col, 1.4, None, dash=dash), "cables", Z_FRAME + 5, tag=f"route:{i}")
+        for q in rt.get("ports") or []:          # internal entry/exit ports
+            sc.circle(q, 2.2, Style(col, 1.2, t.bg), "cables", Z_FRAME + 6, f"port:{i}")
+
     def _draw_brazeon(self, bo: dict, i: int, st) -> None:
         """One user-placed braze-on at its resolved point; glyph by type."""
         sc, t, g = self.sc, self.t, self.g
@@ -639,6 +653,9 @@ class BikeSceneBuilder:
         g, sc, t, d = self.g, self.sc, self.t, self.d
         st = t.comp("#9a9a9a")
         tubes = g.tubes
+        # cable / hose routes
+        for i, rt in enumerate(getattr(g, "routes", []) or []):
+            self._draw_route(rt, i)
         # user-placed braze-ons / mounts
         for i, bo in enumerate(getattr(g, "brazeons", []) or []):
             self._draw_brazeon(bo, i, st)
