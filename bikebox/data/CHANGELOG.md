@@ -1,5 +1,13 @@
 # Bike Box — What's New
 
+## 0.1.20
+- **Slide any tube** by dragging it, and the **bottom bracket is now moveable** — drag it for BB height, or sideways to move it fore/aft between the wheels. The frame stays connected as you drag.
+- **High-resolution app icon** — crisp on high-DPI (e.g. 2560×1440) displays.
+- **Unlock input limits** (View ▸ *Unlock input limits*) lets inputs go beyond their normal min/max.
+- Designs save to / open from a cross-platform **Documents/Bike Box** folder by default.
+- In the extra-tube editor the colour swatch is always clickable and ticks "Paint this tube".
+- Tidier, consistent toolbar (no more New/Open/Save buttons duplicating the File menu).
+
 ## 0.1.19
 - **Click any part** on the drawing — wheels, fork, saddle, bars, cranks, battery, couplers, and more, not just tubes — to jump straight to its editing section.
 - **Updates live in Settings** (Help ▸ Settings…): a *Check for updates* button and a *Download & install* button that fetches the right installer for your OS. The old automatic startup check is now opt-in and off by default.
