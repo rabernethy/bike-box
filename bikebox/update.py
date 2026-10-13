@@ -79,20 +79,26 @@ def download(url: str, dest: Path, progress=None) -> Path:
     req = urllib.request.Request(url, headers={"User-Agent": f"BikeBox/{__version__}"})
     dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    with urllib.request.urlopen(req, timeout=30) as r:   # noqa: S310
-        total = int(r.headers.get("Content-Length", 0) or 0)
-        done = 0
-        tmp = dest.with_suffix(dest.suffix + ".part")
-        with tmp.open("wb") as fh:
-            while True:
-                chunk = r.read(65536)
-                if not chunk:
-                    break
-                fh.write(chunk)
-                done += len(chunk)
-                if progress and total:
-                    progress(done / total)
+    tmp = dest.with_suffix(dest.suffix + ".part")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:   # noqa: S310
+            total = int(r.headers.get("Content-Length", 0) or 0)
+            done = 0
+            with tmp.open("wb") as fh:
+                while True:
+                    chunk = r.read(65536)
+                    if not chunk:
+                        break
+                    fh.write(chunk)
+                    done += len(chunk)
+                    if progress and total:
+                        progress(done / total)
+            if total and done < total:               # truncated (e.g. ran out of space)
+                raise OSError(f"incomplete download ({done} of {total} bytes)")
         tmp.replace(dest)
+    except Exception:
+        tmp.unlink(missing_ok=True)                  # don't leave a partial file behind
+        raise
     return dest
 
 
