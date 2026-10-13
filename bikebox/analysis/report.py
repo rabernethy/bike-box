@@ -256,10 +256,16 @@ def _bom(g: Geometry) -> Section:
     return Section("Bill of materials", report_rows(g.design, g))
 
 
+def _compat(g: Geometry) -> Section:
+    from .compat import check
+    # report rows are (label, value, status); check() yields (status, label, message)
+    return Section("Compatibility", [(label, msg, status) for status, label, msg in check(g)])
+
+
 _BUILDERS: list[tuple[str, Callable[[Geometry], Section]]] = [
     ("Key geometry", _geometry), ("Clearances & warnings", _clearances), ("Gearing", _gearing),
     ("Chain", _chain), ("Weight", _weight), ("UCI (road)", _uci), ("Structure (FEA estimate)", _structure),
-    ("Fixture", _fixture), ("Bill of materials", _bom),
+    ("Fixture", _fixture), ("Compatibility", _compat), ("Bill of materials", _bom),
 ]
 
 

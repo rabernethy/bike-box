@@ -51,7 +51,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - [ ] Lugs / bi-lams / fork-crown catalog with geometry; BB-shell standards; headset matrix
 - [ ] Live/online catalog updates; user-contributed catalog sharing; CSV import of a shop's stock
 - [ ] Tube-in-stock inventory; price/weight per part; vendor part-number cross-reference
-- [ ] Component compatibility checker (axle/BSD/freehub/brake standards)
+- [x] Component compatibility checker (seatpost fit, thru-axle, FD/rings, belt break, chainline, wheel sizes)
 
 ## Manufacturing / output
 - [ ] Full-size 1:1 tiling for the whole frame *(mitre templates exist; whole-frame tiling missing)*
