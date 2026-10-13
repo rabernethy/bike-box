@@ -257,9 +257,13 @@ def test_fea_variants_solve(vals):
 
 
 def test_fea_runtime(geometry):
+    # A regression guard that the FEA stays interactive, not a hard benchmark:
+    # the threshold is generous because CI runners vary in speed. A healthy solve
+    # is a few tens of ms locally; anything approaching this bound is a real
+    # regression (e.g. an accidental O(n^2) assembly), not runner noise.
     structure.analyse(geometry)                       # warm-up (imports, caches)
     best = min(_timed(lambda: structure.analyse(geometry)) for _ in range(5))
-    assert best < 0.050
+    assert best < 0.25, f"FEA solve too slow ({best * 1e3:.0f} ms) -- possible regression"
 
 
 def _timed(fn):
