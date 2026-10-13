@@ -13,6 +13,7 @@ from typing import Callable
 
 from ..geometry.solver import Geometry
 from ..model.units import fmt_angle, fmt_len
+from . import aero as _aero  # noqa: F401  (registers the Aerodynamics params at import)
 
 Row = tuple[str, str, str]
 
@@ -274,6 +275,11 @@ def _compat(g: Geometry) -> Section:
     return Section("Compatibility", [(label, msg, status) for status, label, msg in check(g)])
 
 
+def _aero(g: Geometry) -> Section:
+    from .aero import report_rows
+    return Section("Aerodynamics (estimate)", report_rows(g))
+
+
 def _tire_fit(g: Geometry) -> Section:
     from .tirefit import max_tire_width
     rows = []
@@ -292,7 +298,8 @@ def _tire_fit(g: Geometry) -> Section:
 _BUILDERS: list[tuple[str, Callable[[Geometry], Section]]] = [
     ("Key geometry", _geometry), ("Clearances & warnings", _clearances), ("Gearing", _gearing),
     ("Chain", _chain), ("Weight", _weight), ("UCI (road)", _uci), ("Structure (FEA estimate)", _structure),
-    ("Fixture", _fixture), ("Tire fit", _tire_fit), ("Compatibility", _compat), ("Bill of materials", _bom),
+    ("Fixture", _fixture), ("Tire fit", _tire_fit), ("Aerodynamics (estimate)", _aero),
+    ("Compatibility", _compat), ("Bill of materials", _bom),
 ]
 
 

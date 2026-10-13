@@ -22,7 +22,10 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
   and tube-bender specs (radius, included angle, arc length) in the build sheet + `cnc` CSV export. Flat-pattern
   dropout/gusset DXF still open (needs plate outlines the model doesn't carry).
 - [x] **Fit-to-rider auto-size** — the size run now recommends the best size for the current rider (matches the
-  fit scheme's target stack/reach + standover feasibility). Aero/CdA estimate still open.
+  fit scheme's target stack/reach + standover feasibility).
+- [x] **Aero / CdA estimate** — first-order drag area from rider anatomy (Du Bois BSA) and position
+  (saddle-to-bar drop), with steady-state power at a chosen speed (air drag + rolling + drivetrain), in the
+  analysis report. Clearly labelled an estimate — real CdA must be measured.
 - [x] **Customer / order management** — a design carries a customer + order (status, due, pricing); a quote is
   built from the BOM + labour + frame price and exports as PDF; orders are logged per user. (Catalog has no
   prices, so line prices are the shop's own.)
