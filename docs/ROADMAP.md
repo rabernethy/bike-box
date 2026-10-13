@@ -1,103 +1,60 @@
-# Bike Box roadmap
+# Bike Box roadmap (prioritised)
 
-A living list of missing features and enhancements. Items marked **(partial)** have
-some support already; **(bug)** are known defects. Tick items off as they land.
+Reset 2026-10-13 after the v0.1.x feature run. Ordered by priority: **P0** = do
+next (correctness, trust, core safety gaps), **P1** = high-value features, **P2**
+= bigger/later. Each line says *why*. `(partial)` = some support exists.
 
-## Geometry & frame types
-- [ ] Full-suspension (pivot locations, shock, leverage curve, anti-squat); softtail; URT
-- [ ] Recumbents; cargo/longtail/bakfiets models; trikes/tadpoles; cargo-box front ends
-- [ ] Folding hinges; S&S/coupler **placement** solver *(couplers exist; no optimizer)*
-- [ ] Fat/plus auto-standards; expanded geometry preset library (beyond the 17 templates)
-- [ ] Belt-drive splitter / eccentric BB / sliding-dropout tensioning geometry *(belt in gearing only)*
-- [ ] Segmented/curved tubes with multiple bends; richer S-bend stays (beyond single sagitta)
-- [ ] Integrated seatmast; sloping/horizontal TT auto-modes; twin-plate / monostay rear ends
-- [ ] IGH / gearbox chainline + chainstay interaction
-- [ ] Parametric linked constraints ("keep trail constant while…"); target-geometry solver
-- [ ] (bug) Verify tall-bike/tandem edge cases in clearance paths and extra-tube attach on tall frames
+## P0 — correctness & trust (do next)
+- [ ] **Validate the core math against reference cases** — mitre cut lengths & cope angles vs hand-calculated
+  copes, clearance gaps vs known geometry, BikeCAD round-trip across *all* front-end/seat modes. An inaccurate
+  tool is worse than none for someone cutting real tubes. Highest priority.
+- [ ] **Code-sign & notarise the apps** — macOS Gatekeeper and Windows SmartScreen both warn on the current
+  unsigned installers, which blocks real adoption. Needs an Apple Developer ID + a Windows cert from the owner;
+  I can wire the CI once certs exist.
+- [ ] **Disc caliper / rotor clearance geometry** — we check rotor *standards* but not that the caliper body and
+  rotor actually clear the tire and the stay/fork. A real build-stopping safety gap.
+- [ ] **Live clearance feedback while editing** — on-canvas red/green badges at each clearance and a one-click
+  jump to "Resolve issues", so problems are obvious as you drag, not only in the report.
 
-## Fit & ergonomics
-- [x] Rider database (save/apply named riders) + Track fit scheme (literature-based); fit-to-rider sizing via the fit advisor
-- [ ] Pedaling dynamics, KOPS, saddle-setback optimizer, cleat/Q-factor fit
-- [x] Stack/reach vs a target fit coordinate (delta shown in Results); on-canvas overlay still open
-- [x] Discipline fit presets (road/endurance/gravel-touring/MTB/track/TT/Holmes); aero CdA estimate still open
-- [x] Minimum standover (lowest point along the top tube) in Results; step-through clearance still open
+## P1 — high-value features
+- [ ] **STEP/IGES export** — the top "pro" interchange ask (CAD, CNC, FEA). Needs a solid-modelling dependency
+  (OpenCASCADE/cadquery) — evaluate bundle-size vs value before committing.
+- [ ] **Shop CNC/laser outputs** — flat-pattern dropout & gusset DXF, tube-bender specs (radius/sweep/spring-back),
+  notcher miter report with hole-saw sizes. Turns designs into cut parts.
+- [ ] **Fit-to-rider auto-size** — pick the frame size from a rider's measurements and show the best size in the
+  size run; aero position + a simple CdA/drag estimate. Builds on the rider database + fit schemes.
+- [ ] **Customer / order management** — link a design to a customer, a build spec and a quote from the BOM; track
+  jobs. (The owner has related sessions, so this is a real workflow need.)
+- [ ] **Cable / hose / Di2 routing** — internal/external paths and port/stop placement, exported with the frame.
+- [ ] **Catalog depth** — fill remaining tube gaps (Reynolds matrix, True Temper OX Gold, KVA MS2), add
+  lugs/fork-crown geometry and headset/BB-standard matrices; CSV import of a shop's own stock + prices.
 
-## Components & drivetrain
-- [x] Braze-on / mount **placement UI** (bottle bosses, cable stops, disc mount, rack/fender eyelets) — drawn + in the build sheet
-- [ ] Full cable/hose/Di2 routing paths (internal/external); housing-stop/port placement
-- [x] Derailleur capacity + max-cog check (chain wrap vs RD rating); crank-to-frame envelope still open
-- [x] Brake mount standards (flat/post/IS) + rotor-size standard & adapter check; caliper clearance still open
-- [ ] Dropout/hanger database incl. UDH; thru-axle thread/length picker
-- [ ] Dynamo/light/fender/rack load & mount modeling; kickstand plate placement
-- [ ] E-bike motor mounts (mid-drive BB standards), battery fit, wiring
+## P2 — bigger / later
+- [ ] **Full suspension** — pivot locations, shock, leverage curve, anti-squat; opens the MTB market.
+- [ ] **FEA upgrade** — real load cases (pedalling/braking/impact/fatigue), stress plots on the 3-D model,
+  stiffness (BB/head-tube/torsional).
+- [ ] **Project history & sharing** — named revisions with diffs, a shareable read-only link / web viewer.
+- [ ] **3-D polish** — shaded materials & paint, section cut-planes, exploded view, turntable/GIF export,
+  measurement in 3-D.
+- [ ] **UI polish** — keyboard-shortcut editor, multi-select + numeric nudge, guide/grid snapping, theme/DPI.
+- [ ] **More frame types** — recumbents, cargo/longtail, folders, S&S coupler placement optimiser.
 
-## Clearances & safety
-- [ ] Crank-arm-to-chainstay 3D envelope through full rotation *(partial via cs_crank)*
-- [ ] Toe-overlap with real shoe size + fender; heel-to-stay through the pedal stroke
-- [x] Maximum tire size (widest tire that clears, front & rear) in the report; mud-clearance target still open
-- [ ] Suspension travel-sweep clearance (fork + rear); bottom-out checks
-- [ ] Standover/top-tube safety; min-insertion enforcement across sizes
+## Ongoing quality
+- [ ] Performance: cache solves across panels; profile large catalogs; trim the ~200 MB bundle.
+- [ ] Test coverage: a real-GL smoke test in CI (currently import-level only); BikeCAD round-trip fixtures.
+- [ ] Docs & presence: screenshots, a short website/README gallery, example designs.
 
-## Structural / analysis
-- [ ] FEA upgrade: tube FE with joints, load cases (pedaling/braking/impact/fatigue), stress on the 3D model
-- [ ] Stiffness metrics (BB, head-tube, torsional); compliance; natural frequency
-- [ ] Material comparison for a design; butting optimizer (weight vs stiffness)
-- [ ] Ride-quality/flex indicators; wheel/tire compliance
-- [x] Weight breakdown by part fed from the catalog BOM (BOM shows per-part weight + total)
-- [ ] Carbon layup schedule for carbon tubes
-
-## Catalog & data
-- [ ] Fill tube gaps (Reynolds full matrix, True Temper OX Gold, KVA MS2, discontinued Dedacciai)
-- [ ] Lugs / bi-lams / fork-crown catalog with geometry; BB-shell standards; headset matrix
-- [ ] Live/online catalog updates; user-contributed catalog sharing; CSV import of a shop's stock
-- [ ] Tube-in-stock inventory; price/weight per part; vendor part-number cross-reference
-- [x] Component compatibility checker (seatpost fit, thru-axle, FD/rings, belt break, chainline, wheel sizes)
-
-## Manufacturing / output
-- [x] Full-size 1:1 tiled PDF of the frame (frame-only or with wheels; crop marks + overlap)
-- [ ] Fixture/jig setup generator for specific jigs; tube blocks; mitre-fixture angles
-- [ ] CNC/laser: flat-pattern dropouts, gusset DXF, tube-notch G-code *(gcode.py exists — verify coverage)*
-- [ ] STEP/IGES export *(today STL + FreeCAD macro only)*
-- [ ] Notcher miter report incl. hole-saw sizes *(partial in the cut list)*
-- [ ] Tube-bender specs (radius, sweep, spring-back)
-- [ ] Weld/braze order sheet; QC checklist; serial-number/decal placement sheet
-
-## Visualization / UI
-- [ ] Release the 3-D view; shaded materials/paint, section cut-planes, exploded view
-- [ ] Real-time clearance readout while dragging; on-canvas clearance badges
-- [ ] Turntable/animation export of the 3-D model; AR/web viewer
-- [ ] 3-D measurement tool and annotations
-- [ ] Theme polish, DPI scaling, keyboard-shortcut editor, customizable panels
-- [ ] Multi-select + numeric nudge on canvas; guide/grid snapping; onion-skin editing
-- [ ] Dedicated side-by-side size-comparison view *(size-run exists)*
-
-## Import / export / interop
-- [ ] BikeCAD export fidelity audit; import other formats (CAD, OpenSCAD, Rattlecad)
-- [ ] STEP/IGES export (needs an OCC/CAD dependency — deferred)
-- [ ] Shareable web embed/link; PNG with the geometry table baked in
-- [ ] Project bundle (design + photo + catalog refs) in one file
-- [ ] Reconstruct a frame from a pasted geometry chart
-
-## Workflow / collaboration
-- [ ] Named revisions / diffs beyond undo; cloud sync
-- [ ] Customer/order management: link a design to a customer + build spec
-- [ ] Quoting from BOM + labor; shop job tracking
-- [ ] Comment/review mode; shareable read-only design
-
-## Quality / infra & current bugs
-- [x] (was bug) 3-D build verified on macOS/Windows/Linux in v0.1.4 (pyqtgraph/PyOpenGL bundle cleanly)
-- [x] CI actions bumped to v7 (Node 24) — no more Node-20 deprecation warnings
-- [ ] (bug) macOS app unsigned (Gatekeeper warning) — code-sign / notarize
-- [ ] Aero tubes approximated as ellipse (teardrop not modeled); mesh bends approximated
-- [x] Headless CLI exports build sheet / BOM / size chart (`bikebox bom|buildsheet|sizes`)
-- [ ] GL viewer has import-level tests only (no GL context in CI)
-- [ ] Performance: cache solves, profile large catalogs; trim packaging size (~200 MB)
-
-## Done (recent)
-- Catalog in-context pickers + per-tube selection; picked-part shown per section; bill of materials
-- Tube + dropout catalog expanded from manufacturer/CAD sources (tubing 431, dropouts 189)
-- Oval/aero tubes render with true elliptical sections (2-D, 3-D, STL)
-- Interactive 3-D clearance view
-- Size-run generator; build / cut sheet PDF; braze-on / mount placement
-- Resolve-issues options engine; extra-tube paint & in-phase; seat-stay oval section
-- BikeCAD .bcad import **and** export; renamed to Bike Box; Win/mac/Linux installers via CI
+## Done (v0.1.0 – v0.1.7)
+- Parametric geometry + solver; tandem, tall-bike, mixte/step-through; extra tubes (paint, in-phase), junction
+  drag, head-tube stick-out; lossless measurement-mode switching.
+- Clearances in 3-D; "Resolve issues" options engine; interactive **3-D clearance view** (orbit, live, pass/fail
+  gap lines); oval/aero tubes with true elliptical sections; minimum standover.
+- Parts catalog (17 categories, ~5,600 sourced items) with in-context pickers, per-tube selection, bill of
+  materials **with weights**; tube + dropout catalog expanded from manufacturer/CAD data.
+- Compatibility checker (seatpost, thru-axle, belt break, derailleur capacity, disc mount/rotor, chainline,
+  wheel sizes); maximum-tire-size; stack/reach fit-target.
+- Fit advisor with literature schemes (road/endurance/gravel-touring/MTB/**track**/TT/Holmes) + **rider database**.
+- Size-run generator; build/cut sheet PDF; **full-size 1:1 tiled template**; headless `bom`/`buildsheet`/`sizes`.
+- Drawing/SVG/DXF/PNG, STL, FreeCAD macro, CSV, GIF morph, mitre templates.
+- BikeCAD `.bcad` import **and** export; renamed to Bike Box (GPL-3.0); Win/mac/Linux installers via CI (v7
+  actions); 3-D view bundles and runs on all three platforms.
