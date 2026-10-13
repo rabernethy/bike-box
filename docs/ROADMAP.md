@@ -54,7 +54,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - [x] Component compatibility checker (seatpost fit, thru-axle, FD/rings, belt break, chainline, wheel sizes)
 
 ## Manufacturing / output
-- [ ] Full-size 1:1 tiling for the whole frame *(mitre templates exist; whole-frame tiling missing)*
+- [x] Full-size 1:1 tiled PDF of the frame (frame-only or with wheels; crop marks + overlap)
 - [ ] Fixture/jig setup generator for specific jigs; tube blocks; mitre-fixture angles
 - [ ] CNC/laser: flat-pattern dropouts, gusset DXF, tube-notch G-code *(gcode.py exists — verify coverage)*
 - [ ] STEP/IGES export *(today STL + FreeCAD macro only)*
@@ -73,6 +73,7 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 
 ## Import / export / interop
 - [ ] BikeCAD export fidelity audit; import other formats (CAD, OpenSCAD, Rattlecad)
+- [ ] STEP/IGES export (needs an OCC/CAD dependency — deferred)
 - [ ] Shareable web embed/link; PNG with the geometry table baked in
 - [ ] Project bundle (design + photo + catalog refs) in one file
 - [ ] Reconstruct a frame from a pasted geometry chart

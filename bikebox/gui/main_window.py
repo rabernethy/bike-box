@@ -176,6 +176,7 @@ class MainWindow(QtWidgets.QMainWindow):
         ex.addAction("Spec sheet CSV (folder of designs)…", self.export_csv_folder)
         ex.addAction("Bill of materials CSV…", self.export_bom)
         ex.addAction("Build / cut sheet (PDF)…", self.export_buildsheet)
+        ex.addAction("Full-size 1:1 template (PDF)…", self.export_fullsize)
         ex.addAction("Multi-model PDF…", self.export_multi_pdf)
         ex.addAction("Bulk export folder…", self.bulk_export)
         ex.addSeparator()
@@ -799,6 +800,27 @@ class MainWindow(QtWidgets.QMainWindow):
                 buildsheet.save_pdf(self.doc().geometry, fn)
             except Exception as exc:
                 QtWidgets.QMessageBox.warning(self, "Build sheet", str(exc))
+                return
+            self.status.showMessage(f"Exported {fn}", 5000)
+
+    def export_fullsize(self):
+        if self.doc() is None:
+            return
+        from ..export import fullsize
+        pages = ["A4", "A3", "Letter", "Tabloid"]
+        page, ok = QtWidgets.QInputDialog.getItem(self, "Full-size 1:1 template", "Paper size:", pages, 0, False)
+        if not ok:
+            return
+        wheels = QtWidgets.QMessageBox.question(
+            self, "Full-size 1:1 template", "Include the wheels?  (No = frame only, far fewer pages)",
+            QtWidgets.QMessageBox.StandardButton.Yes | QtWidgets.QMessageBox.StandardButton.No,
+            QtWidgets.QMessageBox.StandardButton.No) == QtWidgets.QMessageBox.StandardButton.Yes
+        fn = self._save_name("Export full-size template", ".pdf", "PDF (*.pdf)")
+        if fn:
+            try:
+                fullsize.save_fullsize_pdf(self.doc().geometry, fn, page=page, include_wheels=wheels)
+            except Exception as exc:
+                QtWidgets.QMessageBox.warning(self, "Full-size template", str(exc))
                 return
             self.status.showMessage(f"Exported {fn}", 5000)
 
