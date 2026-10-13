@@ -8,9 +8,8 @@ next (correctness, trust, core safety gaps), **P1** = high-value features, **P2*
 - [x] **Validated the core math** (tests/test_validation.py): geometry identities (wheelbase, front centre,
   BB drop, seat-tube, standard trail formula), BikeCAD round-trip across all 24 front-end/seat modes, and the
   mitre cope engine proven exact (cut points lie on the receiver surface; plane-cut depth = od/tan θ).
-- [ ] **Code-sign & notarise the apps** — macOS Gatekeeper and Windows SmartScreen both warn on the current
-  unsigned installers, which blocks real adoption. Needs an Apple Developer ID + a Windows cert from the owner;
-  I can wire the CI once certs exist.
+- [ ] **Code-sign & notarise the apps** — PINNED: needs paid certs (Apple Developer US$99/yr + a Windows
+  code-signing cert). CI scaffolding was written and then reverted to avoid dead config; re-add when certs exist.
 - [x] **Live clearance badges** — a 'Clearances' toolbar toggle draws red/amber gap markers with values at each
   tight/failing clearance, live as you edit (uses the validated clearance data).
 - [ ] **Disc caliper/rotor clearance geometry** — deferred: needs the hub rotor-offset + caliper mount geometry
