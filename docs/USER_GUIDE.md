@@ -138,3 +138,12 @@ Edit ▸ **Preferences**: drawing line/text scale, interface font size, icon siz
 mouse-wheel direction, drag handles, recent-files length, autosave backups. Display parameters (per design)
 control drawing mode, wheel detail, line weights, colours, dimension text size/orientation and layers.
 Save any design as a **template** (File ▸ Save as template); add your own library items from the libraries dialog.
+
+### Riders & fit schemes
+
+Tools ▸ **Fit advisor** applies a fitting scheme to the rider's body measurements and recommends saddle height,
+setback, bar position, cranks and frame size (with sensible ranges). Schemes are literature-based: *Classic road*
+(LeMond 0.883 × inseam, KOPS), *Endurance/comfort*, *Gravel & touring*, *Mountain*, **Track** (sprint position:
+slightly forward of KOPS, flatter torso ~90–95° torso-to-arm, 20–30° elbow bend — Colby Pearce / Track Cycling
+Academy), *Time trial*, and *Knee angle (Holmes)* (25–35°). Tools ▸ **Rider database** saves a rider's
+measurements by name and applies them to any design.

@@ -177,8 +177,9 @@ def _scheme(name, description, saddle, upper, frame, inputs=None) -> dict:
 _ROAD_CRANK = "clamp(round(0.205 * inseam / 2.5) * 2.5, 150, 180)"
 BUILTIN_SCHEMES: list[dict] = [
     _scheme("Classic road",
-            "Classic road (LeMond saddle height = 0.883 × inseam, knee over pedal spindle, "
-            "seat tube 0.65 × inseam)",
+            "Classic road: LeMond saddle height = 0.883 × inseam (BB to saddle top); saddle fore-aft from KOPS "
+            "as a starting reference (Pruitt; Burt, 'Bike Fit'); seat tube ≈ 0.65 × inseam. For a knee-angle "
+            "method use the 'Knee angle (Holmes)' scheme (25-35°). Sources: LeMond; competitivecyclist.com.",
             _saddle_block("0.883 * inseam", ("0.875 * inseam", "0.893 * inseam"), "kops_setback(saddle_height)"),
             _upper_block("clamp(47 - 4 * (flexibility - 3) - 3 * (style - 2), 28, 62)", "75"),
             _frame_block(_ROAD_CRANK, 0.65, 25, "clamp(round(shoulder / 20) * 20, 360, 480)")),
@@ -190,7 +191,9 @@ BUILTIN_SCHEMES: list[dict] = [
             _frame_block("clamp(round(0.200 * inseam / 2.5) * 2.5, 150, 177.5)", 0.66, 30,
                          "clamp(round((shoulder + 20) / 20) * 20, 380, 500)")),
     _scheme("Gravel & touring",
-            "Gravel and touring: stable, upright position, wider (flared) bars, more standover clearance",
+            "Gravel and touring: stable, upright position (higher/closer bars, less drop), wider flared bars and "
+            "more standover clearance for loaded, all-day riding. Saddle height as road, slightly more setback. "
+            "Sources: Cycling UK touring fit guidance; Rivendell (rivbike.com).",
             _saddle_block("0.877 * inseam", ("0.865 * inseam", "0.887 * inseam"), "kops_setback(saddle_height) + 5"),
             _upper_block("clamp(51 - 3 * (flexibility - 3) - 2 * (style - 2), 35, 68)", "74"),
             _frame_block("clamp(round(0.200 * inseam / 2.5) * 2.5, 150, 177.5)", 0.63, 50,
@@ -202,6 +205,16 @@ BUILTIN_SCHEMES: list[dict] = [
             _upper_block("clamp(50 - 2 * (flexibility - 3) - 2 * (style - 2), 38, 65)", "68"),
             _frame_block("clamp(round(0.200 * inseam / 2.5) * 2.5, 150, 175)", 0.55, 80,
                          "clamp(round(shoulder * 1.85 / 10) * 10, 680, 800)")),
+    _scheme("Track",
+            "Track (sprint-oriented): saddle at ~road height but slightly forward of KOPS; lower, flatter torso "
+            "(torso-to-arm ≈ 90-95°, elbow bend 20-30°); cranks same or slightly shorter; bars same or ≈ 2 cm "
+            "narrower. The steeper effective seat angle comes from the forward saddle; confirm reach/drop on the "
+            "velodrome. Sources: Colby Pearce (stevehoggbikefitting.com); Track Cycling Academy.",
+            _saddle_block("0.883 * inseam", ("0.875 * inseam", "0.893 * inseam"),
+                          "kops_setback(saddle_height) - 8"),
+            _upper_block("clamp(38 - 4 * (flexibility - 3) - 3 * (style - 2), 22, 55)", "92", "155"),
+            _frame_block("clamp(round(0.200 * inseam / 2.5) * 2.5, 150, 175)", 0.65, 25,
+                         "clamp(round((shoulder - 10) / 20) * 20, 360, 460)")),
     _scheme("Time trial",
             "Time trial / triathlon: saddle rotated forward and up (0.89 × inseam), flat torso on the aero "
             "extensions with elbows at ≈ 95°, shorter cranks. 'uci' = 1 keeps the saddle nose 50 mm behind the BB",

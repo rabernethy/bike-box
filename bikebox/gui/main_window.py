@@ -250,6 +250,7 @@ class MainWindow(QtWidgets.QMainWindow):
             m.addAction(self.tool_actions[k])
         m.addSeparator()
         m.addAction("Fit advisor…", "Ctrl+Shift+F", self.fit_advisor)
+        m.addAction("Rider database…", self.riders_dialog)
         m.addAction("Miter templates…", "Ctrl+M", self.mitre_dialog)
         m.addAction("Auxiliary views (stays, crown, toe, lean)", self.show_aux)
         m.addAction("3-D clearance view…", self.show_3d)
@@ -642,6 +643,12 @@ class MainWindow(QtWidgets.QMainWindow):
         if mod is None or self.doc() is None:
             return self._missing("Fit advisor")
         mod.FitAdvisorDialog(self.doc(), self).exec()
+
+    def riders_dialog(self):
+        if self.doc() is None:
+            return
+        from .riders_dialog import RidersDialog
+        RidersDialog(self.doc(), self).exec()
 
     def mitre_dialog(self):
         mod = _optional(".mitre_dialog")

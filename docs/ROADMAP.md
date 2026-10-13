@@ -16,10 +16,10 @@ some support already; **(bug)** are known defects. Tick items off as they land.
 - [ ] (bug) Verify tall-bike/tandem edge cases in clearance paths and extra-tube attach on tall frames
 
 ## Fit & ergonomics
-- [ ] Rider database (body measurements); fit-to-rider sizing from inseam/height/flexibility
+- [x] Rider database (save/apply named riders) + Track fit scheme (literature-based); fit-to-rider sizing via the fit advisor
 - [ ] Pedaling dynamics, KOPS, saddle-setback optimizer, cleat/Q-factor fit
 - [x] Stack/reach vs a target fit coordinate (delta shown in Results); on-canvas overlay still open
-- [ ] Position presets (TT/road/gravel/MTB); aero position + simple CdA estimate
+- [x] Discipline fit presets (road/endurance/gravel-touring/MTB/track/TT/Holmes); aero CdA estimate still open
 - [x] Minimum standover (lowest point along the top tube) in Results; step-through clearance still open
 
 ## Components & drivetrain
