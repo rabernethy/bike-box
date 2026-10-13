@@ -175,6 +175,7 @@ class MainWindow(QtWidgets.QMainWindow):
         ex.addAction("Spec sheet CSV (this design)…", self.export_csv)
         ex.addAction("Spec sheet CSV (folder of designs)…", self.export_csv_folder)
         ex.addAction("Bill of materials CSV…", self.export_bom)
+        ex.addAction("Build / cut sheet (PDF)…", self.export_buildsheet)
         ex.addAction("Multi-model PDF…", self.export_multi_pdf)
         ex.addAction("Bulk export folder…", self.bulk_export)
         ex.addSeparator()
@@ -759,6 +760,19 @@ class MainWindow(QtWidgets.QMainWindow):
         if fn:
             with open(fn, "w", encoding="utf-8", newline="") as fh:
                 fh.write(bom.to_csv(self.doc().design, self.doc().geometry))
+            self.status.showMessage(f"Exported {fn}", 5000)
+
+    def export_buildsheet(self):
+        if self.doc() is None:
+            return
+        from ..export import buildsheet
+        fn = self._save_name("Export build / cut sheet", ".pdf", "PDF (*.pdf)")
+        if fn:
+            try:
+                buildsheet.save_pdf(self.doc().geometry, fn)
+            except Exception as exc:
+                QtWidgets.QMessageBox.warning(self, "Build sheet", str(exc))
+                return
             self.status.showMessage(f"Exported {fn}", 5000)
 
     def export_csv_folder(self):
