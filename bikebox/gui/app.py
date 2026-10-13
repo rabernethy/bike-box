@@ -25,7 +25,7 @@ def _load_plugins() -> None:
 def app_icon(size: int = 256) -> QtGui.QIcon:
     """The application icon, painted (no SVG module needed)."""
     icon = QtGui.QIcon()
-    for sz in (16, 24, 32, 48, 64, 128, 256):
+    for sz in (16, 24, 32, 48, 64, 128, 256, 512, 1024):
         pm = QtGui.QPixmap(sz, sz)
         pm.fill(QtCore.Qt.GlobalColor.transparent)
         p = QtGui.QPainter(pm)

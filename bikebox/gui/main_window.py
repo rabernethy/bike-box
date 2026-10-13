@@ -88,6 +88,21 @@ class MainWindow(QtWidgets.QMainWindow):
             self.restoreState(state)
 
     # -- helpers ------------------------------------------------------------------
+    def designs_dir(self) -> str:
+        """The folder designs are saved to / opened from by default: the last
+        folder used, else a cross-platform 'Bike Box' folder under Documents."""
+        last = self.settings.value("files/last_dir")
+        if last and Path(str(last)).is_dir():
+            return str(last)
+        docs = QtCore.QStandardPaths.writableLocation(
+            QtCore.QStandardPaths.StandardLocation.DocumentsLocation) or str(Path.home())
+        d = Path(docs) / "Bike Box"
+        try:
+            d.mkdir(parents=True, exist_ok=True)
+        except OSError:
+            return str(docs)
+        return str(d)
+
     def _dock(self, title, widget, area):
         dock = QtWidgets.QDockWidget(title, self)
         dock.setObjectName(title.replace(" ", "_"))
@@ -237,6 +252,10 @@ class MainWindow(QtWidgets.QMainWindow):
         self.a_lock = self._act("Lock zoom", self._toggle_lock, checkable=True,
                                 tip="Keep the current scale (disables wheel zoom and fit)")
         m.addAction(self.a_lock)
+        self.a_unlock = self._act("Unlock input limits", self._toggle_unlock_limits, checkable=True,
+                                  tip="Allow values beyond each input's normal minimum / maximum")
+        self.a_unlock.setChecked(self.settings.value("ui/unlock_limits", False, type=bool))
+        m.addAction(self.a_unlock)
         m.addAction("Find parameter…", "Ctrl+F", lambda: (self.dock_params.show(), self.params.search.setFocus(),
                                                           self.params.search.selectAll()))
         m.addSeparator()
@@ -288,6 +307,10 @@ class MainWindow(QtWidgets.QMainWindow):
         maybe_show_whats_new(self)
         check_on_startup(self)
 
+    def _toggle_unlock_limits(self, on):
+        self.settings.setValue("ui/unlock_limits", bool(on))
+        self.params.set_unlock_limits(bool(on))
+
     def _toggle_clearances(self, on):
         v = self.view()
         if v is not None:
@@ -295,11 +318,12 @@ class MainWindow(QtWidgets.QMainWindow):
             v.canvas.update()
 
     def _build_toolbars(self):
+        # New / Open / Save live in the File menu; the toolbar holds the view and
+        # tool actions. Both toolbars use the same text-only style so the button
+        # sizes are consistent across platforms (theme icons vary).
         tb = self.addToolBar("Main")
         tb.setObjectName("main_toolbar")
-        for a in (self.a_new, self.a_open, self.a_save):
-            tb.addAction(a)
-        tb.addSeparator()
+        tb.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextOnly)
         tb.addAction(self.a_undo)
         tb.addAction(self.a_redo)
         tb.addSeparator()
@@ -474,7 +498,7 @@ class MainWindow(QtWidgets.QMainWindow):
             self.status.showMessage(f"Saved template {p}", 5000)
 
     def open_dialog(self):
-        start = str(self.settings.value("files/last_dir", str(Path.home())))
+        start = self.designs_dir()
         fns, _ = QtWidgets.QFileDialog.getOpenFileNames(self, "Open design", start, FILE_FILTER)
         for fn in fns:
             self.open_path(fn)
@@ -514,8 +538,7 @@ class MainWindow(QtWidgets.QMainWindow):
         d = self.doc()
         if d is None:
             return False
-        start = str(Path(str(self.settings.value("files/last_dir", str(Path.home())))) /
-                    (d.design.title.replace("/", "-") + FILE_SUFFIX))
+        start = str(Path(self.designs_dir()) / (d.design.title.replace("/", "-") + FILE_SUFFIX))
         dlg = QtWidgets.QFileDialog(self, "Save design", start, FILE_FILTER)
         dlg.setAcceptMode(QtWidgets.QFileDialog.AcceptMode.AcceptSave)
         dlg.setDefaultSuffix(FILE_SUFFIX.lstrip("."))

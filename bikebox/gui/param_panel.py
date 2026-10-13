@@ -121,6 +121,7 @@ class ParamPage(QtWidgets.QScrollArea):
         self.sections: dict[str, QtWidgets.QGroupBox] = {}
         self.catalog_picked: dict[str, tuple] = {}     # section -> (label, specs)
         self._units = doc.design["units"]
+        self.unlock_limits = False                      # override the per-param min/max
         self._build()
         self.vbox.addStretch(1)
         self.setWidget(host)
@@ -147,6 +148,22 @@ class ParamPage(QtWidgets.QScrollArea):
             self.editors[pd.key] = ed
             self.rows[pd.key] = (label, ed, box)
         self.refresh()
+
+    def set_unlock(self, on: bool) -> None:
+        """Toggle whether spin boxes may go beyond each parameter's min/max."""
+        self.unlock_limits = bool(on)
+        for key, ed in self.editors.items():
+            pd = P.get(key) if P.has(key) else None
+            if pd is None:
+                continue
+            if isinstance(ed, ScrubDoubleSpinBox):
+                self._configure_spin(ed, pd)
+            elif isinstance(ed, ScrubSpinBox):
+                if on:
+                    ed.setRange(-10 ** 7, 10 ** 7)
+                else:
+                    ed.setRange(int(pd.min) if pd.min is not None else -10 ** 6,
+                                int(pd.max) if pd.max is not None else 10 ** 6)
 
     def flash_section(self, section: str) -> None:
         """Scroll a section into view and briefly highlight it."""
@@ -268,6 +285,8 @@ class ParamPage(QtWidgets.QScrollArea):
             sb.setRange(pd.min if pd.min is not None else -1e6, pd.max if pd.max is not None else 1e6)
             sb.setSuffix({"deg": "°", "%": " %", "g": " g", "rpm": " rpm", "kg": " kg", "N": " N",
                           "MPa": " MPa"}.get(pd.unit, (" " + pd.unit) if pd.unit else ""))
+        if self.unlock_limits:                          # override: allow out-of-range values
+            sb.setRange(-1e7, 1e7)
         sb.blockSignals(False)
 
     def _commit_float(self, key: str, value: float) -> None:
@@ -365,6 +384,14 @@ class ParamPanel(QtWidgets.QWidget):
         self.list.currentRowChanged.connect(self._show)
         self.pages: dict[str, ParamPage] = {}
         self.groups: list[str] = []
+        self._unlock = False
+
+    def set_unlock_limits(self, on: bool) -> None:
+        """Let inputs go beyond their normal min/max across all pages."""
+        self._unlock = bool(on)
+        P.set_unlock_limits(on)                       # also relax value clamping on commit
+        for page in self.pages.values():
+            page.set_unlock(on)
 
     def set_document(self, doc: Document | None) -> None:
         if self.doc is not None:
@@ -455,6 +482,8 @@ class ParamPanel(QtWidgets.QWidget):
         page = self.pages.get(group)
         if page is None:
             page = ParamPage(self.doc, group)
+            if self._unlock:
+                page.set_unlock(True)
             self.pages[group] = page
             self.stack.addWidget(page)
             if self.search.text():

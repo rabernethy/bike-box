@@ -258,8 +258,8 @@ class ExtraTubeEditor(QtWidgets.QDialog):
         self.paint_on.setChecked(bool(t.get("paint")))
         self.paint = ColorButton()
         self.paint.set_color(str(t.get("paint") or doc.design.get("paint_frame", "#c8102e")))
-        self.paint.setEnabled(bool(t.get("paint")))
-        self.paint_on.toggled.connect(self.paint.setEnabled)
+        # the swatch is always clickable; picking a colour ticks "Paint this tube"
+        self.paint.color_changed.connect(lambda _c: self.paint_on.setChecked(True))
         prow = QtWidgets.QHBoxLayout()
         prow.addWidget(self.paint_on)
         prow.addWidget(self.paint)
