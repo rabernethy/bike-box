@@ -8,28 +8,45 @@ from bikebox.geometry.vec import V
 from bikebox.model.design import Design
 
 
-# -- BB drag (pure geometry) -----------------------------------------------------
-def test_bb_drag_moves_height_and_fore_aft():
+# -- BB drag: the BB follows the cursor, head tube stays put ----------------------
+def _world_h(g, name):
+    return g.p[name].y - g.ground_y
+
+
+def test_bb_drags_up_past_the_head_tube():
     from bikebox.gui.canvas import drag_point_changes
     d = Design()
     g = solve(d)
-    ch, _ = drag_point_changes("bb", V(20, 30), d, g, False)   # forward 20, up 30
+    bb0, ht_bottom0 = -g.ground_y, _world_h(g, "ht_bottom")
+    assert bb0 < ht_bottom0                                     # BB starts below the head tube
+    ch, _ = drag_point_changes("bb", V(0, 500), d, g, False)    # drag the BB way up
     g2 = solve(Design({**d.values, **ch}))
-    assert g2.v["bb_height"] == pytest.approx(g.v["bb_height"] + 30, abs=0.5)
-    assert g2.v["front_center"] < g.v["front_center"]          # BB moved toward the front wheel
-    assert g2.wheels["rear"].center.x < g.wheels["rear"].center.x  # rear wheel further back
+    # the BB rose; the head tube stayed at the same height above the ground
+    assert -g2.ground_y == pytest.approx(bb0 + 500, abs=1.0)
+    assert _world_h(g2, "ht_bottom") == pytest.approx(ht_bottom0, abs=2.0)
+    assert -g2.ground_y > _world_h(g2, "ht_bottom")            # BB now above the head tube start
 
 
-def test_bb_drag_vertical_only_keeps_fore_aft():
+def test_bb_drag_keeps_rear_wheel_on_the_ground():
     from bikebox.gui.canvas import drag_point_changes
     d = Design()
     g = solve(d)
-    ch, _ = drag_point_changes("bb", V(0, -25), d, g, False)   # straight down 25
+    ch, _ = drag_point_changes("bb", V(0, 120), d, g, False)
     g2 = solve(Design({**d.values, **ch}))
-    assert g2.v["bb_height"] == pytest.approx(g.v["bb_height"] - 25, abs=0.5)
-    # a vertical-only move keeps the wheels at the same horizontal positions
-    assert g2.wheels["front"].center.x == pytest.approx(g.wheels["front"].center.x, abs=2.0)
-    assert g2.wheels["rear"].center.x == pytest.approx(g.wheels["rear"].center.x, abs=2.0)
+    # rear wheel stays put in the world (same height off the ground and ~same x)
+    assert g2.wheels["rear"].center.y - g2.ground_y == pytest.approx(
+        g.wheels["rear"].center.y - g.ground_y, abs=2.0)
+
+
+def test_seat_tube_drags_in_2d():
+    from bikebox.gui.canvas import drag_point_changes
+    d = Design()
+    g = solve(d)
+    st = g.p["st_top"]
+    ch, _ = drag_point_changes("st_top", V(st.x - 150, st.y + 80), d, g, False)
+    assert "seat_tube_angle" in ch and "seat_tube_length" in ch  # both, not just length
+    g2 = solve(Design({**d.values, **ch}))
+    assert g2.v["seat_tube_angle"] != pytest.approx(g.v["seat_tube_angle"])
 
 
 # -- GUI interaction -------------------------------------------------------------

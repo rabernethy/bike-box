@@ -38,9 +38,9 @@ HANDLES = [
     ("bb", "Bottom bracket (drag: height; sideways: move the BB fore/aft between the wheels)"),
     ("saddle", "Saddle (drag: height, Shift: free)"),
     ("bar", "Handlebar (drag: stem length/spacers)"),
-    ("ht_top", "Head tube top (drag: stack & reach)"),
+    ("ht_top", "Head tube top (drag: stack & reach; Shift: head-tube angle)"),
     ("rear_axle", "Rear axle (drag: chainstay & BB drop, Shift: length only)"),
-    ("st_top", "Seat tube top (drag: seat tube length)"),
+    ("st_top", "Seat tube top (drag in any direction: seat angle & length)"),
     ("front_axle", "Front axle (drag: front centre)"),
     ("pedal", "Pedal (drag: crank angle)"),
     ("tt_ht", "Top tube / head tube junction (drag along the head tube)"),
@@ -842,17 +842,16 @@ def drag_point_changes(name: str, m: V, d0, g0: Geometry, shift: bool) -> tuple[
     if d0["frame_type"] == "tall" and name in ("saddle", "pedal"):
         m = m - (g0.p.get("crank_bb", g0.p["bb"]) - g0.p["bb"])
     if name == "bb":
-        # The BB is the origin; move it by re-placing the (fixed, on-ground) axles
-        # relative to its new position. Vertical drag = BB height; sideways drag =
-        # fore/aft between the wheels (rebalances front-centre and chainstay).
-        fa, ra = g0.p["front_axle"], g0.p["rear_axle"]
-        drop = ra.y - m.y
-        return ({"bb_mode": "height", "bb_height": max(m.y - g0.ground_y, 20.0),
-                 "front_h_mode": "front_center",
-                 "front_center": max(math.hypot(fa.x - m.x, fa.y - m.y), 50.0),
+        # Move the BB to follow the cursor while the head tube and rear wheel stay
+        # put: the BB rises toward (and past) the head tube as stack shrinks, and
+        # goes higher above the ground. (The front wheel follows the head tube.)
+        ra = g0.p["rear_axle"]
+        return ({"bb_mode": "height", "bb_height": max(g0.v["bb_height"] + m.y, 20.0),
+                 "front_v_mode": "stack", "front_h_mode": "reach",
+                 "stack": g0.v["stack"] - m.y, "reach": g0.v["reach"] - m.x,
                  "cs_mode": "length",
-                 "chainstay_length": max(math.hypot(ra.x - m.x, ra.y - m.y), abs(drop) + 1.0)},
-                "BB height {bb_height}  front centre {front_center}  chainstay {chainstay_length}")
+                 "chainstay_length": max(math.hypot(ra.x - m.x, ra.y - m.y), 50.0)},
+                "BB height {bb_height}  stack {stack}  reach {reach}")
     if name == "saddle":
         if d0["saddle_mode"] == "xy":
             return {"saddle_x": m.x, "saddle_y": m.y}, "Saddle X {saddle_x}  Y {saddle_y}"
@@ -887,6 +886,12 @@ def drag_point_changes(name: str, m: V, d0, g0: Geometry, shift: bool) -> tuple[
         return ({"stem_length": max(d0.f("stem_length") + ds, 0.0), "spacers": max(d0.f("spacers") + dh, 0.0)},
                 "Stem {stem_length}, spacers {spacers}")
     if name == "ht_top":
+        if shift:
+            # rotate the head tube to point at the cursor -> head-tube angle
+            B = g0.p["ht_bottom"]
+            vec = m - B
+            return {"head_tube_angle": round(math.degrees(math.atan2(vec.y, -vec.x)), 2)}, \
+                "Head tube angle {head_tube_angle}°"
         return ({"front_v_mode": "stack", "front_h_mode": "reach", "stack": m.y, "reach": m.x},
                 "Stack {stack}  Reach {reach}")
     if name == "rear_axle":
@@ -896,10 +901,17 @@ def drag_point_changes(name: str, m: V, d0, g0: Geometry, shift: bool) -> tuple[
         return ({"cs_mode": "length", "bb_mode": "drop", "chainstay_length": max(cs, abs(m.y) + 1), "bb_drop": m.y},
                 "Chainstay {chainstay_length}  BB drop {bb_drop}")
     if name == "st_top":
-        L = project_on_line(m, g0.p["st_bottom"], g0.s)
+        # 2-D: drag in any direction to set the seat-tube angle and length together
+        P0 = g0.p["st_bottom"]
+        vec = m - P0
+        L = max(vec.length(), 50.0)
+        ang = round(math.degrees(math.atan2(vec.y, -vec.x)), 2)   # from +X, up the seat tube
+        out = {"seat_angle_source": "seat_tube", "seat_tube_angle": ang}
         if d0["st_length_mode"] == "cc":
-            return {"st_extension": L - g0.v["seat_tube_cc"]}, "Seat tube extension {st_extension}"
-        return {"seat_tube_length": max(L, 100.0)}, "Seat tube {seat_tube_length}"
+            out["st_extension"] = L - g0.v["seat_tube_cc"]
+        else:
+            out["seat_tube_length"] = L
+        return out, "Seat tube {seat_tube_angle}°, length {seat_tube_length}"
     if name == "front_axle":
         dx = m.x - g0.p["front_axle"].x
         hm = d0["front_h_mode"]
