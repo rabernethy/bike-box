@@ -143,7 +143,10 @@ class ParamPage(QtWidgets.QScrollArea):
             label = QtWidgets.QLabel(pd.label)
             label.setWordWrap(True)
             label.setToolTip((pd.help + "\n" if pd.help else "") + f"[{pd.key}]")
-            ed.setToolTip(label.toolTip())
+            tip = label.toolTip()
+            if pd.kind in (P.FLOAT, P.INT):
+                tip += "\nRight-click to allow values beyond the limit."
+            ed.setToolTip(tip)
             box.layout().addRow(label, ed)
             self.editors[pd.key] = ed
             self.rows[pd.key] = (label, ed, box)
@@ -156,14 +159,22 @@ class ParamPage(QtWidgets.QScrollArea):
             pd = P.get(key) if P.has(key) else None
             if pd is None:
                 continue
-            if isinstance(ed, ScrubDoubleSpinBox):
-                self._configure_spin(ed, pd)
-            elif isinstance(ed, ScrubSpinBox):
-                if on:
-                    ed.setRange(-10 ** 7, 10 ** 7)
-                else:
-                    ed.setRange(int(pd.min) if pd.min is not None else -10 ** 6,
-                                int(pd.max) if pd.max is not None else 10 ** 6)
+            self._reconfigure(key)
+
+    def _reconfigure(self, key: str) -> None:
+        """Re-apply a numeric editor's range after its lock state changed."""
+        ed = self.editors.get(key)
+        pd = P.get(key) if P.has(key) else None
+        if ed is None or pd is None:
+            return
+        if isinstance(ed, ScrubDoubleSpinBox):
+            self._configure_spin(ed, pd)
+        elif isinstance(ed, ScrubSpinBox):
+            if P.key_unlocked(key):
+                ed.setRange(-10 ** 7, 10 ** 7)
+            else:
+                ed.setRange(int(pd.min) if pd.min is not None else -10 ** 6,
+                            int(pd.max) if pd.max is not None else 10 ** 6)
 
     def flash_section(self, section: str) -> None:
         """Scroll a section into view and briefly highlight it."""
@@ -244,12 +255,18 @@ class ParamPage(QtWidgets.QScrollArea):
             sb.setToolTip("Drag left/right to scrub the value, or type / use the arrows")
             sb.valueChanged.connect(lambda v, k=key, s=sb: self._commit_float(k, v))
             self._configure_spin(sb, pd)
+            self._add_limit_menu(sb, key)
             return sb
         if pd.kind == P.INT:
             sb = ScrubSpinBox()
             sb.setKeyboardTracking(False)
-            sb.setRange(int(pd.min if pd.min is not None else -10 ** 6), int(pd.max if pd.max is not None else 10 ** 6))
+            if P.key_unlocked(key):
+                sb.setRange(-10 ** 7, 10 ** 7)
+            else:
+                sb.setRange(int(pd.min if pd.min is not None else -10 ** 6),
+                            int(pd.max if pd.max is not None else 10 ** 6))
             sb.valueChanged.connect(lambda v, k=key: self.doc.set_param(k, v))
+            self._add_limit_menu(sb, key)
             return sb
         if pd.kind == P.BOOL:
             cb = QtWidgets.QCheckBox()
@@ -269,6 +286,27 @@ class ParamPage(QtWidgets.QScrollArea):
         le.editingFinished.connect(lambda k=key, e=le: self.doc.set_param(k, e.text()))
         return le
 
+    def _add_limit_menu(self, sb: QtWidgets.QWidget, key: str) -> None:
+        sb.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
+        sb.customContextMenuRequested.connect(lambda pt, k=key, s=sb: self._limit_menu(k, s, pt))
+
+    def _limit_menu(self, key: str, sb: QtWidgets.QWidget, pt) -> None:
+        pd = P.get(key)
+        menu = QtWidgets.QMenu(sb)
+        act = menu.addAction("Allow values beyond the limit")
+        act.setCheckable(True)
+        act.setChecked(P.key_unlocked(key))
+        act.toggled.connect(lambda on, k=key: self._set_key_unlocked(k, on))
+        lo = "–" if pd.min is None else f"{pd.min:g}"
+        hi = "–" if pd.max is None else f"{pd.max:g}"
+        menu.addSection(f"Limit: {lo} … {hi} {pd.unit}".strip())
+        menu.addAction("Reset to default", lambda k=key, d=pd.default: self.doc.set_param(k, d))
+        menu.exec(sb.mapToGlobal(pt))
+
+    def _set_key_unlocked(self, key: str, on: bool) -> None:
+        P.set_key_unlocked(key, on)
+        self._reconfigure(key)
+
     def _configure_spin(self, sb: QtWidgets.QDoubleSpinBox, pd: P.ParamDef) -> None:
         sb.blockSignals(True)
         if pd.unit == "mm":
@@ -285,7 +323,7 @@ class ParamPage(QtWidgets.QScrollArea):
             sb.setRange(pd.min if pd.min is not None else -1e6, pd.max if pd.max is not None else 1e6)
             sb.setSuffix({"deg": "°", "%": " %", "g": " g", "rpm": " rpm", "kg": " kg", "N": " N",
                           "MPa": " MPa"}.get(pd.unit, (" " + pd.unit) if pd.unit else ""))
-        if self.unlock_limits:                          # override: allow out-of-range values
+        if P.key_unlocked(pd.key):                       # unlocked globally or for this field
             sb.setRange(-1e7, 1e7)
         sb.blockSignals(False)
 
