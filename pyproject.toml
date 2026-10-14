@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bikebox"
-version = "0.1.20"
+version = "0.1.21"
 description = "Open-source parametric bicycle frame design (geometry, fit, drawings, miter templates)"
 readme = "README.md"
 requires-python = ">=3.10"

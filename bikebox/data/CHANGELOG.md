@@ -1,5 +1,10 @@
 # Bike Box — What's New
 
+## 0.1.21
+- **Freer dragging.** The bottom bracket now follows the cursor and can be dragged all the way up past the head tube; the seat tube drags in any direction (angle + length); **Shift-drag the head-tube top** to set the head angle. Input limits were widened so dragging isn't clamped early.
+- **Override a single input's limit** — right-click any numeric field ▸ *Allow values beyond the limit* (the global *View ▸ Unlock input limits* still works for all at once).
+- **Fixed update downloads failing partway** — installers now download to your Downloads folder instead of the system temp dir (which could run out of space mid-download).
+
 ## 0.1.20
 - **Slide any tube** by dragging it, and the **bottom bracket is now moveable** — drag it for BB height, or sideways to move it fore/aft between the wheels. The frame stays connected as you drag.
 - **High-resolution app icon** — crisp on high-DPI (e.g. 2560×1440) displays.

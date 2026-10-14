@@ -30,7 +30,7 @@ def _panel(doc):
 
 
 def test_coerce_clamps_by_default():
-    assert P.get("head_tube_angle").coerce(200) == 90          # clamped to max
+    assert P.get("head_tube_angle").coerce(200) == P.get("head_tube_angle").max          # clamped to max
 
 
 def test_per_field_override(app):
@@ -38,7 +38,7 @@ def test_per_field_override(app):
     panel = _panel(doc)
     page = panel.pages["Frame"]
     doc.set_param("head_tube_angle", 200)
-    assert doc.design.get("head_tube_angle") == 90             # clamped
+    assert doc.design.get("head_tube_angle") == P.get("head_tube_angle").max             # clamped
 
     page._set_key_unlocked("head_tube_angle", True)
     doc.set_param("head_tube_angle", 200)
@@ -47,11 +47,11 @@ def test_per_field_override(app):
 
     # a different field is unaffected
     doc.set_param("seat_tube_angle", 200)
-    assert doc.design.get("seat_tube_angle") == 90
+    assert doc.design.get("seat_tube_angle") == P.get("seat_tube_angle").max
 
     page._set_key_unlocked("head_tube_angle", False)
     doc.set_param("head_tube_angle", 250)
-    assert doc.design.get("head_tube_angle") == 90             # re-clamped
+    assert doc.design.get("head_tube_angle") == P.get("head_tube_angle").max             # re-clamped
 
 
 def test_global_unlock_affects_all(app):
@@ -64,4 +64,4 @@ def test_global_unlock_affects_all(app):
     assert doc.design.get("seat_tube_angle") == 200
     panel.set_unlock_limits(False)
     doc.set_param("head_tube_angle", 300)
-    assert doc.design.get("head_tube_angle") == 90
+    assert doc.design.get("head_tube_angle") == P.get("head_tube_angle").max
