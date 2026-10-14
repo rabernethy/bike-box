@@ -91,6 +91,28 @@ def test_whats_new_dialog_and_checker(monkeypatch):
     assert got and got[0]["version"] == "9.9.9"
 
 
+def test_download_dir_avoids_system_temp():
+    pytest.importorskip("PyQt6")
+    from bikebox.qt import QtWidgets
+    QtWidgets.QApplication.instance() or QtWidgets.QApplication([])
+    from bikebox.gui.update_dialog import _download_dir
+    import tempfile
+    d = _download_dir()
+    assert d.is_dir()
+    # must not be the small system temp dir (which can fill up mid-download)
+    assert tempfile.gettempdir() not in str(d)
+
+
+def test_download_cleans_up_partial_on_failure(monkeypatch, tmp_path):
+    import urllib.request
+    monkeypatch.setattr(urllib.request, "urlopen", lambda *a, **k: (_ for _ in ()).throw(OSError("net")))
+    dest = tmp_path / "installer.bin"
+    with pytest.raises(Exception):
+        U.download("https://example/installer.bin", dest)
+    assert not dest.with_suffix(".bin.part").exists()
+    assert not dest.exists()
+
+
 def test_settings_dialog_constructs(monkeypatch):
     pytest.importorskip("PyQt6")
     from bikebox.qt import QtWidgets

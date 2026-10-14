@@ -3,11 +3,30 @@ page -- a frozen bundle can't safely replace itself)."""
 from __future__ import annotations
 
 import threading
+from pathlib import Path
 
 from .. import __version__, update as U
 from ..qt import QtCore, QtGui, QtWidgets, Signal
 
 Qt = QtCore.Qt
+
+
+def _download_dir() -> Path:
+    """A directory with room for a large installer. Prefer the user's Downloads
+    folder, then the app's config dir -- never the system temp dir, which is
+    often small and can fill up mid-download (the cause of downloads failing
+    partway)."""
+    loc = QtCore.QStandardPaths.writableLocation(QtCore.QStandardPaths.StandardLocation.DownloadLocation)
+    from ..model.library import config_dir
+    for cand in (Path(loc) if loc else None, config_dir() / "downloads"):
+        if cand is None:
+            continue
+        try:
+            cand.mkdir(parents=True, exist_ok=True)
+            return cand
+        except OSError:
+            continue
+    return config_dir()
 
 
 class WhatsNewDialog(QtWidgets.QDialog):
@@ -193,8 +212,7 @@ class SettingsDialog(QtWidgets.QDialog):
         asset = U.asset_for_platform(info.get("assets", []))
         if not asset:
             return
-        import tempfile
-        dest = __import__("pathlib").Path(tempfile.gettempdir()) / asset["name"]
+        dest = _download_dir() / asset["name"]
         self.install_btn.setEnabled(False)
         self.check_btn.setEnabled(False)
         self.bar.setVisible(True)
